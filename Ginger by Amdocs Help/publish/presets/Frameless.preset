@@ -24,7 +24,7 @@
   </content>
   <type>frameless</type>
   <glosstermEffect type="number">0</glosstermEffect>
-  <outputPath>C:/RoboHelp/Docs/GingerByAmdocsHelp/</outputPath>
+  <outputPath>C:/RoboHelp/docs/</outputPath>
   <name>Frameless</name>
   <starterPage>index.htm</starterPage>
   <defaultTopic>

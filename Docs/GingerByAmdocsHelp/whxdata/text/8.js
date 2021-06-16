@@ -1,1 +1,0 @@
-rh._.exports({"0":[["Documents"]],"1":[["Documents "]],"2":[["\n  ","\n    "],["\n    ","All the documents in the solution are displayed at the below location.","\n    ","Folders are created at the time of solution creation for better organization.","\n    "," ","\n    ","\n    "," ","\n  ","\n\n"]],"id":"8"})
