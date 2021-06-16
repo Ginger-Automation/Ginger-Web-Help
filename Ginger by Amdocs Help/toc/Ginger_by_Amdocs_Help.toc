@@ -1,55 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map type="toc">
   <title>Table of Contents</title>
-  <book navtitle="Introduction" href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Run_tab.htm" format="html" processing-role="normal">
-    <page navtitle="What is Ginger?" href="../contents/assets/Ginger_By_Amdocs/Getting_Started/01-_What_is_Ginger.htm" format="html" processing-role="normal"></page>
-    <book navtitle="Ginger Components in High Level" format="html" processing-role="normal">
-      <page href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Ginger_Components_in_High_Level.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Open_or_create_a_solution.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Business_Flows_tab.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Run_tab.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Configurations_tab.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Resources_tab.htm" format="html" processing-role="normal"></page>
-    </book>
-    <page navtitle="Workflow in Ginger" href="../contents/assets/Ginger_By_Amdocs/Getting_Started/03-_Ginger_Workflow.htm" format="html" processing-role="normal"></page>
-    <page navtitle="Ginger End to End Flow- Do it Yourself" href="../contents/assets/Ginger_By_Amdocs/Getting_Started/04-_Ginger_End_to_End_Flow-_Do_it_Yourself.htm" format="html" processing-role="normal"></page>
-  </book>
-  <book navtitle="User Interface" format="html" processing-role="normal">
-    <book navtitle="Ginger Configurations Tab Overview " format="html" processing-role="normal">
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Agents.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Reports.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Tags.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Target_Applications.htm" format="html" processing-role="normal"></page>
-    </book>
-    <book navtitle="Ginger Resources Tab Overview" format="html" processing-role="normal">
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Applications_Models.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Data_Sources.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Documents.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Environments.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Global_Variables.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Plugins.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Shared_Repository.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Purpose.htm" format="html" processing-role="normal"></page>
-    </book>
-    <page navtitle="Ginger Business Flows Tab Overview" href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Business_Flows_Tab_Overview.htm" format="html" processing-role="normal"></page>
-    <page navtitle="Ginger Run Tab Overview" href="../contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Run_Tab_Overview.htm" format="html" processing-role="normal"></page>
-    <book navtitle="Main Menu" format="html" processing-role="normal">
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Drop_Down.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Find_and_Replace.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Share_Operations.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Extra_Solution_Operations.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/User_Profile.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Extra_Options.htm" format="html" processing-role="normal"></page>
-    </book>
-  </book>
   <book navtitle="Configurations" format="html" processing-role="normal">
-    <page navtitle="Target Applications" href="../contents/assets/Ginger_By_Amdocs/Configurations/Target_Applications.htm" format="html" processing-role="normal"></page>
     <book navtitle="Agents" format="html" processing-role="normal">
       <book navtitle="Agent Type Overview" format="html" processing-role="normal">
-        <book navtitle="Web Agent" format="html" processing-role="normal">
-          <page navtitle="Web Agent" href="../contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Web_Agent/Web_Agent.htm" format="html" processing-role="normal"></page>
-        </book>
+        <book navtitle="Web Agent" format="html" processing-role="normal"></book>
       </book>
+      <page navtitle="What is an Agent?" href="../contents/assets/Ginger_By_Amdocs/Configurations/Agents/What_is_an_Agent.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Agent Configuration" href="../contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agent_Configuration.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Environments" format="html" processing-role="normal">
+      <page navtitle="What is Environment?" href="../contents/assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Value Expression" format="html" processing-role="normal">
+      <page navtitle="How to Add Value Expression?" href="../contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/How_to_Add_Value_Expression.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Value Expression Types Overview" href="../contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/Value_Expression_Types_Overview.htm" format="html" processing-role="normal"></page>
+    </book>
+    <page navtitle="What is Target Applications?" href="../contents/assets/Ginger_By_Amdocs/Configurations/Target_Applications.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Reports" format="html" processing-role="normal">
+      <page navtitle="Ginger Execution Logger" href="../contents/assets/Ginger_By_Amdocs/Configurations/Reports/Ginger_Execution_Logger.htm" format="html" processing-role="normal"></page>
+      <page navtitle="HTML Drill Down Report" href="../contents/assets/Ginger_By_Amdocs/Configurations/Reports/HTML_Drill_Down_Report.htm" format="html" processing-role="normal"></page>
+      <page navtitle="How to Generate HTML Report" href="../contents/assets/Ginger_By_Amdocs/Configurations/Reports/How_to_Generate_HTML_Report.htm" format="html" processing-role="normal"></page>
     </book>
   </book>
 </map>

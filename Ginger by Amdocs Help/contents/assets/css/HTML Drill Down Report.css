@@ -1,0 +1,41 @@
+h1.Numbering47 {
+    counter-reset: Numbering42;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+h1.Numbering47:before {
+    counter-increment: Numbering41;
+    content: counter(Numbering41,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering41 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-0-69in {
+margin-left:0.69in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

@@ -1,1 +1,0 @@
-(function() {    var toc =  [{"name":"Web Agent","type":"item","tilePath":"","description":"","url":"assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Web_Agent/Web_Agent.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

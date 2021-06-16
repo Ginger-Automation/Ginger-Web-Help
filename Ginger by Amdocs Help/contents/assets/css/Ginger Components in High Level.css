@@ -9,6 +9,26 @@ span.Hyperlink {
     font-size: 10pt;
     font-weight: bold;
 }
+ul.List11 {
+counter-reset: section111;
+--prefix-size: 40px;
+--prefix-gap: 4px;
+--list-indent: 40px;
+--prefix-fixed-size: false;
+list-style:none;
+padding-left: var(--prefix-size);
+margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ul.List3 {
+counter-reset: section31;
+--prefix-size: 40px;
+--prefix-gap: 4px;
+--list-indent: 40px;
+--prefix-fixed-size: false;
+list-style:none;
+padding-left: var(--prefix-size);
+margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
 p.Num1 {
     margin-left: 1.00in;
     margin-top: 6pt;
@@ -31,68 +51,6 @@ p.Num1:before {
     left: 0;
     text-align: right;
 }
-p.Numbering6 {
-    counter-reset: Numbering112;
-    margin-left: 1.25in;
-    --autonumber: autonumber;
-}
-p.Numbering6:before {
-    content: "";
-    font-family: Wingdings;
-    font-size: 6pt;
-    color: #6B7000;
-    display: inline-flex;
-    width: 0.25in;
-    margin-left: 1.00in;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    text-align: right;
-}
-p.Numbering8 {
-    counter-reset: Numbering32;
-    margin-left: 1.25in;
-    --autonumber: autonumber;
-}
-p.Numbering8:before {
-    content: "";
-    font-family: Wingdings;
-    font-size: 6pt;
-    color: #6B7000;
-    display: inline-flex;
-    width: 0.25in;
-    margin-left: 1.00in;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    text-align: right;
-}
-p.TOC1 {
-    margin-left: 0.35in;
-    margin-right: 0.20in;
-    text-indent: -0.35in;
-    margin-top: 10pt;
-    margin-bottom: 6pt;
-    font-family: Century Gothic;
-    font-size: 11pt;
-    color: #808084;
-    font-weight: bold;
-}
-p.TOCHeading {
-    margin-top: 24pt;
-    margin-bottom: 0;
-    font-size: 14pt;
-    color: #365F91;
-    font-weight: bold;
-}
-p.Title {
-    margin-left: 1.00in;
-    margin-top: 6pt;
-    margin-bottom: 15pt;
-    font-size: 26pt;
-    color: #17365D;
-    letter-spacing: 0.25pt;
-}
 body {
 counter-reset:Numbering141 ;
     font-family: 'Times New Roman', 'serif';
@@ -107,4 +65,47 @@ margin-left:1.25in;
 position:relative;
 }
 span { white-space: pre-wrap;
+}
+.text-indent--0-25in {
+text-indent:-0.25in;
+}
+ul.List11>li {
+ position: relative;
+}
+ul.List11>li:before {
+counter-increment: section111;
+content:"";
+--prefix-size: 40px;
+--prefix-gap: 4px;
+--list-indent: 40px;
+--prefix-fixed-size: false;
+text-align: right;
+position: absolute;
+left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+margin-right: var(--prefix-gap);
+width: var(--prefix-size);
+overflow: hidden;
+    color: #6B7000;
+    font-family: Wingdings;
+    font-size: 6pt;
+}
+ul.List3>li {
+ position: relative;
+}
+ul.List3>li:before {
+counter-increment: section31;
+content:"";
+--prefix-size: 40px;
+--prefix-gap: 4px;
+--list-indent: 40px;
+--prefix-fixed-size: false;
+text-align: right;
+position: absolute;
+left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+margin-right: var(--prefix-gap);
+width: var(--prefix-size);
+overflow: hidden;
+    color: #6B7000;
+    font-family: Wingdings;
+    font-size: 6pt;
 }

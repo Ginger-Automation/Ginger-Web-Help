@@ -1,19 +1,59 @@
 {
   "recent-files::internal:document": [{
-    "title": "Web_Agent",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Web_Agent/Web_Agent.htm",
+    "title": "Agent_Configuration",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agent_Configuration.htm",
     "pinned": false,
-    "time": "Jun 16, 4:08 PM"
+    "time": "Jun 16, 11:31 PM"
+  }, {
+    "title": "What_is_an_Agent",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/What_is_an_Agent.htm",
+    "pinned": false,
+    "time": "Jun 16, 11:24 PM"
+  }, {
+    "title": "How_to_Generate_HTML_Report",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Reports/How_to_Generate_HTML_Report.htm",
+    "pinned": false,
+    "time": "Jun 16, 11:11 PM"
+  }, {
+    "title": "HTML_Drill_Down_Report",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Reports/HTML_Drill_Down_Report.htm",
+    "pinned": false,
+    "time": "Jun 16, 10:58 PM"
+  }, {
+    "title": "Ginger_Execution_Logger",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Reports/Ginger_Execution_Logger.htm",
+    "pinned": false,
+    "time": "Jun 16, 10:44 PM"
+  }, {
+    "title": "Target_Applications",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Target_Applications.htm",
+    "pinned": false,
+    "time": "Jun 16, 10:39 PM"
+  }, {
+    "title": "How_to_Add_Value_Expression",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/How_to_Add_Value_Expression.htm",
+    "pinned": false,
+    "time": "Jun 16, 9:55 PM"
+  }, {
+    "title": "Value_Expression_Types_Overview",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/Value_Expression_Types_Overview.htm",
+    "pinned": false,
+    "time": "Jun 16, 7:41 PM"
+  }, {
+    "title": "What_is_Environment",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm",
+    "pinned": false,
+    "time": "Jun 16, 7:36 PM"
   }, {
     "title": "GingerDocStyle",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/css/GingerDocStyle.css",
     "pinned": false,
-    "time": "Jun 16, 3:57 PM"
+    "time": "Jun 16, 6:31 PM"
   }, {
-    "title": "Ginger_Business_Flows_Tab_Overview",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Business_Flows_Tab_Overview.htm",
+    "title": "01- What is Ginger",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/css/01- What is Ginger.css",
     "pinned": false,
-    "time": "Jun 16, 3:48 PM"
+    "time": "Jun 16, 6:28 PM"
   }, {
     "title": "Frameless",
     "path": "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset",
@@ -84,46 +124,6 @@
     "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Data_Sources.htm",
     "pinned": false,
     "time": "Jun 15, 11:24 PM"
-  }, {
-    "title": "Applications_Models",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Applications_Models.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:24 PM"
-  }, {
-    "title": "Target_Applications",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Target_Applications.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "Tags",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Tags.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "Reports",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Reports.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "Agents",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Agents.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "User_Profile",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/User_Profile.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:18 PM"
-  }, {
-    "title": "Drop_Down",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Drop_Down.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:17 PM"
-  }, {
-    "title": "Extra_Solution_Operations",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Main_Menu/Extra_Solution_Operations.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:17 PM"
   }],
   "generate.outputs": {
     "C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/Learn/publish/presets/eBook.preset": {
@@ -159,11 +159,56 @@
     "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/RoboHelp/docs/index.html",
-      "time": "2021-06-16T16:09:45+05:30",
+      "time": "2021-06-16T23:57:54+05:30",
       "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Agent_Configuration",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agent_Configuration.htm",
+    "pinned": false,
+    "time": "Jun 16, 11:52 PM"
+  }, {
+    "title": "What_is_an_Agent",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/What_is_an_Agent.htm",
+    "pinned": false,
+    "time": "Jun 16, 11:30 PM"
+  }, {
+    "title": "How_to_Generate_HTML_Report",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Reports/How_to_Generate_HTML_Report.htm",
+    "pinned": false,
+    "time": "Jun 16, 11:17 PM"
+  }, {
+    "title": "HTML_Drill_Down_Report",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Reports/HTML_Drill_Down_Report.htm",
+    "pinned": false,
+    "time": "Jun 16, 11:09 PM"
+  }, {
+    "title": "Ginger_Execution_Logger",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Reports/Ginger_Execution_Logger.htm",
+    "pinned": false,
+    "time": "Jun 16, 10:51 PM"
+  }, {
+    "title": "Target_Applications",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Target_Applications.htm",
+    "pinned": false,
+    "time": "Jun 16, 10:37 PM"
+  }, {
+    "title": "Value_Expression_Types_Overview",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/Value_Expression_Types_Overview.htm",
+    "pinned": false,
+    "time": "Jun 16, 9:56 PM"
+  }, {
+    "title": "How_to_Add_Value_Expression",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/How_to_Add_Value_Expression.htm",
+    "pinned": false,
+    "time": "Jun 16, 9:55 PM"
+  }, {
+    "title": "What_is_Environment",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm",
+    "pinned": false,
+    "time": "Jun 16, 6:45 PM"
+  }, {
     "title": "Web_Agent",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Web_Agent/Web_Agent.htm",
     "pinned": false,
@@ -243,51 +288,6 @@
     "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Documents.htm",
     "pinned": false,
     "time": "Jun 15, 11:26 PM"
-  }, {
-    "title": "Data_Sources",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Data_Sources.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:26 PM"
-  }, {
-    "title": "Applications_Models",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Resources_Tab_Overview/Applications_Models.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:26 PM"
-  }, {
-    "title": "Target_Applications",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Target_Applications.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "Tags",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Tags.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "Reports",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Reports.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "Agents",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/User_Interface/Ginger_Configurations_Tab_Overview_/Agents.htm",
-    "pinned": false,
-    "time": "Jun 15, 11:21 PM"
-  }, {
-    "title": "04-_Ginger_End_to_End_Flow-_Do_it_Yourself",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/04-_Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
-    "pinned": false,
-    "time": "Jun 15, 10:48 PM"
-  }, {
-    "title": "03-_Ginger_Workflow",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/03-_Ginger_Workflow.htm",
-    "pinned": false,
-    "time": "Jun 15, 10:47 PM"
-  }, {
-    "title": "Run_tab",
-    "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level/Run_tab.htm",
-    "pinned": false,
-    "time": "Jun 15, 10:44 PM"
   }],
   "recent-files::external:hyperlink": [{
     "title": "Run_tab",

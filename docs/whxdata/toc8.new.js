@@ -1,1 +1,0 @@
-(function() {    var toc =  [{"name":"Agent Type Overview","type":"book","tilePath":"","key":"toc9"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

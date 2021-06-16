@@ -6,119 +6,23 @@
   <topiclist defaulttopic="First_Topic.htm">
     
     <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Run_tab.htm
+      assets\Ginger_By_Amdocs\Configurations\Agents\What_is_an_Agent.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\01-_What_is_Ginger.htm
+      assets\Ginger_By_Amdocs\Configurations\Agents\Agent_Configuration.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Ginger_Components_in_High_Level.htm
+      assets\Ginger_By_Amdocs\Configurations\Environments\What_is_Environment.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Open_or_create_a_solution.htm
+      assets\Ginger_By_Amdocs\Configurations\Value_Expression\How_to_Add_Value_Expression.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Business_Flows_tab.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Configurations_tab.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Resources_tab.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\03-_Ginger_Workflow.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\Getting_Started\04-_Ginger_End_to_End_Flow-_Do_it_Yourself.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Agents.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Reports.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Tags.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Target_Applications.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Applications_Models.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Data_Sources.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Documents.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Environments.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Global_Variables.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Plugins.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Shared_Repository.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Purpose.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Business_Flows_Tab_Overview.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Ginger_Run_Tab_Overview.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Drop_Down.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Find_and_Replace.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Share_Operations.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Extra_Solution_Operations.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\User_Profile.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Extra_Options.htm
+      assets\Ginger_By_Amdocs\Configurations\Value_Expression\Value_Expression_Types_Overview.htm
     </topic>
     
     <topic>
@@ -126,7 +30,15 @@
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Configurations\Agents\Agents_Type_Overview\Web_Agent\Web_Agent.htm
+      assets\Ginger_By_Amdocs\Configurations\Reports\Ginger_Execution_Logger.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Configurations\Reports\HTML_Drill_Down_Report.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Configurations\Reports\How_to_Generate_HTML_Report.htm
     </topic>
     
     <topic>
