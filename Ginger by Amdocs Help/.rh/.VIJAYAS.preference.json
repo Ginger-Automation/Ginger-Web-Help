@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Frameless",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset",
+    "pinned": false,
+    "time": "Jun 16, 3:11 PM"
+  }, {
     "title": "Target_Applications",
     "path": "C:/Ginger RoboHelp/Cloud/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Target_Applications.htm",
     "pinned": false,
@@ -149,6 +154,12 @@
       "exists": true,
       "path": "C:/Ginger RoboHelp/Cloud/Outputs/Frameless/index.htm",
       "time": "2021-06-15T23:59:32+05:30",
+      "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
+    },
+    "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
+      "exists": true,
+      "path": "C:/RoboHelp/Outputs/GingerByAmdocsHelp/index.htm",
+      "time": "2021-06-16T15:14:01+05:30",
       "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },

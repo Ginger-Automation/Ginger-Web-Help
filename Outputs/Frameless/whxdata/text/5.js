@@ -1,1 +1,0 @@
-rh._.exports({"0":[["Shared Repository"]],"1":[["The Activities/Actions/Activity Groups/Variables added into the Shared Repository from the Business Flows Tab is displayed here. Users can make updates to the items if required."," ","        "]],"2":[["Shared Repository "]],"id":"5"})
