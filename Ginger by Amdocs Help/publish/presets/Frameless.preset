@@ -26,7 +26,7 @@
   <glosstermEffect type="number">0</glosstermEffect>
   <outputPath>C:/RoboHelp/docs/</outputPath>
   <name>Frameless</name>
-  <starterPage>index.htm</starterPage>
+  <starterPage>index.html</starterPage>
   <defaultTopic>
     <name>First_Topic</name>
     <path>../../contents/First_Topic.htm</path>

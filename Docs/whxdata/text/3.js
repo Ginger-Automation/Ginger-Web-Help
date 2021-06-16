@@ -1,1 +1,1 @@
-rh._.exports({"0":[["Plugins"]],"1":[["\n  ","\n    "],["\n    "," ","\n    ","Plugins are required in the solution like the PACT are be added from this place.","\n    "," ","\n    ","\n  ","\n\n"]],"2":[["Plugins "]],"id":"3"})
+rh._.exports({"0":[["Reports "]],"1":[["After a Business Flow is executed, results are generated as per the configuration done in the default Reports Template."," "]],"2":[["Reports "]],"id":"3"})

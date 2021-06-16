@@ -5,9 +5,9 @@ model = rh.model;
 var defaultTopic = "First_Topic.htm";
 rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("First_Topic.htm"));
-rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
-rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '57b0e301-3bf3-49cd-a2c9-b2fd2f2cb880' || 'preview');
+rh.consts('HOME_FILEPATH', encodeURI('index.html'));
+rh.consts('START_FILEPATH', encodeURI('index.html'));
+rh.consts('HELP_ID', '233c014e-0e32-4fdc-a5d8-a321dcefe6ba' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");
