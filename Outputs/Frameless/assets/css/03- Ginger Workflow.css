@@ -1,0 +1,67 @@
+.RH-LAYOUT-CENTERPANEL-topic-box p.Num1, .RH-LAYOUT-FOOTER-container p.Num1 {
+  margin-left: 1.00in;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  font-family: Century Gothic;
+  counter-reset: Numbering222;
+  margin-left: 1.25in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Num1:before, .RH-LAYOUT-FOOTER-container p.Num1:before {
+  counter-increment: Numbering221;
+  content: counter(Numbering221, decimal)".";
+  color: #302E45;
+  display: inline-flex;
+  width: 0.25in;
+  margin-left: 1.00in;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Num2, .RH-LAYOUT-FOOTER-container p.Num2 {
+  margin-left: 1.00in;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  font-family: Century Gothic;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Num2[data-list-level="2"]:before, .RH-LAYOUT-FOOTER-container p.Num2[data-list-level="2"]:before {
+  counter-increment: Numbering222;
+  content: counter(Numbering222, lower-alpha)".";
+  color: #302E45;
+  display: inline-flex;
+  width: 0.25in;
+  margin-left: 1.25in;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Num2[data-list-level="2"], .RH-LAYOUT-FOOTER-container p.Num2[data-list-level="2"] {
+  counter-reset: Numbering223;
+  margin-left: 1.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Title, .RH-LAYOUT-FOOTER-container p.Title {
+  margin-left: 1.00in;
+  margin-top: 6pt;
+  margin-bottom: 15pt;
+  font-size: 26pt;
+  color: #17365D;
+  letter-spacing: 0.25pt;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box {
+  counter-reset: Numbering221 Numbering222;
+  font-family: Calibri;
+  font-size: 16px;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-1-25in, .RH-LAYOUT-FOOTER-container .margin-left-1-25in {
+  margin-left: 1.25in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-1-50in, .RH-LAYOUT-FOOTER-container .margin-left-1-50in {
+  margin-left: 1.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+  position: relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span {
+  white-space: pre-wrap;
+}

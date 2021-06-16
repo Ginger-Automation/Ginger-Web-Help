@@ -1,0 +1,101 @@
+p.BodyText {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Num1 {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+    counter-reset: Numbering242;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Num1:before {
+    counter-increment: Numbering241;
+    content: counter(Numbering241,decimal)".";
+    color: #302E45;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering36 {
+    counter-reset: Numbering332;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering36:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering37 {
+    counter-reset: Numbering352;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering37:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering241 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0 {
+margin-left:0;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-0-56in {
+margin-left:0.56in;
+}
+.margin-left-2-50in {
+margin-left:2.50in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

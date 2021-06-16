@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ppfml version="2.00" project="Learn" type="4">
+  <contextmap>
+    
+  </contextmap>
+  <topiclist defaulttopic="First_Topic.htm">
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Run_tab.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\01-_What_is_Ginger.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Ginger_Components_in_High_Level.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Open_or_create_a_solution.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Business_Flows_tab.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Configurations_tab.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\Ginger_Components_in_High_Level\Resources_tab.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\03-_Ginger_Workflow.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Getting_Started\04-_Ginger_End_to_End_Flow-_Do_it_Yourself.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Agents.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Reports.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Tags.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Configurations_Tab_Overview_\Target_Applications.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Applications_Models.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Data_Sources.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Documents.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Environments.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Global_Variables.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Plugins.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Shared_Repository.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Resources_Tab_Overview\Purpose.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Business_Flows_Tab_Overview.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Ginger_Run_Tab_Overview.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Drop_Down.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Find_and_Replace.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Share_Operations.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Extra_Solution_Operations.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\User_Profile.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\User_Interface\Main_Menu\Extra_Options.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Configurations\Target_Applications.htm
+    </topic>
+    
+    <topic>
+      First_Topic.htm
+    </topic>
+    
+  </topiclist>
+  <filenamemap>
+    <filenameentry moniker="wh_languagetype">
+      <filename>
+        en_US
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="wh_stoplist">
+      <filename>
+        whxdata/stopwords.xml
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="startpage">
+      <filename>
+        index.htm
+      </filename>
+    </filenameentry>
+        
+  </filenamemap>
+</ppfml>

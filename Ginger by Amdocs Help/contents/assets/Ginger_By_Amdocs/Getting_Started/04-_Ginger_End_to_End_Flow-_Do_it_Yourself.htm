@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger End to End Flow- Do it Yourself</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/04- Ginger End to End Flow- Do it Yourself.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <h1><span style="font-size:16px;"><span style="font-family:Calibri;">OBJECTIVE:</span></span></h1>
+    <p class="margin-left-0text-indent--0-06in"><span style="font-size:16px;"><span style="font-family:Calibri;">This exercise will help you automate a small flow using GINGER.</span></span></p>
+    <p class="margin-left-0text-indent--0-06in"><span style="font-size:16px;"><span style="font-family:Calibri;">Here we will see the steps on how we automate the flow of launching URL <a class="Hyperlink" href="http://abeat.amdocs.com/">http://abeat.amdocs.com</a> and logging in with some credentials.</span></span></p>
+    <p class="margin-left-0text-indent--0-06in"><span style="font-size:16px;"><span style="font-family:Calibri;">Also, we will understand customizing the execution report as per our requirement.</span></span></p>
+    <p class="margin-left-0text-indent--0-06in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">To create a solution click on the drop down as shown below and select ‘Create New Solution’ option.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 2" height="185.0" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image2.png" width="385.6" /></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">In the pop window, enter the name of the solution (as shown below) browse to the location of the folder where you wish to save your solution.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 1" height="258.0" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image3.png" width="417.1" /></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Since we are automating a website flow select the application as “MywebApp” and platform as “WEB”. On click of create a solution is created successfully.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">This will load the solution as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 3" height="206.2" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image4.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Go to the Configurations tab and click on Agents.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">In the left panel, the agent is automatically created for the “MyWebApp”.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">The default driver for WebApp application is Internet Explorer “SeleniumIE” and the driver type can be changed if needed using the drop down.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 7" height="315.6" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image5.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Once the solution and agent are created, double click on the Business flow and it will take you to the automation area.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">In this window, you will see various sections like Activities Group , Activity-Variables and Actions.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">By default, Activity1 is added as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 4" height="219.4" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image6.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Go back to the Business Flow by clicking the back arrow at the left top corner.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the Variables tab, Business Flow variables are added here.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the + sign to create a new variable which can be used in all the Activities within the Business Flow.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 9" height="164.9" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image7.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Here we will use the variable to give the name of the website which we intend to open as part of our automation flow.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Select the variable type from the list shown like in our case the website name will be variable string as highlighted in the list below. Click on Add Variable.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 10" height="381.3" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image8.png" width="448.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Variables gets added.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 11" height="139.3" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image9.png" width="427.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Double click on it to open it in Edit page.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Enter the name as “Website” and and the string value as <a class="Hyperlink" href="http://abeat.amdocs.com/">http://abeat.amdocs.com</a> since this is the URL we will open as part of automation as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 12" height="320.4" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image10.png" width="537.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Now we need to add action using the + sign in the action section. Actions are executables on various platforms.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">First double click on the Business Flow to go to the Automate tab.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">Then click on + button as shown below.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 13" height="219.6" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image11.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the Actions Library as shown below</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 16" height="150.6" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image12.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Platform specific actions are displayed here. Since we have chosen platform as website, web related actions will be displayed.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">General Actions are not platform specific.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Since we want to launch a website in this URL, we will select “Browser Action” and click on the arrow button as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 15" height="335.6" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image13.png" width="569.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Double click on the added action to open it in edit mode.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Select the ‘Operation Type’ as ‘Goto URL’</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 18" height="283.3" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image14.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Since we have assigned the website name in a variable we will browse that variable name in the URL textbox. For this click on “…” button near the URL textbox as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Double click the ‘Website’ variable on the left pane. The variable gets added in the editor area and click Ok button of the ‘Value Expression Editor’ window and the Action window.</span></span></p>
+    <p class="margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 20" height="331.0" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image15.png" width="518.6" /></span></span></p>
+    <p class="margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Now run the action by clicking on RUN ACTION and agent will automatically be launched.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 23" height="283.4" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image16.png" width="624.0" /><br />
+          ‎</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">And you will see the URL opened as below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 19" height="327.1" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image17.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">To record a particular flow, expand the Record area by clicking on the Record as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 24" height="257.1" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image18.png" width="596.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the Record button as shown below</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 34" height="241.4" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image19.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Now go back to the browser window and enter the credentials as shown below</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 21" height="334.0" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image20.png" width="654.7" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Stop the recording once the flow to be captured is done by clicking on the Stop button.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 36" height="155.8" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image21.png" width="310.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Once the recording is completed, one can also the see the set of recorded actions in the activity action tab.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 37" height="270.0" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image22.png" width="647.7" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">One can change the name of the action by double clicking on the action and giving a relevant name as below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 38" height="278.3" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image23.png" width="518.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Also, put some wait time between actions wherever necessary in the wait text box as shown in screenshot above.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 39" height="266.8" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image24.png" width="488.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Now to create a run set, go to the RUN tab.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 45" height="390.2" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image25.png" width="556.0" /></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the + button as shown by the arrow below to add the required Business Flows.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">In the displayed window, select the Business Flow and click on Select button.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 40" height="293.4" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image26.png" width="325.0" /></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">The Activities &amp; Actions in the Business Flow gets added to the Run set.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 42" height="276.1" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image27.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Now go to the Operations tab in the Run set</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Here you can send the report that will be sent once the execution is completed.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 47" height="360.3" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image28.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Once the report is configured save the run set.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 51" height="139.1" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image29.png" width="509.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">To run the run set, click on the RUN button as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 52" height="108.1" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image30.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">One can see the progress of the execution by the status displayed at the corner of the business flows, activities and actions as shown below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 53" height="272.4" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image31.png" width="624.0" /></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">Once the execution is complete a mail is sent showing the outcome of passed and failed test cases like below. It also shows the run set details with the execution start and end time.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">There is also a zipped html with the mail containing the html report with all the details like below.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 54" height="243.1" src="../../images/04- Ginger End to End Flow- Do it Yourself_files/image32.png" width="624.0" /></span></span></p>
+  </div>
+</body>
+</html>

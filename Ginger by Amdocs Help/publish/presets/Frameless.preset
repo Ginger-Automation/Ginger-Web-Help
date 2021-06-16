@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <chatbotWelcomeText>Welcome! How may I help you?</chatbotWelcomeText>
+  <chatbotDefaultText>Sorry, I do not have an answer for that.</chatbotDefaultText>
+  <retryMsg>Hold on a minute...</retryMsg>
+  <placeholderText>Type your message here.</placeholderText>
+  <errorMsg>There seems to be a problem, please contact the administrator.</errorMsg>
+  <title>Ginger by Amdocs Help</title>
+  <content>
+    <toc>
+      <path>../../toc/Ginger_by_Amdocs_Help.toc</path>
+      <name>Ginger_by_Amdocs_Help</name>
+    </toc>
+    <index type="boolean">true</index>
+    <glossary>
+      <path>../../glossary/Default.glo</path>
+      <name>Default</name>
+    </glossary>
+    <brs type="array"></brs>
+    <masterpage></masterpage>
+    <mapFiles type="array"></mapFiles>
+    <includeExpandingText type="boolean">true</includeExpandingText>
+    <includeDropdownText type="boolean">true</includeDropdownText>
+  </content>
+  <type>frameless</type>
+  <glosstermEffect type="number">0</glosstermEffect>
+  <outputPath>C:/Ginger RoboHelp/Cloud/Outputs/Frameless/</outputPath>
+  <name>Frameless</name>
+  <starterPage>index.htm</starterPage>
+  <defaultTopic>
+    <name>First_Topic</name>
+    <path>../../contents/First_Topic.htm</path>
+  </defaultTopic>
+  <hpTopicPath></hpTopicPath>
+  <chatbot>
+    <name>dialogflow</name>
+    <displayName>Google Dialogflow</displayName>
+  </chatbot>
+  <mobileapp>
+    <android type="boolean">true</android>
+    <iOS type="boolean">false</iOS>
+  </mobileapp>
+  <search>
+    <suggestion type="boolean">true</suggestion>
+    <context>keyword</context>
+    <contextLimit>100</contextLimit>
+    <maxSearchresults type="number">20</maxSearchresults>
+    <glossary type="boolean">true</glossary>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+    <fuzzy type="boolean">true</fuzzy>
+  </search>
+  <sitemap>
+    <use type="boolean">false</use>
+    <helpBaseURL></helpBaseURL>
+    <changeFrequency></changeFrequency>
+  </sitemap>
+  <createThumbNails type="boolean">false</createThumbNails>
+  <favicon></favicon>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <dgflowApiClientKey></dgflowApiClientKey>
+  <dgflowApiDevKey></dgflowApiDevKey>
+</preset>
