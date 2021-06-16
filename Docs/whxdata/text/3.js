@@ -1,1 +1,0 @@
-rh._.exports({"0":[["Reports "]],"1":[["After a Business Flow is executed, results are generated as per the configuration done in the default Reports Template."," "]],"2":[["Reports "]],"id":"3"})
