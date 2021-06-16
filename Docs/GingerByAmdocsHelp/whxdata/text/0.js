@@ -1,0 +1,1 @@
+rh._.exports({"0":[["Tags"]],"1":[["Tags"]],"2":[["Tags are created from this tab. They are linked to multiple Automation items like Actions/Activities/API Model to identify them to set of functionalities. "]],"id":"0"})

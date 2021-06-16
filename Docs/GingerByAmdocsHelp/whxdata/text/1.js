@@ -1,0 +1,1 @@
+rh._.exports({"0":[["‎ Purpose"]],"1":[["Purpose "]],"2":[["\n  ","\n    "],["\n    ","Resources tab is used where the solution related resources are displayed in a better way.","\n    "," ","\n  ","\n\n"]],"id":"1"})
