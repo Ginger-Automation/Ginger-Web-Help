@@ -1,1 +1,1 @@
-rh._.exports({"0":[["Shared Repository"]],"1":[["The Activities/Actions/Activity Groups/Variables added into the Shared Repository from the Business Flows Tab is displayed here. Users can make updates to the items if required."," ","        "]],"2":[["Shared Repository "]],"id":"6"})
+rh._.exports({"0":[["Run Tab"]],"1":[["The is the area where run sets are created for execution. For more details, refer to Library -> Solution -> Run Sets of Ginger Help Index."]],"2":[["Run tab"]],"id":"6"})

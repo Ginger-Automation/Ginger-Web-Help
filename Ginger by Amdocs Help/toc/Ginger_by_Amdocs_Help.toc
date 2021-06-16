@@ -44,5 +44,12 @@
   </book>
   <book navtitle="Configurations" format="html" processing-role="normal">
     <page navtitle="Target Applications" href="../contents/assets/Ginger_By_Amdocs/Configurations/Target_Applications.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Agents" format="html" processing-role="normal">
+      <book navtitle="Agent Type Overview" format="html" processing-role="normal">
+        <book navtitle="Web Agent" format="html" processing-role="normal">
+          <page navtitle="Web Agent" href="../contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Web_Agent/Web_Agent.htm" format="html" processing-role="normal"></page>
+        </book>
+      </book>
+    </book>
   </book>
 </map>

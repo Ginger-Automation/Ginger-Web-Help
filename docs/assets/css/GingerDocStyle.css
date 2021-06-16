@@ -7,15 +7,17 @@
   font-weight: bold;
   font-size: 32px;
   font-family: Calibri;
-  color: #EC008C;
+  color: #302E45;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h2, .RH-LAYOUT-FOOTER-container h2 {
   font-weight: bold;
   font-size: 24px;
+  color: #EC008C;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h3, .RH-LAYOUT-FOOTER-container h3 {
   font-weight: bold;
   font-size: 19px;
+  color: #7E92CA;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h4, .RH-LAYOUT-FOOTER-container h4 {
   font-weight: bold;

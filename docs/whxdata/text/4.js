@@ -1,1 +1,1 @@
-rh._.exports({"0":[["Run Tab"]],"1":[["The is the area where run sets are created for execution. For more details, refer to Library -> Solution -> Run Sets of Ginger Help Index."]],"2":[["Run tab"]],"id":"4"})
+rh._.exports({"0":[["Data Sources"]],"1":[["\n  ","\n    "],["\n    ","Ginger has an internal data source that acts as a commonplace to Read/Write data in all Business Flows/Activities/Actions. There is a Key_Table and a Customized table provided.","\n    ","\n  ","\n\n"]],"2":[["Data Sources "]],"id":"4"})

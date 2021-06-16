@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Web Agent","type":"book","tilePath":"","key":"toc10"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

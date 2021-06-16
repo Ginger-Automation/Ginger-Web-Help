@@ -1,1 +1,1 @@
-rh._.exports({"0":[["Global Variables"]],"1":[["\n  ","\n    "],["\n    "," ","\n    ","Variables that have to be used in all the Business Flows of the solution can be added in this tab.","\n    "," ","\n    ","\n    "," ","\n  ","\n\n"]],"2":[["Global Variables "]],"id":"5"})
+rh._.exports({"0":[["Shared Repository"]],"1":[["The Activities/Actions/Activity Groups/Variables added into the Shared Repository from the Business Flows Tab is displayed here. Users can make updates to the items if required."," ","        "]],"2":[["Shared Repository "]],"id":"5"})
