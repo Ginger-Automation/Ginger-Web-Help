@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/Orange/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/Orange/userstyles.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../Amdocs.png"/>
+    
+
+  <meta charset="UTF-8"/>
+  <title>Mobile Appium Agent</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css"/>
+  <link rel="stylesheet" href="../../../../css/Mobile Appium Agent.css"/>
+</head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div class="position-relative">
+    <p class="Title margin-left-2-50intext-indent-0-50in"> </p>
+    <p class="Title margin-left-2-50intext-indent-0-50in"><span style="font-size:32px;">Ginger Mobile Agent Configurations Steps</span></p>
+    <p> </p>
+    <p> </p>
+    <p class="TOCHeading">Contents</p>
+    <p class="TOC1"><a class="Hyperlink" href="#_Toc72962538">Description</a></p>
+    <p class="TOC1"><a class="Hyperlink" href="#Pre-requisite">Pre-requisite</a></p>
+    <p class="TOC1"><a href="#Appium_Server_Installation">1.<span> </span>Appium Server Installation</a></p>
+    <p class="TOC2"><a href="#Install_Components_Needed_for_Android_Devices_Testing">1.1<span> </span>Install Components Needed for Android Devices Testing</a></p>
+    <p class="TOC2"><a href="#Install_Components_Needed_for_iOS_Devices_Testing">1.2<span> </span>Install Components Needed for iOS Devices Testing</a></p>
+    <p class="TOC2"><a href="#Generic_Appium_Server_Component_Installation">1.3<span> </span>Generic Appium Server Component Installation</a></p>
+    <p class="TOC2"><a href="#Start_Appium_Server">1.4<span> </span>Start Appium Server</a></p>
+    <p class="TOC1"><a href="#Testing_Mobile_Device_Setup">2.<span> </span>Testing Mobile Device Setup</a></p>
+    <p class="TOC2"><a href="#Android_Testing_Mobile_Device_Setup">2.1<span> </span>Android Testing Mobile Device Setup</a></p>
+    <p class="TOC2"><a href="#iOS_Testing_Mobile_Device_Setup">2.2<span> </span>iOS Testing Mobile Device Setup</a></p>
+    <p class="TOC1"><a href="#Ginger_Appium_Agent_Configuration">3.<span> </span>Ginger Appium Agent Configuration</a></p>
+    <p class="TOC2"><a href="#Add_Mobile_Target_Application">3.1<span> </span>Add Mobile Target Application</a></p>
+    <p class="TOC2"><a href="#Add_Appium_Agent">3.2<span> </span>Add Appium Agent</a></p>
+    <p class="TOC2"><a href="#Configure_Appium_Agent_Connection_Details">3.3<span> </span>Configure Appium Agent Connection Details</a></p>
+    <p class="TOC2"><a href="#Configure_Appium_Agent_Desired_Capabilities">3.4<span> </span>Configure Appium Agent Desired Capabilities</a></p>
+    <p class="TOC1"><a href="#Ginger_Appium_Agent_Usage">4.<span> </span>Ginger Appium Agent Usage</a></p>
+    <p class="TOC2"><a href="#Start_Appium_Agent">4.1<span> </span>Start Appium Agent</a></p>
+    <p class="TOC2"><a href="#Ginger_Mobile_Window_Way_of_Using">4.2<span> </span>Ginger Mobile Window Way of Using</a></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><a id="_Description"></a><br/>
+      ‎</p>
+    <h1 class="Heading1">Description</h1>
+    <p>These steps will allow Ginger to run tests on a mobile device using <a class="Hyperlink" href="https://appium.io/docs/en/about-appium/intro/">Appium</a>.</p>
+    <h1 class="Heading1"><a id="_Pre_Requisites"></a><a id="Pre-requisite"></a>Pre-requisite</h1>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;">Appium server (see below steps for installing Appium server in case not exist)- Appium server should be accessible from the machine Ginger is running on.</span></p>
+    <p class="Numbering1 ListParagraph"><span style="font-size:16px;">Android / iOS mobile device (see below steps for configuring the devices to work with Appium)</span></p>
+    <h1 class="Heading1"><a id="Appium_Server_Installation"></a>Appium Server Installation</h1>
+    <p class="margin-left-0-25in">Ginger is connecting to the tested mobile device via Appium server which must be installed (if not already exist) before starting the Ginger testing session. Appium server should be located on a machine and Port which is accessible from the machine Ginger is running on.</p>
+    <p class="margin-left-0-25in">Please follow the below steps for installing and running the Appium server.</p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Install_Components_Needed_for_Android_Devices_Testing"></a>Install Components Needed for Android Devices Testing</h2>
+    <p class="text-indent-0-50in">Please follow the steps in the link below for installing the components needed specifically for Android device testing:</p>
+    <p class="text-indent-0-50in"><a class="Hyperlink" href="https://appium.io/docs/en/drivers/android-uiautomator2/index.html">https://appium.io/docs/en/drivers/android-uiautomator2/index.html</a></p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Install_Components_Needed_for_iOS_Devices_Testing"></a>Install Components Needed for iOS Devices Testing</h2>
+    <p class="text-indent-0-50in">Please follow the steps in the link below for installing the components needed specifically for iOS device testing:</p>
+    <p class="text-indent-0-50in"><a class="Hyperlink" href="https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/">https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/</a></p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Generic_Appium_Server_Component_Installation"></a>Generic Appium Server Component Installation</h2>
+    <p class="margin-left-0-50in">Please follow the steps in the link below for installing the common components needed for the Appium server:</p>
+    <p class="margin-left-0-50in"><a class="Hyperlink" href="https://appium.io/docs/en/about-appium/getting-started/#installation-via-desktop-app-download">https://appium.io/docs/en/about-appium/getting-started/#installation-via-desktop-app-download</a></p>
+    <p>it is recommended to install the “Desktop App” for easier usage.</p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Start_Appium_Server"></a>Start Appium Server</h2>
+    <p class="margin-left-0-50in">Please use the below link for getting to know Appium Desktop App and how to start it:</p>
+    <p class="margin-left-0-50in"><a class="Hyperlink" href="https://github.com/appium/appium-desktop#appium-desktop">https://github.com/appium/appium-desktop#appium-desktop</a></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-25intext-indent-0-25in"><img alt="Picture 1" height="262.8" src="../../../../images/Mobile Appium Agent_files/image2.gif" width="281.2"/><img alt="Text
+Description automatically generated" height="262.8" src="../../../../images/Mobile Appium Agent_files/image3.gif" width="281.3"/></p>
+    <p><br/>
+      ‎</p>
+    <h1 class="Heading1"><a id="Testing_Mobile_Device_Setup"></a>Testing Mobile Device Setup</h1>
+    <p class="margin-left-0-25in">The Android/iOS devices which will be tested needs to be connected via USB cable to the machine on which the Appium server is running. Please follow the below steps for configuring the devices as required by Appium.</p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Android_Testing_Mobile_Device_Setup"></a>Android Testing Mobile Device Setup</h2>
+    <p class="margin-left-0-50in">Please follow the steps on the link below for configuring the device for allowing Appium to successfully control it:</p>
+    <p class="margin-left-0-50in"><a class="Hyperlink" href="https://appium.io/docs/en/drivers/android-uiautomator2/index.html#real-device-setup">https://appium.io/docs/en/drivers/android-uiautomator2/index.html#real-device-setup</a></p>
+    <h2 class="Numbering2" data-list-level="2"><a id="iOS_Testing_Mobile_Device_Setup"></a>iOS Testing Mobile Device Setup</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Please follow the steps on the link below for configuring the device for allowing Appium to successfully control it:</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><a class="Hyperlink" href="https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/">https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/</a></span></p>
+    <p class="ListParagraph margin-left-1-00in"> </p>
+    <h1 class="Heading1"><a id="Ginger_Appium_Agent_Configuration"></a>Ginger Appium Agent Configuration</h1>
+    <p class="text-indent-0-25in"><span style="font-size:16px;">Appium Agent needs to be added to the Ginger solution for connecting to a specific application on a specific mobile device</span></p>
+    <p class="text-indent-0-25in"><span style="font-size:16px;">Appium server.</span></p>
+    <p class="text-indent-0-25in"><span style="font-size:16px;">Please follow the below steps for configuring the Appium Agent on Ginger.</span></p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Add_Mobile_Target_Application"></a>Add Mobile Target Application</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Before adding an Appium Agent the Solution should have a Mobile Target Application if it not having it so please follow the below steps for adding it:</span></p>
+    <p class="Numbering1 ListParagraph" data-list-level="2"><span style="font-size:16px;">Open the Ginger Solution</span></p>
+    <p class="Numbering1 ListParagraph" data-list-level="2"><span style="font-size:16px;">Click on “Configurations” “Target Applications”</span></p>
+    <p class="Numbering1 ListParagraph" data-list-level="2"><span style="font-size:16px;">Click on the “Add” button and select Mobile platform application</span></p>
+    <p class="Numbering1 ListParagraph" data-list-level="2"><span style="font-size:16px;">You can change the name of the application added to the grid</span></p>
+    <p class="Numbering1 ListParagraph" data-list-level="2"><span style="font-size:16px;">Click on the “Save” button</span></p>
+    <p class="margin-left-0-44in"><img alt="Graphical user interface, text, application, email
+Description automatically generated" height="342.8" src="../../../../images/Mobile Appium Agent_files/image4.gif" width="631.4"/></p>
+    <p class="margin-left-0-44in"> </p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Add_Appium_Agent"></a>Add Appium Agent</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Appium Agent is required for configuring the connection to a specific Appium Server Specific mobile device  Specific tested the application on the device.</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Please follow the below steps for adding the Appium Agent to the Ginger solution:</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Go to “Configurations”  “Agents”</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Click on the “Add” button, “Add New Agent” wizard will be shown</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Click Next</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Set Name for the new Agent</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Select “Mobile” platform</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Select “Mobile Driver”</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Select “Appium” type of driver</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Click Finish</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">The new Agent will be added to your Agents tree</span></p>
+    <p class="margin-left-0-44in"><img alt="Graphical user interface, text, application
+Description automatically generated" height="311.1" src="../../../../images/Mobile Appium Agent_files/image5.gif" width="563.4"/></p>
+    <p class="margin-left-0-44in"><img alt="Graphical user interface, application
+Description automatically generated" height="375.9" src="../../../../images/Mobile Appium Agent_files/image6.gif" width="372.1"/></p>
+    <p class="margin-left-0-44in"> </p>
+    <p class="margin-left-0-44in"><img alt="Graphical user interface, text, application, email
+Description automatically generated" height="397.8" src="../../../../images/Mobile Appium Agent_files/image7.gif" width="501.4"/></p>
+    <p class="margin-left-0-44in"> </p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Configure_Appium_Agent_Connection_Details"></a>Configure Appium Agent Connection Details</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Set below connection configurations on Mobile Agent edit page:</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Appium server- need to set the Appium server URL, in case using cloud device lab so need to get the Appium server URL to use from the provider.</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;">default Appium server URL structure is:</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;">http://&lt;&lt;AppiumServerIP&gt;&gt;:&lt;&lt;AppiumServerPort&gt;&gt;/wd/hub</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Load device window- set if to load the Ginger device view window which allows the user to view the connected device screenshot and interact with it using mouse and keyboard operations</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Auto-refresh mode- set the device screenshot refresh way of working:</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Live”- screenshot will be refreshed automatically constantly</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Post Operation”- screenshot will be refreshed automatically only post-operation like mouse click on the device screenshot or after mobile Action execution</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Disabled”- no automatic screenshot refresh, user needs to refresh it manually when required</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Advanced:</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">Proxy- set the full proxy URL (including port if needed) in case proxy is required for connecting the Appium server</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">Load timeout (seconds)- set the timeout for the Appium server connection attempt</span></p>
+    <p class="margin-left-0-50in"><img alt="Graphical user interface, text, application, email
+Description automatically generated" height="394.4" src="../../../../images/Mobile Appium Agent_files/image8.gif" width="517.4"/></p>
+    <p> </p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Configure_Appium_Agent_Desired_Capabilities"></a>Configure Appium Agent Desired Capabilities</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Desired Capabilities in Appium refer to the combination of key-value pairs encoded in a JSON object. These key-value pairs are defined by the QAs to request the Appium server for the desired test automation session.</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Please follow the below for configuring it:</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Platform- select the tested device platform “Android” or “iOS”</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Application type-</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Native/Hybrid”- select it in case planning to test application installed on the device</span></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Web” - select it in case planning to test web application loaded on the device browser (Chrome for Android and Safari for iOS)</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Capabilities- those are the actual key-value pairs which been sent to Appium as part of the connection, above “Platform” and “Application type” selection auto-generating the basic required capabilities to be set for establishing the connection to the required device and application type.</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;">Users can override the default configured capabilities and add/remove capabilities as needed (or as required by the specific cloud device provider).</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;">For stopping the auto capabilities manipulation, uncheck the “Auto-update capabilities table” checkbox.</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;">Please find in the link below the full list of Appium supported capabilities:</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;"><a class="Hyperlink" href="http://appium.io/docs/en/writing-running-appium/caps/">http://appium.io/docs/en/writing-running-appium/caps/</a></span></p>
+    <p class="ListParagraph margin-left-1-00in"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3">Android Device Basic Appium Desired Capabilities</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:121.8px"/>
+          <col style="width:151.2px"/>
+          <col style="width:398.33333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Key</p>
+            </td>
+            <td>
+              <p>Value</p>
+            </td>
+            <td>
+              <p>Description</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“platformName”</p>
+            </td>
+            <td>
+              <p>“Android”</p>
+            </td>
+            <td>
+              <p>Specify the OS type of the device</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“automationName”</p>
+            </td>
+            <td>
+              <p>“automationName”</p>
+            </td>
+            <td>
+              <p>Specify the type of the Appium automation engine to use</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“deviceName”</p>
+            </td>
+            <td>
+              <p>Sample: “Galaxy S20”</p>
+            </td>
+            <td>
+              <p>Set the name of the device</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“udid”</p>
+            </td>
+            <td>
+              <p>Sample: “RF8N21RGCBD”</p>
+            </td>
+            <td>
+              <p>Set the ID of the device</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“appPackage”</p>
+            </td>
+            <td>
+              <p>Sample:</p>
+              <p>“com.android.settings”</p>
+              <p> </p>
+            </td>
+            <td>
+              <p>[To be set only in case of Native/Hybrid application] Represents the Java package of the desired Android App to be tested</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“appActivity”</p>
+            </td>
+            <td>
+              <p>Sample:</p>
+              <p>“com.android.settings.Settings”</p>
+            </td>
+            <td>
+              <p>[To be set only in case of Native/Hybrid application]</p>
+              <p>Represents the name of the desired activity to be launched from the package. It needs to be preceded by a ‘.’</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“browserName”</p>
+            </td>
+            <td>
+              <p>“Chrome”</p>
+            </td>
+            <td>
+              <p>[To be set only in case of Web application]</p>
+              <p>Represents the name of the mobile web browser to be automated.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="margin-left-0-50in"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3">iOS Device Basic Appium Desired Capabilities</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:132.06666666666666666666666667px"/>
+          <col style="width:204px"/>
+          <col style="width:335.26666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Key</p>
+            </td>
+            <td>
+              <p>Value</p>
+            </td>
+            <td>
+              <p>Description</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“platformName”</p>
+            </td>
+            <td>
+              <p>“iOS”</p>
+            </td>
+            <td>
+              <p>Specify the OS type of the device</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“automationName”</p>
+            </td>
+            <td>
+              <p>“XCUITest”</p>
+            </td>
+            <td>
+              <p>Specify the type of the Appium automation engine to use</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“deviceName”</p>
+            </td>
+            <td>
+              <p>Sample: “Galaxy S20”</p>
+            </td>
+            <td>
+              <p>Set the name of the device</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“udid”</p>
+            </td>
+            <td>
+              <p>Sample: “00008020-001369913E93802E”</p>
+            </td>
+            <td>
+              <p>Set the ID of the device</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“bundleId”</p>
+            </td>
+            <td>
+              <p>Sample:</p>
+              <p>“com.apple.Preferences”</p>
+              <p> </p>
+            </td>
+            <td>
+              <p>[To be set only in case of Native/Hybrid application] Represents the ID of the desired iOS App to be tested</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>“browserName”</p>
+            </td>
+            <td>
+              <p>“Safari”</p>
+            </td>
+            <td>
+              <p>[To be set only in case of Web application]</p>
+              <p>Represents the name of the mobile web browser to be automated.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p class="margin-left-0-44intext-indent-0-06in"><img alt="Graphical user interface, text, application, email
+Description automatically generated" height="416.6" src="../../../../images/Mobile Appium Agent_files/image9.gif" width="619.6"/></p>
+    <p class="ListParagraph margin-left-0-69in"> </p>
+    <h1 class="Heading1"><a id="Ginger_Appium_Agent_Usage"></a>Ginger Appium Agent Usage</h1>
+    <p class="margin-left-0-06in">Using the Appium agent user can connect to the mobile device and control it via mouse and keyboard events done on top of the mobile device window and by running dedicated Ginger Actions.</p>
+    <p class="margin-left-0-06in">See below how to start the Agent and how to control it.</p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Start_Appium_Agent"></a>Start Appium Agent</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Follow below steps for starting the Appium Agent:</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">Add Business Flow and add the Mobile target application to it</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">Shift to Automate page for the specific Business Flow</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">Select the added Appium Agent to be mapped to the Mobile Target Application</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">Start the Agent by clicking on the “Start” button</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">Mobile device window will launch (unless disabled on the Agent configurations) and show the device loading and then it screenshots</span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><img alt="Graphical user interface, application
+Description automatically generated" height="302.0" src="../../../../images/Mobile Appium Agent_files/image10.gif" width="556.2"/></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" height="303.5" src="../../../../images/Mobile Appium Agent_files/image11.gif" width="134.2"/></p>
+    <h2 class="Numbering2" data-list-level="2"><a id="Ginger_Mobile_Window_Way_of_Using"></a>Ginger Mobile Window Way of Using</h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Users can control the device via mouse and keyboard operation and by dedicated action, see below for full possible controls.</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3"><span style="font-size:16px;">Ginger Mobile Window Configurations</span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">Changing Auto refresh mode:</span></p>
+    <p class="Numbering36 ListParagraph"><span style="font-size:16px;">Click on the “Configurations” button</span></p>
+    <p class="Numbering36 ListParagraph"><span style="font-size:16px;">Select the wanted mode:</span></p>
+    <p class="Numbering36 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Live”- screenshot will be refreshed automatically constantly</span></p>
+    <p class="Numbering36 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Post Operation”- screenshot will be refreshed automatically only post-operation like mouse click on the device screenshot or after mobile Action execution</span></p>
+    <p class="Numbering36 ListParagraph" data-list-level="2"><span style="font-size:16px;">“Disabled”- no automatic screenshot refresh, user needs to refresh it manually when required</span></p>
+    <p class="margin-left-0-75in"><span style="font-size:16px;">Refresh waiting rate- impacting the waiting time between screenshots capturing, 10 will set it to maximum waiting time and 0 to no waiting at all</span></p>
+    <p class="margin-left-0-75in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-75in"><span style="font-size:16px;">In case the “Live” option is not selected, the “Refresh” button will be presented for the manual refresh of the screenshot when needed</span></p>
+    <p class="margin-left-0-75in"><img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" height="372.2" src="../../../../images/Mobile Appium Agent_files/image12.gif" width="292.8"/> <img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" height="375.9" src="../../../../images/Mobile Appium Agent_files/image13.gif" width="294.5"/></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3"><span style="font-family:Calibri;"><span style="font-size:16px;">Control the device via mouse and keyboard</span></span></p>
+    <p class="text-indent-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">Please find below the operations you can perform on the Ginger mobile device window:</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Click on any element that appears on the screenshot using mouse click</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Drag element by long mouse click and drag</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Swipe the screen by mouse click and drag from side to side</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Click on Home / Back / Menu buttons</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Change device orientation via the dedicated button</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Volume Up/Down via dedicated button</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Lock/Un-lock device via dedicated button (only on Android native)</span></span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Enter text values to selected text boxes directly via the keyboard (only on Web applications)</span></span></p>
+    <p class="margin-left-0-44in"><img alt="Graphical user interface, application
+Description automatically generated" height="539.8" src="../../../../images/Mobile Appium Agent_files/image14.gif" width="239.3"/></p>
+    <p class="margin-left-0-44in"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3"><span style="font-size:16px;">Control the device via Mobile Device Action</span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">By using the “Mobile Device Action” user can control the device or add device control actions to his automation flow, steps:</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Open the “Add Actions” panel</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Select “Actions Library”</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Select “Platform Actions”/ ”Mobile Device Action”</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Double click the Action for adding it to the selected Activity Actions list</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Double click the Action to get into it “Operation Settings”</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Select the operation to perform</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">Click on “Run Action”</span></p>
+    <p class="Numbering37 ListParagraph"><span style="font-size:16px;">The operation will be performed on the device and impact will be visible on the mobile device window</span></p>
+    <p class="margin-left-0-44in"><img alt="Graphical user interface, application
+Description automatically generated" height="328.9" src="../../../../images/Mobile Appium Agent_files/image15.gif" width="651.3"/></p>
+  </div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "3.1.1.1_4"
+  
+//]]></script>
+
+
+  <script src="../../../../../template/scripts/topicpage.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

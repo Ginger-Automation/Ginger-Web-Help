@@ -31,7 +31,9 @@
     <name>First_Topic</name>
     <path>../../contents/First_Topic.htm</path>
   </defaultTopic>
+  <logoURL>https://ginger.amdocs.com/Content/img/amdocs/GingerByAmdocs.png</logoURL>
   <hpTopicPath></hpTopicPath>
+  <downloadPDF></downloadPDF>
   <chatbot>
     <name>dialogflow</name>
     <displayName>Google Dialogflow</displayName>
@@ -56,7 +58,11 @@
     <changeFrequency></changeFrequency>
   </sitemap>
   <createThumbNails type="boolean">false</createThumbNails>
-  <favicon></favicon>
+  <use_thumbnails type="boolean">false</use_thumbnails>
+  <favicon>
+    <name>Amdocs</name>
+    <path>../../contents/assets/images/Amdocs.png</path>
+  </favicon>
   <patchHomepage type="boolean">true</patchHomepage>
   <gdprCompliance type="boolean">true</gdprCompliance>
   <dgflowApiClientKey></dgflowApiClientKey>

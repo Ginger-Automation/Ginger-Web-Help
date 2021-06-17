@@ -1,0 +1,24 @@
+.RH-LAYOUT-CENTERPANEL-topic-box p.TOCHeading, .RH-LAYOUT-FOOTER-container p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Title, .RH-LAYOUT-FOOTER-container p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box {
+    font-family: 'Times New Roman', 'serif';
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-0-50in, .RH-LAYOUT-FOOTER-container .margin-left-0-50in {
+margin-left:0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+position:relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+}

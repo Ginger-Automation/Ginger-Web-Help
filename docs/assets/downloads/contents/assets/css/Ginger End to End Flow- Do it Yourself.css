@@ -1,0 +1,57 @@
+a.Hyperlink {
+    color: #0563C1;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+}
+p.Numbering1 {
+    counter-reset: Numbering02;
+    margin-left: -0.19in;
+    --autonumber: autonumber;
+}
+p.Numbering1:before {
+    counter-increment: Numbering01;
+    content: counter(Numbering01,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Title {
+    margin-bottom: 0;
+    font-size: 20pt;
+    color: #222A35;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering01 ;
+    line-height: 1.08;
+    margin-bottom: 8pt;
+    font-size: 11pt;
+    font-family: Calibri;
+}
+.margin-left-0 {
+margin-left:0;
+}
+.margin-left-2-50in {
+margin-left:2.50in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent--0-06in {
+text-indent:-0.06in;
+}
+.text-indent--0-44in {
+text-indent:-0.44in;
+}
+.text-indent-0-50in {
+text-indent:0.50in;
+}

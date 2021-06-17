@@ -1,0 +1,29 @@
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering202 Numbering203 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

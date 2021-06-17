@@ -1,1 +1,1 @@
-(function() {    var toc =  [{"name":"Configurations","type":"book","tilePath":"","key":"toc1"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
+(function() {    var toc =  [{"name":"Getting Started","type":"book","tilePath":"","key":"toc1"},{"name":"UI","type":"book","tilePath":"","key":"toc2"},{"name":"Configurations","type":"book","tilePath":"","key":"toc3"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

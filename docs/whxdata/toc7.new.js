@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"What is Environment?","type":"item","tilePath":"","description":"","url":"assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
