@@ -1,0 +1,35 @@
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering25 {
+    counter-reset: Numbering162;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering25:before {
+    counter-increment: Numbering161;
+    content: counter(Numbering161,decimal)")";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering161 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

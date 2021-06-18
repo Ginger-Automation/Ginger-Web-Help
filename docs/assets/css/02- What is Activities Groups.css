@@ -1,0 +1,34 @@
+.RH-LAYOUT-CENTERPANEL-topic-box p.ListParagraph, .RH-LAYOUT-FOOTER-container p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering25, .RH-LAYOUT-FOOTER-container p.Numbering25 {
+    counter-reset: Numbering162;
+    margin-left: 0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering25:before, .RH-LAYOUT-FOOTER-container p.Numbering25:before {
+    counter-increment: Numbering161;
+    content: counter(Numbering161,decimal)")";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Title, .RH-LAYOUT-FOOTER-container p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box {
+counter-reset:Numbering161 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+position:relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+}

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/Orange/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/Orange/userstyles.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../Amdocs.png"/>
+    
+
+  <meta charset="UTF-8"/>
+  <title>How to use Source Control in Ginger</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css"/>
+  <link rel="stylesheet" href="../../css/How to use Repository in Ginger.css"/>
+</head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div class="position-relative">
+    <p class="Title"><span style="font-size:32px;"><span style="font-family:Calibri;">                  How to use Source Control in Ginger?</span></span></p>
+    <p class="Title"> </p>
+    <p class="Title"> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="TOCHeading"><span style="font-size:19px;"><span style="font-family:Calibri;">Contents</span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Introduction">Introduction</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Pre-requisite">Pre-requisite</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#What_are_the_different_types_of_Repository?">What are different types of Repository?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_download_a_solution?">How to download a solution?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Check-In_the_changes_made_in_the_solution_to_SVN?">How to Check-In the changes made in the solution to SVN?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_get_the_latest_solution_from_SVN?">How to get latest solution from SVN?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Undo_changes_done_in_the_solution?">How to Undo changes done in the solution?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Resolve_Conflicts?">How to Resolve Conflicts?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_get_repository_details?">How to get repository details?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_get_info_on_a_repository_of_a_Ginger_component?">How to get info of repository of a Ginger component?</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_use_the_GIT_repository?">How to use GIT repository?</a></span></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id=" IntroductionWhen multiple users are working on the same solution then it is better to put the solution on a repository like SVN (Subversion).This helps the solution to be edited by multiple users and the latest solution can be downloaded by the users.Pre-requisite                         Drop a mail to *GingerCoreTeam GingerCoreTeam@int.amdocs.com giving the details of the                 solution name and the name of the users that need access to it.                A mail should be received with the details of the login credentials.                 Note: All users should use the same version of Ginger to take the benefits of Repositories.                           What are the different types of Repository?There are 2 types of repositories viz. SVN and GIT.    SVN repository is used within the Amdocs network.GIT repository is used in projects which have GIT services.  This is used for an external network like the AT&amp;T project. How to download a solution?How to download the solution from SVN Repository Click on the Solution name drop-down and select the “Download Existing Solution” option.                 In the displayed window, enter the login credentials, the SVN URL and click on the “Download Selected Solution” button.Note: Ginger uses URL:- http://cmitechint1srv.corp.amdocs.com:81/svn/                                         Once the login is successful then the “Connect and Search Repositories” button gets enabled.  Click on the button.       A list of solutions is displayed to which the user has access.        The desired folder where you want to store the solution on your local PC can be given in the “Local Solutions Folder Path” using the “Browse” button.  When there are multiple solutions displayed in the list, you can search your desired solution using the “Search” button.                    The column “Exist Locally” helps to determine if the solution was already downloaded on your local PC. If yes then it is displayed as “True” else “False” is displayed.     Select the desired solution and click on the “Download Selected Solution” button.A message is displayed about the successful download. I also want to know if you want to open theDownloaded Solution.  Click on Yes to open the solution.    How to download the solution from GIT Repository Click on the Solution name drop-down and select the “Download Existing Solution” option.                In the displayed window, select the GIT open in the Source Control type.enter the login credentials, the GIT URL. Expand the Advanced Connection Configuration and click the “Configure Proxy” check box.Click on the “Download Selected Solution” button.Note: Ginger uses URL:- https://github.com                                            Once the login is successful then the “Connect and Search Repositories” button gets enabled.  Click on the button.       A list of solutions is displayed to which the user has access.      The desired folder where you want to store the solution on your local PC can be given in the “Local Solutions Folder Path” using the “Browse” button.  The column “Exist Locally” helps to determine if the solution was already downloaded on your local PC. If yes then it is displayed as “True” else “False” is displayed.    Select the desired solution and click on the “Download Selected Solution” button.A message is displayed about the successful download. I also want to know if you want to open theDownloaded Solution.    Click on Yes to open the solution.             How to Check-In the changes made in the solution to SVN? There are 2 ways to check-in the changes made in the solution.Check-in on the Solution level and check-in on the individual components of the Solution. Solution Level check-in:- In the Business Flow tab, click on the ‘Source Control Operations’ button as shown below.Select the ‘Check-In Solution Changes’ option.        The new window presents a list of changes that need to be updated in the SVN.                     Select All the changes or just the selected ones.                    Click on the “Check-In Selected Changes” button.   A warning message is displayed if you want to confirm the changes.    Click on the Yes button to continue with the updates. This will update the SVN.         Component Level check-in:-In the Business Flow tab, right-click on the Business Flow where the changes are made.Go to Source Control and select Check-In Changes.    We can Check-in changes on components like Agents and Reports under the Configurations tab as shown below.                          From the Resources tab, we can Check-in changes on components like Shared Repository, Applications Models, Environments, Data Sources, Documents and Plugins by right-clicking on them as shown below.                           How to get the latest solution from SVN?        The latest updates of the solution can be fetched by clicking on the ‘Source Control Operations’ button as shown below. Select the ‘Get Latest Solution Changes’ option. Whatever changes are updated by other users and stored in the SVN will be downloaded.                                                         A message is displayed once the download is successful giving the information the revision number.                                  2) You can also get the updated changes from SVN only for a particular component.                  Right-click on the component, Go to Source Control and click the “Get Latest Updates” option.                                      How to Undo changes done in the solution?When changes are made in the solution and you do not want that changes to be saved in the SVN then you can Undo the changes.This will take your Solution back to the latest version from the SVN. The changes made on the local PC will be lost. Right-click on the component whose changes you want to remove and select the “Undo Changes” option.  A message of confirmation is displayed. After clicking the Yes button, the changes will not be available in the solution.              How to Resolve Conflicts?When multiple users are working on the same solution at the same time then there are chances that conflict arises during the Check-in process.Ginger will display a message in such cases. There are 2 options to resolve these conflicts.Keep Local ChangesIn this option, only your changes will be saved in the SVN. The changes made by other users will not be uploaded to the SVN.  Accept Server ChangesIn this option, changes made by other users that are updated in the SVN will be downloaded. Changes made by you will be lost.  How to get repository details?                               In the Solution tab, click on the “Repository Details” button.                                     The details about the Solution stored in SVN are displayed.                  It gives the URL of the solution in SVN, the path of the solution in the local PC, Revision number and other                  details.                                       How to get info on a repository of a Ginger component?Right-click on the component. Go to Source Control and select the “Get Info” option.                        The details about the Component are displayed.                  It gives the path of the XML File in which the component is stored on the local PC.                   The revision number from the SVN is also displayed along with the Change Date &amp; Time. How to use the GIT repository?The usage is the same as the SVN as shown in the above points. The difference is in the login credentials as shown below.               Select GIT in the Source Control Type, enter the URL, user name and password as displayed below.  Click on the ‘Connect And Search Repositories’ button. On successful login, the solutions will be displayed.                          What is the different color indicate while using the Repository?   The Green plus color- indicates that the solution is downloaded from the repository.                            Grey color tick mark – indicates that the Business Flow is download from the repository  The red color pen icon- indicates that the Business flow has changes in it which are not been uploaded to the repository.     "></a><br/>
+        ‎</span></h1>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="Introduction"></a>Introduction </span></h1>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a>When multiple users are working on the same solution then it is better to put the solution on a repository</span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;">like SVN (Subversion).</span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;">This helps the solution to be edited by multiple users and the latest solution can be downloaded by the users.</span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="Pre-requisite"></a>Pre-requisite</span></h1>
+    <p><span style="font-family:Calibri;"> Drop a mail to *GingerCoreTeam <a class="Hyperlink" href="mailto:GingerCoreTeam@int.amdocs.com">GingerCoreTeam@int.amdocs.com</a> giving the details of the </span><span style="font-family:Calibri;">solution name and the </span></p>
+    <p><span style="font-family:Calibri;"> name of the users that need access to it.</span></p>
+    <p><span style="font-family:Calibri;"> A mail should be received with the details of the login credentials.</span></p>
+    <p><span style="font-family:Calibri;"> Note: All users should use the same version of Ginger to take the benefits of Repositories.</span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="What_are_the_different_types_of_Repository?"></a>What are the different types of Repository?</span></h1>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">There are 2 types of repositories viz. SVN and GIT.</span></span></p>
+    <ul class="Square">
+      <li class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">SVN repository is used within the Amdocs network.</span></span></li>
+      <li class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">GIT repository is used in projects which have GIT services. This is used for an external network like the AT&amp;T project.</span></span></li>
+    </ul>
+    <p><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_download_a_solution?"></a>How to download a solution?</span><span style="font-family:Calibri;"></span></h1>
+    <p style="margin:0in 0in 8pt"><span style="font-size:16px;"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"> How to download the solution from SVN Repository</span></span></span></p>
+    <p style="margin:0in 0in 8pt"><span style="font-size:16px;"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"> Click on the Solution name drop-down and select the “Download Existing Solution” option.</span></span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 6" height="151.3" src="../../images/How to use Repository in Ginger_files/image2.png" width="402.8"/></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;"><span style="font-size:15px;"></span></span></p>
+    <p class="listparagraph" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> In the displayed window, enter the login credentials, the SVN URL and click on the “Download Selected Solution” </span></span></span></p>
+    <p class="listparagraph" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> button.</span></span></span></p>
+    <p class="margin-left-0-50in" style="margin-right:0in; margin-left:0in"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:16px;"><span style="font-family:&quot;Calibri&quot;,sans-serif"> Note: Ginger uses URL:- http://cmitechint1srv.corp.amdocs.com:81/svn/</span></span><span style="font-size:16.0pt"></span></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 8" height="364.0" src="../../images/How to use Repository in Ginger_files/image3.png" width="662.3"/></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;">  <span style="font-size:16px;"> </span></span></p>
+    <p style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> Once the login is successful then the “Connect and Search Repositories” button gets enabled.</span></span></span></p>
+    <p style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"></span></span></p>
+    <p class="listparagraph" style="margin-right:0in; margin-left:0in"> </p>
+    <p class="listparagraph" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> Click on the button.</span></span></span></p>
+    <p class="listparagraph" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"></span></span></p>
+    <p class="margin-left-0-25in" style="margin-right:0in; margin-left:0in"> </p>
+    <p class="margin-left-0-25in" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> A list of solutions is displayed to which the user has access.</span></span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 9" height="342.0" src="../../images/How to use Repository in Ginger_files/image4.png" width="696.0"/></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">The desired folder where you want to store the solution on your local PC can be given in the “Local Solutions Folder Path” </span>using the “Browse” button.</span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 11" height="88.7" src="../../images/How to use Repository in Ginger_files/image5.png" width="645.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">When there are multiple solutions displayed in the list, you can search your desired solution using the “Search” button.</span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 16" height="343.0" src="../../images/How to use Repository in Ginger_files/image6.png" width="699.7"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">The column “Exist Locally” helps to determine if the solution was already downloaded on your local PC. </span></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">If yes then it is displayed as “True” else “False” is displayed.</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 30" height="363.0" src="../../images/How to use Repository in Ginger_files/image7.png" width="694.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Select the desired solution and click on the “Download Selected Solution” button.</span></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">A message is displayed about the successful download. I also want to know if you want to open the</span></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Downloaded Solution.</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 192" height="387.7" src="../../images/How to use Repository in Ginger_files/image8.png" style="cursor: nwse-resize;" width="636.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">Click on Yes to open the solution.</span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 7" height="210.1" src="../../images/How to use Repository in Ginger_files/image9.png" width="659.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">How to download the solution from GIT Repository</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the Solution name drop-down and select the “Download Existing Solution” option.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 10" height="132.0" src="../../images/How to use Repository in Ginger_files/image10.png" width="351.5"/></span></p>
+    <p> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;"><span style="font-size:16px;">In the displayed window, select the GIT open in the Source Control type.</span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">enter the login credentials, the GIT URL.</span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Expand the Advanced Connection Configuration and click the “Configure Proxy” check box.</span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Click on the “Download Selected Solution” button.</span></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">Note: Ginger uses URL:- https://github.com</span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 1" height="95.0" src="../../images/How to use Repository in Ginger_files/image11.png" width="212.0"/></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 203" height="484.0" src="../../images/How to use Repository in Ginger_files/image12.png" width="720.9"/></span></p>
+    <p>  </p>
+    <p><span style="font-family:Calibri;">  </span><span>Once the login is successful then the “Connect and Search Repositories” button gets enabled.</span><span style="font-family:Calibri;"></span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"> Click on the button.</span></p>
+    <p class="margin-left-0-25in"> </p>
+    <p class="margin-left-0-25in"><span style="font-family:Calibri;"> A list of solutions is displayed to which the user has access.</span></p>
+    <p class="margin-left-0-25in"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 204" height="231.0" src="../../images/How to use Repository in Ginger_files/image13.png" width="663.1"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">The desired folder where you want to store the solution on your local PC can be given in the “Local Solutions Folder Path” using the “Browse” button.</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 198" height="88.7" src="../../images/How to use Repository in Ginger_files/image14.png" width="645.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">The column “Exist Locally” helps to determine if the solution was already downloaded on your local PC. If yes then it is displayed as “True” else “False” is displayed.</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 200" height="350.9" src="../../images/How to use Repository in Ginger_files/image15.png" width="670.9"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">Select the desired solution and click on the “Download Selected Solution” button.</span></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">A message is displayed about the successful download. I also want to know if you want to open the</span></span></p>
+    <p class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Downloaded Solution.</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 201" height="387.7" src="../../images/How to use Repository in Ginger_files/image16.png" width="636.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span><span style="font-size:15px;"><span style="font-family:Calibri;font-size:16px">Click on Yes to open the solution.</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"><img alt="Picture 12" height="192.6" src="../../images/How to use Repository in Ginger_files/image17.png" width="604.0"/></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"> </p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph"><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_Check-In_the_changes_made_in_the_solution_to_SVN?"></a>How to Check-In the changes made in the solution to SVN?</span></h1>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">There are 2 ways to check-in the changes made in the solution.</span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">Check-in on the Solution level and check-in on the individual components of the Solution.</span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;">Solution Level check-in:-</span></span></p>
+    <p class="ListParagraph margin-left-0-63in"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-63in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;">In the Business Flow tab, click on the ‘Source Control Operations’ button as shown below.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">Select the ‘Check-In Solution Changes’ option.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"><img alt="Picture 217" height="111.5" src="../../images/How to use Repository in Ginger_files/image18.png" width="687.0"/></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;"><span style="font-size:16px;">The new window presents a list of changes that need to be updated in the SVN.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
+    <p><span style="font-family:Calibri;"><span style="font-size:16px;"> Select All the changes or just the selected ones.</span></span></p>
+    <p><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
+    <p><span style="font-family:Calibri;"><span style="font-size:16px;"> Click on the “Check-In Selected Changes” button.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"><img alt="Picture 17" height="540.2" src="../../images/How to use Repository in Ginger_files/image19.png" width="673.7"/></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;font-size:16px">A warning message is displayed if you want to confirm the changes.</span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"><img alt="Picture 18" height="167.0" src="../../images/How to use Repository in Ginger_files/image20.png" width="483.9"/></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the Yes button to continue with the updates. This will update the SVN.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">  Component Level check-in:-</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">In the Business Flow tab, right-click on the Business Flow where the changes are made.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">Go to Source Control and select Check-In Changes.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"><img alt="Picture 212" height="90.6" src="../../images/How to use Repository in Ginger_files/image21.png" width="685.0"/></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"><img alt="Picture 213" height="328.8" src="../../images/How to use Repository in Ginger_files/image22.png" width="522.6"/></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-63in"><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-63in"><span style="font-size:16px;"><span style="font-family:Calibri;">We can Check-in changes on components like Agents and Reports under the Configurations tab as shown below.</span></span></p>
+    <p class="ListParagraph margin-left-0-63in"> </p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 195" height="319.4" src="../../images/How to use Repository in Ginger_files/image23.png" width="463.9"/></span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="ListParagraph margin-left-0-63in"><span style="font-size:15px;"><span style="font-family:Calibri;font-size:16px">From the Resources tab, we can Check-in changes on components like Shared Repository, Applications Models, Environments, Data Sources, Documents and Plugins by right-clicking on them as shown below.</span></span></p>
+    <p class="ListParagraph margin-left-0-63in"> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 199" height="19615" src="../../images/How to use Repository in Ginger_files/image24.png" width="44964"/></span></p>
+    <p> </p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_get_the_latest_solution_from_SVN?"></a>How to get the latest solution from SVN?</span></h1>
+    <p><span style="font-family:Calibri;">  <span style="font-size:16px;"> </span></span><span style="font-family:Calibri;"><span style="font-size:16px;">The latest updates of the solution can be fetched by clicking on the ‘Source Control Operations’ button as shown below. </span></span></p>
+    <p><span style="font-family:Calibri;"><span style="font-size:16px;"> Select the ‘Get Latest Solution Changes’ option.</span></span></p>
+    <p><span style="font-family:Calibri;"><span style="font-size:16px;"> Whatever changes are updated by other users and stored in the SVN will be downloaded.</span></span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 216" height="116.9" src="../../images/How to use Repository in Ginger_files/image25.png" width="652.0"/></span></p>
+    <p> </p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> A message is displayed once the download is successful giving the information the revision number.</span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 21" height="156.0" src="../../images/How to use Repository in Ginger_files/image26.png" width="381.0"/></span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> You can also get the updated changes from SVN only for a particular component.</span></p>
+    <p><span style="font-family:Calibri;"> Right-click on the component, Go to Source Control and click the “Get Latest Updates” option.</span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 14" height="358.0" src="../../images/How to use Repository in Ginger_files/image27.png" width="589.6"/></span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 208" height="353.9" src="../../images/How to use Repository in Ginger_files/image28.png" width="590.0"/></span></p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_Undo_changes_done_in_the_solution?"></a>How to Undo changes done in the solution?</span></h1>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">When changes are made in the solution and you do not want that changes to be saved in the SVN then you can Undo the changes.</span></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">This will take your Solution back to the latest version from the SVN. The changes made on the local PC will be lost.</span></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;">Right-click on the component whose changes you want to remove and select the “Undo Changes” option.</span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 209" height="364.2" src="../../images/How to use Repository in Ginger_files/image29.png" width="407.9"/></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;">A message of confirmation is displayed. After clicking the Yes button, the changes will not be available in the solution.</span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 24" height="167.0" src="../../images/How to use Repository in Ginger_files/image30.png" width="332.0"/></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_Resolve_Conflicts?"></a>How to Resolve Conflicts?</span></h1>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">When multiple users are working on the same solution at the same time then there are chances that conflict arises during the Check-in process.</span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">Ginger will display a message in such cases.</span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">There are 2 options to resolve these conflicts.</span></span></p>
+    <p class="Numbering27 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Keep Local Changes</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">In this option, only your changes will be saved in the SVN. The changes made by other users will not be uploaded to the SVN.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 218" height="132.1" src="../../images/How to use Repository in Ginger_files/image31.png" width="688.0"/></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="Numbering27 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Accept Server Changes</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">In this option, changes made by other users that are updated in the SVN will be downloaded. Changes made by you will be lost.</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 219" height="127.1" src="../../images/How to use Repository in Ginger_files/image32.png" width="662.0"/></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_get_repository_details?"></a>How to get repository details?</span></h1>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <span style="font-size:16px;"> In the Solution tab, click on the “Repository Details” button.</span></span></p>
+    <p class="ListParagraph margin-left-0-80in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> <img alt="Picture 220" height="107.0" src="../../images/How to use Repository in Ginger_files/image33.png" width="610.0"/></span></span></p>
+    <p><span style="font-size:16px;"></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> The details about the Solution stored in SVN are displayed.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> It gives the URL of the solution in SVN, the path of the solution in the local PC, Revision number and other</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> details.</span></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <img alt="Picture 28" height="326.1" src="../../images/How to use Repository in Ginger_files/image34.png" width="380.0"/></span></p>
+    <p> </p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_get_info_on_a_repository_of_a_Ginger_component?"></a>How to get info on a repository of a Ginger component?</span></h1>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">Right-click on the component. Go to Source Control and select the “Get Info” option.</span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 221" height="390.0" src="../../images/How to use Repository in Ginger_files/image35.png" width="421.6"/></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"> <span style="font-size:16px;">The details about the Component are displayed.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> It gives the path of the XML File in which the component is stored on the local PC.</span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> The revision number from the SVN is also displayed along with the Change Date &amp; Time.</span></span></p>
+    <p> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 31" height="409.9" src="../../images/How to use Repository in Ginger_files/image36.png" width="514.9"/></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;"><a id="How_to_use_the_GIT_repository?"></a>How to use the GIT repository?</span></h1>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-50in" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> </span></span></span><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> The usage is the same as the SVN as shown in the above points.</span></span></span></p>
+    <p class="margin-left-0-50in" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> The difference is in the login credentials as shown below.</span></span></span></p>
+    <p class="margin-left-0-50in" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"> Select GIT in the Source Control Type, enter the URL, user name and password as displayed below.</span></span></span></p>
+    <p class="margin-left-0-50in" style="margin-right:0in; margin-left:0in"><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 2" height="362.3" src="../../images/How to use Repository in Ginger_files/image37.png" width="617.0"/></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the ‘Connect And Search Repositories’ button. On successful login, the solutions will be displayed.</span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 3" height="373.0" src="../../images/How to use Repository in Ginger_files/image38.png" width="635.1"/></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><br/>
+        ‎</span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
+    <h1 class="Heading1"><span style="font-family:Calibri;">What is the different color indicate while using the Repository?</span></h1>
+    <p><span style="font-family:Calibri;"></span><span style="font-family:Calibri;"> <span style="font-size:16px;"> The Green plus color- indicates that the solution is downloaded from the repository.</span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> <img alt="Picture 205" height="68.0" src="../../images/How to use Repository in Ginger_files/image39.png" width="254.0"/></span></span></p>
+    <p><span style="font-size:16px;"></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;"> Grey color tick mark – indicates that the Business Flow is download from the repository</span></span></p>
+    <p><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"> <img alt="Picture 206" height="101.0" src="../../images/How to use Repository in Ginger_files/image40.png" width="232.0"/></span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span><span style="font-family:Calibri;"> The red color pen icon- indicates that the Business flow has changes in it which are not been uploaded to the </span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"> repository.</span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"> <img alt="Picture 207" height="53.0" src="../../images/How to use Repository in Ginger_files/image41.png" width="190.0"/></span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0-95in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"> </p>
+  </div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "6.0_1"
+  
+//]]></script>
+
+
+  <script src="../../../template/scripts/topicpage.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>
