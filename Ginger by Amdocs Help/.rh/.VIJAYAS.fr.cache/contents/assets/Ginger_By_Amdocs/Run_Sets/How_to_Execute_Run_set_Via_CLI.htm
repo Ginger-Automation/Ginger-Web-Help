@@ -2,8 +2,8 @@
   
                                
                             How to Execute Run Set Via CLI
-     
-     
+    
+    
     Contents
     Introduction
     How to Create Auto Run Set Configuration?
@@ -11,24 +11,24 @@
     Configurations Type Tab
     Execution Shortcut
     How to Trigger Execution via CLI?
-     
     
-      ‎ 
+    
+        ‎ 
     Introduction
      Auto Run Configuration is used when the Run set is required to run via command line for automatic execution of Ginger Run set as part of Automation needed or for CI/CD processes integration.
     How to Create Auto Run Set Configuration?
      Go to the Run tab of the solution
      Click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
                      
-     
+    
      The Wizard is opened.
                      
-     
-     
+    
+    
     General Options Tab
-     
+    
                       
-     
+    
     Download/ Update Solution from source control
     
     Note:- This option is disabled if the solution is not downloaded from the source control repository.
@@ -41,30 +41,30 @@
     It displays only the Ginger Run tab. The status of the Run set along with the Runners, Activities and Actions are displayed during the execution as shown below.
     It is recommended to run without UI for compatibility and performance reasons, for that please keep this option unchecked.
     
-     
+    
     Run Set Analyzer before execution
     
     This option is selected by default. It helps in finding any critical/high design issues in the Business Flow which might impact the execution. In such a case, the execution is not started until the issues are fixed by the user.
     When this option is unchecked, all the design issues are ignored, and execution starts without any checks.
-     
-     
+    
+    
     Configurations Type Tab
-     
+    
                      
-     
+    
     Config
     This option is used to create a config file which is used to execute a run set.
     It contains the details like the path of the solution, environment name to be used, the Analyzer to be run or not, the run set name and to show the Ginger window or not when execution is going on.
     
     The file name and the path can be edited by the user.
     The default path is the path of the RunsetShortCuts folder inside the solution.
-     
+    
     Dynamic
     The dynamic config file is supported in JSON and XML format, it is recommended to use the JSON format which supports much more flexible configurations.
            
-     
+    
           
-     
+    
     JSON Dynamic file supports 2 main modes:
     Existing Run Set execution configurations- User can specify how exactly an existing Run set will be executed by manipulating it:
     Runners execution configuration such as Parallel/Sequential, if to stop on failure or not, etc.
@@ -76,15 +76,15 @@
     On run time from CLI, Ginger will load the existing Run set, then will manipulate it according to the JSON configurations and then will execute the manipulated Run set.
     Changes are not been saved to the Run set and have been used only during execution.
     Note: JSON should include only the nodes of the items (Runners/Business Flows/etc.) which need to be modified on the Run set before execution starts.
-     
+    
     Sample existing Run set manipulation JSON:
-     
+    
     {
     "SolutionScmDetails": {
     "SCMType": "GIT",
     "SolutionRepositoryUrl": "https://github.com/Ginger-Automation/TDMTestSolution",
-    "User": "menikadosh1",
-    "Password": "XrqycklHMicLOWU2ZayaKg==",
+    "User": "me***h1",
+    "Password": "Xrq*****2ZayaKg==",
     "PasswordEncrypted": true,
     "UndoSolutionLocalChanges": false
     },
@@ -142,7 +142,7 @@
     "AttachmentReportAttachType": "Link",
     "CustomizedReportFolder": "\\\\ilrnaginger02\\GingerExecuterAgent\\Reports",
     "Name": "Send HTML Report Email",
-    "ID": "ca90b21a-aedb-455c-aafb-f2b3a7979d8d",
+    "ID": "ca90b21a-****-455c-****-f2b3a7979d8d",
     "Active": false,
     "Condition": "AlwaysRun",
     "RunAt": "ExecutionEnd"
@@ -150,7 +150,7 @@
     ]
     }
     }
-     
+    
     Virtual Run Set execution configurations- User can specify how exactly not existing Run set will be created virtually during run time, including:
     Adding any needed number of Runners needed
     Describe all Runners related configurations
@@ -161,15 +161,15 @@
     Run set Operations configurations (currently only Mail Report operation is supported)
     On run time from CLI, Ginger will virtually create the Run set as described in the JSON and then will execute it.
     The virtual Run set is not been saved to Ginger and has been used only during execution.
-     
+    
     Sample Virtual Run set JSON:
-     
+    
     {
     "SolutionScmDetails": {
     "SCMType": "GIT",
     "SolutionRepositoryUrl": "https://github.com/Ginger-Automation/TDMTestSolution.git",
-    "User": "menikadosh1",
-    "Password": "dfQhf/SpUPGl3qhpmneClUb71uDX6Ybq0hyMpeZ0CTzni2KSAvgfHNMggnvfNJeB",
+    "User": "me****sh1",
+    "Password": "dfQhf/SpUPG****DX6Yb****vfNJeB",
     "PasswordEncrypted": true
     },
     "Runset": {
@@ -230,14 +230,14 @@
     "MailSettings": {
     "EmailMethod": "SMTP",
     "SmtpDetails": {
-    "Server": "ilmail.corp.amdocs.com",
+    "Server": "****.amdocs.com",
     "Port": "25",
     "EnableSSL": false,
-    "User": "ntnet\\gingergen",
+    "User": "ntnet\\***id**",
     "Password": "kd7NrCoIP5r4MTNawlQNw2NTwRMFZRueE8k64+WCNxI="
     },
-    "MailFrom": "gingergen@amdocs.com",
-    "MailTo": "menik@amdocs.com",
+    "MailFrom": "******@amdocs.com",
+    "MailTo": "*****@amdocs.com",
     "Subject": "eTDM Detailed Execution Report for 'BP_Create > BP_ModifyPackage > BP_ModifyName'"
     },
     "Comments": "Executed via eTDM by menikadosh1",
@@ -253,46 +253,46 @@
     ]
     }
     }
-     
-     
+    
+    
     Script
     The script file can be used to trigger Ginger with very basic commands supported.
-     
     
-     
-     
+    
+    
+    
     Arguments
     This option does not use any file for the execution configuration but only CLI arguments.
-     
+    
                  
-     
-     
+    
+    
     Execution Shortcut
-     
+    
     Create Auto Run Shortcut
     This option is by default selected to Yes.
     If a user does not want to create the run set shortcut but wants to have the Config file, then
     select this option to No.
-     
+    
     Ginger.exe (Windows only)
     This option is selected by default. It is used when the run set is to be run on Windows PC and Ginger is already installed on it.
     The Path of the Ginger.exe is given in the ‘Executer Path’. Generally, it's populated automatically when the path is in Program Files.
-     
+    
     GingerConsole.dll (Windows/Linux/Mac in case solution is compatible)
     This option is used when a run set is to be run on a Linux/ Mac machine.
     This DLL file can also be used to run on Windows.
     When using in Linux/Mac, the actions in the run set should be compatible with Linux.
     The Ginger.dll should also be available on the machine.
-     
+    
     The shortcut can be created on the Desktop or in the desired Folder by clicking the Folder option.
     The Browse button is displayed to select the folder to save in.
-     
+    
     Shortcut Content Preview
     This shows the full execution command which is stored in the Shortcut in case needed to be used for direct execution on the commands console or be configured in CI/CD processes.
-     
+    
     Eg. 
-     
-     
+    
+    
     How to Trigger Execution via CLI?
     Once autorun configuration file was created (in one of the above formats Config/JSON/XML/Script, note- in case choose ‘Arguments’ option so config file not needed) you can execute Ginger either by simple execute the shortcut file created by the Wizard or by copying the full command which is in below format:
     Ginger executer path on the machine
@@ -302,9 +302,9 @@
     "C:\Program Files (x86)\Amdocs\Ginger by amdocs\Ginger.exe" dynamic --filename "C:\Ginger Solutions\Cloud\TDMTestSolution\Documents\RunSetShortCuts\TDM-Demo-BP_Create.Ginger.AutoRunConfigs.json"
     
     Open CMD console paste the command and click Enter, you will see that Ginger execution started and aal execution details appear on Console logs:
+    
      
-     
-     
+    
       
   
 

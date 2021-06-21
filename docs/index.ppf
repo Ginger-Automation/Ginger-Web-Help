@@ -142,6 +142,58 @@
     </topic>
     
     <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Create_New_or_Open_Solution_1.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\What_is_Action.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Action_Generic_Configurations\Action_Flow_Control.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Action_Generic_Configurations\Action_Output_Simulation.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Action_Generic_Configurations\Action_Output_Values.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Action_Generic_Configurations\Action_Retry_Mechanism.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Browser_Action.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Goto_URL_Action.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Java_Element_Action_3.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Java_Execution_Action_User_Guide_3.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Screenshot_Action_3.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Set_Text_MainFrame_3.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Send_Key_to_MainFrame_3.htm
+    </topic>
+    
+    <topic>
       assets\Ginger_By_Amdocs\Run_Sets\How_to_Create_a_Run_Set.htm
     </topic>
     
