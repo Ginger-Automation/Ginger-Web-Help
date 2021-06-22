@@ -1,9 +1,104 @@
 {
   "recent-files::internal:document": [{
+    "title": "Generate_File_from_Template_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Generate_File_from_Template_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 11:10 PM"
+  }, {
+    "title": "File_Transfer_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Transfer_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 11:04 PM"
+  }, {
+    "title": "File_Operations_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Operations_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 10:24 PM"
+  }, {
+    "title": "Excel_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Excel_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 10:15 PM"
+  }, {
+    "title": "Email_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Email_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 9:49 PM"
+  }, {
+    "title": "Database_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 8:38 PM"
+  }, {
+    "title": "Condition_Validation_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Condition_Validation_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 8:26 PM"
+  }, {
+    "title": "Clear_All_the_Variables_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Clear_All_the_Variables_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 8:14 PM"
+  }, {
+    "title": "04-_What_is_an_Error_Handler_Activity",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:35 PM"
+  }, {
+    "title": "03-_What_is_an_Activity",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:34 PM"
+  }, {
+    "title": "01-_What_is_a_Business_Flow",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/01-_What_is_a_Business_Flow.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:33 PM"
+  }, {
+    "title": "02-_What_is_Activities_Groups",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/02-_What_is_Activities_Groups.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:33 PM"
+  }, {
+    "title": "What_is_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/What_is_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:33 PM"
+  }, {
+    "title": "Window_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Window_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:25 PM"
+  }, {
+    "title": "Web_API_Action_-SoapUI-Rest",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Web_API_Action_-SoapUI-Rest.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:02 PM"
+  }, {
+    "title": "Smart_Sync_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Smart_Sync_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:02 PM"
+  }, {
+    "title": "Table_Element_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Table_Element_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:01 PM"
+  }, {
+    "title": "Switch_Window_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Switch_Window_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:01 PM"
+  }, {
     "title": "Set_Text_MainFrame_3",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Set_Text_MainFrame_3.htm",
     "pinned": false,
-    "time": "Jun 21, 11:32 PM"
+    "time": "Jun 22, 6:01 PM"
+  }, {
+    "title": "UIElement_4",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/UIElement_4.htm",
+    "pinned": false,
+    "time": "Jun 22, 5:14 PM"
   }, {
     "title": "Send_Key_to_MainFrame_3",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Send_Key_to_MainFrame_3.htm",
@@ -14,101 +109,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Java_Execution_Action_User_Guide_3.htm",
     "pinned": false,
     "time": "Jun 21, 11:21 PM"
-  }, {
-    "title": "Screenshot_Action_3",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Screenshot_Action_3.htm",
-    "pinned": false,
-    "time": "Jun 21, 11:11 PM"
-  }, {
-    "title": "Java_Element_Action_3",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Java_Element_Action_3.htm",
-    "pinned": false,
-    "time": "Jun 21, 10:38 PM"
-  }, {
-    "title": "Goto_URL_Action",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Goto_URL_Action.htm",
-    "pinned": false,
-    "time": "Jun 21, 10:29 PM"
-  }, {
-    "title": "Browser_Action",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Browser_Action.htm",
-    "pinned": false,
-    "time": "Jun 21, 10:29 PM"
-  }, {
-    "title": "How_to_Execute_Run_set_Via_CLI",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm",
-    "pinned": false,
-    "time": "Jun 21, 7:09 PM"
-  }, {
-    "title": "Ginger_Run_Tab_Overview",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Ginger_Run_Tab_Overview.htm",
-    "pinned": false,
-    "time": "Jun 21, 6:51 PM"
-  }, {
-    "title": "How_to_Create_a_Run_Set",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Create_a_Run_Set.htm",
-    "pinned": false,
-    "time": "Jun 21, 6:42 PM"
-  }, {
-    "title": "Topic References",
-    "path": "Topic References.report",
-    "pinned": false,
-    "time": "Jun 21, 6:41 PM"
-  }, {
-    "title": "GingerDocStyle",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/css/GingerDocStyle.css",
-    "pinned": false,
-    "time": "Jun 21, 6:38 PM"
-  }, {
-    "title": "Action_Retry_Mechanism",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Action_Generic_Configurations/Action_Retry_Mechanism.htm",
-    "pinned": false,
-    "time": "Jun 21, 6:20 PM"
-  }, {
-    "title": "Action_Output_Values",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Action_Generic_Configurations/Action_Output_Values.htm",
-    "pinned": false,
-    "time": "Jun 21, 6:00 PM"
-  }, {
-    "title": "Action_Output_Simulation",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Action_Generic_Configurations/Action_Output_Simulation.htm",
-    "pinned": false,
-    "time": "Jun 21, 5:59 PM"
-  }, {
-    "title": "Action_Flow_Control",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Action_Generic_Configurations/Action_Flow_Control.htm",
-    "pinned": false,
-    "time": "Jun 21, 5:59 PM"
-  }, {
-    "title": "What_is_Action",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/What_is_Action.htm",
-    "pinned": false,
-    "time": "Jun 21, 3:33 PM"
-  }, {
-    "title": "Create_New_or_Open_Solution_1",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Create_New_or_Open_Solution_1.htm",
-    "pinned": false,
-    "time": "Jun 21, 3:16 PM"
-  }, {
-    "title": "Ginger_End_to_End_Flow-_Do_it_Yourself",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
-    "pinned": false,
-    "time": "Jun 19, 12:16 AM"
-  }, {
-    "title": "04-_What_is_an_Error_Handler_Activity",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
-    "pinned": false,
-    "time": "Jun 18, 11:28 PM"
-  }, {
-    "title": "03-_What_is_an_Activity",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
-    "pinned": false,
-    "time": "Jun 18, 11:16 PM"
-  }, {
-    "title": "02-_What_is_Activities_Groups",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/02-_What_is_Activities_Groups.htm",
-    "pinned": false,
-    "time": "Jun 18, 11:03 PM"
   }],
   "generate.outputs": {
     "C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/Learn/publish/presets/eBook.preset": {
@@ -144,11 +144,81 @@
     "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/RoboHelp/docs/index.html",
-      "time": "2021-06-21T23:47:38+05:30",
+      "time": "2021-06-22T23:17:05+05:30",
       "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Generate_File_from_Template_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Generate_File_from_Template_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 11:14 PM"
+  }, {
+    "title": "File_Transfer_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Transfer_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 11:04 PM"
+  }, {
+    "title": "File_Operations_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Operations_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 10:48 PM"
+  }, {
+    "title": "Excel_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Excel_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 10:21 PM"
+  }, {
+    "title": "Email_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Email_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 9:43 PM"
+  }, {
+    "title": "Database_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 9:29 PM"
+  }, {
+    "title": "Condition_Validation_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Condition_Validation_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 8:37 PM"
+  }, {
+    "title": "Clear_All_the_Variables_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Clear_All_the_Variables_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 8:37 PM"
+  }, {
+    "title": "Window_Action",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Window_Action.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:26 PM"
+  }, {
+    "title": "Web_API_Action_-SoapUI-Rest",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Web_API_Action_-SoapUI-Rest.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:01 PM"
+  }, {
+    "title": "UIElement_4",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/UIElement_4.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:00 PM"
+  }, {
+    "title": "Table_Element_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Table_Element_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 6:00 PM"
+  }, {
+    "title": "Switch_Window_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Switch_Window_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 5:59 PM"
+  }, {
+    "title": "Smart_Sync_Action_3",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Smart_Sync_Action_3.htm",
+    "pinned": false,
+    "time": "Jun 22, 2:55 PM"
+  }, {
     "title": "Send_Key_to_MainFrame_3",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Send_Key_to_MainFrame_3.htm",
     "pinned": false,
@@ -203,76 +273,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Action_Generic_Configurations/Action_Output_Simulation.htm",
     "pinned": false,
     "time": "Jun 21, 5:18 PM"
-  }, {
-    "title": "Action_Flow_Control",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Action_Generic_Configurations/Action_Flow_Control.htm",
-    "pinned": false,
-    "time": "Jun 21, 4:35 PM"
-  }, {
-    "title": "What_is_Action",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/What_is_Action.htm",
-    "pinned": false,
-    "time": "Jun 21, 3:33 PM"
-  }, {
-    "title": "Create_New_or_Open_Solution_1",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Create_New_or_Open_Solution_1.htm",
-    "pinned": false,
-    "time": "Jun 21, 3:18 PM"
-  }, {
-    "title": "04-_What_is_an_Error_Handler_Activity",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
-    "pinned": false,
-    "time": "Jun 18, 11:51 PM"
-  }, {
-    "title": "03-_What_is_an_Activity",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
-    "pinned": false,
-    "time": "Jun 18, 11:15 PM"
-  }, {
-    "title": "02-_What_is_Activities_Groups",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/02-_What_is_Activities_Groups.htm",
-    "pinned": false,
-    "time": "Jun 18, 11:07 PM"
-  }, {
-    "title": "01-_What_is_a_Business_Flow",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/01-_What_is_a_Business_Flow.htm",
-    "pinned": false,
-    "time": "Jun 18, 10:57 PM"
-  }, {
-    "title": "How_to_use_Repository_in_Ginger",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm",
-    "pinned": false,
-    "time": "Jun 18, 10:29 PM"
-  }, {
-    "title": "Runset_Report",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Runset_Report.htm",
-    "pinned": false,
-    "time": "Jun 18, 9:34 PM"
-  }, {
-    "title": "Runset_Extra_Functionalities",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Runset_Extra_Functionalities.htm",
-    "pinned": false,
-    "time": "Jun 18, 8:55 PM"
-  }, {
-    "title": "How_to_Execute_Run_set_Via_CLI",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm",
-    "pinned": false,
-    "time": "Jun 18, 7:56 PM"
-  }, {
-    "title": "How_to_Execute_a_Run_set",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_a_Run_set.htm",
-    "pinned": false,
-    "time": "Jun 18, 5:54 PM"
-  }, {
-    "title": "How_to_Create_a_Run_Set",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Create_a_Run_Set.htm",
-    "pinned": false,
-    "time": "Jun 18, 3:41 PM"
-  }, {
-    "title": "Main_Ginger_Menu",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Main_Ginger_Menu.htm",
-    "pinned": false,
-    "time": "Jun 17, 11:37 PM"
   }],
   "recent-files::external:hyperlink": [{
     "title": "Run_tab",
