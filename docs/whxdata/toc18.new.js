@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"How to use Source Control in Ginger","type":"item","tilePath":"","description":"","url":"assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

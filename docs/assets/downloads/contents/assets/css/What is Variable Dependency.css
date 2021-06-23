@@ -1,0 +1,105 @@
+h1.Numbering15 {
+    counter-reset: Numbering212;
+    margin-left: 0.69in;
+    --autonumber: autonumber;
+}
+h1.Numbering15:before {
+    counter-increment: Numbering211;
+    content: counter(Numbering211,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.44in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+a.Hyperlink {
+    color: #0000FF;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering47 {
+    counter-reset: Numbering12;
+    margin-left: 1.19in;
+    --autonumber: autonumber;
+}
+p.Numbering47:before {
+    counter-increment: Numbering11;
+    content: counter(Numbering11,lower-alpha)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.94in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering48 {
+    counter-reset: Numbering282;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering48:before {
+    counter-increment: Numbering281;
+    content: counter(Numbering281,lower-alpha)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOC2 {
+    margin-left: 0.15in;
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering211 Numbering212 Numbering312 Numbering11 Numbering281 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-06in {
+margin-left:0.06in;
+}
+.margin-left-0-75in {
+margin-left:0.75in;
+}
+.margin-left-1-00in {
+margin-left:1.00in;
+}
+.margin-left-1-19in {
+margin-left:1.19in;
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent-0-25in {
+text-indent:0.25in;
+}

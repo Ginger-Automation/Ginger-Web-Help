@@ -87,7 +87,28 @@
         <page navtitle="File Operations Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Operations_Action.htm" format="html" processing-role="normal"></page>
         <page navtitle="  File Transfer Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Transfer_Action.htm" format="html" processing-role="normal"></page>
         <page navtitle="Generate File from Template Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Generate_File_from_Template_Action_3.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Image Search and Click on screen" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Image_Search_and_Click_on_screen_3.htm" format="html" processing-role="normal"></page>
+        <page navtitle=" Java Execution Action User Guide" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Java_Execution_Action_3.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Script Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Script_Action_2.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Send Keys Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Send_Keys_Action_4.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Set Variable Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Set_Variable_Action_3.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Text File Operations" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Text_File_Operations_3.htm" format="html" processing-role="normal"></page>
+        <page navtitle=" XML/JSON Tag Validation Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Tag_Validation_Action_3.htm" format="html" processing-role="normal"></page>
+        <page navtitle="XML/JSON Processing Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Processing_Action.htm" format="html" processing-role="normal"></page>
       </book>
+      <page navtitle="Automatic Actions Convertor" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/05-_Automatic_Actions_Convertor.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Variables" format="html" processing-role="normal">
+      <page navtitle="What is Variable" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/What_is_Variable.htm" format="html" processing-role="normal"></page>
+      <page navtitle="What is Variable Dependency" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/What_is_Variable_Dependency.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Automate" format="html" processing-role="normal">
+      <page navtitle="How to Automate Power Builder Widgets" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Automate_Power_Builder_Widgets.htm" format="html" processing-role="normal"></page>
+      <page navtitle="How to Automate Mobile Application" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Automate_Mobile_Application.htm" format="html" processing-role="normal"></page>
+      <page navtitle="How to use Unix Automation in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Automate_Unix_application_in_Ginger.htm" format="html" processing-role="normal"></page>
+      <page navtitle="How to Setup Ginger Setup for CRM-OMS" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Setup_Ginger_for_CRM-_OMS_2.htm" format="html" processing-role="normal"></page>
+      <page navtitle=" How to use Automate Mainframe 3270 in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Automate_Mainframe_3270_in_Ginger.htm" format="html" processing-role="normal"></page>
+      <page navtitle="How to use Java Driver &amp; Widgets in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Java_Driver_and_Widgets_in_Ginger.htm" format="html" processing-role="normal"></page>
     </book>
   </book>
   <book navtitle="Run Sets" format="html" processing-role="normal">
