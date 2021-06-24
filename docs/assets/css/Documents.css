@@ -1,0 +1,17 @@
+.RH-LAYOUT-CENTERPANEL-topic-box p.Title, .RH-LAYOUT-FOOTER-container p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box {
+    font-family: 'Times New Roman', 'serif';
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-0-50in, .RH-LAYOUT-FOOTER-container .margin-left-0-50in {
+margin-left:0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+position:relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+}
