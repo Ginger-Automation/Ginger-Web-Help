@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"How to Use BDD (Gherkin) with Ginger","type":"item","tilePath":"","description":"","url":"assets/Ginger_By_Amdocs/Extensions/How_to_Use_BDD_(Gherkin)_with_Ginger.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

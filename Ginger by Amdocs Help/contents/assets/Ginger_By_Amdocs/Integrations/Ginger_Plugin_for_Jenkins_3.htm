@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger Plugin for Jenkins</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/Ginger Plugin for Jenkins.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p> </p>
+    <p><span style="font-weight:bold;font-size:32px;color:#302E45"> <span style="font-family:Calibri;"> Ginger Plugin for Jenkins</span></span></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="TOCHeading"><strong><span style="font-family:Calibri;">Contents</span></strong></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="Ginger_Plugin_for_Jenkins_3.htm">Description</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="Ginger_Plugin_for_Jenkins_3.htm">Pre Requisites</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#How_to_use_the_Ginger_Plugin">How to use the Ginger Plugin</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Install_Ginger_Plugin">Install Ginger Plugin</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Set_Ginger_Execution_using_Ginger_Plugin">Set Ginger Execution using Ginger Plugin</a></span></span></li>
+    </ul>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><a id="_Description"></a><a id=" DescriptionThe Ginger plugin was created for allowing Ginger users to schedule Ginger executions using Jenkins with ease, including advanced capabilities like automatic updates from SVN.Ginger Plugin offers:Selecting which Solution Run Set &amp; Environment to use from drop listAutomatic update of the Solution to execute from SVN automatically prior to executionExecution of the configured Run set on schedule timePre RequisitesPlugin Prerequisites are:Jenkins requires Java7 or above to function. Java8 is recommended.Jenkins Server version 1.606 or aboveJenkins Slave installed on the machine hosting Ginger installation (machine also need to be able to access SVN server in which the Ginger Solution exist) Jenkins projects creation and execution knowledgeGinger Solution which:Configured on Ginger SVN Data SourceIncludes Run Set/s ready to be executed Ginger Version (Beta 2.5.7 or above) on Slave machine(For Ginger Plug in V1.5 or above)How to use the Ginger PluginInstall Ginger PluginPlease follow below steps for installing the Ginger Plugin:Login to Jenkins Go to: Manage Jenkins &gt; Manage PluginsClick on “Advance configuration” tabIn that page there is an option to upload a plugin browse and select the Ginger Plugin file “gingerPlugin.hpi”Click on “Upload”The plugin now supposed to be installed and ready to be used.    Set Ginger Execution using Ginger PluginUse Ginger Plugin in Your ProjectFollow below steps to use the Ginger plugin in your new/existing Jenkins project:Open the Project pageClick on “Configure”Go to “Build” section configurationsClick on “Add Build Step” and choose “Configure Ginger execution parameters”  Configure Ginger Plugin ParametersPlease set below details in the plugin configurations:Set below “Source Control (SVN) Configurations” detailsParameter NameExplanationSample ValueSource Control TypeType of source ControlSVN/GITURLThe URL of Source Control server which host the Ginger Solution to executehttp://cmitechint1srv.corp.amdocs.com:81/svn/UserSource Control user name PasswordSource Control password Proxy ServerRequired for githib.com onlygenproxy.amdocs.comProxy PortRequired for githib.com only8080Click on “Test Connection”Set below “Test Properties” detailsParameter NameExplanationSample ValueSolution NameGinger Solution name to execute as appear in SVN repository RunSet NameThe Ginger Run Set to execute (must be exist in the Solution) For selecting from drop list of optional RunSets- click on “Get Solution Details” button and type “.” In the text box Environment NameThe Ginger environment to use for execution (must be exist in the Solution) For selecting from drop list of optional Environments- click on “Get Solution Details” button and type “.” In the text box  Set below “Ginger Execution Definitions” details:Parameter NameExplanationSample ValueSolution Full PathThe full path on the slave machine to place the Ginger Solution before the executionC:\GingerSolutionsGinger Executable Full PathThe full path to “Ginger.exe” on the slave machineC:\Program Files (x86)\Amdocs\Amdocs BEAT Ginger Automation\Ginger.exe Config Example For GIT:Config Example For SVN:  "></a><br />
+      ‎</p>
+    <h1>Description</h1>
+    <p>     <span style="font-size:16px;">       The Ginger plugin was created for allowing Ginger users to schedule Ginger executions using Jenkins with ease, including advanced capabilities like             </span></p>
+    <p><span style="font-size:16px;">             automatic updates from SVN.</span></p>
+    <p><span style="font-size:16px;">      Ginger Plugin offers:</span></p>
+    <p class="Numbering4 ListParagraph"><span style="font-size:16px;">Selecting which Solution Run Set &amp; Environment to use from drop list</span></p>
+    <p class="Numbering4 ListParagraph"><span style="font-size:16px;">Automatic update of the Solution to execute from SVN automatically prior to execution</span></p>
+    <p class="Numbering4 ListParagraph"><span style="font-size:16px;">Execution of the configured Run set on schedule time</span></p>
+    <h1> </h1>
+    <h1><a id="_Pre_Requisites"></a><a id="Pre_Requisites"></a>Pre Requisites</h1>
+    <p><span style="font-size:16px;">Plugin Prerequisites are:</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Jenkins requires Java7 or above to function. Java8 is recommended.</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Jenkins Server version 1.606 or above</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Jenkins Slave installed on the machine hosting Ginger installation (machine also need to be able to access SVN server in which the Ginger Solution exist)</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Jenkins projects creation and execution knowledge</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Ginger Solution which:</span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2"><span style="font-size:16px;">Configured on Ginger SVN Data Source</span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2"><span style="font-size:16px;">Includes Run Set/s ready to be executed</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Ginger Version (Beta 2.5.7 or above) on Slave machine(For Ginger Plug in V1.5 or above)</span></p>
+    <h1> </h1>
+    <h1><a id="_How_to_use"></a><a id="How_to_use_the_Ginger_Plugin"></a>How to use the Ginger Plugin</h1>
+    <h2><a id="Install_Ginger_Plugin"></a>Install Ginger Plugin</h2>
+    <p>  <span style="font-size:16px;">     Please follow below steps for installing the Ginger Plugin:</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Login to Jenkins</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Go to: Manage Jenkins &gt; Manage Plugins</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Click on “Advance configuration” tab</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">In that page there is an option to upload a plugin browse and select the Ginger Plugin file “gingerPlugin.hpi”</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Click on “Upload”</span></p>
+    <p><span style="font-size:16px;">       The plugin now supposed to be installed and ready to be used.</span></p>
+    <p> </p>
+    <p>              <img alt="Picture 3" height="478" src="../../images/Ginger Plugin for Jenkins_files/image1.png" width="796" /></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <h2><a id="Set_Ginger_Execution_using_Ginger_Plugin"></a>Set Ginger Execution using Ginger Plugin</h2>
+    <h3>       Use Ginger Plugin in Your Project</h3>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Follow below steps to use the Ginger plugin in your new/existing Jenkins project:</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Open the Project page</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Click on “Configure”</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Go to “Build” section configurations</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Click on “Add Build Step” and choose “Configure Ginger execution parameters”</span></p>
+    <p class="ListParagraph margin-left-1-00in"> </p>
+    <p class="margin-left-0-50in">         <img alt="Picture 4" height="514" src="../../images/Ginger Plugin for Jenkins_files/image2.png" width="758" /></p>
+    <p class="margin-left-0-50in"> </p>
+    <h3>Configure Ginger Plugin Parameters</h3>
+    <p>           <span style="font-size:16px;">  Please set below details in the plugin configurations:</span></p>
+    <p class="Numbering13 ListParagraph"><span style="font-size:16px;">Set below “Source Control (SVN) Configurations” details</span></p>
+    <div align="center">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:143.66666666666666666666666667px" />
+          <col style="width:216px" />
+          <col style="width:179.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Parameter Name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Explanation</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Sample Value</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Source Control Type</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Type of source Control</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">SVN/GIT</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">URL</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">The URL of Source Control server which host the Ginger Solution to execute</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">http://cmitechint1srv.corp.amdocs.com:81/svn/</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">User</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Source Control user name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Password</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Source Control password</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Proxy Server</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Required for githib.com only</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">genproxy.amdocs.com</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Proxy Port</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Required for githib.com only</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">8080</span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering13 ListParagraph"><span style="font-size:16px;">Click on “Test Connection”</span></p>
+    <p class="Numbering13 ListParagraph"><span style="font-size:16px;">Set below “Test Properties” details</span></p>
+    <div align="center">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:143.66666666666666666666666667px" />
+          <col style="width:216px" />
+          <col style="width:179.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Parameter Name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Explanation</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Sample Value</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Solution Name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Ginger Solution name to execute as appear in SVN repository</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">RunSet Name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">The Ginger Run Set to execute (must be exist in the Solution)</span></p>
+              <p><span style="font-size:16px;"></span></p>
+              <p><span style="font-size:16px;">For selecting from drop list of optional RunSets- click on “Get Solution Details” button and type “.” In the text box</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Environment Name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">The Ginger environment to use for execution (must be exist in the Solution)</span></p>
+              <p><span style="font-size:16px;"></span></p>
+              <p><span style="font-size:16px;">For selecting from drop list of optional Environments- click on “Get Solution Details” button and type “.” In the text box</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;"></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering13 ListParagraph"><span style="font-size:16px;">Set below “Ginger Execution Definitions” details:</span></p>
+    <div align="center">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:143.66666666666666666666666667px" />
+          <col style="width:216px" />
+          <col style="width:179.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Parameter Name</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Explanation</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">Sample Value</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Solution Full Path</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">The full path on the slave machine to place the Ginger Solution before the execution</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">C:\GingerSolutions</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="font-size:16px;">Ginger Executable Full Path</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">The full path to “Ginger.exe” on the slave machine</span></p>
+            </td>
+            <td>
+              <p><span style="font-size:16px;">C:\Program Files (x86)\Amdocs\Amdocs BEAT Ginger Automation\Ginger.exe</span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="margin-left-0-50in"> </p>
+    <p>                 Config Example For GIT:</p>
+    <p>               <img alt="Picture 2" height="516" src="../../images/Ginger Plugin for Jenkins_files/image3.png" width="835" /></p>
+    <p> </p>
+    <p>              <span style="font-size:16px;">Config Example For SVN:</span></p>
+    <p>               <img alt="Picture 1" height="483" src="../../images/Ginger Plugin for Jenkins_files/image4.png" width="832" /></p>
+    <p> </p>
+    <p> </p>
+  </div>
+</body>
+</html>

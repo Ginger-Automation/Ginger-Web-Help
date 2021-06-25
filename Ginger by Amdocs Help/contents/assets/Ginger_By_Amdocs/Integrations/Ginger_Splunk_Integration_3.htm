@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger - Splunk Integration</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/Ginger Splunk Integration.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p> </p>
+    <p> </p>
+    <p><span style="color:#302e45;"><span style="font-weight:bold;"><span style="font-size:32px;"> <span style="font-family:Calibri;"> Ginger - Splunk Integration</span></span></span></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="TOCHeading"><span style="font-family:Calibri;"><strong>Contents</strong></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="Ginger_Splunk_Integration_3.htm">Description</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="Ginger_Splunk_Integration_3.htm">Pre Requisites</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#How_to_use_the_Ginger_">How to use the Ginger Splunk Integration</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Ginge">Ginger Source Field Configuration</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Ginger_">Ginger Runset operation Configuration</a></span></span></li>
+    </ul>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><a id="_Description"></a><a id=" DescriptionSplunk is the tool to monitor different infrastructure performances, troubleshoot issues, create dashboards, create reports and alerts easily. It is a complete tool for managing any system with all the logs being stored dynamically. Splunk can generate a variety of reports like graphs, pie charts, bar charts, etc. Ginger has the capability of running multiple flows and generating detail reports although by integrating Ginger with Splunk, we can expand the capabilities of Ginger to generate variety of report by sending Execution JSON Data to Splunk. Pre RequisitesPrerequisites are:Splunk API details like endpoint url, authorization, body etc.Ginger Version (Beta 3.7.1 or above)How to use the Ginger Splunk IntegrationGinger Source Field ConfigurationPlease follow below steps for field configuration:Go to: Configuration → Reports → Execution Logger Configurations.Select Data Source option as LiteDBGo to: Configurations → Reports → Reports TemplatesAdd New Template or select existing templateUnder Execution JSON Data select the fields configuration under each category and save the changes.    Ginger Runset Operation ConfigurationUse Ginger Runset operation for sending data to Splunk          Follow below steps to use ‘Send Execution JSON Data To External Source’ runset operation:Go to: RunsetClick on “Operations”Click on “Add Send Execution JSON Data To External Source Operation” Configure Ginger Runset operation     Please set below details in the runset operation configurations:Set below “Send Execution JSON Data To External Source Configurations” details Parameter NameExplanationSample ValueRun atWhen this operation should run Execution EndConditionCondition for running this operationAlways runSelect Report TemplateSelect from Report templates designed under report tabDefaultEnd Point URLApi Endpoint URlhttps://host:8088/services/collectorRequest HeadersRequired headers for requestAuthorizationRequest BodyRequired body for request in List view or JSON view{  &quot;time&quot;: {CS Exp=DateTimeOffset.UtcNow.ToUnixTimeSeconds()},  &quot;source&quot;: &quot;Ginger_Automation_Report&quot;,  &quot;event&quot;: {ExecutionJsonData}} Send Execution JSON Data To External Source Configurations Example: "></a><br />
+      ‎</p>
+    <h1><span style="font-family:Calibri;">Description</span></h1>
+    <p class="NormalWeb"><span style="font-family:Calibri;"><span style="font-size:16px;"> Splunk is the tool to monitor different infrastructure performances, troubleshoot issues, create dashboards, create reports and alerts easily. </span></span></p>
+    <p class="NormalWeb"><span style="font-family:Calibri;"><span style="font-size:16px;"> It is a complete tool for managing any system with all the logs being stored dynamically. Splunk can generate a variety of reports like graphs, </span></span><span style="font-family:Calibri;"><span style="font-size:16px;"> </span></span></p>
+    <p class="NormalWeb"><span style="font-family:Calibri;"><span style="font-size:16px;"> pie charts, bar charts, etc. </span></span></p>
+    <p class="NormalWeb"><span style="font-family:Calibri;"><span style="font-size:16px;">                    Ginger has the capability of running multiple flows and generating detail reports although by integrating Ginger with Splunk, we can expand        </span></span><span style="font-family:Calibri;"><span style="font-size:16px;">                   the capabilities of Ginger to generate variety of report by sending Execution JSON Data to Splunk. </span></span></p>
+    <h1> </h1>
+    <h1><a id="_Pre_Requisites"></a><a id="Pre_Requisites"></a>Pre Requisites</h1>
+    <p><span style="font-size:16px;">Prerequisites are:</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Splunk API details like endpoint url, authorization, body etc.</span></p>
+    <p class="Numbering5 ListParagraph"><span style="font-size:16px;">Ginger Version (Beta 3.7.1 or above)</span></p>
+    <h1> </h1>
+    <h1><a id="_How_to_use"></a><a id="How_to_use_the_Ginger_"></a>How to use the Ginger Splunk Integration</h1>
+    <h2><a id="Ginge"></a>Ginger Source Field Configuration</h2>
+    <p><span style="font-size:16px;">Please follow below steps for field configuration:</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Go to: Configuration → Reports → Execution Logger Configurations.</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Select Data Source option as LiteDB</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Go to: Configurations → Reports → Reports Templates</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Add New Template or select existing template</span></p>
+    <p class="Numbering9 ListParagraph"><span style="font-size:16px;">Under Execution JSON Data select the fields configuration under each category and save the changes.</span></p>
+    <p> </p>
+    <p class="margin-left-0-25in">       <img alt="Picture 5" height="444" src="../../images/Ginger Splunk Integration_files/image1.png" width="717" /></p>
+    <p class="margin-left-0-25in"> </p>
+    <p class="margin-left-0-25in">     <img alt="Picture 6" height="670" src="../../images/Ginger Splunk Integration_files/image2.png" width="733" /></p>
+    <p> </p>
+    <p> </p>
+    <h2><a id="Ginger_"></a>Ginger Runset Operation Configuration</h2>
+    <h3 class="Heading3">         Use Ginger Runset operation for sending data to Splunk</h3>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">Follow below steps to use ‘Send Execution JSON Data To External Source’ runset operation:</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Go to: Runset</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Click on “Operations”</span></p>
+    <p class="Numbering10 ListParagraph"><span style="font-size:16px;">Click on “Add Send Execution JSON Data To External Source Operation”</span></p>
+    <p> </p>
+    <p>       <img alt="Picture 8" height="208" src="../../images/Ginger Splunk Integration_files/image3.png" width="888" /></p>
+    <h3 class="Heading3">        Configure Ginger Runset operation</h3>
+    <p>      Please set below details in the runset operation configurations:</p>
+    <p class="Numbering16 ListParagraph">Set below “Send Execution JSON Data To External Source Configurations” details</p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <div align="center">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:767.7px">
+        <colgroup>
+          <col style="width:149.66666666666666666666666667px" />
+          <col style="width:210px" />
+          <col style="width:408px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Parameter Name</p>
+            </td>
+            <td>
+              <p>Explanation</p>
+            </td>
+            <td>
+              <p>Sample Value</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Run at</p>
+            </td>
+            <td>
+              <p>When this operation should run</p>
+            </td>
+            <td>
+              <p>Execution End</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Condition</p>
+            </td>
+            <td>
+              <p>Condition for running this operation</p>
+            </td>
+            <td>
+              <p>Always run</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Select Report Template</p>
+            </td>
+            <td>
+              <p>Select from Report templates designed under report tab</p>
+            </td>
+            <td>
+              <p>Default</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>End Point URL</p>
+            </td>
+            <td>
+              <p>Api Endpoint URl</p>
+            </td>
+            <td>
+              <p>https://host:8088/services/collector</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Request Headers</p>
+            </td>
+            <td>
+              <p>Required headers for request</p>
+            </td>
+            <td>
+              <p>Authorization</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Request Body</p>
+            </td>
+            <td>
+              <p>Required body for request in List view or JSON view</p>
+            </td>
+            <td>
+              <p>{</p>
+              <p>&quot;time&quot;: {CS Exp=DateTimeOffset.UtcNow.ToUnixTimeSeconds()},</p>
+              <p>&quot;source&quot;: &quot;Ginger_Automation_Report&quot;,</p>
+              <p>&quot;event&quot;: {ExecutionJsonData}</p>
+              <p>}</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="margin-left-0-50in"> </p>
+    <p>             Send Execution JSON Data To External Source Configurations Example:</p>
+    <p>              <img alt="Picture 11" height="640" src="../../images/Ginger Splunk Integration_files/image4.png" width="804" /></p>
+  </div>
+</body>
+</html>
