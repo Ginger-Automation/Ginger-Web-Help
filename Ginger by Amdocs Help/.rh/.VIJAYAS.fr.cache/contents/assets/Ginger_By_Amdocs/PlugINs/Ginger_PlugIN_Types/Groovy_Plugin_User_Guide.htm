@@ -30,7 +30,6 @@
       How to Get Output Values from Groovy Flow to Ginger Flow
     
      
-     
     
       ‎
     Purpose
@@ -56,15 +55,15 @@
     Please install it from the below link:
     https://dotnet.microsoft.com/download
      
-    Groovy Installation
+         Groovy Installation
     Groovy installation is a must for the plugin to work.
     “GROOVY_HOME” environment variable system configuration is also required.
      
-    Java Installation
+        Java Installation
     Java installation is a must for the plugin to work.
     “JAVA_HOME” environment variable system configuration is also required.
      
-    Script
+        Script
     The groovy script files need to be located on the machine on which the Groovy Plugin running.
     It is recommended to place the script under the Ginger Solution “Documents” folder and use relative paths to it (like “~/Documents/Scripts”) so it will work on any user machine.
      
@@ -81,17 +80,18 @@
     Select “Groovy” Plugin from loaded list of Plugins
     Select latest/required Plugin version
     Click on Install
-                 Once installation is done, shift to the “Installed” tab and confirm the ”Groovy” plugin appears on the tree- you will see the Plugin details on the                       right  including its embedded action types.
+                 Once installation is done, shift to the “Installed” tab and confirm the ”Groovy” plugin appears on the tree- you will see the Plugin details on the right
+     including its embedded action types.
      
                      
      
-                          
+                     
      
      
-    Executing Groovy Script
+         Executing Groovy Script
              Please follow the below steps to execute the groovy script.
      
-    Execute Groovy script using an external file
+          Execute Groovy script using an external file
     Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page
     Click on Add Action button, in the loaded window go to “Plugins Actions”
     Select “Execute Groovy Script File” Action
@@ -191,15 +191,13 @@
      
     
      
-    Execute Groovy script using content
+           Execute Groovy script using content
     Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page
     Click on Add Action button, in the loaded window go to “Plugins Actions”
     Select “Execute Groovy Script” Action
-     
     
      
     Set Action configurations according to the below:
-     
     
       
         
@@ -296,11 +294,11 @@
      
     
       ‎
-    Get Output Values from Groovy Flow to Ginger Flow
+         Get Output Values from Groovy Flow to Ginger Flow
                  The groovy plugin supports getting output values from the Groovy Flow.
     It has been done by parsing all values which the Groovy flow writes to the Console during execution, the parsing mechanism looks for any “key=value” pair and if it been found so the Key and Value been added to the Action Output Values list.
      
-    How to Get Output Values from Groovy Flow to Ginger Flow
+         How to Get Output Values from Groovy Flow to Ginger Flow
     Prepare the Groovy Flow Code for Sharing Output Values
     Open the Script in notepad or another Editor.
     Look for the places in code (either tested class methods or actual test methods) which have values that can be shared with Ginger during execution

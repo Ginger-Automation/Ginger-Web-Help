@@ -194,3 +194,6 @@ span { white-space: pre-wrap;
 .text-indent-0-25in {
 text-indent:0.25in;
 }
+ul.Square {
+    list-style-type: square;
+}

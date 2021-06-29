@@ -2,32 +2,36 @@
   
                                
                             How to Execute Run Set Via CLI
+     
     
     
     Contents
     Introduction
     How to Create Auto Run Set Configuration?
-    General Options Tab
-    Configurations Type Tab
-    Execution Shortcut
+    
+      General Options Tab
+      Configurations Type Tab
+      Execution Shortcut
+    
     How to Trigger Execution via CLI?
     
     
         ‎ 
-    Introduction
+     Introduction
      Auto Run Configuration is used when the Run set is required to run via command line for automatic execution of Ginger Run set as part of Automation needed or for CI/CD processes integration.
-    How to Create Auto Run Set Configuration?
-     Go to the Run tab of the solution
-     Click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
+     How to Create Auto Run Set Configuration?
+     Go to the Run tab of the solution and click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
+                     
+     
+       The Wizard is opened.
                      
     
-     The Wizard is opened.
-                     
     
-    
-    General Options Tab
+      
+      General Options Tab
     
                       
+     
     
     Download/ Update Solution from source control
     
@@ -48,7 +52,8 @@
     When this option is unchecked, all the design issues are ignored, and execution starts without any checks.
     
     
-    Configurations Type Tab
+     
+      Configurations Type Tab
     
                      
     
@@ -62,6 +67,7 @@
     Dynamic
     The dynamic config file is supported in JSON and XML format, it is recommended to use the JSON format which supports much more flexible configurations.
            
+     
     
           
     
@@ -265,24 +271,24 @@
     This option does not use any file for the execution configuration but only CLI arguments.
     
                  
+     
     
     
-    Execution Shortcut
+     Execution Shortcut
     
     Create Auto Run Shortcut
-    This option is by default selected to Yes.
-    If a user does not want to create the run set shortcut but wants to have the Config file, then
-    select this option to No.
+     This option is by default selected to Yes.
+     If a user does not want to create the run set shortcut but wants to have the Config file, then select this option to No.
     
     Ginger.exe (Windows only)
     This option is selected by default. It is used when the run set is to be run on Windows PC and Ginger is already installed on it.
     The Path of the Ginger.exe is given in the ‘Executer Path’. Generally, it's populated automatically when the path is in Program Files.
     
     GingerConsole.dll (Windows/Linux/Mac in case solution is compatible)
-    This option is used when a run set is to be run on a Linux/ Mac machine.
-    This DLL file can also be used to run on Windows.
-    When using in Linux/Mac, the actions in the run set should be compatible with Linux.
-    The Ginger.dll should also be available on the machine.
+     This option is used when a run set is to be run on a Linux/ Mac machine.
+     This DLL file can also be used to run on Windows.
+     When using in Linux/Mac, the actions in the run set should be compatible with Linux.
+     The Ginger.dll should also be available on the machine.
     
     The shortcut can be created on the Desktop or in the desired Folder by clicking the Folder option.
     The Browse button is displayed to select the folder to save in.
@@ -293,7 +299,8 @@
     Eg. 
     
     
-    How to Trigger Execution via CLI?
+     
+      How to Trigger Execution via CLI?
     Once autorun configuration file was created (in one of the above formats Config/JSON/XML/Script, note- in case choose ‘Arguments’ option so config file not needed) you can execute Ginger either by simple execute the shortcut file created by the Wizard or by copying the full command which is in below format:
     Ginger executer path on the machine
     Config file type
@@ -306,5 +313,7 @@
      
     
       
+     
+     
   
 

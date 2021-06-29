@@ -187,3 +187,6 @@ position:relative;
 .RH-LAYOUT-CENTERPANEL-topic-box .text-indent-0-25in, .RH-LAYOUT-FOOTER-container .text-indent-0-25in {
 text-indent:0.25in;
 }
+.RH-LAYOUT-CENTERPANEL-topic-box ul.Square, .RH-LAYOUT-FOOTER-container ul.Square {
+    list-style-type: square;
+}

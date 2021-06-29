@@ -156,4 +156,7 @@
   <book navtitle="Source Control" format="html" processing-role="normal">
     <page navtitle="How to use Source Control in Ginger" href="../contents/assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm" format="html" processing-role="normal"></page>
   </book>
+  <book navtitle="Ginger on Web" format="html" processing-role="normal">
+    <page navtitle="Ginger on Website Overview" href="../contents/assets/Ginger_By_Amdocs/Ginger_on_Web/Ginger_on_Website_Overview_3.htm" format="html" processing-role="normal"></page>
+  </book>
 </map>

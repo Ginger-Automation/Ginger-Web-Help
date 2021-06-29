@@ -52,10 +52,10 @@
     Please install it from the below link:
     https://dotnet.microsoft.com/download
      
-    Ruby Installation
+        Ruby Installation
     Ruby installation is a must for the plugin to work.
      
-    Script
+       Script
     The Ruby script files need to be located on the machine on which the Ruby Plugin running.
     It is recommended to place the script under the Ginger Solution “Documents” folder and use relative paths to it (like “~/Documents/Scripts”) so it will work on any user machine.
      
@@ -64,7 +64,7 @@
     Ginger Ruby plugin needs to be installed to the Ginger Solution to be used.
     Please follow the below steps to perform it.
      
-    Add Ruby Plugin to Ginger Solution
+     Add Ruby Plugin to Ginger Solution
     
       Download and Install the latest/required Ginger version from here
       Launch Ginger and add a Solution to it
@@ -75,17 +75,17 @@
       Click on Install
     
      
-            Once installation is done, shift to the “Installed” tab and confirm the ”Ruby” plugin appears on the tree- you will see the Plugin details on the right                including its embedded action types.
+            Once installation is done, shift to the “Installed” tab and confirm the ”Ruby” plugin appears on the tree- you will see the Plugin details on the right including its 
+     embedded action types.
      
                     
      
                    
      
-     
-    Executing Ruby Script
+       Executing Ruby Script
                    Please follow the below steps to execute the Ruby script.
      
-    Execute Ruby script using an external file.
+       Execute Ruby script using an external file.
     
       Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page
       Click on Add Action button, in the loaded window go to “Plugins Actions”
@@ -96,7 +96,6 @@
      
      
     Set Action configurations according to the below:
-     
     
       
         
@@ -182,16 +181,13 @@
     
      
      
-     
-    Execute Ruby script using content
+         Execute Ruby script using content
     Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page
     Click on Add Action button, in the loaded window go to “Plugins Actions”
     Select “Run Script” Action
-     
     
      
     Set Action configurations according to the below:
-     
     
       
         
@@ -282,14 +278,13 @@
       
     
      
-     
     
       ‎
-    Get Output Values from Ruby Flow to Ginger Flow
+        Get Output Values from Ruby Flow to Ginger Flow
                 Ruby plugin supports getting output values from the Ruby Flow.
     It has been done by parsing all values which the Ruby flow writes to the Console during execution, the parsing mechanism looks for any “key=value” pair and if it been found so the Key and Value been added to the Action Output Values list.
      
-    How to Get Output Values from Ruby Flow to Ginger Flow
+      How to Get Output Values from Ruby Flow to Ginger Flow
     Prepare the Ruby Flow Code for Sharing Output Values
     Open the Script in notepad or another Editor.
     Look for the places in code (either tested class methods or actual test methods) which have values that can be shared with Ginger during execution
@@ -301,7 +296,6 @@
     Configure any one of the Ruby Actions configurations
     After execution end, go to Action “Output Values” tab and see all output values which were parsed in run time
     Now you can set Validations on top of those values or pass them to Variables/Data Source or others to be used in the next Actions/other in the Ginger flow
-     
     
      
      
