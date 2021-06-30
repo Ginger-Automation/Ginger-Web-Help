@@ -3,6 +3,7 @@
                                
                             How to Execute Run Set Via CLI
      
+     
     
     
     Contents
@@ -19,16 +20,17 @@
         ‎ 
      Introduction
      Auto Run Configuration is used when the Run set is required to run via command line for automatic execution of Ginger Run set as part of Automation needed or for CI/CD processes integration.
-     How to Create Auto Run Set Configuration?
+     
+      How to Create Auto Run Set Configuration?
      Go to the Run tab of the solution and click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
                      
      
-       The Wizard is opened.
+        The Wizard is opened.
                      
     
     
       
-      General Options Tab
+       General Options Tab
     
                       
      
@@ -39,12 +41,14 @@
     It is enabled and checked if the solution is from the source control repository.
     
     In case checked, Ginger Solution will be downloaded/updated from source control on the execution machine before the execution starts.
+     
     
     Show Run Set execution window while running (on Windows only)
     This is option is not selected by default. If a user wants to see the execution status in Ginger while the run set is run, then use this option.
     It displays only the Ginger Run tab. The status of the Run set along with the Runners, Activities and Actions are displayed during the execution as shown below.
     It is recommended to run without UI for compatibility and performance reasons, for that please keep this option unchecked.
     
+     
     
     Run Set Analyzer before execution
     
@@ -53,9 +57,10 @@
     
     
      
-      Configurations Type Tab
+       Configurations Type Tab
     
                      
+     
     
     Config
     This option is used to create a config file which is used to execute a run set.
@@ -64,12 +69,14 @@
     The file name and the path can be edited by the user.
     The default path is the path of the RunsetShortCuts folder inside the solution.
     
+    
     Dynamic
     The dynamic config file is supported in JSON and XML format, it is recommended to use the JSON format which supports much more flexible configurations.
            
      
     
           
+     
     
     JSON Dynamic file supports 2 main modes:
     Existing Run Set execution configurations- User can specify how exactly an existing Run set will be executed by manipulating it:
@@ -262,13 +269,14 @@
     
     
     Script
-    The script file can be used to trigger Ginger with very basic commands supported.
+     The script file can be used to trigger Ginger with very basic commands supported.
     
-    
+     
+     
     
     
     Arguments
-    This option does not use any file for the execution configuration but only CLI arguments.
+     This option does not use any file for the execution configuration but only CLI arguments.
     
                  
      
@@ -279,28 +287,34 @@
     Create Auto Run Shortcut
      This option is by default selected to Yes.
      If a user does not want to create the run set shortcut but wants to have the Config file, then select this option to No.
+     
     
     Ginger.exe (Windows only)
-    This option is selected by default. It is used when the run set is to be run on Windows PC and Ginger is already installed on it.
-    The Path of the Ginger.exe is given in the ‘Executer Path’. Generally, it's populated automatically when the path is in Program Files.
+     This option is selected by default. It is used when the run set is to be run on Windows PC and Ginger is already installed on it.
+     The Path of the Ginger.exe is given in the ‘Executer Path’. Generally, it's populated automatically when the path is in Program Files.
+     
     
     GingerConsole.dll (Windows/Linux/Mac in case solution is compatible)
      This option is used when a run set is to be run on a Linux/ Mac machine.
      This DLL file can also be used to run on Windows.
      When using in Linux/Mac, the actions in the run set should be compatible with Linux.
      The Ginger.dll should also be available on the machine.
+     
     
     The shortcut can be created on the Desktop or in the desired Folder by clicking the Folder option.
-    The Browse button is displayed to select the folder to save in.
+     The Browse button is displayed to select the folder to save in.
+     
     
     Shortcut Content Preview
-    This shows the full execution command which is stored in the Shortcut in case needed to be used for direct execution on the commands console or be configured in CI/CD processes.
+     This shows the full execution command which is stored in the Shortcut in case needed to be used for direct execution on the commands console or be 
+     configured in CI/CD processes.
+     
     
     Eg. 
     
     
      
-      How to Trigger Execution via CLI?
+       How to Trigger Execution via CLI?
     Once autorun configuration file was created (in one of the above formats Config/JSON/XML/Script, note- in case choose ‘Arguments’ option so config file not needed) you can execute Ginger either by simple execute the shortcut file created by the Wizard or by copying the full command which is in below format:
     Ginger executer path on the machine
     Config file type

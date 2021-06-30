@@ -11,10 +11,10 @@
 <body>
   <div class="position-relative">
     <p class="Title" style="font-family: Calibri"> </p>
-    <p class="Title" style="font-family: Calibri"><span style="font-size:32px;"> Database Action</span></p>
+    <p class="Title" style="font-family: Calibri"><span style="font-size:32px;margin-left:132px"> Database Action</span></p>
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
-    <p class="TOCHeading" style="font-family: Calibri"><strong style="font-size: 19px">Contents</strong></p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong style="font-size: 19px">Contents</strong></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Introduction">Introduction</a></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#How_to_Configure_Action?">How to Configure Action?</a></span></p>
     <ul class="Disc" style="font-family: Calibri">
@@ -48,234 +48,230 @@
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"><a id="          IntroductionDatabase Action is used to update/validate/read data from a database system. How to Configure Action?    2.1 Pre-requisite                          A Solution should be created.                         A Data source should be defined. Either define it in Ginger’s DataSource or define the                         database details in the environment.  Creating Ginger Data Source When a new solution is created, the default Data Source is automatically added.It has Key table and a customized table. To add another “ Key_Table”, right-click on the GingerDataSource, select Add New table-&gt; Add New Key Value table.      Define the key data in the area “ Key_Data” using the + button as shown                                                           The Customized database is manually added using the + button as shown by the arrow                                  How to Define Database in Ginger In the Solution tab, go to Environments-&gt;Default. Then click the desired platform where the database should be connected.Go to the Database tab. Click the + button to add the database connection details.           2.2 Action Operation                      Click on the Business Flows. Click on the ‘+’ icon as shown below                       2) Click on ‘Actions Library’  4) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.                                       5)  This will add the DataBase Action under the Actions 6)Double click on it and the below screen should be displayed.    Operation Settings’Environment Application NameEnvironment 7) Go to the ‘ tab and Select the ‘’, ‘7) Go to the ‘ tab and Select the ‘’, ‘ Application DB Name’ and the ‘DB Operation Type’ from the respective dropdowns. 8) The ‘DB Operation Type’ drop-down contains the below options. Select the desired option. Free SQL - It allows to enter a free SQL query  Record Count - It allows you to return the count from a table giving an example of the query           Simple SQL One value – this is used when a query is going to return one value output. Here you can select the table from the list of tables in the database.  ‘Column’ is selected from the list of columns in the selected table. You can add a where clause if required.             Update DB- this will update the Database with the query that you will provide.                            There are 2 options, viz. provide a Free SQL to update the DB or use a file that has multiple queries.                          You have to select the “Do commit after Update” check box to commit the changes to the DB.                  9) ‘Input type’ as ‘From File’ can also be selected. For this, the file needs to have a set of SQL  commands.The below screen will be displayed which will give the Browse option to select the file.                                 How to use Cassandra in Ginger?    3.1 What is Cassandra?  Apache Cassandra is a free and open source distributed NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point failure.     3.2 What does Ginger support in Cassandra?   UDT values which have been widely used in Cassandra Database.JSON variant of SELECT and INSERT operation     3.3 Which Cassandra operations are supported in Ginger?  Read DataWrite DataUpdate DataRecord Count     3.4 How to configure Cassandra in Ginger?  Under the Resources tab, go to Environment and select the desired environment. Using the + button add the Cassandra DB. Enter name, select DB Type as “Cassandra”, enter the host and user name and password if any.    Click on the Test Connection button to get the connection successful message.          3.5 How to add Database Action for Cassandra? 1) Click on the Business flow. Click on the ‘+’ icon as shown below                       2) Click on ‘Actions Library’  3)  Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.                                       4)  This will add the DataBase Action under the Actions 5) Double click on it and the below screen should be displayed.   Operation Settings’Environment Application NameEnvironment  6) Go to the ‘ tab and Select the ‘’, ‘ 6) Go to the ‘ tab and Select the ‘’, ‘ Application DB Name’ and the ‘DB Operation Type’ from the respective dropdowns.                            How to use Couchbase in Ginger?      4.1 What is Couchbase?  Couchbase DB is an open-source database developed by the Apache software foundation. The focus is on ease of use, embracing the web. It is a NoSQL document store database.       4.2 What does Ginger support in Couchbase?  Used to connect Couchbase DB and perform operationsUsed to connect buckets of Couchbase DB       4.3 Which Couchbase operations are supported in Ginger?  Read DataWrite DataUpdate DataRecord Count       4.4 How to configure Couchbase in Ginger?  Under the Resources tab, go to Environment and select the desired environment. Using the + button add the Couchbase DB. Enter name, select DB Type as “Couchbase”, enter the host and user name and password if any.   Click on the ‘Test connection’ button to get the connection successful message.       4.5 How to add Database Action for Couchbase?  1) Click on the Business flow. Click on the ‘+’ icon as shown below                       2) Click on ‘Actions Library’  3)  Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.                                       4)  This will add the DataBase Action under the Actions 5) Double click on it and the below screen should be displayed.   Operation Settings’Environment Application NameEnvironment  6) Go to the ‘ tab and Select the ‘’, ‘ 6) Go to the ‘ tab and Select the ‘’, ‘ Application DB Name’ and the ‘DB Operation Type’ from the respective dropdowns.   How to use MongoDB in Ginger?      5.1 What is MongoDB?  MongoDB is an open-source document database and leading NoSQL database. MongoDB is a cross-platform, document-oriented database that provides, high performance, high availability, and easy scalability. MongoDB works on the concept of collection and document.       5.2 What does Ginger support in MongoDB?  Used to connect MongoDB databases and perform operationsUsed to perform operations like insert, update, select       5.3 Which MongoDB operations are supported in Ginger?  Read DataWrite DataUpdate DataRecord Count       5.4 How to configure MongoDB in Ginger?  Under the Resources tab, go to Environment and select the desired environment. Using the + button add MongoDb. Enter name, select DB Type as “MongoDb”, enter the Connection String or Host and username and password if any. Use the following ways to connect with MongoDb Option 1: &quot;mongodb://user1:password1@localhost/DB&quot; (Connection String format) Option 2: &quot;mongodb://HostOrIP:27017/DBName&quot; (TNS/Host/FilePath format)       Click on the Test connection button to get the connection successful message.        5.5 How to add Database Action for MongoDB?  1) Click on the Business flow. Click on the ‘+’ icon as shown below                       2) Click on ‘Actions Library’  3)  Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.                                       4)  This will add the DataBase Action under the Actions 5) Double click on it and the below screen should be displayed.   Operation Settings’Environment Application NameEnvironment  6) Go to the ‘ tab and Select the ‘’, ‘ 6) Go to the ‘ tab and Select the ‘’, ‘ Application DB Name’ and the ‘DB Operation Type’ from the respective dropdowns.      " height="217" width="733"></a></p>
     <p style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="Introduction"></a>Introduction </h1>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a>D<span style="font-size:16px;">atabase Action is used to update/validate/read data from a database system.</span></p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="How_to_Configure_Action?"></a>How to Configure Action?</h1>
-    <h2 style="font-family: Calibri"><a id="____2.1_Pre-requisite"></a> Pre-requisite</h2>
-    <p style="font-family: Calibri">             A Solution should be created.</p>
-    <p style="font-family: Calibri">             A Data source should be defined. Either define it in Ginger’s DataSource or define the</p>
-    <p style="font-family: Calibri">            database details in the environment.</p>
-    <p style="font-family: Calibri"> </p>
-    <p class="Numbering21 ListParagraph" data-list-level="2" style="font-family: Calibri">Creating Ginger Data Source</p>
-    <p class="ListParagraph margin-left-1-13in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-13in" style="font-family: Calibri">When a new solution is created, the default Data Source is automatically added.</p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">It has Key table and a customized table.</p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 3" height="216" src="../../../../images/Database Action_files/image2.png" width="663" /></p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">To add another “ Key_Table”, right-click on the GingerDataSource, select Add New table-&gt; Add New Key Value table.</p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 10" height="355" src="../../../../images/Database Action_files/image3.png" width="669" /></p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">Define the key data in the area “ Key_Data” using the + button as shown</p>
-    <p style="font-family: Calibri">            <img alt="Picture 22" height="338" src="../../../../images/Database Action_files/image4.png" width="678" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri">              The Customized database is manually added using the + button as shown by the arrow</p>
-    <p style="font-family: Calibri">             <img alt="Picture 23" height="360" src="../../../../images/Database Action_files/image5.png" width="682" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri">             How to Define Database in Ginger</p>
-    <p style="font-family: Calibri"> </p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri">In the Solution tab, go to Environments-&gt;Default. Then click the desired platform where the database should be connected.</p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri">Go to the Database tab. Click the + button to add the database connection details.</p>
-    <p class="ListParagraph margin-left-1-32in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 26" height="271" src="../../../../images/Database Action_files/image6.png" width="687" /></p>
-    <p class="ListParagraph margin-left-1-32in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-32in" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="2.2_Action_Operation"></a>Action Operation</h2>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri">        Click on the Business Flows. Click on the ‘+’ icon as shown below</p>
-    <p style="font-family: Calibri">         <img alt="Picture 526870768" height="282.8" src="../../../../images/Database Action_files/image7.png" width="695.0" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri">Click on ‘Actions Library’</p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 389614716" height="293.9" src="../../../../images/Database Action_files/image8.png" width="678.1" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</p>
-    <p style="font-family: Calibri">              <img alt="Picture 293058435" height="835" src="../../../../images/Database Action_files/image9.png" width="391" /></p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">This will add the DataBase Action under the Actions</p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 204282968" height="80" src="../../../../images/Database Action_files/image10.png" width="502" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">        Double click on it and the below screen should be displayed.</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">    <img alt="Picture 1039191796" height="228" src="../../../../images/Database Action_files/image11.png" width="768" /></p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">     Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’ and</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">      the ‘DB Operation Type’ from the respective dropdowns.</p>
-    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">             <img alt="Picture 416021166" height="278" src="../../../../images/Database Action_files/image12.png" width="766" /></p>
-    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">The ‘DB Operation Type’ drop-down contains the below options. Select the desired option.</p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 4" height="175" src="../../../../images/Database Action_files/image13.png" width="252" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="Numbering23 ListParagraph" style="font-family: Calibri">Free SQL - It allows to enter a free SQL query</p>
-    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
-    <p class="Numbering23 ListParagraph" style="font-family: Calibri">Record Count - It allows you to return the count from a table giving an example of the query</p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 15" height="86" src="../../../../images/Database Action_files/image14.png" width="738" /></p>
-    <p class="Numbering23 ListParagraph" style="font-family: Calibri">Simple SQL One value – this is used when a query is going to return one value output.</p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri">Here you can select the table from the list of tables in the database. ‘Column’ is selected from the list of columns in the selected table.</p>
-    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri">You can add a where clause if required.</p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 14" height="155" src="../../../../images/Database Action_files/image15.png" width="744" /></p>
-    <p class="Numbering23 ListParagraph" style="font-family: Calibri">Update DB- this will update the Database with the query that you will provide.</p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri">           There are 2 options, viz. provide a Free SQL to update the DB or use a file that has multiple queries.</p>
-    <p style="font-family: Calibri">          You have to select the “Do commit after Update” check box to commit the changes to the DB.</p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 13" height="272" src="../../../../images/Database Action_files/image16.png" width="274" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri">&#39;Input type’ as ‘From File’ can also be selected. For this, the file needs to have a set of SQL</p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">commands.</p>
-    <p class="ListParagraph" style="font-family: Calibri">The below screen will be displayed which will give the Browse option to select the file.</p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 231193004" height="183953" src="../../../../images/Database Action_files/image17.png" width="1934814" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="How_to_use_Cassandra_in_Ginger?"></a>How to use Cassandra in Ginger?</h1>
-    <h2 style="font-family: Calibri"><a id="____3.1_What_is_Cassandra?"></a> What is Cassandra?</h2>
-    <p style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri">A<span style="font-size:16px;">pache Cassandra is a free and open source distributed NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point failure.</span></p>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="3.2_What_does_Ginger_support_in_Cassandra?"></a>What does Ginger support in Cassandra?</h2>
-    <p class="Numbering28 ListParagraph" style="font-family: Calibri">UDT values which have been widely used in Cassandra Database.</p>
-    <p class="Numbering28 ListParagraph" style="font-family: Calibri">JSON variant of SELECT and INSERT operation</p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="____3.3_Which_Cassandra_operations_are_supported_in_Ginger?"></a> Which Cassandra operations are supported in Ginger?</h2>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri">Read Data</p>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri">Write Data</p>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri">Update Data</p>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri">Record Count</p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="3.4_How_to_configure_Cassandra_in_Ginger?"></a>How to configure Cassandra in Ginger?</h2>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri">Under the Resources tab, go to Environment and select the desired environment.</p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri">Using the + button add the Cassandra DB. Enter name, select DB Type as “Cassandra”, enter the host and user name and password if any.</p>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 29" height="289" src="../../../../images/Database Action_files/image18.png" width="762" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri">Click on the Test Connection button to get the connection successful message.</p>
-    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 28" height="289" src="../../../../images/Database Action_files/image19.png" width="762" /></p>
-    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri">               <img alt="Picture 17" height="170" src="../../../../images/Database Action_files/image20.png" width="259" /></p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id="Introduction"></a><span style="margin-left:32px;">Introduction </span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a>D<span style="font-size:16px;">atabase Action is used to update/validate/read data from a database system.</span></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:32px;"><a id="How_to_Configure_Action?"></a>How to Configure Action?</span></h1>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="____2.1_Pre-requisite"></a> Pre-requisite</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             A Solution should be created.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             A Data source should be defined. Either define it in Ginger’s DataSource or define the </span><span style="margin-left:32px;">database details in the environment.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering21 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="margin-left:32px;">Creating Ginger Data Source</span></p>
+    <p class="ListParagraph margin-left-1-13in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-13in" style="font-family: Calibri"><span style="margin-left:32px;">When a new solution is created, the default Data Source is automatically added.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;">It has Key table and a customized table.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 3" height="272" src="../../../../images/Database Action_files/image2.png" width="836" /></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;">To add another “ Key_Table”, right-click on the GingerDataSource, select Add New table-&gt; Add New Key Value table.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 10" height="442" src="../../../../images/Database Action_files/image3.png" width="834" /></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;">Define the key data in the area “ Key_Data” using the + button as shown</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">            <img alt="Picture 22" height="425" src="../../../../images/Database Action_files/image4.png" width="854" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">              The Customized database is manually added using the + button as shown by the arrow</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             <img alt="Picture 23" height="450" src="../../../../images/Database Action_files/image5.png" width="854" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             How to Define Database in Ginger</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">In the Solution tab, go to Environments-&gt;Default. Then click the desired platform where the database should be connected.</span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Go to the Database tab. Click the + button to add the database connection details.</span><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 26" height="343" src="../../../../images/Database Action_files/image6.png" width="871" /></span></p>
+    <p class="ListParagraph margin-left-1-32in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-32in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="2.2_Action_Operation"></a>Action Operation</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">        Click on the Business Flows. Click on the ‘+’ icon as shown below</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">         <img alt="Picture 526870768" height="363" src="../../../../images/Database Action_files/image7.png" width="890" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">Click on ‘Actions Library’</span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 389614716" height="381" src="../../../../images/Database Action_files/image8.png" width="877" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"> Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">              <img alt="Picture 293058435" height="976" src="../../../../images/Database Action_files/image9.png" width="457" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">This will add the DataBase Action under the Actions</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 204282968" height="89" src="../../../../images/Database Action_files/image10.png" width="558" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">        Double click on it and the below screen should be displayed.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">    <img alt="Picture 1039191796" height="264" src="../../../../images/Database Action_files/image11.png" width="892" /></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">     Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’ and</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">      the ‘DB Operation Type’ from the respective dropdowns.</span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">             <img alt="Picture 416021166" height="317" src="../../../../images/Database Action_files/image12.png" width="874" /></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">The ‘DB Operation Type’ drop-down contains the below options. Select the desired option.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 4" height="175" src="../../../../images/Database Action_files/image13.png" width="252" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering23 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Free SQL - It allows to enter a free SQL query</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering23 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Record Count - It allows you to return the count from a table giving an example of the query</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 15" height="98" src="../../../../images/Database Action_files/image14.png" width="838" /></span></p>
+    <p class="Numbering23 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Simple SQL One value – this is used when a query is going to return one value output.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;">Here you can select the table from the list of tables in the database. ‘Column’ is selected from the list of columns in the selected table.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;">You can add a where clause if required.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 14" height="176" src="../../../../images/Database Action_files/image15.png" width="848" /></span></p>
+    <p class="Numbering23 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Update DB- this will update the Database with the query that you will provide.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">           There are 2 options, viz. provide a Free SQL to update the DB or use a file that has multiple queries.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">          You have to select the “Do commit after Update” check box to commit the changes to the DB.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 13" height="317" src="../../../../images/Database Action_files/image16.png" width="320" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">&#39;Input type’ as ‘From File’ can also be selected. For this, the file needs to have a set of SQL</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">commands.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">The below screen will be displayed which will give the Browse option to select the file.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 231193004" height="183953" src="../../../../images/Database Action_files/image17.png" width="1934814" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:32px;"><a id="How_to_use_Cassandra_in_Ginger?"></a>How to use Cassandra in Ginger?</span></h1>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="____3.1_What_is_Cassandra?"></a> What is Cassandra?</span></h2>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;">A<span style="font-size:16px;">pache Cassandra is a free and open source distributed NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point failure.</span></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="3.2_What_does_Ginger_support_in_Cassandra?"></a>What does Ginger support in Cassandra?</span></h2>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">UDT values which have been widely used in Cassandra Database.</span></p>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">JSON variant of SELECT and INSERT operation</span><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="____3.3_Which_Cassandra_operations_are_supported_in_Ginger?"></a> Which Cassandra operations are supported in Ginger?</span></h2>
+    <p class="Numbering31 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Read Data</span></p>
+    <p class="Numbering31 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Write Data</span></p>
+    <p class="Numbering31 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Update Data</span></p>
+    <p class="Numbering31 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Record Count</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="3.4_How_to_configure_Cassandra_in_Ginger?"></a>How to configure Cassandra in Ginger?</span></h2>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Under the Resources tab, go to Environment and select the desired environment.</span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Using the + button add the Cassandra DB. Enter name, select DB Type as “Cassandra”, enter the host and user name and password if any.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 29" height="337" src="../../../../images/Database Action_files/image18.png" width="889" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Click on the Test Connection button to get the connection successful message.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 28" height="394" src="../../../../images/Database Action_files/image19.png" width="883" /></span></p>
     <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="3.5_How_to_add_Database_Action_for_Cassandra?"></a>How to add Database Action for Cassandra?</h2>
-    <p class="text-indent-0-50in" style="font-family: Calibri">1) Click on the Business flow. Click on the ‘+’ icon as shown below</p>
-    <p style="font-family: Calibri">             <img alt="Picture 285426930" height="320" src="../../../../images/Database Action_files/image21.png" width="785" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri">2) Click on ‘Actions Library’</p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 709908534" height="293.9" src="../../../../images/Database Action_files/image22.png" width="678.1" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri">3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</p>
-    <p style="font-family: Calibri">                  <img alt="Picture 1473952560" height="695" src="../../../../images/Database Action_files/image23.png" width="326" /></p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">    4) This will add the DataBase Action under the Actions</p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">    <img alt="Picture 1264967247" height="64.7" src="../../../../images/Database Action_files/image24.png" width="409.1" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">           5) Double click on it and the below screen should be displayed.</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">         <img alt="Picture 776589687" height="193" src="../../../../images/Database Action_files/image25.png" width="652" /></p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">         6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB     </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">          Name’ and the ‘DB Operation Type’ from the respective dropdowns.</p>
-    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 1496023229" height="248" src="../../../../images/Database Action_files/image26.png" width="688" /></p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri">How to use Couchbase in Ginger?</h1>
-    <h2 style="font-family: Calibri">What is Couchbase?</h2>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri">Couchbase DB is an open-source database developed by the Apache software foundation. The focus is on ease of use, embracing the web. It is a NoSQL document store database.</p>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">What does Ginger support in Couchbase?</h2>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri">Used to connect Couchbase DB and perform operations</p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri">Used to connect buckets of Couchbase DB</p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">Which Couchbase operations are supported in Ginger?</h2>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri">Read Data</p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri">Write Data</p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri">Update Data</p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri">Record Count</p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">How to configure Couchbase in Ginger?</h2>
-    <p class="Numbering41 ListParagraph" style="font-family: Calibri">Under the Resources tab, go to Environment and select the desired environment.</p>
-    <p class="Numbering41 ListParagraph" style="font-family: Calibri">Using the + button add the Couchbase DB. Enter name, select DB Type as “Couchbase”, enter the host and user name and password if any.</p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-60in" style="font-family: Calibri"><img alt="Picture 8" height="335.0" src="../../../../images/Database Action_files/image27.png" width="695.0" /></p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="Numbering41 ListParagraph" style="font-family: Calibri">Click on the ‘Test connection’ button to get the connection successful message.</p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><img alt="Picture 9" height="374.0" src="../../../../images/Database Action_files/image28.png" width="678.0" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">How to add Database Action for Couchbase?</h2>
-    <p class="text-indent-0-50in" style="font-family: Calibri">1) Click on the Business flow. Click on the ‘+’ icon as shown below</p>
-    <p style="font-family: Calibri">            <img alt="Picture 1612622931" height="282.8" src="../../../../images/Database Action_files/image29.png" width="695.0" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri">2) Click on ‘Actions Library’</p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 494507118" height="312" src="../../../../images/Database Action_files/image30.png" width="717" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri">3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</p>
-    <p style="font-family: Calibri">             <img alt="Picture 2034940581" height="683" src="../../../../images/Database Action_files/image31.png" width="320" /></p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">4) This will add the DataBase Action under the Actions</p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 453304691" height="64.7" src="../../../../images/Database Action_files/image32.png" width="409.1" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">      5) Double click on it and the below screen should be displayed.</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">      <img alt="Picture 1519840105" height="212" src="../../../../images/Database Action_files/image33.png" width="713" /></p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">       6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">        and the ‘DB Operation Type’ from the respective dropdowns.</p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1485671145" height="268" src="../../../../images/Database Action_files/image34.png" width="729" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-70in" style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri">How to use MongoDB in Ginger?</h1>
-    <h2 style="font-family: Calibri">What is MongoDB?</h2>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri">MongoDB is an open-source document database and leading NoSQL database. MongoDB is a cross-platform, document-oriented database that provides, high performance, high availability, and easy scalability. MongoDB works on the concept of collection and document.</p>
-    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">What does Ginger support in MongoDB?</h2>
-    <p class="Numbering43 ListParagraph" style="font-family: Calibri">Used to connect MongoDB databases and perform operations</p>
-    <p class="Numbering43 ListParagraph" style="font-family: Calibri">Used to perform operations like insert, update, select</p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">Which MongoDB operations are supported in Ginger?</h2>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri">Read Data</p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri">Write Data</p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri">Update Data</p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri">Record Count</p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">How to configure MongoDB in Ginger?</h2>
-    <p class="Numbering45 ListParagraph" style="font-family: Calibri">Under the Resources tab, go to Environment and select the desired environment.</p>
-    <p class="Numbering45 ListParagraph" style="font-family: Calibri">Using the + button add MongoDb. Enter name, select DB Type as “MongoDb”, enter the Connection String or Host and username and password if any.</p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri">Use the following ways to connect with MongoDb</p>
-    <p style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri">Option 1: &quot;mongodb://user1:password1@localhost/DB&quot; (Connection String format)</p>
-    <p style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri">Option 2: &quot;mongodb://HostOrIP:27017/DBName&quot; (TNS/Host/FilePath format)</p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-70in" style="font-family: Calibri"><img alt="Picture 31" height="364.7" src="../../../../images/Database Action_files/image35.png" width="660.8" /></p>
-    <p class="margin-left-0-60in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="Numbering45 ListParagraph" style="font-family: Calibri">Click on the Test connection button to get the connection successful message.</p>
-    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><img alt="Picture 192" height="350" src="../../../../images/Database Action_files/image36.png" width="744" /></p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri">How to add Database Action for MongoDB?</h2>
-    <p class="text-indent-0-50in" style="font-family: Calibri">1) Click on the Business flow. Click on the ‘+’ icon as shown below</p>
-    <p style="font-family: Calibri">             <img alt="Picture 423515645" height="282.8" src="../../../../images/Database Action_files/image37.png" width="695.0" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri">2) Click on ‘Actions Library’</p>
-    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 1806945361" height="312" src="../../../../images/Database Action_files/image38.png" width="717" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri">3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</p>
-    <p style="font-family: Calibri">              <img alt="Picture 1468067045" height="696" src="../../../../images/Database Action_files/image39.png" width="326" /></p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-50in" style="font-family: Calibri">4) This will add the DataBase Action under the Actions</p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 1366624217" height="64.7" src="../../../../images/Database Action_files/image40.png" width="409.1" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">        5) Double click on it and the below screen should be displayed.</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">       <img alt="Picture 2004987138" height="217" src="../../../../images/Database Action_files/image41.png" width="733" /></p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">         6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’</p>
-    <p class="text-indent-0-25in" style="font-family: Calibri">        and the ‘DB Operation Type’ from the respective dropdowns.</p>
-    <p class="margin-left-0-70in" style="font-family: Calibri"><img alt="Picture 954054471" height="258" src="../../../../images/Database Action_files/image42.png" width="713" /></p>
-    <p class="margin-left-0-70in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-94in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-70in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="margin-left:32px;">               <img alt="Picture 17" height="207" src="../../../../images/Database Action_files/image20.png" width="316" /></span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;"><a id="3.5_How_to_add_Database_Action_for_Cassandra?"></a>How to add Database Action for Cassandra?</span></h2>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">1) Click on the Business flow. Click on the ‘+’ icon as shown below</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             <img alt="Picture 285426930" height="367" src="../../../../images/Database Action_files/image21.png" width="901" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">2) Click on ‘Actions Library’</span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 709908534" height="386" src="../../../../images/Database Action_files/image22.png" width="888" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">                  <img alt="Picture 1473952560" height="1005" src="../../../../images/Database Action_files/image23.png" width="471" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">    4) This will add the DataBase Action under the Actions</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">    <img alt="Picture 1264967247" height="64.7" src="../../../../images/Database Action_files/image24.png" width="409.1" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">           5) Double click on it and the below screen should be displayed.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">         <img alt="Picture 776589687" height="254" src="../../../../images/Database Action_files/image25.png" width="856" /></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">         6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB     </span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">          Name’ and the ‘DB Operation Type’ from the respective dropdowns.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 1496023229" height="310" src="../../../../images/Database Action_files/image26.png" width="861" /></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:32px;">How to use Couchbase in Ginger?</span></h1>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">What is Couchbase?</span></h2>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;">Couchbase DB is an open-source database developed by the Apache software foundation. The focus is on ease of use, embracing the web. It is a NoSQL document store database.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">What does Ginger support in Couchbase?</span></h2>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Used to connect Couchbase DB and perform operations</span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Used to connect buckets of Couchbase DB</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">Which Couchbase operations are supported in Ginger?</span></h2>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Read Data</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Write Data</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Update Data</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Record Count</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">How to configure Couchbase in Ginger?</span></h2>
+    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Under the Resources tab, go to Environment and select the desired environment.</span></p>
+    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Using the + button add the Couchbase DB. Enter name, select DB Type as “Couchbase”, enter the host and user name and password if any.</span><span style="margin-left:32px;"></span></p>
+    <p class="margin-left-0-60in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 8" height="409" src="../../../../images/Database Action_files/image27.png" width="877" /></span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Click on the ‘Test connection’ button to get the connection successful message.</span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 9" height="452" src="../../../../images/Database Action_files/image28.png" width="870" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">How to add Database Action for Couchbase?</span></h2>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">1) Click on the Business flow. Click on the ‘+’ icon as shown below</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">            <img alt="Picture 1612622931" height="345" src="../../../../images/Database Action_files/image29.png" width="847" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">2) Click on ‘Actions Library’</span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 494507118" height="371" src="../../../../images/Database Action_files/image30.png" width="853" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             <img alt="Picture 2034940581" height="856" src="../../../../images/Database Action_files/image31.png" width="401" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">4) This will add the DataBase Action under the Actions</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 453304691" height="64.7" src="../../../../images/Database Action_files/image32.png" width="409.1" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">      5) Double click on it and the below screen should be displayed.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">      <img alt="Picture 1519840105" height="263" src="../../../../images/Database Action_files/image33.png" width="885" /></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">       6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">        and the ‘DB Operation Type’ from the respective dropdowns.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 1485671145" height="328" src="../../../../images/Database Action_files/image34.png" width="891" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:32px;">How to use MongoDB in Ginger?</span></h1>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">What is MongoDB?</span></h2>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;">MongoDB is an open-source document database and leading NoSQL database. MongoDB is a cross-platform, document-oriented database that provides, high performance, high availability, and easy scalability. MongoDB works on the concept of collection and document.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">What does Ginger support in MongoDB?</span></h2>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Used to connect MongoDB databases and perform operations</span></p>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Used to perform operations like insert, update, select</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">Which MongoDB operations are supported in Ginger?</span></h2>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Read Data</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Write Data</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Update Data</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Record Count</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">How to configure MongoDB in Ginger?</span></h2>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Under the Resources tab, go to Environment and select the desired environment.</span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Using the + button add MongoDb. Enter name, select DB Type as “MongoDb”, enter the Connection String or Host and username and password if any.</span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;">Use the following ways to connect with MongoDb</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;">Option 1: &quot;mongodb://user1:password1@localhost/DB&quot; (Connection String format)</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;">Option 2: &quot;mongodb://HostOrIP:27017/DBName&quot; (TNS/Host/FilePath format)</span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 31" height="425" src="../../../../images/Database Action_files/image35.png" width="836" /></span></p>
+    <p class="margin-left-0-60in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">Click on the Test connection button to get the connection successful message.</span></p>
+    <p class="ListParagraph margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 192" height="399" src="../../../../images/Database Action_files/image36.png" width="848" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:32px;">How to add Database Action for MongoDB?</span></h2>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">1) Click on the Business flow. Click on the ‘+’ icon as shown below</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">             <img alt="Picture 423515645" height="348" src="../../../../images/Database Action_files/image37.png" width="854" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">2) Click on ‘Actions Library’</span></p>
+    <p class="ListParagraph margin-left-0text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 1806945361" height="368" src="../../../../images/Database Action_files/image38.png" width="847" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;">3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘DataBase Action’.</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;">              <img alt="Picture 1468067045" height="890" src="../../../../images/Database Action_files/image39.png" width="417" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;">4) This will add the DataBase Action under the Actions</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 1366624217" height="76" src="../../../../images/Database Action_files/image40.png" width="480" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">        5) Double click on it and the below screen should be displayed.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">       <img alt="Picture 2004987138" height="258" src="../../../../images/Database Action_files/image41.png" width="869" /></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">         6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;">        and the ‘DB Operation Type’ from the respective dropdowns.</span></p>
+    <p class="margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"><img alt="Picture 954054471" height="306" src="../../../../images/Database Action_files/image42.png" width="848" /></span></p>
+    <p class="margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
+    <p class="margin-left-0-70in" style="font-family: Calibri"><span style="margin-left:32px;"></span></p>
     <p style="font-family: Calibri"> </p>
   </div>
 </body>

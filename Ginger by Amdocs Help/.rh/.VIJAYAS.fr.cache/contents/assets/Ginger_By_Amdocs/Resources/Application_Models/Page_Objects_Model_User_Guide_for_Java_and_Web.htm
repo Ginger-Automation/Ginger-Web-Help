@@ -34,23 +34,19 @@
     
       ‎
      Introduction
-    The purpose of this document is to provide a hands-on step by step user guide for Autopilot Page
-    Objects Model feature and to provide a wide overview on all Page Objects Model available
-    functions.
+    The purpose of this document is to provide a hands-on step by step user guide for Autopilot Page Objects Model feature and to provide a wide overview on all Page         Objects Model available functions.
     It is available for Web and Java Platforms.
      
      Page Objects Model Wizard
-     
-    There are 2 ways to create a Page Objects Model, first is to create one manually and the second is
-    to let the Ginger learn the Page you’d like to automate, both creations are being done using
-    the Page Objects Model Wizard.
+          There are 2 ways to create a Page Objects Model, first is to create one manually and the second is to let the Ginger learn the Page you’d like to automate, both      
+          creations are being done using the Page Objects Model Wizard.
      
     Automatic page learn
     Prerequisites:
     Solution with at least one Platform Target Application
     At least one platform agent (e.g. selenium chrome Agent for Web Platform)
     Site URL which you wish to learn.
-     
+    
     Go to Resources tab à Applications Models à Page Objects Models.
     Click the Plus button.
     
@@ -73,27 +69,24 @@
     
      
     Learn Specific Frame (Java Driver):
-     
+    
     Checked Learn Specific Frame, in order to learn specific frame of the selected window.
     
      
-     
     Select Agent (If you don’t have an Agent in your solution, please close the wizard configure a new Selenium agent, and start over from step 1).
     After selecting the agent, the On/Off button will be enabled. Click it in order to turn on your agent.
-     
+    
     Now go to the browser instance which been raised by Ginger and navigate to the page URL you would like to learn.
     
      
-     
     When the Agent and its browser instance are opened, the list of Elements Types will be shown on the page.
-    Here you can specify what types of element interesting you in order to create your
-    automation.
+    Here you can specify what types of element interesting you in order to create your automation.
     Once done selecting all desired elements click next.
     
      
      
     Learned Object Mapping
-     
+    
     When reaching to this page the learning process will be automatically started and the Ginger will start to learn all existing elements on the page you were navigated on the previous steps.
     Indication of the running process would be the spinning orange icon which becomes visible. Also, you will notice that the elements are being added to the mapped elements and unmapped elements grids.
     The mapping between them is done depending upon the types of elements you selected on the learning configuration page.
@@ -105,10 +98,8 @@
     If you wish to stop the learning process (reason can be Ginger already learned all relevant elements and there is no reason to continue or you simply want to change the page on the browser instance etc.) you can do it by clicking the stop button.
     
      
-    After clicking the stop button, you will be able to restart the learning process by clicking
-    Re-learn button
+    After clicking the stop button, you will be able to restart the learning process by clicking Re-learn button
     
-     
      
     Using the Spy:
     Click on the Spy button
@@ -130,13 +121,13 @@
      
     Click Finish – The Page Objects Model has been added to the Page Objects Model tree.
      
-    Manual Page Objects Model creation
+          Manual Page Objects Model creation
      
     Go to Resources tab à Application Models à Page Objects Models à and Click the Plus button.
                 
      
     Add Page Objects Model Wizard is opened.
-     
+    
     Click Next Introduction page.
     Check the Manual Radio Button and click Next.
     
@@ -155,8 +146,7 @@
     Browse and Image for your Page Objects Model (optional)
     Click Finish, the New Page Objects Model added to the tree.
      
-     
-    Adding Unmapped Elements to Mapped Elements list and vice-versa
+            Adding Unmapped Elements to Mapped Elements list and vice-versa
      
                 If an element is an unmapped list and the user desires to use it in the Actions then follow the below
                  steps.
@@ -172,15 +162,14 @@
     The same steps are to be performed while moving the elements from mapped to unmapped tab.
      
      
-    Learn Only Mapped Elements
-     
+          Learn Only Mapped Elements
                  Users can choose an option to learn only mapped elements instead of learning all the elements of the page.
                  This reduces the learning time. This option is available by default.
                 The user has to uncheck the checkbox if unmapped elements are to be learned.
                
      
      
-    Learning the Elements by Locator’s Priority
+          Learning the Elements by Locator’s Priority
                 Users can set the priority of locators of the elements of the page.
                 On the Learning Configurations page, expand the area ‘Learned Elements Locators Preferences’.
                There are 4 options viz. ById, ByName, ByRelXPath & ByXpath.
@@ -301,6 +290,7 @@
     
      
                    6. A new window “Map deleted element with the new element” is displayed. If there is no deleted element found on the page, then this grid will be empty.
+     
     Select the edit option to map the element with new elements found on the page.
     
      
@@ -329,7 +319,6 @@
                As shown in the below screenshot, the selected element has learned the possible values from the page.
                 
      
-     
                   Elements that can have values are only allowed eg. Text box, list, etc.
                  For all the other elements, a warning message is displayed
                   
@@ -350,8 +339,8 @@
      
      
      
-    Using Page Objects Model for Automate and Execute
-    Automate Using Page Objects Model
+           Using Page Objects Model for Automate and Execute
+              Automate Using Page Objects Model
                        Go to Business Flows Tab à Select the desired Business Flow with Web/Java Platform as Target Application.
     Double click on the Business Flow.
     Select the desired Activity where you want to add the Action.
@@ -374,12 +363,13 @@
                 
      
      
-     
-    Automate Using Page Objects Model with Values
-                Values can be added to Elements either from the Page Objects Model.
+            Automate Using Page Objects Model with Values
+                 Values can be added to Elements either from the Page Objects Model.
                  Selecting the required element from Page Objects Model as shown below and click on the Select Element button
     
      
     The default value will be populated as shown below. User can also modify this value by typing the desired value in this field.
+     
+     
   
 

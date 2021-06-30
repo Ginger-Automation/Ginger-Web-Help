@@ -40,10 +40,10 @@
           <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
   <div class="position-relative">
     <p class="Title margin-left-2-50intext-indent-0-50in" style="font-family: Calibri"> </p>
-    <p class="Title" style="font-family: Calibri">           <span style="font-size:32px;"> How to Automate Mobile Application</span></p>
+    <p class="Title" style="font-family: Calibri;margin-left: 116px">           <span style="font-size:32px;"> How to Automate Mobile Application</span></p>
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
-    <p class="TOCHeading" style="font-family: Calibri"><strong>Contents</strong></p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#_Toc72966038">Description</a></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#Pre-requisite">Pre-requisite</a></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Start_Mobile_Agent">Start Mobile Agent</a></span></p>
@@ -61,121 +61,121 @@
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"><a id="_Description"></a><br/>
       ‎</p>
-    <h1 class="Heading1" style="font-family: Calibri">Description</h1>
-    <p style="font-family: Calibri"><span style="font-size:16px;">This guide will explain how you can build automation flow for mobile applications using Ginger flow creation tools.</span></p>
-    <p style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="_Pre_Requisites"></a><a id="Pre-requisite"></a>Pre-requisite</h1>
-    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Configured Mobile Target Application</span></p>
-    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Configured Business Flow which mapped to the Mobile Target Application</span></p>
-    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Configured and working mobile Agent</span></p>
-    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Mobile native/hybrid/web application to automate</span></p>
-    <h1 class="Heading1" style="font-family: Calibri"> </h1>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="Start_Mobile_Agent"></a>Start Mobile Agent</h1>
-    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">Follow below steps for starting the Mobile Agent:</span></p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add Business Flow and add the Mobile target application to it</span></p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Shift to Automate page for the specific Business Flow</span></p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the added Appium Agent to be mapped to the Mobile Target Application</span></p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Start the Agent by clicking on the “Start” button</span></p>
-    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Mobile device window will launch (unless disabled on the Agent configurations) and show the device loading and then it screenshots</span></p>
-    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="371" src="../../../images/How to Automate Mobile Application_files/image2.gif" width="682"/></p>
-    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Graphical user interface, text, application, chat or text message
-Description automatically generated" height="434" src="../../../images/How to Automate Mobile Application_files/image3.gif" width="192"/></p>
-    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="Add_Device_Control_Actions_to_Automation_Flow"></a>Add Device Control Actions to Automation Flow</h1>
-    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;">By using the “Mobile Device Action” user can control the device or add device control actions to his automation flow, steps:</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Open the “Add Actions” panel</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select “Actions Library”</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select “Platform Actions”/ ”Mobile Device Action”</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Double click the Action for adding it to the selected Activity Actions list</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Double click the Action to get into it “Operation Settings”</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the operation to perform</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on “Run Action”</span></p>
-    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">The operation will be performed on the device and impact will be visible on the mobile device window</span></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="380" src="../../../images/How to Automate Mobile Application_files/image4.gif" width="753"/></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="Create_Flow_using_Explorer"></a>Create Flow using Explorer</h1>
-    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;">The Explorer tool allows users to explore the current viewed mobile application page, select the element/control needed to be automated and attach proper action to it, by that, Action by Action, the user can build the automation flow.</span></p>
-    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
-    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><a id="Launch_Window_Explorer"></a>Launch Window Explorer</h2>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Follow the below steps for opening the Explorer tool:</span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:120px;">Description</span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">This guide will explain how you can build automation flow for mobile applications using Ginger flow creation tools.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:120px;"><a id="_Pre_Requisites"></a><a id="Pre-requisite"></a>Pre-requisite</span></h1>
+    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Configured Mobile Target Application</span></span></p>
+    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Configured Business Flow which mapped to the Mobile Target Application</span></span></p>
+    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Configured and working mobile Agent</span></span></p>
+    <p class="Numbering1 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Mobile native/hybrid/web application to automate</span></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:120px;"></span></h1>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Start_Mobile_Agent"></a>Start Mobile Agent</span></h1>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Follow below steps for starting the Mobile Agent:</span></span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Add Business Flow and add the Mobile target application to it</span></span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Shift to Automate page for the specific Business Flow</span></span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select the added Appium Agent to be mapped to the Mobile Target Application</span></span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Start the Agent by clicking on the “Start” button</span></span></p>
+    <p class="Numbering32 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Mobile device window will launch (unless disabled on the Agent configurations) and show the device loading and then it screenshots</span></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="371" src="../../../images/How to Automate Mobile Application_files/image2.gif" width="682"/></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" height="434" src="../../../images/How to Automate Mobile Application_files/image3.gif" width="192"/></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Add_Device_Control_Actions_to_Automation_Flow"></a>Add Device Control Actions to Automation Flow</span></h1>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">By using the “Mobile Device Action” user can control the device or add device control actions to his automation flow, steps:</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Open the “Add Actions” panel</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select “Actions Library”</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select “Platform Actions”/ ”Mobile Device Action”</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Double click the Action for adding it to the selected Activity Actions list</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Double click the Action to get into it “Operation Settings”</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select the operation to perform</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Click on “Run Action”</span></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">The operation will be performed on the device and impact will be visible on the mobile device window</span></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="380" src="../../../images/How to Automate Mobile Application_files/image4.gif" width="753"/></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Create_Flow_using_Explorer"></a>Create Flow using Explorer</span></h1>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">The Explorer tool allows users to explore the current viewed mobile application page, select the element/control needed to be automated and attach proper action to it, by that, Action by Action, the user can build the automation flow.</span></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Launch_Window_Explorer"></a>Launch Window Explorer</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Follow the below steps for opening the Explorer tool:</span></span></p>
     <ol class="LowerAlpha">
-      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="font-size:16px;">Make sure mobile Agent is started</span></li>
-      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="font-size:16px;">Reach to the mobile application page you want to automate</span></li>
-      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="font-size:16px;">Open the “Add Actions” panel</span></li>
-      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="font-size:16px;">Select the “Explorer” option</span></li>
-      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="font-size:16px;">Explorer tool will be opened inside the panel</span></li>
+      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="margin-left:120px;"><span style="font-size:16px;">Make sure mobile Agent is started</span></span></li>
+      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="margin-left:120px;"><span style="font-size:16px;">Reach to the mobile application page you want to automate</span></span></li>
+      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="margin-left:120px;"><span style="font-size:16px;">Open the “Add Actions” panel</span></span></li>
+      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="margin-left:120px;"><span style="font-size:16px;">Select the “Explorer” option</span></span></li>
+      <li class="Numbering1 ListParagraph" data-list-level="2" style="font-family: Calibri;"><span style="margin-left:120px;"><span style="font-size:16px;">Explorer tool will be opened inside the panel</span></span></li>
     </ol>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="388" src="../../../images/How to Automate Mobile Application_files/image5.gif" width="751"/></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="441" src="../../../images/How to Automate Mobile Application_files/image6.gif" width="746"/></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
-    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><a id="Select_Element_via_Screenshot"></a>Select Element via Screenshot</h2>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">The screenshot option is the easiest way to select an element to be automated, follow the below steps for using it:</span></p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Make sure the page to automate is loaded on the device</span></p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on the “Screenshot” tab</span></p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Go over the screenshot image and Click on the element/control which you want to automate</span></p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">After few seconds the explorer will identify the element control which mouse was pointing on and the element details will be loaded into the “Selected Element” section</span></p>
-    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Selected element also will be highlighted on the screenshot</span></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Graphical user interface, text, application
-Description automatically generated" height="564" src="../../../images/How to Automate Mobile Application_files/image7.gif" width="753"/></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
-    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><a id="Select_Element_via_Page_Source"></a>Select Element via Page Source</h2>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Page Source will show the XML (for native/hybrid apps) and HTML (for Web apps) which behind the currently loaded page on the device, the user can select an element by picking one of the nodes, steps:</span></p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Make sure the page to automate is loaded on the device</span></p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on the “Page Source” tab</span></p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Review the loaded XML/HTML</span></p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the node related to the control you want to automate</span></p>
-    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Details of the selected control will be loaded into the “Selected Element” section</span></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Graphical user interface
-Description automatically generated" height="444" src="../../../images/How to Automate Mobile Application_files/image8.gif" width="731"/></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
-    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><a id="Select_Element_via_Grid_View"></a>Select Element via Grid View</h2>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Grid View will show the list of elements/controls that exist on the loaded application page on the device for the user to select from, steps:</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Make sure the page to automate is loaded on the device</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on the “Grid View” tab</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Filter Elements window will be shown for the user to select the type of UI controls to filter by, user should select which type of controls he requires and click “Search” (it is recommended to use the filter for faster controls scanning process)</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">All found elements/controls will be shown in a list</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the required element from the list</span></p>
-    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">The selected element details will be loaded into the “Selected Element” section</span></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><img alt="Graphical user interface, text, application
-Description automatically generated" height="457" src="../../../images/How to Automate Mobile Application_files/image9.gif" width="751"/></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><img alt="Graphical user interface, text, application, email
-Description automatically generated" height="456" src="../../../images/How to Automate Mobile Application_files/image10.gif" width="749"/></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
-    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><a id="Add_Action_for_Selected_Element"></a>Add Action for Selected Element</h2>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">Once element/control was selected using the “Screenshot”/ “Page Source” / “Grid View” tools, all of its details will be shown in the “Selected Element” section.</span></p>
-    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">Element details will be:</span></p>
-    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Properties- a collection of information details Ginger collected for the specifically selected element, like Type, size, location, etc.</span></p>
-    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Locators- list of locators Ginger captured to be used for locating this element in flow execution time</span></p>
-    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Action- will include the possible operations that can be performed on the selected element</span></p>
-    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Steps for adding Action for the specifically selected element:</span></p>
-    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on the Action tab</span></p>
-    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select/set the proper locator and value to be used</span></p>
-    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the operation to be done</span></p>
-    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In case relevant, set the value to be used</span></p>
-    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on “Run” for testing the operation from the Explorer tool, the result of the execution will be shown on the “Execution Report” tab</span></p>
-    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In case operation performed as expected, click on the “Add” button for adding the operation for the specifically selected element into the list of currently selected Activity</span></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="381" src="../../../images/How to Automate Mobile Application_files/image11.gif" width="756"/></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="396" src="../../../images/How to Automate Mobile Application_files/image12.gif" width="769"/></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
-    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Graphical user interface, application
-Description automatically generated" height="396" src="../../../images/How to Automate Mobile Application_files/image13.gif" width="769"/></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="388" src="../../../images/How to Automate Mobile Application_files/image5.gif" width="751"/></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="441" src="../../../images/How to Automate Mobile Application_files/image6.gif" width="746"/></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Select_Element_via_Screenshot"></a>Select Element via Screenshot</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">The screenshot option is the easiest way to select an element to be automated, follow the below steps for using it:</span></span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Make sure the page to automate is loaded on the device</span></span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Click on the “Screenshot” tab</span></span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Go over the screenshot image and Click on the element/control which you want to automate</span></span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">After few seconds the explorer will identify the element control which mouse was pointing on and the element details will be loaded into the “Selected Element” section</span></span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Selected element also will be highlighted on the screenshot</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, text, application
+Description automatically generated" height="564" src="../../../images/How to Automate Mobile Application_files/image7.gif" width="753"/></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Select_Element_via_Page_Source"></a>Select Element via Page Source</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Page Source will show the XML (for native/hybrid apps) and HTML (for Web apps) which behind the currently loaded page on the device, the user can select an element by picking one of the nodes, steps:</span></span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Make sure the page to automate is loaded on the device</span></span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Click on the “Page Source” tab</span></span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Review the loaded XML/HTML</span></span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select the node related to the control you want to automate</span></span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Details of the selected control will be loaded into the “Selected Element” section</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface
+Description automatically generated" height="444" src="../../../images/How to Automate Mobile Application_files/image8.gif" width="731"/></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Select_Element_via_Grid_View"></a>Select Element via Grid View</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Grid View will show the list of elements/controls that exist on the loaded application page on the device for the user to select from, steps:</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Make sure the page to automate is loaded on the device</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Click on the “Grid View” tab</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Filter Elements window will be shown for the user to select the type of UI controls to filter by, user should select which type of controls he requires and click “Search” (it is recommended to use the filter for faster controls scanning process)</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">All found elements/controls will be shown in a list</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select the required element from the list</span></span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">The selected element details will be loaded into the “Selected Element” section</span></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, text, application
+Description automatically generated" height="457" src="../../../images/How to Automate Mobile Application_files/image9.gif" width="751"/></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, text, application, email
+Description automatically generated" height="456" src="../../../images/How to Automate Mobile Application_files/image10.gif" width="749"/></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <h2 class="Numbering2" data-list-level="2" style="font-family: Calibri"><span style="margin-left:120px;"><a id="Add_Action_for_Selected_Element"></a>Add Action for Selected Element</span></h2>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Once element/control was selected using the “Screenshot”/ “Page Source” / “Grid View” tools, all of its details will be shown in the “Selected Element” section.</span></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Element details will be:</span></span></p>
+    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Properties- a collection of information details Ginger collected for the specifically selected element, like Type, size, location, etc.</span></span></p>
+    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Locators- list of locators Ginger captured to be used for locating this element in flow execution time</span></span></p>
+    <p class="Numbering41 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Action- will include the possible operations that can be performed on the selected element</span></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Steps for adding Action for the specifically selected element:</span></span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Click on the Action tab</span></span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select/set the proper locator and value to be used</span></span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Select the operation to be done</span></span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">In case relevant, set the value to be used</span></span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">Click on “Run” for testing the operation from the Explorer tool, the result of the execution will be shown on the “Execution Report” tab</span></span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="margin-left:120px;"><span style="font-size:16px;">In case operation performed as expected, click on the “Add” button for adding the operation for the specifically selected element into the list of currently selected Activity</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="381" src="../../../images/How to Automate Mobile Application_files/image11.gif" width="756"/></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="396" src="../../../images/How to Automate Mobile Application_files/image12.gif" width="769"/></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:120px;"><img alt="Graphical user interface, application
+Description automatically generated" height="396" src="../../../images/How to Automate Mobile Application_files/image13.gif" width="769"/></span></p>
   </div>
 
 </div>

@@ -32,7 +32,7 @@
       
        Ginger Execution Advanced
     
-     
+    
     Pre Requisites
     Plugin Prerequisites are:
     Bamboo Server requires Java8 or above to function.
@@ -43,7 +43,7 @@
     Configured on Ginger Source Control
     Includes Run Set/s ready to be executed
     Ginger Version (Beta 3.7.5 or above) on Slave machine (For Ginger Plugin V1 or above)
-     
+    
     How to use the Ginger Plugin
     Install Ginger Plugin
            Please follow below steps for installing the Ginger Plugin:
@@ -52,11 +52,11 @@
     On the Same page there is an option to upload a plugin browse and select the Ginger Plugin file “GingerForBamboo.jar”
     Click on “Upload”
             The plugin now supposed to be installed and ready to be used.
-     
+    
           
-     
-     
-     
+    
+    
+    
     Set Ginger Execution using Ginger Plugin
                Use Ginger Plugin in Your Project
     Follow below steps to use the Ginger plugin in your new/existing Bamboo project:
@@ -65,10 +65,8 @@
     Search For “Ginger” on Tasks Page
     Click on desired “Ginger Task”.
     
-     
     
     
-     
     Configure Ginger Runset Execution Task
              Please set below details in the plugin configurations:
     Set below “Source Control Configurations” details
@@ -121,7 +119,7 @@
               Source Control username
             
             
-               
+              
             
           
           
@@ -132,7 +130,7 @@
               Source Control password
             
             
-               
+              
             
           
           
@@ -160,10 +158,10 @@
         
       
     
-     
+    
     Click on “Test Connection”
     Set below “Test Properties” details
-     
+    
     
       
         
@@ -191,7 +189,7 @@
               Ginger Solution name to execute as appear in repository
             
             
-               
+              
             
           
           
@@ -202,7 +200,7 @@
               The Ginger Run Set to execute (must be exist in the Solution)
             
             
-               
+              
             
           
           
@@ -213,15 +211,15 @@
               The Ginger environment to use for execution (must be exist in the Solution)
             
             
-               
+              
             
           
         
       
     
-     
+    
     Set below “Ginger Execution Definitions” details:
-     
+    
     
       
         
@@ -282,7 +280,7 @@
               Check if you want have Auto Run Window
             
             
-               
+              
             
           
           
@@ -293,23 +291,22 @@
               Check if you want run analyzer before execution
             
             
-               
+              
             
           
         
       
     
-     
-     
-     
+    
+    
+    
     Config Example – Ginger Runset Execution
-     
-     
+    
                         
-     
+    
                 Configure Ginger Execution Advanced Task
                  Please set below details in the plugin configurations:
-     
+    
     
       
         
@@ -359,15 +356,15 @@
               Provide Json data of the Runset which can find while creating autorun window or else you can modify default schema provided.
             
             
-               
+              
             
           
         
       
     
-     
-     Json Payload in Advanced Task - supports 2 main modes
-     
+    
+    Json Payload in Advanced Task - supports 2 main modes
+    
     Existing Run Set execution configurations- User can specify how exactly an existing Run set will be executed by manipulating it:
      Runners execution configuration such as Parallel/Sequential, if to stop on failure or not, etc.
      Applications-Agents mapping- set different Agent than configured on Ginger
@@ -375,9 +372,11 @@
      Business Flows Active flag for disabling some of the Business Flows
      Business Flow Input values- can define which value will be set to each input, including Output Values configuration
      Run set Operations configurations manipulation (currently only Mail Report operation changes is supported)
-    On run time from CLI, Ginger will load the existing Run set, then will manipulate it according to the JSON configurations and then will execute the manipulated Run set.
+    On run time from CLI, Ginger will load the existing Run set, then will manipulate it according to the JSON configurations and then will 
+    execute the manipulated Run set.
     Changes are not been saved to the Run set and been used only during execution.
-    Note: JSON should include only the nodes of the items (Runners/Business Flows/etc.) which needs to be modified on the Run set before execution starts.
+    Note: JSON should include only the nodes of the items (Runners/Business Flows/etc.) which needs to be modified on the Run set before 
+    execution starts.
     
     Sample existing Run set manipulation JSON:
     

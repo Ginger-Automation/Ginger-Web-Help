@@ -43,7 +43,7 @@
     <p class="Title" style="font-family: Calibri">                     <span style="font-size:32px;">How to Setup Ginger Setup for CRM-OMS</span></p>
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
-    <p class="TOCHeading" style="font-family: Calibri"><strong>Contents</strong></p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="How_to_Setup_Ginger_for_CRM-_OMS_2.htm">Ginger Setup</a></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#Steps">Steps</a></span></p>
     <p style="font-family: Calibri"> </p>
@@ -51,46 +51,46 @@
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"><a id="_Description"></a><br/>
       ‎</p>
-    <h1 style="font-family: Calibri">Ginger Setup</h1>
-    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">To incorporate Ginger capabilities in an ASCF SmartClient application, you need to make three changes to the application’s JNLP deployment: </span></p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">1) add </span><span style="font-size:16px;">a tag to the workspace.xml file, </span></p>
-    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">2) add the Ginger jar to the JNLP descriptor file, and 3) add the signed Ginger JAR to the JNLP WAR.</span></p>
-    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
-    <p style="font-family: Calibri"><span style="font-size:16px;"> Materials needed:</span></p>
-    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Contents of <a class="Hyperlink" href="file://davidfre04/GingerToolBox/">\\DAVIDFRE04\GingerToolBox\</a>. Use the corresponding Ginger jar depending on if your host app is v8 or v9. Ginger ToolBox requires the host app to use either ASCF 9.0 (any release) or ASCF 8.2 HF68 (or higher).</span></p>
-    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">SmartClient application JNLP EAR/WAR</span></p>
-    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Windows machine for signing the Ginger jar</span></p>
-    <h1 style="font-family: Calibri"> </h1>
-    <h1 style="font-family: Calibri"><a id="_Pre_Requisites"></a><a id="Steps"></a>Steps</h1>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add the Ginger JAR to the JNLP descriptor file</span></p>
-    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Find the .jnlp file in the application EAR’s WAR path. EX: JNLPServer/ear/war/AppName/AppName.jnlp</span></p>
-    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add a line for the Ginger JAR. EX: &lt;jar href=&quot;Ginger_ASCF.jar&quot; version=&quot;9.0&quot;/&gt;</span></p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add the Ginger JAR to the JNLP WAR</span></p>
-    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Download the Ginger JAR from the above location</span></p>
-    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Put the Ginger JAR in the same folder as the .jnlp file</span></p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Sign the Ginger JAR</span></p>
-    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Copy SignJar.cmd, Unsign. cmd, and MANIFEST.MF to a Windows machine (see Ginger download folder)</span></p>
-    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In this same folder, make 2 temp folders, “signed” and “unsigned”</span></p>
-    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">All JNLP Jars need to be signed with the same certificate</span></p>
-    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Option 1: your jar signing process involves a custom certificate</span></p>
-    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Copy your AmdocsStoreName to the Windows folder</span></p>
-    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Download the Ginger JAR from the above location to the unsigned folder</span></p>
-    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Sign the JAR: SignJar.cmd -sc unsigned signed</span></p>
-    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Move the Ginger JARs (*.jar and *.jar.pack.gz) from the “signed” folder to the .jnlp file folder</span></p>
-    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Option 2: your jar signing process uses the default self-signing certificate</span></p>
-    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Copy all SmartClient JARs (*.jar not *.jar.pack.gz) from the .jnlp file folder to the “signed” folder</span></p>
-    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Unsign the JARs: SignJar.cmd -u signed unsigned</span></p>
-    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Create the certificate file: SignJar.cmd -c</span></p>
-    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Sign the JARs: SignJar.cmd -sc unsigned signed</span></p>
-    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Move the JARs (*.jar and *.jar.pack.gz) from the “signed” folder to the .jnlp file folder</span></p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Edit the workspace.xml</span></p>
-    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Find the workspace.xml, possibly in the same path as the .jnlp file</span></p>
-    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add the Inject tag to workspace.xml just below the &lt;Applications/&gt; block (after the closing tag):</span></p>
-    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">&lt;Inject&gt;</span></p>
-    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"><span style="font-size:16px;">&lt;ToolboxForm logicalFormName=&quot;GingerToolBox&quot; /&gt;</span></p>
-    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">&lt;/Inject&gt;</span></p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Restart the JNLP server</span></p>
-    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Launch the SmartClient application from hyperlink on the AppName.jnlp web browser page</span></p>
+    <h1 style="font-family: Calibri"><span style="margin-left:32px;">Ginger Setup</span></h1>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">To incorporate Ginger capabilities in an ASCF SmartClient application, you need to make three changes to the application’s JNLP deployment: </span></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">1) add </span><span style="font-size:16px;">a tag to the workspace.xml file, </span></span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">2) add the Ginger jar to the JNLP descriptor file, and 3) add the signed Ginger JAR to the JNLP WAR.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;"> Materials needed:</span></span></p>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Contents of <a class="Hyperlink" href="file://davidfre04/GingerToolBox/">\\DAVIDFRE04\GingerToolBox\</a>. Use the corresponding Ginger jar depending on if your host app is v8 or v9. Ginger ToolBox requires the host app to use either ASCF 9.0 (any release) or ASCF 8.2 HF68 (or higher).</span></span></p>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">SmartClient application JNLP EAR/WAR</span></span></p>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Windows machine for signing the Ginger jar</span></span></p>
+    <h1 style="font-family: Calibri"><span style="margin-left:32px;"></span></h1>
+    <h1 style="font-family: Calibri"><span style="margin-left:32px;"><a id="_Pre_Requisites"></a><a id="Steps"></a>Steps</span></h1>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Add the Ginger JAR to the JNLP descriptor file</span></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Find the .jnlp file in the application EAR’s WAR path. EX: JNLPServer/ear/war/AppName/AppName.jnlp</span></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Add a line for the Ginger JAR. EX: &lt;jar href=&quot;Ginger_ASCF.jar&quot; version=&quot;9.0&quot;/&gt;</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Add the Ginger JAR to the JNLP WAR</span></span></p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Download the Ginger JAR from the above location</span></span></p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Put the Ginger JAR in the same folder as the .jnlp file</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Sign the Ginger JAR</span></span></p>
+    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Copy SignJar.cmd, Unsign. cmd, and MANIFEST.MF to a Windows machine (see Ginger download folder)</span></span></p>
+    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">In this same folder, make 2 temp folders, “signed” and “unsigned”</span></span></p>
+    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">All JNLP Jars need to be signed with the same certificate</span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Option 1: your jar signing process involves a custom certificate</span></span></p>
+    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Copy your AmdocsStoreName to the Windows folder</span></span></p>
+    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Download the Ginger JAR from the above location to the unsigned folder</span></span></p>
+    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Sign the JAR: SignJar.cmd -sc unsigned signed</span></span></p>
+    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Move the Ginger JARs (*.jar and *.jar.pack.gz) from the “signed” folder to the .jnlp file folder</span></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Option 2: your jar signing process uses the default self-signing certificate</span></span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Copy all SmartClient JARs (*.jar not *.jar.pack.gz) from the .jnlp file folder to the “signed” folder</span></span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Unsign the JARs: SignJar.cmd -u signed unsigned</span></span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Create the certificate file: SignJar.cmd -c</span></span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Sign the JARs: SignJar.cmd -sc unsigned signed</span></span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Move the JARs (*.jar and *.jar.pack.gz) from the “signed” folder to the .jnlp file folder</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Edit the workspace.xml</span></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Find the workspace.xml, possibly in the same path as the .jnlp file</span></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Add the Inject tag to workspace.xml just below the &lt;Applications/&gt; block (after the closing tag):</span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">&lt;Inject&gt;</span></span></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">&lt;ToolboxForm logicalFormName=&quot;GingerToolBox&quot; /&gt;</span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">&lt;/Inject&gt;</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Restart the JNLP server</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:32px;"><span style="font-size:16px;">Launch the SmartClient application from hyperlink on the AppName.jnlp web browser page</span></span></p>
     <p style="font-family: Calibri"> </p>
   </div>
 

@@ -15,7 +15,7 @@
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
-    <p class="TOCHeading" style="font-family: Calibri"><span style="font-size:19px;font-weight:bold">Contents</span></p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><span style="font-size:19px;font-weight:bold">Contents</span></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Introduction">Introduction</a></span></p>
     <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#How_to_Configure_Action">How to Configure Action</a></span></p>
     <ul class="Disc">
@@ -27,74 +27,74 @@
     <p style="font-family: Calibri"> </p>
     <h1 class="Heading1" style="font-family: Calibri"><a id=" Introduction          This action is used to handle Browser and Widgets. How to Configure Action 2.1 Pre-requisite                          A Solution should be created with Agent having Web, Java or PowerBuilder Platform.                          2.2 Action Operation- Initialize Browser                       Double click on the Business flow. In the Activity Actions, click on ‘Add New’ button                In the ‘Platform Actions’ tab, select the ‘Browse Action’ then click on ‘Add Action’ button given in the below window                                                      Below screen should be displayed.  The ‘Operation Type’ have default option as ‘Initialize Browser’.Click on Ok to add the action to the Activity Actions.      User needs to use ‘Go to URL’ Operation type to launch a website.  The ‘Operation Type’ have the below options:-Close Window               ------- Used to close a windowGet Page Source           -----– used to get source of  a Web pageGet Page URL               ----- – used to get the url of the displayed pageInitialize Browser        --------used to initialize a browser(default selected)Inject JS                        ------ – used when we want to inject a different Java script on the web pageMaximize Window       -----– used to maximize the displayed windowSwitch Frame              -------– used when we want to switch between frames on the displayed web pageSwitch to Default Frame --– used when the focus is required to shift to the default frame of the web pageSwitch to Default Window – the default window is the one which is performed in ‘GoTo URL’ action. Using this                                                       sub action switches the focus to this default window Switch to Parent Frame ---- - used to switch to the parent frame of the web pageSwitch Window             -------- used to switch between different windows  Run Action will perform the action in the Agent.              2.3 Action Operation- Handle Browser Alerts In the below screen, select the ‘Operation Type’  as per the browser alert required. Below are the list of operation available:-Accept Message BoxDismiss Message BoxGet Message Box TextSet Alert Box Text  2.3 How to use Page Object Model for Goto Url Operation Open the Browser Action and select operation type as ‘Goto URL’.Select the ‘Page Object Model URL’ radio button       Click on the pen icon and select the Page Object Model from the displayed tree.Click on the Select button of the selection window.                            The select Page Object Model is then displayed. User can modify the page object model if desired using the ‘View/Edit POM’ button as shown below."></a><br />
       ‎</h1>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="Introduction"></a>Introduction </h1>
-    <p style="font-family: Calibri"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a> <span style="font-size:16px;">This action is used to handle Browser and Widgets.</span></p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="How_to_Configure_Action"></a>How to Configure Action</h1>
-    <h2 style="font-family: Calibri"><a id="2.1_Pre-requisite"></a>Pre-requisite</h2>
-    <p style="font-family: Calibri"><span style="font-size:16px;"><span style="font-family:Calibri;">A Solution should be created with Agent having Web, Java or PowerBuilder Platform.</span></span></p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="2.2_Action_Operation-_Initialize_Browser"></a>Action Operation- Initialize Browser</h2>
-    <p style="font-family: Calibri"> </p>
-    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Double click on the Business flow. In the Activity Actions, click on ‘Add New’ button</span></p>
-    <p style="font-family: Calibri">        <img alt="Picture 5" height="238.0" src="../../../../images/Browser Action_files/image2.png" width="631.2" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In the ‘Platform Actions’ tab, select the ‘Browse Action’ then click on ‘Add Action’ button given in the below window</span></p>
-    <p style="font-family: Calibri">       <img alt="Picture 1" height="295.0" src="../../../../images/Browser Action_files/image3.png" width="678.2" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="font-family:Calibri;"><span style="font-size:16px;">Below screen should be displayed.</span></span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-family:Calibri;"><span style="font-size:16px;">The ‘Operation Type’ have default option as ‘Initialize Browser’.</span></span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-family:Calibri;"><span style="font-size:16px;">Click on Ok to add the action to the Activity Actions.</span></span></p>
-    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-family:Calibri;"><span style="font-size:16px;">       User needs to use ‘Go to URL’ Operation type to launch a website.</span></span></p>
-    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 6" height="272.4" src="../../../../images/Browser Action_files/image4.png" width="684.0" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">The ‘Operation Type’ have the below options:-</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Close Window ------- Used to close a window</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Get Page Source -----– used to get source of a Web page</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Get Page URL ----- – used to get the url of the displayed page</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Initialize Browser --------used to initialize a browser</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">(default selected)</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Inject JS ------ – used when we want to inject a different Java script on the web page</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Maximize Window -----– used to maximize the displayed window</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Switch Frame -------– used when we want to switch between frames on the displayed web page</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Switch to Default Frame --– used when the focus is required to shift to the default frame of the web page</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Switch to Default Window – the default window is the one which is performed in ‘GoTo URL’ action. Using this</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">sub action switches the focus to this default window</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Switch to Parent Frame ---- - used to switch to the parent frame of the web page</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Switch Window -------- used to switch between different windows</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Run Action will perform the action in the Agent.</span></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="2.3_Action_Operation-_Handle_Browser_Alerts"></a>Action Operation- Handle Browser Alerts</h2>
-    <p style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In the below screen, select the ‘Operation Type’ as per the browser alert required.</span></p>
-    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 4" height="428.0" src="../../../../images/Browser Action_files/image5.png" width="561.0" /></p>
-    <p class="ListParagraph" style="font-family: Calibri"> </p>
-    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Below are the list of operation available:-</span></p>
-    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Accept Message Box</span></p>
-    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Dismiss Message Box</span></p>
-    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Get Message Box Text</span></p>
-    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Set Alert Box Text</span></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <h2 style="font-family: Calibri"><a id="2.3_How_to_use_Page_Object_Model_for_Goto_Url_Operation"></a>How to use Page Object Model for Goto URL Operation</h2>
-    <p style="font-family: Calibri"> </p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Open the Browser Action and select operation type as ‘Goto URL’.</span></p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the ‘Page Object Model URL’ radio button</span></p>
-    <p class="ListParagraph margin-left-0-51in" style="font-family: Calibri"> <img alt="Picture 2" height="251.2" src="../../../../images/Browser Action_files/image6.png" width="548.0" /></p>
-    <p class="ListParagraph margin-left-0-51in" style="font-family: Calibri"> </p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on the pen icon and select the Page Object Model from the displayed tree.</span></p>
-    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">Click on the Select button of the selection window.</span></p>
-    <p style="font-family: Calibri">               <img alt="Picture 7" height="398.5" src="../../../../images/Browser Action_files/image7.png" width="479.9" /></p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <p style="font-family: Calibri"> </p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">The select Page Object Model is then displayed. User can modify the page object model if desired using the ‘View/Edit POM’ button as shown below.</span></p>
-    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 9" height="215.7" src="../../../../images/Browser Action_files/image8.png" width="559.8" /></p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id="Introduction"></a><span style="margin-left:44px;">Introduction </span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a> <span style="font-size:16px;">This action is used to handle Browser and Widgets.</span></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:44px;"><a id="How_to_Configure_Action"></a>How to Configure Action</span></h1>
+    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.1_Pre-requisite"></a>Pre-requisite</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;"><span style="font-family:Calibri;">A Solution should be created with Agent having Web, Java or PowerBuilder Platform.</span></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.2_Action_Operation-_Initialize_Browser"></a>Action Operation- Initialize Browser</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Double click on the Business flow. In the Activity Actions, click on ‘Add New’ button</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;">        <img alt="Picture 5" height="284" src="../../../../images/Browser Action_files/image2.png" width="753" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">In the ‘Platform Actions’ tab, select the ‘Browse Action’ then click on ‘Add Action’ button given in the below window</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;">       <img alt="Picture 1" height="333" src="../../../../images/Browser Action_files/image3.png" width="765" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-family:Calibri;"><span style="font-size:16px;">Below screen should be displayed.</span></span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-family:Calibri;"><span style="font-size:16px;">The ‘Operation Type’ have default option as ‘Initialize Browser’.</span></span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-family:Calibri;"><span style="font-size:16px;">Click on Ok to add the action to the Activity Actions.</span></span></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-family:Calibri;"><span style="font-size:16px;">       User needs to use ‘Go to URL’ Operation type to launch a website.</span></span></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><img alt="Picture 6" height="304" src="../../../../images/Browser Action_files/image4.png" width="762" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">The ‘Operation Type’ have the below options:-</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Close Window ------- Used to close a window</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Get Page Source -----– used to get source of a Web page</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Get Page URL ----- – used to get the url of the displayed page</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Initialize Browser --------used to initialize a browser</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">(default selected)</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Inject JS ------ – used when we want to inject a different Java script on the web page</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Maximize Window -----– used to maximize the displayed window</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Switch Frame -------– used when we want to switch between frames on the displayed web page</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Switch to Default Frame --– used when the focus is required to shift to the default frame of the web page</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Switch to Default Window – the default window is the one which is performed in ‘GoTo URL’ action. Using this</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">sub action switches the focus to this default window</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Switch to Parent Frame ---- - used to switch to the parent frame of the web page</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Switch Window -------- used to switch between different windows</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Run Action will perform the action in the Agent.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.3_Action_Operation-_Handle_Browser_Alerts"></a>Action Operation- Handle Browser Alerts</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">In the below screen, select the ‘Operation Type’ as per the browser alert required.</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><img alt="Picture 4" height="479" src="../../../../images/Browser Action_files/image5.png" width="627" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Below are the list of operation available:-</span></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Accept Message Box</span></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Dismiss Message Box</span></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Get Message Box Text</span></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Set Alert Box Text</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.3_How_to_use_Page_Object_Model_for_Goto_Url_Operation"></a>How to use Page Object Model for Goto URL Operation</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Open the Browser Action and select operation type as ‘Goto URL’.</span></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Select the ‘Page Object Model URL’ radio button</span></span></p>
+    <p class="ListParagraph margin-left-0-51in" style="font-family: Calibri"><span style="margin-left:44px;"> <img alt="Picture 2" height="279" src="../../../../images/Browser Action_files/image6.png" width="609" /></span></p>
+    <p class="ListParagraph margin-left-0-51in" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Click on the pen icon and select the Page Object Model from the displayed tree.</span></span></p>
+    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Click on the Select button of the selection window.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;">                <img alt="Picture 7" height="488" src="../../../../images/Browser Action_files/image7.png" width="586" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">The select Page Object Model is then displayed. User can modify the page object model if desired using the ‘View/Edit POM’ button as shown below.</span></span></p>
+    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"><span style="margin-left:44px;"><img alt="Picture 9" height="215.7" src="../../../../images/Browser Action_files/image8.png" width="559.8" /></span></p>
   </div>
 </body>
 </html>

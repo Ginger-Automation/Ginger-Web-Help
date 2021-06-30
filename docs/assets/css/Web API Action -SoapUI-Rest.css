@@ -291,3 +291,6 @@ position:relative;
 .RH-LAYOUT-CENTERPANEL-topic-box .text-indent-0-50in, .RH-LAYOUT-FOOTER-container .text-indent-0-50in {
 text-indent:0.50in;
 }
+.RH-LAYOUT-CENTERPANEL-topic-box ol.LowerRoman, .RH-LAYOUT-FOOTER-container ol.LowerRoman {
+    list-style-type: lower-roman;
+}
