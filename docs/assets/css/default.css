@@ -1,0 +1,6 @@
+.RH-LAYOUT-CENTERPANEL-topic-box ul.Disc, .RH-LAYOUT-FOOTER-container ul.Disc {
+    list-style-type: disc;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box ul.Circle, .RH-LAYOUT-FOOTER-container ul.Circle {
+    list-style-type: circle;
+}

@@ -60,3 +60,6 @@ position:relative;
 }
 span { white-space: pre-wrap;
 }
+ol.LowerAlpha {
+    list-style-type: lower-alpha;
+}

@@ -286,6 +286,14 @@
     </topic>
     
     <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\General_Action_Types\Launch_Java_Application_Action.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\General_Action_Types\REST_Action.htm
+    </topic>
+    
+    <topic>
       assets\Ginger_By_Amdocs\Business_Flows\Actions\05-_Automatic_Actions_Convertor.htm
     </topic>
     
@@ -298,6 +306,10 @@
     </topic>
     
     <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Variables\Variable_Type_Overview.htm
+    </topic>
+    
+    <topic>
       assets\Ginger_By_Amdocs\Business_Flows\Automate\How_to_Automate_Power_Builder_Widgets.htm
     </topic>
     
@@ -307,10 +319,6 @@
     
     <topic>
       assets\Ginger_By_Amdocs\Business_Flows\Automate\How_to_Automate_Unix_application_in_Ginger.htm
-    </topic>
-    
-    <topic>
-      assets\Ginger_By_Amdocs\Business_Flows\Automate\How_to_Setup_Ginger_for_CRM-_OMS_2.htm
     </topic>
     
     <topic>
