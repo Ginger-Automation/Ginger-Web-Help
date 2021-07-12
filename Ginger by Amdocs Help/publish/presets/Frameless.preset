@@ -31,7 +31,6 @@
     <name>First_Topic</name>
     <path>../../contents/First_Topic.htm</path>
   </defaultTopic>
-  <logoURL>https://ginger.amdocs.com/Content/img/amdocs/GingerByAmdocs.png</logoURL>
   <hpTopicPath></hpTopicPath>
   <downloadPDF></downloadPDF>
   <chatbot>
@@ -60,8 +59,8 @@
   <createThumbNails type="boolean">false</createThumbNails>
   <use_thumbnails type="boolean">false</use_thumbnails>
   <favicon>
-    <name>Amdocs</name>
-    <path>../../contents/assets/images/Amdocs.png</path>
+    <name>amdocs_Icon</name>
+    <path>../../contents/assets/images/amdocs_Icon.png</path>
   </favicon>
   <patchHomepage type="boolean">true</patchHomepage>
   <gdprCompliance type="boolean">true</gdprCompliance>

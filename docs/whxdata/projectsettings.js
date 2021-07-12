@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("First_Topic.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.html'));
 rh.consts('START_FILEPATH', encodeURI('index.html'));
-rh.consts('HELP_ID', 'c01cc63d-2ac9-498a-a265-9fd97f1f5153' || 'preview');
+rh.consts('HELP_ID', 'c92e56a3-2755-42c2-9c3e-9dbceda95fde' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");
@@ -22,6 +22,6 @@ model.publish(rh.consts('CHAT_API_SESSION_TOKEN'), "");
 model.publish(rh.consts('CHAT_API_PROJ_ID'), "");
 
 model.publish(rh.consts('KEY_SUBSTR_SEARCH'), "");
-model.publish(rh.consts('KEY_LOGO_URL'), "https://ginger.amdocs.com/Content/img/amdocs/GingerByAmdocs.png");
+model.publish(rh.consts('KEY_LOGO_URL'), "");
 model.publish(rh.consts('KEY_SPECIAL_CHARS'), "0;1;2;3;4;5;6;7;8;9");
 })();

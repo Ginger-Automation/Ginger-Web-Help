@@ -1,5 +1,25 @@
 {
   "recent-files::internal:document": [{
+    "title": "Frameless",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset",
+    "pinned": false,
+    "time": "Jul 12, 5:48 PM"
+  }, {
+    "title": "Windows_Automation_Run_Book_1",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Windows_Automation_Run_Book_1.htm",
+    "pinned": false,
+    "time": "Jul 12, 5:37 PM"
+  }, {
+    "title": "03-_What_is_an_Activity",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
+    "pinned": false,
+    "time": "Jul 12, 5:36 PM"
+  }, {
+    "title": "01-_What_is_a_Business_Flow",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/01-_What_is_a_Business_Flow.htm",
+    "pinned": false,
+    "time": "Jul 12, 5:34 PM"
+  }, {
     "title": "Python_Plugin_User_Guide",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugins/Ginger_PluginTypes/Python_Plugin_User_Guide.htm",
     "pinned": false,
@@ -60,11 +80,6 @@
     "pinned": false,
     "time": "Jul 7, 5:05 PM"
   }, {
-    "title": "01-_What_is_a_Business_Flow",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/01-_What_is_a_Business_Flow.htm",
-    "pinned": false,
-    "time": "Jul 7, 5:05 PM"
-  }, {
     "title": "Windows_Explorer_User_Guide",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/Windows_Explorer_User_Guide.htm",
     "pinned": false,
@@ -109,21 +124,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger_-_Amdocs_BEAT_Testing_Studio_(ABTS)_Integration.htm",
     "pinned": false,
     "time": "Jun 30, 10:52 PM"
-  }, {
-    "title": "Ginger_Plugin_for_Jenkins_3",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger_Plugin_for_Jenkins_3.htm",
-    "pinned": false,
-    "time": "Jun 30, 10:51 PM"
-  }, {
-    "title": "Ginger_Plugin_for_Bamboo_3",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger_Plugin_for_Bamboo_3.htm",
-    "pinned": false,
-    "time": "Jun 30, 10:46 PM"
-  }, {
-    "title": "Ginger_-_ALM_(QC-RQM-JIRA)_Integration",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger_-_ALM_(QC-RQM-JIRA)_Integration.htm",
-    "pinned": false,
-    "time": "Jun 30, 10:18 PM"
   }],
   "generate.outputs": {
     "C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/Learn/publish/presets/eBook.preset": {
@@ -159,7 +159,7 @@
     "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/RoboHelp/docs/index.html",
-      "time": "2021-07-12T16:52:54+05:30",
+      "time": "2021-07-12T17:53:00+05:30",
       "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
@@ -296,6 +296,11 @@
     "time": "Jun 15, 10:43 PM"
   }],
   "recent-files::internal:image": [{
+    "title": "amdocs_Icon",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/images/amdocs_Icon.png",
+    "pinned": false,
+    "time": "Jul 12, 5:49 PM"
+  }, {
     "title": "Amdocs",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/images/Amdocs.png",
     "pinned": false,
