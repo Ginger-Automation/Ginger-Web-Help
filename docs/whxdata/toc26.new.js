@@ -1,1 +1,0 @@
-(function() {    var toc =  [{"name":"Ginger on Website Overview","type":"item","tilePath":"","description":"","url":"assets/Ginger_By_Amdocs/Ginger_on_Web/Ginger_on_Website_Overview_3.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

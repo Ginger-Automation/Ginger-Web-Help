@@ -4,3 +4,6 @@
 .RH-LAYOUT-CENTERPANEL-topic-box ul.Circle, .RH-LAYOUT-FOOTER-container ul.Circle {
     list-style-type: circle;
 }
+.RH-LAYOUT-CENTERPANEL-topic-box ol.Decimal, .RH-LAYOUT-FOOTER-container ol.Decimal {
+    list-style-type: decimal;
+}

@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Global_Parameters",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Global_Parameters.htm",
+    "pinned": false,
+    "time": "Jul 12, 1:53 PM"
+  }, {
     "title": "Application_Models-_API_Models",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Ginger_Find_And_Replace_User_Guide.htm",
     "pinned": false,
     "time": "Jun 30, 10:10 PM"
-  }, {
-    "title": "AutoSave_and_Recover_User_Guide",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/AutoSave_and_Recover_User_Guide.htm",
-    "pinned": false,
-    "time": "Jun 30, 10:08 PM"
   }],
   "generate.outputs": {
     "C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/Learn/publish/presets/eBook.preset": {
@@ -159,11 +159,16 @@
     "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/RoboHelp/docs/index.html",
-      "time": "2021-07-09T23:17:38+05:30",
+      "time": "2021-07-12T16:33:47+05:30",
       "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Global_Parameters",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Global_Parameters.htm",
+    "pinned": false,
+    "time": "Jul 12, 4:29 PM"
+  }, {
     "title": "Application_Models-_API_Models",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm",
     "pinned": false,
@@ -283,11 +288,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Shared_Repository_10.htm",
     "pinned": false,
     "time": "Jun 24, 8:24 PM"
-  }, {
-    "title": "Documents_1",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Documents_1.htm",
-    "pinned": false,
-    "time": "Jun 24, 7:17 PM"
   }],
   "recent-files::external:hyperlink": [{
     "title": "Run_tab",

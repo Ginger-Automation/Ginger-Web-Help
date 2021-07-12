@@ -4,3 +4,6 @@ ul.Disc {
 ul.Circle {
     list-style-type: circle;
 }
+ol.Decimal {
+    list-style-type: decimal;
+}
