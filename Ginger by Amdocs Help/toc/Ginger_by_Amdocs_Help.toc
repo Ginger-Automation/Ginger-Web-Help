@@ -112,6 +112,7 @@
       <page navtitle="How to use Unix Automation in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Automate_Unix_application_in_Ginger.htm" format="html" processing-role="normal"></page>
       <page navtitle=" How to use Automate Mainframe 3270 in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Automate_Mainframe_3270_in_Ginger.htm" format="html" processing-role="normal"></page>
       <page navtitle="How to use Java Driver &amp; Widgets in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Java_Driver_and_Widgets_in_Ginger.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Windows Explorer User Guide" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/Windows_Explorer_User_Guide.htm" format="html" processing-role="normal"></page>
     </book>
   </book>
   <book navtitle="Resources" format="html" processing-role="normal">
