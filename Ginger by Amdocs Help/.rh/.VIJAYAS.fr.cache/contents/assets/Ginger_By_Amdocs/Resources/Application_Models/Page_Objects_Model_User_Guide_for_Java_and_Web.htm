@@ -38,8 +38,7 @@
     It is available for Web and Java Platforms.
      
      Page Objects Model Wizard
-          There are 2 ways to create a Page Objects Model, first is to create one manually and the second is to let the Ginger learn the Page you’d like to automate, both      
-          creations are being done using the Page Objects Model Wizard.
+          There are 2 ways to create a Page Objects Model, first is to create one manually and the second is to let the Ginger learn the Page you’d like to automate, both creations are being done using the Page Objects Model Wizard.
      
     Automatic page learn
     Prerequisites:
@@ -47,6 +46,7 @@
     At least one platform agent (e.g. selenium chrome Agent for Web Platform)
     Site URL which you wish to learn.
     
+     
     Go to Resources tab à Applications Models à Page Objects Models.
     Click the Plus button.
     
@@ -54,13 +54,16 @@
     Add Page Objects Model Wizard is opened.
     Click Next Introduction page.
     Learning Configurations page:
-    Select Target application ---for Web
-    (If you don’t have any Web Platform Target Application in your solution, please close the wizard configure a new target application configure one agent, and start over from step 1).
+     Select Target application ---for Web , Mobile, Window and Java
+     (If you don’t have any Web Platform Target Application in your solution, please close the wizard configure a new target application configure 
+     one agent, and start over from step 1).
     
      
     For Java Applications:-
     In order to use the Java agent in the Page Object Model screen, the Java agent needs to be attached to the Java application from the Business Flow tab as shown below.
+     
     Run the Launch Java Application Action and attach the Java agent to the Java application.
+     
     Either launch the application using this Action or attach the agent on already launched Java application.
     
      
@@ -74,16 +77,33 @@
     
      
     Select Agent (If you don’t have an Agent in your solution, please close the wizard configure a new Selenium agent, and start over from step 1).
+     
     After selecting the agent, the On/Off button will be enabled. Click it in order to turn on your agent.
+     
     
     Now go to the browser instance which been raised by Ginger and navigate to the page URL you would like to learn.
     
      
     When the Agent and its browser instance are opened, the list of Elements Types will be shown on the page.
+     
     Here you can specify what types of element interesting you in order to create your automation.
     Once done selecting all desired elements click next.
     
      
+    Custom Relative Xpath (Supported Web and Mobile) :
+    On Checked of Custom Xpath Learning Configuration, Custom xpath grid will be visible.
+    You can add multiple XPath format (combine multiple attributes as shown in below SS) in list. During POM learning Ginger will create relative XPath for element, 
+    if it match the format.
+    
+    For Example : if you want to create relative xpath of below web element with combination of “placeholder” and “type” attributes. Then xpath format will be //*
+    [@placeholder=’ ‘and @type = ‘ ’].
+    During Learing, ginger will look for attributes mentioned in format for each web element and for matching web elements , it will replace single Quotes (‘ ’) with 
+    its original value.
+    For above format relative xpath will be “//*[@placeholder=’First Name’ and @type=’text’]”.
+    
+                  
+     
+                 
      
     Learned Object Mapping
     
@@ -165,6 +185,7 @@
           Learn Only Mapped Elements
                  Users can choose an option to learn only mapped elements instead of learning all the elements of the page.
                  This reduces the learning time. This option is available by default.
+     
                 The user has to uncheck the checkbox if unmapped elements are to be learned.
                
      
@@ -216,7 +237,8 @@
      
      
     Screenshot Tab
-                    Changing the Screenshot can be done by Clicking the Take Screenshot button which will get a screenshot from the current page on the mapped Agent or by                   browsing Image from a local file.
+                    Changing the Screenshot can be done by Clicking the Take Screenshot button which will get a screenshot from the current page on the mapped 
+                   Agent or by browsing Image from a local file.
                   
      
     UI Elements Tab
@@ -247,9 +269,9 @@
     
     The Up and Down buttons will define the priority of the locators, the priority order will be taken into consideration while searching the locator of the page.
     If you would like to exclude locators from the list just Uncheck its Active field.
-     
+    
     Note: In automating section explains that in run time all Active locators will be used till the element will be found.
-     
+    
     You can highlight elements on the open instance of the Agent by clicking the Highlight button.
     
      
@@ -289,8 +311,9 @@
     In order to map the element which is new and cannot be mapped, Press “Next”
     
      
-                   6. A new window “Map deleted element with the new element” is displayed. If there is no deleted element found on the page, then this grid will be empty.
-     
+                   6. A new window “Map deleted element with the new element” is displayed. If there is no deleted element found on the page, then this grid will 
+                   be empty.
+    
     Select the edit option to map the element with new elements found on the page.
     
      
@@ -307,11 +330,11 @@
      
       The updated elements will be displayed on the Elements Compare page.
          The Comparison Status and Comparison Details fields will give the details of it.
-         As shown below, a green check means ‘Unchanged’. The description of the icon will be displayed in the tooltip when the mouse hovers over the icon.
+         As shown below, a green check means ‘Unchanged’. The description of the icon will be displayed in the tooltip when the mouse hovers over the 
+     icon.
      
      
     Page Objects Model Element’s Values
-     
                  After the page is learned, select the Page Objects Model on the tree.
                  Go to the UI Elements tab.
                 As shown in the below screen, the Possible Values field is displayed.
@@ -330,7 +353,8 @@
                 Click on the + button in the new window
                
      
-               User can add multiple values here and set one of them as default and click on the Ok button.
+               User can add multiple values here and set one of them as default and click on the OK button.
+     
                User can also modify and delete the values from this window.
                  
      
@@ -352,7 +376,9 @@
                
      
                  Double click on the UI element action to open it in Edit mode.
+     
                   Select “Page Object Model Element” as Locate By. Select your added Page Objects Model in the “Page Object Model”.
+     
                   Select your desired element as “Model Element” and click on the ‘Select Element’ button.
     
      

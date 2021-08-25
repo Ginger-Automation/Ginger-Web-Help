@@ -1,0 +1,43 @@
+p.ListParagraph {
+    margin-left: 0.50in;
+}
+p.Numbering5 {
+    counter-reset: Numbering12;
+    margin-left: 1.03in;
+    --autonumber: autonumber;
+}
+p.Numbering5:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.78in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+body {
+    font-size: 12pt;
+    font-family: Calibri;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-1-03in {
+margin-left:1.03in;
+}
+span.normaltextrun {}
+p.paragraph {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent-0-50in {
+text-indent:0.50in;
+}

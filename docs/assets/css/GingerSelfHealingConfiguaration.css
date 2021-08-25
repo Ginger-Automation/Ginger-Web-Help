@@ -1,0 +1,42 @@
+.RH-LAYOUT-CENTERPANEL-topic-box p.ListParagraph, .RH-LAYOUT-FOOTER-container p.ListParagraph {
+    margin-left: 0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering5, .RH-LAYOUT-FOOTER-container p.Numbering5 {
+    counter-reset: Numbering12;
+    margin-left: 1.03in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering5:before, .RH-LAYOUT-FOOTER-container p.Numbering5:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.78in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box {
+    font-size: 12pt;
+    font-family: Calibri;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-0-50in, .RH-LAYOUT-FOOTER-container .margin-left-0-50in {
+margin-left:0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-1-03in, .RH-LAYOUT-FOOTER-container .margin-left-1-03in {
+margin-left:1.03in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span.normaltextrun, .RH-LAYOUT-FOOTER-container span.normaltextrun {}
+.RH-LAYOUT-CENTERPANEL-topic-box p.paragraph, .RH-LAYOUT-FOOTER-container p.paragraph {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+position:relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .text-indent-0-50in, .RH-LAYOUT-FOOTER-container .text-indent-0-50in {
+text-indent:0.50in;
+}

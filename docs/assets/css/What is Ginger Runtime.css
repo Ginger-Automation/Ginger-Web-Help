@@ -1,0 +1,21 @@
+.RH-LAYOUT-CENTERPANEL-topic-box {
+    font-size: 12pt;
+    font-family: Calibri;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .margin-left-0-50in, .RH-LAYOUT-FOOTER-container .margin-left-0-50in {
+margin-left:0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span.normaltextrun, .RH-LAYOUT-FOOTER-container span.normaltextrun {}
+.RH-LAYOUT-CENTERPANEL-topic-box p.paragraph, .RH-LAYOUT-FOOTER-container p.paragraph {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+position:relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .text-indent-0-50in, .RH-LAYOUT-FOOTER-container .text-indent-0-50in {
+text-indent:0.50in;
+}
