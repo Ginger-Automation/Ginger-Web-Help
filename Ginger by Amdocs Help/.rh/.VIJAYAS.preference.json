@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "How_to_Use_BDD_(Gherkin)_with_Ginger",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Extensions/How_to_Use_BDD_(Gherkin)_with_Ginger.htm",
+    "pinned": false,
+    "time": "Nov 25, 7:09 PM"
+  }, {
     "title": "Ginger_-_ALM_(QC-RQM-JIRA)_Integration",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger_-_ALM_(QC-RQM-JIRA)_Integration.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm",
     "pinned": false,
     "time": "Jul 12, 4:47 PM"
-  }, {
-    "title": "Global_Parameters",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Global_Parameters.htm",
-    "pinned": false,
-    "time": "Jul 12, 1:53 PM"
   }],
   "generate.outputs": {
     "C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/Learn/publish/presets/eBook.preset": {
