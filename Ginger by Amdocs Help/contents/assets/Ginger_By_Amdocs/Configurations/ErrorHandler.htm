@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>How to Configure Error Handler</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/ErrorHandler.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p style="font-size: 16px;color: #000000"> </p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#302e45;"><span style="text-align:center;"><span style="margin-left:332px;font-size:32px;font-weight:bold">How to Configure Error Handler</span></span></span></p>
+    <p style="font-size: 16px;color: #000000"> </p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"> <br />
+        <span style="font-size:30px;"><span style="margin-left:104px">‎‎<span style="color: rgb(48, 46, 69); font-weight: bold;">Introduction</span></span></span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#000000;"><span style="margin-left:104px;">Error Handler is used auto handle the unexpected pop-up/Error which encountered during flow execution via script, and it tries to recover the flow from failure.</span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#000000;"><span style="margin-left:104px;">It is triggered if any action of activity is failed, and that activity should be mapped to execute error handler.</span></span></p>
+    <p style="font-size: 16px;color: #000000"> </p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#ec008c;"><span style="margin-left:104px;font-size:24px;font-weight:bold">How to add Error Handler?</span></span></p>
+    <p style="font-size: 16px;color: #000000"> </p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#000000;"><span style="margin-left:104px;">Go to Business Flow tab of the solution and click on the ‘Automate Business Flow’ button as shown below.</span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">                 <img alt="Picture 4" height="85" src="../../images/ErrorHandler_files/image1.png" width="878" /></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">  Click on Add ‘New Activity’ button as shown below.</span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;color:#000000">                 <img alt="Picture 6" height="284" src="../../images/ErrorHandler_files/image2.png" width="840" /></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">The Wizard is opened. Select ‘Error Handler’ and click on next.</span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"> <img alt="Picture 8" height="731" src="../../images/ErrorHandler_files/image3.png" width="721" /></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#ec008c;"><span style="font-size:24px;"><span style="margin-left:104px;font-weight:bold">Activity Configurations Tab</span></span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;color:#EC008C">                  <img alt="Picture 17" height="766" src="../../images/ErrorHandler_files/image4.png" width="756" /></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#7e92ca;"><span style="margin-left:104px;font-size:19px;color:#7E92CA;font-weight:bold">Trigger On:</span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">It has two option “Any Error” and “Specific Error”, based on selection underlying Error handler gets trigger.</span></p>
+    <p class="Numbering4 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><span style="font-weight:bold;">Any Error:</span> it is default selection type. if you want to trigger this handler irrespective of error strings, then this selection is required.</span></p>
+    <p class="Numbering4 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><span style="font-weight:bold;">Specific Error:</span> if you want to trigger this handler based on specific error string/s, then this selection is required. On selection of this, the ‘Configure Error’ button is shown as below.</span></p>
+    <p class="ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p class="ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><img alt="Picture 18" height="776" src="../../images/ErrorHandler_files/image5.png" width="801" /></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">On Click of “Configure Error” button, the “Error String Configuration” window is opened.</span></p>
+    <p style="font-size: 16px;color: #000000"> </p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">Here you can configure any number of error string as shown below.</span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"> <img alt="Picture 1" height="347" src="../../images/ErrorHandler_files/image6.png" width="835" /></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p class="margin-left-0-50in" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="font-size:19px;"><span style="color:#7e92ca;"><span style="margin-left:104px;color:#7E92CA;font-weight:bold">Post Execution Action:</span></span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">This option decides, from where to resume the flow after executing handler.</span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">It has three options, ‘Rerun Origin Action’, ‘Rerun Origin Activity’ and ‘Rerun Business Flow’.</span></p>
+    <p class="Numbering5 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><span style="font-weight:bold;">Rerun Origin Action:</span> this is default selection. It resumes the flow from failed action, where this handler is triggered.</span></p>
+    <p class="Numbering5 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><span style="font-weight:bold;">Rerun Origin Activity:</span> It resumes the flow from Failed Activity, from where this handler is triggered.</span></p>
+    <p class="Numbering5 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><span style="font-weight:bold;">Rerun Business Flow:</span> It resumes the flow execution from beginning.</span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#ec008c;"><span style="margin-left:104px;font-size:24px;color:#EC008C;font-weight:bold">How to map Error Handler to Activity</span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">Go to Activity and click on ‘Details’ tab as shown below.</span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;"> <img alt="Picture 2" height="466" src="../../images/ErrorHandler_files/image7.png" width="836" /></span></p>
+    <p style="font-size: 16px;color: #000000"> </p>
+    <p style="font-size: 16px;color: #000000"><span style="color:#ec008c;"><span style="margin-left:104px;color:#7E92CA;font-size:19px;font-weight:bold">Error Handler Map:</span></span></p>
+    <p style="font-size: 16px;color: #000000"><span style="margin-left:104px;">This option decides, which error handler will be executed. It has below different options.</span></p>
+    <p class="Numbering6 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><strong>Error Handlers Matching the Trigger:</strong> It is default option. If user wants to trigger all error handler which having ‘Trigger On’ set to ‘Any Error’ and for ‘Specific Error’ it triggers the handler if originated error has found in error string list.</span></p>
+    <p class="Numbering6 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><strong>All Available Error Handler:</strong> it triggers all error handler which is available in Business Flow.</span></p>
+    <p class="Numbering6 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><strong>None:</strong> if user does not want to execute any error handler for underling activity then this selection is required.</span></p>
+    <p class="Numbering6 ListParagraph0" style="font-size: 16px;color: #000000"><span style="margin-left:104px;"><strong>Specific Error Handlers: </strong>if user wants to execute specific error handler/s for underlying activity then this selection required. User can configure one or more error handler based on selection list that error handler gets trigger.</span></p>
+    <p class="ListParagraph0 margin-left-0-54in"><span style="margin-left:104px;font-size:16px;color:#000000"><img alt="Picture 3" height="434" src="../../images/ErrorHandler_files/image8.png" width="839" /></span></p>
+  </div>
+</body>
+</html>

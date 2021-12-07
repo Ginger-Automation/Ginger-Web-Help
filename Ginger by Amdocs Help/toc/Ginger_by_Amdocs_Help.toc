@@ -51,6 +51,7 @@
     </book>
     <page navtitle="Self-Healing Configuration" href="../contents/assets/Ginger_By_Amdocs/Configurations/GingerSelfHealingConfiguaration.htm" format="html" processing-role="normal"></page>
     <page navtitle="Solution Passwords Encryption Key" href="../contents/assets/Ginger_By_Amdocs/Configurations/Ginger_-_Encryption_Key_.htm" format="html" processing-role="normal"></page>
+    <page navtitle="How to Configure Error Handler" href="../contents/assets/Ginger_By_Amdocs/Configurations/ErrorHandler.htm" format="html" processing-role="normal"></page>
   </book>
   <book navtitle="Business Flows" format="html" processing-role="normal">
     <page navtitle="What is Business Flow" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/01-_What_is_a_Business_Flow.htm" format="html" processing-role="normal"></page>
@@ -133,6 +134,7 @@
     <page navtitle="Ginger Analyzer" href="../contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Ginger_Analyzer_4.htm" format="html" processing-role="normal"></page>
     <page navtitle="Find and Replace - User Guide" href="../contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Ginger_Find_And_Replace_User_Guide.htm" format="html" processing-role="normal"></page>
     <page navtitle="Windows Automation Run Book" href="../contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Windows_Automation_Run_Book_1.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Global Cross Solution" href="../contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Global_Cross_Solution.htm" format="html" processing-role="normal"></page>
   </book>
   <book navtitle="Run Sets" format="html" processing-role="normal">
     <page navtitle="How to Create a Run Set" href="../contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Create_a_Run_Set.htm" format="html" processing-role="normal"></page>

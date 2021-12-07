@@ -1,0 +1,29 @@
+p.ListParagraph0 {
+    margin-left: 0.50in;
+}
+p.Numbering4 {
+    counter-reset: Numbering22;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering4:before {
+    counter-increment: Numbering21;
+    content: counter(Numbering21,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+body {
+counter-reset:Numbering21 ;
+    font-size: 12pt;
+    font-family: Calibri;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

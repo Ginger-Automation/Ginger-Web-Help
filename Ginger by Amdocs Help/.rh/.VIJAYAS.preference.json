@@ -1,5 +1,20 @@
 {
   "recent-files::internal:document": [{
+    "title": "Global_Cross_Solution",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Global_Cross_Solution.htm",
+    "pinned": false,
+    "time": "Dec 7, 6:58 PM"
+  }, {
+    "title": "GingerSelfHealingConfiguaration",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/GingerSelfHealingConfiguaration.htm",
+    "pinned": false,
+    "time": "Dec 7, 6:56 PM"
+  }, {
+    "title": "ErrorHandler",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/ErrorHandler.htm",
+    "pinned": false,
+    "time": "Dec 7, 6:56 PM"
+  }, {
     "title": "How_to_Use_BDD_(Gherkin)_with_Ginger",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Extensions/How_to_Use_BDD_(Gherkin)_with_Ginger.htm",
     "pinned": false,
@@ -65,11 +80,6 @@
     "pinned": false,
     "time": "Aug 25, 9:24 PM"
   }, {
-    "title": "GingerSelfHealingConfiguaration",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/GingerSelfHealingConfiguaration.htm",
-    "pinned": false,
-    "time": "Aug 25, 8:53 PM"
-  }, {
     "title": "Runset_Report",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Runset_Report.htm",
     "pinned": false,
@@ -114,16 +124,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugins/Ginger_PluginTypes/Groovy_Plugin_User_Guide.htm",
     "pinned": false,
     "time": "Jul 12, 4:50 PM"
-  }, {
-    "title": "Data_Source",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Data_Source.htm",
-    "pinned": false,
-    "time": "Jul 12, 4:47 PM"
-  }, {
-    "title": "Application_Models-_API_Models",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm",
-    "pinned": false,
-    "time": "Jul 12, 4:47 PM"
   }],
   "generate.outputs": {
     "C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/Learn/publish/presets/eBook.preset": {
@@ -159,7 +159,7 @@
     "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/RoboHelp/docs/index.html",
-      "time": "2021-11-10T20:33:11+05:30",
+      "time": "2021-12-07T19:04:44+05:30",
       "logFile": "C:/Users/vijayas/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/Robohelp/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
@@ -170,6 +170,16 @@
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Global_Cross_Solution",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Global_Cross_Solution.htm",
+    "pinned": false,
+    "time": "Dec 7, 7:02 PM"
+  }, {
+    "title": "ErrorHandler",
+    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/ErrorHandler.htm",
+    "pinned": false,
+    "time": "Dec 7, 6:55 PM"
+  }, {
     "title": "What_is_Ginger_Runtime",
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/What_is_Ginger_Runtime.htm",
     "pinned": false,
@@ -284,16 +294,6 @@
     "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Windows_Automation_Run_Book_1.htm",
     "pinned": false,
     "time": "Jun 24, 11:16 PM"
-  }, {
-    "title": "Ginger_Find_And_Replace_User_Guide",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Ginger_Find_And_Replace_User_Guide.htm",
-    "pinned": false,
-    "time": "Jun 24, 10:45 PM"
-  }, {
-    "title": "Ginger_Analyzer_4",
-    "path": "C:/Robohelp/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Functionalities_and_Tools/Ginger_Analyzer_4.htm",
-    "pinned": false,
-    "time": "Jun 24, 10:36 PM"
   }],
   "recent-files::external:hyperlink": [{
     "title": "Run_tab",
