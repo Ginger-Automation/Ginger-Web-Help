@@ -8,9 +8,20 @@
     }
   },
   "recent-files::internal:document": [{
+    "title": "Topic References",
+    "path": "Topic References.report",
+    "pinned": false,
+    "time": "Feb 10, 11:18 PM"
+  }, {
     "title": "PACT_Ginger_Plugin",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugins/Ginger_PluginTypes/PACT_Ginger_Plugin.htm",
     "pinned": false,
     "time": "Feb 10, 10:51 PM"
+  }],
+  "recent-files::internal:hyperlink": [{
+    "title": "01-_What_is_Ginger_Plugins",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/01-_What_is_Ginger_Plugins.htm",
+    "pinned": false,
+    "time": "Feb 10, 11:19 PM"
   }]
 }
