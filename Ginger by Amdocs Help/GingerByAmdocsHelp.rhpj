@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="2020.4.0">
+<project version="2020.7.0">
 <title>Learn</title>
 <id>a0f61a6d-5f9c-4ecd-96d4-0c527a9bb3ee</id>
 <preferences>
 <language>en_US</language>
 <noInlineStyle>false</noInlineStyle>
+<advancedHtmlHelpOptions>false</advancedHtmlHelpOptions>
 <defaultCss>contents/assets/css/default.css</defaultCss>
 <defaultWsf>settings/import/word/default.wsf</defaultWsf>
 <defaultFsf>settings/import/fm/default.fsf</defaultFsf></preferences>
