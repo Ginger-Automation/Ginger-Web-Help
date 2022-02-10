@@ -3,8 +3,14 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/RoboHelp/docs/index.html",
-      "time": "2022-02-10T16:06:00+05:30",
+      "time": "2022-02-10T22:53:20+05:30",
       "logFile": "C:/Users/jghodke/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
-  }
+  },
+  "recent-files::internal:document": [{
+    "title": "PACT_Ginger_Plugin",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugins/Ginger_PluginTypes/PACT_Ginger_Plugin.htm",
+    "pinned": false,
+    "time": "Feb 10, 10:51 PM"
+  }]
 }
