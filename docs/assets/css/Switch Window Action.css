@@ -9,6 +9,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering20, .RH-LAYOUT-FOOTER-container p.Numbering20 {
     counter-reset: Numbering02;
     margin-left: 0.75in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering20:before, .RH-LAYOUT-FOOTER-container p.Numbering20:before {
     counter-increment: Numbering01;

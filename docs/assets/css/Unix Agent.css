@@ -1,6 +1,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering16, .RH-LAYOUT-FOOTER-container h1.Numbering16 {
     counter-reset: Numbering272;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering16:before, .RH-LAYOUT-FOOTER-container h1.Numbering16:before {
     counter-increment: Numbering271;
@@ -26,6 +27,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering22, .RH-LAYOUT-FOOTER-container p.Numbering22 {
     counter-reset: Numbering242;
     margin-left: 1.00in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering22:before, .RH-LAYOUT-FOOTER-container p.Numbering22:before {
     counter-increment: Numbering241;
@@ -41,6 +43,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering37, .RH-LAYOUT-FOOTER-container p.Numbering37 {
     counter-reset: Numbering412;
     margin-left: 1.14in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering37[data-list-level="4"]:before, .RH-LAYOUT-FOOTER-container p.Numbering37[data-list-level="4"]:before {
     content: "•";
@@ -71,6 +74,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering41, .RH-LAYOUT-FOOTER-container p.Numbering41 {
     counter-reset: Numbering322;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering41:before, .RH-LAYOUT-FOOTER-container p.Numbering41:before {
     counter-increment: Numbering321;
@@ -86,6 +90,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering42, .RH-LAYOUT-FOOTER-container p.Numbering42 {
     counter-reset: Numbering82;
     margin-left: 1.00in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering42:before, .RH-LAYOUT-FOOTER-container p.Numbering42:before {
     counter-increment: Numbering81;
@@ -101,6 +106,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering43, .RH-LAYOUT-FOOTER-container p.Numbering43 {
     counter-reset: Numbering382;
     margin-left: 1.73in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering43:before, .RH-LAYOUT-FOOTER-container p.Numbering43:before {
     counter-increment: Numbering381;

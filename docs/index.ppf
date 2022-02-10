@@ -434,27 +434,27 @@
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Plugins\01-_What_is_Ginger_Plugins.htm
+      assets\Ginger_By_Amdocs\Plugin\01-_What_is_Ginger_Plugins.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Plugins\Ginger_PluginTypes\Groovy_Plugin_User_Guide.htm
+      assets\Ginger_By_Amdocs\Plugin\Ginger_PluginTypes\Groovy_Plugin_User_Guide.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Plugins\Ginger_PluginTypes\PACT_Ginger_Plugin.htm
+      assets\Ginger_By_Amdocs\Plugin\Ginger_PluginTypes\PACT_Ginger_Plugin.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Plugins\Ginger_PluginTypes\Python_Plugin_User_Guide.htm
+      assets\Ginger_By_Amdocs\Plugin\Ginger_PluginTypes\Python_Plugin_User_Guide.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Plugins\Ginger_PluginTypes\Ruby_Plugin_User_Guide.htm
+      assets\Ginger_By_Amdocs\Plugin\Ginger_PluginTypes\Ruby_Plugin_User_Guide.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Plugins\Ginger_PluginTypes\TestNG_Plugin_User_Guide.htm
+      assets\Ginger_By_Amdocs\Plugin\Ginger_PluginTypes\TestNG_Plugin_User_Guide.htm
     </topic>
     
     <topic>
@@ -489,7 +489,7 @@
         
     <filenameentry moniker="favicon">
       <filename>
-        C:/Robohelp/Ginger by Amdocs Help/contents/assets/images/amdocs_Icon.png
+        C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/amdocs_Icon.png
       </filename>
     </filenameentry>
     

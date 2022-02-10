@@ -5,6 +5,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering25, .RH-LAYOUT-FOOTER-container p.Numbering25 {
     counter-reset: Numbering162;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering25:before, .RH-LAYOUT-FOOTER-container p.Numbering25:before {
     counter-increment: Numbering161;

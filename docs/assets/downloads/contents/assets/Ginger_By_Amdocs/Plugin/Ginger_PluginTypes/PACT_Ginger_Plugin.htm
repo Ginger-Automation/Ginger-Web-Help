@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>PACT PlugIn User Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/PACT Ginger Plugin.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title"> </p>
+    <p class="Title">                               <span style="font-family:Calibri;"><span style="font-size:32px;">Ginger </span></span><span style="font-family:Calibri;"><span style="font-size:32px;">PACT Plugin</span></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="TOCHeading"> </p>
+    <p class="TOC1"><span style="color:#0000ff;"><span style="font-family:Calibri;font-weight:bold;font-size:19px">Content</span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Prerequisites:">Prerequisites</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Load_PlugIn">Load PlugIn</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Create_Pact_Document">Create Pact Document</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Import_Pact_Document">Import Pact Document</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Edit_Pact_Document">Edit Pact Document</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Compile">Compile</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Export_to_Java_File">Export to Java File</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Export_to_JSON_File">Export to Json File</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Pact_Actions">Pact Actions</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Start_Mock_Server">Start Mock Server</a></span></span></li>
+      <li class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Load_Interaction_File">Load Interaction File</a></span></span></li>
+      <li class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Clear_Interaction">Clear Interaction</a></span></span></li>
+      <li class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Stop_Mock_Server">Stop Mock Server</a></span></span></li>
+    </ul>
+    <p class="TOC2 margin-left-0"> </p>
+    <h1 class="Heading1"><a id="  Prerequisites:PlugIn Package Exist on your machineGinger Installed on your machine  Load PlugIn 1. From The left tree menu right click on Plugins  2. Select Add Embedded PlugIn or Add System PlugIn Embedded PlugIn will copy the plugin folder to the Ginger Solution Folder so the user will be able to share the solution with the PlugIn included.System PlugIn will refer to the location the Plugin is currently located on the machine and will not be included in the solution folder, to be used when PlugIn DLL cannot be located at the Ginger Solution folder.   Select the Plugin folder.  (Make sure the GingerPluginInfo.json file is included in this folder)Once loaded the tree item will be selected and you will see the plugin Page.   Click on “PlugIn Text Editors” to see the Text Editors configured under this plugin.  Create Pact DocumentPrerequisites: Pact PlugIn loaded.From the left tree menu right click on the “Documents” folder Select “Created Document”  “Create Pact Document” Note, if you can’t find the “Create Pact Document” option you probably haven’t loaded the plugin as expected Enter Pact file namePact file created with text from the pact template, once the new tree item selected you will see the Pact Content Editor    Import Pact DocumentPrerequisites: Pact PlugIn loaded.From the left tree menu right click on the “Documents” folder Select “Import Document”  “Import Pact Document”  Note, if you can’t find the “Import Pact Document” option you probably haven’t loaded the plugin as expected On Import PACT Page browses for file location and then click Import.   The  Pact file imported, once the new tree item selected you will see the Pact Content Editor  Edit Pact DocumentPrerequisites: Pact PlugIn loaded.Pact File Created or Imported to the Documents Folder. From the left tree, menu expend the “Documents” folder and select the created or imported .pact file Once the file selected you will see the PACT Content Editor Editor functions:Highlighting of saved words (Interaction, Given, Upon Receiving, Method, etc.)Comments highlighted in green when the text is after “//” or between “/*” and “*/”Tags highlightingFolding - Each Interaction can be collapsed and extended by clicking  (-) and (+) buttons Each value will be highlighted in blue while it between quotesTable Editor Page will help you add new values to the Headers variable:Click on the table you want to editAdd/remove values from the below table pageClick on updateSave button will save the file imported under the solutionUndo button will undo the last actionDelete Selected button will delete the selected sectionCompilePrerequisites: Pact PlugIn loaded.Pact File Created or Imported to the Documents Folder. On the “PACT Content Editor” Page Click on the Compile button The Compile process will check:That  all the Variables (Given, Upon Receiving, Headers, etc.) which important to build the interaction existsThat all the values after each variable are not empty That the Pact Interactions can be built with all the provided valuesIf any of the above is not passing the compiler will throw an informative error with an error line number and the line will be highlighter on the PACT Content Editor.  Export to Java FilePrerequisites: Pact PlugIn loaded.Pact File Created or Imported to the Documents Folder.Pact File Compiled.  On the “PACT Content Editor” Page Click on the Export To Java button  Select a folder to export the Java file toIt will ask you if you want to use the default Java templateClick Yes will take the ordinary Java template Click No and you will be asked to select a new template file, make sure the file you are selecting contains the Interactions Data place holder “&lt;&lt;Interactions_Data&gt;&gt;” otherwise the export will be failed.Once the Export process will finish the selected folder will be opened and the file will be inside with the following format “PactToJava&lt;&lt;TimeStamp&gt;&gt;.Java” for example “PactToJava13_11_2017_17_13_47.Java”Also, a success message will be popped up Export to JSON FilePrerequisites: Pact PlugIn loaded.Pact File Created or Imported to the Documents Folder.Pact File Compiled.  On the “PACT Content Editor” Page Click on the Export To JSON button  Select a folder to export the JSON file toOnce the Export process will finish the selected folder will be opened and the file will be inside another folder with the following format “PactToJSON&lt;&lt;TimeStamp&gt;&gt;” for example “PactToJson13_11_2017_17_18_02.Java”Inside this folder, you will see the JSON file with a naming convention built from the Consumer and Provider defined on the PACT Content Editor.Also, you will find a log directory for this extract execution tracing A success message will be popped up.   Pact ActionsAdd New (Any) Action:Go to Automate tabOn Actions Grid click on the Plus (+) buttonOn the Add Action page go to the PlugIns Actions tabSelect the desired actionClick Add Action buttonStart Mock ServerPrerequisites: Pact PlugIn loaded.    This action should be used for starting the PACT server for it to be ready to get the Interactions load.Configure free port on the port field.If the Use Dynamic port is checked, Ginger will search for a free port on your machine and will use it to start the server.Run ActionWhen Running the Action – the Mock service is started at http://localhost:1234 with the port specified.On Extra Info Field (Can be seen on the actions grid or from the start server action edit page on another tab) you will find the server location it has been started. http://localhost: &lt;&lt;port specified&gt;&gt; Load Interaction FilePrerequisites: Pact PlugIn loaded.Pact File Created or Imported to the Documents Folder.Pact File Compiled.Pact File Exported to JSONPact Server Started This Action should be used to Load the Interaction JSON file to fire real API requests against the PACT server.Open the Action Edit PageBrowse for the Exported JSON fileRun ActionNote!: The server should be up and running while executing this action Clear InteractionPrerequisites: Pact PlugIn loaded.Pact File Created or Imported to the Documents Folder.Pact File Compiled.Pact File Exported to JSONPact Server StartedThis Action should be used to clean all interaction which been loaded to the pact serverThis action doesn’t require any configurationSimply add the action and run it to clean all loaded interactions from the server Stop Mock ServerPrerequisites: Pact PlugIn loaded.Pact Server StartedThis Action should be used to stop the pact serverThis action doesn’t require any configurationSimply add the action and run it to stop the Pact server    "></a><br />
+      ‎</h1>
+    <h1 class="Heading1" style="color: #302E45"><a id="Prerequisites:"></a>Prerequisites</h1>
+    <p class="Numbering34 ListParagraph"><span style="font-size:16px;">PlugIn Package Exist on your machine</span></p>
+    <p class="Numbering34 ListParagraph"><span style="font-size:16px;">Ginger Installed on your machine</span></p>
+    <p> </p>
+    <p> </p>
+    <p><a id="Load_PlugIn"></a><span style="font-size:32px;font-weight:bold;color:#302E45">Load PlugIn</span></p>
+    <p style="font-size: 16px;font-family: Calibri"> </p>
+    <p class="margin-left-0-06in" style="font-size: 16px;font-family: Calibri">          1. From The left tree menu right click on Plugins</p>
+    <p class="margin-left-0-06in" style="font-size: 16px;font-family: Calibri">          2. Select Add Embedded PlugIn or Add System PlugIn</p>
+    <p class="Numbering15 ListParagraph" data-list-level="2" style="font-size: 16px;font-family: Calibri">Embedded PlugIn will copy the plugin folder to the Ginger Solution Folder so the user will be able to share the solution with the PlugIn included.</p>
+    <p class="Numbering15 ListParagraph" data-list-level="2" style="font-size: 16px;font-family: Calibri">System PlugIn will refer to the location the Plugin is currently located on the machine and will not be included in the solution folder, to be used when PlugIn DLL cannot be located at the Ginger Solution folder.</p>
+    <p class="ListParagraph margin-left-0-75in"> </p>
+    <p class="ListParagraph"><img alt="Picture 1" height="463" src="../../../images/PACT Ginger Plugin_files/image1.png" width="856" /></p>
+    <p class="ListParagraph"> </p>
+    <ul class="Disc">
+      <li><span style="font-family:Calibri;"><span style="font-size:16px;">    Select the Plugin folder. (Make sure the GingerPluginInfo.json file is included in this folder)</span></span></li>
+      <li><span style="font-family:Calibri;"><span style="font-size:16px;">    Once loaded the tree item will be selected and you will see the plugin Page.</span></span></li>
+    </ul>
+    <p class="ListParagraph margin-left-0-31in"> </p>
+    <p class="ListParagraph"><img alt="Picture 17" height="463" src="../../../images/PACT Ginger Plugin_files/image2.png" width="856" /></p>
+    <p class="ListParagraph"> </p>
+    <ul class="Disc">
+      <li class="ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on “PlugIn Text Editors” to see the Text Editors configured under this plugin.</span></span></li>
+    </ul>
+    <p class="ListParagraph"><img alt="Picture 18" height="463" src="../../../images/PACT Ginger Plugin_files/image3.png" width="856" /></p>
+    <p> </p>
+    <h1 class="Heading1"><a id="Create_Pact_Document"></a>Create Pact Document</h1>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering21 ListParagraph"><span style="font-size:16px;">From the left tree menu right click on the “Documents” folder</span></p>
+    <p class="Numbering21 ListParagraph"><span style="font-size:16px;">Select “Created Document”  “Create Pact Document”</span></p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 2" height="465" src="../../../images/PACT Ginger Plugin_files/image4.png" width="861" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering21 ListParagraph" data-list-level="2"><span style="font-size:16px;">Note, if you can’t find the “Create Pact Document” option you probably haven’t loaded the plugin as expected</span><span style="font-size:16px;"></span></p>
+    <p class="Numbering21 ListParagraph"><span style="font-size:16px;">Enter Pact file name</span></p>
+    <p class="Numbering21 ListParagraph"><span style="font-size:16px;">Pact file created with text from the pact template, once the new tree item selected you will see the Pact Content Editor</span></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 5" height="453" src="../../../images/PACT Ginger Plugin_files/image5.png" width="851" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <h1 class="Heading1"><a id="Import_Pact_Document"></a>Import Pact Document</h1>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">From the left tree menu right click on the “Documents” folder</span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">Select “Import Document” -&gt; “Import Pact Document”</span></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 4" height="443" src="../../../images/PACT Ginger Plugin_files/image6.png" width="820" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering23 ListParagraph" data-list-level="2"><span style="font-size:16px;">Note, if you can’t find the “Import Pact Document” option you probably haven’t loaded the plugin as expected</span></p>
+    <p class="ListParagraph margin-left-1-06in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;">On Import PACT Page browses for file location and then click Import.</span></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 6" height="440" src="../../../images/PACT Ginger Plugin_files/image7.png" width="815" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering23 ListParagraph"><span style="font-size:16px;font-family:Calibri">The Pact file imported, once the new tree item selected you will see the Pact Content Editor</span></p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 7" height="445" src="../../../images/PACT Ginger Plugin_files/image8.png" width="824" /></p>
+    <p> </p>
+    <h1 class="Heading1"><a id="Edit_Pact_Document"></a>Edit Pact Document</h1>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Created or Imported to the Documents Folder.</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering24 ListParagraph"><span style="font-size:16px;">From the left tree, menu expend the “Documents” folder and select the created or imported .pact file</span></p>
+    <p class="Numbering24 ListParagraph"><span style="font-size:16px;">Once the file selected you will see the PACT Content Editor</span></p>
+    <p class="Numbering24 ListParagraph"><span style="font-size:16px;">Editor functions:</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="2"><span style="font-size:16px;">Highlighting of saved words (Interaction, Given, Upon Receiving, Method, etc.)</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="2"><span style="font-size:16px;">Comments highlighted in green when the text is after “//” or between “/*” and “*/”</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="2"><span style="font-size:16px;">Tags highlighting</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="2"><span style="font-size:16px;">Folding - Each Interaction can be collapsed and extended by clicking (-) and (+) buttons</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="2"><span style="font-size:16px;">Each value will be highlighted in blue while it between quotes</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="2"><span style="font-size:16px;">Table Editor Page will help you add new values to the Headers variable:</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="3"><span style="font-size:16px;">Click on the table you want to edit</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="3"><span style="font-size:16px;">Add/remove values from the below table page</span></p>
+    <p class="Numbering24 ListParagraph" data-list-level="3"><span style="font-size:16px;">Click on update</span></p>
+    <p class="Numbering24 ListParagraph"><span style="font-size:16px;">Save button will save the file imported under the solution</span></p>
+    <p class="Numbering24 ListParagraph"><span style="font-size:16px;">Undo button will undo the last action</span></p>
+    <p class="Numbering24 ListParagraph"><span style="font-size:16px;">Delete Selected button will delete the selected section</span></p>
+    <h1 class="Heading1"> </h1>
+    <h1 class="Heading1"><a id="Compile"></a>Compile</h1>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Created or Imported to the Documents Folder.</span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering25 ListParagraph"><span style="font-size:16px;">On the “PACT Content Editor” Page Click on the Compile button</span></p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 8" height="450" src="../../../images/PACT Ginger Plugin_files/image9.png" width="832" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering25 ListParagraph"><span style="font-size:16px;">The Compile process will check:</span></p>
+    <p class="Numbering25 ListParagraph" data-list-level="2"><span style="font-size:16px;">That all the Variables (Given, Upon Receiving, Headers, etc.) which important to build the interaction exists</span></p>
+    <p class="Numbering25 ListParagraph" data-list-level="2"><span style="font-size:16px;">That all the values after each variable are not empty</span></p>
+    <p class="Numbering25 ListParagraph" data-list-level="2"><span style="font-size:16px;">That the Pact Interactions can be built with all the provided values</span></p>
+    <p class="Numbering25 ListParagraph" data-list-level="2"><span style="font-size:16px;">If any of the above is not passing the compiler will throw an informative error with an error line number and the line will be highlighter on the PACT Content Editor.</span></p>
+    <p class="ListParagraph margin-left-1-06in"> </p>
+    <h1 class="Heading1"><a id="Export_to_Java_File"></a>Export to Java File</h1>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Created or Imported to the Documents Folder.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Compiled.</span></p>
+    <p class="ListParagraph margin-left-1-00in"> </p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">On the “PACT Content Editor” Page Click on the Export To Java button</span></p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 9" height="456" src="../../../images/PACT Ginger Plugin_files/image10.png" width="843" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Select a folder to export the Java file to</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">It will ask you if you want to use the default Java template</span></p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 10" height="454" src="../../../images/PACT Ginger Plugin_files/image11.png" width="843" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">Click Yes will take the ordinary Java template</span></p>
+    <p class="ListParagraph margin-left-1-06in"><img alt="Picture 12" height="306" src="../../../images/PACT Ginger Plugin_files/image12.png" width="861" /></p>
+    <p class="Numbering26 ListParagraph" data-list-level="2"><span style="font-size:16px;">Click No and you will be asked to select a new template file, make sure the file you are selecting contains the Interactions Data place holder “&lt;&lt;Interactions_Data&gt;&gt;” otherwise the export will be failed.</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Once the Export process will finish the selected folder will be opened and the file will be inside with the following format “PactToJava&lt;&lt;TimeStamp&gt;&gt;.Java” for example “PactToJava13_11_2017_17_13_47.Java”</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">Also, a success message will be popped up</span></p>
+    <p> </p>
+    <h1 class="Heading1"><a id="Export_to_JSON_File"></a>Export to JSON File</h1>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Created or Imported to the Documents Folder.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Compiled.</span></p>
+    <p class="ListParagraph margin-left-1-00in"> </p>
+    <p class="Numbering28 ListParagraph"><span style="font-size:16px;">On the “PACT Content Editor” Page Click on the Export To JSON button</span></p>
+    <p class="ListParagraph margin-left-0-56in"><img alt="Picture 13" height="479" src="../../../images/PACT Ginger Plugin_files/image13.png" width="886" /></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p class="Numbering28 ListParagraph"><span style="font-size:16px;">Select a folder to export the JSON file to</span></p>
+    <p class="Numbering28 ListParagraph"><span style="font-size:16px;">Once the Export process will finish the selected folder will be opened and the file will be inside another folder with the following format “PactToJSON&lt;&lt;TimeStamp&gt;&gt;” for example “PactToJson13_11_2017_17_18_02.Java”</span></p>
+    <p class="ListParagraph margin-left-0-56in"><span style="font-size:16px;">Inside this folder, you will see the JSON file with a naming convention built from the Consumer and Provider defined on the PACT Content Editor.</span></p>
+    <p class="Numbering28 ListParagraph"><span style="font-size:16px;">Also, you will find a log directory for this extract execution tracing</span></p>
+    <p class="Numbering28 ListParagraph"><span style="font-size:16px;">A success message will be popped up.</span></p>
+    <p class="ListParagraph margin-left-0-56in"> </p>
+    <p> </p>
+    <h1 class="Heading1"><a id="Pact_Actions"></a>Pact Actions</h1>
+    <p class="margin-left-0-81in"><span style="font-size:16px;">Add New (Any) Action:</span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3"><span style="font-size:16px;">Go to Automate tab</span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3"><span style="font-size:16px;">On Actions Grid click on the Plus (+) button</span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3"><span style="font-size:16px;">On the Add Action page go to the PlugIns Actions tab</span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3"><span style="font-size:16px;">Select the desired action</span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3"><span style="font-size:16px;">Click Add Action button</span></p>
+    <p class="ListParagraph margin-left-1-38in"><img alt="Picture 16" height="465" src="../../../images/PACT Ginger Plugin_files/image14.png" width="864" /></p>
+    <p class="ListParagraph margin-left-1-38in"> </p>
+    <p class="ListParagraph margin-left-1-38in"><img alt="Picture 19" height="473" src="../../../images/PACT Ginger Plugin_files/image15.png" width="879" /></p>
+    <p class="ListParagraph margin-left-1-38in"> </p>
+    <h1 class="Heading1" data-list-level="2"><a id="Start_Mock_Server"></a><span style="font-size:24px;color:#EC008C">Start Mock Server</span></h1>
+    <p class="margin-left-0-81in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded</span></p>
+    <p class="margin-left-1-00in"><img alt="Picture 14" height="469" src="../../../images/PACT Ginger Plugin_files/image16.png" width="820" /></p>
+    <p class="ListParagraph margin-left-0-81in"> </p>
+    <p class="ListParagraph margin-left-0-81in"> </p>
+    <p class="Numbering33 ListParagraph"><span style="font-size:16px;">This action should be used for starting the PACT server for it to be ready to get the Interactions load.</span></p>
+    <p class="Numbering33 ListParagraph"><span style="font-size:16px;">Configure free port on the port field.</span></p>
+    <p class="Numbering33 ListParagraph"><span style="font-size:16px;">If the Use Dynamic port is checked, Ginger will search for a free port on your machine and will use it to start the server.</span></p>
+    <p class="Numbering33 ListParagraph"><span style="font-size:16px;">Run Action</span></p>
+    <p class="Numbering33 ListParagraph"><span style="font-size:16px;">When Running the Action – the Mock service is started at <a class="Hyperlink" href="http://localhost:1234/">http://localhost:1234</a> with the port specified.</span></p>
+    <p class="Numbering33 ListParagraph"><span style="font-size:16px;">On Extra Info Field (Can be seen on the actions grid or from the start server action edit page on another tab) you will find the server location it has been started. http://localhost: &lt;&lt;port specified&gt;&gt;</span></p>
+    <p class="ListParagraph margin-left-1-38in"> </p>
+    <h1 class="Heading1" data-list-level="2"><a id="Load_Interaction_File"></a><span style="color:#ec008c;font-size:24px">Load Interaction File</span></h1>
+    <p class="margin-left-0-81in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Created or Imported to the Documents Folder.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Compiled.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Exported to JSON</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact Server Started</span></p>
+    <p class="ListParagraph margin-left-1-00in"><img alt="Picture 15" height="501" src="../../../images/PACT Ginger Plugin_files/image17.png" width="869" /></p>
+    <p class="ListParagraph margin-left-1-00in"> </p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">This Action should be used to Load the Interaction JSON file to fire real API requests against the PACT server.</span></p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">Open the Action Edit Page</span></p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">Browse for the Exported JSON file</span></p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">Run Action</span></p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">Note!: The server should be up and running while executing this action</span></p>
+    <p> </p>
+    <h1 class="Heading1" data-list-level="2"><a id="Clear_Interaction"></a><span style="color:#ec008c;font-size:24px">Clear Interaction</span></h1>
+    <p class="margin-left-0-81in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Created or Imported to the Documents Folder.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Compiled.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact File Exported to JSON</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact Server Started</span></p>
+    <p class="Numbering31 ListParagraph"><span style="font-size:16px;">This Action should be used to clean all interaction which been loaded to the pact server</span></p>
+    <p class="Numbering31 ListParagraph"><span style="font-size:16px;">This action doesn’t require any configuration</span></p>
+    <p class="Numbering31 ListParagraph"><span style="font-size:16px;">Simply add the action and run it to clean all loaded interactions from the server</span></p>
+    <p class="margin-left-0-81in"> </p>
+    <h1 class="Heading1" data-list-level="2"><a id="Stop_Mock_Server"></a><span style="font-size:24px;color:#EC008C">Stop Mock Server</span></h1>
+    <p class="margin-left-0-81in"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact PlugIn loaded.</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Pact Server Started</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">This Action should be used to stop the pact server</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">This action doesn’t require any configuration</span></p>
+    <p class="Numbering32 ListParagraph"><span style="font-size:16px;">Simply add the action and run it to stop the Pact server</span></p>
+    <h1 class="Heading1"><br />
+      ‎<span> </span></h1>
+    <p class="ListParagraph"> </p>
+    <p> </p>
+    <p> </p>
+  </div>
+</body>
+</html>

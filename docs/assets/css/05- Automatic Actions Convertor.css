@@ -1,6 +1,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering23, .RH-LAYOUT-FOOTER-container h1.Numbering23 {
     counter-reset: Numbering202;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering23:before, .RH-LAYOUT-FOOTER-container h1.Numbering23:before {
     counter-increment: Numbering201;
@@ -16,6 +17,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering24, .RH-LAYOUT-FOOTER-container h1.Numbering24 {
     counter-reset: Numbering92;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering24:before, .RH-LAYOUT-FOOTER-container h1.Numbering24:before {
     counter-increment: Numbering91;
@@ -39,6 +41,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering14, .RH-LAYOUT-FOOTER-container p.Numbering14 {
     counter-reset: Numbering152;
     margin-left: 1.00in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering14:before, .RH-LAYOUT-FOOTER-container p.Numbering14:before {
     content: "•";
@@ -54,6 +57,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering15, .RH-LAYOUT-FOOTER-container p.Numbering15 {
     counter-reset: Numbering112;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering15:before, .RH-LAYOUT-FOOTER-container p.Numbering15:before {
     content: "•";
@@ -69,6 +73,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering19, .RH-LAYOUT-FOOTER-container p.Numbering19 {
     counter-reset: Numbering182;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering19:before, .RH-LAYOUT-FOOTER-container p.Numbering19:before {
     counter-increment: Numbering181;
@@ -84,6 +89,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering9, .RH-LAYOUT-FOOTER-container p.Numbering9 {
     counter-reset: Numbering172;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering9:before, .RH-LAYOUT-FOOTER-container p.Numbering9:before {
     counter-increment: Numbering171;

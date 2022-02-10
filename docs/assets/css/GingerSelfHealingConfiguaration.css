@@ -4,6 +4,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering5, .RH-LAYOUT-FOOTER-container p.Numbering5 {
     counter-reset: Numbering12;
     margin-left: 1.03in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering5:before, .RH-LAYOUT-FOOTER-container p.Numbering5:before {
     content: "•";

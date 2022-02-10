@@ -15,6 +15,7 @@
     font-family: Century Gothic;
     counter-reset: Numbering242;
     margin-left: 1.25in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Num1:before, .RH-LAYOUT-FOOTER-container p.Num1:before {
     counter-increment: Numbering241;
@@ -31,6 +32,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering36, .RH-LAYOUT-FOOTER-container p.Numbering36 {
     counter-reset: Numbering332;
     margin-left: 1.25in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering36:before, .RH-LAYOUT-FOOTER-container p.Numbering36:before {
     content: "";
@@ -48,6 +50,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering37, .RH-LAYOUT-FOOTER-container p.Numbering37 {
     counter-reset: Numbering352;
     margin-left: 1.25in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering37:before, .RH-LAYOUT-FOOTER-container p.Numbering37:before {
     content: "";

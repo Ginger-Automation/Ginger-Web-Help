@@ -5,6 +5,7 @@
     font-family: Century Gothic;
     counter-reset: Numbering222;
     margin-left: 1.25in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Num1:before, .RH-LAYOUT-FOOTER-container p.Num1:before {
     counter-increment: Numbering221;

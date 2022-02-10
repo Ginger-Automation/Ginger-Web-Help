@@ -1,6 +1,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering18, .RH-LAYOUT-FOOTER-container h1.Numbering18 {
     counter-reset: Numbering222;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering18:before, .RH-LAYOUT-FOOTER-container h1.Numbering18:before {
     counter-increment: Numbering221;

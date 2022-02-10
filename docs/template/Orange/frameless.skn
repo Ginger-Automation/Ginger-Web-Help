@@ -3,7 +3,7 @@
   <layout>frameless_homepage</layout>
   <name>frameless_homepage</name>
   <layoutType>frameless</layoutType>
-  <version>2020.4.0</version>
+  <version>2020.7.0</version>
   <variables>
     <css>
       <theme-href-text-color></theme-href-text-color>
@@ -189,6 +189,7 @@
       <use_facebook type="boolean">false</use_facebook>
       <use_twitter type="boolean">false</use_twitter>
       <avoidPageRefresh type="boolean">true</avoidPageRefresh>
+      <stickyTopicHeader type="boolean">true</stickyTopicHeader>
     </html>
   </variables>
 </skin>

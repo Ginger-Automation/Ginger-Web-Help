@@ -11,6 +11,7 @@
   <% if(favicon && favicon.path && favicon.mediaType) { %>
     <link rel="shortcut icon" type="<%= favicon.mediaType %>" href="<%= relPath %><%= favicon.path %>" />
     <% } %>
+  <script data-relpath="<%= rootRelPath %>" src="<%= relPath %>template/scripts/csh-redirect.js" type="text/javascript"></script>
 </head>
 
 <body class="rh-BODY-wrapper">

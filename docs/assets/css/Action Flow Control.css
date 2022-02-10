@@ -5,6 +5,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering30, .RH-LAYOUT-FOOTER-container p.Numbering30 {
     counter-reset: Numbering182;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering30:before, .RH-LAYOUT-FOOTER-container p.Numbering30:before {
     counter-increment: Numbering181;
@@ -20,6 +21,7 @@
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering33, .RH-LAYOUT-FOOTER-container p.Numbering33 {
     counter-reset: Numbering222;
     margin-left: 0.50in;
+    --autonumber: autonumber;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box p.Numbering33:before, .RH-LAYOUT-FOOTER-container p.Numbering33:before {
     counter-increment: Numbering221;
