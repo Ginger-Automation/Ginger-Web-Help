@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/Orange/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/Orange/userstyles.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../amdocs_Icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <title>Ginger Zephyr ALM Integration</title>
+  <meta name="topic-status" content="Draft"/>
+  <meta name="rh-authors" content=""/>
+  <link rel="stylesheet" type="text/css" href="../../../css/default.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../css/GingerDocStyle.css"/>
+</head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h1>Ginger Zephyr ALM Integration</h1>
+  <p class="MsoBodyText" style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Ginger comes with seamless integration with Microfocus ALM Octane, and this document comes to explain how to use the integration functionalities.</span></span></span></span></p>
+  <p class="MsoBodyText" style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Current supported functionalities are:</span></span></span></span></p>
+  <ul>
+    <li class="MsoBodyText" style="margin-left:8px; margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:12.0pt"></span><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Import Octane Test Suite into Ginger and automatically converting it to Ginger Business flow which will be ready to be automated or even execute in case it’s TC’s were already automated before by Ginger</span></span></span></span></li>
+    <li class="MsoBodyText" style="margin-left:8px; margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:12.0pt"></span><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Export Ginger Business Flow to Octane - each one of the Business Flow Activities Group will be export to Octane Application Module as Manual Test Case item and a Test Suite item will be created in ALM Application Module containing all the relevant Octane Test Cases which were exported</span></span></span></span></li>
+    <li class="MsoBodyText" style="margin-left:8px; margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:12.0pt"></span><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Export imported Ginger Business flow execution details back to Octane and reflect the execution status in the matching Octane Test Suit Run status</span></span></span></span></li>
+  </ul>
+  <h2 class="Numbering24" data-list-level="2" style="font-family: Calibri"><span>Connect Ginger to Zephyr</span></h2>
+  <p style="font-family: Calibri"><span>        <span style="font-size:16px;">To set ALM connecting details in the Ginger application please follow below steps:</span></span></p>
+  <ul class="Disc">
+    <li class="Numbering34 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;"> Click on the ‘Share Operations’ button.</span></span><span></span></li>
+  </ul>
+  <p><span> <span style="font-size:16px;"></span></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span><span style="font-size:16px;">        <img alt="Picture 21" height="107" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image80.png" width="930"/></span></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span></span></p>
+  <ul class="Disc">
+    <li class="Numbering34 ListParagraph" style="font-family: Calibri;"><span style="font-size:16px;">Select “ALM Connection Settings”</span></li>
+    <li class="Numbering34 ListParagraph" style="font-family: Calibri;"><span style="font-size:16px;">Select ALM type – Zephyr using the radio buttons</span></li>
+    <li class="Numbering34 ListParagraph" style="font-family: Calibri;"><span style="font-size:16px;">A token is required to connect t o the Zephyr. </span>Below is the screenshot for creating Token</li>
+  </ul>
+  <p class="Numbering34 ListParagraph" style="font-family: Calibri;">                            <img src="../../../images/image257.png"/> </p>
+  <p class="Numbering34 ListParagraph" style="font-family: Calibri"><span><span style="font-size:16px;"></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">                             </span></span></span></span>  <img height="529" src="../../../images/image242.png" style="cursor: nesw-resize;" width="604"/></p>
+  <ul class="Disc">
+    <li class="Numbering34 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">Enter all the details and click on Test ALM Connection. When passed, click on Save Project Mapping to save the details.</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span>                             <img alt="Picture 22" height="591" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image81.png" style="" width="479"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span></span></p>
+  <p style="font-family: Calibri"><span></span></p>
+  <p class="ListParagraph margin-left-0" style="font-family: Calibri"><span><span style="font-size:16px;">Note: All Ginger – ALM interaction will try to use saved ALM configuration in Ginger, If in any case the saved configurations are incorrect or Ginger could not establish a connection to ALM, the “ALM Connection Settings” page will be shown and the user will need to enter/re-enter ALM configurations and test them before continuing.</span></span></p>
+  <p class="ListParagraph margin-left-0" style="font-family: Calibri"><span></span></p>
+  <h2 data-list-level="3" style="font-family: Calibri;">Configure ALM Items Fields</h2>
+  <p style="font-family: Calibri"><span style="margin-left:8px;">      <span style="font-size:16px;">Ginger allows configuring the ALM Test Case and Test Set items fields’ value to be updated when doing export from Ginger to ALM.</span></span></p>
+  <p style="font-family: Calibri"><span style="margin-left:8px;"><span style="font-size:16px;">      For configuring the items fields values:</span></span></p>
+  <ul class="Disc">
+    <li class="Numbering35 ListParagraph" style="font-family: Calibri;"><span style="margin-left:8px;"><span style="font-size:16px;">Click on the “ALM Items Fields Configuration” button from the “Share Options” menu.</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:8px;">         <img alt="Picture 222" height="143" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image82.png" width="826"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:8px;"></span></p>
+  <ul class="Disc">
+    <li class="Numbering35 ListParagraph" style="font-family: Calibri;"><span style="margin-left:8px;"><span style="font-size:16px;">Click on the “Refresh” button (near the search) to refresh ALM Items Fields Configurations from ALM</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:8px;">       <img alt="Picture 223" height="501" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image83.png" style="" width="832"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:8px;"></span></p>
+  <ul class="Disc">
+    <li class="Numbering35 ListParagraph" style="font-family: Calibri;"><span style="margin-left:8px;"><span style="font-size:16px;">Select a value from the list or set the value (in case of the free text field) in the “Selected Value” column</span></span></li>
+    <li class="Numbering35 ListParagraph" style="font-family: Calibri;"><span style="margin-left:8px;"><span style="font-size:16px;">Click on the Mandatory column to sort by Mandatory values so that you do not miss any mandatory fields.</span></span></li>
+    <li class="Numbering35 ListParagraph" style="font-family: Calibri;"><span style="margin-left:8px;"><span style="font-size:16px;">Click on the “Save” button to save the configurations.</span></span></li>
+  </ul>
+  <h2 data-list-level="3" style="font-family: Calibri;"><span style="margin-left:8px;"></span>Import ALM Test Set to Ginger</h2>
+  <p style="font-family: Calibri"><span style="margin-left:24px;">  <span style="font-size:16px;">      Ginger support importing ALM Test Set which was created manually in ALM or automatically by the Design Console (ATS) application and converting it </span></span></p>
+  <p style="font-family: Calibri"><span style="margin-left:24px;"><span style="font-size: 16px;">into </span><span style="font-size:16px;">Ginger Test Set (Business flow) which will be ready to be automated or execute (assuming automation was already created for its TC’s).</span></span></p>
+  <p style="font-family: Calibri"><span style="margin-left:24px;"><span style="font-size:16px;"></span></span></p>
+  <p style="font-family: Calibri"><span style="margin-left:24px;"><span style="font-size:16px;">For performing ALM Test Set import please follow the below steps:</span></span></p>
+  <ul class="Disc">
+    <li class="Numbering36 ListParagraph" style="font-family: Calibri;"><span style="margin-left:24px;"><span style="font-size:16px;">Open the Ginger Solution tab which loaded with your Ginger Solution</span></span></li>
+    <li class="Numbering36 ListParagraph" style="font-family: Calibri;"><span style="margin-left:24px;"><span style="font-size:16px;">Right-click on the Business Flows node in the Automate tab and select “Import” -&gt;“Import ALM Test Set”</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span>                     <img alt="Picture 224" height="558" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image84.png" style="" width="759"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span></span></p>
+  <ul class="Disc">
+    <li class="Numbering36 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">According to ALM type, Window with the connected ALM project Test Lab tree will be loaded. Select the ALM Test Set you want to import and click on the “Import Selected” button.</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span>                    <img alt="Picture 227" height="804" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image85.png" width="760"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span></span></p>
+  <ul class="Disc">
+    <li class="Numbering36 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">The ALM Test Set will be imported and converted into a Ginger Test Set with the same.</span></span></li>
+    <li class="ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">After the Test set is imported, below is the screen on how it looks in Ginger.</span></span><span></span></li>
+  </ul>
+  <p class="margin-left-0-25in" style="font-family: Calibri"><span>                   <img alt="Picture 226" height="610" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image86.png" width="780"/></span></p>
+  <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+  <h2 data-list-level="3" style="font-family: Calibri;">Export Business Flow to ALM<span></span><span style="margin-left:56px;"><span style="font-size:16px;"></span></span></h2>
+  <p class="minitoc-caption" data-list-level="3" style="font-family: Calibri;"><span style="font-family:Calibri;"><span style="margin-left:24px;"><span style="font-size:16px;">Ginger allows exporting a Ginger Business Flow to ALM</span></span></span></p>
+  <ul class="Disc">
+    <li><span style="font-family:Calibri;"><span style="margin-left:24px;"><span style="font-size:16px;">Export Activities Groups to ALM Test Cases- each one of the exported Business Flow Activities Groups will be exported to an ALM Test Case item in ALM Test Plan</span></span></span></li>
+  </ul>
+  <p class="margin-left-0-50in" style="font-family: Calibri"><span>                <img alt="Picture 228" height="504" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image87.png" style="cursor: nwse-resize;" width="773"/></span></p>
+  <p class="margin-left-0-50in" style="font-family: Calibri"><span></span></p>
+  <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span></span></p>
+  <ul class="Disc">
+    <li class="Numbering37 ListParagraph" style="font-family: Calibri; font-size: 16px;"><span>All of the created ALM Test Cases will be added to the Business Flow to represent the execution flow</span><span></span></li>
+  </ul>
+  <p style="font-family: Calibri;font-size: 16px"> </p>
+  <ul class="Disc">
+    <li style="font-family: Calibri;"> Right-click the Business Flows to export and select the “Export to ALM” option. It will export the selected Business Flow to the ALM.</li>
+  </ul>
+  <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span>                 <img alt="Picture 230" height="566" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image89.png" width="826"/></span></p>
+  <p style="font-family: Calibri;font-size: 16px"> </p>
+  <ul class="Disc">
+    <li class="margin-left-0-50in" style="font-family: Calibri; font-size: 16px;"><span>To export multiple flows,</span><span> Right-click the Business Flows folder and select the “Export All to ALM” optionto export all business flows under that folder </span></li>
+  </ul>
+  <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span>                      <img alt="Picture 229" height="494" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image88.png" width="821"/></span></p>
+  <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span></span></p>
+  <p style="font-family: Calibri"> </p>
+  <p class="margin-left-0-50in" style="font-family: Calibri"><span></span></p>
+  <ul class="Disc">
+    <li class="ListParagraph" style="font-family: Calibri; font-size: 16px;"><span>After exported then a Successful message is displayed.</span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span>                       <img alt="Picture 231" height="197" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image90.png" width="394"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span></span></p>
+  <ul class="Disc">
+    <li class="ListParagraph" style="font-family: Calibri;"><span>Refresh the ALM. Users will able to the exported item in the ALM.</span></li>
+  </ul>
+  <p class="margin-left-0-25in" style="font-family: Calibri"><span>                  <img alt="Picture 245" height="317" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image91.png" width="842"/></span></p>
+  <p class="margin-left-0-25in" style="font-family: Calibri"><span></span></p>
+  <p style="font-family: Calibri"><span></span></p>
+  <h2 data-list-level="3" style="font-family: Calibri;">Manual Mapping of entities</h2>
+  <p>Manual mapping is needed in case the Ginger Business Flow and the matching ALM Test Set are both already exists in the systems.<br/>
+    In this case, the automatic Export (from selected Ginger Business Flow into new automatically created ALM Test Set) or Import (Ginger Business Flow is been created automatically based on selected ALM Test Set) can’t be used and manual mapping of the entities is needed.<span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"></span></span></span></p>
+  <p>The mapping has been done for allowing exporting the execution results from Ginger to the matching entities in ALM</p>
+  <p> </p>
+  <p class="minitoc-caption" data-list-level="3" style="font-family: Calibri;">What is mapped ?</p>
+  <p style="margin-left: 8px;">Ginger Business Flow has been mapped to ALM Test Set (in some ALM’s it been called Test Plan/ Test Suite)</p>
+  <p style="margin-left: 8px;">The mapped Business Flow Activities Groups are being mapped to the mapped ALM Test Set Test Cases.</p>
+  <p style="margin-left: 8px;">For each mapped Activities Groups, each Activities are being mapped to the matching Test Case Steps</p>
+  <p style="margin-left: 8px;"> </p>
+  <p class="minitoc-caption" style="margin-left: 8px;">Manual Mapping Steps</p>
+  <p class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;"><b><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif">Select “Map To ALM”</span></span></span></b></p>
+  <ul>
+    <li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Right click selected “Business Flow” from Business Flow tree and select “Map to ALM”</span></span></span></li>
+  </ul>
+  <p style="margin-left:24px; margin-bottom:11px"><span style="font-size:11pt"><span style="page-break-after:avoid"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">     <img alt="Figure 1" src="../../../images/image270.png" style="width: 504px; height: 285px;"/></span></span></span></span></p>
+  <ul>
+    <li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">If ALM connection already defined, then default ALM connection will choose for mapping process otherwise user will ask to set connection details.</span></span></span></li>
+    <li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Map To ALM wizard will open.</span></span></span></li>
+    <li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Click Next to display “Test Set Mapping” page.</span></span></span></li>
+  </ul>
+  <p class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">Test Set Mapping page</p>
+  <ul class="Disc">
+    <li class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;"><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif">ALM Planning Tree Display</span></span></span></li>
+  </ul>
+  <p class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">             <img src="../../../images/image271.png"/></p>
+  <ul class="Disc">
+    <li class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">Choose a Test Set that has not “Already Imported”</li>
+  </ul>
+  <p class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">           <img height="269" src="../../../images/image272.png" style="" width="624"/></p>
+  <ul class="Disc">
+    <li class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">Click “Next” button to map selected Test Set to Business Flow.</li>
+    <li class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">Next page will be displayed “Test Cases Mapping”</li>
+  </ul>
+  <p class="minitoc-caption" style="margin-bottom: 11px; margin-left: 8px;">Test Case Mapping page</p>
+  <ul class="Disc">
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Left side page: “ALM Test Case Mapping” table </span>
+      <ul>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Table has two columns</span>
+          <ul>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">“Ginger Activities Group” – selected Business Flow activities Groups,</span></li>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">“Mapped ALM Test Case” – Mapped Test Case to selected Activities Group</span></li>
+          </ul>
+        </li>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Table Operations</span>
+          <ul>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">Unmap selected mapped Test cases     <img src="../../../images/image273.png"/></span></li>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">Unmap all mapped test cases     <img src="../../../images/image274.png" style=""/></span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Right Side Page: “ALM Test Cases” table</span>
+      <ul>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">The table display All Test Cases of the selected Test Set</span></li>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Table Operation: <img src="../../../images/image275.png" style="width: 22px; height: 30px;"/> Map selected Test Case to Selected Ginger Activities Group.</span></li>
+      </ul>
+    </li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">User will map Test Case to Activities Group by drag &amp; drop or using icons</span></li>
+  </ul>
+  <p><span style="font-size:16px;">           <img src="../../../images/image277.png"/></span></p>
+  <ul>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">After user mapping Test Cases to Activities Groups, Click “Next” moving for next page – “Test Steps Mapping”</span></li>
+  </ul>
+  <p style="font-family:Calibri;"><span style="font-size:16px;"></span></p>
+  <p class="minitoc-caption"><span style="font-size:16px;">Test Steps Mapping Page</span></p>
+  <ul>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Top of page: “Ginger Activities Groups &amp; ALM Test Cases – Steps Mapping Status”</span>
+      <ul>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Display Mapped Test Cases to Activities Group and Steps mapping status</span></li>
+      </ul>
+    </li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Bottom Right-side page:“ALM Test Case Steps” table</span>
+      <ul>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">The table display All Test Steps of the selected Test Case</span></li>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Table Operation: <img src="../../../images/image278.png" style="width: 22px; height: 30px;"/> Mapped selected Test Step to Selected Ginger Activity</span></li>
+      </ul>
+    </li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Bottom Left-side page: “Ginger Activities Group Activities – ALM Step Mapping” table</span>
+      <ul>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">The table has two columns</span>
+          <ul>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">“Ginger Activity” – selected Activities Group activities</span></li>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">“Mapped ALM Test Step” – Mapped Test Step to selected Activity</span></li>
+          </ul>
+        </li>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Table Operations</span>
+          <ul>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">Unmap selected mapped Test steps <img src="../../../images/image273.png" style=""/></span></li>
+            <li style="font-family:Calibri;"><span style="font-size:16px;">Unmap all mapped test steps<img src="../../../images/image274.png" style=""/></span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Initially steps will be mapped to activities in their order as default</span></li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">User will map Test Step to Activity by drag &amp; drop or using icons </span></li>
+  </ul>
+  <p><span style="font-size:16px;">        <img src="../../../images/image279.png" style=""/></span></p>
+  <ul class="Disc">
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Steps Mapping Status will be updated automatically upon the mapping</span>
+      <ul>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Completed – All Steps mapped to Activities, No Steps stayed unmapped.</span></li>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Warning – Partial mapping, some steps mapped.</span></li>
+        <li style="font-family:Calibri;"><span style="font-size:16px;">Error – No step mapped</span></li>
+      </ul>
+    </li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">After user mapped Test Steps to Activities, click “Finish” saving mapping</span></li>
+  </ul>
+  <p><span style="font-size:16px;"></span></p>
+  <p class="minitoc-caption"><span style="font-size:16px;">Update Mapped Test Set and/or Test Cases and/or Steps</span></p>
+  <ul class="Disc">
+    <li style="font-family:Calibri;"><span style="font-size:16px;">Mapped Test Set name and id will display</span></li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;"><img src="../../../images/image281.png" style=""/></span></li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">To Change Mapped Test Set Click on “Change Mapped Test Set” to select new Test Set and Go to Test Steps mapping section</span></li>
+    <li style="font-family:Calibri;"><span style="font-size:16px;">To update mapped Test Cases and/or Steps click “Next” – Mapped data will be displayed , change your mapping and click “Finish” to save</span></li>
+  </ul>
+  <p class="minitoc-caption" style="font-family: Calibri;"> </p>
+  <p style="font-family: Calibri"><span>    <span style="font-size:16px;">   In case the executed Ginger Business Flow was originally imported from ALM Test Set or it was exported to ALM Test Set then the user can export the execution results to ALM.</span></span></p>
+  <p style="font-family: Calibri"> </p>
+  <h2 style="font-family: Calibri;">Export Execution Results to ALM</h2>
+  <p style="font-family: Calibri"><span><span style="font-size:16px;"></span></span></p>
+  <p class="minitoc-caption" style="font-family: Calibri;"><span><span style="font-size:16px;">     Exporting execution results to ALM from Automate tab</span></span></p>
+  <ul class="Disc">
+    <li style="font-family: Calibri;"><span><span style="font-size:16px;">Load the relevant Ginger Business Flow into Automate tab</span></span></li>
+    <li class="Numbering39 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">Run the Ginger Test Set in “Run Flow” mode.</span></span></li>
+    <li class="Numbering39 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">Once execution is done the user will get the “Test Set Execution Summary” window with a summary of the execution results.</span></span></li>
+    <li class="Numbering39 ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">For exporting the results to ALM user can click on “Export Execution Details”</span></span><span><span style="font-size:16px;"></span></span><span>‎<img alt="Picture 233" height="582" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image92.png" style="" width="824"/></span></li>
+  </ul>
+  <p class="minitoc-caption" style="font-family: Calibri;"><span class="minitoc-caption" style="font-family:Calibri;"><span style="font-size:16px;">      </span></span></p>
+  <p class="minitoc-caption" style="font-family: Calibri;"><span class="minitoc-caption" style="font-family:Calibri;"><span style="font-size:16px;">   Exporting execution results to ALM from Runset tab</span></span></p>
+  <ul class="Disc">
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;"><span style="color:#000000;">Open Run Set tab</span></span></span></li>
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;"><span style="color:#000000;">Add Ginger Set and drag &amp; drop Ginger Business Flows to it</span></span></span></li>
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;"><span style="color:#000000;">Click on the Run Set Configurations button</span></span></span></li>
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;"><span style="color:#000000;">Add new “Add Publish Execution Result to ALM Operation” Run set Action</span></span></span></li>
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;"><span style="color:#000000;">Click on the Run button</span></span></span></li>
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;"><span style="color:#000000;">Execution details will be exported to ALM according to Run Set configurations</span></span></span><span><span style="font-size:16px;"><span style="color:#000000;"></span></span><img alt="Picture 234" height="508" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image93.png" style="" width="774"/></span></li>
+  </ul>
+  <p style="font-family: Calibri"><span></span></p>
+  <h2 data-list-level="3" style="font-family: Calibri;">Automate ALM TC &amp; Add it to Ginger Repository</h2>
+  <p>Once the user has imported ALM Test (to a Business Flow) or exported Ginger Business Flow to ALM he can automate the Ginger Activities Group andadds them to the Ginger Solution repository so they will be reused the next time those ALM TC’s will be used in other Tests that will be imported to Ginger</p>
+  <p class="minitoc-caption"><span><span style="font-size:16px;">For automating an ALM TC &amp; add it to the Ginger repository please follow below steps:</span></span></p>
+  <ul class="Disc">
+    <li class="Numbering40 ListParagraph" data-list-level="4" style="font-family: Calibri;"><span><span style="font-size:16px;">Import ALM Test Set into Ginger</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="4" style="font-family: Calibri;"><span><span style="font-size:16px;">Double click on it to go to the “Automate” tab</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="4" style="font-family: Calibri;"><span><span style="font-size:16px;">Record or manually add the automation Actions for the relevant ALM TC Steps matching Ginger Steps</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="4" style="font-family: Calibri;"><span><span style="font-size:16px;">Test and make sure the Ginger Steps have been executed as expected.</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="4" style="font-family: Calibri;"><span><span style="font-size:16px;">Mark the “Automation Status” of the automated Ginger Steps to “Automated” in all the Activities of the Business Flow.</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span>           <img alt="Picture 240" height="599" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image99.png" style="" width="748"/></span></p>
+  <p class="ListParagraph" style="font-family: Calibri"><span></span></p>
+  <ul class="Disc">
+    <li class="ListParagraph" style="font-family: Calibri;"><span><span style="font-size:16px;">This makes the Business Flow fully automated</span></span></li>
+  </ul>
+  <p class="ListParagraph" style="font-family: Calibri"><span><span style="font-size:16px;">              </span><img alt="Picture 241" height="571" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image100.png" width="736"/></span></p>
+  <p class="minitoc-caption" style="font-family: Calibri;"><span><span style="font-size:16px;">Add the Activity Group (Test Case in ALM) to the Solution Shared Repository by:</span></span></p>
+  <ul class="Disc">
+    <li class="Numbering40 ListParagraph" data-list-level="5" style="font-family: Calibri;"><span><span style="font-size:16px;">Go to the Automate tab by double-clicking on the Business Flow</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="5" style="font-family: Calibri;"><span><span style="font-size:16px;">Click on the “…” near the Activity Group</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="5" style="font-family: Calibri;"><span><span style="font-size:16px;">Select the “Add Activities Group to Shared Repository” option</span></span></li>
+    <li class="Numbering40 ListParagraph" data-list-level="5" style="font-family: Calibri;"><span><span style="font-size:16px;">All the details in it get added to the Solution Shared Repository</span></span></li>
+    <li class="margin-left-0-75in" style="font-family: Calibri;"><span><span style="font-size:16px;">Note: In case the Ginger Test Case or one of its Ginger Steps already exists in the Repository the user will be asked if he wants to overwrite the existing one.</span></span></li>
+  </ul>
+  <p class="margin-left-0-75in" style="font-family: Calibri"><span>               <img alt="Picture 242" height="540" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image101.png" width="705"/></span></p>
+  <p class="margin-left-0-75in" style="font-family: Calibri"><span></span></p>
+  <p class="margin-left-0-75in" style="font-family: Calibri"><span>                                  8.   The Shared repository wizard is displayed. Click on the Next button, verify the details and then click on the Finish button.</span></p>
+  <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span>                         <img alt="Picture 243" height="480" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image102.png" width="705"/></span></p>
+  <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span></span></p>
+  <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span>                                         <span style="font-size:16px;"> 9.  You can view it under the Resources-&gt; Shared Repository tab.</span></span></p>
+  <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span>                          <img alt="Picture 244" height="357" src="../../../images/Ginger - ALM (QC-RQM-JIRA) Integration_files/image103.png" style="" width="711"/></span></p>
+  <p style="font-family: Calibri"><span></span></p>
+  <p style="font-family: Calibri"><span>                      <span style="text-align:left;">Note: For reflecting the automated TC’s in the Design Console (ATS) application the user will need to Check-In the automated items                       (Ginger </span></span>Test Cases &amp; Ginger Steps) to the Source Control (SVN).</p>
+  <p style="font-family: Calibri"><span></span></p>
+  <p style="font-family: Calibri"><span></span></p>
+  <p style="font-family: Calibri"><span></span></p>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "8.1.0_3"
+  
+//]]></script>
+
+
+  <script src="../../../../template/scripts/topicpage.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

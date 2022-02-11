@@ -414,11 +414,23 @@
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Integrations\Ginger_-_ALM_(QC-RQM-JIRA)_Integration.htm
+      assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_Octane_ALM_Integration.htm
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Integrations\Ginger_-_Amdocs_BEAT_Testing_Studio_(ABTS)_Integration.htm
+      assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_Jira_ALM_Integration.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_Zephyr_ALM_Integration.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_QC_ALM_Integration.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_qTest_ALM_Integration.htm
     </topic>
     
     <topic>
@@ -431,6 +443,10 @@
     
     <topic>
       assets\Ginger_By_Amdocs\Integrations\Ginger_Splunk_Integration_3.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Integrations\Ginger_-_Amdocs_BEAT_Testing_Studio_(ABTS)_Integration.htm
     </topic>
     
     <topic>
