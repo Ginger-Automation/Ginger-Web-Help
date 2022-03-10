@@ -1,0 +1,287 @@
+h1.Heading1 {
+    margin-top: 3.75pt;
+    margin-bottom: 3.75pt;
+    font-family: Calibri;
+    font-size: 24pt;
+    color: #302E45;
+    font-weight: bold;
+}
+h1.Numbering19 {
+    counter-reset: Numbering22;
+    margin-left: 0.75in;
+    --autonumber: autonumber;
+}
+h1.Numbering19:before {
+    counter-increment: Numbering21;
+    content: counter(Numbering21,decimal)".";
+    display: inline-flex;
+    width: 0.50in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+h2.Heading2 {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: Calibri;
+    font-size: 18pt;
+    color: #EC008C;
+    font-weight: bold;
+}
+a.Hyperlink {
+    color: #0563C1;
+    text-decoration: underline;
+}
+p.ListParagraph0 {
+    margin-left: 0.50in;
+}
+p.NormalWeb {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+    font-size: 12pt;
+}
+p.Numbering1 {
+    counter-reset: Numbering142;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering1:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering1[data-list-level="2"]:before {
+    content: "o";
+    font-family: 'Courier New';
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering1[data-list-level="2"] {
+    counter-reset: Numbering143;
+    margin-left: 1.00in;
+}
+p.Numbering10 {
+    counter-reset: Numbering132;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering10:before {
+    counter-increment: Numbering131;
+    content: counter(Numbering131,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering11 {
+    counter-reset: Numbering42;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering11:before {
+    counter-increment: Numbering41;
+    content: counter(Numbering41,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering12 {
+    counter-reset: Numbering12;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering12:before {
+    counter-increment: Numbering11;
+    content: counter(Numbering11,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering13 {
+    counter-reset: Numbering102;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering13:before {
+    counter-increment: Numbering101;
+    content: counter(Numbering101,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering14 {
+    counter-reset: Numbering122;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering14:before {
+    counter-increment: Numbering121;
+    content: counter(Numbering121,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering15 {
+    counter-reset: Numbering62;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering15:before {
+    counter-increment: Numbering61;
+    content: counter(Numbering61,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering16 {
+    counter-reset: Numbering72;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering16:before {
+    counter-increment: Numbering71;
+    content: counter(Numbering71,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering17 {
+    counter-reset: Numbering92;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering17:before {
+    counter-increment: Numbering91;
+    content: counter(Numbering91,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering2 {
+    counter-reset: Numbering02;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering2:before {
+    content: "•";
+    font-family: Symbol;
+    font-size: 10pt;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering8 {
+    counter-reset: Numbering112;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering8:before {
+    counter-increment: Numbering111;
+    content: counter(Numbering111,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering9 {
+    counter-reset: Numbering82;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering9:before {
+    counter-increment: Numbering81;
+    content: counter(Numbering81,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+table.TableGrid {
+    border-top: solid #000000 1.0pt;
+    padding-top: 0;
+    border-bottom: solid #000000 1.0pt;
+    padding-bottom: 0;
+    border-left: solid #000000 1.0pt;
+    padding-left: 0;
+    border-right: solid #000000 1.0pt;
+    padding-right: 0;
+}
+span.TitleChar {
+    color: #302E45;
+    font-family: Calibri;
+    font-size: 26pt;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering21 Numbering02 Numbering32 Numbering111 Numbering81 Numbering131 Numbering41 Numbering11 Numbering101 Numbering121 Numbering61 Numbering71 Numbering91 ;
+    line-height: 1.08;
+    margin-bottom: 8pt;
+    font-size: 11pt;
+    font-family: Calibri;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+table.TableGrid td {
+    padding-top: 0pt;
+    padding-left: 5.4pt;
+    padding-bottom: 0pt;
+    padding-right: 5.4pt;
+}

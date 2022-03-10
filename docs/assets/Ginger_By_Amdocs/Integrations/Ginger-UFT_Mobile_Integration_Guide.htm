@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/Orange/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/Orange/userstyles.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../amdocs_Icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta charset="UTF-8"/>
+  <title>Ginger-UFT Mobile Integration Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css"/>
+  <link rel="stylesheet" href="../../css/Ginger-UFT Mobile Integration Guide.css"/>
+</head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div class="position-relative">
+    <h1><span class="TitleChar">Ginger - UFT Mobile Lab Integration</span> Guide</h1>
+    <p>Ginger by Amdocs is supporting integration with Micro Focus UFT Mobile Lab, this document comes to explains how to use the integration functionalities.</p>
+    <p> </p>
+    <h2>What Is UFT Mobile</h2>
+    <p>Micro Focus UFT Mobile provides an end-to-end quality lab of real devices and emulators that help you test, monitor, and optimize your mobile apps for an enhanced user experience.</p>
+    <p><img alt="Picture 451514683" height="394" src="../../images/Ginger-UFT Mobile Integration Guide_files/image1.png" style="cursor: nwse-resize;" width="634.6"/></p>
+    <p> </p>
+    <h2><span class="position-relative">Components of UFT Mobile Environment</span></h2>
+    <p> </p>
+    <p>The UFT Mobile environment consists of the following components</p>
+    <p> </p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid" style="margin-left: 0px; width: 1001.66px;">
+        <colgroup>
+          <col style="width: 203px;"/>
+          <col style="width: 762px;"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="position-relative" style="">
+              <p>Component</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>Function</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p>UFT Mobile Server</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>This is a single web server that:</p>
+              <p class="Numbering1 ListParagraph0">Mediates between the testing-tool client calls to mobile devices, and provides a user interface within the testing tool for recording and running tests on real mobile devices.</p>
+              <p class="Numbering1 ListParagraph0">Accepts apps for testing, and manages app versions.</p>
+              <p class="Numbering1 ListParagraph0">Includes a PostgreSQL database storing reusable data, such as Metadata of uploaded apps and connectors, certificates, user information, and so forth.</p>
+              <p class="Numbering1 ListParagraph0">Provides a user interface (Lab Management console) for administrators to:</p>
+              <p class="Numbering1 ListParagraph0" data-list-level="2">manage users</p>
+              <p class="Numbering1 ListParagraph0" data-list-level="2">manage apps and view their properties such as OS and version</p>
+              <p class="Numbering1 ListParagraph0" data-list-level="2">control devices: restart, unlock, or open a device remotely</p>
+              <p class="Numbering1 ListParagraph0" data-list-level="2">view and manage connectors</p>
+              <p class="Numbering1 ListParagraph0" data-list-level="2">configure a variety of settings for users such as proxy definitions and packaging services</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p>External PostgreSQL database</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>You can connect UFT Mobile to an existing external PostgreSQL database. This allows your organization to manage and utilize existing DB resources.</p>
+              <p>You specify this option during installation. For details, see <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Install_server_Windows.htm">UFT Mobile - Windows Installation (on-premises)</a> or <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Server.htm">UFT Mobile- Linux Installation (on-premises)</a>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p>Connector</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>The connector is a lightweight piece of software for connecting devices to UFT Mobile, which can be installed together with the server (embedded connector), or as a standalone component. You can install the connector on multiple machines in distributed locations, or on your testing-tool machine. For more details, see <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Install_connector_Windows.htm">Install the connector on a Windows machine</a>, <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Install_connector_Linux.htm">Install the connector on a Linux machine</a>, or <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Install_connector_Mac.htm">Install the connector on a Mac Machine</a>.</p>
+              <p>The connector manages the physical USB connection to the device, and the logical state machine on top of it. It maps the ports to connect to the device over USB and manages the remote screen viewer stream from the device to the tool. It receives lifecycle events from the USB library such as device connected or device disconnected, Agent finished installing, and Agent started. It transfers these events to the UFT Mobile server for adding the device to the pool. The connector is also responsible for installing and uninstalling apps on the device.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p>Test devices accessed via connectors</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>These are the devices (smartphones/tablets) on which the tests are run. The following applications are copied to the test devices:</p>
+              <p>The UFTM Agent, which manages commands to the AUT, to the OS (control outside a specific app), and to the remote screen viewer server that supplies the UI and remote control for the testing-tool clients.</p>
+              <p>The AUT – Application under Test.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p>SV Lab</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>SV (Service Virtualization) Lab is an environment virtualization toolkit for virtualizing real services in areas that would be otherwise difficult to test. The SV Lab is deployed inside UFT Mobile, ready to run Service Virtualization simulations.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p>NV Test Manager</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>Network Virtualization is an optional component for testing apps running under different network conditions. Network virtualization emulates real-world conditions by imposing impairments and constraints in your testing environment during the software testing process, thereby improving software testing accuracy.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h2><span class="position-relative">UFT Mobile Server Prerequisites </span>‎</h2>
+    <p>There are some prerequisites for the UFT Server installation and they vary to the different Operation Systems</p>
+    <p>In The link you can see the prerequisites for each OS: <a class="Hyperlink" href="https://admhelp.microfocus.com/documents/uftmobile/SupportMatrix/2021.1/UFTM Support Matrix.pdf">Link</a>.</p>
+    <p> </p>
+    <h2><span class="position-relative">UFT Mobile Connector Prerequisites &amp; Installation</span></h2>
+    <p>The connector is a lightweight piece of software for connecting devices to UFT Mobile, which can be installed together with the server (embedded connector), or as a standalone component. You can install the connector on multiple machines in distributed locations, or on your testing-tool machine.</p>
+    <p>Here you can find the prerequisites and how to install UFT Connector: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/InstallConnector.htm?Highlight=connector">Link</a>.</p>
+    <p>Here you can download the necessary files for UFT Connector and UFT Mobile: <a class="Hyperlink" href="file://ilrnaginger03/MF Mobile POC/Installation">Link</a>.</p>
+    <p> </p>
+    <h2><span class="position-relative">UFT Mobile Advanced Features       </span>    </h2>
+    <h2 class="Heading2">Users and Workspaces</h2>
+    <ul class="Disc">
+      <li>When logging into UFT Mobile as a shared space administrator, you have access to the MANAGEMENT tab of the Administration menu <img alt="Picture 35" height="22.2" src="../../images/Ginger-UFT Mobile Integration Guide_files/image2.png" width="22.9"/>. Here you can define and manage workspaces and manage users. This menu is visible only to users with a shared space admin role.</li>
+      <li>You can create multiple workspaces within your shared space. Workspaces are individual work areas within your lab. Create workspaces to segregate or share applications and devices between specific groups of users.</li>
+      <li>You can create your own custom workspaces, according to the needs of your organization. For example, you can define workspaces according to specific geographical areas, or by company division or team.</li>
+      <li>As a shared space admin, in Lab Management section in the left panel, you will see all devices, all apps, and all users with the names of the workspaces that are associated with them. Devices and apps in Shared assets are available to all users.</li>
+    </ul>
+    <p>                 <img alt="Picture 36" height="299.8" src="../../images/Ginger-UFT Mobile Integration Guide_files/image3.png" width="624.0"/></p>
+    <ul class="Disc">
+      <li>Link to Lab and workspace management documentation: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Workspaces.htm?Highlight=workspaces">Workspaces documentation</a>.</li>
+    </ul>
+    <p> </p>
+    <p>Apps Management</p>
+    <ul class="Disc">
+      <li>The APPS menu provides visibility and control of applications in the mobile lab. Upload a new app, see information about apps that have already been uploaded, or delete apps.</li>
+    </ul>
+    <p>                  <img alt="Picture 37" height="319.1" src="../../images/Ginger-UFT Mobile Integration Guide_files/image4.png" width="624.0"/></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>Upload an app in one of the following ways:</li>
+      <li>For all users: Click the APPS tab. In the APPLICATIONS pane click Upload (list view) or Upload application<img alt="Picture 41" height="30.1" src="../../images/Ginger-UFT Mobile Integration Guide_files/image5.png" width="30.8"/> (card view). Select the app.</li>
+      <li>For admins only:
+        <ul>
+          <li class="Numbering3 Numbering02" data-list-level="2">In Administration <img alt="Picture 40" height="22.2" src="../../images/Ginger-UFT Mobile Integration Guide_files/image6.png" width="22.9"/>, click the MANAGEMENT tab.</li>
+          <li class="Numbering4 Numbering02" data-list-level="2">In the left pane, click Lab Management.</li>
+          <li class="Numbering5 Numbering32" data-list-level="2">Select ALL APPS to view all the apps in your lab.</li>
+          <li class="Numbering6 Numbering32" data-list-level="2">Click the Upload button and specify the path to the app and select a workspace.</li>
+          <li class="Numbering7 Numbering32" data-list-level="2">Click UPLOAD.</li>
+        </ul>
+      </li>
+    </ul>
+    <p> </p>
+    <ul class="Disc">
+      <li>Link to Lab and App management documentation: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Adding_Apps.htm?Highlight=application modules#mt-item-0">App management documentation</a>.</li>
+    </ul>
+    <p> </p>
+    <p>Device View and Control</p>
+    <ul class="Disc">
+      <li>When opening a device remotely from the lab, you can interact with the device using the actions and features available in the device access window. You can also perform exploratory testing sessions on a device. These sessions can be recorded.</li>
+      <li>You can access a device remotely either from the Lab console, or using one of the testing tools that integrates with UFT Mobile.</li>
+      <li>To open a device remotely</li>
+    </ul>
+    <div align="left">  
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:636.7px">
+        <colgroup>
+          <col style="width:px"/>
+          <col style="width:px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="position-relative">
+              <p>UFT Mobile lab</p>
+            </td>
+            <td class="position-relative">
+              <p>Click <img alt="Picture 49" height="22.2" src="../../images/Ginger-UFT Mobile Integration Guide_files/image7.png" width="20.1"/> while hovering over a device in Card view, or select a device and click <img alt="Picture 48" height="20.1" src="../../images/Ginger-UFT Mobile Integration Guide_files/image8.png" width="17.9"/>Open device remotely in the toolbar in List view. Click the List <img alt="Picture 47" height="20.8" src="../../images/Ginger-UFT Mobile Integration Guide_files/image9.png" width="20.8"/> and Card view <img alt="Picture 46" height="17.2" src="../../images/Ginger-UFT Mobile Integration Guide_files/image10.png" width="17.2"/> buttons in the upper right corner to toggle between the views.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative">
+              <p>Testing tools</p>
+            </td>
+            <td class="position-relative">
+              <p>With tools that integrate with UFT Mobile such as UFT One, Sprinter, and TruClient, access a device by beginning your record or replay session.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <ul class="Disc">
+      <li>Interact with the device using the actions in the toolbar next to the device, and the options in the panels on the left and right-hand side of the device access window. You can collapse the panels, change the order of the tabs at the top of the panel, and drag and drop tabs from one panel to another.</li>
+    </ul>
+    <p>                <img alt="Picture 50" height="330.3" src="../../images/Ginger-UFT Mobile Integration Guide_files/image11.png" width="599.7"/></p>
+    <ul class="Disc">
+      <li>Use the toolbar next to the device to interact with the device during the capture or replay session, or when idle. The simulation options enable you to perform common event simulations. Note that some simulations are not available when conducting exploratory testing from the Lab console, and are only available when accessing the device remotely with a supported testing tool.</li>
+      <li>Link to Device access window documentation: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/device_control.htm#mt-item-2">device access window</a>.</li>
+    </ul>
+    <p> </p>
+    <p> </p>
+    <h2>Ginger Agent Creation for UFT Mobile           </h2>
+    <ul class="Disc">
+      <li>How to Configure Native\Web Connection</li>
+      <li> First, in Ginger go to Configuration -&gt; Agent and click on the button:</li>
+    </ul>
+    <p>                 <img alt="Picture 51" height="336.9" src="../../images/Ginger-UFT Mobile Integration Guide_files/image12.png" width="624.0"/></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>Choose the Mobile Platform as follows:</li>
+    </ul>
+    <p>                <img alt="Picture 52" height="438.7" src="../../images/Ginger-UFT Mobile Integration Guide_files/image13.png" width="437.0"/></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>The Appium Server configuration should be the UFT Mobile URL (including the port number):</li>
+    </ul>
+    <p>                <img alt="Picture 53" height="39.0" src="../../images/Ginger-UFT Mobile Integration Guide_files/image14.png" width="525.1"/></p>
+    <ul class="Disc">
+      <li>We will take that URL and put it here:</li>
+    </ul>
+    <p>                   <img alt="Picture 54" height="365.7" src="../../images/Ginger-UFT Mobile Integration Guide_files/image15.png" width="361.1"/></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>Then, choose the platform (Android\iOS) and application type (Native\Hybrid or Web).</li>
+      <li>How to Select the App</li>
+      <li>For having basic app (Settings app) no need to change anything.</li>
+      <li>To select an App from the UFT App management you will need to specify the appPackage and the appActivity capabilities.</li>
+      <li>In UFT Mobile you can see this here:</li>
+    </ul>
+    <p>                 <img alt="Picture 60" height="306.5" src="../../images/Ginger-UFT Mobile Integration Guide_files/image16.png" width="624.0"/></p>
+    <ul class="Disc">
+      <li>How to Select the Device</li>
+      <li>There are 2 ways to select the device:</li>
+      <li class="Numbering8 ListParagraph0">Specify exact udid: each device has a unique udid. If you want a specific device go to the device lab and see the udid of the devices:</li>
+    </ul>
+    <p class="ListParagraph0"><img alt="Picture 62" height="305.1" src="../../images/Ginger-UFT Mobile Integration Guide_files/image17.png" width="624.0"/></p>
+    <p class="ListParagraph0"> </p>
+    <ul class="Disc">
+      <li class="ListParagraph0">Take the desired udid and put it in the agent configuration:</li>
+    </ul>
+    <p class="ListParagraph0"><img alt="Picture 66" height="524.2" src="../../images/Ginger-UFT Mobile Integration Guide_files/image18.png" width="466.6"/></p>
+    <p> </p>
+    <ul class="Disc">
+      <li class="Numbering8 ListParagraph0">Wildcard: You can use a wildcard (*) to specify the OS required. You can specify a enumeration symbol, such as &lt;, &gt;, &lt;=. &gt;=, and =.</li>
+    </ul>
+    <p class="ListParagraph0">For example, &quot;platformVersion&quot;, &quot;&gt;5.0.1&quot;.</p>
+    <p> </p>
+    <ul class="Disc">
+      <li>Link to UFT Mobile Appium Capabilities <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Appium/Appium_Capabilities.htm">here</a>.</li>
+    </ul>
+    <p>      </p>
+    <h2>UFT Mobile Troubleshooting</h2>
+    <p class="NormalWeb"><strong>Install Connector on MAC tips:</strong></p>
+    <ul class="Disc">
+      <li class="NormalWeb">During installation of the Connector set the IP of the MAC which is accessible to other machines in the Amdocs network.</li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">Get the IP using the &quot;ifconfig -a&quot; command</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">## How to get the IP on Mac:</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">Pull the IP from Mac System Performances/Network</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">Or by opening Terminal and typing</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">ifconfig -a</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"><img alt="Text
+Description automatically generated" height="344.1" src="../../images/Ginger-UFT Mobile Integration Guide_files/image19.png" width="624.0"/></p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <ul class="Disc">
+      <li class="Numbering10 Numbering131">When need to load the Server Key file, so place the file under user/Pictures folder, from some reason only from there is allows to see the file and select it</li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <ul class="Disc">
+      <li class="Numbering11 Numbering41">For connector process not to be stopped need to set below setting:</li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">(on MacMini this is under &quot;Power Saver&quot; section) </p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">         <img alt="Graphical user interface, text, application
+Description automatically generated" height="314.5" src="../../images/Ginger-UFT Mobile Integration Guide_files/image20.png" width="413.5"/></p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <ul class="Disc">
+      <li class="Numbering13 Numbering101">How to restart/stop/start Connector on Mac:
+        <ul>
+          <li class="NormalWeb">sudo /Users/UFTM/UFTM_service restart </li>
+          <li class="NormalWeb">sudo /Users/UFTM/UFTM_service start</li>
+          <li class="NormalWeb">sudo /Users/UFTM/UFTM_service stop</li>
+          <li class="NormalWeb">Then provide machine user password</li>
+          <li class="NormalWeb">Note: it is better to do Stop and then Start than Restart</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="NormalWeb"> </p>
+    <ul class="Disc">
+      <li class="Numbering14 Numbering121">modify Connector settings:</li>
+    </ul>
+    <p class="NormalWeb">             <img alt="Graphical user interface, text, application
+Description automatically generated" height="198.8" src="../../images/Ginger-UFT Mobile Integration Guide_files/image21.png" width="449.0"/></p>
+    <p class="NormalWeb"> </p>
+    <ul class="Disc">
+      <li class="Numbering15 Numbering61">Android File browser tool installation: <a class="Hyperlink" href="http://www.android.com/filetransfer">www.android.com/filetransfer</a></li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <p class="NormalWeb"><strong>How to sign the UFT Mobile Agents for iOS Devices:</strong></p>
+    <ul class="Disc">
+      <li class="NormalWeb">Creating the Certificate and Provisioning Profile: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/iOSAssets.htm">https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/iOSAssets.htm</a></li>
+      <li class="NormalWeb">Sign the UFT Mobile Agents: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/MC_Enabler.htm?Highlight=ios enabler">https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/MC_Enabler.htm?Highlight=ios%20enabler</a></li>
+    </ul>
+    <p class="NormalWeb"> </p>
+    <p class="NormalWeb"><strong>How to Update ChromeDriver on the Connector:</strong></p>
+    <ul class="Disc">
+      <li class="Numbering16 Numbering71">Go to Connector installation folder</li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">For finding it on Mac machine run the below:</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">Finder-&gt; Go to folder -&gt; /opt/UFTMobile</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"><img alt="Graphical user interface, application
+Description automatically generated" height="365.9" src="../../images/Ginger-UFT Mobile Integration Guide_files/image22.png" width="480.0"/></p>
+    <ul class="Disc">
+      <li class="Numbering17 Numbering91">Go to Connector/chromeDriver folder and create new folder for each chrome version needed and place the chrome driver file under it</li>
+      <li class="Numbering17 Numbering91">Go to Connector/conf/chromeDriver.properties file and add new records for the new version added</li>
+      <li class="Numbering17 Numbering91">Restart the Connector and try</li>
+    </ul>
+    <p> </p>
+    <ul class="Disc">
+      <li>UFT Mobile provides Troubleshooting and tips <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Troubleshooting_MC.htm?Highlight=troubleshooting">here</a>.</li>
+      <li>On top of that there is a UFT Mobile support team to help with any complicated issue, where you can raise cases to the support team, and get a quick response by email.</li>
+      <li>The Support Portal link is <a class="Hyperlink" href="https://portal.microfocus.com/s/?language=en_US">here</a>.</li>
+    </ul>
+  </div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "8.1_1"
+  
+//]]></script>
+
+
+  <script src="../../../template/scripts/topicpage.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

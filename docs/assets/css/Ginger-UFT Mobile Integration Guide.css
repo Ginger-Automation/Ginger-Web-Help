@@ -1,0 +1,287 @@
+.RH-LAYOUT-CENTERPANEL-topic-box h1.Heading1, .RH-LAYOUT-FOOTER-container h1.Heading1 {
+    margin-top: 3.75pt;
+    margin-bottom: 3.75pt;
+    font-family: Calibri;
+    font-size: 24pt;
+    color: #302E45;
+    font-weight: bold;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering19, .RH-LAYOUT-FOOTER-container h1.Numbering19 {
+    counter-reset: Numbering22;
+    margin-left: 0.75in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box h1.Numbering19:before, .RH-LAYOUT-FOOTER-container h1.Numbering19:before {
+    counter-increment: Numbering21;
+    content: counter(Numbering21,decimal)".";
+    display: inline-flex;
+    width: 0.50in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box h2.Heading2, .RH-LAYOUT-FOOTER-container h2.Heading2 {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: Calibri;
+    font-size: 18pt;
+    color: #EC008C;
+    font-weight: bold;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box a.Hyperlink, .RH-LAYOUT-FOOTER-container a.Hyperlink {
+    color: #0563C1;
+    text-decoration: underline;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.ListParagraph0, .RH-LAYOUT-FOOTER-container p.ListParagraph0 {
+    margin-left: 0.50in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.NormalWeb, .RH-LAYOUT-FOOTER-container p.NormalWeb {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+    font-size: 12pt;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering1, .RH-LAYOUT-FOOTER-container p.Numbering1 {
+    counter-reset: Numbering142;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering1:before, .RH-LAYOUT-FOOTER-container p.Numbering1:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering1[data-list-level="2"]:before, .RH-LAYOUT-FOOTER-container p.Numbering1[data-list-level="2"]:before {
+    content: "o";
+    font-family: 'Courier New';
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering1[data-list-level="2"], .RH-LAYOUT-FOOTER-container p.Numbering1[data-list-level="2"] {
+    counter-reset: Numbering143;
+    margin-left: 1.00in;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering10, .RH-LAYOUT-FOOTER-container p.Numbering10 {
+    counter-reset: Numbering132;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering10:before, .RH-LAYOUT-FOOTER-container p.Numbering10:before {
+    counter-increment: Numbering131;
+    content: counter(Numbering131,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering11, .RH-LAYOUT-FOOTER-container p.Numbering11 {
+    counter-reset: Numbering42;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering11:before, .RH-LAYOUT-FOOTER-container p.Numbering11:before {
+    counter-increment: Numbering41;
+    content: counter(Numbering41,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering12, .RH-LAYOUT-FOOTER-container p.Numbering12 {
+    counter-reset: Numbering12;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering12:before, .RH-LAYOUT-FOOTER-container p.Numbering12:before {
+    counter-increment: Numbering11;
+    content: counter(Numbering11,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering13, .RH-LAYOUT-FOOTER-container p.Numbering13 {
+    counter-reset: Numbering102;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering13:before, .RH-LAYOUT-FOOTER-container p.Numbering13:before {
+    counter-increment: Numbering101;
+    content: counter(Numbering101,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering14, .RH-LAYOUT-FOOTER-container p.Numbering14 {
+    counter-reset: Numbering122;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering14:before, .RH-LAYOUT-FOOTER-container p.Numbering14:before {
+    counter-increment: Numbering121;
+    content: counter(Numbering121,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering15, .RH-LAYOUT-FOOTER-container p.Numbering15 {
+    counter-reset: Numbering62;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering15:before, .RH-LAYOUT-FOOTER-container p.Numbering15:before {
+    counter-increment: Numbering61;
+    content: counter(Numbering61,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering16, .RH-LAYOUT-FOOTER-container p.Numbering16 {
+    counter-reset: Numbering72;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering16:before, .RH-LAYOUT-FOOTER-container p.Numbering16:before {
+    counter-increment: Numbering71;
+    content: counter(Numbering71,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering17, .RH-LAYOUT-FOOTER-container p.Numbering17 {
+    counter-reset: Numbering92;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering17:before, .RH-LAYOUT-FOOTER-container p.Numbering17:before {
+    counter-increment: Numbering91;
+    content: counter(Numbering91,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering2, .RH-LAYOUT-FOOTER-container p.Numbering2 {
+    counter-reset: Numbering02;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering2:before, .RH-LAYOUT-FOOTER-container p.Numbering2:before {
+    content: "•";
+    font-family: Symbol;
+    font-size: 10pt;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering8, .RH-LAYOUT-FOOTER-container p.Numbering8 {
+    counter-reset: Numbering112;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering8:before, .RH-LAYOUT-FOOTER-container p.Numbering8:before {
+    counter-increment: Numbering111;
+    content: counter(Numbering111,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering9, .RH-LAYOUT-FOOTER-container p.Numbering9 {
+    counter-reset: Numbering82;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box p.Numbering9:before, .RH-LAYOUT-FOOTER-container p.Numbering9:before {
+    counter-increment: Numbering81;
+    content: counter(Numbering81,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box table.TableGrid, .RH-LAYOUT-FOOTER-container table.TableGrid {
+    border-top: solid #000000 1.0pt;
+    padding-top: 0;
+    border-bottom: solid #000000 1.0pt;
+    padding-bottom: 0;
+    border-left: solid #000000 1.0pt;
+    padding-left: 0;
+    border-right: solid #000000 1.0pt;
+    padding-right: 0;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span.TitleChar, .RH-LAYOUT-FOOTER-container span.TitleChar {
+    color: #302E45;
+    font-family: Calibri;
+    font-size: 26pt;
+    font-weight: bold;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box {
+counter-reset:Numbering21 Numbering02 Numbering32 Numbering111 Numbering81 Numbering131 Numbering41 Numbering11 Numbering101 Numbering121 Numbering61 Numbering71 Numbering91 ;
+    line-height: 1.08;
+    margin-bottom: 8pt;
+    font-size: 11pt;
+    font-family: Calibri;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
+position:relative;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box table.TableGrid td, .RH-LAYOUT-FOOTER-container table.TableGrid td {
+    padding-top: 0pt;
+    padding-left: 5.4pt;
+    padding-bottom: 0pt;
+    padding-right: 5.4pt;
+}
