@@ -87,6 +87,7 @@
     <book navtitle="General Action Types" format="html" processing-role="normal">
       <page navtitle="Excel Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Excel_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Database Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Working with Cosmos DB" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Working_with_Cosmos_DB_using_Ginger.htm" format="html" processing-role="normal"></page>
       <page navtitle="Condition Validation Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Condition_Validation_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Script Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Script_Action_2.htm" format="html" processing-role="normal"></page>
       <page navtitle="XML/JSON Processing Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Processing_Action.htm" format="html" processing-role="normal"></page>

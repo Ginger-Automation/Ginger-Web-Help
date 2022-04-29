@@ -127,3 +127,21 @@ ul.Disc {
 ul.Circle {
   list-style-type: circle;
 }
+ol.RoundSquare {
+  list-style: disc;
+}
+ol.RoundSquare>li>ol {
+  list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol {
+  list-style: circle;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol {
+  list-style: disc;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
+  list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: circle;
+}

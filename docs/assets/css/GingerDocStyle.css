@@ -127,3 +127,21 @@
 .RH-LAYOUT-CENTERPANEL-topic-box ul.Circle, .RH-LAYOUT-FOOTER-container ul.Circle {
   list-style-type: circle;
 }
+.RH-LAYOUT-CENTERPANEL-topic-box ol.RoundSquare, .RH-LAYOUT-FOOTER-container ol.RoundSquare {
+  list-style: disc;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box ol.RoundSquare>li>ol, .RH-LAYOUT-FOOTER-container ol.RoundSquare>li>ol {
+  list-style: square;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box ol.RoundSquare>li>ol>li>ol, .RH-LAYOUT-FOOTER-container ol.RoundSquare>li>ol>li>ol {
+  list-style: circle;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box ol.RoundSquare>li>ol>li>ol>li>ol, .RH-LAYOUT-FOOTER-container ol.RoundSquare>li>ol>li>ol>li>ol {
+  list-style: disc;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box ol.RoundSquare>li>ol>li>ol>li>ol>li>ol, .RH-LAYOUT-FOOTER-container ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
+  list-style: square;
+}
+.RH-LAYOUT-CENTERPANEL-topic-box ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol, .RH-LAYOUT-FOOTER-container ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: circle;
+}

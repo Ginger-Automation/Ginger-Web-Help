@@ -3,11 +3,21 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2022-04-29T16:43:16+05:30",
+      "time": "2022-04-29T19:22:09+05:30",
       "logFile": "C:/Users/jghodke/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:document": [{
+    "title": "Working_with_Cosmos_DB_using_Ginger",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Working_with_Cosmos_DB_using_Ginger.htm",
+    "pinned": false,
+    "time": "Apr 29, 7:14 PM"
+  }, {
+    "title": "Database_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
+    "pinned": false,
+    "time": "Apr 29, 6:18 PM"
+  }, {
     "title": "Ginger_Zephyr_ALM_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Zephyr_ALM_Integration.htm",
     "pinned": false,
@@ -122,18 +132,13 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/GingerDocStyle.css",
     "pinned": false,
     "time": "Feb 11, 7:40 PM"
-  }, {
-    "title": "Runset_Report",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Runset_Report.htm",
-    "pinned": false,
-    "time": "Feb 11, 7:36 PM"
-  }, {
-    "title": "default",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/default.css",
-    "pinned": false,
-    "time": "Feb 11, 4:18 PM"
   }],
   "recent-files::internal:hyperlink": [{
+    "title": "Working_with_Cosmos_DB_using_Ginger",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Working_with_Cosmos_DB_using_Ginger.htm",
+    "pinned": false,
+    "time": "Apr 29, 7:15 PM"
+  }, {
     "title": "Ginger_Jira_ALM_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Jira_ALM_Integration.htm",
     "pinned": false,
