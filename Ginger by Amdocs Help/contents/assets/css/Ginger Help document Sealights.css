@@ -1,0 +1,129 @@
+p.ListParagraph0 {
+    margin-left: 0.50in;
+}
+p.Numbering2 {
+    counter-reset: Numbering272;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering2:before {
+    content: "•";
+    font-family: Symbol;
+    font-size: 10pt;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering3 {
+    counter-reset: Numbering192;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering3:before {
+    content: "•";
+    font-family: Symbol;
+    font-size: 10pt;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering3[data-list-level="2"]:before {
+    content: "•";
+    font-family: Symbol;
+    font-size: 10pt;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering3[data-list-level="2"] {
+    counter-reset: Numbering193;
+    margin-left: 1.00in;
+}
+p.Numbering33 {
+    counter-reset: Numbering292;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering33:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering34 {
+    counter-reset: Numbering322;
+    margin-left: 1.00in;
+    --autonumber: autonumber;
+}
+p.Numbering34:before {
+    content: "";
+    font-family: Wingdings;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering36 {
+    counter-reset: Numbering342;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering36:before {
+    content: "";
+    font-family: Wingdings;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering4 {
+    counter-reset: Numbering102;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering4:before {
+    content: "•";
+    font-family: Symbol;
+    font-size: 10pt;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+body {
+    line-height: 1.08;
+    margin-bottom: 8pt;
+    font-size: 11pt;
+    font-family: Calibri;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

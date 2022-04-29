@@ -80,29 +80,30 @@
       <page navtitle="Table Element Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Table_Element_Action_3.htm" format="html" processing-role="normal"></page>
       <page navtitle="UIElement Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/UIElement_4.htm" format="html" processing-role="normal"></page>
       <page navtitle="Web API Action- SoapUI Wrapper &amp; Rest" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Web_API_Action_-SoapUI-Rest.htm" format="html" processing-role="normal"></page>
+      <page navtitle="WebAPI REST Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/REST_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Window Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Window_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Get Details from MainFrame Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Get_Details_from_MainFrame_Action_3.htm" format="html" processing-role="normal"></page>
     </book>
     <book navtitle="General Action Types" format="html" processing-role="normal">
-      <page navtitle="Clear All the Variables Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Clear_All_the_Variables_Action.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Condition Validation Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Condition_Validation_Action.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Database Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Email Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Email_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Excel Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Excel_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Database Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Condition Validation Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Condition_Validation_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Script Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Script_Action_2.htm" format="html" processing-role="normal"></page>
+      <page navtitle="XML/JSON Processing Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Processing_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle=" XML/JSON Tag Validation Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Tag_Validation_Action_3.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Set Variable Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Set_Variable_Action_3.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Clear All the Variables Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Clear_All_the_Variables_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Image Based Operation" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Sikuli_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Read Text using OCR" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Read_Text_Using_OCR.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Send Keys Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Send_Keys_Action_4.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Launch_Java_Application_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle=" Java Execution Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Java_Execution_Action_3.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Email Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Email_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="File Operations Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Operations_Action.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Text File Operations" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Text_File_Operations_3.htm" format="html" processing-role="normal"></page>
       <page navtitle="  File Transfer Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/File_Transfer_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Generate File from Template Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Generate_File_from_Template_Action_3.htm" format="html" processing-role="normal"></page>
       <page navtitle="Image Search and Click on screen" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Image_Search_and_Click_on_screen_3.htm" format="html" processing-role="normal"></page>
-      <page navtitle=" Java Execution Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Java_Execution_Action_3.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Script Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Script_Action_2.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Send Keys Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Send_Keys_Action_4.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Set Variable Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Set_Variable_Action_3.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Text File Operations" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Text_File_Operations_3.htm" format="html" processing-role="normal"></page>
-      <page navtitle=" XML/JSON Tag Validation Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Tag_Validation_Action_3.htm" format="html" processing-role="normal"></page>
-      <page navtitle="XML/JSON Processing Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/XML_Processing_Action.htm" format="html" processing-role="normal"></page>
-      <page href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Launch_Java_Application_Action.htm" format="html" processing-role="normal"></page>
-      <page navtitle="WebAPI REST Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/REST_Action.htm" format="html" processing-role="normal"></page>
-      <page navtitle="Sikuli Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Sikuli_Action.htm" format="html" processing-role="normal"></page>
     </book>
     <page navtitle="Automatic Actions Convertor" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/05-_Automatic_Actions_Convertor.htm" format="html" processing-role="normal"></page>
   </book>
@@ -153,6 +154,7 @@
     <page navtitle="qTest ALM Integration" href="../contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_qTest_ALM_Integration.htm" format="html" processing-role="normal"></page>
   </book>
   <page navtitle="Ginger - UFT Mobile Lab Integration" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Ginger and Sealights Integration" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm" format="html" processing-role="normal"></page>
   <page navtitle="Visual Testing using Applitools" href="../contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm" format="html" processing-role="normal"></page>
   <page navtitle="Ginger Plugin for Bamboo" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger_Plugin_for_Bamboo_3.htm" format="html" processing-role="normal"></page>
   <page navtitle="Ginger Plugin for Jenkins" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger_Plugin_for_Jenkins_3.htm" format="html" processing-role="normal"></page>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/Orange/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/Orange/userstyles.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../amdocs_Icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <title>Ginger-Sealights Integration</title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="../../css/default.css"/>
+  <link rel="stylesheet" type="text/css" href="../../css/GingerDocStyle.css"/>
+</head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:24.0pt"><span style="color:#302e45">Ginger and Sealights Integration</span></span></b></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Ginger have ability to integrate with Sealights. </span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Sealights is a </span><span style="font-size:12.0pt"><span style="background:white"><span style="color:black">cloud-based, continuous testing platform that helps to increase code quality by collecting telemetry data from all stages of the SDLC.</span></span></span><span style="font-size:12.0pt"><span style="background:white"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"> </p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Ginger is sending an API request for reporting SeaLights regarding test event results on different Ginger’s Run-Set entity levels (information below)</span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Ginger reports test status option values: <b>Passed</b>, <b>Failed</b> or <b>Skipped.</b></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:black"></span></span></b></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">Sealights Setting on Ginger Solution</span></span></b></span></span></span></h2>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">        To set Sealights configuraiton details in Ginger solution level, please follow the below steps:</span></span></span></span></span></p>
+  <ul>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"> Go to “Execution Logger Configuration” under the “Reports” menu.</span><span style="font-size:10.5pt"></span></span></span></span></span></span></li>
+  </ul>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif">        <img src="../../images/image342.png" style="width: 590px; height: 82px;"/><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <ul>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">The following are the Sealights fields:</span></span></span></span></span></span>
+      <ul style="list-style-type:disc">
+        <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Enable (Yes/No)</span></span></span></span></span></span></li>
+        <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">URL - This is Sealights instance URL, usually provided by sealights team</span></span></span></span></span></span></li>
+        <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Agent Token - </span><span style="font-size:12.0pt">token is required to connect to the Sealights. Token can be generated from Sealight dashboard --&gt; Settings</span></span></span></span></span></span><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"> </span></span></span></span></span></span><img src="../../images/image353.png"/>
+          <ul style="list-style-type:disc">
+            <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Lab ID</span></span></span></span></span></span></li>
+            <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Build Session ID </span></span></span></span></span></span></li>
+            <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Session Timeout (seconds)</span></span></span></span></span></span></li>
+            <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Test Stage</span></span></span></span></span></span></li>
+            <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Entity Level to Report (“Business Flow” / “Activities Group” / “Activity”)</span></span></span></span></span></span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p style="margin-left:48px; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-left:48px; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Below is the screenshot of the Sealights settings:</span></span></span></span></span></p>
+  <p style="margin-left:48px; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif">                       <img src="../../images/image354.png"/> </span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif">                               </span></span></span></p>
+  <ul>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Enter all required details and click on Save                              </span></span></span></span></span></span></li>
+  </ul>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:black">Note</span></span></b><span style="font-size:12.0pt"><span style="color:black">: If the saved configurations are incorrect or missing, Ginger will not be able to establish a connection to Sealights</span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"> </p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">Sealights Setting on Ginger Run-Sets</span></span></b></span></span></span></h2>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">        By default the settings configured on Solution level will be used. But user also have an option to override specific selaight configurations on each Ginger Run-Sets level, please follow the below steps:</span></span></span></span></span></p>
+  <ul>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">  Go to the “Details” tab under “Run-Sets”.</span></span></span></span></span></span></li>
+  </ul>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">            <img src="../../images/image344.png" style="width: 624px; height: 156px;"/></span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <ul>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">The following are Sealights fields which the user can override the solution setting:</span></span></span></span></span></span>
+      <ul style="list-style-type:disc">
+        <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Lab ID</span></span></span></span></span></span></li>
+        <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Build Session ID </span></span></span></span></span></span></li>
+        <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Test Stage</span><span style="font-size:12.0pt"></span></span></span></span></span></span></li>
+      </ul>
+    </li>
+  </ul>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><a name="_Hlk101350921"><b><span style="font-size:12.0pt"><span style="color:black">Note</span></span></b></a><span style="font-size:12.0pt"><span style="color:black">: </span></span></span></span></span></p>
+  <ul class="Disc">
+    <li style="margin-bottom: 11px;"><span style="margin-bottom:11px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Sealight settings will be visible on Runset only if the Sealight logger configuration is enabled on Solution level</span></span></span></span></span></li>
+    <li style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">The Run-Sets default values will be populated by Ginger’s Solution settings.</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></li>
+  </ul>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif">            <img src="../../images/image345.png" style="width: 624px; height: 198px;"/><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">Sealights Setting via Ginger CLI</span></span></b></span></span></span></h2>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Ginger allows reporting to Sealights via Ginger CLI, with argument or Json file,</span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Please follow the below steps to set Sealights setup details via Ginger CLI:</span></span></span></span></span></p>
+  <ul>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Go to “Run-Sets” and open the AutoRun configuration window </span></span></span></span></span></span></li>
+    <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Check the “Set Sealights Setting” option and click ‘Next’ </span></span></span></span></span></span></li>
+  </ul>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">All Sealights settings from Ginger’s solution Configuration will be added as a command-line configuration.</span></span></span></span></span></p>
+  <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:black">Notes</span></span></b><span style="font-size:12.0pt"><span style="color:black">: </span></span></span></span></span></p>
+  <ul style="list-style-type:square">
+    <li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="font-family:Wingdings"></span></span><span style="font-size:12.0pt"><span style="color:black">Any Run-Sets custom settings will override the Solution settings</span></span></span></span></span></li>
+    <li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="font-family:Wingdings"></span></span><span style="font-size:12.0pt"><span style="color:black">“Set Sealights Setting” option availability depends on if Sealights has been enabled in Ginger’s solution configuration</span></span></span></span></span></li>
+  </ul>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">           <img height="205" src="../../images/image346.png" style="width: 623px; height: 89px;" width="1433"/></span></span></b><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif">               <img src="../../images/image347.png" style="width: 624px; height: 629px;"/><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif">             <b><span style="font-size:18.0pt"><span style="color:#ec008c"><img src="../../images/image355.png"/></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></p>
+  <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">Sealights Fields</span></span></b></span></span></span></h2>
+  <p style="margin-bottom:11px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Note: All Sealights fields can be populated as values or as a “Value Expressions”</span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Url: Sealights URL Address to run connection through</span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Agent Token: Sealighs Token is required to connect to the Sealights APIs</span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Build Session Id: (Not to be used IF using labId) session id created by the config step, </span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">The Build Session ID is used to identify the build that is being tested and need to be provided to the test listener as well.</span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">The Bsid can be found on Sealighs portal, please follow the following steps:</span></span></span></span></span></p>
+  <ul>
+    <li style="margin-left:8px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Log-in to Sealights dashboard</span></span></span></span></span></li>
+    <li style="margin-left:8px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Click on the Applicable App/Branch’s “Overall Coverage” </span></span></span></span></span></li>
+    <li style="margin-bottom:11px; margin-left:8px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">The Build-Session-Id can be found in the report URL (between 2 backslashes), as shown below.</span></span></span></span></span></li>
+  </ul>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><img src="../../images/image350.png" style="width: 624px; height: 403px;"/><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"><img src="../../images/image351.png" style="width: 624px; height: 200px; cursor: nesw-resize;"/></span></span></span></span><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Lab Id:  (Optional) Unique ID for a set of test labs in case multiple labs are running simultaneously, Lab-Id or Build-Session-Id must be provided</span></span></span></span></span></p>
+  <p> </p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Test Stage: Name of the test stage as will be displayed on the SeaLights dashboard, </span></span></span></span></span></p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">The Test Stage can be any description reflecting the entity level of the Ginger’s tested solution </span></span></span></span></span></p>
+  <p> </p>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Entity Level to Report: Should be one of the following Dropdown options </span></span></span></span></span></p>
+  <ul>
+    <li style="margin-left:56px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">“Business Flow” </span></span></span></span></span></li>
+    <li style="margin-left:56px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">“Activities Group” </span></span></span></span></span></li>
+    <li style="margin-left:56px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">“Activity”</span></span></span></span></span></li>
+  </ul>
+  <p><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Session Timeout (seconds): (Optional) Default value = 14,000 seconds (4 hours)</span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">Ginger’s Report on Sealights Portal </span></span></b></span></span></span></h2>
+  <p style="margin-bottom:11px"><span style="margin-bottom:5px;margin-top:5px;"><span style="font-size:11pt;"><span style="line-height:normal;"><span style="font-family:Calibri,sans-serif;"><span style="color:black;">Users can view the Ginger’s test reports on the Sealights portal, under/click the applicable App/branch </span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><img src="../../images/image352.png" style="width: 624px; height: 238px;"/><span style="background:white"><span style="font-family:&quot;Segoe UI&quot;,sans-serif"><span style="color:#172b4d"><span style="letter-spacing:-.05pt"></span></span></span></span></span></span></span></p>
+  <p style="margin-bottom:11px"> </p>
+  <p> </p>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "8.1_2"
+  
+//]]></script>
+
+
+  <script src="../../../template/scripts/topicpage.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>
