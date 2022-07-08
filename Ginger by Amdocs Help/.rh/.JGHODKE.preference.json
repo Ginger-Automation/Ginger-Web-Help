@@ -3,11 +3,31 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2022-06-30T13:31:01+05:30",
+      "time": "2022-07-08T18:09:19+05:30",
       "logFile": "C:/Users/jghodke/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:document": [{
+    "title": "Ginger-Sealights_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm",
+    "pinned": false,
+    "time": "Jul 8, 6:15 PM"
+  }, {
+    "title": "Visual_Testing_using_VRT",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_VRT.htm",
+    "pinned": false,
+    "time": "Jul 8, 6:05 PM"
+  }, {
+    "title": "Visual_Testing_using_Applitools",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm",
+    "pinned": false,
+    "time": "Jul 8, 6:05 PM"
+  }, {
+    "title": "Ginger-UFT_Mobile_Integration_Guide",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
+    "pinned": false,
+    "time": "Jul 8, 4:53 PM"
+  }, {
     "title": "Shared_Repository_10",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Shared_Repository_10.htm",
     "pinned": false,
@@ -68,16 +88,6 @@
     "pinned": false,
     "time": "Apr 29, 2:15 PM"
   }, {
-    "title": "Ginger-Sealights_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm",
-    "pinned": false,
-    "time": "Apr 29, 1:38 PM"
-  }, {
-    "title": "Visual_Testing_using_Applitools",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm",
-    "pinned": false,
-    "time": "Apr 29, 1:24 PM"
-  }, {
     "title": "Sikuli_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Sikuli_Action.htm",
     "pinned": false,
@@ -92,11 +102,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Image_Search_and_Click_on_screen_3.htm",
     "pinned": false,
     "time": "Apr 29, 1:17 PM"
-  }, {
-    "title": "Ginger-UFT_Mobile_Integration_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
-    "pinned": false,
-    "time": "Mar 10, 10:52 PM"
   }, {
     "title": "Ginger-UFT Mobile Integration Guide",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/Ginger-UFT Mobile Integration Guide.css",
@@ -127,13 +132,13 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Create_New_or_Open_Solution_1.htm",
     "pinned": false,
     "time": "Feb 18, 4:02 PM"
-  }, {
-    "title": "GingerDocStyle",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/GingerDocStyle.css",
-    "pinned": false,
-    "time": "Feb 11, 7:40 PM"
   }],
   "recent-files::internal:hyperlink": [{
+    "title": "Visual_Testing_using_VRT",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_VRT.htm",
+    "pinned": false,
+    "time": "Jul 8, 6:01 PM"
+  }, {
     "title": "Working_with_Cosmos_DB_using_Ginger",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Working_with_Cosmos_DB_using_Ginger.htm",
     "pinned": false,
@@ -193,5 +198,11 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/01-_What_is_Ginger_Plugins.htm",
     "pinned": false,
     "time": "Feb 10, 11:19 PM"
+  }],
+  "recent-files::external:hyperlink": [{
+    "title": "Visual-Regression-Tracker#readme",
+    "path": "https://github.com/Visual-Regression-Tracker/Visual-Regression-Tracker#readme",
+    "pinned": false,
+    "time": "Jul 8, 6:08 PM"
   }]
 }

@@ -227,6 +227,23 @@
     For example, "platformVersion", ">5.0.1".
      
     
+      In order to connect to a device hosted in UFT, you will need to add 3 more capabilities:
+        
+          Capability name: uftm:tenantId, capability value: "999999999". For users who do not use shared spaces this capability is required but do not change. For users who do use chared spaces, you shall insert in the value the shared space id (for example: “123456789”, the apostrophe is required!).
+          Capability name: uftm:oauthClientId, capability value: a secret key that can be obtained from UFT
+          Capability name: uftm:oauthClientSecret, capability value: a secret key that can be  obtained from UFT
+        
+      
+    
+                            
+    
+    
+    
+      To generate the capabilities uftm:oauthClientId and uftm:oauthClientSecret, please look here.
+    
+    
+     
+    
       Link to UFT Mobile Appium Capabilities here.
     
           

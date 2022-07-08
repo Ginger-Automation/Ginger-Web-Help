@@ -156,6 +156,7 @@
   </book>
   <page navtitle="Ginger - UFT Mobile Lab Integration" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm" format="html" processing-role="normal"></page>
   <page navtitle="Ginger and Sealights Integration" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Visual Testing using VRT" href="../contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_VRT.htm" format="html" processing-role="normal"></page>
   <page navtitle="Visual Testing using Applitools" href="../contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm" format="html" processing-role="normal"></page>
   <page navtitle="Ginger Plugin for Bamboo" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger_Plugin_for_Bamboo_3.htm" format="html" processing-role="normal"></page>
   <page navtitle="Ginger Plugin for Jenkins" href="../contents/assets/Ginger_By_Amdocs/Integrations/Ginger_Plugin_for_Jenkins_3.htm" format="html" processing-role="normal"></page>
