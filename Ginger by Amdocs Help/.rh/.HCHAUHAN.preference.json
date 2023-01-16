@@ -1,6 +1,11 @@
 {
   "recent-files::internal:document": [{
     "title": "Ginger-UFT_Mobile_Integration_Guide",
+    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
+    "pinned": false,
+    "time": "Jan 16, 11:32 AM"
+  }, {
+    "title": "Ginger-UFT_Mobile_Integration_Guide",
     "path": "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
     "pinned": false,
     "time": "Jan 16, 9:05 AM"
@@ -27,6 +32,12 @@
       "path": false,
       "time": "2023-01-16T09:36:15+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Knowledge Base.ehtml"
+    },
+    "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
+      "exists": true,
+      "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
+      "time": "2023-01-16T11:44:46+05:30",
+      "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   }
 }
