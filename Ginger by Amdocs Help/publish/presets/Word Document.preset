@@ -1,59 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <preset>
-  
-<name>Word Document</name>
-  
-<type>word</type>
-  
-<content>
-    
-<index type="boolean">false</index>
-    
-<toc>
-      
-<path>../../toc/Ginger_by_Amdocs_Help.toc</path>
-      
-<name>Default</name>
+  <name>Word Document</name>
+  <type>word</type>
+  <content>
+    <index type="boolean">false</index>
+    <toc>
+      <path>../../toc/Ginger_by_Amdocs_Help.toc</path>
+      <name>Default</name>
     </toc>
-    
-<masterpage>
-      
-<path>../../contents/assets/masterpages/book.htt</path>
-    </masterpage>
-    
-<brs type="array"></brs>
-    
-<includereftopics type="boolean">true</includereftopics>
-    
-<includeExpandingText type="boolean">false</includeExpandingText>
-    
-<includeDropdownText type="boolean">false</includeDropdownText>
+    <brs type="array"></brs>
+    <includereftopics type="boolean">true</includereftopics>
+    <includeExpandingText type="boolean">false</includeExpandingText>
+    <includeDropdownText type="boolean">false</includeDropdownText>
   </content>
-  
-<word>
-    
-<stylemapping>{&quot;selectorMap&quot;:{},&quot;discardSelectors&quot;:[],&quot;identityMappedSelectors&quot;:[]}</stylemapping>
-    
-<insertTopicBreak type="boolean">false</insertTopicBreak>
-    
-<displayChapter type="boolean">false</displayChapter>
+  <word>
+    <stylemapping>{&quot;selectorMap&quot;:{},&quot;discardSelectors&quot;:[],&quot;identityMappedSelectors&quot;:[]}</stylemapping>
+    <insertTopicBreak type="boolean">false</insertTopicBreak>
+    <displayChapter type="boolean">false</displayChapter>
   </word>
-  
-<gdprCompliance type="boolean">true</gdprCompliance>
-  
-<starterPage>Default.docx</starterPage>
-  
-<patchHomepage type="boolean">true</patchHomepage>
-  
-<title>Learn</title>
-  
-<outputPath>C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/outputs/Learn/Word Document</outputPath>
-  
-<search>
-    
-<showSpeclChars type="boolean">false</showSpeclChars>
-    
-<speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <starterPage>Default.docx</starterPage>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <title>Learn</title>
+  <outputPath>C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/outputs/Learn/Word Document</outputPath>
+  <search>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
   </search>
+  <template>
+    <path>../templates/Word Document/word.tpl</path>
+  </template>
+  <excludeTopicCss type="boolean">true</excludeTopicCss>
+  <pdf>
+    <splitPdf type="boolean">false</splitPdf>
+  </pdf>
 </preset>
