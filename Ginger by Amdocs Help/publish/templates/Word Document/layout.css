@@ -1,0 +1,82 @@
+/*Created with Adobe RoboHelp*/
+a {
+  text-decoration: underline;
+}
+
+/*Chapter Styling*/
+.chapter-body {}
+.topic-body {}
+
+/*TOC Styling*/
+.toc-body {}
+.toc-level-1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FE5AFF;
+}
+.toc-level-2 {
+  font-size: 16px;
+  text-decoration: none;
+  color: #39CCCC;
+}
+.toc-level-3 {
+  font-size: 14px;
+  text-decoration: none;
+}
+.toc-level-4 {
+  font-size: 14px;
+  text-decoration: none;
+}
+.toc-level-5 {
+  font-size: 14px;
+  text-decoration: none;
+}
+.toc-level-6 {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/*List of Figures Styling*/
+.lof-body {}
+.lof-level-1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FE5AFF;
+}
+
+/*List of Figures Tables*/
+.lot-body {}
+.lot-level-1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FE5AFF;
+}
+
+
+/*Index Styling*/
+.idx-body {
+  column-count: 2;
+  column-fill: balance;
+}
+.idx-keyword-group {}
+.idx-unit {}
+.idx-keyword {}
+.idx-name {}
+.idx-link {
+  text-decoration: none;
+}
+.idx-child {
+  padding-left: 10px;
+}
+
+/*Glossary Styling*/
+.glo-body {}
+.glo-title {}
+.glo-unit {}
+.glo-term {
+  font-weight: bold;
+}
+.glo-definition {}
