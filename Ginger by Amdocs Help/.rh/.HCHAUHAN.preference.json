@@ -1,5 +1,15 @@
 {
   "recent-files::internal:document": [{
+    "title": "How_to_Automate_Mobile_Application",
+    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Automate_Mobile_Application.htm",
+    "pinned": false,
+    "time": "Jan 17, 8:30 AM"
+  }, {
+    "title": "Mobile_Appium_Agent",
+    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Mobile_Appium_Agent.htm",
+    "pinned": false,
+    "time": "Jan 17, 8:10 AM"
+  }, {
     "title": "Ginger-UFT_Mobile_Integration_Guide",
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
     "pinned": false,
@@ -36,7 +46,7 @@
     "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2023-01-16T22:55:31+05:30",
+      "time": "2023-01-17T08:45:11+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   }
