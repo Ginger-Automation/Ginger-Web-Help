@@ -7,9 +7,7 @@
     Micro Focus UFT Mobile provides an end-to-end quality lab of real devices and emulators that help you test, monitor, and optimize your mobile apps for an enhanced user experience. 
     
      
-    Components of UFT Mobile Environment
-     
-    The UFT Mobile environment consists of the following components
+    The UFT Mobile environment consists of the following components:
      
     
       
@@ -210,7 +208,6 @@
       Interact with the device using the actions in the toolbar next to the device, and the options in the panels on the left and right-hand side of the device access window. You can collapse the panels, change the order of the tabs at the top of the panel, and drag and drop tabs from one panel to another.
     
                     
-    Interact with the device using the actions in the toolbar next to the device, and the options in the panels on the left and right-hand side of the device access window. You can collapse the panels, change the order of the tabs at the top of the panel, and drag and drop tabs from one panel to another. 
      
     Use the toolbar next to the device to interact with the device during the capture or replay session, or when idle. The simulation options enable you to perform common event simulations. Note that some simulations are not available when conducting exploratory testing from the Lab console, and are only available when accessing the device remotely with a supported testing tool. 
      
@@ -234,13 +231,21 @@
     
       
         The Appium Server configuration should be the UFT Mobile URL (including the port number): 
-         
-        We will take that URL and put it here:  
-         
-         
-        Then, choose the platform (Android\iOS) and application type (Native\Hybrid or Web). 
       
     
+    
+     
+     We will take that URL and put it here:  
+      
+     
+    Then, to use a UFT Mobile Device, choose “MF UFTM Lab” (it will automatically add the desired capabilities for connecting to a UFT Mobile Device):
+     
+    
+     
+     
+    Keep on following the steps to fill those capabilities.
+     
+    Then, choose the platform (Android\iOS) and application type (Native\Hybrid or Web). 
     How to Select the App
     
       
@@ -248,6 +253,8 @@
         To select an App from the UFT App management you will need to specify the appPackage and the appActivity capabilities. 
         In UFT Mobile you can see this here: 
       
+    
+     
     
                      
     
@@ -313,13 +320,11 @@
     
      
     
-      
-        Anonymous Connection: 
-      
-    
+     
+    2. Anonymous Connection: 
     
       
-        In order to enable anonymous connection, you will need to go to Administration: 
+         In order to enable anonymous connection, you will need to go to Administration: 
       
     
      
@@ -353,25 +358,22 @@
         During installation of the Connector set the IP of the MAC which is accessible to other machines in the Amdocs network. 
       
     
-    Get the IP using the "ipconfig -a" command 
-    ## How to get the IP on Mac: 
-    Pull the IP from Mac System Performances/Network 
-    Or by opening Terminal and typing  
-    ifconfig -a 
+     Get the IP using the "ipconfig -a" command 
+     ## How to get the IP on Mac: 
+     Pull the IP from Mac System Performances/Network 
+     Or by opening Terminal and typing  
+     ifconfig -a 
     
+    2. When need to load the Server Key file, so place the file under user/Pictures folder, from some reason only from there is allows to see the file and select it
      
-    
-      When need to load the Server Key file, so place the file under user/Pictures folder, from some reason only from there is allows to see the file and select it
-    
-     
-    
-      For connector process not to be stopped need to set below setting:
-    
+    3. For connector process not to be stopped need to set below setting:
     (on MacMini this is under "Power Saver" section) 
              
      
+     
+    4. How to restart/stop/start Connector on Mac:
     
-      How to restart/stop/start Connector on Mac:
+      
         
           sudo /Users/UFTM/UFTM_service restart 
           sudo /Users/UFTM/UFTM_service start
@@ -381,10 +383,7 @@
         
       
     
-     
-    
-      modify Connector settings:
-    
+           5. Modify Connector settings:
                  
      
     
