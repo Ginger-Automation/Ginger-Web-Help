@@ -58,6 +58,7 @@
   <page navtitle="What are Activities Groups" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/02-_What_is_Activities_Groups.htm" format="html" processing-role="normal"></page>
   <page navtitle="What is an Activity" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm" format="html" processing-role="normal"></page>
   <page navtitle="What is an Error Handler Activity" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm" format="html" processing-role="normal"></page>
   <page navtitle="Create New or Open Solution" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Create_New_or_Open_Solution_1.htm" format="html" processing-role="normal"></page>
   <book navtitle="Action" format="html" processing-role="normal">
     <page navtitle="What is Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/What_is_Action.htm" format="html" processing-role="normal"></page>

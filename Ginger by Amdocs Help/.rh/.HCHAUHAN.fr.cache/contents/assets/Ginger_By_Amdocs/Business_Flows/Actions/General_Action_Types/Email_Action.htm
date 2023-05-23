@@ -2,13 +2,6 @@
   
      Email Action
      
-     
-    Contents
-    Introduction
-    How to Configure Action
-    Configure for Sending Email
-    Configure for Reading Email
-     
     Introduction 
     Email action supports two types of operations
     
@@ -60,7 +53,41 @@
     Configure for Reading Email
     Pre-requisite
     For using Microsoft’s Graph API for reading emails, you must have the Client Id and Tenant Id. You can get these details from Azure portal. For more information on how to register an application on Azure and get it ready for Ginger, you can follow this document.
+     
+    Registering an Application on Azure for using Ginger Email Read Action
+    Follow these steps to register an application in Azure and get it ready to use with Ginger Email Read Action:
     
+       Sign In to the Azure portal.
+       Search for and select Azure Active Directory.
+       Under Manage, select App registrations > New registration.
+    
+    
+     
+    4. Enter a display Name for your application. In this case you can enter ‘GingerCore’
+    5. Specify who can use the application, sometimes called its sign-in audience. In this case you can choose ‘Accounts in this organizational directory only’
+    6. For Redirect URI, choose ‘Mobile and desktop applications’ as platform and enter ‘http://localhost’ as value.
+    7. Click on ‘Register’ to complete the app registration.
+    8. After the registration you can get the Client Id and Tenant Id in the registered application’s ‘Overview’ tab.
+    
+     
+    9. Go to the ‘API Permissions’ tab and click on ‘Add Permission’
+    10. In ‘Request API permissions’ screen click on the ‘Microsoft Graph’ option and then select ‘Delegated permissions’ option.
+    
+    11. Select the below permissions and then click on ‘Add permissions’ button
+    
+      
+        
+           email
+           offline_access
+           Mail.Read
+        
+      
+    
+    NOTE: You might require Admin Consent for the registered application to use these permissions.
+    
+    Addition Reference Links:
+    https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
+     
     Steps
     
       Click on the ‘Read’ radio button in ‘Action Type’
