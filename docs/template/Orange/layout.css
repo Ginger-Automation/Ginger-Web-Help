@@ -4453,7 +4453,6 @@ background-image: url(./print-mobile.svg);
   top: 0;
   max-width: 100%;
   margin-right: 0;
-  z-index: 100;
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-LEFTPANEL-tab-view {

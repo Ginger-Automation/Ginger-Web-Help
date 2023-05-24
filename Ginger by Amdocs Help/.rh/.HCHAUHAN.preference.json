@@ -1,9 +1,19 @@
 {
   "recent-files::internal:document": [{
+    "title": "Database_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
+    "pinned": false,
+    "time": "May 24, 10:30 AM"
+  }, {
+    "title": "Topic References",
+    "path": "Topic References.report",
+    "pinned": false,
+    "time": "May 24, 10:28 AM"
+  }, {
     "title": "What_is_an_Clean_Up_Activity",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
     "pinned": false,
-    "time": "May 23, 9:49 PM"
+    "time": "May 24, 10:28 AM"
   }, {
     "title": "03-_What_is_an_Activity",
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
@@ -123,9 +133,20 @@
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
       "time": "2023-05-23T20:51:52+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
+    },
+    "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
+      "exists": true,
+      "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
+      "time": "2023-05-24T10:37:10+05:30",
+      "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "What_is_an_Clean_Up_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
+    "pinned": false,
+    "time": "May 24, 10:36 AM"
+  }, {
     "title": "What_is_an_Clean_Up_Activity",
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
     "pinned": false,
