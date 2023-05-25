@@ -1,9 +1,34 @@
 {
   "recent-files::internal:document": [{
-    "title": "What_is_an_Clean_Up_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
+    "title": "Frameless",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset",
     "pinned": false,
-    "time": "May 25, 11:44 AM"
+    "time": "May 25, 12:21 PM"
+  }, {
+    "title": "What_is_Clean_Up_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
+    "pinned": false,
+    "time": "May 25, 11:59 AM"
+  }, {
+    "title": "01-_What_is_a_Business_Flow",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/01-_What_is_a_Business_Flow.htm",
+    "pinned": false,
+    "time": "May 25, 11:55 AM"
+  }, {
+    "title": "04-_What_is_an_Error_Handler_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
+    "pinned": false,
+    "time": "May 25, 11:53 AM"
+  }, {
+    "title": "What_is_Variable",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/What_is_Variable.htm",
+    "pinned": false,
+    "time": "May 25, 11:53 AM"
+  }, {
+    "title": "03-_What_is_an_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
+    "pinned": false,
+    "time": "May 25, 11:53 AM"
   }, {
     "title": "Database_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
@@ -99,21 +124,6 @@
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Mobile_Appium_Agent.htm",
     "pinned": false,
     "time": "Jan 17, 8:10 AM"
-  }, {
-    "title": "Ginger-UFT_Mobile_Integration_Guide",
-    "path": "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
-    "pinned": false,
-    "time": "Jan 16, 9:05 AM"
-  }, {
-    "title": "04-_What_is_an_Error_Handler_Activity",
-    "path": "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
-    "pinned": false,
-    "time": "Jan 3, 4:04 PM"
-  }, {
-    "title": "Create_New_or_Open_Solution_1",
-    "path": "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Create_New_or_Open_Solution_1.htm",
-    "pinned": false,
-    "time": "Jan 3, 3:53 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -137,11 +147,16 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2023-05-25T11:46:24+05:30",
+      "time": "2023-05-25T12:24:16+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "What_is_Clean_Up_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
+    "pinned": false,
+    "time": "May 25, 12:05 PM"
+  }, {
     "title": "What_is_an_Clean_Up_Activity",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
     "pinned": false,

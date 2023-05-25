@@ -149,7 +149,7 @@ margin-left:1.00in;
 .RH-LAYOUT-CENTERPANEL-topic-box .position-relative, .RH-LAYOUT-FOOTER-container .position-relative {
 position:relative;
 }
-.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap;
+.RH-LAYOUT-CENTERPANEL-topic-box span, .RH-LAYOUT-FOOTER-container span { white-space: pre-wrap; font-family: Calibri; font-size: 32px;
 }
 .RH-LAYOUT-CENTERPANEL-topic-box .text-indent-0-50in, .RH-LAYOUT-FOOTER-container .text-indent-0-50in {
 text-indent:0.50in;
