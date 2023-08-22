@@ -122,6 +122,9 @@
     <page navtitle="How to use Java Driver &amp; Widgets in Ginger" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Java_Driver_and_Widgets_in_Ginger.htm" format="html" processing-role="normal"></page>
     <page navtitle="Windows Explorer User Guide" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/Windows_Explorer_User_Guide.htm" format="html" processing-role="normal"></page>
   </book>
+  <book navtitle="Operators" format="html" processing-role="normal">
+    <page href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Operators/Evaluate_Operators.htm" format="html" processing-role="normal"></page>
+  </book>
 </book>
 <book navtitle="Resources" format="html" processing-role="normal">
   <page navtitle="Data Source" href="../contents/assets/Ginger_By_Amdocs/Resources/Data_Source.htm" format="html" processing-role="normal"></page>
@@ -179,5 +182,8 @@
 </book>
 <book navtitle="Source Control" format="html" processing-role="normal">
   <page navtitle="How to use Source Control in Ginger" href="../contents/assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm" format="html" processing-role="normal"></page>
+</book>
+<book navtitle="Ginger User Settings" format="html" processing-role="normal">
+  <page href="../contents/assets/Ginger_By_Amdocs/Ginger_User_Settings/Ginger_User_Settings.htm" format="html" processing-role="normal"></page>
 </book>
 </map>

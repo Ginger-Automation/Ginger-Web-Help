@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Ginger User Settings","type":"item","tilePath":"","description":"","url":"assets/Ginger_By_Amdocs/Ginger_User_Settings/Ginger_User_Settings.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
