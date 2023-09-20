@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Unix_Agent",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
+    "pinned": false,
+    "time": "Sep 20, 11:43 AM"
+  }, {
     "title": "Email_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Email_Action.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
     "pinned": false,
     "time": "Feb 24, 11:28 AM"
-  }, {
-    "title": "Variable_Type_Overview",
-    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/Variable_Type_Overview.htm",
-    "pinned": false,
-    "time": "Feb 24, 11:27 AM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2023-08-22T23:00:30+05:30",
+      "time": "2023-09-20T11:47:39+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
