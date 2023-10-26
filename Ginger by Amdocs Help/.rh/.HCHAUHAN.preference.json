@@ -1,5 +1,40 @@
 {
   "recent-files::internal:document": [{
+    "title": "Ruby_Plugin_User_Guide",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Ruby_Plugin_User_Guide.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:52 PM"
+  }, {
+    "title": "Python_Plugin_User_Guide",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Python_Plugin_User_Guide.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:52 PM"
+  }, {
+    "title": "Groovy_Plugin_User_Guide",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Groovy_Plugin_User_Guide.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:52 PM"
+  }, {
+    "title": "PACT_Ginger_Plugin",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/PACT_Ginger_Plugin.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:51 PM"
+  }, {
+    "title": "TestNG_Plugin_User_Guide",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/TestNG_Plugin_User_Guide.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:50 PM"
+  }, {
+    "title": "Unix_Agent",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:35 PM"
+  }, {
+    "title": "Ginger_Configurations_Tab_Overview",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Ginger_Configurations_Tab_Overview.htm",
+    "pinned": false,
+    "time": "Oct 26, 3:34 PM"
+  }, {
     "title": "How_to_Execute_Run_set_Via_CLI",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm",
     "pinned": false,
@@ -9,31 +44,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm",
     "pinned": false,
     "time": "Oct 26, 1:10 PM"
-  }, {
-    "title": "TestNG_Plugin_User_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/TestNG_Plugin_User_Guide.htm",
-    "pinned": false,
-    "time": "Oct 26, 1:08 PM"
-  }, {
-    "title": "PACT_Ginger_Plugin",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/PACT_Ginger_Plugin.htm",
-    "pinned": false,
-    "time": "Oct 26, 1:07 PM"
-  }, {
-    "title": "Ruby_Plugin_User_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Ruby_Plugin_User_Guide.htm",
-    "pinned": false,
-    "time": "Oct 26, 1:05 PM"
-  }, {
-    "title": "Python_Plugin_User_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Python_Plugin_User_Guide.htm",
-    "pinned": false,
-    "time": "Oct 26, 1:05 PM"
-  }, {
-    "title": "Groovy_Plugin_User_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Groovy_Plugin_User_Guide.htm",
-    "pinned": false,
-    "time": "Oct 26, 1:04 PM"
   }, {
     "title": "Database_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
@@ -54,11 +64,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
     "pinned": false,
     "time": "Oct 26, 12:24 PM"
-  }, {
-    "title": "Unix_Agent",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
-    "pinned": false,
-    "time": "Sep 20, 11:43 AM"
   }, {
     "title": "Email_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Email_Action.htm",
@@ -119,11 +124,6 @@
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/css/GingerDocStyle.css",
     "pinned": false,
     "time": "May 23, 8:43 PM"
-  }, {
-    "title": "What_is_an_Clean_Up_Activity",
-    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
-    "pinned": false,
-    "time": "May 23, 8:42 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2023-10-26T13:51:17+05:30",
+      "time": "2023-10-26T15:53:12+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
