@@ -4,40 +4,6 @@
      Database Action
      
      
-    Contents
-    Introduction
-    How to Configure Action?
-    
-      Pre-requisite
-      Action Operation
-    
-    How to use Cassandra in Ginger?
-    
-      What is Cassandra?
-      What does Ginger support in Cassandra?
-      Which Cassandra operations are supported in Ginger?
-      How to configure Cassandra in Ginger?
-      How to add Database Action for Cassandra?
-    
-    How to use Couchbase in Ginger?
-    
-      What is Couchbase?
-      What does Ginger support in Couchbase?
-      Which Couchbase operations are supported in Ginger?
-      How to configure Couchbase in Ginger?
-      How to add Database Action for Couchbase?
-    
-    How to use MongoDb in Ginger?
-    
-      What is MongoDb?
-      What does Ginger support in MongoDb?
-      Which MongoDb operations are supported in Ginger?
-      How to configure MongoDb in Ginger?
-      How to add Database Action for MongoDb?
-    
-     
-    
-     
     Introduction 
     Database Action is used to update/validate/read data from a database system.
     How to Configure Action?
@@ -261,8 +227,61 @@
              6) Go to the ‘Operation Settings’ tab and Select the ‘Environment Application Name’, ‘Environment Application DB Name’
             and the ‘DB Operation Type’ from the respective dropdowns.
     
+     
+     
+    MongoDB Examples of Update Record, Record Count, Insert Record and Find Record
+     
+            'Update' Record in MongoDB
+           
+     1. Example Query to update Date is Date Format:
+            db.GBOP_ExecutionDetails.UpdateOne( {ExecutedBy: "aditya"}, { $set: { EndTime : new ISODate("1995-04-02T10:26:54.375+00:00")}})
+     
+            
+     
+      2.  Example Query to update String :
+            db.GBOP_ExecutionDetails.UpdateOne( {ExecutedBy: "aditya"}, { $set: {"Execution_Source": "Bulkb"}})
+     
+          
+     
+     
+      3.  Example Query to updateMany String:
+     db.GBOP_ExecutionDetails.updateMany( {ExecutedBy: "aditya"}, { $set: {"Execution_Source": "Bulkd"}})
+     
+        
+     
     
     
+             'Record Count' in MongoDB
+       
+    
+       Example Query to get Record Count for database 
+              {databaseName}
+    
+          
+     
+    
+    
+           'Insert' Record in MongoDB
+       
+       1. Example Query to Insert One Record:
+     db.GingerRegressionSuitTestingCollection.insertOne({item: "canvas", qty: 45, size: { h: 10, w: 15.25, uom: "cm" }, status: "A"})
+    
+     
+       
+     
+      'Find' Record in MongoDB
+       
+       1.  Example Query to Find Record  by single parameter:
+     db.GBOP_ExecutionDetails.find({ "ExecutedBy": "aditya"})
+     
+         
+     
+       2. Example Query to Find Record by Multiple parameters  
+     db.GBOP_ExecutionDetails.find({ "ExecutedBy": "aditya","Flow":"De-Install","Status":"Failed"})
+    
+     
+         
+     
     
     
      

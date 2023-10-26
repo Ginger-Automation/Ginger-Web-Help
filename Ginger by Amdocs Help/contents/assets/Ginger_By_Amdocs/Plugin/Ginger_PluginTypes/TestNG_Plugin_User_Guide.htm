@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Ginger TestNG Plugin – User Guide</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
   <link rel="stylesheet" href="../../../css/TestNG Plugin User Guide.css" />
 </head>
@@ -14,47 +14,7 @@
     <p class="Title">                   <span style="font-size:32px;"> Ginger TestNG Plugin – User Guide</span></p>
     <p> </p>
     <p class="margin-left-2-50in"> </p>
-    <p class="TOCHeading"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Purpose">Purpose</a></span></span></p>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Prerequisites">Prerequisites</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#.NET_Core_SDK_InstallationThe_plugin_requires_.NET_Core_SDK_version_2.2_or_above_to_be_installed_on_the_machine_is_running_on.Please_install_it_from_the_below_link:https://dotnet.microsoft.com/download_Java_Installation">.NET Core SDK Installation</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="TestNG_Plugin_User_Guide.htm">Java Installation</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Maven_Installation">Maven Installation</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Java/Maven_Project">Java/Maven Project</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Install_TestNG_Plugin">Install TestNG Plugin</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Add_TestNG_Plugin_to_Ginger_Solution">Add TestNG Plugin to Ginger Solution</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_TestNG_Flow_using_TestNG_XML">Executing TestNG Flow using TestNG XML</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_Java_Project_TestNG_Flow_using_TestNG_XML">Executing Java Project TestNG Flow using TestNG XML</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_Maven_Project_TestNG_Flow_using_TestNG_XML">Executing Maven Project TestNG Flow using TestNG XML</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_TestNG_Flow_using_Free_Command">Executing TestNG Flow using Free Command</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_Java_Project_TestNG_Flow_using_Free_Command">Executing Java Project TestNG Flow using Free Command</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_Maven_Project_TestNG_Flow_using_Free_Command">Executing Maven Project TestNG Flow using Free Command</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Sending_Input_Values_to_TestNG_Flow_from_Ginger_Flow">Sending Input Values to TestNG Flow from Ginger Flow</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Send_Input_Values_to_TestNG_Flow_from_Ginger_Flow">How to Send Input Values to TestNG Flow from Ginger Flow</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Get_Output_Values_from_TestNG_Flow_to_Ginger_Flow">Get Output Values from TestNG Flow to Ginger Flow</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Get_Output_Values_from_TestNG_Flow_to_Ginger_Flow">How to Get Output Values from TestNG Flow to Ginger Flow</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Parsing_TestNG_Flow_Execution_Results">Parsing TestNG Flow Execution Results</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Get_TestNG_Execution_Results_on_Ginger_Action">How to Get TestNG Execution Results on Ginger Action</a></span></span></li>
-    </ul>
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <p><br />
-      ‎<a id="_Description"></a></p>
-    <h1 class="Heading1"><a id="_Pre_Requisites"></a><a id="Purpose"></a>Purpose</h1>
+    <h2>Purpose</h2>
     <p> <span style="font-size:16px;">        The TestNG Plugin target is to allow executing TestNG Java/Maven projects tests from Ginger as an integrative part of the Ginger test flow.</span></p>
     <p><span style="font-size:16px;"></span></p>
     <p><span style="font-size:16px;">       Ginger TestNG plugin allows to:</span></p>
@@ -71,15 +31,14 @@
     <p class="Numbering4 ListParagraph" data-list-level="2"><span style="font-size:16px;">Error details for Failed/Skipped tests</span></p>
     <p class="ListParagraph margin-left-1-00in"><span style="font-size:16px;"></span></p>
     <p><span style="font-size:16px;">     The purpose of this document is to provide step by step guide on the Ginger TestNG plugin way of installing and using it.</span></p>
-    <p><br />
-      ‎</p>
-    <h1 class="Heading1"><a id="_How_to_use"></a><a id="Prerequisites"></a>Prerequisites</h1>
+    <p> </p>
+    <h2>Prerequisites</h2>
     <p class="margin-left-0-31in">Please see below the items which need to be set up on the testing environment before executing the TestNG plugin.</p>
     <p class="margin-left-0-31in"> </p>
-    <h2 class="Numbering6" data-list-level="2"><a id=".NET_Core_SDK_InstallationThe_plugin_requires_.NET_Core_SDK_version_2.2_or_above_to_be_installed_on_the_machine_is_running_on.Please_install_it_from_the_below_link:https://dotnet.microsoft.com/download_Java_Installation"></a>.NET Core SDK Installation</h2>
-    <p class="margin-left-0-44in"><span style="font-size:16px;">The plugin requires .NET Core SDK version 2.2 or above to be installed on the machine is running on.</span></p>
-    <p class="margin-left-0-44in"><span style="font-size:16px;">Please install it from the below link:</span></p>
-    <p class="margin-left-0-44in"><span style="font-size:16px;"><a class="Hyperlink" href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a></span></p>
+    <h2 class="Numbering28" data-list-level="2"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#ec008c">.NET 7 SDK Installation</span></span></span></b></span></span></span></span></h2>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:42px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">The plugin requires .NET 7 SDK or above to be installed on the machine it is running on. Please download and install it from </span></span><span style="color:black"><a href="" style="color:blue; text-decoration:underline"><span style="font-size:12.0pt">Microsoft Official Page</span></a></span><span style="font-size:12.0pt"><span style="color:black">.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;"></span></p>
     <p class="margin-left-0-44in"> </p>
     <h2 class="Numbering6" data-list-level="2">  Java Installation</h2>
     <p class="margin-left-0-44in"><span style="font-size:16px;">Java installation is a must for the plugin to work.</span></p>

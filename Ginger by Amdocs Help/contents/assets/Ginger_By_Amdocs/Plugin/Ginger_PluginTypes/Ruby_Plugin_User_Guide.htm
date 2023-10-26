@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Ginger Ruby Plugin – User Guide</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
   <link rel="stylesheet" href="../../../css/Ruby Plugin User Guide.css" />
 </head>
@@ -13,33 +13,7 @@
     <p class="Title"> </p>
     <p><span style="font-size:32px;font-weight:bold"> <span style="color:#0b0638;">Ginger Ruby Plugin – User Guide</span></span></p>
     <p> </p>
-    <p> </p>
-    <p class="TOCHeading"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Purpose">Purpose</a></span></span></p>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Prerequisites">Prerequisites</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#.NET_Core_SDK_InstallationThe_plugin_requires_.NET_Core_SDK_version_2.2_or_above_to_be_installed_on_the_machine_it_is_running_on.Please_install_it_from_the_below_link:https://dotnet.microsoft.com/download_Ruby_InstallationRuby_installation_is_a_must_for_the_plugin_to_work.">.NET Core Installation</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#_Toc534579406">Ruby Installation</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#_Toc534579407">Script</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#_Install_Ruby_Plugin">Install Ruby Plugin</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Add_Ruby_Plugin_to_Ginger_Solution">Add Ruby Plugin to Ginger Solution</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Executing_">Executing Ruby Script</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#_Toc534579411">Execute Ruby Script using external file</a></span></span></li>
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#_Toc534579412">Execute Ruby Script using Content</a></span></span></li>
-    </ul>
-    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#_Get_Output_Values_from_Ruby_Flow_to_Ginger_Flow">Get Output Values from Ruby Flow to Ginger Flow</a></span></span></p>
-    <ul class="Disc">
-      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#How_to_Get_Output_Values_from_Ruby_Flow_to_Ginger_Flow">How to Get Output Values from Ruby Flow to Ginger Flow</a></span></span></li>
-    </ul>
-    <p> </p>
-    <p class="TOCHeading"> </p>
-    <h1 class="Heading1"><a id=" PurposeThe Ruby Plugin target is to allow executing Ruby scripts from Ginger as an integrative part of the Ginger test flow. Ginger Ruby plugin allows to:Configure Ruby script execution by using a script file.Configure Ruby script execution by using script content. For the above execution methods ginger ruby plugin offers:Send execution Input Values to Ruby script.    Get execution output values by parsing and showing console values and look for “key=value” pairs                   The purpose of this document is to provide step by step guide on the Ginger Ruby plugin way of installing and using it.    PrerequisitesPlease see below the items which need to be set up on the testing environment before executing the Ruby plugin..NET Core SDK InstallationThe plugin requires .NET Core SDK version 2.2 or above to be installed on the machine it is running on.Please install it from the below link:https://dotnet.microsoft.com/download Ruby InstallationRuby installation is a must for the plugin to work.Script The Ruby script files need to be located on the machine on which the Ruby Plugin running.It is recommended to place the script under the Ginger Solution “Documents” folder and use relative paths to it (like “~/Documents/Scripts”) so it will work on any user machine.  Install Ruby PluginGinger Ruby plugin needs to be installed to the Ginger Solution to be used.Please follow the below steps to perform it.Add Ruby Plugin to Ginger SolutionDownload and Install the latest/required Ginger version from hereLaunch Ginger and add a Solution to itIn Solution go to Resources PluginsClick on the “Download Plugin” tabSelect “Ruby” Plugin from loaded list of PluginsSelect latest/required Plugin versionClick on Install Once installation is done, shift to the “Installed” tab and confirm the ”Ruby” plugin appears on the tree- you will see the Plugin details on the right including its embedded action types.   3. Executing Ruby Script Please follow the below steps to execute the Ruby script.3.1 Execute Ruby script using an external file.Add Business Flow or select an existing one and click on “Automate” for loading it on Automate pageClick on Add Action button, in the loaded window go to “Plugins Actions”Select “Run Script file” Action       Set Action configurations according to the below: Field NameMandatory?Field DescriptionSample ValueCommentsRuby Script PathYesFull Path of the ruby script file. “C:\Work\Ruby\ RubyScript.py”For allowing the Action to run on any machine It is recommended to place the ruby script file under the Ginger Solution “Documents” folder and set a relative path to it in Action definitions like:“~\Documents\Scripts\BasicScript.py”Delimiter NoSplit the console output param/value= Input ParametersNoAdd ruby input parameters as per requirement.    Execute Ruby script using content. Add Business Flow or select an existing one and click on “Automate” for loading it on Automate pageClick on Add Action button, in the loaded window go to “Plugins Actions”Select “Run Script” Action  Set Action configurations according to the below: Field NameMandatory?Field DescriptionSample ValueCommentsRuby Script ContentYesCopy-Paste Ruby script. if ARGV.length != 2puts &quot;We need exactly two arguments&quot;exitendnum1=ARGV[0].to_inum2=ARGV[1].to_isum=num1+num2puts &quot;Result = #{sum}&quot; Delimiter NoSplit the console output param/value= Input ParametersNoAdd Ruby input parameters as per requirement.       Get Output Values from Ruby Flow to Ginger Flow Ruby plugin supports getting output values from the Ruby Flow.It has been done by parsing all values which the Ruby flow writes to the Console during execution, the parsing mechanism looks for any “key=value” pair and if it been found so the Key and Value been added to the Action Output Values list. How to Get Output Values from Ruby Flow to Ginger FlowPrepare the Ruby Flow Code for Sharing Output ValuesOpen the Script in notepad or another Editor.Look for the places in code (either tested class methods or actual test methods) which have values that can be shared with Ginger during executionIn each such place, add a “puts” line of code with the Value key name equal to the value that needs to be shared, see sample below:  Configure Ginger Ruby Plugin Action to Read Output ValuesConfigure any one of the Ruby Actions configurationsAfter execution end, go to Action “Output Values” tab and see all output values which were parsed in run timeNow you can set Validations on top of those values or pass them to Variables/Data Source or others to be used in the next Actions/other in the Ginger flow "></a><br />
-      ‎<a id="_"></a></h1>
-    <h1 class="Heading1" style="color: #302E45"><a id="Purpose"></a><a id="PurposeThe_Ruby_Plugin_target_is_to_allow_executing_Ruby_scripts_from_Ginger_as_an_integrative_part_of_the_Ginger_test_flow._Ginger_Ruby_plugin_allows_to:Configure_Ruby_script_execution_by_using_a_script_file.Configure_Ruby_script_execution_by_using_script_content._For_the_above_execution_methods_ginger_ruby_plugin_offers:Send_execution_Input_Values_to_Ruby_script.____Get_execution_output_values_by_parsing_and_showing_console_values_and_look_for_“key=value”_pairs___________________The_purpose_of_this_document_is_to_provide_step_by_step_guide_on_the_Ginger_Ruby_plugin_way_of_installing_and_using_it._"></a>Purpose</h1>
+    <h2>Purpose</h2>
     <p>          <span style="font-family:Calibri;"><span style="font-size:16px;"> The Ruby Plugin target is to allow executing Ruby scripts from Ginger as an integrative part of the Ginger test flow.</span></span></p>
     <p><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
     <p><span style="font-family:Calibri;"><span style="font-size:16px;">            Ginger Ruby plugin allows to:</span></span></p>
@@ -51,16 +25,14 @@
     <p class="Numbering27 ListParagraph"><span style="font-family:Calibri;"><span style="font-size:16px;">Get execution output values by parsing and showing console values and look for “key=value” pairs</span></span></p>
     <p><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></p>
     <p><span style="font-family:Calibri;"><span style="font-size:16px;">            The purpose of this document is to provide step by step guide on the Ginger Ruby plugin way of installing and using it.</span></span></p>
-    <p> </p>
-    <p> </p>
-    <p><br />
-      ‎<a id="Prerequisites"></a><span style="font-size:32px;font-weight:bold;color:#302E45">Prerequisites</span></p>
+    <h2><br />
+      Prerequisites</h2>
     <p class="margin-left-0-31in"><span style="font-size:16px;">Please see below the items which need to be set up on the testing environment before executing the Ruby plugin.</span></p>
     <p class="margin-left-0-31in"> </p>
-    <h2 class="Numbering28" data-list-level="2"><a id=".NET_Core_SDK_InstallationThe_plugin_requires_.NET_Core_SDK_version_2.2_or_above_to_be_installed_on_the_machine_it_is_running_on.Please_install_it_from_the_below_link:https://dotnet.microsoft.com/download_Ruby_InstallationRuby_installation_is_a_must_for_the_plugin_to_work."></a>.NET Core SDK Installation</h2>
-    <p class="margin-left-0-44in"><span style="font-size:16px;">The plugin requires .NET Core SDK version 2.2 or above to be installed on the machine it is running on.</span></p>
-    <p class="margin-left-0-44in"><span style="font-size:16px;">Please install it from the below link:</span></p>
-    <p class="margin-left-0-44in"><span style="font-size:16px;"><a class="Hyperlink" href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a></span></p>
+    <h2 class="Numbering28" data-list-level="2"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#ec008c">.NET 7 SDK Installation</span></span></span></b></span></span></span></span></h2>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:42px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">The plugin requires .NET 7 SDK or above to be installed on the machine it is running on. Please download and install it from </span></span><span style="color:black"><a href="" style="color:blue; text-decoration:underline"><span style="font-size:12.0pt">Microsoft Official Page</span></a></span><span style="font-size:12.0pt"><span style="color:black">.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;"></span></p>
     <p class="margin-left-0-44in"> </p>
     <h2 class="Numbering28" data-list-level="2">    Ruby Installation</h2>
     <p class="margin-left-0-44in"><span style="font-size:16px;">Ruby installation is a must for the plugin to work.</span></p>

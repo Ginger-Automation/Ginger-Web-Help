@@ -2,37 +2,26 @@
   
                                
                             How to Execute Run Set Via CLI
-    
-    
-    
-    
-    Contents
+     
+     
     Introduction
+     Auto Run Configuration is used when the Run set is required to run via command line or API for automatic execution of Ginger Run set as part of 
+    Automation needed or for CI/CD processes integration
     How to Create Auto Run Set Configuration?
-    
-      General Options Tab
-      Execution Configuration Tab
-      Execute
-    
-    How to Trigger Execution via CLI?
-    
-    
-          ‎ 
-     Introduction
-     Auto Run Configuration is used when the Run set is required to run via command line or API for automatic execution of Ginger Run set as part ofAutomation needed or for CI/CD processes integration.
-      How to Create Auto Run Set Configuration?
      Go to the Run tab of the solution.
-    Click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
+     Click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
        
     
         The Wizard is opened.
                                    
                       
-      General Options Tab
+      
+     General Option Tab
+                               
     
        
      
-                                Explaination for each General Configuration:
+                                Explanation for each General Configuration:
     
     Download/ Update Solution from source control
     
@@ -42,10 +31,12 @@
     
     
     Show Run Set execution window while running (on Windows only)
-    This is option is not selected by default. If a user wants to see the execution status in Ginger while the run set is run, then use this option.
-    It displays only the Ginger Run tab. The status of the Run set along with the Runners, Activities and Actions are displayed during the execution as 
-    shown below.
-    It is recommended to run without UI for compatibility and performance reasons, for that please keep this option unchecked.
+    
+     This is option is not selected by default. If a user wants to see the execution status in Ginger while the run set is run, then use this option.
+     It displays only the Ginger Run tab. The status of the Run set along with the Runners, Activities and Actions are displayed during the 
+     execution as shown below. 
+     
+     It is recommended to run without UI for compatibility and performance reasons, for that please keep this option unchecked.
     
     Run Set Analyzer before execution
     This option is selected by default. It helps in finding any critical/high design issues in the Business Flow which might impact the execution. 
@@ -53,29 +44,33 @@
     When this option is unchecked, all the design issues are ignored, and execution starts without any checks.
      
     Set ALM Connection details
-    If it is checked and “Publish Execution Results to ALM” is configured in Runset operation. It will publish execution result to respective project 
-                                in ALM.
+    If it is checked and “Publish Execution Results to ALM” is configured in Runset operation. It will publish execution result to respective project  in ALM.
      
                           
-     Save Self Healing changes and check-in to source control: If it is checked, it will save changes which is made during self healing operation and will 
-     check-in the changes in source control.
      
+     
+     
+     e. Save Self Healing changes and check-in to source control: If it is checked, it will save changes which is made during self healing operation and will  check-in the changes in source control.
     
-       Artificats Path :  This option is used to store execution results/report on specific path. 
+      Artifacts Path :  This option is used to store execution results/report on specific path. 
     
      
-    
-       Execution Configuration Tab
-    
-      Arguments
-    
-     This option does not use any file for the execution configuration but only arguments which can be added to the Ginger execution command line
-    
-    
-      File
-    
-     The file is supported in JSON format, which supports much more flexible configurations. 
      
+    f.      Set Global Variables configuration used in Run set: When activated, it will include the global variables used in the Run Set into the Configuration.
+    
+    In dynamic Json configure we can see All global variables and we can update the Customized value to it.
+     
+                          
+     
+     
+    Execution Configuration Tab
+    
+      Arguments :  This option does not use any file for the execution configuration but only arguments which can be added to the Ginger execution command line
+    
+    
+    
+      File : The file is supported in JSON format, which supports much more flexible configurations. 
+    
      
      JSON Dynamic file supports 2 main modes:
     
@@ -89,92 +84,142 @@
               Business Flows Active flag for disabling some of the Business Flows
               Business Flow Input values- can define which value will be set to each input, including Output Values configuration
               Run set Operations configurations manipulation (currently only Mail Report operation changes is supported)
+              Re run configuration
             
           
         
       
     
      
-     
-                 On run time from CLI, Ginger will load the existing Run set, then will manipulate it according to the JSON configurations and then will execute the 
-     manipulated Run set.Changes are not been saved to the Run set and have been used only during execution.
+     On run time from CLI, Ginger will load the existing Run set, then will manipulate it according to the JSON configurations and then will execute the 
+     manipulated Run set. Changes are not been saved to the Run set and have been used only during execution.
      Note: JSON should include only the nodes of the items (Runners/Business Flows/etc.) which need to be modified on the Run set before execution starts.
      
      
-                              
     Sample existing Run set manipulation JSON:
     
+                   
     {
-      "SolutionScmDetails": {
-        "SCMType": "GIT",
-        "SolutionRepositoryUrl": "https://github.com/Ginger-Automation/TDMTestSolution",
-        "User": "menikadosh1",
-        "Password": "XrqycklHMicLOWU2ZayaKg==",
-        "PasswordEncrypted": true,
-        "UndoSolutionLocalChanges": false
-      },
-    "SolutionLocalPath": "C:\\Ginger Solutions\\Cloud\\TDMTestSolution",
+      "SolutionLocalPath": "C:\\GingerSourceControl\\2023Beta_Global\\2023Beta_Global",
+      "EncryptionKey": "********",
       "ShowAutoRunWindow": false,
       "VerboseLevel": "normal",
       "Runset": {
         "Exist": true,
-        "Name": "BP_Create",
-        "ID": "14cdc3e5-3a62-47a1-bfae-34c85ba086e5",
-        "EnvironmentName": "AOT_221",
-        "EnvironmentID": "b7ca5289-d0f7-4220-ac3f-f0de95576873",
+        "Name": "Default Run Set",
+        "ID": "675f4b69-a8bc-4c06-8dd9-a5243aa9bf3e",
+        "EnvironmentName": "Default",
+        "EnvironmentID": "194a241f-548a-4151-b6d7-8e5ef83ac534",
         "RunAnalyzer": true,
         "RunInParallel": true,
         "StopRunnersOnFailure": false,
         "Runners": [
           {
+            "Exist": true,
             "Name": "Runner 1",
-            "ID": "83cd17d7-1e56-498e-a2d5-18fcc2331b6b",
+            "ID": "fad52f0f-e578-405c-96c4-31bcfc1f0cbb",
+            "Active": true,
+            "OnFailureRunOption": "StopAllBusinessFlows",
+            "RunInSimulationMode": false,
+            "RunInVisualTestingMode": true,
+            "AppAgentMappings": [
+              {
+                "ApplicationName": "MyWebApp",
+                "ApplicationID": "1e953096-88f5-4fb1-9d38-98f96ab62d25",
+                "AgentName": "MyWebApp - Agent 1",
+                "AgentID": "54a1fb40-1d9b-4f84-9046-0eecb8e189cf"
+              }
+            ],
+            "KeepAgentsOpen": false,
             "BusinessFlows": [
               {
-                "Name": "Create",
-                "ID": "c3d7d9ad-4336-4576-a516-e9814dc9d523",
-                "Active": true,
-                "InputValues": [
-                  {
-                    "VariableParentName": "CreateCustomer",
-                    "VariableParentID": "c3d7d9ad-4336-4576-a516-e9814dc9d523",
-                    "VariableName": "CustomerCreationType",
-                    "VariableID": "4f35384d-6a63-4154-819f-26baf388e0e9",
-                     "VariableCustomizationType": "Value",
-                    "VariableCustomizedValue": "Type1"
-                  }
-                ]
+                "Exist": true,
+                "Name": "Flow 1",
+                "ID": "6e954c48-b123-4722-a6a5-20319caa0d3a",
+                "InstanceID": "78409b76-3c16-4dd4-8004-32ad72b7fc3c",
+                "Active": true
               }
             ]
           }
         ],
-        "Operations": [
+        "RerunConfigurations": {
+          "Active": false,
+          "RerunLevel": "RunSet",
+          "ReferenceExecutionID": "00000000-0000-0000-0000-000000000000"
+        },
+    "Operations": [
           {
-            "$type": "RunsetOperations.MailReportOperationExecConfig, Ginger.ExecuterService.Contracts",
-            "MailSettings": {
-              "EmailMethod": "SMTP",
-              "SmtpDetails": {
-                "Server": "ilmail",
-                "Port": "25",
-                "EnableSSL": true
-              },
-              "Subject": "TDM Execution Details Report- BP_Create"
-            },
-            "BodyContentType": "HTMLReport",
-            "BodyReportTemplateID": 2,
-            "IncludeAttachmentReport": true,
-            "AttachmentReportTemplateID": 2,
-            "AttachmentReportAttachType": "Link",
-            "CustomizedReportFolder": "\\\\ilrnaginger02\\GingerExecuterAgent\\Reports",
-            "Name": "Send HTML Report Email",
-            "ID": "ca90b21a-aedb-455c-aafb-f2b3a7979d8d",
-            "Active": false,
+            "$type": "RunsetOperations.AlmPublishOperationExecConfig, Ginger.ExecuterService.Contracts",
+            "ALMType": "Default",
+            "AlmTestSetLevel": "BusinessFlow",
+            "ExportType": "ResultsOnly",
+            "TestCasesResultsToExport": "All",
+            "AttachActivitiesGroupsReport": false,
+            "UseUserVariableInRunInstanceName": false,
+            "UserVariableInRunInstance": "GingerRun_{CS Exp=DateTime.Now}",
+            "Name": "Publish Execution Results to ALM",
+            "ID": "9704d5f6-54fe-452c-93f0-efecb8ffa74b",
             "Condition": "AlwaysRun",
             "RunAt": "ExecutionEnd"
           }
-        ]
-      }
+        ],
+        "SelfHealingConfiguration": {
+          "ReprioritizePOMLocators": true,
+          "AutoFixAnalyzerIssue": false,
+          "AutoUpdateApplicationModel": false,
+          "SaveChangesInSourceControl": false,
+          "AutoExecuteInSimulationMode": false
+        }
+      },
+      "GlobalVariables": [
+        {
+          "VariableName": "GBL_DateTime",
+          "VariableID": "b1e69125-f386-4777-a421-ce25ab69f168",
+          "VariableCustomizedValue": "09/20/2023 12:00:00 AM"
+        },
+        {
+          "VariableName": "GBL_Selection_List",
+          "VariableID": "d232f92d-ae0d-4a32-bd5c-f78552f5af62",
+          "VariableCustomizedValue": "test"
+        }
+      ]
     }
+    
+     
+    
+      Verbose Level –  To set the log  level for CLI as “normal"
+    
+    
+    
+      Re-Run Configurtion --  this section is added for the Re-Run the failed flow.
+    
+    it have three parameters.
+    
+    Note :-This Re-Run configuration Option is valid only if Centralized Database/Account Report is configured in the solution
+    
+    Active – it indicates the Re-Run configuration is active or not 
+    Re-Run Level – It have 3 level Business Flow/ Runner/Runset
+    By default, Level is set to Run set.
+    
+    
+      If Re-Run Level is set to “Runset”. Then Re-Run Failed Execution will only consider the Run set Status. If Run-set status is failed, then it will Re-Execute the whole run-set.
+    
+    
+    
+      If Re-Run Level is set to “Business Flow”. Then Re-Run failed Execution will only consider the Business Flow status. If Business flow is failed, then it will Re-Execute that business flow only.
+    
+    
+    
+      If Re-Run Level is set to “Runner”. Then Re-Run Failed Execution will only consider the Runner status. If runner status is failed, then it will Re-Execute the whole runner.
+    
+    
+    ReferenceExecutionID – this parameter is optional. we can provide the last execution Id .
+    
+      if execution Id is provided it will execute the flow as per execution details of that provided Execution Id.
+      if Execution Id is not provided it will automatically get the Last Execution Id from the Centralized Database/Account Report.
+    
+    
+    
      
      
     
@@ -294,12 +339,10 @@
     
      
     
-      Request
+      Request: Request is used to trigger Ginger execution on Cloud machine.
     
-    
-    
-     Request is used to trigger Ginger execution on Cloud machine.
      It is used to send execution request to remote machine Ginger directly from wizard or we can configure request content for any API Client System.
+     
         
      
      
@@ -309,7 +352,9 @@
      
      
     
-      Create Auto Run Shortcut 
+      
+        Create Auto Run Shortcut 
+      
     
      Create shortcut feature offer to create shortcut execution file on the machine which will hold the execution command for easier automatic execution.
      The shortcut can be created on the Desktop or in the desired Folder by clicking the Folder option.
@@ -329,7 +374,9 @@
     
     
     
-      CLI Execution Command
+      
+        CLI Execution Command
+      
     
      This shows the full execution command which is stored in the Shortcut in case needed to be used for direct execution on the commands console or be configured in CI/CD 
      processes. 
@@ -337,7 +384,9 @@
                         
      
     
-      Execute Now
+      
+        Execute Now
+      
     
       It will allow to start execution in external process as soon as clicking ‘Finish’ button. 
      User can set  1-10 parallel execution sessions.
@@ -354,6 +403,8 @@
       Config file type
       Config file path
     
+     
+     
     "C:\Program Files (x86)\Amdocs\Ginger by amdocs\Ginger.exe" dynamic --filename "C:\Ginger Solutions\Cloud\TDMTestSolution\Documents\RunSetShortCuts\TDM-
     Demo-BP_Create.Ginger.AutoRunConfigs.json"
     Open CMD console paste the command and click Enter, you will see that Ginger execution started and aal execution details appear on Console logs:
