@@ -145,3 +145,6 @@ ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
 ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
   list-style: circle;
 }
+ol.LowerAlpha {
+  list-style: lower-alpha;
+}

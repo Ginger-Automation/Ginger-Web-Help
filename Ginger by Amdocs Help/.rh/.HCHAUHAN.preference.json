@@ -1,5 +1,35 @@
 {
   "recent-files::internal:document": [{
+    "title": "Unix_Agent",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
+    "pinned": false,
+    "time": "Nov 10, 5:28 PM"
+  }, {
+    "title": "Mobile_Appium_Agent",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Mobile_Appium_Agent.htm",
+    "pinned": false,
+    "time": "Nov 10, 5:15 PM"
+  }, {
+    "title": "Ginger_-_OTOMA_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
+    "pinned": false,
+    "time": "Nov 10, 5:05 PM"
+  }, {
+    "title": "Ginger_Grafana_Dashboard",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Grafana_Dashboard.htm",
+    "pinned": false,
+    "time": "Nov 10, 4:21 PM"
+  }, {
+    "title": "What_is_Clean_Up_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
+    "pinned": false,
+    "time": "Nov 10, 3:46 PM"
+  }, {
+    "title": "Ginger_User_Settings",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_User_Settings/Ginger_User_Settings.htm",
+    "pinned": false,
+    "time": "Nov 10, 3:41 PM"
+  }, {
     "title": "Ruby_Plugin_User_Guide",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Ruby_Plugin_User_Guide.htm",
     "pinned": false,
@@ -24,11 +54,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/TestNG_Plugin_User_Guide.htm",
     "pinned": false,
     "time": "Oct 26, 3:50 PM"
-  }, {
-    "title": "Unix_Agent",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
-    "pinned": false,
-    "time": "Oct 26, 3:35 PM"
   }, {
     "title": "Ginger_Configurations_Tab_Overview",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Ginger_Configurations_Tab_Overview.htm",
@@ -55,11 +80,6 @@
     "pinned": false,
     "time": "Oct 26, 12:26 PM"
   }, {
-    "title": "What_is_Clean_Up_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
-    "pinned": false,
-    "time": "Oct 26, 12:25 PM"
-  }, {
     "title": "04-_What_is_an_Error_Handler_Activity",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
     "pinned": false,
@@ -74,11 +94,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset",
     "pinned": false,
     "time": "Aug 21, 2:00 PM"
-  }, {
-    "title": "Ginger_User_Settings",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_User_Settings/Ginger_User_Settings.htm",
-    "pinned": false,
-    "time": "Aug 21, 1:59 PM"
   }, {
     "title": "Ginger_by_Amdocs_Help",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/toc/Ginger_by_Amdocs_Help.toc",
@@ -109,21 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/What_is_Variable.htm",
     "pinned": false,
     "time": "May 25, 11:53 AM"
-  }, {
-    "title": "Topic References",
-    "path": "Topic References.report",
-    "pinned": false,
-    "time": "May 24, 10:28 AM"
-  }, {
-    "title": "03-_What_is_an_Activity",
-    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
-    "pinned": false,
-    "time": "May 23, 8:43 PM"
-  }, {
-    "title": "GingerDocStyle",
-    "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/css/GingerDocStyle.css",
-    "pinned": false,
-    "time": "May 23, 8:43 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,11 +147,21 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2023-10-26T15:53:12+05:30",
+      "time": "2023-11-11T01:32:56+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Ginger_-_OTOMA_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
+    "pinned": false,
+    "time": "Nov 10, 5:10 PM"
+  }, {
+    "title": "Ginger_Grafana_Dashboard",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Grafana_Dashboard.htm",
+    "pinned": false,
+    "time": "Nov 10, 3:45 PM"
+  }, {
     "title": "Ginger_User_Settings",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_User_Settings/Ginger_User_Settings.htm",
     "pinned": false,

@@ -186,4 +186,8 @@
 <book navtitle="Ginger User Settings" format="html" processing-role="normal">
   <page href="../contents/assets/Ginger_By_Amdocs/Ginger_User_Settings/Ginger_User_Settings.htm" format="html" processing-role="normal"></page>
 </book>
+<book navtitle="Ginger&#39;s Enterprise Features" format="html" processing-role="normal">
+  <page navtitle="Ginger Grafana Dashboard" href="../contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Grafana_Dashboard.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Ginger - OTOMA Integration" href="../contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm" format="html" processing-role="normal"></page>
+</book>
 </map>
