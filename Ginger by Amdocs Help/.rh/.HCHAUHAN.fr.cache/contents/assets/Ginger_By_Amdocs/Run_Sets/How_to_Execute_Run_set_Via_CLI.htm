@@ -5,12 +5,12 @@
      
      
     Introduction
-     Auto Run Configuration is used when the Run set is required to run via command line or API for automatic execution of Ginger Run set as part of 
-    Automation needed or for CI/CD processes integration
+    Introduction
+    Auto Run Configuration is used when the Run set is required to run via command line or API for automatic execution of Ginger Run set as part of Automation needed or for CI/CD processes integration
     How to Create Auto Run Set Configuration?
-     Go to the Run tab of the solution.
-     Click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
-       
+    Go to the Runset tab of the solution.
+    Click on the ‘Create Run Set Auto Run Configuration’ button as shown below.
+      
     
         The Wizard is opened.
                                    
@@ -61,13 +61,29 @@
      
      
     Execution Configuration Tab
+    This tab has 3 options.
+     
     
-      Arguments :  This option does not use any file for the execution configuration but only arguments which can be added to the Ginger execution command line
+     
+    1) Arguments
+     
+     This option does not use any file for the execution configuration but only arguments which can be added to the Ginger execution command line
+         
     
+      Re run configuration :- this section also used by arguments 
     
+    Below 3 arguments can be used 
     
-      File : The file is supported in JSON format, which supports much more flexible configurations. 
-    
+    --ReRunFailed  - it indicates the Re run configuration is active.
+    --ReferenceExecutionID="00000000-0000-0000-0000-000000000000" 
+    this parameter is optional. we can provide the last execution Id
+    --RerunLevel="RunSet" - It have 3 level Business Flow/ Runner/Runset
+    By default, Level is set to Run set.
+     
+    2) File
+     The file is supported in JSON format, which supports much more flexible configurations. 
+     
+        
      
      JSON Dynamic file supports 2 main modes:
     
@@ -194,8 +210,8 @@
     
     Note :-This Re-Run configuration Option is valid only if Centralized Database/Account Report is configured in the solution
     
-    Active – it indicates the Re-Run configuration is active or not 
-    Re-Run Level – It have 3 level Business Flow/ Runner/Runset
+    a) Active – it indicates the Re-Run configuration is active or not 
+    b) Re-Run Level – It have 3 level Business Flow/ Runner/Runset
     By default, Level is set to Run set.
     
     
@@ -210,7 +226,7 @@
       If Re-Run Level is set to “Runner”. Then Re-Run Failed Execution will only consider the Runner status. If runner status is failed, then it will Re-Execute the whole runner.
     
     
-    ReferenceExecutionID – this parameter is optional. we can provide the last execution Id .
+    c) ReferenceExecutionID – this parameter is optional. we can provide the last execution Id .
     
       if execution Id is provided it will execute the flow as per execution details of that provided Execution Id.
       if Execution Id is not provided it will automatically get the Last Execution Id from the Centralized Database/Account Report.
@@ -334,10 +350,7 @@
     }
                      
     
-     
-    
-      Request: Request is used to trigger Ginger execution on Cloud machine.
-    
+     3) Request: Request is used to trigger Ginger execution on Cloud machine.
      It is used to send execution request to remote machine Ginger directly from wizard or we can configure request content for any API Client System.
      
         
