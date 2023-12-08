@@ -161,12 +161,12 @@
    
                  1) Add Web Activities (Target Appliction:  MyWebApp) and Activity variable and Publish all of these activities and activity variable as follows:
    
-                             
+                              
    
-                             
+                              
   
    
-                            
+                             
    
    
                  2) Add WebServices Activities (Target Appliction:  MyWebServicesApp) based on your requirement and Publish all of these activities as follows:
@@ -193,33 +193,37 @@
                                
                                    Now, Add WebServices Activity and assign Consumer form dropdown (as shown in below screenshots) and Publish the same
    
-                            
+                             
    
-                            
+                             
    
    
      ized Ex
   ecution Logge
-   b. Add all required activities into Shared Repository
+        b. Add all required activities into Shared Repository
    
-                         
+                          
   r Settings’ configuration
   
-                         
+                          
            
    
-    c. Publish all required Agents & Environment 
+        c. Publish all required Agents & Environment 
    
-                        
+                          
   
      
-                       
+                        
   
    
-    d. Configure the 'Repots - Centralized Execution Logger Settings’. Enter End Point URL of your respective project
+        d. Configure the 'Repots - Centralized Execution Logger Settings’. Enter End Point URL of your respective project
    
-                      
+                       
    
+   
+        e. (Optional Step) Configure the ALM connection deatils or settings (according to your project ALMs)
+   
+                       
    
   Step 2. Uplaod or push your solution to the GIT 
    
@@ -246,7 +250,8 @@
   
    
   
-  Step 5. Please share the Release Name with Ginger Support Team for DB configurations
+  Step 5. a )Please share the Release Name, Git Repository URL, Git User Name & Passowrd (Access Token) with Ginger Support Team for DB configurations
+                b) (Optional Step) Also share ALM Config fileds details (if ALM needs to be configured) with Ginger Support Team for DB configurations
    
   Step 6.   Login to OTOMA GUI and do the followings: 
    
@@ -305,7 +310,152 @@
                              
    
    
-          c) Create Use Cases and Validate use cases:
+          c) Create Use Cases and Validate use cases: This step allows user to create Use Cases (Scenarios or Flows) in OTOMA using all imported shared activities
+   
+                 1. Go to Requirements --> Design 
+   
+                                  
+   
+                 2. Design Page will be opened
+   
+                                
+   
+                 3. Click '+' icon --> Create New Use-Case
+   
+                               
+   
+                 4. Enter required deatils (Use Case Name etc) and click on 'Submit' button
+   
+                               
+   
+   
+                 5. Below Design Screen (use case widgets screen) will be opened
+   
+                               
+   
+   
+                 6. Create Use Case using avaiable widgets according to your scenario or flow
+   
+                            a) To Create Web Use Case following as follows:
+   
+                                     1.  Select 'Participating System' widget and drag into right side Edit section
+   
+                                                               
+            
+                                                                
+   
+   
+                                     2.  Select 'MyWebApp' target system and click on 'Apply' button
+   
+                                                              
+   
+                                                              
+   
+   
+                                     3.  Select 'Start Event' widget and drag inside 'MyWebApp' participating system and enter the name of event
+   
+                                                              
+   
+   
+   
+                                   
+                                     4.  Now select 'User Task' widget and drag inside 'MyWebApp' participating system 
+   
+   
+                                                               
+   
+   
+                                     5.  Select 'Activity' (Interface) according to your flow or need and click on 'Apply' button
+   
+                                                              
+   
+   
+                                                           
+   
+   
+   
+                                     6.  Enter name of this widget
+   
+   
+                                                            
+   
+   
+   
+                                     7.  Add more activities and interface as per your scenarios in same manner
+   
+                                                           
+   
+   
+   
+   
+                                     8.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
+                                            And select 'Typ'e of End Event as 'Termination'
+   
+   
+                                                                
+   
+   
+                                                         
+   
+  
+   
+   
+                                     9.  Create links among all widgets (sequence of flow) - Hover on widget then arrow icons will be displayed. Select and dgar the same towards next widget to create link
+                                                 
+                                                
+                                                                     
+                                     Note:  Above Digram Explains: There is a Web Target Application (MyWebApp). This contains 2 activities (interface) - 'Launch Browser' & 'Login into Application'. 
+                                                 In this sequnce of flow is flow will start and then first 'Launch Browser' Activity will be excuted, then 'Login into Application' activity will be executed then flow will be End (teminated).
+              
+              
+                                     10.  Click on 'Save' icon and click on 'Validate' button to validate or publish use case (Validation means - To check whether all widgets and links are drwan preperly) and validate use case is getting published successfully.
+                                             After published successfully remove the notification pop-up.
+   
+                                                                     
+   
+   
+                                                                               
+   
+   
+                                                            
+   
+   
+                                                           
+   
+   
+   
+   
+                                       Note: User can Edit the use case if required using 'Edit' button. After Edit please validate the use again (Do not forrget to validate use case after Edit).
+   
+                                                        
+   
+   
+   
+                            b) To Create WebService Use Case following as follows:
+   
+                                     1. Select 'Participating System' widget and drag into right side Edit section
+                                     2.  Select  'MyWebServiceApp' target system and click on 'Apply' button
+                                     3. Select 'Start Event' widget and drag inside 'MyWebServiceApp' participating system and enter the name of event
+  
+   
+   
+   
+                                     2.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
+                                            And select 'Typ'e of End Event as 'Termination'
+   
+   
+                                     8.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
+                                            And select 'Typ'e of End Event as 'Termination'
+   
+   
+                                     8.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
+                                            And select 'Typ'e of End Event as 'Termination'
+   
+   
+   
+                 5. Enter Release Name and click on Save icon
+   
+                 5. Enter Release Name and click on Save icon
    
    
    
