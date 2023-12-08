@@ -433,35 +433,120 @@
    
                             b) To Create WebService Use Case following as follows:
    
-                                     1. Select 'Participating System' widget and drag into right side Edit section
-                                     2.  Select  'MyWebServiceApp' target system and click on 'Apply' button
-                                     3. Select 'Start Event' widget and drag inside 'MyWebServiceApp' participating system and enter the name of event
+                                     1. Select 'Participating System' widget and drag into right side Edit section for Consumer Application (MyWebAPP)
+                                     2. Select  'MyWebApp' target system and click on 'Apply' button
+                                     3. Select 'Participating System' widget and drag into right side Edit section for Target Application (MyWebServicesAPP)
+                                     4. Select  'MyWebServicesApp' target system and click on 'Apply' button
+                                    
+                                                                
   
    
    
+                                     5. Select 'Start Event' widget and drag inside Consumer application - 'MyWebServiceApp' participating system and enter the name of event
    
-                                     2.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
+   
+                                                             
+   
+   
+   
+                                     6. Select 'Task' widget and drag inside 'MyWebApp' participating system and enter the name of event also select Type 'SendTask'
+   
+   
+                                                                  
+   
+   
+   
+                                                                   
+   
+   
+                                     7.   Select 'Task' widget and drag inside 'MyWebServicesApp' participating system and enter the name of event also select Type 'RecieveTask'
+   
+                                                                      
+   
+   
+                                     8.   Connect link between 'Send Request' & 'Recieve Request' widgets, Select Message Interface and clcik on 'Apply' button
+   
+   
+                                                        
+   
+   
+                                                                
+  
+   
+   
+                                     9.   Select 'Task' widget and drag inside 'MyWebServicesApp' participating system and enter the name of event also select Type 'SendTask'
+   
+                                                          
+   
+   
+                                     10.   Select 'Task' widget and drag inside 'MyWebApp' participating system and enter the name of event also select Type 'RecieveTask'
+   
+                                                                     
+   
+                                     11.   Connect link between 'Send Reposne' & 'Recieve Response' widgets, Select Message Interface and clcik on 'Apply' button
+   
+                                                                
+   
+                                                               
+   
+  
+   
+                                     12.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
                                             And select 'Typ'e of End Event as 'Termination'
    
    
-                                     8.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
-                                            And select 'Typ'e of End Event as 'Termination'
+                                                              
    
    
-                                     8.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
-                                            And select 'Typ'e of End Event as 'Termination'
+                                     13.  Create links among widgets (sequence of flow) as mentioned below
+   
+                                                              
+   
+   
+                                     14.  Click on 'Save' icon and click on 'Validate' button to validate or publish use case (Validation means - To check whether all widgets and links are drwan preperly) and validate use case is getting published successfully.
+                                             After published successfully remove the notification pop-up.
+   
+                                                             
+   
+  
+   
+                                                              
+   
+                                                          
    
    
    
-                 5. Enter Release Name and click on Save icon
+          d) Create Test Suites and Execute:  This step allows user to create Test Suites (Test Suite is collection of Use Cases) & Execute the Test Suite
    
-                 5. Enter Release Name and click on Save icon
+                 1. Go to Testing --> Dashboard 
+   
+                                         
+   
+   
+                                        
    
    
    
    
-          d) Create Test Suites and Execute:
    
+                 2. Click on 'CREATE TEST SUITE' button 
+   
+                                       
+   
+                 3. Enter details (Suite Name,  select Test environment etc.) and click on 'SCOPE' button
+   
+                                             
+   
+   
+                 4. Enter details (Suite Name,  select Test environment etc.) and clcik on 'Scope' button
+   
+   
+                 1. Go to Requirements --> Design 
+   
+   
+                 1. Go to Requirements --> Design 
+   
+                 1. Go to Requirements --> Design 
      
    
    
