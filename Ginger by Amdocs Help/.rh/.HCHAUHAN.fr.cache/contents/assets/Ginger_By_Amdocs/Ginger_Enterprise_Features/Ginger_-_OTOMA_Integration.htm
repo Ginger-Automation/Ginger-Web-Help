@@ -157,19 +157,19 @@
    
   Step 1. Open Ginger and create a solution (Web, WebServices etc. ) and do followings and Save all changes:
    
-        a. Create Activities (and use activity variables only if required) and publish these actvities (and publish variables)
+        a. Create Activities (and use activity variables only if required) and publish these activities (and publish variables)
    
-                 1) Add Web Activities (Target Appliction:  MyWebApp) and Activity variable and Publish all of these activities and activity variable as follows:
+                 1) Add Web Activities (Target application:  MyWebApp) and Activity variable and Publish all of these activities and activity variable as follows:
    
                               
    
                               
-  
+   
    
                              
    
    
-                 2) Add WebServices Activities (Target Appliction:  MyWebServicesApp) based on your requirement and Publish all of these activities as follows:
+                 2) Add WebServices Activities (Target Application:  MyWebServicesApp) based on your requirement and Publish all of these activities as follows:
                
                         Note:  'Consumer Application' concept is being used in case of 'WebServices' (API) target application.
                          Target Application (Called System) & Consumer Application (Calling System): 
@@ -183,7 +183,7 @@
                                     It means :  System 'B' is consuming System 'A'  i.e.  user is working on 
                                    System 'B' and System 'B' is calling System 'A' API
    
-                            Example 2: User is working on CRM and any action of CRM is Calling OMS API (requesting any data from OMS), in this case unser need to define in Ginger as follows: 
+                            Example 2: User is working on CRM and any action of CRM is Calling OMS API (requesting any data from OMS), in this case user need to define in Ginger as follows: 
                                    Target Application is 'OMS'
                                    Consumer is 'CRM'
                                    It means:  
@@ -191,7 +191,7 @@
                                                      OMS ---- Send Response ---> CRM  (OMS Recieves response)
    
                                
-                                   Now, Add WebServices Activity and assign Consumer form dropdown (as shown in below screenshots) and Publish the same
+                                   Now, Add WebServices Activity and assign Consumer form drop-down (as shown in below screenshots) and Publish the same
    
                              
    
@@ -204,30 +204,30 @@
    
                           
   r Settings’ configuration
-  
+   
                           
            
    
         c. Publish all required Agents & Environment 
    
                           
-  
+   
      
                         
-  
-   
-        d. Configure the 'Repots - Centralized Execution Logger Settings’. Enter End Point URL of your respective project
-   
-                       
    
    
-        e. (Optional Step) Configure the ALM connection deatils or settings (according to your project ALMs)
+        d. Configure the 'Reports - Centralized Execution Logger Settings’. Enter End Point URL of your respective project
    
                        
    
-  Step 2. Uplaod or push your solution to the GIT 
    
-  Step 3. Share your GIT Repo URL, Login Name and Password Token with Ginger Support Team for the DB configurations 
+        e. (Optional Step) Configure the ALM connection details or settings (according to your project ALMs)
+   
+                       
+   
+  Step 2. Upload or push your solution to the GIT 
+   
+  Step 3. Share your GIT Repository URL, Login Name and Password Token with Ginger Support Team for the DB configurations 
    
   Step 4. Login to OTOMA UI and Create a new release 
    
@@ -235,11 +235,11 @@
    
                          
    
-         b)  Fill all relevents filed's value and click on 'Next' button
+         b)  Fill all relevant filed's value and click on 'Next' button
    
                           
    
-         c) Select the 'Create an empty release' option and clcik on 'Create' button
+         c) Select the 'Create an empty release' option and click on 'Create' button
    
                            
    
@@ -247,11 +247,11 @@
    
                          
    
-  
+   
    
   
-  Step 5. a )Please share the Release Name, Git Repository URL, Git User Name & Passowrd (Access Token) with Ginger Support Team for DB configurations
-                b) (Optional Step) Also share ALM Config fileds details (if ALM needs to be configured) with Ginger Support Team for DB configurations
+  Step 5. a )Please share the Release Name, Git Repository URL, Git User Name & Password (Access Token) with Ginger Support Team for DB configurations
+                b) (Optional Step) Also share ALM Config fields details (if ALM needs to be configured) with Ginger Support Team for DB configurations
    
   Step 6.   Login to OTOMA GUI and do the followings: 
    
@@ -262,7 +262,7 @@
                                  
    
    
-                 2. Click on Import Toplogy option
+                 2. Click on Import topology option
    
                                  
    
@@ -277,16 +277,16 @@
                               
    
    
-                 5. Validate Topology deatils
-                            a) All Targeet Applications, Published Shared Activities (Interfaces) along with published variables should be avaialble
-                            b) Traget Application will have request and response links (if any available in activities)
+                 5. Validate Topology details
+                            a) All Target Applications, Published Shared Activities (Interfaces) along with published variables should be available
+                            b) Target Application will have request and response links (if any available in activities)
    
    
                                      
    
                                           
                
-                                    Click on 2nd activity to check the varaiable (element)
+                                    Click on 2nd activity to check the variable (element)
    
                                           
    
@@ -301,7 +301,7 @@
                                               
    
                  2. Select published envrionment name and click on Edit icon 
-  
+   
                               
    
    
@@ -324,7 +324,7 @@
    
                                
    
-                 4. Enter required deatils (Use Case Name etc) and click on 'Submit' button
+                 4. Enter required details (Use Case Name etc) and click on 'Submit' button
    
                                
    
@@ -334,7 +334,7 @@
                                
    
    
-                 6. Create Use Case using avaiable widgets according to your scenario or flow
+                 6. Create Use Case using available widgets according to your scenario or flow
    
                             a) To Create Web Use Case following as follows:
    
@@ -389,7 +389,7 @@
    
    
                                      8.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
-                                            And select 'Typ'e of End Event as 'Termination'
+                                            And select 'Type' of End Event as 'Termination'
    
    
                                                                 
@@ -397,18 +397,18 @@
    
                                                          
    
-  
    
    
-                                     9.  Create links among all widgets (sequence of flow) - Hover on widget then arrow icons will be displayed. Select and dgar the same towards next widget to create link
+   
+                                     9.  Create links among all widgets (sequence of flow) - Hover on widget then arrow icons will be displayed. Select and drag the same towards next widget to create link
                                                  
                                                 
                                                                      
-                                     Note:  Above Digram Explains: There is a Web Target Application (MyWebApp). This contains 2 activities (interface) - 'Launch Browser' & 'Login into Application'. 
-                                                 In this sequnce of flow is flow will start and then first 'Launch Browser' Activity will be excuted, then 'Login into Application' activity will be executed then flow will be End (teminated).
+                                     Note:  Above diagram Explains: There is a Web Target Application (MyWebApp). This contains 2 activities (interface) - 'Launch Browser' & 'Login into Application'. 
+                                                 In this sequence of flow is flow will start and then first 'Launch Browser' Activity will be executed, then 'Login into Application' activity will be executed then flow will be End (terminated).
               
               
-                                     10.  Click on 'Save' icon and click on 'Validate' button to validate or publish use case (Validation means - To check whether all widgets and links are drwan preperly) and validate use case is getting published successfully.
+                                     10.  Click on 'Save' icon and click on 'Validate' button to validate or publish use case (Validation means - To check whether all widgets and links are drawn properly) and validate use case is getting published successfully.
                                              After published successfully remove the notification pop-up.
    
                                                                      
@@ -425,7 +425,7 @@
    
    
    
-                                       Note: User can Edit the use case if required using 'Edit' button. After Edit please validate the use again (Do not forrget to validate use case after Edit).
+                                       Note: User can Edit the use case if required using 'Edit' button. After Edit please validate the use again (Do not forget to validate use case after Edit).
    
                                                         
    
@@ -464,7 +464,7 @@
                                                                       
    
    
-                                     8.   Connect link between 'Send Request' & 'Recieve Request' widgets, Select Message Interface and clcik on 'Apply' button
+                                     8.   Connect link between 'Send Request' & 'Recieve Request' widgets, Select Message Interface and click on 'Apply' button
    
    
                                                         
@@ -479,17 +479,17 @@
                                                           
    
    
-                                     10.   Select 'Task' widget and drag inside 'MyWebApp' participating system and enter the name of event also select Type 'RecieveTask'
+                                     10.   Select 'Task' widget and drag inside 'MyWebApp' participating system and enter the name of event also select Type 'ReceiveTask'
    
                                                                      
    
-                                     11.   Connect link between 'Send Reposne' & 'Recieve Response' widgets, Select Message Interface and clcik on 'Apply' button
+                                     11.   Connect link between 'Send Response' & 'Receive Response' widgets, Select Message Interface and click on 'Apply' button
    
                                                                 
    
                                                                
    
-  
+   
    
                                      12.  Select 'End Event' widget and drag inside 'MyWebApp' participating system at last (after all widgets) and enter the name of event
                                             And select 'Typ'e of End Event as 'Termination'
@@ -503,7 +503,7 @@
                                                               
    
    
-                                     14.  Click on 'Save' icon and click on 'Validate' button to validate or publish use case (Validation means - To check whether all widgets and links are drwan preperly) and validate use case is getting published successfully.
+                                     14.  Click on 'Save' icon and click on 'Validate' button to validate or publish use case (Validation means - To check whether all widgets and links are drawn properly) and validate use case is getting published successfully.
                                              After published successfully remove the notification pop-up.
    
                                                              
@@ -538,7 +538,7 @@
                                              
    
    
-                 4. Select Use Cases which you want to add in this Test Suite and clcik on 'FILTER' button  
+                 4. Select Use Cases which you want to add in this Test Suite and click on 'FILTER' button  
    
    
                                              
@@ -565,12 +565,12 @@
    
                                         
    
-                 9. Execution would be triggrered and status will be updated in OTOMA GUI once execution is completed
+                 9. Execution would be triggered and status will be updated in OTOMA GUI once execution is completed
    
                                       
    
                
    
-  
+   
    
 
