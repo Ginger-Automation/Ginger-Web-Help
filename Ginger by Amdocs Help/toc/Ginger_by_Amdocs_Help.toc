@@ -84,6 +84,7 @@
       <page navtitle="WebAPI REST Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/REST_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Window Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Window_Action.htm" format="html" processing-role="normal"></page>
       <page navtitle="Get Details from MainFrame Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Get_Details_from_MainFrame_Action_3.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Diameter Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Diameter_Action.htm" format="html" processing-role="normal"></page>
     </book>
     <book navtitle="General Action Types" format="html" processing-role="normal">
       <page navtitle="Excel Action" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Excel_Action.htm" format="html" processing-role="normal"></page>

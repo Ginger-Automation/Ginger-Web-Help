@@ -1,5 +1,15 @@
 {
   "recent-files::internal:document": [{
+    "title": "What_is_Clean_Up_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
+    "pinned": false,
+    "time": "Jan 9, 12:43 PM"
+  }, {
+    "title": "Diameter_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Diameter_Action.htm",
+    "pinned": false,
+    "time": "Jan 9, 12:41 PM"
+  }, {
     "title": "Ginger_-_OTOMA_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
     "pinned": false,
@@ -39,11 +49,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Mobile_Appium_Agent.htm",
     "pinned": false,
     "time": "Nov 10, 5:15 PM"
-  }, {
-    "title": "What_is_Clean_Up_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
-    "pinned": false,
-    "time": "Nov 10, 3:46 PM"
   }, {
     "title": "Ruby_Plugin_User_Guide",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Ruby_Plugin_User_Guide.htm",
@@ -119,11 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Operators/Evaluate_Operators.htm",
     "pinned": false,
     "time": "Aug 21, 1:28 PM"
-  }, {
-    "title": "03-_What_is_an_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/03-_What_is_an_Activity.htm",
-    "pinned": false,
-    "time": "May 25, 12:56 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,11 +147,16 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-01-08T15:15:21+05:30",
+      "time": "2024-01-10T12:27:32+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Diameter_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Diameter_Action.htm",
+    "pinned": false,
+    "time": "Jan 9, 12:42 PM"
+  }, {
     "title": "Ginger_RQM_ALM_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_RQM_ALM_Integration.htm",
     "pinned": false,
