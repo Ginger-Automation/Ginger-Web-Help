@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Variable_Type_Overview",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/Variable_Type_Overview.htm",
+    "pinned": false,
+    "time": "Jan 19, 10:06 AM"
+  }, {
     "title": "Ginger_Zephyr_ALM_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Zephyr_ALM_Integration.htm",
     "pinned": false,
@@ -54,11 +59,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Browser_Action.htm",
     "pinned": false,
     "time": "Jan 19, 9:40 AM"
-  }, {
-    "title": "Variable_Type_Overview",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/Variable_Type_Overview.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:30 AM"
   }, {
     "title": "What_is_Clean_Up_Activity",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-01-19T10:01:10+05:30",
+      "time": "2024-01-19T10:07:58+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
