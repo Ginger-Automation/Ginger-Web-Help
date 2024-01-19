@@ -1,5 +1,55 @@
 {
   "recent-files::internal:document": [{
+    "title": "Ginger_Zephyr_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Zephyr_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 10:00 AM"
+  }, {
+    "title": "Ginger_RQM_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_RQM_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 10:00 AM"
+  }, {
+    "title": "Ginger_qTest_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_qTest_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:59 AM"
+  }, {
+    "title": "Ginger_QC_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_QC_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:59 AM"
+  }, {
+    "title": "Ginger_Octane_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Octane_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:59 AM"
+  }, {
+    "title": "Visual_Testing_using_VRT",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_VRT.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:57 AM"
+  }, {
+    "title": "Ginger-Sealights_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:57 AM"
+  }, {
+    "title": "Visual_Testing_using_Applitools",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:57 AM"
+  }, {
+    "title": "Ginger_Jira_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Jira_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:56 AM"
+  }, {
+    "title": "Ginger-UFT_Mobile_Integration_Guide",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
+    "pinned": false,
+    "time": "Jan 19, 9:56 AM"
+  }, {
     "title": "Browser_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Browser_Action.htm",
     "pinned": false,
@@ -9,21 +59,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/Variable_Type_Overview.htm",
     "pinned": false,
     "time": "Jan 19, 9:30 AM"
-  }, {
-    "title": "Visual_Testing_using_Applitools",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:09 AM"
-  }, {
-    "title": "Ginger-Sealights_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:06 AM"
-  }, {
-    "title": "Visual_Testing_using_VRT",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_VRT.htm",
-    "pinned": false,
-    "time": "Jan 19, 8:54 AM"
   }, {
     "title": "What_is_Clean_Up_Activity",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
@@ -49,11 +84,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
     "pinned": false,
     "time": "Dec 6, 4:46 PM"
-  }, {
-    "title": "Ginger_RQM_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_RQM_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Dec 5, 11:24 PM"
   }, {
     "title": "How_to_Execute_Run_set_Via_CLI",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm",
@@ -94,36 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Groovy_Plugin_User_Guide.htm",
     "pinned": false,
     "time": "Oct 26, 3:52 PM"
-  }, {
-    "title": "PACT_Ginger_Plugin",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/PACT_Ginger_Plugin.htm",
-    "pinned": false,
-    "time": "Oct 26, 3:51 PM"
-  }, {
-    "title": "TestNG_Plugin_User_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/TestNG_Plugin_User_Guide.htm",
-    "pinned": false,
-    "time": "Oct 26, 3:50 PM"
-  }, {
-    "title": "Ginger_Configurations_Tab_Overview",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Ginger_Configurations_Tab_Overview.htm",
-    "pinned": false,
-    "time": "Oct 26, 3:34 PM"
-  }, {
-    "title": "How_to_use_Repository_in_Ginger",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm",
-    "pinned": false,
-    "time": "Oct 26, 1:10 PM"
-  }, {
-    "title": "Database_Action",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
-    "pinned": false,
-    "time": "Oct 26, 12:26 PM"
-  }, {
-    "title": "04-_What_is_an_Error_Handler_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/04-_What_is_an_Error_Handler_Activity.htm",
-    "pinned": false,
-    "time": "Oct 26, 12:24 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-01-19T09:52:41+05:30",
+      "time": "2024-01-19T10:01:10+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
