@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Ginger_Configurations_Tab_Overview",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Ginger_Configurations_Tab_Overview.htm",
+    "pinned": false,
+    "time": "Jan 19, 10:13 AM"
+  }, {
     "title": "Variable_Type_Overview",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/Variable_Type_Overview.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Python_Plugin_User_Guide.htm",
     "pinned": false,
     "time": "Oct 26, 3:52 PM"
-  }, {
-    "title": "Groovy_Plugin_User_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Plugin/Ginger_PluginTypes/Groovy_Plugin_User_Guide.htm",
-    "pinned": false,
-    "time": "Oct 26, 3:52 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-01-19T10:07:58+05:30",
+      "time": "2024-01-19T10:18:13+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },
