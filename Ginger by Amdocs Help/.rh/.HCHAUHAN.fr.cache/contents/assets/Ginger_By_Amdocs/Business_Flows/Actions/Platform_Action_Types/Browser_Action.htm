@@ -5,20 +5,8 @@
      
      
      
-    Contents
-    Introduction
-    How to Configure Action
-    
-      Pre-requisite
-      Action Operation- Initialize Browser
-      Action Operation- Handle Browser Alerts
-      How to use Page Object Model for Go to URL Operation
-    
-     
-    
-      ‎
     Introduction 
-     This action is used to handle Browser and Widgets.
+    This action is used to handle Browser and Widgets.
     How to Configure Action
     Pre-requisite
     A Solution should be created with Agent having Web, Java or PowerBuilder Platform.
@@ -85,5 +73,31 @@
     
     The select Page Object Model is then displayed. User can modify the page object model if desired using the ‘View/Edit POM’ button as shown below.
     
+     
+     
+     
+     Block URLs using browser action in Ginger
+     1. Block URLs can be given in Ginger Browser action
+     
+    To block specific URLs following modifications can be done in existing business flow, after reaching to point in the flow.
+    
+      Add another “Browser Action”
+      Select Operation Type as “Set Blocked URLs”
+      After selecting the operation type as above, Ginger asks for list of URLs to be blocked.
+      Multiple URLs can be specified using comma separated values.
+      It can accept the list of URLs as inline value or it can also accept through variable
+      Once the URLs are specified and executing the action, Ginger adds the URLs to in Browser’s blocked URLs list 
+      This feature is supported only in Chromium based browsers i.e. Google Chrome and Microsoft Edge 
+    
+       
+     
+     
+     
+     2. Unblock URLs
+    URLs can be unblocked easily using another newly added operation type in Browser action called “Unblock URLs”. This will Unblock all previously blocked URLs, blocked user “Set Blocked URLs” operation type.
+     
+     
+     
+     
   
 

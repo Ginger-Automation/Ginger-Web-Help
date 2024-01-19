@@ -45,25 +45,13 @@
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
     <p style="font-family: Calibri"> </p>
-    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><span style="font-size:19px;font-weight:bold">Contents</span></span></p>
-    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Introduction">Introduction</a></span></p>
-    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#How_to_Configure_Action">How to Configure Action</a></span></p>
-    <ul class="Disc">
-      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#2.1_Pre-requisite">Pre-requisite</a></span></li>
-      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#2.2_Action_Operation-_Initialize_Browser">Action Operation- Initialize Browser</a></span></li>
-      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#2.3_Action_Operation-_Handle_Browser_Alerts">Action Operation- Handle Browser Alerts</a></span></li>
-      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#2.3_How_to_use_Page_Object_Model_for_Goto_Url_Operation">How to use Page Object Model for Go to URL Operation</a></span></li>
-    </ul>
-    <p style="font-family: Calibri"> </p>
-    <h1 class="Heading1" style="font-family: Calibri"><a id=" Introduction          This action is used to handle Browser and Widgets. How to Configure Action 2.1 Pre-requisite                          A Solution should be created with Agent having Web, Java or PowerBuilder Platform.                          2.2 Action Operation- Initialize Browser                       Double click on the Business flow. In the Activity Actions, click on ‘Add New’ button                In the ‘Platform Actions’ tab, select the ‘Browse Action’ then click on ‘Add Action’ button given in the below window                                                      Below screen should be displayed.  The ‘Operation Type’ have default option as ‘Initialize Browser’.Click on Ok to add the action to the Activity Actions.      User needs to use ‘Go to URL’ Operation type to launch a website.  The ‘Operation Type’ have the below options:-Close Window               ------- Used to close a windowGet Page Source           -----– used to get source of  a Web pageGet Page URL               ----- – used to get the url of the displayed pageInitialize Browser        --------used to initialize a browser(default selected)Inject JS                        ------ – used when we want to inject a different Java script on the web pageMaximize Window       -----– used to maximize the displayed windowSwitch Frame              -------– used when we want to switch between frames on the displayed web pageSwitch to Default Frame --– used when the focus is required to shift to the default frame of the web pageSwitch to Default Window – the default window is the one which is performed in ‘GoTo URL’ action. Using this                                                       sub action switches the focus to this default window Switch to Parent Frame ---- - used to switch to the parent frame of the web pageSwitch Window             -------- used to switch between different windows  Run Action will perform the action in the Agent.              2.3 Action Operation- Handle Browser Alerts In the below screen, select the ‘Operation Type’  as per the browser alert required. Below are the list of operation available:-Accept Message BoxDismiss Message BoxGet Message Box TextSet Alert Box Text  2.3 How to use Page Object Model for Goto Url Operation Open the Browser Action and select operation type as ‘Goto URL’.Select the ‘Page Object Model URL’ radio button       Click on the pen icon and select the Page Object Model from the displayed tree.Click on the Select button of the selection window.                            The select Page Object Model is then displayed. User can modify the page object model if desired using the ‘View/Edit POM’ button as shown below."></a><br/>
-      ‎</h1>
-    <h1 class="Heading1" style="font-family: Calibri"><a id="Introduction"></a><span style="margin-left:44px;">Introduction </span></h1>
-    <p style="font-family: Calibri"><span style="margin-left:44px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a> <span style="font-size:16px;">This action is used to handle Browser and Widgets.</span></span></p>
-    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:44px;"><a id="How_to_Configure_Action"></a>How to Configure Action</span></h1>
-    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.1_Pre-requisite"></a>Pre-requisite</span></h2>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;">Introduction </span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">This action is used to handle Browser and Widgets.</span></span></p>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;">How to Configure Action<span style="margin-left:44px;"></span></span></h2>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;">Pre-requisite</span></h2>
     <p style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;"><span style="font-family:Calibri;">A Solution should be created with Agent having Web, Java or PowerBuilder Platform.</span></span></span></p>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
-    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.2_Action_Operation-_Initialize_Browser"></a>Action Operation- Initialize Browser</span></h2>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;">Action Operation- Initialize Browser</span></h2>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
     <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Double click on the Business flow. In the Activity Actions, click on ‘Add New’ button</span></span></p>
     <p style="font-family: Calibri"><span style="margin-left:44px;">        <img alt="Picture 5" height="284" src="../../../../images/Browser Action_files/image2.png" width="753"/></span></p>
@@ -99,7 +87,7 @@
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
-    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.3_Action_Operation-_Handle_Browser_Alerts"></a>Action Operation- Handle Browser Alerts</span></h2>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;">Action Operation- Handle Browser Alerts</span></h2>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
     <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">In the below screen, select the ‘Operation Type’ as per the browser alert required.</span></span></p>
     <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><img alt="Picture 4" height="479" src="../../../../images/Browser Action_files/image5.png" width="627"/></span></p>
@@ -111,9 +99,9 @@
     <p class="Numbering21 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Set Alert Box Text</span></span></p>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
-    <h2 style="font-family: Calibri"><span style="margin-left:44px;"><a id="2.3_How_to_use_Page_Object_Model_for_Goto_Url_Operation"></a>How to use Page Object Model for Goto URL Operation</span></h2>
-    <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
-    <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Open the Browser Action and select operation type as ‘Goto URL’.</span></span></p>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;">How to use Page Object Model for Goto URL Operation</span></h2>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;"></span></h2>
+    <h2 style="font-family: Calibri;"><span style="margin-left:44px;"><span style="font-size:16px;">Open the Browser Action and select operation type as ‘Goto URL’.</span></span></h2>
     <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">Select the ‘Page Object Model URL’ radio button</span></span></p>
     <p class="ListParagraph margin-left-0-51in" style="font-family: Calibri"><span style="margin-left:44px;"> <img alt="Picture 2" height="279" src="../../../../images/Browser Action_files/image6.png" width="609"/></span></p>
     <p class="ListParagraph margin-left-0-51in" style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
@@ -125,6 +113,32 @@
     <p style="font-family: Calibri"><span style="margin-left:44px;"></span></p>
     <p class="Numbering22 ListParagraph" style="font-family: Calibri"><span style="margin-left:44px;"><span style="font-size:16px;">The select Page Object Model is then displayed. User can modify the page object model if desired using the ‘View/Edit POM’ button as shown below.</span></span></p>
     <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"><span style="margin-left:44px;"><img alt="Picture 9" height="215.7" src="../../../../images/Browser Action_files/image8.png" width="559.8"/></span></p>
+    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-63in" style="font-family: Calibri"> </p>
+    <h2 style="font-family: Calibri;"><span style="font-size:23px;"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color: rgb(255, 51, 153);font-size: 23px"> Block URLs using browser action in Ginger</span></span></span></span></h2>
+    <h2><strong><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif;font-size:17px"> 1. Block URLs can be given in Ginger Browser action</span></span></span></strong></h2>
+    <p> </p>
+    <p style="margin-left:48px; text-align:justify; text-indent:.5in"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">To block specific URLs following modifications can be done in existing business flow, after reaching to point in the flow.</span></span></span></span></p>
+    <ol>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Add another “Browser Action”</span></span></span></span></li>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Select Operation Type as “<b>Set Blocked URLs</b>”</span></span></span></span></li>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">After selecting the operation type as above, Ginger asks for list of URLs to be blocked.</span></span></span></span></li>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Multiple URLs can be specified using comma separated values.</span></span></span></span></li>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">It can accept the list of URLs as inline value or it can also accept through variable</span></span></span></span></li>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Once the URLs are specified and executing the action, Ginger adds the URLs to in Browser’s blocked URLs list </span></span></span></span></li>
+      <li style="margin-left:80px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">This feature is supported only in Chromium based browsers i.e. Google Chrome and Microsoft Edge </span></span></span></span></li>
+    </ol>
+    <p>   <img src="../../../../images/image928.png"/></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <h2 style="margin-left: 8px; margin-top: 3px;"><span style="color:#ff0078;"><span style="font-size:17px;"><span style="line-height:107%"><span style="font-family:&quot;Calibri Light&quot;,sans-serif"><span style="font-weight:normal"><b style="font-size: 17px;color: #FF0078"> 2. </b><strong><span style="font-family:&quot;Calibri Light&quot;,sans-serif">Unb</span></strong><b><span style="font-family:&quot;Calibri&quot;,sans-serif">lock URLs</span></b></span></span></span></span></span></h2>
+    <p style="margin-left:48px; text-align:justify; text-indent:.5in"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">URLs can be unblocked easily using another newly added operation type in Browser action called “Unblock URLs”. This will Unblock all previously blocked URLs, blocked user “Set Blocked URLs” operation type.</span></span></span></span></p>
+    <p> </p>
+    <p> </p>
+    <p> <img src="../../../../images/image929.png"/></p>
+    <p> </p>
   </div>
 
 </div>
