@@ -18,7 +18,10 @@
     
      
      
-    In the pop window, enter the name of the solution (as shown below) browse to the location of the folder where you wish to save your solution. Also provide the encryption Key as per your choice. (Encryption Key is getting used to make your solution password protected)
+    In the pop window, enter the name of the solution (as shown below) browse to the location of the folder where you wish to save your solution. 
+    Select the Main application Name and also provide the encryption Key as per your choice. (Encryption Key is getting used to make your solution password protected)
+     
+    
      
     
      
@@ -28,14 +31,15 @@
                 
      
     3. Go to the Configurations tab and click on Agents.  
-    In the left panel, the agent is automatically created for the “MyWebApp”. The default driver for the WebApp application is Internet Explorer “SeleniumIE” and the driver type can be changed if needed using the dropdown.
+    In the left panel, the agent (MyWebApp - Agent 1) is automatically created for the “MyWebApp”. The default driver for the WebApp application is Chrome (“SeleniumChrome”) and the driver type can be changed if needed using the drop-down.
      
                
      
     4. Once the solution and agent are created, double click on the Business flow and it will take you to the automation area. 
+      
+     
     In this window, you will see various sections like Activities Group, Activity-Variables and Actions. 
     By default, Activity1 is added as shown below. 
-                 
      
      
     5. ‘Auto-Pilot’ or ‘POM’ (Page Object Model’) option, we need to create POM. POM reads the webpage and learn all web elements and stored the same.
@@ -57,6 +61,8 @@
     
     Now ‘start’ agent, click on Start icon.
     
+     
+    
     
     
     After starting agent, Browser would be open and then put URL: https://demoqa.com/automation-practice-form  
@@ -75,7 +81,8 @@
     
     
     
-    By default, all elements are selected. User can select (selects and unselects elements) elements as per their choice. Only selected elements would be learned by POM.
+    
+    By default, all elements are selected. User can select (select and unselect elements) elements as per their choice. Only selected elements would be learned by POM.
     
     Note: As per current web page need, we don’t need Hyperlink and Iframe to be learned, hence we unselected.
     
@@ -91,7 +98,8 @@
     
     
     
-    You can click on ‘Finger’ icon to highlight the actual web element on page.
+    
+    You can click on ‘Eye’ icon to highlight the actual web element on page.
     
     
     
@@ -115,7 +123,8 @@
     
     
      
-    6. Now go to Business Flow Tab and click on ‘Automate’ option.
+    6. Now go to Business Flow Tab and click on ‘Automate’ option (or duble click on Business Flow name).
+    
     
     
     
@@ -128,17 +137,19 @@
     Go to ‘Actions Library’.
     
     Go to ‘Platform Actions’ tab and select ‘Browser Action’.
-    Double Click on ‘Browser Action’ option to add the same.
-    
-    
-    
+    Double Click on ‘Browser Action’ option (or select 'Browser Action' and click on 'Arrow icon' as metioned in below sceeenshot) to add the same.
     
      
+    
+    
+    
+    
     8. Now to configure the URL Link, double click on the Browser action and go to ‘Operating Settings and select URL Source as ‘Page Objects Model URL’.
     
     
      
     9. Now select ‘Page object Model’. To select POM, click on down arrow and select POM name.
+    
     
     
     
@@ -155,15 +166,12 @@
     
     
      
-    Press White color back arrow key.
+    Press 'X' (close) key.
     
     
      
-    Click on 'Application Models’. 
+    Click on 'Page Object Models’. 
     
-    
-     
-    Click on ‘Page Object Model’.
     
      
     You will see your saved POM, select POM and scroll down and you would be able to see all elements (Mapped Elements) of this POM.
@@ -172,13 +180,13 @@
     
     
     
-    
     11. Now to automate the flow, use these elements to create the actions.
-    Select the elements and click on ‘Black Back Arrow Key’ and actions would be created automatically. Now configure the actions.
+    Select the elements and click on ‘Arrow Key’ and actions would be created automatically. Now configure the actions.
                                                                Or
     Select, Drag and drop the element to create the actions.
      
     
+     
      
     
      
@@ -258,7 +266,7 @@
     Double click on action and go to ‘Operation Settings’ tab.
     Please note: Send Keys Action works with below values:
     
-      Locate by:  By Title and provide title of your webpage in ‘Locate Value’ filed
+      Locate By:  By Title and provide title of your webpage in ‘Locate Value’ filed
       Check ‘Send Keys Separately’ check box
       ‘Select Keys to be sent’ (for use we need to use ‘Enter’)
     
@@ -311,13 +319,13 @@
     22. Now to create a run set, go to the ‘RUN SETS’ tab.
       
      
+    
+    
      
-      Click on ‘Run Sets’ option.
     
      
-        
-      
-      This will display the belwo screen. ‘Default Run Set’ would be created. 
+         
+      This will display the below screen. ‘Default Run Set’ would be created (under RUN SETS --> Run Sets tab)
       
     
     
@@ -327,7 +335,7 @@
       
      
     
-     
+    
                  
     
     
@@ -350,6 +358,9 @@
      Click on Up Arrow Key to see the business flow and activities and actions:
       
      
+     
+    
+    
     
     
     
@@ -363,10 +374,12 @@
     
     
     
-     
+    
+    
     Note: To set the layout of Report Go to ‘Configurations’ tab à Reports Section and make configurations as per your need
      
     23. To Generate ‘Run Set Report’:  Go to Run Set tab and click on Report icon:
+    
     
     
     
@@ -383,10 +396,15 @@
     
     
     
+    
      
     Configure or fill all the details in Message, Delivery Method options.
     
     
+    
+    
+     
+     
     
     
     
@@ -403,6 +421,8 @@
     
      
     One can see the progress of the execution by the status displayed at the corner of the business flows, activities and actions as shown below.
+    
+     
     
     
     
