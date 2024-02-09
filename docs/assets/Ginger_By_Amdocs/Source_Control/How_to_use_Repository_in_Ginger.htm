@@ -43,8 +43,8 @@
     <p class="Title"><span style="font-size:32px;"><span style="font-family:Calibri;">                 </span></span><span style="font-size:32px;"><span style="font-family:Calibri;">How to use Source Control in Ginger?</span></span></p>
     <p class="Title"> </p>
     <h2><span style="font-family:Calibri;"> Introduction </span></h2>
-    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a>When multiple users are working on the same solution then it is better to put the solution on a repository</span></p>
-    <p class="margin-left-0-50in"><span style="font-family:Calibri;">like GIT (Git Lab &amp; Git Hub) or SVN</span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;">When multiple users are working on the same solution then it is better to put the solution on a repository</span></p>
+    <p class="margin-left-0-50in"><span style="font-family:Calibri;">like GIT (Git Lab &amp; Git Hub)</span></p>
     <p class="margin-left-0-50in"><span style="font-family:Calibri;">This helps the solution to be edited by multiple users and the latest solution can be downloaded by the users.</span></p>
     <h1 class="Heading1"> </h1>
     <h2><span style="font-family:Calibri;"> Pre-requisite</span></h2>
@@ -54,10 +54,10 @@
     <p><span style="font-family:Calibri;"></span></p>
     <h1 class="Heading1"> </h1>
     <h2><span style="font-family:Calibri;">  What are the different types of Repository?</span></h2>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">There are 2 types of repositories viz. SVN and GIT.</span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:15px;"><span style="font-family:Calibri;font-size:15px">There are 2 types of repositories</span></span></p>
     <ul class="Square">
-      <li class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">SVN repository is used within the Amdocs network.</span></span></li>
-      <li class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">GIT repository is used in projects which have GIT services. This is used for an external network like the AT&amp;T project.</span></span></li>
+      <li class="margin-left-0-50in"><span style="font-size:15px;"><span style="font-family:Calibri;">GIT (Git Lab &amp; Git Hub)</span></span></li>
+      <li class="margin-left-0-50in"><span style="font-size:15px;"><span style="font-family:Calibri;">SVN (<span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">This is no longer supported in Amdocs)</span></span> </span></span></li>
     </ul>
     <p><span style="font-family:Calibri;"></span></p>
     <h1 class="Heading1"> </h1>
@@ -289,23 +289,65 @@
     <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
     <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
     <h2><span style="font-family:Calibri;"> How to Resolve Conflicts?</span></h2>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">When multiple users are working on the same solution at the same time then there are chances that conflict arises during the Check-in process.</span></span></p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">Ginger will display a message in such cases.</span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">When multiple users are working on the same solution at the same time then there are chances that conflict arises during the Check-in process.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Ginger will display a message in such cases.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Click on the ‘Source Control Operations’ button on the top right corner of the screen. You will be presented with a new window, with all the conflicted files in the solution. For each conflicted file, there are 3 options to resolve these conflicts.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><img height="176" src="../../images/image1028.png" width="243"/></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:72px"><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Keep Local Changes</span></span><span style="color:black"></span></span></span></span></span></strong></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">In this option, only your changes will be saved in the source control. The changes made by other users will not be uploaded.</span></span><span style="color:black"></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"> </span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:72px"><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Accept Server Changes</span></span><span style="color:black"></span></span></span></span></span></strong></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">In this option, only changes made by other users will be updated in the source control. Changes made by you will be lost.</span></span><span style="color:black"></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"> </span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:72px"><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Merge Conflicts</span></span><span style="color:black"></span></span></span></span></span></strong></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">In this option, you must manually resolve each conflict in the file. When you will select the merge conflict operation, you will be presented with ‘Compare’ button to compare both local and server file versions.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><img src="../../images/image1029.png"/></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"></p>
     <p class="margin-left-0-50in"> </p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;">There are 2 options to resolve these conflicts.</span></span></p>
-    <p class="Numbering27 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Keep Local Changes</span></span></p>
-    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">In this option, only your changes will be saved in the SVN. The changes made by other users will not be uploaded to the SVN.</span></span></p>
-    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"></span></p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"><img alt="Picture 218" height="176" src="../../images/How to use Repository in Ginger_files/image31.png" width="914"/></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">When you click on the ‘Compare’ button you will see the ‘Resolve Merge Conflict’ wizard. This wizard contains 4 pages.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><u><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Introduction</span></span></span></span></span></span></strong></u></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">This page gives you a brief introduction about the manually conflict resolution process.</span></span></span></span></span></span></p>
     <p class="margin-left-0-50in"> </p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
-    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
-    <p class="Numbering27 ListParagraph"><span style="font-size:16px;"><span style="font-family:Calibri;">Accept Server Changes</span></span></p>
-    <p class="ListParagraph margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">In this option, changes made by other users that are updated in the SVN will be downloaded. Changes made by you will be lost.</span></span></p>
-    <p class="margin-left-0-50in"><span style="font-family:Calibri;"><img alt="Picture 219" height="176" src="../../images/How to use Repository in Ginger_files/image32.png" width="912"/></span></p>
+    <p class="margin-left-0-50in"><img src="../../images/image1031.png"/></p>
     <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><u><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Compare and Select Conflicts</span></span></span></span></span></span></strong></u></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">This page shows you the comparison between the local and server version of the conflicted file. Some of the fields in the file is color coded, </span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:yellow">Yellow</span></span></b><span style="font-size:12.0pt"><span style="color:black">: Denotes fields that has been modified and contains some changes within them.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:red">Red</span></span></b><span style="font-size:12.0pt"><span style="color:black">: Denotes values that are present in local but not available in the server version.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:#70ad47">Green</span></span></b><span style="font-size:12.0pt"><span style="color:black">: Denotes values that are present in server but not available in the local version.<b> </b></span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">For each conflict, you must choose which change you want to keep.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><img src="../../images/image1034.png"/></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><u><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Analyze</span></span></span></span></span></span></strong></u></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">This page is only visible for entities that support analyzation. Here you will be able to see if you have any issues in your merged entity. In case, you have any High/Critical issues then you won’t be able to proceed further with your conflict resolution and you must resolve those issues before proceeding.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><img src="../../images/image1035.png"/></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><u><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Preview Merged Enti</span></span></span></span></span></span></strong></u><u><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">ty</span></span></span></span></span></span></strong></u></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><u><strong><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></strong></u><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">This page gives you a preview of how the merged entity would look like. </span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">NOTE: At this stage, the resolved file has not been saved to the file system. This is just a preview of how the final resolved file would look like.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><img src="../../images/image1036.png"/></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">After resolving all the conflicts for the file, when you close the wizard. You will go back to preview window where you would see that now your conflicted file is ready for resolution.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"><img src="../../images/image1037.png"/></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="margin-left-0-50in"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Now, if you click on the ‘Resolve’ button then your file will be resolved with the changes that you selected.</span></span></span></span></span></span></p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:48px"> </p>
     <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
     <p class="margin-left-0-50in"><span style="font-family:Calibri;"></span></p>
     <h2><span style="font-family:Calibri;"> How to get repository details?</span></h2>
