@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Database_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/Database_Action.htm",
+    "pinned": false,
+    "time": "Feb 9, 6:42 PM"
+  }, {
     "title": "How_to_use_Repository_in_Ginger",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Source_Control/How_to_use_Repository_in_Ginger.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Grafana_Dashboard.htm",
     "pinned": false,
     "time": "Nov 17, 2:46 PM"
-  }, {
-    "title": "Mobile_Appium_Agent",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Mobile_Appium_Agent.htm",
-    "pinned": false,
-    "time": "Nov 10, 5:15 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-02-09T18:36:34+05:30",
+      "time": "2024-02-09T19:16:51+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     }
   },

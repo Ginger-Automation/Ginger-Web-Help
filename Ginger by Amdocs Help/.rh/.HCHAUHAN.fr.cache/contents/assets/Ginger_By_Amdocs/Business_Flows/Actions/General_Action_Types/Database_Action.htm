@@ -7,7 +7,7 @@
     Introduction 
     Database Action is used to update/validate/read data from a database system.
     How to Configure Action?
-     Pre-requisite
+    Pre-requisite
                  A Solution should be created.
                  A Data source should be defined. Either define it in Ginger’s DataSource or define the database details in the environment.
     
@@ -80,11 +80,13 @@
     
     
     
+    DB Types & configurtions
+    1. Cassandra 
     How to use Cassandra in Ginger?
-     What is Cassandra?
+     What is Cassandra?
     Apache Cassandra is a free and open source distributed NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point failure.
     
-    What does Ginger support in Cassandra?
+     What does Ginger support in Cassandra?
     UDT values which have been widely used in Cassandra Database.
     JSON variant of SELECT and INSERT operation
      Which Cassandra operations are supported in Ginger?
@@ -93,7 +95,7 @@
     Update Data
     Record Count
     
-    How to configure Cassandra in Ginger?
+     How to configure Cassandra in Ginger?
     Under the Resources tab, go to Environment and select the desired environment.
     Using the + button add the Cassandra DB. Enter name, select DB Type as “Cassandra”, enter the host and user name and password if any.
     
@@ -106,7 +108,7 @@
                    
     
     
-    How to add Database Action for Cassandra?
+     How to add Database Action for Cassandra?
     1) Click on the Business flow. Click on the ‘+’ icon as shown below
                  
     
@@ -128,21 +130,22 @@
     
     
     
+    2. Couchbase
     How to use Couchbase in Ginger?
-    What is Couchbase?
+     What is Couchbase?
     Couchbase DB is an open-source database developed by the Apache software foundation. The focus is on ease of use, embracing the web. It is a NoSQL document store database.
     
-    What does Ginger support in Couchbase?
+     What does Ginger support in Couchbase?
     Used to connect Couchbase DB and perform operations
     Used to connect buckets of Couchbase DB
     
-    Which Couchbase operations are supported in Ginger?
+     Which Couchbase operations are supported in Ginger?
     Read Data
     Write Data
     Update Data
     Record Count
     
-    How to configure Couchbase in Ginger?
+     How to configure Couchbase in Ginger?
     Under the Resources tab, go to Environment and select the desired environment.
     Using the + button add the Couchbase DB. Enter name, select DB Type as “Couchbase”, enter the host and user name and password if any.
     
@@ -152,7 +155,7 @@
     
     
     
-    How to add Database Action for Couchbase?
+     How to add Database Action for Couchbase?
     1) Click on the Business flow. Click on the ‘+’ icon as shown below
                 
     
@@ -174,21 +177,22 @@
     
     
     
+    3. MongoDB
     How to use MongoDB in Ginger?
-    What is MongoDB?
+     What is MongoDB?
     MongoDB is an open-source document database and leading NoSQL database. MongoDB is a cross-platform, document-oriented database that provides, high performance, high availability, and easy scalability. MongoDB works on the concept of collection and document.
     
-    What does Ginger support in MongoDB?
+     What does Ginger support in MongoDB?
     Used to connect MongoDB databases and perform operations
     Used to perform operations like insert, update, select
     
-    Which MongoDB operations are supported in Ginger?
+     Which MongoDB operations are supported in Ginger?
     Read Data
     Write Data
     Update Data
     Record Count
     
-    How to configure MongoDB in Ginger?
+     How to configure MongoDB in Ginger?
     Under the Resources tab, go to Environment and select the desired environment.
     Using the + button add MongoDb. Enter name, select DB Type as “MongoDb”, enter the Connection String or Host and username and password if any.
     
@@ -207,7 +211,7 @@
     Click on the Test connection button to get the connection successful message.
     
     
-    How to add Database Action for MongoDB?
+     How to add Database Action for MongoDB?
     1) Click on the Business flow. Click on the ‘+’ icon as shown below
                  
     
@@ -230,8 +234,7 @@
      
      
     MongoDB Examples of Update Record, Record Count, Insert Record and Find Record
-     
-            'Update' Record in MongoDB
+     a) 'Update' Record in MongoDB
            
      1. Example Query to update Date is Date Format:
             db.GBOP_ExecutionDetails.UpdateOne( {ExecutedBy: "aditya"}, { $set: { EndTime : new ISODate("1995-04-02T10:26:54.375+00:00")}})
@@ -249,9 +252,7 @@
      
         
      
-    
-    
-             'Record Count' in MongoDB
+     b) 'Record Count' in MongoDB
        
     
        Example Query to get Record Count for database 
@@ -261,7 +262,7 @@
      
     
     
-           'Insert' Record in MongoDB
+     c) 'Insert' Record in MongoDB
        
        1. Example Query to Insert One Record:
      db.GingerRegressionSuitTestingCollection.insertOne({item: "canvas", qty: 45, size: { h: 10, w: 15.25, uom: "cm" }, status: "A"})
@@ -269,7 +270,7 @@
      
        
      
-      'Find' Record in MongoDB
+     d) 'Find' Record in MongoDB
        
        1.  Example Query to Find Record  by single parameter:
      db.GBOP_ExecutionDetails.find({ "ExecutedBy": "aditya"})
@@ -281,6 +282,77 @@
     
      
          
+     
+     
+    4. HBase 
+     What is HBase?
+    HBase is an open-source, NoSQL, distributed big data store. It is a column oriented non-relational database management system that runs on top of Hadoop distributed system.
+     
+     Prerequisites
+    We should have a proper HBase database and that should be reachable over the Internet
+     
+     
+     Which HBase operations are supported in Ginger ?
+    Presently the following operations are supported for HBase from Ginger side :
+    
+       Free SQL
+       Record Count
+       Simple SQL One Value
+    
+     
+     
+     How to configure HBase in Ginger?
+    
+      Under the Resources tab, go to Environment and select the desired environment.
+       Using the + button add HBase. Enter name, select DB Type as “HBase”, enter the Connection String or Host and username and password if any.
+    
+     
+     
+           
+     
+     
+    3. Click on TestConnection button. You will get the below window if you have valid connection details .
+     
+     
+    
+     
+     
+     
+    Note : HBase is case sensitive. So while executing queries you have to be careful about the case of the field names. Otherwise it will give wrong output. 
+     
+     Record Count: In the text box give the table name and it will give the number of records present in the table as output. 
+     
+             
+     
+     
+     
+     
+     
+     Free SQL:  Give a valid query in the Free SQL text box. And this will give the proper output.
+     
+       
+     
+    We can use AND / OR / IN / Like Filters in query. While using AND/OR Filters don’t use any parenthesis. While using IN filter give the query in proper format( The values will be with in parenthesis). like : select * from Education where Marks IN (30,54).
+     
+     
+    Simple SQL One Value: This operation will always output a single value. If more than one results  are coming, then the first result will be the output. 
+    We need to select the table from the dropdown list. The dropdown list will be populated with all the tables present in the database and as per the selection of the table name, the Column name dropdown list will be populated. In HBase different field names belong to different column families. Two different column families can have the same column name. If the table consists of a single column family, then the column name dropdown list will be populated with the column names or else it will be populated with values “FamilyName:ColumnName”.
+     
+              
+     
+                
+     
+     We can use the AND/OR/IN or Like Filters here as well. 
+     
+           
+     
+     
+              
+     
+     
+     
+     
+     
      
     
     
