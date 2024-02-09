@@ -60,7 +60,6 @@
     
     
     How to use Page Object Model for Goto URL Operation
-    
     Open the Browser Action and select operation type as ‘Goto URL’.
     Select the ‘Page Object Model URL’ radio button
      
@@ -76,13 +75,14 @@
      
      
      
-     Block URLs using browser action in Ginger
-     1. Block URLs can be given in Ginger Browser action
      
+    Different 'Operation Type' of 'Browser Action':
+     1) Block URLs & Unblock URLs using 'Browser Action' in Ginger (Operation Type: Set Blocked Urls & Unblock Urls)
+     1. Block URLs can be given in Ginger Browser action (Operation Type: Set Blocked Urls)
     To block specific URLs following modifications can be done in existing business flow, after reaching to point in the flow.
     
       Add another “Browser Action”
-      Select Operation Type as “Set Blocked URLs”
+      Select Operation Type as “Set Blocked Urls”
       After selecting the operation type as above, Ginger asks for list of URLs to be blocked.
       Multiple URLs can be specified using comma separated values.
       It can accept the list of URLs as inline value or it can also accept through variable
@@ -92,12 +92,42 @@
        
      
      
-     
-     2. Unblock URLs
-    URLs can be unblocked easily using another newly added operation type in Browser action called “Unblock URLs”. This will Unblock all previously blocked URLs, blocked user “Set Blocked URLs” operation type.
-     
+     2. Unblock URLs (Operation Type: Unblock Urls)
+    URLs can be unblocked easily using another newly added operation type in Browser action called “Unblock Urls”. This will Unblock all previously blocked URLs, blocked user “Set Blocked URLs” operation type.
      
      
+     
+     
+     
+     
+     2) Ginger - Network Logs Filtering (Operation Type: Start Monitoring Network Logs, Stop Monitoring Network Logs & Get Network Logs)
+    Introduction: Using Network logs, we can track all the requests and responses from browser to analyze them. To enhance this feature, we have added better filtering capability based on like comparison. User can monitor 'Specefic URLs' as well.
+     
+    Please follow below steps to use Network Logs Feature:
+     
+     1. Add Browser Action to 'Start Monitoring Network Logs' and give Filters as below
+     Before you start your actual Browser related activities, please add the first action Start Network Monitoring logs.
+            Please add a Browser Action and select Start Monitoring Network Logs in Operation type as shown in below Screenshot.
+     One can use hard coded value as filter or one can use Value Expression editor to populate the Filter value using different kind of variables available in Ginger, e.g., Business Flow Variable, Activity Variable, Global Variable, Environment Parameters.
+     e.g.,
+            Here user wants to track the Network logs for URL containing c8ea6ef96f4556409674bd5dbb3ee472 ID
+             URL: https://amdocsprodmain.service-now.com/one_portal?id=aop_sc_cat_item&sys_id=c8ea6ef96f4556409674bd5dbb3ee472
+     Filter: c8ea6ef96f4556409674bd5dbb3ee472
+     
+            
+     2. Use Get Network Logs action during runtime to fetch the Network logs processed till the time the action is executed
+          Steps:
+     
+     a) Add Browser action and select Operation Type as Get Network Logs as shown in screenshot
+                     
+     
+     
+     b) Add Browser action and select Operation Type as Get Network Logs as shown in screenshot
+     
+    3. Add Browser action and select Operation Type as Get Network Logs as shown in screenshot
+        Add a browser action and select Stop Monitoring Network Logs operation type.
+     
+                    
      
   
 
