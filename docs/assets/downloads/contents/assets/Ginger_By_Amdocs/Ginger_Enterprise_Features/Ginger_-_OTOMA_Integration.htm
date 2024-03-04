@@ -21,7 +21,7 @@
   <p> </p>
   <h2><span style="font-size:24px">Ginger - OTOMA E2E Integration &amp; Test Execution from OTOMA</span></h2>
   <p> </p>
-  <h3><span style="color:rgba(255, 0, 170, 0.99);"><strong>1. Ginger - OTOMA Integration configuration &amp; Test Suite Execution Overview</strong></span></h3>
+  <h3><span style="color:rgba(255, 0, 170, 0.99);"><strong>    1. Ginger - OTOMA Integration configuration &amp; Test Suite Execution Overview</strong></span></h3>
   <p>Please see below steps diagram and details:</p>
   <p><span style="font-size: 18px;"><b><u>Note:</u></b></span>  <strong>All DB configuration (Ginger Parser &amp; OTOMA) &amp; OTOMA application setup will be handled by Ginger Support Team.</strong></p>
   <p>(In below diagram step#3 &amp; step#5 will be handled by Ginger Support Team)</p>
@@ -163,7 +163,7 @@
   </table>
   <p> </p>
   <p> </p>
-  <h3 style="color: rgba(255, 0, 170, 0.99)">2. Use Case Creation &amp; Test Suite Execution</h3>
+  <h3 style="color: rgba(255, 0, 170, 0.99)">    2. Use Case Creation &amp; Test Suite Execution</h3>
   <p><u><strong>Steps</strong></u>:</p>
   <p> </p>
   <p><strong>Step 1</strong>. Open Ginger and create a solution (Web, WebServices etc. ) and do followings and Save all changes:</p>
@@ -576,13 +576,83 @@
   <p> </p>
   <p>                                      <img src="../../images/image894.png" /></p>
   <p> </p>
-  <p>               9. Execution would be triggered and status will be updated in OTOMA GUI once execution is completed</p>
+  <p>               9. <span>Execution </span>would be triggered and status will be updated in OTOMA GUI once execution is completed</p>
   <p> </p>
   <p>                                    <img height="651" src="../../images/image891.png" width="1190" /></p>
   <p> </p>
   <p>             </p>
   <p> </p>
+  <h2><strong style="font-size: 20px">Migrate existing Ginger &#39;Activity Group&#39; &amp;  &#39;Business Flow&#39; to Otoma</strong></h2>
+  <h3> 1. <strong style="font-size: 20px">Migrate existing Ginger &#39;Activity Group&#39; to Otoma (as Sub-Process)</strong></h3>
+  <p><span style="font-size:16px;"><span style="font-family:Calibri;font-size:16px">To migrate existing Ginger &#39;Activity Group&#39; to Otoma, user need to first  &#39;Export Activity Group&#39; from Ginger (as ‘Export to BPMN file’) and then import this BPMN file into OTOMA (using &#39;Import BPMN&#39; option).</span></span></p>
   <p> </p>
-  <h3> </h3>
+  <p><span style="font-size:16px;"><span style="font-family:Calibri;"><u><strong>Export Activity Group</strong>:</u> User can go to the ‘Shared Reposioty --&gt; Activities Groups’ page. Right click on the Activity Group that user wants to migrate to Otoma and click on ‘Export’ and then ‘Export to BPMN file’.</span></span></p>
+  <p> </p>
+  <p> </p>
+  <p>                    <img src="../../images/image1059.png" /></p>
+  <p> </p>
+  <p>Clcik on &#39;Ok&#39; button</p>
+  <p>                    <img src="../../images/image1058.png" /></p>
+  <p> </p>
+  <p></p>
+  <p><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:Calibri;font-size:16px">BPMN file will be exported to the documents folder (<strong>Documents --&gt; BPMN </strong>folder). Please see screenshots below just for refrence. </span></span></span></p>
+  <p> </p>
+  <p>                    <img src="../../images/image1060.png" /></p>
+  <p> </p>
+  <p> </p>
+  <p><u><strong>Import BPMN:</strong></u>  <span style="font-family:Calibri;"><span style="font-size:11pt"><span style="line-height:107%;font-size:16px">Go to Otoma and open &#39;Design&#39; tab (<strong>Requirements --&gt; Design</strong>). Click the plus icon and then select ‘Import BPMN’.</span></span></span></p>
+  <p> </p>
+  <p> </p>
+  <p>                     <img src="../../images/image1061.png" /></p>
+  <p> </p>
+  <p><span style="font-family:Calibri;"><span style="font-size:11pt"><span style="line-height:107%;font-size:16px">For import, select the BPMN file that was exported in the previous step. After that the BPMN file (of Activity Group) will be imported in Otoma (as Sub Process).</span></span></span></p>
+  <p> </p>
+  <p>                     <img src="../../images/image1062.png" /></p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <h3> 2. <strong style="font-size: 20px">Migrate existing Ginger &#39;<strong style="font-size: 20px">Business Flow</strong>&#39; to Otoma (as Use Case)</strong></h3>
+  <p> </p>
+  <p><span style="font-size:16px;"><span style="font-family:Calibri;font-size:16px">To migrate existing Ginger &#39;Business Flow&#39; to Otoma, user need to first  &#39;Export Business Flow&#39; from Ginger (as ‘Export as Otoma Use Case Zip file’) and then import this zip file into OTOMA (using &#39;Import Release&#39; option).</span></span></p>
+  <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+  <p><span style="font-size:16px;"><span style="font-family:Calibri;"><u><strong>Export Business Flow</strong>:</u> User can go to the ‘Business Flows’ page from the top menu bar. Right click on the Business flow that you want to migrate to Otoma and click on ‘Export’ and then ‘Export as Otoma Use Case Zip file’.</span></span></p>
+  <p> </p>
+  <p></p>
+  <p>                  <img src="../../images/image1053.png" /></p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p><span style="font-size:12pt"><span style="font-family:Calibri;font-size:16px">             If your business flow contains some activities or activity groups which are not part of Shared Repository, then you would be presented with a popup like below.</span></span></p>
+  <p> </p>
+  <p>                                      <img src="../../images/image1049.png" /></p>
+  <p style="font-family: Calibri"> </p>
+  <p><span style="font-size:14px;"><span style="font-family:Calibri;"><span style="font-size: 16px">                If you click on ‘Yes’, then you will be presented with a wizard to add all the necessary entities to Shared Repository.</span></span></span></p>
+  <p> </p>
+  <p><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif">                                     <img src="../../images/image1050.png" /></span></span></p>
+  <p> </p>
+  <p> </p>
+  <p><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:Calibri;font-size:16px">After adding them to Shared Repository, a zip file will be exported to the documents folder (<strong>Documents --&gt; BPMN </strong>folder). Please see screenshots below just for refrence. </span></span></span></p>
+  <p> </p>
+  <p><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:Calibri;font-size:16px">                   <img height="6653885" src="../../images/image1052.png" width="40979478" /></span></span></span></p>
+  <p> </p>
+  <p><u><strong>Import Use Case:</strong></u>  <span style="font-family:Calibri;"><span style="font-size:11pt"><span style="line-height:107%;font-size:16px">Go to Otoma and open &#39;Design&#39; tab (<strong>Requirements --&gt; Design</strong>). Click the plus icon and then select ‘Import Release’.</span></span></span></p>
+  <p> </p>
+  <p>                   <img src="../../images/image1054.png" /></p>
+  <p> </p>
+  <p> </p>
+  <p><span style="font-family:Calibri;"><span style="font-size:11pt"><span style="line-height:107%;font-size:16px">For import, select the zip file that was exported in the previous step. After that the use case will be imported in Otoma.</span></span></span></p>
+  <p><strong>(Note: Here &#39;Business Flow&#39; will be imported as &#39;Use Case&#39; and &#39;Activity Groups&#39; of respective buisness flow will be imported as &#39;Sub-Processes&#39;).</strong></p>
+  <p> </p>
+  <p><span style="font-family:Calibri;"><span style="font-size:11pt"><span style="line-height:107%;font-size:16px"><u><strong>Use Case: </strong></u></span></span></span></p>
+  <p>                     <img height="401" src="../../images/image1055.png" width="1137" /></p>
+  <p> </p>
+  <p> </p>
+  <p><u><strong>Sub-Process:</strong></u></p>
+  <p> </p>
+  <p>                     <img height="5172237" src="../../images/image1056.png" width="12840482" /></p>
+  <p> </p>
+  <p> </p>
 </body>
 </html>

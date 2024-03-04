@@ -10,7 +10,7 @@
    
   Ginger - OTOMA E2E Integration & Test Execution from OTOMA
    
-  1. Ginger - OTOMA Integration configuration & Test Suite Execution Overview
+      1. Ginger - OTOMA Integration configuration & Test Suite Execution Overview
   Please see below steps diagram and details:
   Note:  All DB configuration (Ginger Parser & OTOMA) & OTOMA application setup will be handled by Ginger Support Team.
   (In below diagram step#3 & step#5 will be handled by Ginger Support Team)
@@ -152,7 +152,7 @@
   
    
    
-  2. Use Case Creation & Test Suite Execution
+      2. Use Case Creation & Test Suite Execution
   Steps:
    
   Step 1. Open Ginger and create a solution (Web, WebServices etc. ) and do followings and Save all changes:
@@ -571,6 +571,76 @@
    
                
    
+  Migrate existing Ginger 'Activity Group' &  'Business Flow' to Otoma
+   1. Migrate existing Ginger 'Activity Group' to Otoma (as Sub-Process)
+  To migrate existing Ginger 'Activity Group' to Otoma, user need to first  'Export Activity Group' from Ginger (as ‘Export to BPMN file’) and then import this BPMN file into OTOMA (using 'Import BPMN' option).
+   
+  Export Activity Group: User can go to the ‘Shared Reposioty --> Activities Groups’ page. Right click on the Activity Group that user wants to migrate to Otoma and click on ‘Export’ and then ‘Export to BPMN file’.
+   
+   
+                      
+   
+  Clcik on 'Ok' button
+                      
+   
+  
+  BPMN file will be exported to the documents folder (Documents --> BPMN folder). Please see screenshots below just for refrence. 
+   
+                      
+   
+   
+  Import BPMN:  Go to Otoma and open 'Design' tab (Requirements --> Design). Click the plus icon and then select ‘Import BPMN’.
+   
+   
+                       
+   
+  For import, select the BPMN file that was exported in the previous step. After that the BPMN file (of Activity Group) will be imported in Otoma (as Sub Process).
+   
+                       
+   
+   
+   
+   
+   
+   2. Migrate existing Ginger 'Business Flow' to Otoma (as Use Case)
+   
+  To migrate existing Ginger 'Business Flow' to Otoma, user need to first  'Export Business Flow' from Ginger (as ‘Export as Otoma Use Case Zip file’) and then import this zip file into OTOMA (using 'Import Release' option).
+  
+  Export Business Flow: User can go to the ‘Business Flows’ page from the top menu bar. Right click on the Business flow that you want to migrate to Otoma and click on ‘Export’ and then ‘Export as Otoma Use Case Zip file’.
+   
+  
+                    
+   
+   
+   
+               If your business flow contains some activities or activity groups which are not part of Shared Repository, then you would be presented with a popup like below.
+   
+                                        
+   
+                  If you click on ‘Yes’, then you will be presented with a wizard to add all the necessary entities to Shared Repository.
+   
+                                       
+   
+   
+  After adding them to Shared Repository, a zip file will be exported to the documents folder (Documents --> BPMN folder). Please see screenshots below just for refrence. 
+   
+                     
+   
+  Import Use Case:  Go to Otoma and open 'Design' tab (Requirements --> Design). Click the plus icon and then select ‘Import Release’.
+   
+                     
+   
+   
+  For import, select the zip file that was exported in the previous step. After that the use case will be imported in Otoma.
+  (Note: Here 'Business Flow' will be imported as 'Use Case' and 'Activity Groups' of respective buisness flow will be imported as 'Sub-Processes').
+   
+  Use Case: 
+                       
+   
+   
+  Sub-Process:
+   
+                       
    
    
 
