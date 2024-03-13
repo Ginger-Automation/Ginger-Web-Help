@@ -250,6 +250,10 @@
     </topic>
     
     <topic>
+      assets\Ginger_By_Amdocs\Business_Flows\Actions\Platform_Action_Types\Accessibility_Testing_Action.htm
+    </topic>
+    
+    <topic>
       assets\Ginger_By_Amdocs\Business_Flows\Actions\General_Action_Types\Excel_Action.htm
     </topic>
     
@@ -459,6 +463,10 @@
     
     <topic>
       assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_RQM_ALM_Integration.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Integrations\ALM_Integrations\Ginger_Azure_DevOps_ALM_Integration.htm
     </topic>
     
     <topic>
