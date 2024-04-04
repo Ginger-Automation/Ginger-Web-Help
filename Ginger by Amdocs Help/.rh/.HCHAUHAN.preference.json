@@ -1,5 +1,65 @@
 {
   "recent-files::internal:document": [{
+    "title": "image46",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/image46.png",
+    "pinned": false,
+    "time": "Apr 4, 4:58 PM"
+  }, {
+    "title": "REST_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/REST_Action.htm",
+    "pinned": false,
+    "time": "Apr 4, 4:56 PM"
+  }, {
+    "title": "image45",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/image45.png",
+    "pinned": false,
+    "time": "Apr 4, 4:56 PM"
+  }, {
+    "title": "Ginger_RQM_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_RQM_ALM_Integration.htm",
+    "pinned": false,
+    "time": "Apr 4, 4:56 PM"
+  }, {
+    "title": "image450",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/image450.png",
+    "pinned": false,
+    "time": "Apr 4, 4:54 PM"
+  }, {
+    "title": "Word",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word.preset",
+    "pinned": false,
+    "time": "Apr 4, 4:49 PM"
+  }, {
+    "title": "Frameless",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset",
+    "pinned": false,
+    "time": "Apr 2, 12:49 PM"
+  }, {
+    "title": "Ginger Help document Sealights",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/Ginger Help document Sealights.css",
+    "pinned": false,
+    "time": "Mar 27, 4:21 PM"
+  }, {
+    "title": "01- What is a Business Flow",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/01- What is a Business Flow.css",
+    "pinned": false,
+    "time": "Mar 27, 4:17 PM"
+  }, {
+    "title": "book",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/masterpages/book.htt",
+    "pinned": false,
+    "time": "Mar 27, 4:17 PM"
+  }, {
+    "title": "Main_Ginger_Menu",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Main_Ginger_Menu.htm",
+    "pinned": false,
+    "time": "Mar 27, 4:16 PM"
+  }, {
+    "title": "Ginger_End_to_End_Flow-_Do_it_Yourself",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
+    "pinned": false,
+    "time": "Mar 20, 11:08 AM"
+  }, {
     "title": "Browser_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Browser_Action.htm",
     "pinned": false,
@@ -35,11 +95,6 @@
     "pinned": false,
     "time": "Feb 9, 6:14 PM"
   }, {
-    "title": "Ginger_End_to_End_Flow-_Do_it_Yourself",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
-    "pinned": false,
-    "time": "Jan 25, 10:57 AM"
-  }, {
     "title": "Variable_Type_Overview",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/Variable_Type_Overview.htm",
     "pinned": false,
@@ -52,11 +107,6 @@
   }, {
     "title": "Ginger_Zephyr_ALM_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Zephyr_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 10:00 AM"
-  }, {
-    "title": "Ginger_RQM_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_RQM_ALM_Integration.htm",
     "pinned": false,
     "time": "Jan 19, 10:00 AM"
   }, {
@@ -74,56 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Octane_ALM_Integration.htm",
     "pinned": false,
     "time": "Jan 19, 9:59 AM"
-  }, {
-    "title": "Visual_Testing_using_VRT",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_VRT.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:57 AM"
-  }, {
-    "title": "Ginger-Sealights_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-Sealights_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:57 AM"
-  }, {
-    "title": "Visual_Testing_using_Applitools",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Visual_Testing_using_Applitools.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:57 AM"
-  }, {
-    "title": "Ginger_Jira_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Jira_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:56 AM"
-  }, {
-    "title": "Ginger-UFT_Mobile_Integration_Guide",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/Ginger-UFT_Mobile_Integration_Guide.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:56 AM"
-  }, {
-    "title": "What_is_Clean_Up_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
-    "pinned": false,
-    "time": "Jan 16, 3:14 PM"
-  }, {
-    "title": "What_is_Action",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/What_is_Action.htm",
-    "pinned": false,
-    "time": "Jan 16, 3:14 PM"
-  }, {
-    "title": "Unix_Agent",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Agents_Type_Overview/Unix_Agent.htm",
-    "pinned": false,
-    "time": "Dec 6, 4:46 PM"
-  }, {
-    "title": "How_to_Execute_Run_set_Via_CLI",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm",
-    "pinned": false,
-    "time": "Dec 5, 11:06 PM"
-  }, {
-    "title": "Application_Models-_API_Models",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm",
-    "pinned": false,
-    "time": "Dec 1, 1:42 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,8 +147,20 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-03-20T10:38:19+05:30",
+      "time": "2024-04-04T16:59:25+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
+    },
+    "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
+      "exists": false,
+      "path": false,
+      "time": "2024-04-04T16:46:55+05:30",
+      "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Word Document.ehtml"
+    },
+    "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word.preset": {
+      "exists": false,
+      "path": false,
+      "time": "2024-04-04T16:50:08+05:30",
+      "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Word.ehtml"
     }
   },
   "recent-files::internal:hyperlink": [{
@@ -206,5 +218,16 @@
     "path": "C:/Robo_Help_Lib/Main branch/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_an_Clean_Up_Activity.htm",
     "pinned": false,
     "time": "May 23, 8:49 PM"
+  }],
+  "recent-files::external:document": [{
+    "title": "Word",
+    "path": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Word.ehtml",
+    "pinned": false,
+    "time": "Apr 4, 4:50 PM"
+  }, {
+    "title": "Word Document",
+    "path": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Word Document.ehtml",
+    "pinned": false,
+    "time": "Apr 2, 1:58 PM"
   }]
 }
