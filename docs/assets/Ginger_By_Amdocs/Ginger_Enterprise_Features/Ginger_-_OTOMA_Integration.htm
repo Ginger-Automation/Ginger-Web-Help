@@ -193,10 +193,34 @@
   </table>
   <p> </p>
   <p> </p>
-  <h3 style="color: rgba(255, 0, 170, 0.99)">    2. Use Case Creation &amp; Test Suite Execution</h3>
-  <p><u><strong>Steps</strong></u>:</p>
   <p> </p>
-  <p><strong>Step 1</strong>. Open Ginger and create a solution (Web, WebServices etc. ) and do followings and Save all changes:</p>
+  <h3 style="color: rgba(255, 0, 170, 0.99)">    2. GINGER Solution and OTOMA Topology, Use Case, Test Suite Creation &amp; Execution</h3>
+  <p><span style="font-size:18px;"><span style="color:#ec008c;"><span style="color:#191993;"><span style="color:#ec008c;"><strong style="font-size: 18px;color: rgb(236, 0, 140)">**   </strong><u><strong style="font-size: 18px;color: rgb(236, 0, 140)">Key Points to remember before following below mentioned</strong></u></span><u><strong style="color: #191993;font-size: 18px"> <span style="font-size:20px">Steps</span>:</strong></u></span></span></span></p>
+  <p> </p>
+  <p><span style="font-size:18px;"><span style="color:#ec008c;"><strong style="color: rgb(236, 0, 140);font-size: 18px">1. D</strong></span><span style="color:#ec008c;"><strong>uring creation of Ginger Solution - Please take care of all below points:</strong></span></span></p>
+  <p> </p>
+  <p>     <strong>1. </strong>All Ginger Solution <strong>Activities </strong>must be <strong>standalone </strong>(<strong>independent </strong>activities)</p>
+  <p><strong>     2. OTOMA does not support &#39;Inter Activity Flow control&#39;. </strong>Do not use any inter activity flow controls.</p>
+  <p>       (Ex: Do not use Flow control like Go to Activity, Go to Activity by Name, Call Shared Repositry Activity etc.)</p>
+  <p><strong>       </strong><u><strong>Note</strong></u>: User <strong>can </strong><strong>use </strong>only &#39;<strong>Go to Action&#39; </strong>Flow Control.</p>
+  <p><strong><strong>     3.</strong></strong> <strong>OTOMA supports only Activity Variables </strong>(Activity Input Variables &amp; Activity Output Variables). Hence        Please use only Activity Variables.  <strong>Do not use</strong> Business Flow Variables or Global Variables in your solution</p>
+  <p><strong>     4. </strong>Please do not forget to mark activity varaibles either input or output. </p>
+  <p>          Do not mark input and output together. </p>
+  <p><strong>     5</strong>. All Variables which needs to be exposed to OTOMA - <strong>N</strong><strong>eed to be marked as Publish</strong> (please see details below to mark varibales as Publish)<strong> </strong></p>
+  <p><strong>     6. </strong>All activities which needs ot be exposed to OTOMA - <strong>Need to be marked as &#39;Publish&#39; and need to be put into Shared Repository </strong>(please see details below to mark activiites as Publish and add to shared repository) <strong></strong></p>
+  <p> </p>
+  <p><span style="font-size:18px;"><span style="color:#ec008c;"><strong><span style="color: rgb(236, 0, 140);font-size: 18px">2. Users need to share below details with &#39;Ginger Support Team&#39; for the DB configurations</span></strong></span></span></p>
+  <p><span style="font-size:18px;"><span style="color:#ec008c;"><strong><span style="color: rgb(236, 0, 140)"> <span style="font-size:16px">    (For Ginger OTOMA DB Configurations)</span></span><span style="font-size:16px;">: </span></strong></span></span></p>
+  <p>           1. GIT Repository URL</p>
+  <p>      2. GIT Branch Name,</p>
+  <p>      3. GIT Login User Name</p>
+  <p>      4. GIT Access Token (Password Access Token)</p>
+  <p>      5. Ginger Solution Encryption Key</p>
+  <p>      6. OTOMA Release Name</p>
+  <p> </p>
+  <p><span style="color:#191993;"><u><strong style="font-size: 20px;color: #191993">Steps</strong></u>:</span></p>
+  <p> </p>
+  <p><span style="color:#191993;"><span style="font-size:16px;"><strong style="font-size: 16px;color: #191993">Step 1</strong>.</span></span> Open Ginger and create a solution (Web, WebServices etc. ) and do followings and Save all changes:</p>
   <p> </p>
   <p>      <strong>a</strong>. Create Activities (and use activity variables only if required) and publish these activities (and publish variables)</p>
   <p> </p>
@@ -266,11 +290,17 @@
   <p> </p>
   <p>                     <img src="../../images/image828.png"/></p>
   <p> </p>
-  <p><strong>Step 2</strong>. Upload or push your solution to the GIT </p>
+  <p><span style="color:#191993;"><strong style="color: #191993">Step 2</strong>. </span>Upload or push your solution to the GIT </p>
   <p> </p>
-  <p><strong>Step 3</strong>. Share your GIT Repository URL, Login Name and Password Token with Ginger Support Team for the DB configurations </p>
+  <p><span style="color:#191993;"><strong style="color: #191993">Step 3</strong>.</span> Please Share below details with Ginger Support Team for the DB configurations </p>
+  <p>      1. GIT Repository URL</p>
+  <p>      2. GIT Branch Name,</p>
+  <p>      3. GIT Login User Name</p>
+  <p>      4. GIT Access Token (Password Access Token)</p>
+  <p>      5. Ginger Solution Encryption Key</p>
+  <p>      6. OTOMA Release Name</p>
   <p> </p>
-  <p><strong>Step 4</strong>. Login to OTOMA UI and Create a new release </p>
+  <p><span style="color:#191993;"><strong style="color: #191993">Step 4</strong>.</span> Login to OTOMA UI and Create a new release </p>
   <p> </p>
   <p>       a) Go to Setup --&gt; Create new release </p>
   <p> </p>
@@ -291,10 +321,16 @@
   <p> </p>
   <p> </p>
   <p><strong></strong></p>
-  <p><strong>Step 5. a) </strong>Please share the Release Name, Git Repository URL, Git User Name &amp; Password (Access Token) with Ginger Support Team for DB configurations</p>
+  <p><strong><span style="color:#191993;">Step 5.</span> a) </strong>Please Share below details with Ginger Support Team for the DB configurations </p>
+  <p>      1. GIT Repository URL</p>
+  <p>      2. GIT Branch Name,</p>
+  <p>      3. GIT Login User Name</p>
+  <p>      4. GIT Access Token (Password Access Token)</p>
+  <p>      5. Ginger Solution Encryption Key</p>
+  <p>      6. OTOMA Release Name</p>
   <p>              <strong>b) (Optional Step)</strong> Also share ALM Config fields details (if ALM needs to be configured) with Ginger Support Team for DB configurations</p>
   <p> </p>
-  <p><strong>Step 6. </strong>  Login to OTOMA GUI and do the followings: </p>
+  <p><span style="color:#191993;"><strong style="color: #191993">Step 6. </strong> </span> Login to OTOMA GUI and do the followings: </p>
   <p> </p>
   <p><strong>        a) Import Topology into OTOMA: </strong>This step will import all published shared activities (or interfaces) of Ginger (along with all published activity variables (or Elements)) into OTOMA</p>
   <p> </p>
@@ -624,7 +660,7 @@
   <p>Clcik on &#39;Ok&#39; button</p>
   <p>                    <img src="../../images/image1058.png"/></p>
   <p> </p>
-  <p></p>
+  <p> </p>
   <p><span style="font-size:16px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:Calibri;font-size:16px">BPMN file will be exported to the documents folder (<strong>Documents --&gt; BPMN </strong>folder). Please see screenshots below just for refrence. </span></span></span></p>
   <p> </p>
   <p>                    <img src="../../images/image1060.png"/></p>
@@ -649,7 +685,7 @@
   <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
   <p><span style="font-size:16px;"><span style="font-family:Calibri;"><u><strong>Export Business Flow</strong>:</u> User can go to the ‘Business Flows’ page from the top menu bar. Right click on the Business flow that you want to migrate to Otoma and click on ‘Export’ and then ‘Export as Otoma Use Case Zip file’.</span></span></p>
   <p> </p>
-  <p></p>
+  <p> </p>
   <p>                  <img src="../../images/image1053.png"/></p>
   <p> </p>
   <p> </p>

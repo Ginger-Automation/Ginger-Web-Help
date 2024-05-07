@@ -152,7 +152,31 @@
   
    
    
-      2. Use Case Creation & Test Suite Execution
+   
+      2. GINGER Solution and OTOMA Topology, Use Case, Test Suite Creation & Execution
+  **   Key Points to remember before following below mentioned Steps:
+   
+  1. During creation of Ginger Solution - Please take care of all below points:
+   
+       1. All Ginger Solution Activities must be standalone (independent activities)
+       2. OTOMA does not support 'Inter Activity Flow control'. Do not use any inter activity flow controls.
+         (Ex: Do not use Flow control like Go to Activity, Go to Activity by Name, Call Shared Repositry Activity etc.)
+         Note: User can use only 'Go to Action' Flow Control.
+       3. OTOMA supports only Activity Variables (Activity Input Variables & Activity Output Variables). Hence        Please use only Activity Variables.  Do not use Business Flow Variables or Global Variables in your solution
+       4. Please do not forget to mark activity varaibles either input or output. 
+            Do not mark input and output together. 
+       5. All Variables which needs to be exposed to OTOMA - Need to be marked as Publish (please see details below to mark varibales as Publish) 
+       6. All activities which needs ot be exposed to OTOMA - Need to be marked as 'Publish' and need to be put into Shared Repository (please see details below to mark activiites as Publish and add to shared repository) 
+   
+  2. Users need to share below details with 'Ginger Support Team' for the DB configurations
+       (For Ginger OTOMA DB Configurations): 
+             1. GIT Repository URL
+        2. GIT Branch Name,
+        3. GIT Login User Name
+        4. GIT Access Token (Password Access Token)
+        5. Ginger Solution Encryption Key
+        6. OTOMA Release Name
+   
   Steps:
    
   Step 1. Open Ginger and create a solution (Web, WebServices etc. ) and do followings and Save all changes:
@@ -227,7 +251,13 @@
    
   Step 2. Upload or push your solution to the GIT 
    
-  Step 3. Share your GIT Repository URL, Login Name and Password Token with Ginger Support Team for the DB configurations 
+  Step 3. Please Share below details with Ginger Support Team for the DB configurations 
+        1. GIT Repository URL
+        2. GIT Branch Name,
+        3. GIT Login User Name
+        4. GIT Access Token (Password Access Token)
+        5. Ginger Solution Encryption Key
+        6. OTOMA Release Name
    
   Step 4. Login to OTOMA UI and Create a new release 
    
@@ -250,7 +280,13 @@
    
    
   
-  Step 5. a) Please share the Release Name, Git Repository URL, Git User Name & Password (Access Token) with Ginger Support Team for DB configurations
+  Step 5. a) Please Share below details with Ginger Support Team for the DB configurations 
+        1. GIT Repository URL
+        2. GIT Branch Name,
+        3. GIT Login User Name
+        4. GIT Access Token (Password Access Token)
+        5. Ginger Solution Encryption Key
+        6. OTOMA Release Name
                 b) (Optional Step) Also share ALM Config fields details (if ALM needs to be configured) with Ginger Support Team for DB configurations
    
   Step 6.   Login to OTOMA GUI and do the followings: 
@@ -583,7 +619,7 @@
   Clcik on 'Ok' button
                       
    
-  
+   
   BPMN file will be exported to the documents folder (Documents --> BPMN folder). Please see screenshots below just for refrence. 
    
                       
@@ -608,7 +644,7 @@
   
   Export Business Flow: User can go to the ‘Business Flows’ page from the top menu bar. Right click on the Business flow that you want to migrate to Otoma and click on ‘Export’ and then ‘Export as Otoma Use Case Zip file’.
    
-  
+   
                     
    
    
