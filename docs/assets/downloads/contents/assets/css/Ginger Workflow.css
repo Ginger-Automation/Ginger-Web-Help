@@ -1,0 +1,66 @@
+p.Num1 {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+    counter-reset: Numbering222;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Num1:before {
+    counter-increment: Numbering221;
+    content: counter(Numbering221,decimal)".";
+    color: #302E45;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Num2 {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+p.Num2[data-list-level="2"]:before {
+    counter-increment: Numbering222;
+    content: counter(Numbering222,lower-alpha)".";
+    color: #302E45;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Num2[data-list-level="2"] {
+    counter-reset: Numbering223;
+    margin-left: 1.50in;
+}
+p.Title {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 15pt;
+    font-size: 26pt;
+    color: #17365D;
+    letter-spacing: 0.25pt;
+}
+body {
+counter-reset:Numbering221 Numbering222 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.margin-left-1-50in {
+margin-left:1.50in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

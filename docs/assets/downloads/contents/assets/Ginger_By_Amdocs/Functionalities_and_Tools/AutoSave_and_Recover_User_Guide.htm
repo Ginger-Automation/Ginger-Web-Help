@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>AutoSave and Recover User Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/AutoSave and Recover User Guide.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri"><span style="font-size:32px;margin-left:156px"> AutoSave</span><span style="font-size:32px;"> and Recover User Guide</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#Purpose">Purpose</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#How_does_Autosave_work?">How does Autosave work?</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#How_does_Recover_work?">How does Recover work?</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Delete_Items">Delete Items</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Recover_Items">Recover Items</a></span></li>
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><a id="_Description"></a><br />
+      ‎</p>
+    <h1 class="Heading1" style="font-family: Calibri">  <a id="_Pre_Requisites"></a><a id="Purpose"></a><span style="margin-left:48px;">Purpose</span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:48px;">        <span style="font-size:16px;">    The user is working on Ginger for long hours and because of some unavoidable condition&#39;s Ginger crashes.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">           Hence, we are providing the AutoSave and Recover mechanism to save user&#39;s recent work and give them an option to Recover their work.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:48px;">  <a id="_How_to_use"></a> <a id="How_does_Autosave_work?"></a>How does AutoSave work?</span></h1>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">When the user will start working in Ginger, (at the start of an application), the AutoSave mechanism will be triggered.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">After 5 minutes, every Business Flow and Run Set which you have worked on will be saved in the AutoSave folder. This will be created at the run </span></span><span style="margin-left:48px;"><span style="font-size:16px;">time in your Solution folder path.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">Run Set / Business Flow will be created/saved in the AutoSave folder as the same folder structure as the original one.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">Once any Business Flow / Run Set has been saved, it will be removed from the AutoSave folder.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">Only items that are unsaved and worked on will be saved in the AutoSave folder.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">If you are closing Ginger manually then all the contents of the AutoSave folder will be cleared.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">Right now, we are only storing Business Flow and Run Set files in the AutoSave folder.</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">The support for storing other files like Environment, Agents, etc. will be supported soon. In the coming Releases.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">Location of AutoSave folder :</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><img alt="Picture 2028135395" height="471" src="../../images/AutoSave and Recover User Guide_files/image2.png" width="835" /></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size: 16px;margin-left: 28px"> </span><span style="font-size: 16px;">  </span><span style="font-size: 16px;">Files that are being saved by the AutoSave mechanism is as below:</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:48px;">            <img alt="Picture 2127841372" height="170" src="../../images/AutoSave and Recover User Guide_files/image3.png" width="837" /></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:48px;">   <a id="How_does_Recover_work?"></a>How does Recover work?</span></h1>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">If Ginger has been closed abruptly or has been crashed last time, then all the files from AutoSave folders will be moved to the Recover folder.</span></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">The recover folder will be created at the Solution folder path.</span></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">As soon as you will reopen Ginger, if there are any files in the Recover folder then a message will be shown on the UI with all the files listed inside it.</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:48px;">     <img alt="Picture 1734218872" height="429" src="../../images/AutoSave and Recover User Guide_files/image4.png" width="834" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">You can view details of each file, by clicking on the View Details Button or Double click event of a particular item.</span></span></p>
+    <p class="margin-left-0-69in" style="font-family: Calibri"><span style="margin-left:48px;"><img alt="Picture 1368494792" height="520" src="../../images/AutoSave and Recover User Guide_files/image5.png" width="835" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri"><span style="margin-left:48px;">  <a id="Delete_Items"></a>Delete Items</span></h2>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">If the items/ work is not needed, you can delete it by clicking on the Delete Selected button.</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><img alt="Picture 1342206580" height="440" src="../../images/AutoSave and Recover User Guide_files/image6.png" width="854" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri"><span style="margin-left:48px;">  <a id="Recover_Items"></a>Recover Items</span></h2>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">You can also recover the items which need to be recovered by clicking on Recover Selected button.</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><img alt="Picture 313922145" height="441" src="../../images/AutoSave and Recover User Guide_files/image7.png" width="856" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="margin-left:48px;"><span style="font-size:16px;">After deleting or recovering the items will be permanently removed from the list and the Recover folder.</span></span></p>
+    <p style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

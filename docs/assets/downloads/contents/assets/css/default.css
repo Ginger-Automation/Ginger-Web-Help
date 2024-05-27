@@ -1,0 +1,9 @@
+ul.Disc {
+    list-style-type: disc;
+}
+ul.Circle {
+    list-style-type: circle;
+}
+ol.Decimal {
+    list-style-type: decimal;
+}

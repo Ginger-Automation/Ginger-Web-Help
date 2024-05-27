@@ -1,0 +1,120 @@
+p.BodyText {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+h1.Numbering46 {
+    counter-reset: Numbering232;
+    margin-left: 2.19in;
+    --autonumber: autonumber;
+}
+h1.Numbering46:before {
+    counter-increment: Numbering231;
+    content: counter(Numbering231,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.94in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+p.Num1 {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+p.Numbering40 {
+    counter-reset: Numbering362;
+    margin-left: 1.50in;
+    --autonumber: autonumber;
+}
+p.Numbering40:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering41 {
+    counter-reset: Numbering192;
+    margin-left: 1.50in;
+    --autonumber: autonumber;
+}
+p.Numbering41:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering42 {
+    counter-reset: Numbering252;
+    margin-left: 1.50in;
+    --autonumber: autonumber;
+}
+p.Numbering42:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Title {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 15pt;
+    font-size: 26pt;
+    color: #17365D;
+    letter-spacing: 0.25pt;
+}
+body {
+counter-reset:Numbering231 Numbering232 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0 {
+margin-left:0;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-1-00in {
+margin-left:1.00in;
+}
+.margin-left-1-19in {
+margin-left:1.19in;
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.margin-left-1-50in {
+margin-left:1.50in;
+}
+.margin-left-2-44in {
+margin-left:2.44in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

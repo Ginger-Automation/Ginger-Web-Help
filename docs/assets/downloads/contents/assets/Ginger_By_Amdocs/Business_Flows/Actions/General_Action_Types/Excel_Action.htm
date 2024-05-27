@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Excel Action</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../css/Excel Action.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"><span style="font-size:32px;margin-left:220px"> Excel Action</span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><span style="font-weight:bold;font-size:19px">Contents</span></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><a href="#Introduction">Introduction</a></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><a href="#How_to_Configure_Action">How to Configure Action</a></p>
+    <ul class="Disc">
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a class="Hyperlink" href="#2.1_Pre-requisite">Pre-requisite</a></span></li>
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Action_Operation">Action Operation</a></span></li>
+    </ul>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><a id=" IntroductionExcel Action is used to read/write data in an Excel file. The data in excel can be used during the creation of a customer where a lot of details are entered in the form like the name, address, DOB, etc.How to Configure Action            2.1 Pre-requisite                          Excel file is created having Columns and data in it.                          The column name should be given in braces eg. [customer type]                         Sample file                            Action Operation Read Excel 1) Double click on the Business flow. Click on the ‘+’ icon                 On the Action Library screen go to the ‘General Actions’ tab and double click on the ‘Clear All Variables               2)               2) Action’                    3) Excel Action will be added under the Activity as shown below   4) Double click on it to see the below screen and then go to the ‘Operation Settings’ tab. Enter the condition in the Value field            5) Select the file using the Browse button. From the ‘Sheet Name’ drop-down, select the desired sheet.   Clicking on the ‘View All Data’ button will display the contents in the sheet.   If a user wants to use a filter whose name has space in it, then use the below format: - The name should be in square brackets: -[Paramter Name] =’&lt;ID&gt;’   6) Enter condition in ‘Select Row(s) Where:’ field E.g., param11=10 or param12=12‘Primary Key column:’ should be given.Open the Value Expression Editor (button next to Select row(s) Where) as shown to frame a needed condition using the various expression components.Once done click on OK.   Now click on the ‘View Filtered Data’ button will give the result obtained from the ‘Select Row(s) Where:’ condition.  7) Run Action will read the content as per the given condition.   8) Clicking on the ‘Ok’ button of the above screen will add the Action      Write Excel To create a Write action on excel, it is first required to Read the Excel. Please follow the Read Excel steps given above. Select the Excel Action as ‘Write Data’ from the dropdown.                The ‘Data to Write:’ is used to write the data. Multiple columns can be written using “,” separator. If the excel column’s name has space in it then use square brackets E.g. [customer name] =’Daniel’.                             The Run Action will write the data in excel which can also be viewed using the ‘View Filtered Data’ button "></a><br />
+      ‎</h1>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><a id="Introduction"></a><span style="margin-left:24px;"><span style="font-size:32px;">Introduction </span></span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a><span style="font-size:16px;">Excel Action is used to read/write data in an Excel file. The data in excel can be used during the creation of a customer where a lot of details are entered in the form like the name, address, DOB, etc.</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><a id="How_to_Configure_Action"></a>How to Configure Action</span></h1>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><a id="2.1_Pre-requisite"></a><span style="font-size:24px;">Pre-requisite</span></span></h2>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">               Excel file is created having Columns and data in it.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">              The column name should be given in braces eg. [customer type]</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><a id="_MON_1557940565"></a></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <h2 class="Numbering16" data-list-level="2" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><a id="Action_Operation"></a><span style="font-size:24px;">Action Operation</span></span></h2>
+    <p class="ListParagraph margin-left-0-61in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><strong>Read Excel</strong></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">1) Double click on the Business flow. Click on the ‘+’ icon</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 157147882" height="305" src="../../../../images/Excel Action_files/image2.png" style="cursor: nesw-resize;" width="836" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">            2) On the Action Library screen go to the ‘General Actions’ tab and double click on the ‘Excel Action’</span></p>
+    <p class="margin-left-0-50intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">            <img alt="Picture 1502840962" height="863" src="../../../../images/Excel Action_files/image3.png" width="403" /></span></p>
+    <p class="margin-left-0-50intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">3) Excel Action will be added under the Activity as shown below</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 948728711" height="46125" src="../../../../images/Excel Action_files/image4.png" width="1177353" /></span></p>
+    <p class="margin-left-0-50intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">4) Double click on it to see the below screen and then go to the ‘Operation Settings’ tab. Enter the condition in</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">the Value field</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 514584599" height="266" src="../../../../images/Excel Action_files/image5.png" width="928" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">5) Select the file using the Browse button. From the ‘Sheet Name’ drop-down, select the desired sheet.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">Clicking on the ‘View All Data’ button will display the contents in the sheet.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 1333986045" height="216" src="../../../../images/Excel Action_files/image6.png" width="926" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">If a user wants to use a filter whose name has space in it, then use the below format: -</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">The name should be in square brackets: -</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">[Paramter Name] =’&lt;ID&gt;’</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 4" height="225" src="../../../../images/Excel Action_files/image7.png" width="659" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">6) Enter condition in ‘Select Row(s) Where:’ field E.g., param11=10 or param12=12</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">‘Primary Key column:’ should be given.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">Open the Value Expression Editor (button next to Select row(s) Where) as shown to frame a needed condition using the various expression components.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">Once done click on OK.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 408811084" height="484" src="../../../../images/Excel Action_files/image8.png" width="704" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">Now click on the ‘View Filtered Data’ button will give the result obtained from the ‘Select Row(s) Where:’ condition.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 8" height="370" src="../../../../images/Excel Action_files/image9.png" width="777" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">7) Run Action will read the content as per the given condition.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">             8) Clicking on the ‘Ok’ button of the above screen will add the Action</span><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 7" height="124" src="../../../../images/Excel Action_files/image10.png" width="773" /></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">      <strong>Write Excel</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">To create a Write action on excel, it is first required to Read the Excel. Please follow the Read Excel steps given above.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">Select the Excel Action as ‘Write Data’ from the dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 419708242" height="266" src="../../../../images/Excel Action_files/image11.png" width="815" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">The ‘Data to Write:’ is used to write the data. Multiple columns can be written using “,” separator.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;">If the excel column’s name has space in it then use square brackets E.g. [customer name] =’Daniel’.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 17" height="225" src="../../../../images/Excel Action_files/image12.png" width="840" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"> The Run Action will write the data in excel which can also be viewed using the ‘View Filtered Data’ button</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"><img alt="Picture 18" height="385" src="../../../../images/Excel Action_files/image13.png" width="855" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:24px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+  </div>
+</body>
+</html>

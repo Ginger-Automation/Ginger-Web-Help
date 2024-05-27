@@ -1,0 +1,116 @@
+h2.Numbering11 {
+    counter-reset: Numbering182;
+    margin-left: 1.18in;
+    --autonumber: autonumber;
+}
+h2.Numbering11:before {
+    counter-increment: Numbering181;
+    content: counter(Numbering181,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.93in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+h2.Numbering11[data-list-level="2"]:before {
+    counter-increment: Numbering182;
+    content: counter(Numbering182,lower-alpha)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.43in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+h2.Numbering11[data-list-level="2"] {
+    counter-reset: Numbering183;
+    margin-left: 1.68in;
+}
+a.Hyperlink {
+    color: #0563C1;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    margin-bottom: 0;
+    font-family: 'Times New Roman', 'serif';
+    font-size: 12pt;
+}
+p.Numbering6 {
+    counter-reset: Numbering142;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering6:before {
+    counter-increment: Numbering141;
+    content: counter(Numbering141,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering9 {
+    counter-reset: Numbering122;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering9:before {
+    counter-increment: Numbering121;
+    content: counter(Numbering121,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+    font-size: 14pt;
+    font-weight: bold;
+}
+p.TOC2 {
+    margin-left: 0.15in;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+    font-size: 11pt;
+}
+p.Title {
+    margin-bottom: 0;
+    font-size: 20pt;
+    color: #222A35;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering181 Numbering61 Numbering62 Numbering182 Numbering141 Numbering121 ;
+    line-height: 1.08;
+    margin-bottom: 8pt;
+    font-size: 11pt;
+    font-family: Calibri;
+}
+.margin-left-0 {
+margin-left:0;
+}
+.margin-left-0-06in {
+margin-left:0.06in;
+}
+.margin-left-0-25in {
+margin-left:0.25in;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

@@ -1,0 +1,114 @@
+h1.Numbering16 {
+    counter-reset: Numbering172;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+h1.Numbering16:before {
+    counter-increment: Numbering171;
+    content: counter(Numbering171,decimal)".";
+    font-size: 14pt;
+    color: #17365D;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+span.Hyperlink {
+    color: #0000FF;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering17 {
+    counter-reset: Numbering102;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering17:before {
+    counter-increment: Numbering101;
+    content: counter(Numbering101,decimal)")";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering21 {
+    counter-reset: Numbering62;
+    margin-left: 0.75in;
+    --autonumber: autonumber;
+}
+p.Numbering21:before {
+    counter-increment: Numbering61;
+    content: counter(Numbering61,decimal)")";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.50in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering22 {
+    counter-reset: Numbering212;
+    margin-left: 0.51in;
+    --autonumber: autonumber;
+}
+p.Numbering22:before {
+    counter-increment: Numbering211;
+    content: counter(Numbering211,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.26in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOC2 {
+    margin-left: 0.15in;
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering171 Numbering101 Numbering61 Numbering211 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-25in {
+margin-left:0.25in;
+}
+.margin-left-0-51in {
+margin-left:0.51in;
+}
+.margin-left-0-63in {
+margin-left:0.63in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

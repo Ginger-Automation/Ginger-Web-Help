@@ -1,0 +1,66 @@
+p.ListParagraph0 {
+    margin-left: 0.50in;
+}
+p.Numbering4 {
+    counter-reset: Numbering42;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering4:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering5 {
+    counter-reset: Numbering12;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering5:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering6 {
+    counter-reset: Numbering32;
+    margin-left: 0.54in;
+    --autonumber: autonumber;
+}
+p.Numbering6:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.29in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+body {
+    font-size: 12pt;
+    font-family: Calibri;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-0-54in {
+margin-left:0.54in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

@@ -151,6 +151,7 @@
   <page navtitle="How to Execute Run Set Via CLI" href="../contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm" format="html" processing-role="normal"></page>
   <page navtitle=" Run Set Extra Functionalities" href="../contents/assets/Ginger_By_Amdocs/Run_Sets/Runset_Extra_Functionalities.htm" format="html" processing-role="normal"></page>
   <page navtitle="How to Create Run Set Report" href="../contents/assets/Ginger_By_Amdocs/Run_Sets/Runset_Report.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_create_Virtual_Environment_or_Dynamic_Environment_via_CLI.htm" format="html" processing-role="normal"></page>
 </book>
 <book navtitle="Integrations" format="html" processing-role="normal">
   <book navtitle="ALM Integrations" format="html" processing-role="normal">

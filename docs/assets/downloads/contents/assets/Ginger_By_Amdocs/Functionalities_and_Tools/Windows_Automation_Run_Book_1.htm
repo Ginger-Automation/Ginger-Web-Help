@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Windows Automation Run Book</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/Windows Automation Run Book.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <h1 class="margin-left-0-25in"><a id="Windows_Automation_Run_Book"></a></h1>
+    <h1 class="margin-left-0-25in"><span style="font-size:32px;"><span style="font-family:Calibri;margin-left:116px"> Windows Automation Run Book</span></span></h1>
+    <p> </p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="TOC2"><span style="font-family:Calibri;"></span></p>
+    <p class="TOC2 margin-left-0"><span style="font-family:Calibri;"><span style="color:#0000ff;"><span style="font-size:19px;"><strong>Contents</strong> </span></span></span></p>
+    <p class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Configuring_Solution_2">Configuring Solution</a></span></span></p>
+    <p class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Configuration_for_Windows_1">Configuration for Windows</a></span></span></p>
+    <p class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Automation_Procedure_1">Automation Procedure</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Understanding_the_Ginger_Window_Explorer_1">Understanding the Ginger Window Explorer</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Ginger_Windows_Actions:_3">Ginger Windows Actions</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Automating_Desktop:_1">Automating Desktop</a></span></span></li>
+    </ul>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">Windows Automation enables Ginger to Automate windows .NET-based apps, including the elements on Desktop.</span></span></span></p>
+    <p> </p>
+    <h2 class="Heading2"><span style="margin-left:104px;"><span style="font-family:Calibri;"> <a id="Configuring_Solution_1"></a><a id="Configuring_Solution_2"></a><span style="font-size:32px;color:#302E45">Configuring Solution</span></span></span></h2>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Click on the Solution name drop-down and select the ‘Create New Solution’ option.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size: 16px;"> <img alt="Picture 757342356" height="234" src="../../images/Windows Automation Run Book_files/image1.png" width="845" /></span></span></span></p>
+    <p><span style="margin-left:104px;"></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Click on Create New Solution, enter Solution Name, browse Solution Folder, Select Main Application Name as “MyWindowsApp”, Select Main </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">Application </span></span><span style="font-family:Calibri;"><span style="font-size:16px;">Platform “Windows” and</span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">then click Create.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1164133373" height="364" src="../../images/Windows Automation Run Book_files/image2.png" width="845" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <h2 class="Heading2"><span style="margin-left:104px;"><span style="font-family:Calibri;"><a id="Configuration_for_"></a><a id="Configuration_for__1"></a><a id="Configuration_for_Windows"></a><a id="Configuration_for_Windows_1"></a><span style="color:#302e45;font-size:32px">Configuration for Windows</span></span></span></h2>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> At least one agent is required for Windows Automation. When a new solution is created, a default agent is available in the solution. Another </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">Agent can be </span></span><span style="font-size:16px;"><span style="font-family:Calibri">added with the below </span></span></span><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> steps.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"><strong> Configuring Agent</strong></span><span style="font-family:Calibri;"> </span></span></span></p>
+    <p><span style="font-size:16px;"><span style="margin-left:104px;"><span style="font-family:Calibri;"> To add a new Agent, go to the Configurations --&gt; Agents, and click on the + button as shown below.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1617901300" height="190" src="../../images/Windows Automation Run Book_files/image3.png" width="827" /></span></span><span style="margin-left:104px;"></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size: 16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size: 16px;"> The Agent Wizard is displayed. It shows the information about the Agent. Click on the Next button.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 768017406" height="824" src="../../images/Windows Automation Run Book_files/image4.png" width="816" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> It is advisable to go as per the methodology as Windows_&lt;Application_Name&gt;</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> In this case, we do not have any specific application, so we are using the agent name as “Windows Platform Agent”.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Select the Platform as ‘Windows’ and click on the Next button.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1056282128" height="760" src="../../images/Windows Automation Run Book_files/image5.png" width="753" /></span></span></p>
+    <p><span style="margin-left:104px;">‎</span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">Driver Configurations window gets displayed. Users can edit the parameters if desired.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Users can click on the ‘Test Agent’ button to test if the connection is successful.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Click on the Finish button.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1332065502" height="767" src="../../images/Windows Automation Run Book_files/image6.png" width="759" /></span></span></p>
+    <p> </p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> The Agent is added to the list.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 434295170" height="298" src="../../images/Windows Automation Run Book_files/image7.png" width="762" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><a id="2.2._Configuring_Business_flow:"></a><a id="2.2._Configuring_Business_flow:_1"></a><span style="font-size:16px;"><strong>Configuring Business flow:</strong></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;">While adding new Business flow, a user must select the target application “WindowsApplication”, so that Ginger would make the </span></span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;">Windows agents available for that business flow.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1567634484" height="410" src="../../images/Windows Automation Run Book_files/image8.png" width="758" /></span></span></p>
+    <p> </p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:17px;"><span style="font-size: 16px;"> If the business flow is created already, the above dialog box will be displayed in the Details tab of the Activity.</span></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 2049962233" height="523" src="../../images/Windows Automation Run Book_files/image9.png" width="772" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <h2 class="Numbering13 Heading2" data-list-level="2"><span style="margin-left:104px;"><span style="font-family:Calibri;"> <a id="Automation_Procedure"></a><a id="Automation_Procedure_1"></a><span style="color:#302e45;font-size:32px">Automation Procedure</span></span></span></h2>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Automation in Windows is possible only through spying (using the Window Explorer of Ginger). </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> Recording actions are not implemented for Windows.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> After the Agent has connected successfully, a green switch would indicate all is working.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> <img alt="Picture 134288054" height="177.0" src="../../images/Windows Automation Run Book_files/image10.png" width="685.0" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p class="Numbering13 ListParagraph" data-list-level="2"><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;">Concept and additional information -</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> In simple words, you need to use Switch Window action always before performing any activities on a particular window. </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> This action tells Ginger which window to work on out of many running windows applications.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></span></p>
+    <p><span style="margin-left:104px;"></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> How does it work?</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> When we say we want to Automate a windows application, the first question comes:</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> How will Ginger identify the window that we want to automate out of all the windows running?</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> The answer is simple. We would tell Ginger to Automate a specific window by using its window name as its identity. Thus, we refer to the </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;">window to automate </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-size:16px;"><span style="font-family:Calibri;"> by using its window name and switching to that window before performing any other actions on it.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <h2 class="Heading2" data-list-level="2"><span style="margin-left:104px;"><span style="font-family:Calibri;"> <a id="Understanding_the_Ginger_Window_Explorer"></a><a id="Understanding_the_Ginger_Window_Explorer_1"></a>Understanding the Ginger Window Explorer</span></span></h2>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">To open Ginger’s Window Explorer, click on the + button as shown below.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1726928411" height="367" src="../../images/Windows Automation Run Book_files/image11.png" style="cursor: nwse-resize;" width="932" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Click on the Explorer button.</span></span></span></p>
+    <p> </p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><img alt="Picture 656770830" height="324" src="../../images/Windows Automation Run Book_files/image12.png" width="939" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Then following window get displayed.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1841389807" height="646.0" src="../../images/Windows Automation Run Book_files/image13.png" width="309.5" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Adding Switch Window Action -</span><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> First, select the window which we need to Automate from the Ginger Window Explorer.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 136122610" height="480.0" src="../../images/Windows Automation Run Book_files/image14.png" width="382.0" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">Note that the selection was done manually in this case.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> To do this at run time, we need a Switch Window Action with the window name as a parameter.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Click on the button shown below to create the activity and add it to the business flow with a single click.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1523086302" height="317.0" src="../../images/Windows Automation Run Book_files/image15.png" width="403.6" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;">‎</span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">As we proceed further with creating the actions for the automation, keep an eye on the “Activity Actions” section, where these actions will be </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">added one by one a</span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">s soon as we add them.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> For now, we can see only the action that we have added, i.e., the switch window action:</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <img alt="Picture 1613220637" height="155" src="../../images/Windows Automation Run Book_files/image16.png" width="808" /></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;"> Spying Elements</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Live Spy tab in the Ginger Window Explorer allows the user to spy on the elements.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 2006535641" height="517" src="../../images/Windows Automation Run Book_files/image17.png" width="519" /></span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Click on the Spy button to activate the live spy.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 903376127" height="511" src="../../images/Windows Automation Run Book_files/image18.png" width="515" /></span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> When Spy gets activated below Spying... button gets displayed.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 616682586" height="400.0" src="../../images/Windows Automation Run Book_files/image19.png" width="403.0" /></span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> On the windows application, hover over the area you need to perform an action and press and hold the control button on the keyboard.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Suppose if we want to click on the <img alt="Picture 25" height="16.0" src="../../images/Windows Automation Run Book_files/image20.png" width="15.5" /> button in Skype, we hover on that button while keeping the control key pressed. </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> A red border over the element will confirm the element that is being spied.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 26" height="728.0" src="../../images/Windows Automation Run Book_files/image21.png" width="402.0" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Once the element was identified click on the Stop button as shown below.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1688359563" height="266" src="../../images/Windows Automation Run Book_files/image22.png" width="472" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> At this point, the Ginger Window Explorer would look like this:</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 652697544" height="850" src="../../images/Windows Automation Run Book_files/image23.png" width="412" /></span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> There are 2 sections of the Ginger Window Explorer that we require to check:</span></span></span></p>
+    <p class="Numbering6 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Actions</span></span></span></p>
+    <p class="Numbering6 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Locators</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> The Actions section: This section shows the actions that we can perform on that specific element. </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Users can select Element Type and Element Action depending upon the need.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1224317104" height="690" src="../../images/Windows Automation Run Book_files/image24.png" width="395" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> The Locators section: This section will show the different locators that we can use to identify the element. </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> We need to use a locator that works for this scenario. (Ideally should be unique)</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">         </span><img alt="Picture 207643265" height="516" src="../../images/Windows Automation Run Book_files/image25.png" style="white-space: pre-wrap;" width="369" /><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> If any parameters need to be passed in the action (like if you need to set a specific text value in a text box), they should be added in the value </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">textbox of the</span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Ginger Window Explorer. For a button, this is not required, so we will skip that part.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Once we have selected the Action and a Locator, we can click on the Run button to test it.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> (In case it fails, test again with a different locator/action)</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1659512839" height="799" src="../../images/Windows Automation Run Book_files/image26.png" width="402" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> The test result will be displayed as follows. We can check Execution Status under Execution Details.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1038032430" height="795" src="../../images/Windows Automation Run Book_files/image27.png" width="405" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> (If you do not get this message, try using a different locator)</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">    As soon as the action is tested to be working, add it to your business flow by using the Add button.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 135287671" height="775" src="../../images/Windows Automation Run Book_files/image28.png" width="395" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Spying different types of Elements</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> There can be multiple element types, like buttons, text box, drop-down, combo box, radio button, etc.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> For all these different types of elements, the user can select Element Type and Element Actions from the Action tab.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Similarly, in case the element is a text box, then the user can perform Set Value, Get Value, Get Control Property, Send Key, Set Text, etc. actions </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">related to the </span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> text box element.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 881633094" height="755" src="../../images/Windows Automation Run Book_files/image29.png" width="383" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Ginger Window Explorer - Conclusion</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> This concludes the Ginger Window Explorer.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> It is a powerful tool that is flexible to support and handle any type of element and can add actions under it.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Not only is it useful in Windows, but you can also use it while Automating Web, CRM or CSM, in the same way.</span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <h2 class="Heading2" data-list-level="2"><span style="margin-left:104px;"><span style="font-family:Calibri;"><a id="Ginger_Windows_Actions:"></a><a id="Ginger_Windows_Actions:_1"></a><a id="Ginger_Windows_Actions:_2"></a><a id="Ginger_Windows_Actions:_3"></a>Ginger Windows Actions:</span></span></h2>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">Although Ginger Window Explorer selects and adds the action of the required type to the business flow, there can be circumstances where we </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">need to add </span></span></span><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">some actions manually. Hence, let us hover through the actions supported by a Windows Agent.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 60386574" height="286" src="../../images/Windows Automation Run Book_files/image30.png" width="599" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> The help topics for these actions are provided in the Ginger interface itself and will be visible by clicking on the action type.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Windows Control Action</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Although the action can be created using Ginger Window Explorer, in some cases we need to use an action that is different from the available </span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">list of actions.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> After the action is added, what the action does can be changed by editing the action.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1241147541" height="284" src="../../images/Windows Automation Run Book_files/image31.png" width="763" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Below is a list of actions used frequently:</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">Click: Performs click operation</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">GetValue: Fetches value from an element</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">IsEnabled: Returns the state of an object as true or false. (Used in checkboxes/radio buttons)</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">SetValue: Sets value in an element. Can be a text box, combo box, list, etc. anything that requires setting a value.</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">DoubleClick: Performs double click operation.</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">RightClick: Performs right-click operation.</span></span></span></p>
+    <p class="Numbering9 ListParagraph"><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;">SendKeys: Sends keyboard strokes to an element. Use this if SetValue is not working.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Window Action</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> The action comes with 5 operations that can be performed on a window level. Each action is self-explanatory.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1853704952" height="169" src="../../images/Windows Automation Run Book_files/image32.png" width="763" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Switch Window Action</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> Brings a window in focus to perform actions on it.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> “Locate By” used is generally “By Title” and “Locate Value” is the title of the window to be brought in focus.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 1129970351" height="207" src="../../images/Windows Automation Run Book_files/image33.png" width="779" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"></span></span></p>
+    <h2 class="Heading2" data-list-level="2"><span style="margin-left:104px;"><span style="font-family:Calibri;"><a id="Automating_Desktop:"></a><a id="Automating_Desktop:_1"></a>Automating Desktop:</span></span></h2>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"> <span style="font-size:16px;">Items on the desktop can also be Automated using Ginger.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> To automate an item on a desktop, use “Program Manager” as the Window in the Ginger Window Explorer.</span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <img alt="Picture 820497624" height="480.0" src="../../images/Windows Automation Run Book_files/image34.png" width="468.0" /></span></span></span></p>
+    <p><span style="margin-left:104px;"><span style="font-family:Calibri;"><span style="font-size:16px;"></span></span></span></p>
+    <p><span style="font-family:Calibri;"><span style="font-size:16px;"><span style="margin-left:104px;"> After this, the procedure is the same as automating any other applica</span>tion.</span></span></p>
+  </div>
+</body>
+</html>

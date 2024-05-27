@@ -1,5 +1,30 @@
 {
   "recent-files::internal:document": [{
+    "title": "How_to_create_Virtual_Environment_or_Dynamic_Environment_via_CLI",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_create_Virtual_Environment_or_Dynamic_Environment_via_CLI.htm",
+    "pinned": false,
+    "time": "May 27, 3:13 PM"
+  }, {
+    "title": "How_to_Execute_Run_set_Via_CLI",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_Run_set_Via_CLI.htm",
+    "pinned": false,
+    "time": "May 27, 2:57 PM"
+  }, {
+    "title": "How_to_Execute_a_Run_set",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_Execute_a_Run_set.htm",
+    "pinned": false,
+    "time": "May 27, 2:57 PM"
+  }, {
+    "title": "Ginger_Azure_DevOps_ALM_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Azure_DevOps_ALM_Integration.htm",
+    "pinned": false,
+    "time": "May 27, 11:56 AM"
+  }, {
+    "title": "What_is_Environment",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm",
+    "pinned": false,
+    "time": "May 27, 11:45 AM"
+  }, {
     "title": "Ginger_-_OTOMA_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
     "pinned": false,
@@ -70,11 +95,6 @@
     "pinned": false,
     "time": "Mar 20, 10:28 AM"
   }, {
-    "title": "Ginger_Azure_DevOps_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Azure_DevOps_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Mar 13, 7:06 PM"
-  }, {
     "title": "Accessibility_Testing_Action",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Accessibility_Testing_Action.htm",
     "pinned": false,
@@ -104,26 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/UI/Ginger_Configurations_Tab_Overview.htm",
     "pinned": false,
     "time": "Jan 19, 10:13 AM"
-  }, {
-    "title": "Ginger_Zephyr_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Zephyr_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 10:00 AM"
-  }, {
-    "title": "Ginger_qTest_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_qTest_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:59 AM"
-  }, {
-    "title": "Ginger_QC_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_QC_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:59 AM"
-  }, {
-    "title": "Ginger_Octane_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Octane_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Jan 19, 9:59 AM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-05-08T20:13:39+05:30",
+      "time": "2024-05-27T15:52:51+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
@@ -164,6 +164,16 @@
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "How_to_create_Virtual_Environment_or_Dynamic_Environment_via_CLI",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/How_to_create_Virtual_Environment_or_Dynamic_Environment_via_CLI.htm",
+    "pinned": false,
+    "time": "May 27, 3:43 PM"
+  }, {
+    "title": "Environment_CLI_Configurations_(How_to_create_Dynamic_Environment_via_CLI)",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Environment_CLI_Configurations_(How_to_create_Dynamic_Environment_via_CLI).htm",
+    "pinned": false,
+    "time": "May 27, 2:48 PM"
+  }, {
     "title": "Ginger_Azure_DevOps_ALM_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Azure_DevOps_ALM_Integration.htm",
     "pinned": false,

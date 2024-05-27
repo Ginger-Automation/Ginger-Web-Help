@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger Groovy Plugin – User Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/Groovy Plugin User Guide.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title"> </p>
+    <p><span style="font-weight:bold;font-size:32px;margin-left:160px"> <span style="font-family:Calibri;">Ginger Groovy Plugin – User Guide</span></span></p>
+    <p> </p>
+    <h2>Purpose</h2>
+    <p>    <span style="font-size:17px;">     The Groovy Plugin target is to allow executing Groovy scripts from Ginger as an integrative part of the Ginger test flow.</span></p>
+    <p><span style="font-size:17px;"></span><span style="font-size:17px;"></span></p>
+    <p><span style="font-size:17px;">       Ginger Groovy plugin allows to:</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:17px;">Configure Groovy script execution by using a script file.</span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:17px;">Configure Groovy script execution by using script content.</span></p>
+    <p><span style="font-size:17px;"></span></p>
+    <p><span style="font-size:17px;">      For the above execution methods ginger groovy plugin offers:</span></p>
+    <p class="Numbering27 ListParagraph"><span style="font-size:17px;">Send execution Input Values to the groovy script.</span></p>
+    <p class="Numbering27 ListParagraph"><span style="font-size:17px;">Get execution output values by parsing and showing console values and look for “key=value” pairs</span></p>
+    <p><span style="font-size:17px;"></span></p>
+    <p><span style="font-size:17px;">      The purpose of this document is to provide step by step guide on the Ginger Groovy plugin way of installing and using.</span></p>
+    <p> </p>
+    <h2><br />
+      ‎Prerequisites</h2>
+    <p class="margin-left-0-31in"><span style="font-size:16px;">Please see below the items which need to be set up on the testing environment before executing the Groovy plugin.</span></p>
+    <p class="margin-left-0-31in"> </p>
+    <h2 class="Numbering28" data-list-level="2"><a id=".NET_Core_SDK_InstallationThe_plugin_requires_.NET_Core_SDK_version_2.2_or_above_to_be_installed_on_the_machine_it_is_running_on.Please_install_it_from_the_below_link:https://dotnet.microsoft.com/download_Groovy_InstallationGroovy_installation_is_a_must_for_the_plugin_to_work.“GROOVY_HOME”_environment_variable_system_configuration_is_also_required._Java_Installation"></a><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#ec008c">.NET 7 SDK Installation</span></span></span></b></span></span></span></span></h2>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:42px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">The plugin requires .NET 7 SDK or above to be installed on the machine it is running on. Please download and install it from </span></span><span style="color:black"><a href="" style="color:blue; text-decoration:underline"><span style="font-size:12.0pt">Microsoft Official Page</span></a></span><span style="font-size:12.0pt"><span style="color:black">.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-44in"> </p>
+    <h2 class="Numbering28" data-list-level="2">     Groovy Installation</h2>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">Groovy installation is a must for the plugin to work.</span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">“GROOVY_HOME” environment variable system configuration is also required.</span></p>
+    <p class="margin-left-0-44in"> </p>
+    <h2 class="Numbering28" data-list-level="2">    Java Installation</h2>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">Java installation is a must for the plugin to work.</span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">“JAVA_HOME” environment variable system configuration is also required.</span></p>
+    <p class="margin-left-0-44in"> </p>
+    <h2 class="Numbering28" data-list-level="2">    Script</h2>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">The groovy script files need to be located on the machine on which the Groovy Plugin running.</span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;">It is recommended to place the script under the Ginger Solution “Documents” folder and use relative paths to it (like “~/Documents/Scripts”) so it will work on any user machine.</span><span style="font-size:16px;"></span><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-44in"> </p>
+    <h2>  Install Groovy Plugin</h2>
+    <p class="text-indent-0-25in"><span style="font-size:16px;">    The ginger groovy plugin needs to be installed to the Ginger Solution in order to be used.</span></p>
+    <p class="text-indent-0-25in"><span style="font-size:16px;">    Please follow the below steps to perform it.</span></p>
+    <p class="text-indent-0-25in"> </p>
+    <h2 class="Numbering28" data-list-level="2">   Add groovy Plugin to Ginger Solution</h2>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">Download and Install the latest/required Ginger version from <a class="Hyperlink" href="https://ginger.amdocs.com/?csrt=719791481641564193#downloads">here</a></span></p>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">Launch Ginger and add a Solution to it</span></p>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">In Solution go to Resources Plugins</span></p>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">Click on the “Download Plugin” tab</span></p>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">Select “Groovy” Plugin from loaded list of Plugins</span></p>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">Select latest/required Plugin version</span></p>
+    <p class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;">Click on Install</span></p>
+    <p><span style="font-size:16px;">             Once installation is done, shift to the “Installed” tab and confirm the ”Groovy” plugin appears on the tree- you will see the Plugin details on the right</span></p>
+    <p><span style="font-size:16px;"> including its embedded action types.</span></p>
+    <p> </p>
+    <p>                 <img alt="Picture 1" height="331" src="../../../images/Groovy Plugin User Guide_files/image2.png" width="892" /></p>
+    <p> </p>
+    <p>                 <img alt="Picture 2" height="410" src="../../../images/Groovy Plugin User Guide_files/image3.png" width="883" /></p>
+    <p> </p>
+    <p> </p>
+    <h2>     Executing Groovy Script</h2>
+    <p class="margin-left-0-25intext-indent-0-19in">   <span style="font-size:16px;"><span style="font-family:Calibri;">      Please follow the below steps to execute the groovy script.</span></span></p>
+    <p class="margin-left-0-25intext-indent-0-19in"> </p>
+    <h2>      Execute Groovy script using an external file</h2>
+    <p class="Numbering33 ListParagraph" data-list-level="3"><span style="font-size:16px;">Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page</span></p>
+    <p class="Numbering33 ListParagraph" data-list-level="3"><span style="font-size:16px;">Click on Add Action button, in the loaded window go to “Plugins Actions”</span></p>
+    <p class="Numbering33 ListParagraph" data-list-level="3"><span style="font-size:16px;">Select “Execute Groovy Script File” Action</span></p>
+    <p class="ListParagraph margin-left-0-81in"> </p>
+    <p class="margin-left-0-50in"><img alt="Picture 5" height="483" src="../../../images/Groovy Plugin User Guide_files/image4.png" width="912" /></p>
+    <p class="margin-left-0-50in"> </p>
+    <p class="Numbering33 ListParagraph" data-list-level="3"><span style="font-size:16px;">Set Action configurations according to the below:</span></p>
+    <p class="ListParagraph margin-left-0-81in"> </p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:702.0px">
+        <colgroup>
+          <col style="width:126px" />
+          <col style="width:108px" />
+          <col style="width:174px" />
+          <col style="width: 240px;" />
+          <col style="width: 337px;" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Field Name</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Mandatory?</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Field Description</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Sample Value</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Comments</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Overwrite Groovy Home Path</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">No</p>
+              <p class="ListParagraph margin-left-0">(assuming “GROOVY_HOME” system variable was configured)</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Full Path of groovy executer (groovy.bat in windows or groovy in Linux).</p>
+              <p class="ListParagraph margin-left-0">If the value has not been set (recommended) so “GROOVY_HOME” system environment variable value will be used automatically.</p>
+              <p class="ListParagraph margin-left-0">If “bin\groovy” is missing from provided path so it has been added automatically.</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">“C:\ Program Files \Groovy\groovy-2.5.5\bin\groovy.bat”</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">For allowing the Action to run on any machine It is recommended to configure the “GROOVY_HOME” system variable on the running machine and to keep this Action field value empty</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Groovy Script Path</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Yes</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Full Path of the groovy script file.</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="">
+              <p class="ListParagraph margin-left-0">“C:\Work\Groovy\ BasicScript.groovy”</p>
+            </td>
+            <td style="">
+              <p class="ListParagraph margin-left-0">For allowing the Action to run on any machine It is recommended to place the groovy script file under the Ginger Solution “Documents” folder and set a relative path to it in Action definitions like:</p>
+              <p class="ListParagraph margin-left-0">“~\Documents\Scripts\BasicScript.groovy”</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Input Parameters</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">No</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Add groovy input parameters as per requirement.</p>
+            </td>
+            <td style="">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-indent-0-44in"> </p>
+    <p class="text-indent-0-44in"><img alt="Picture 6" height="596" src="../../../images/Groovy Plugin User Guide_files/image5.png" width="882" /></p>
+    <h2 class="Numbering35" data-list-level="2"> </h2>
+    <h2 class="Numbering35" data-list-level="2">       Execute Groovy script using content</h2>
+    <p class="Numbering36 ListParagraph"><span style="font-size:16px;">Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page</span></p>
+    <p class="Numbering36 ListParagraph"><span style="font-size:16px;">Click on Add Action button, in the loaded window go to “Plugins Actions”</span></p>
+    <p class="Numbering36 ListParagraph"><span style="font-size:16px;">Select “Execute Groovy Script” Action</span></p>
+    <p class="text-indent-0-50in"><img alt="Picture 8" height="485" src="../../../images/Groovy Plugin User Guide_files/image6.png" width="861" /></p>
+    <p> </p>
+    <p class="Numbering36 ListParagraph"><span style="font-size:16px;">Set Action configurations according to the below:</span></p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:702.0px">
+        <colgroup>
+          <col style="width:126px" />
+          <col style="width:108px" />
+          <col style="width:174px" />
+          <col style="width:132px" />
+          <col style="width:162px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Field Name</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Mandatory?</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Field Description</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Sample Value</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Comments</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Overwrite Groovy Home Path</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">No</p>
+              <p class="ListParagraph margin-left-0">(assuming “GROOVY_HOME” system variable was configured)</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Full Path of groovy executer (groovy.bat in windows or java in Linux).</p>
+              <p class="ListParagraph margin-left-0">If the value has not been set (recommended) so “GROOVY_HOME” system environment variable value will be used automatically.</p>
+              <p class="ListParagraph margin-left-0">If “bin\groovy” is missing from provided path so it has been added automatically.</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">“C:\ Program Files \Groovy\groovy-2.5.5\bin\groovy.bat”</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">For allowing the Action to run on any machine It is recommended to configure the “GROOVY_HOME” system variable on the running machine and to keep this Action field value empty</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Groovy Script Content</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Yes</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Copy-Paste groovy script.</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="font-size: 16px">
+              <p>class BasicScript</p>
+              <p>{</p>
+              <p>static void main(String[] args)</p>
+              <p>{</p>
+              <p>println &#39;Groovy world!&#39;;</p>
+              <p class="ListParagraph margin-left-0">}</p>
+              <p class="ListParagraph margin-left-0">}</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Input Parameters</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">No</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Add groovy input parameters as per requirement.</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h2><br />
+      ‎ Output Values from Groovy Flow to Ginger Flow</h2>
+    <p>             <span style="font-size:16px;">The groovy plugin supports getting output values from the Groovy Flow.</span></p>
+    <p class="ListParagraph"><span style="font-size:16px;">It has been done by parsing all values which the Groovy flow writes to the Console during execution, the parsing mechanism looks for any “key=value” pair and if it been found so the Key and Value been added to the Action Output Values list.</span></p>
+    <p class="ListParagraph"> </p>
+    <h2 class="Numbering38" data-list-level="2">     How to Get Output Values from Groovy Flow to Ginger Flow</h2>
+    <p class="Numbering38 ListParagraph" data-list-level="3"><span style="font-size:16px;">Prepare the Groovy Flow Code for Sharing Output Values</span></p>
+    <p class="Numbering44 ListParagraph"><span style="font-size:16px;">Open the Script in notepad or another Editor.</span></p>
+    <p class="Numbering44 ListParagraph"><span style="font-size:16px;">Look for the places in code (either tested class methods or actual test methods) which have values that can be shared with Ginger during execution</span></p>
+    <p class="Numbering44 ListParagraph"><span style="font-size:16px;">In each such place, add a “println()” line of code with the Value key name equal to the value that needs to be shared, see sample below:</span></p>
+    <p class="ListParagraph margin-left-0-94in"> </p>
+    <p class="margin-left-0-50in"><img alt="Picture 9" height="384" src="../../../images/Groovy Plugin User Guide_files/image7.png" width="898" /></p>
+    <p class="ListParagraph margin-left-0-94in"> </p>
+    <h2 data-list-level="3"><span style="font-size:16px;">Configure Ginger Groovy Plugin Action to Read Output Values</span></h2>
+    <p class="Numbering46 ListParagraph"><span style="font-size:16px;">Configure any one of the Groovy Actions configurations</span></p>
+    <p class="Numbering46 ListParagraph"><span style="font-size:16px;">After execution end, go to Action “Output Values” tab and see all output values which were parsed in run time</span></p>
+    <p class="Numbering46 ListParagraph"><span style="font-size:16px;">Now you can set Validations on top of those values or pass them to Variables/Data Source or others to be used in the next Actions/other in the Ginger flow</span></p>
+    <p class="ListParagraph"> </p>
+    <p class="text-indent-0-50in"><img alt="Picture 10" height="534" src="../../../images/Groovy Plugin User Guide_files/image8.png" width="823" /></p>
+  </div>
+</body>
+</html>
