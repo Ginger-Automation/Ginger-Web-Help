@@ -1,1 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>    <preset>    <title>Learn</title><content><toc><path>../../toc/Ginger_by_Amdocs_Help.toc</path><name>Ginger_by_Amdocs_Help</name></toc><index type="boolean">true</index><glossary><path>../../glossary/Default.glo</path><name>Default</name></glossary><brs type="array"></brs><masterpage></masterpage><includeExpandingText type="boolean">false</includeExpandingText><includeDropdownText type="boolean">false</includeDropdownText></content><type>kb</type><outputPath>C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/outputs/Learn/Knowledge Base</outputPath><name>Knowledge Base</name><starterPage>default.htm</starterPage><kbtype><name>aem</name><displayName>AEM</displayName></kbtype><kbtarget><salesforce><useinlinestyles type="boolean">true</useinlinestyles><draft type="boolean">true</draft><useimages type="boolean">true</useimages><usedocs type="boolean">true</usedocs><removetitle type="boolean">true</removetitle></salesforce><zendesk><useinlinestyles type="boolean">true</useinlinestyles><useimages type="boolean">true</useimages><draft type="boolean">true</draft><usedocs type="boolean">true</usedocs><usejs type="boolean">true</usejs><useflattoc type="boolean">false</useflattoc><removetitle type="boolean">true</removetitle></zendesk><zoho><useinlinestyles type="boolean">true</useinlinestyles><useimages type="boolean">true</useimages><usedocs type="boolean">true</usedocs><removetitle type="boolean">true</removetitle><useflattoc type="boolean">false</useflattoc><draft type="boolean">true</draft></zoho><servicenow><useinlinestyles type="boolean">true</useinlinestyles><useimages type="boolean">true</useimages><usedocs type="boolean">true</usedocs><usetags type="boolean">true</usetags><draft type="boolean">true</draft><useflattoc type="boolean">false</useflattoc><removetitle type="boolean">true</removetitle></servicenow><aem><aemuseinlinestyles type="boolean">false</aemuseinlinestyles><removetitle type="boolean">true</removetitle><usecomponents type="boolean">false</usecomponents><useimages type="boolean">true</useimages><usedocs type="boolean">true</usedocs><usejs type="boolean">false</usejs></aem><publishstatus type="array"></publishstatus></kbtarget><search><suggestion type="boolean">true</suggestion><context type="boolean">true</context><contextLimit type="number">100</contextLimit><glossary type="boolean">true</glossary><showSpeclChars type="boolean">false</showSpeclChars><speclChars>0;1;2;3;4;5;6;7;8;9</speclChars><fuzzy type="boolean">true</fuzzy></search><patchHomepage type="boolean">true</patchHomepage><gdprCompliance type="boolean">true</gdprCompliance><serversStatus type="array"></serversStatus><republish type="boolean">false</republish><generateMapFiles type="boolean">true</generateMapFiles><generateBRS type="boolean">true</generateBRS></preset>
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <title>Learn</title>
+  <content>
+    <toc>
+      <path>../../toc/Ginger_by_Amdocs_Help.toc</path>
+      <name>Ginger_by_Amdocs_Help</name>
+    </toc>
+    <index type="boolean">true</index>
+    <glossary>
+      <path>../../glossary/Default.glo</path>
+      <name>Default</name>
+    </glossary>
+    <brs type="array"></brs>
+    <masterpage></masterpage>
+    <includeExpandingText type="boolean">false</includeExpandingText>
+    <includeDropdownText type="boolean">false</includeDropdownText>
+  </content>
+  <type>kb</type>
+  <outputPath>C:/Users/vijayas/OneDrive - AMDOCS/Protected Folders/Documents/My RoboHelp Projects/outputs/Learn/Knowledge Base</outputPath>
+  <name>Knowledge Base</name>
+  <starterPage>default.htm</starterPage>
+  <kbtype>
+    <name>aem</name>
+    <displayName>AEM</displayName>
+  </kbtype>
+  <kbtarget>
+    <salesforce>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <draft type="boolean">true</draft>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <removetitle type="boolean">true</removetitle>
+    </salesforce>
+    <zendesk>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <useimages type="boolean">true</useimages>
+      <draft type="boolean">true</draft>
+      <usedocs type="boolean">true</usedocs>
+      <usejs type="boolean">true</usejs>
+      <useflattoc type="boolean">false</useflattoc>
+      <removetitle type="boolean">true</removetitle>
+    </zendesk>
+    <zoho>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <removetitle type="boolean">true</removetitle>
+      <useflattoc type="boolean">false</useflattoc>
+      <draft type="boolean">true</draft>
+    </zoho>
+    <servicenow>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <usetags type="boolean">true</usetags>
+      <draft type="boolean">true</draft>
+      <useflattoc type="boolean">false</useflattoc>
+      <removetitle type="boolean">true</removetitle>
+    </servicenow>
+    <aem>
+      <aemuseinlinestyles type="boolean">false</aemuseinlinestyles>
+      <removetitle type="boolean">true</removetitle>
+      <usecomponents type="boolean">false</usecomponents>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <usejs type="boolean">false</usejs>
+    </aem>
+    <publishstatus type="array"></publishstatus>
+  </kbtarget>
+  <search>
+    <suggestion type="boolean">true</suggestion>
+    <context type="boolean">true</context>
+    <contextLimit type="number">100</contextLimit>
+    <glossary type="boolean">true</glossary>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+    <fuzzy type="boolean">true</fuzzy>
+  </search>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <serversStatus type="array"></serversStatus>
+  <republish type="boolean">false</republish>
+  <generateMapFiles type="boolean">true</generateMapFiles>
+  <generateBRS type="boolean">true</generateBRS>
+</preset>

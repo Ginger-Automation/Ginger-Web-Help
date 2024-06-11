@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("First_Topic.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.html'));
 rh.consts('START_FILEPATH', encodeURI('index.html'));
-rh.consts('HELP_ID', '115352ef-b3e8-43ca-b4fb-49938d6775eb' || 'preview');
+rh.consts('HELP_ID', '2e2f65fa-7dd7-4564-b513-d4456c6e3545' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");
@@ -24,4 +24,5 @@ model.publish(rh.consts('CHAT_API_PROJ_ID'), "");
 model.publish(rh.consts('KEY_SUBSTR_SEARCH'), "");
 model.publish(rh.consts('KEY_LOGO_URL'), "");
 model.publish(rh.consts('KEY_SPECIAL_CHARS'), "0;1;2;3;4;5;6;7;8;9");
+model.publish(rh.consts('SEARCH_PAGE'), "search.htm");
 })();

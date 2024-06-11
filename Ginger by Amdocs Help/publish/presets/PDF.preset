@@ -50,4 +50,11 @@
     <path>../templates/PDF/pdf.tpl</path>
   </template>
   <excludeTopicCss type="boolean">true</excludeTopicCss>
+  <metadataNew type="array">
+    <metadataNewitem>
+      <propkey>Title</propkey>
+      <propvalue>Learn</propvalue>
+    </metadataNewitem>
+  </metadataNew>
+  <metadataOptions>list</metadataOptions>
 </preset>

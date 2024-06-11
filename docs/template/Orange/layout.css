@@ -5111,5 +5111,9 @@ input[type='text']::-ms-clear {
     height: 100% !important;
     margin: 0 !important;
   }
+
+  .RH-LAYOUT-CENTERPANEL-container, .RH-LAYOUT-CENTERPANEL-topic-box {
+    overflow: visible !important;
+  }
 }
 /*# sourceMappingURL=orange.css.map */
