@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Ginger_End_to_End_Flow-_Do_it_Yourself",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
+    "pinned": false,
+    "time": "Jun 19, 11:03 AM"
+  }, {
     "title": "Load_Virtual_Run_Set",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Load_Virtual_Run_Set.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/Ginger Help document Sealights.css",
     "pinned": false,
     "time": "Mar 27, 4:21 PM"
-  }, {
-    "title": "01- What is a Business Flow",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/01- What is a Business Flow.css",
-    "pinned": false,
-    "time": "Mar 27, 4:17 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-06-19T10:55:35+05:30",
+      "time": "2024-06-19T11:07:08+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
