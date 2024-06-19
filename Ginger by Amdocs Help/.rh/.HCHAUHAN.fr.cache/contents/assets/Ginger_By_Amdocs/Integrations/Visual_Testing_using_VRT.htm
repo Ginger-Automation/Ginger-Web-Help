@@ -10,7 +10,7 @@
     Ensure 'Show enterprise feature' is selected & saved in Ginger under 'Users Settings option'
   
                             
-   
+  
             
               
   Visual Testing Configurations
@@ -21,10 +21,15 @@
     Click on ‘VRT Configuration’.
   
   
-   
+  
   Visual testing in Action
   Adding Visual testing Action
   For automating visual testing, users can add Visual Testing action from Action library.
+  
+  
+  
+  
+  
   
   
   Select Visual Regression Tracker as Visual testing Analyzer
@@ -37,10 +42,12 @@
   
                 
   
+  
+  
     Difference tolerance %  can be set to the % upto which the difference can be ignored when comparing the screenshots. By default the value is set to 0%.
     Test name works as Build name for all actions/activity/flow
   
-   
+  
   Checkpoint
   In VRT Action we can select checkpoint with two different types as below
   One or more Checkpoint actions can be added to existing Automation flow to compare the baseline with current UI.
@@ -53,39 +60,66 @@
     Action by Region will compare the specific element or frame or region of the page.  Locator for the specific element needs to be configured for this option
   
                
+  
+  
+           Create Baseline
+                    A Baseline is a set of images that represent the expected result of a specific test that runs on a specific application. 
+                    Below are the option to upload baseline from ginger to VRT.
+                    Select this option to upload Baseline image from active window or from Local machine. 
+                      1. Create Baseline from active window
+                              This option selected then it takes screenshot of active window as baseline.
+                    2. Image file
+                               This option provides an option to upload a Local image to VRT as Baseline, also user can preview the uploaded baseline image. Shown in below screenshot.
+  
+             
+                   
+  
+               Preview Baseline Image
+                 You can preview the Baseline Image which is already present in VRT.
+  
+  
+                   
+  
   Stop Test
   After all visual testing check points, Stop Test action needs to be configured to notify VRT the end of Visual testing session
   
-   
+  
   VRT Dashboard
   Configuring Baseline
   For Accepting or defining the baseline, the user needs to login to VRT dashboard.
   If the action fails with error ‘No Baseline’, On VRT Dashboard you can set the base line image.
+  Refer ‘Create Baseline’ Section under ‘Operation supported VRT’ for explicitly uploading baseline image
+  
+               
+  
+             
   
   
   
   
-   
-   
+  
+  
+  
+  
   Ignore specific regions
   You can ignore some part from the comparison in VRT e.g., Advertisements, Date etc.
   Open the specific baseline image from VRT, and click on ignore areas.
   Then draw the rectangle to ignore the specific part of the image.
-   
+  
+    
   
   
-   
   Test name here should be as Build name
               
-   
+  
   Validating Differences or failures
   If any action fails with the errors ‘Difference found’, you can see the difference image in the action result as well as on the VRT Dashboard as shown below
-   
   
-   
-   
   
-   
+  
+  
+  
+  
   Run in Visual Testing Mode
   On Automate tab or on the Runner level configuration we have a flag as “Run In Visual Testing Mode”, which can be is used determine whether to execute the Visual Testing actions or skip.
   Default this configuration is set to true, it means when we have Visual Testing Actions in the flow will be executed, otherwise all the visual testing action will be skipped.
@@ -107,7 +141,7 @@
     
   
   
-  
+    
   
   To configure the ’Run In Visual Testing Mode’ on Runset tab follow below steps.
   
@@ -126,7 +160,7 @@
       
     
   
-  
+    
   
   
   
@@ -137,6 +171,6 @@
   
   
   
-   
+  
   
 
