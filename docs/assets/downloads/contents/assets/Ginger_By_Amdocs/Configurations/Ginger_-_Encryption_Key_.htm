@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta charset="UTF-8"/>
+  <title>Solution Passwords Encryption Key</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css"/>
+  <link rel="stylesheet" href="../../css/Ginger - Encryption Key_.css"/>
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="Title" style="font-family: Calibri;margin-left: 136px"><span style="font-family:Calibri;font-weight:bold;color:#302E45">Solution Passwords Encryption Key</span></p>
+    <p style="font-family: Calibri;margin-left: 136px"> </p>
+    <p style="font-family: Calibri;margin-left: 136px"> </p>
+    <p style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">‘Solution Passwords Encryption Key’: Is a key which will be used to encrypt all password variables which will be used in solution.</span></p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1"><a id="Creating_new_Ginger_Solution"></a>Creating new Ginger Solution</h1>
+    </div>
+    <p class="Numbering40 BodyText" style="font-family: Calibri;margin-left: 136px">On create new solution, User will be asked for ‘Solution Passwords Encryption Key’ on ‘Add Solution’ window.</p>
+    <p class="Numbering40 BodyText" style="font-family: Calibri;margin-left: 136px">Key will be 6-14 chars long with at least one capital char, one small char, one digit and one special char.</p>
+    <p class="Numbering45 ListParagraph" data-list-level="3" style="font-family: Calibri;margin-left: 136px">Key will be stored on Windows credential manager along with solution name. so whenever reloading same solution it will be picked automatically</p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 7" height="407" src="../../images/Ginger - Encryption Key__files/image2.png" width="760"/></p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1"><a id="Support_for_existing_Ginger_Solution"></a>Support for existing Ginger Solution</h1>
+    </div>
+    <p class="Numbering41 BodyText" style="font-family: Calibri;margin-left: 136px">When opening an existing Ginger solution which was created on lower version, default key will be assigned to ‘Solution Passwords Encryption Key’</p>
+    <p class="Numbering41 BodyText" style="font-family: Calibri;margin-left: 136px">Solution changes will be saved during this update process</p>
+    <p class="Numbering41 BodyText" style="font-family: Calibri;margin-left: 136px">User will be required to check in Solution xml file to source control and all the team members will need to provide the same encryption when opening this solution in Ginger</p>
+    <p class="Numbering41 BodyText" style="font-family: Calibri;margin-left: 136px">Appropriate error message will be shown when old solution is executed through CLI.</p>
+    <p class="BodyText margin-left-0" style="font-family: Calibri;margin-left: 136px"> </p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1"><a id="Providing_key_on_Solution_Reload\Reopen"></a>Providing key on Solution Reload\Reopen </h1>
+    </div>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">If solution with encryption key is reloaded\Reopened, Ginger will fetch the key from Windows Credential Manager.</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">If key is not found on Credential Manager, user will be prompted to provide encryption key again. This is the reason that it is very important to make a note of encryption key.</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">Key will be validated against pre-encrypted string which was encrypted when the key was provided.</p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1">To Check Encryption key associated with current solution</h1>
+    </div>
+    <p style="font-family: Calibri;margin-left: 136px"><a id="_Description"></a><a id="_To_view/copy_Solution_passwords_encryption_key_of_current_solution,_open_solution_details_windowOn_Solution_details_window,_Encryption_key_will_be_shown_in_disabled_and_hidden_format,There_are_options_to_View,_Copy_and_Edit_the_key."></a></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">To view/copy Solution passwords encryption key of current solution, open solution details window</p>
+    <p class="BodyText margin-left-1-19in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 1" height="320" src="../../images/Ginger - Encryption Key__files/image3.png" width="453"/></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">On Solution details window, Encryption key will be shown in disabled and hidden format,</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">There are options to View, Copy and Edit the key.</p>
+    <p class="Num1 margin-left-1-25in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 8" height="461" src="../../images/Ginger - Encryption Key__files/image4.png" width="752"/></p>
+    <p class="Num1 margin-left-1-00in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1">CLI/JSON Execution</h1>
+    </div>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">CLI Execution: extra ‘—encryptionKey’ parameter is added in CLI configuration.</p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px">E.g. C:\Ginger\Ginger.exe&quot; run --env Default --encryptionKey &quot;Test@1234&quot; --runset &quot;Default Run Set&quot; --solution C:\Solutions\testM01</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">JSON Execution: Extra &quot;EncryptionKey&quot; is added in JSON execution which will be saved in JSON Configuration file.</p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px">E.g.</p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 25" height="662" src="../../images/Ginger - Encryption Key__files/image5.png" width="750"/></p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1">Jenkins Plugin Configuration</h1>
+    </div>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">Jenkins’s Plugin v3.0 or above support Encryption Key.</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">‘Encryption Key’ Property is added in test properties to set the of the solution Encryption key.</p>
+    <p class="BodyText margin-left-0" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 3" height="369" src="../../images/Ginger - Encryption Key__files/image6.png" width="778"/></p>
+    <p class="BodyText margin-left-0" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">For existing jobs, the Default Encryption key will be set and used.</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">If Key is updated on Ginger solution, then it needs to be updated on Jenkins jobs as well</p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1"> </h1>
+      <h1 class="Heading1">Bamboo Plugin Configuration</h1>
+    </div>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">Bamboo Plugin v2.0 or above support Encryption Key.</span></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">‘Encryption Key’ Property is added in test properties to set the of the solution Encryption key.</span></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">For existing jobs, the Default Encryption key will be set and used.</span></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">If Key is updated on Ginger solution, then it needs to be updated on Jenkins jobs as well</span></p>
+    <p class="BodyText" style="font-family: Calibri;margin-left: 136px"> </p>
+    <div style="font-family: Calibri;margin-left: 136px">
+      <h1 class="Heading1">To Replace/Forgot Encryption key associated with current solution</h1>
+    </div>
+    <h2 class="Numbering46" data-list-level="2" style="font-family: Calibri;margin-left: 136px">Replace Encryption key</h2>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">On Edit click of ‘Solution Passwords Encryption Key’, ‘Replace/Forget Encryption key’ window will be opened with ‘Replace Encryption Key’ operation and ‘Forgot Encryption Key’ operation.</p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 9" height="580" src="../../images/Ginger - Encryption Key__files/image7.png" width="770"/></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">‘Replace Encryption Key’ Operation: This option is for changing the current encryption key with new Encryption key (Like change password). User will be asked to provide the new encryption key. And existing key will be prepopulated.</span></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px"><span style="font-size:16px;">After providing New encryption key and click on ‘Save Key’ all password values of the solution including environment params, DB passwords, variables etc. will be re-encrypted with new key.</span></p>
+    <p class="Num1 margin-left-0-50in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 19" height="586" src="../../images/Ginger - Encryption Key__files/image8.png" width="778"/></p>
+    <p class="Num1 margin-left-0-50in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="Num1 margin-left-0-50in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <h2 class="Numbering46" data-list-level="2" style="font-family: Calibri;margin-left: 136px">Forgot Encryption Key</h2>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px">This option is to set the new key for the solution (Like forgot password). But this is very sensitive as it will clear all the encrypted password variables, params and db. password values of the solution. Basically, if you lose the key you lose your encrypted values as well.</p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="BodyText margin-left-1-50in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 23" height="573" src="../../images/Ginger - Encryption Key__files/image9.png" width="761"/></p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">After providing new key , click on &#39;Save Key&#39;.</p>
+    <p class="Numbering42 BodyText" style="font-family: Calibri;margin-left: 136px">After this list of all password variables will be shown where user will have to re-enter the password values again, entering password values will be encrypted with new key as shown in below screenshot.</p>
+    <p class="Num1 margin-left-1-00in" style="font-family: Calibri;margin-left: 136px"><img alt="Picture 24" height="579" src="../../images/Ginger - Encryption Key__files/image10.png" width="769"/></p>
+    <p class="Num1 margin-left-1-00in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="Num1 margin-left-1-00in" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="BodyText" style="font-family: Calibri;margin-left: 136px"> </p>
+    <p class="BodyText" style="font-family: Calibri;margin-left: 136px"> </p>
+  </div>
+
+</body></html>

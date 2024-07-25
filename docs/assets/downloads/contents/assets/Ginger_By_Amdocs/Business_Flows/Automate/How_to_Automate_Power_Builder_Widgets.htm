@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>How to Automate Power Builder Widgets </title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/How to Automate Power Builder Widgets.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri"><span style="font-size:32px;margin-left:104px"> How to Automate Power Builder Widgets </span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#_Toc497415313">Description</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#Prerequisite">Prerequisite</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Steps_to_use_Ginger_for_Widget_Operation_1">Steps to use Ginger for Widget Operation</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Select_Widget_Window_on_Window_Explorer_Dropdown">Select Widget Window on Window Explorer Dropdown</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Find_and_Initialize_Browser_element_from_Tree">Find and Initialize Browser element from Tree</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Find_Html_Elements_on_Window_Explorer">Find Html Elements on Window Explorer</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Perform_&amp;_Add_different_Actions_on_Html_Element">Perform &amp; Add different Actions on Html Element</a></span></li>
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><a id="_Description"></a><br />
+      ‎</p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:108px;">Description</span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;"> Ginger Power Builder Widgets means web page or web browser embedded in power Builder window. Widget window contains different </span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;"> elements button, text fields, labels, check box, drop-down, radio button, combo box, links, etc.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:108px;"><a id="_Pre_Requisites"></a><a id="Prerequisite"></a>Prerequisite</span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;"> Ginger and target Power Builder application should be launched from the same machine.</span></span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:108px;"><a id="_How_to_use"></a><a id="Steps_to_use_Ginger_for_Widget_Operation"></a><a id="Steps_to_use_Ginger_for_Widget_Operation_1"></a>Steps to use Ginger for Widget Operation</span></h1>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri"><span style="margin-left:108px;"><a id="Select_Widget_Window_on_Window_Explorer_Dropdown"></a>Select Widget Window on Window Explorer Dropdown</span></h2>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Please follow the below steps for selecting widget window:</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Open Ginger</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Start Power Builder CSM agent from Automate tab-&gt;Agent</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Open Window Explorer from Automate Tab-&gt;Agent-&gt;Window Explorer (next to Agent on-Off button)</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Click on the Refresh button present on the top right of window explorer</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Select Widget Window from the dropdown present on top of window explorer</span></span><span style="margin-left:108px;"></span></p>
+    <p class="margin-left-0-50intext-indent-0-50in" style="font-family: Calibri"><span style="margin-left:108px;">               <img alt="Picture 578123991" height="718" src="../../../images/How to Automate Power Builder Widgets_files/image2.png" width="687" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri"><span style="margin-left:108px;"><a id="Find_and_Initialize_Browser_element_from_Tree"></a>Find and Initialize Browser element from Tree</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Follow the below steps to find and Initialize Browser Element:</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Add Switch Window Action (Mandatory Action )</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Expand tree elements until finding the Browser Element</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Select / Click on Browser Element present on the tree</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Run “Initialize Browser” Action present under Element Details &amp; Action -&gt; Action</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Add “Initialize Browser” Action in solution.</span></span><span style="margin-left:108px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;">               <img alt="Picture 2089658712" height="713" src="../../../images/How to Automate Power Builder Widgets_files/image3.png" width="691" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri"><span style="margin-left:108px;"><a id="Find_Html_Elements_on_Window_Explorer"></a>Find Html Elements on Window Explorer</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Follow the below steps to find Html Elements</span></span><span style="margin-left:108px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:108px;">Find Element by Live Spy:</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75intext-indent-0-25in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Follow the below steps to find element by live spy</span></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Initialize Browser element by mention above</span></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Click on the “Live Spy” button present on the top left of window explorer</span></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Move cursor on an expected element on widget window</span></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Press the “Control” key on the keyboard</span></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">The expected widget element will get highlighted by the red color of the border and you will find the expected element details </span></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">like title, value, XPath, available action with different locators on window explorer.</span></span><span style="margin-left:108px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;">                      <img alt="Picture 531147081" height="336" src="../../../images/How to Automate Power Builder Widgets_files/image4.png" width="778" /></span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span><span style="margin-left:108px;">Find Element on Tree View of Window Explorer:</span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;margin-left:76px">  Expand the Tree elements until getting the expected Html Element on Tree of window explorer.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;">                        <img alt="Picture 304314777" height="943" src="../../../images/How to Automate Power Builder Widgets_files/image5.png" width="456" /></span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span><span style="margin-left:108px;">Find Element on Grid View of Window Explorer:</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Click on the Grid View Button present on the right side of the Window element tab on Window Explorer</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Click on the “Refresh Controls” button present on the Window element tab on Window Explorer</span></span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Select expected Html Element from the grid.</span></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:108px;"><img alt="Picture 1785250722" height="557" src="../../../images/How to Automate Power Builder Widgets_files/image6.png" width="464" /></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri"><span style="margin-left:108px;"><a id="Perform_&amp;_Add_different_Actions_on_Html_Element"></a>Perform &amp; Add different Actions on Html Element</span></h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;"> Follow the below steps perform &amp; add action on Html elements</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px"></span><span style="margin-left:108px;">Find Available Actions &amp; locators in the Action tab</span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">After selecting the expected HTML element from the Window Element tab (from tree view or grid view), go to the Action tab </span></span><span style="margin-left:108px;"><span style="font-size:16px;">present under Element Details &amp; Actions tab.</span></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Select different Actions from Actions Tab under Element Details &amp; Action tab</span></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">Select different Locators from Locators Tab under Element Details &amp; Action tab</span></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:108px;"><img alt="Picture 1763898161" height="684" src="../../../images/How to Automate Power Builder Widgets_files/image7.png" width="661" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:108px;">Run the Action</span></h3>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">You can run the Action by click on the Run Action button present on the bottom left under the Element Details &amp; Action tab of window </span></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">explorer.</span></span></p>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:108px;">Add Action to Business Flow</span></h3>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">You can add the Action by click on Add Action to Business Flow button present on the bottom left under the Element Details &amp; Action tab </span></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:108px;"><span style="font-size:16px;">of window explorer.</span></span></p>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:108px;">Find general details and properties of Html elements (Optional)</span></h3>
+    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="margin-left:64px;"><span style="font-size:16px;">You can find general details like Title, value, XPath, Type of HTML element by click on the General Tab present under Element </span><span style="font-size:16px;">Details &amp; </span></span><span style="margin-left:64px;"><span style="font-size:16px;">Actions Tab.</span></span></p>
+    <p class="Numbering48 ListParagraph" style="font-family: Calibri"><span style="margin-left:64px;"><span style="font-size:16px;">You can find different Properties of HTML elements by click on the Properties tab present under the Element Details &amp; </span></span><span style="margin-left:64px;"><span style="font-size:16px;">Actions</span></span><span style="margin-left:64px;"><span style="font-size:16px;"></span></span><span style="margin-left:108px;"><span style="font-size:16px;"><span style="margin-left:64px;">Tab</span>.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:108px;"></span></p>
+    <p style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

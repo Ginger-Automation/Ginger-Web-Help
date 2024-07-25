@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "What_is_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/What_is_Action.htm",
+    "pinned": false,
+    "time": "Jul 25, 8:10 AM"
+  }, {
     "title": "Ginger_-_OTOMA_Integration",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset",
     "pinned": false,
     "time": "Apr 2, 12:49 PM"
-  }, {
-    "title": "Ginger Help document Sealights",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/css/Ginger Help document Sealights.css",
-    "pinned": false,
-    "time": "Mar 27, 4:21 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-06-20T22:21:31+05:30",
+      "time": "2024-07-25T08:11:26+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {

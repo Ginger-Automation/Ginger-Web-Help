@@ -1,0 +1,201 @@
+h3.Numbering16 {
+    counter-reset: Numbering152;
+    margin-left: 0.75in;
+    --autonumber: autonumber;
+}
+h3.Numbering16:before {
+    counter-increment: Numbering151;
+    content: counter(Numbering151,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.50in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+a.Hyperlink {
+    color: #0000FF;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering10 {
+    counter-reset: Numbering82;
+    margin-left: 1.38in;
+    --autonumber: autonumber;
+}
+p.Numbering10:before {
+    counter-increment: Numbering81;
+    content: counter(Numbering81,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.13in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering14 {
+    counter-reset: Numbering92;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering14:before {
+    counter-increment: Numbering91;
+    content: counter(Numbering91,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering17 {
+    counter-reset: Numbering122;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering17:before {
+    counter-increment: Numbering121;
+    content: counter(Numbering121,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering4 {
+    counter-reset: Numbering12;
+    margin-left: 0.75in;
+    --autonumber: autonumber;
+}
+p.Numbering4:before {
+    content: "";
+    font-family: Wingdings;
+    color: black;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.50in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering5 {
+    counter-reset: Numbering02;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering5:before {
+    counter-increment: Numbering01;
+    content: counter(Numbering01,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering5[data-list-level="2"]:before {
+    counter-increment: Numbering02;
+    content: counter(Numbering02,lower-alpha)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering5[data-list-level="2"] {
+    counter-reset: Numbering03;
+    margin-left: 1.00in;
+}
+p.Numbering9 {
+    counter-reset: Numbering142;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering9:before {
+    counter-increment: Numbering141;
+    content: counter(Numbering141,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOC2 {
+    margin-left: 0.15in;
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+table.TableGrid {
+    border-top: solid windowtext 1.0pt;
+    padding-top: 0;
+    border-bottom: solid windowtext 1.0pt;
+    padding-bottom: 0;
+    border-left: solid windowtext 1.0pt;
+    padding-left: 0;
+    border-right: solid windowtext 1.0pt;
+    padding-right: 0;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering91 Numbering01 Numbering02 Numbering141 Numbering151 Numbering81 Numbering121 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-0-75in {
+margin-left:0.75in;
+}
+.margin-left-1-00in {
+margin-left:1.00in;
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+table.TableGrid td {
+    padding-top: 0pt;
+    padding-left: 5.4pt;
+    padding-bottom: 0pt;
+    padding-right: 5.4pt;
+}
+ol.Decimal {
+    list-style-type: decimal;
+}
+ol.LowerAlpha {
+    list-style-type: lower-alpha;
+}

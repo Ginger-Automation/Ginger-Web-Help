@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger Remote Web Driver</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../../css/Ginger Remote Web Driver.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"><span style="font-size:32px;"> Selenium Grid setup &amp; Ginger Remote Web Driver</span></p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><strong style="font-size: 19px">Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a href="#What_is_Selenium-Grid?">What is Selenium-Grid?</a></span></p>
+    <ul class="Disc">
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#When_to_Use_it?">When to Use it?</a></span></li>
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Create_New_Solution.">Create New Solution</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a href="#Running_Selenium_Grid">Running Selenium Grid</a></span></p>
+    <ul class="Disc">
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Configuring_Selenium_Grid_Agent">Configuring Selenium Grid Agent</a></span></li>
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Starting_the_Hub_and_Nodes">Starting the Hub and Nodes</a></span></li>
+      <li class="TOC2" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Checking_console">Checking console</a></span></li>
+    </ul>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px">‎</p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px">  <a id="_How_to_use"></a><a id="What_is_Selenium-Grid?"></a><span style="font-size:32px;">What is Selenium-Grid?</span></h1>
+    <p class="text-indent-0-25in" style="font-family: Calibri;font-size: 16px">  <span style="font-size:16px;">   Selenium-Grid allows you to run your tests on different machines against different browsers in parallel. That is, running multiple tests at the             same time against different machines running different browsers and operating systems. Essentially, Selenium-Grid supports distributed test            execution. It allows for running your tests in a distributed test execution environment.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri;font-size: 16px"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri;font-size: 16px">     <a id="When_to_Use_it?"></a><span style="font-size:24px;">When to Use it?</span></h2>
+    <p style="font-family: Calibri;font-size: 16px">        <span style="font-size:16px;">There are two reasons why you might want to use Selenium-Grid.</span></p>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">To run your tests against multiple browsers, multiple versions of browsers and browsers running on different operating systems.</span></p>
+    <p class="Numbering43 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">To reduce the time it takes for the test suite to complete a test pass</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px">   <img alt="http://cdn.guru99.com/images/hub_and_nodes.jpg" height="314" src="../../../../../images/Ginger Remote Web Driver_files/image2.jpeg" width="494" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px">          Information on Selenium Grid can be found at:</p>
+    <p style="font-family: Calibri;font-size: 16px">          <a href="http://www.seleniumhq.org/docs/07_selenium_grid.jsp">http://www.seleniumhq.org/docs/07_selenium_grid.jsp#</a></p>
+    <p style="font-family: Calibri;font-size: 16px">          <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">https://github.com/SeleniumHQ/selenium/wiki/Grid2</a></p>
+    <p style="font-family: Calibri;font-size: 16px">          <a href="http://www.guru99.com/introduction-to-selenium-grid.html">http://www.guru99.com/introduction-to-selenium-grid.html</a></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri;font-size: 16px">         <a id="Create_New_Solution."></a><span style="font-size:24px;">Create New Solution</span></h2>
+    <p style="font-family: Calibri;font-size: 16px">                Default Ginger Data Source will be added to every new solution with the Name “GingerDataSource”. The MDB file for the Data Source                       will be copied to the Data Sources Folder of the Solution in the File System.</p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px">         <a id="Running_Selenium_Grid"></a><span style="font-size:32px;">Running Selenium Grid</span></h1>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri;font-size: 16px">         <a id="Configuring_Selenium_Grid_Agent"></a><span style="font-size:24px;">Configuring Selenium Grid Agent</span></h2>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri;font-size: 16px">Go to Configurations Tab-&gt; Agent and click on the ‘+’ button as shown below.</p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 1" height="305" src="../../../../../images/Ginger Remote Web Driver_files/image3.png" width="723" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px">In the below wizard enter the Agent name. Select the Platform type as Web and Driver Type as SeleniumRemoteWebDriver.</p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px">Click on the Next button</p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"> <img alt="Picture 12" height="449" src="../../../../../images/Ginger Remote Web Driver_files/image4.png" width="748" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri;font-size: 16px">On the Selenium Grid Hub field enter the IP where you wants to configure your hub, if you running your hub on your local machine you can leave it untouched with the default value otherwise specify your hub IP and port and make sure to keep it with the same format HTTP://&lt;IP&gt;:&lt;Port&gt;.</p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px">  <img alt="Picture 4" height="572" src="../../../../../images/Ginger Remote Web Driver_files/image5.png" width="708" /></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">On the Browser Name field, select the specific browser you want the agent to run on.</span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Note: Safari agent can be executed on Mac only.</span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Note: Edge can be installed on Windows 10 only.</span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Browser Version (Optional) – if not specified it will refer to any.</span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">On the Platform field select the specific Platform you want the agent to run on.</span></p>
+    <p class="Numbering50 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Node for all will create a generic node for all browsers available in the selected platform.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri;font-size: 16px">           <a id="Starting_the_Hub_and_Nodes"></a><span style="font-size:24px;">Starting the Hub and Nodes</span></h2>
+    <p class="Numbering46 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px">After configuring your agent, click on both Create Hub Installation package and Create Node Installation package.</p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 6" height="100" src="../../../../../images/Ginger Remote Web Driver_files/image6.png" width="340" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering46 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px">Once clicked a new Dialog box will be started with both Zips files, extract them on your local or the remote machine.</p>
+    <p class="Numbering46 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px">Start hub by executing the starthub.bat, leave the window open for your execution.</p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 7" height="387" src="../../../../../images/Ginger Remote Web Driver_files/image7.png" width="725" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering46 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Start the node by executing the startnode.bat file on your local or your remote machine and leave the window open for your execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 8" height="397" src="../../../../../images/Ginger Remote Web Driver_files/image8.png" width="742" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">This will raise a generic node that fits up to 5 instances from any of the chosen browsers.</span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">The Node is being executed with a Random Port, it might be that the port is already taken, if this is the case you can simply create a new node by clicking the node button and execute the new startnode.bat file.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"></span></p>
+    <p class="Numbering46 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">If you wish to execute the test on more Machines/Browsers you need to create new nodes by clicking the Create node installation package and executing the new startnode.bat file.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 9" height="71" src="../../../../../images/Ginger Remote Web Driver_files/image9.png" width="412" /></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri;font-size: 16px">           </h2>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri;font-size: 16px">           <a id="Checking_console"></a><span style="font-size:24px;">Checking console</span></h2>
+    <p class="Numbering50 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px">After starting the hub and nodes you may switch to the Console tab to check for your hub and node status.</p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 10" height="416" src="../../../../../images/Ginger Remote Web Driver_files/image10.png" width="721" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering50 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Return to the Configuration tab and click on Test Agent Configuration button, expected result – the browser Instance is started and the success message is pop upped.</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><img alt="Picture 11" height="77" src="../../../../../images/Ginger Remote Web Driver_files/image11.png" width="439" /></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering50 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px">Map your web target application to your new agent and execute your test.</p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"> </p>
+    <ul class="Square">
+      <li class="ListParagraph margin-left-0-25in" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;">Note: If you wish to execute multiple browsers in parallel you need to configure one agent for each browser.</span></li>
+      <li class="ListParagraph margin-left-0-25in" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;">Note: Safari configuration has few more steps:</span></li>
+    </ul>
+    <p class="Numbering48 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Download Safari driver from <a class="Hyperlink" href="http://www.seleniumhq.org/download/">http://www.seleniumhq.org/download/</a></span></p>
+    <p class="Numbering48 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;">Open the driver with Safari and do to SafariPreferences  check the Show Develop menu checkbox  Go to Develop and click Allow Remote Automation</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+  </div>
+</body>
+</html>

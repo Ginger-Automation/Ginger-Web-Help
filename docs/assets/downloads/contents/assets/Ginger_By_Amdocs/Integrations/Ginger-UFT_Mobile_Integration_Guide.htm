@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger-UFT Mobile Integration Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/Ginger-UFT Mobile Integration Guide.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <h1><span class="TitleChar">Ginger - UFT Mobile Lab Integration</span> Guide</h1>
+    <p><span data-contrast="none"><span>Ginger comes with seamless integration with Micro</span><span> F</span><span>ocus </span><span>UFT Mobile Lab</span><span>, and this document comes to </span><span>explains</span><span> how to use the integration functionalities.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p> </p>
+    <h2>1. What Is UFT Mobile   </h2>
+    <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{128}" paraid="1537298858"><span data-contrast="none"><span>Micro Focus UFT Mobile provides an end-to-end quality lab of real devices and emulators that help you test, monitor, and optimize your mobile apps for an enhanced user experience.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{134}" paraid="986793268"><span data-contrast="auto"></span><span><img src="../../images/image515.png" unselectable="on" /><span></span></span><span data-contrast="none"></span></p>
+    <p> </p>
+    <h4>The UFT Mobile environment consists of the following components:</h4>
+    <p> </p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid" style="margin-left: 0px; width: 1001.66px;">
+        <colgroup>
+          <col style="width: 203px;" />
+          <col style="width: 762px;" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="position-relative" style="">
+              <p>Component</p>
+            </td>
+            <td class="position-relative" style="">
+              <p>Function</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p><strong>UFT Mobile Server</strong></p>
+            </td>
+            <td class="position-relative" style="">
+              <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{165}" paraid="291262445"><span data-contrast="none"><span>This is a single web server that:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+              <ul role="list">
+                <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{171}" paraid="567947894"><span data-contrast="none"><span>Mediates between the testing-tool client calls to mobile </span><span>devices, and</span><span> provides a user interface within the testing tool for recording and running tests on real mobile devices.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{182}" paraid="1650459350"><span data-contrast="none"><span>Accepts apps for </span><span>testing, and</span><span> manages app versions.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{193}" paraid="207836977"><span data-contrast="none"><span>Includes a PostgreSQL database storing reusable data, such as </span><span>Metadata of uploaded apps and connectors, certificates, user information, and so forth.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{202}" paraid="688358043"><span data-contrast="none"><span>Provides a user interface (Lab Management console) for administrators to:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+              </ul>
+              <ul role="list">
+                <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Courier New" data-leveltext="o" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{209}" paraid="292769942"><span data-contrast="none"><span>manage users</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Courier New" data-leveltext="o" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{216}" paraid="1190650369"><span data-contrast="none"><span>manage apps and view their properties such as OS and version</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="3" data-font="Courier New" data-leveltext="o" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{223}" paraid="1912022227"><span data-contrast="none"><span>control devices: restart, unlock, or open a device remotely</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="4" data-font="Courier New" data-leveltext="o" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{230}" paraid="1698680780"><span data-contrast="none"><span>view and manage connectors</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+                <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="5" data-font="Courier New" data-leveltext="o" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+                  <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{237}" paraid="579716779"><span data-contrast="none"><span>configure a variety of settings for users such as proxy definitions and packaging services</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p><strong>External PostgreSQL database</strong></p>
+            </td>
+            <td class="position-relative" style="">
+              <p paraeid="{27b18ade-50c8-45c8-b4c2-b80b71eb9a7c}{253}" paraid="1813273302"><span data-contrast="none"><span>You can connect UFT Mobile to an existing external PostgreSQL database. This allows your organization to manage and utilize existing DB resources.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+              <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{4}" paraid="1449620854"><span data-contrast="none"><span>You specify this option during installation. For details, see </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">UFT Mobile - Windows Installation (on-premises)</span></span></a><span data-contrast="none"><span> or </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">UFT Mobile- Linux Installation (on-premises)</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p><strong>Connector</strong></p>
+            </td>
+            <td class="position-relative" style="">
+              <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{29}" paraid="1040199840"><span data-contrast="none"><span>The connector is a lightweight piece of software for connecting devices to UFT Mobile, which can be installed together with the server (embedded connector), or as a standalone component. You can install the connector on multiple machines in distributed locations, or on your testing-tool machine. For more details, see </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Install the connector on a Windows machine</span></span></a><span data-contrast="none"><span>, </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Install the connector on a Linux machine</span></span></a><span data-contrast="none"><span>, or </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Install the connector on a Mac Machine</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+              <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{50}" paraid="581409827"><span data-contrast="none"><span>The connector manages the physical USB connection to the device, and the logical state machine on top of it. It maps the ports to connect to the device over USB and manages the remote screen viewer stream from the device to the tool. It receives </span><span>lifecycle events from the USB library such as device connected or device disconnected, Agent finished installing, and Agent started. It transfers these events to the UFT Mobile server for adding the device to the pool. The connector is also responsible for installing and uninstalling apps on the device.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p><strong>Test devices accessed via connectors</strong></p>
+            </td>
+            <td class="position-relative" style="">
+              <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{67}" paraid="2089068160"><span data-contrast="none"><span>These are the devices (smartphones/tablets) on which the tests are run. The following applications are copied to the test devices:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+              <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{73}" paraid="803019268"><span data-contrast="none"><span>The UFTM Agent, which manages commands to the AUT, to the OS (control outside a specific app), and to the remote screen viewer server that supplies the UI and remote control for the testing-tool clients.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+              <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{79}" paraid="213334701"><span data-contrast="none"><span>The AUT – Application under Test.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p><strong>SV </strong><strong>Lab</strong></p>
+            </td>
+            <td class="position-relative" style=""><span data-contrast="none"><span>SV (Service Virtualization) Lab is an environment virtualization toolkit for virtualizing real services in areas that would be otherwise difficult to test. The SV Lab is deployed inside UFT Mobile, ready to run Service Virtualization simulations.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></td>
+          </tr>
+          <tr>
+            <td class="position-relative" style="">
+              <p><strong>NV Test Manager</strong></p>
+            </td>
+            <td class="position-relative" style=""><span data-contrast="none"><span>Network Virtualization is an optional component for testing apps running under different network conditions. Network virtualization emulates real-world conditions by imposing impairments and constraints in your testing environment during the software testing process, thereby improving software testing accuracy.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h2><span class="position-relative">2. UFT Mobile Server Prerequisites &amp; <span data-contrast="none"><span>Installation</span></span> </span>‎</h2>
+    <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{129}" paraid="129522526"><span data-contrast="none"><span>There are some prerequisites for the UFT Server installation and they vary to the diffrent Operation Systems.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{135}" paraid="1694817122"><span data-contrast="none"><span>In The link you can see the prerequisites for each OS: </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Link</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p> </p>
+    <h2><span class="position-relative">3. UFT Mobile Connector Prerequisites &amp; Installation</span></h2>
+    <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{162}" paraid="2014850403"><span data-contrast="none"><span>The connector is a lightweight piece of software for connecting devices to UFT Mobile, which can be installed together with the server (embedded connector), or as a standalone component. You can install the connector on multiple machines in distributed locations, or on your testing-tool machine.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{168}" paraid="1521750197"><span data-contrast="none"><span>Here you can find the prerequisites and how to install UFT Connector: </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Link</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{179}" paraid="1493072431"><span data-contrast="none"><span>Here you can download the necessary files for UFT Connector and UFT Mobile Server: </span></span><a href="" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Link</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p> </p>
+    <h2><span class="position-relative">4. UFT Mobile Advanced Features       </span>    </h2>
+    <h2 class="Heading2">Users and Workspaces</h2>
+    <ul class="Disc">
+      <li>
+        <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{212}" paraid="1921708323"><span data-contrast="none"><span>When logging into UFT Mobile as a shared space administrator, you have access to the </span></span><span data-contrast="none"><span>MANAGEMENT</span></span><span data-contrast="none"><span> tab of the Administration menu </span></span><span><img src="../../images/image516.png" unselectable="on" /><span></span></span><span data-contrast="none"><span>. Here you can define and manage workspaces and manage users. This menu is visible only to users with a shared space admin role.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{225}" paraid="425096582"><span data-contrast="none"><span>You can create multiple workspaces within your shared space. Workspaces are individual work areas within your lab. Create workspaces to segregate or share applications and devices between specific groups of users.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{231}" paraid="619139143"><span data-contrast="none"><span>You can create your own custom workspaces, according to the needs of your organization. For example, you can define workspaces according to specific geographical areas, or by company division or team.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{237}" paraid="1493133546"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{685ea193-ebd7-4b84-8df0-fb9ea870647f}{245}" paraid="431971785"><span data-contrast="none"><span>As a shared space admin, in Lab Management section in the left panel, you will see all devices, all apps, and all users with the names of the workspaces that are associated with them. Devices and apps in Shared assets are available to all users.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ul>
+    <p>                 </p>
+    <p><span><img src="../../images/image517.png" unselectable="on" /><span></span></span><span data-contrast="none"></span></p>
+    <ul class="Disc">
+      <li>Link to Lab and workspace management documentation: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Workspaces.htm?Highlight=workspaces">Workspaces documentation</a>.</li>
+    </ul>
+    <p> </p>
+    <h2><strong>Apps Management </strong></h2>
+    <ul class="Disc">
+      <li>The APPS menu provides visibility and control of applications in the mobile lab. Upload a new app, see information about apps that have already been uploaded, or delete apps.</li>
+    </ul>
+    <p>                  </p>
+    <p><span><img src="../../images/image518.png" unselectable="on" /><span></span></span><span data-contrast="none"></span></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{39}" paraid="1790930968"><span data-contrast="none"><span>Upload an app in one of the following ways:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{45}" paraid="1295789324"><span data-contrast="none"><span>For all users: Click the APPS tab. In the APPLICATIONS pane click </span></span><strong><span data-contrast="none"><span>Upload</span></span></strong><span data-contrast="none"><span> (list view) or </span></span><strong><span data-contrast="none"><span>Upload application</span></span></strong><span><img src="../../images/image519.png" unselectable="on" /><span></span></span><span data-contrast="none"><span> (card view). Select the app.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{61}" paraid="412682117"><span data-contrast="none"><span>For admins only:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Calibri,Times New Roman" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" data-listid="4" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{68}" paraid="1103243992"><span data-contrast="none"><span>In </span></span><span data-contrast="none"><span><strong>Administration</strong> </span></span><span><img src="../../images/image520.png" unselectable="on" /><span></span></span><span data-contrast="none"><span>, click the </span></span><strong><span data-contrast="none"><span>MANAGEMENT</span></span></strong><span data-contrast="none"><span> tab.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Calibri,Times New Roman" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" data-listid="5" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{84}" paraid="1358068936"><span data-contrast="none"><span>In the left pane, click </span></span><strong><span data-contrast="none"><span>Lab Management</span></span></strong><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Calibri,Times New Roman" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{95}" paraid="27907612"><span data-contrast="none"><span>Select </span></span><strong><span data-contrast="none"><span>ALL APPS</span></span></strong><span data-contrast="none"><span> to view all the apps in your lab.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Calibri,Times New Roman" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="7" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{106}" paraid="1804045898"><span data-contrast="none"><span>Click the<strong> </strong></span></span><strong><span data-contrast="none"><span>Upload</span></span></strong><span data-contrast="none"><span> button and specify the path to the app and select a workspace.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="3" data-font="Calibri,Times New Roman" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="8" role="listitem">
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{117}" paraid="1248505302"><strong><span data-contrast="none"><span>Click </span></span><span data-contrast="none"><span>UPLOAD</span></span></strong><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li>
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{128}" paraid="578689490"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{132}" paraid="534243169"><span data-contrast="none"><span>Link to Lab and </span><span>App</span><span> management documentation: </span></span><a href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Adding_Apps.htm?Highlight=application%20modules#mt-item-0" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">App management documentation</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ul>
+    <p> </p>
+    <h2><strong>Device View and Control</strong></h2>
+    <ul class="Disc">
+      <li>
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{157}" paraid="986200707"><span data-contrast="none"><span>When opening a device remotely from the lab, you can interact with the device using the actions and features available in the device access window. You can also perform exploratory testing sessions on a device. These sessions can be recorded.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{163}" paraid="383507217"><span data-contrast="none"><span>You can access a device remotely either from the Lab </span><span>console, or</span><span> using one of the testing tools that integrates with UFT Mobile.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+      <li>
+        <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{163}" paraid="383507217"><span data-contrast="none"><span>To open a device remotely:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ul>
+    <div align="left">  
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:636.7px">
+        <colgroup>
+          <col style="width:px" />
+          <col style="width:px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="position-relative">
+              <p><strong>UFT Mobile lab</strong></p>
+            </td>
+            <td class="position-relative"><span data-contrast="none"><span>Click </span></span><span><img src="../../images/image521.png" unselectable="on" /><span></span></span><span data-contrast="none"><span> while hovering over a device in Card </span><span>view, or</span><span> select a device and click </span></span><span><img src="../../images/image522.png" unselectable="on" /><span></span></span><span data-contrast="none"><span>Open device remotely </span></span><span data-contrast="none"><span>in the toolbar in List view. Click the List </span></span><span><img src="../../images/image523.png" unselectable="on" /><span></span></span><span data-contrast="none"><span> and Card view </span></span><span><img src="../../images/image524.png" unselectable="on" /><span></span></span><span data-contrast="none"><span> buttons in the upper right corner to toggle between the views.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></td>
+          </tr>
+          <tr>
+            <td class="position-relative">
+              <p><strong>Testing</strong> <strong>tools</strong></p>
+            </td>
+            <td class="position-relative"><span data-contrast="none"><span>With tools that integrate with UFT Mobile such as UFT One, Sprinter, and </span>TruClient<span>, access a device by beginning your record or replay session.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <ul class="Disc">
+      <li>Interact with the device using the actions in the toolbar next to the device, and the options in the panels on the left and right-hand side of the device access window. You can collapse the panels, change the order of the tabs at the top of the panel, and drag and drop tabs from one panel to another.</li>
+    </ul>
+    <p>                <img alt="Picture 50" height="330.3" src="../../images/Ginger-UFT Mobile Integration Guide_files/image11.png" width="599.7" /></p>
+    <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{233}" paraid="69053428"> </p>
+    <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{244}" paraid="1714230129"><span data-contrast="none"><span>Use the toolbar next to the device to interact with the device during the capture or replay session, or when idle. The simulation options enable you to perform common event simulations. Note that some simulations are not available when conducting exploratory testing from the Lab </span><span>console, and</span><span> are only available when accessing the device remotely with a supported testing tool.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{93ae237b-5a5a-4ada-bb9a-698fddc7c970}{254}" paraid="1898535199"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{3}" paraid="1104417182"><span data-contrast="none"><span>Link to </span><span>Device access window</span><span> documentation: </span></span><a href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/device_control.htm#mt-item-2" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">device access window</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p> </p>
+    <p> </p>
+    <h2>5. Ginger Agent Creation for UFT Mobile           </h2>
+    <h2>How to Configure Native\Web Connection</h2>
+    <ul class="Disc">
+      <li> First, in Ginger go to Configuration -&gt; Agent and click on the button:</li>
+    </ul>
+    <p>                 </p>
+    <p><span><img src="../../images/image526.png" unselectable="on" /><span></span></span><span data-contrast="none"></span></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>Choose the Mobile Platform as follows:</li>
+    </ul>
+    <p>                </p>
+    <p><span><span><img src="../../images/image684.png" /></span></span><span data-contrast="none"></span></p>
+    <p> </p>
+    <ul class="Disc">
+      <li>
+        <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{96}" paraid="311234822"><span data-contrast="none"><span>The Appium Server configuration should be the UFT Mobile URL </span><span>(</span></span><span data-contrast="none"><span>including</span></span><span data-contrast="none"><span> the port number):</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ul>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{96}" paraid="311234822"><img src="../../images/image685.png" /></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{108}" paraid="238512670"> </p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{114}" paraid="1042264901"><span></span><span data-contrast="none"><span> We will take that URL and put it here:</span></span><span data-contrast="none"><span> </span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{123}" paraid="1091742671"><span></span><span data-contrast="auto"></span><span> <span><img src="../../images/image686.png" /></span></span><span data-contrast="none"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"><span data-contrast="none"><span>Then, to use a UFT Mobile Device, choose “MF UFTM Lab” (it will automatically add the desired capabilities for connecting to a UFT Mobile Device):</span></span></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"> </p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"><img src="../../images/image687.png" /></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"> </p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"> </p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"><span data-contrast="none"><span>Keep on following the steps to fill those capabilities.</span></span></p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{129}" paraid="327453478"> </p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{133}" paraid="251365825"><span data-contrast="none"><span>Then, choose </span><span>the platform (Android\iOS) and application type (Native\Hybrid or Web).</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <h2><span data-contrast="none"><span>How to Select the App</span></span></h2>
+    <ul class="Disc">
+      <li>
+        <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{147}" paraid="834448982"><span data-contrast="none"><span>For having basic app (S</span><span>ettings app) no need to change anything.</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{155}" paraid="820079476"><span data-contrast="none"><span>To select an App from the UFT App management you will need to </span><span>specify</span><span> the </span>appPackage<span> and the </span>appActivity<span> capabilities.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+        <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{173}" paraid="1196487510"><span data-contrast="none"><span>In UFT Mobile you can s</span><span>ee this here:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ul>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{173}" paraid="1196487510"> </p>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{173}" paraid="1196487510"><img src="../../images/image689.png" /></p>
+    <p>                 </p>
+    <p><span><span></span></span><span data-contrast="none"></span></p>
+    <h2>How to Select the Device</h2>
+    <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{193}" paraid="864333866"><span data-contrast="none"><span>There are 2 ways to select the device:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri,Times New Roman" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="9" role="listitem">
+        <p paraeid="{debc8163-aff1-4360-8787-292cfeb0708e}{199}" paraid="598530591"><span data-contrast="none"><span>Specify exact </span>udid<span>: each device has a unique </span>udid<span>. If you want a specific </span><span>device</span><span> go to the </span><span>device lab and see the </span>udid<span> of the devices:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p class="ListParagraph0"> </p>
+    <p class="ListParagraph0"><span><img src="../../images/image534.png" unselectable="on" /><span></span></span><span data-contrast="none"></span></p>
+    <p class="ListParagraph0"> </p>
+    <ul class="Disc">
+      <li class="ListParagraph0">Take the desired udid and put it in the agent configuration:</li>
+    </ul>
+    <p class="ListParagraph0"> </p>
+    <p class="ListParagraph0"><span><img src="../../images/image535.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span></p>
+    <p> </p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{4}" paraid="160047629"><span data-contrast="none"><span> 2. Wildcard: </span><span>You can use a wildcard (*) </span><span>to specify</span><span> the OS</span><span> required</span><span>. You can specify </span><span>a</span><span> enumeration </span></span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{4}" paraid="160047629"><span data-contrast="none"><span>symbol, such as &lt;, &gt;, &lt;=. &gt;=, and =.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p class="ListParagraph0"> </p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{25}" paraid="1442236629"><span data-contrast="none"><span>For example, &quot;</span>platformVersion<span>&quot;, &quot;&gt;5.0.1&quot;</span><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{25}" paraid="1442236629"> </p>
+    <h2 paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{25}" paraid="1442236629"><span data-contrast="none"><span>Connection Options</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></h2>
+    <p> </p>
+    <p style="margin-bottom:11px"> <span data-contrast="none"><span>There are 2 options of connection to a UFT Mobile device:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{53}" paraid="566046503"><span data-contrast="none"><span>Connecting with an “Access Key” with the following steps:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{60}" paraid="1721821533"><span data-contrast="none"><span>In order to</span><span> create the access key, you will need to go to Administration:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{69}" paraid="2054786759"><span data-contrast="auto"></span><span><img src="../../images/image536.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{74}" paraid="1639638288"><span data-contrast="none"><span>Press on “ACCESS KEYS” and then on the “+” button:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{81}" paraid="188002880"><span data-contrast="auto"></span><span><img src="../../images/image537.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="3" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{86}" paraid="1346125764"><span data-contrast="auto"><span>Fill in the “Name’ of your access key, Type (for connecting to a UFT device select “execution”), Description (optional), Expiration Date and press “Generate”:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{93}" paraid="1809469310"><span data-contrast="auto"></span><span><img src="../../images/image538.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559731&quot;:720,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{98}" paraid="1843149183"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="4" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{102}" paraid="1339844638"><span data-contrast="auto"><span>You will need the following information:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{109}" paraid="2013562036"><span data-contrast="auto"></span><span><img src="../../images/image539.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{114}" paraid="1246990189"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="5" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{118}" paraid="1907855358"><span data-contrast="auto"><span>Fill in the capabilities table at the Agent page as follows:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{125}" paraid="58356351"> </p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{125}" paraid="58356351"><img src="../../images/image690.png" /></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{125}" paraid="58356351"><span data-contrast="auto"></span><span><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{130}" paraid="1712452662"><strong><span data-contrast="none"><span>2. Anonymous Connection:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></strong></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{137}" paraid="1247336194"><span data-contrast="none"><span> In order to</span><span> enable anonymous connection, you will need to go to Administration:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{146}" paraid="1999393554"><span data-contrast="auto"></span><span><img src="../../images/image541.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{151}" paraid="2024394541"><span data-contrast="auto"><span>Press “SETTINGS” and search on the left pane for the “Appium Options”:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{158}" paraid="149997299"><span data-contrast="auto"></span><span><img src="../../images/image542.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="3" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{163}" paraid="1766301363"><span data-contrast="auto"><span>Change the “Anonymous access” to “Yes”:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{170}" paraid="1970968152"><span data-contrast="auto"></span><span><img src="../../images/image543.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="4" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="1" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{175}" paraid="293500822"><span data-contrast="auto"><span>Fill in the capabilities table on the Agents page as follows:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{182}" paraid="1277928133"><span data-contrast="auto"></span><span><img src="../../images/image544.png" unselectable="on" /><span></span></span><span data-contrast="auto"><span>As you see, you can drop off </span><span>the ”</span><span> </span><span>uftm:oauthClientId</span><span>” and ” </span><span>uftm:oauthClientSecret</span><span>” capabilities because you can now connect without authenticating.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{201}" paraid="1073314380"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{205}" paraid="827998644"><span data-contrast="none"><span>Link to UFT Mobile Appium Capabilities </span></span><a href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Appium/Appium_Capabilities.htm" rel="noreferrer noopener" target="_blank"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">here</span></span></a><span data-contrast="none"><span>.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{216}" paraid="1452557098"><span data-contrast="none"><span>For the full </span><span>capabilities</span><span> explanation, see “Mobile Appium Agent” guide.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:75,&quot;335559739&quot;:75,&quot;335559740&quot;:240}"> </span></p>
+    <h2>UFT Mobile Troubleshooting</h2>
+    <p class="NormalWeb"><strong></strong></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{238}" paraid="1156953753"><strong><span data-contrast="auto"><span data-ccp-parastyle="Normal (Web)">Install Connector on MAC tips:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></strong></p>
+    <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{244}" paraid="560650895"><strong><span data-contrast="auto"><span data-ccp-parastyle="Normal (Web)"> </span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></strong></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" data-listid="10" role="listitem">
+        <p paraeid="{dc67e1a6-49a5-4b16-ae6f-6ff398832429}{250}" paraid="458187945"><span data-contrast="auto"><span>During installation of the Connector set the IP of the MAC which is accessible to other machines in the Amdocs network.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{b65cd9a8-70be-4908-a1fc-3d8a25baae4a}{2}" paraid="1339388038"><span data-contrast="auto"><span data-ccp-parastyle="Normal (Web)"> Get the IP using the &quot;ipconfig -a&quot; command</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{b65cd9a8-70be-4908-a1fc-3d8a25baae4a}{8}" paraid="1246406991"><span data-contrast="auto"><span data-ccp-parastyle="Normal (Web)"> ## How to get the IP on Mac:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{b65cd9a8-70be-4908-a1fc-3d8a25baae4a}{14}" paraid="760091486"><span data-contrast="none"><span data-ccp-parastyle="Normal (Web)"> Pull the IP from Mac System Performances/Network</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{b65cd9a8-70be-4908-a1fc-3d8a25baae4a}{20}" paraid="659145871"><span data-contrast="none"><span data-ccp-parastyle="Normal (Web)"> Or by opening Terminal and typing </span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+    <p paraeid="{b65cd9a8-70be-4908-a1fc-3d8a25baae4a}{26}" paraid="1409702245"><span data-contrast="none"><span data-ccp-parastyle="Normal (Web)"> ifconfig</span><span data-ccp-parastyle="Normal (Web)"> -a</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"><img alt="Text
+Description automatically generated" height="344.1" src="../../images/Ginger-UFT Mobile Integration Guide_files/image19.png" width="624.0" /></p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">2. When need to load the Server Key file, so place the file under user/Pictures folder, from some reason only from there is allows to see the file and select it</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">3. For connector process not to be stopped need to set below setting:</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">(on MacMini this is under &quot;Power Saver&quot; section) </p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">         <img alt="Graphical user interface, text, application
+Description automatically generated" height="314.5" src="../../images/Ginger-UFT Mobile Integration Guide_files/image20.png" width="413.5" /></p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <h4 style="margin-left: 0.38in;">4. How to restart/stop/start Connector on Mac:</h4>
+    <ul class="Disc">
+      <li class="Numbering13 Numbering101">
+        <ul>
+          <li class="NormalWeb">sudo /Users/UFTM/UFTM_service restart </li>
+          <li class="NormalWeb">sudo /Users/UFTM/UFTM_service start</li>
+          <li class="NormalWeb">sudo /Users/UFTM/UFTM_service stop</li>
+          <li class="NormalWeb">Then provide machine user password</li>
+          <li class="NormalWeb"><strong>Note</strong>: it is better to do Stop and then Start than Restart</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>       5. Modify Connector settings:</h4>
+    <p class="NormalWeb">             <img alt="Graphical user interface, text, application
+Description automatically generated" height="198.8" src="../../images/Ginger-UFT Mobile Integration Guide_files/image21.png" width="449.0" /></p>
+    <p class="NormalWeb"> </p>
+    <ul class="Disc">
+      <li class="Numbering15 Numbering61">Android File browser tool installation: <a class="Hyperlink" href="http://www.android.com/filetransfer">www.android.com/filetransfer</a></li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"> </p>
+    <p class="NormalWeb"><strong>How to sign the UFT Mobile Agents for iOS Devices:</strong></p>
+    <ul class="Disc">
+      <li class="NormalWeb">Creating the Certificate and Provisioning Profile: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/iOSAssets.htm">https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/iOSAssets.htm</a></li>
+      <li class="NormalWeb">Sign the UFT Mobile Agents: <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/MC_Enabler.htm?Highlight=ios enabler">https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/MC_Enabler.htm?Highlight=ios%20enabler</a></li>
+    </ul>
+    <p class="NormalWeb"> </p>
+    <p class="NormalWeb"><strong>How to Update ChromeDriver on the Connector:</strong></p>
+    <ul class="Disc">
+      <li class="Numbering16 Numbering71">Go to Connector installation folder</li>
+    </ul>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">For finding it on Mac machine run the below:</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;">Finder-&gt; Go to folder -&gt; /opt/UFTMobile</p>
+    <p class="NormalWeb" style=" margin-left: 0.38in;"><img alt="Graphical user interface, application
+Description automatically generated" height="365.9" src="../../images/Ginger-UFT Mobile Integration Guide_files/image22.png" width="480.0" /></p>
+    <ul class="Disc">
+      <li class="Numbering17 Numbering91">Go to Connector/chromeDriver folder and create new folder for each chrome version needed and place the chrome driver file under it</li>
+      <li class="Numbering17 Numbering91">Go to Connector/conf/chromeDriver.properties file and add new records for the new version added</li>
+      <li class="Numbering17 Numbering91">Restart the Connector and try</li>
+    </ul>
+    <p> </p>
+    <ul class="Disc">
+      <li>UFT Mobile provides Troubleshooting and tips <a class="Hyperlink" href="https://admhelp.microfocus.com/uftmobile/en/2021-2021_R1/Content/Troubleshooting_MC.htm?Highlight=troubleshooting">here</a>.</li>
+      <li>On top of that there is a UFT Mobile support team to help with any complicated issue, where you can raise cases to the support team, and get a quick response by email.</li>
+      <li>The Support Portal link is <a class="Hyperlink" href="https://portal.microfocus.com/s/?language=en_US">here</a>.</li>
+    </ul>
+  </div>
+</body>
+</html>

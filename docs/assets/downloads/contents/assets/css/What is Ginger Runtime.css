@@ -1,0 +1,21 @@
+body {
+    font-size: 12pt;
+    font-family: Calibri;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+span.normaltextrun {}
+p.paragraph {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Times New Roman', 'serif';
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent-0-50in {
+text-indent:0.50in;
+}

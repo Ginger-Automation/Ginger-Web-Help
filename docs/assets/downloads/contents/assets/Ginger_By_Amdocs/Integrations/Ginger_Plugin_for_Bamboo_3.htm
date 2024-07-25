@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger Plugin for Bamboo</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta http-equiv="Content-Language" content="fr-FR" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/Ginger Plugin for Bamboo.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="font-weight:bold;"><span style="font-size:32px;color:#302E45;margin-left:148px"> Ginger Plugin for Bamboo</span></span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="color:#0000ff;"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="Ginger_Plugin_for_Bamboo_3.htm">Description</a></span></span></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="color:#0000ff;"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="Ginger_Plugin_for_Bamboo_3.htm">Pre Requisites</a></span></span></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="color:#0000ff;"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#How_to_use_the_Ginger_Plugin">How to use the Ginger Plugin</a></span></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2" style="font-family: Calibri;"><span style="color:#0000ff;"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Install_Ginger_Plugin">Install Ginger Plugin</a></span></span></span></li>
+      <li class="TOC2" style="font-family: Calibri;"><span style="color:#0000ff;"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Set_Ginger_Execution_using_Ginger_Plugin" style="color: #302E45">Set Ginger Execution using Ginger Plugin</a></span></span></span></li>
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><a id="_Description"></a><a id="_Toc475390897"></a><br />
+      ‎</p>
+    <p style="font-family: Calibri"> </p>
+    <h1 style="font-family: Calibri"><span style="margin-left:72px;">Description</span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> The Ginger plugin was created for allowing Ginger users to schedule Ginger executions using Bamboo with ease, including advanced capabilities like </span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> automatic updates from Source Control like Git/SVN.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Ginger Plugin offers Two different tasks:</span><span style="font-size:16px;"> </span></span></p>
+    <ol class="Decimal">
+      <li style="font-family: Calibri;"><span style="margin-left:72px;"><span style="font-size:16px;"> Ginger Runset Execution</span><span style="font-size:16px;"> </span></span>
+        <ul class="Disc">
+          <li style="font-family: Calibri;"><span style="margin-left:72px;"><span style="font-size:16px;"></span><span style="font-size:16px;">Selecting which Solution Run Set &amp; Environment to use from drop list.</span></span></li>
+        </ul>
+      </li>
+      <li style="font-family: Calibri;"><span style="margin-left:72px;"><span style="font-size:16px;"></span> <span style="font-size: 16px;"></span><span style="font-size: 16px;">Ginger Execution Advanced</span></span></li>
+    </ol>
+    <h1 style="font-family: Calibri"><span style="margin-left:72px;"></span></h1>
+    <h1 style="font-family: Calibri"><span style="margin-left:72px;"><a id="_Pre_Requisites"></a><a id="Pre_Requisites"></a>Pre Requisites</span></h1>
+    <p style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Plugin Prerequisites are:</span></span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Bamboo Server requires Java8 or above to function.</span></span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;"><a id="Bamboo_"></a>Bamboo Server version 6.3.2 or above</span></span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Bamboo Slave installed on the machine hosting Ginger installation</span></span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Bamboo projects creation and execution knowledge</span></span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Ginger Solution which:</span></span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Configured on Ginger Source Control</span></span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Includes Run Set/s ready to be executed</span></span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Ginger Version (Beta 3.7.5 or above) on Slave machine (For Ginger Plugin V1 or above)</span></span></p>
+    <h1 style="font-family: Calibri"><span style="margin-left:72px;"></span></h1>
+    <h1 style="font-family: Calibri"><span style="margin-left:72px;"><a id="_How_to_use"></a><a id="How_to_use_the_Ginger_Plugin"></a>How to use the Ginger Plugin</span></h1>
+    <h2 style="font-family: Calibri"><span style="margin-left:72px;"><a id="Install_Ginger_Plugin"></a>Install Ginger Plugin</span></h2>
+    <p style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">       Please follow below steps for installing the Ginger Plugin:</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Login to Bamboo</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Go to: Manage apps</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">On the Same page there is an option to upload a plugin browse and select the Ginger Plugin file “GingerForBamboo.jar”</span></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">Click on “Upload”</span></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"><span style="margin-left:72px;">        The plugin now supposed to be installed and ready to be used.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;">      <img alt="Picture 5" height="372" src="../../images/Ginger Plugin for Bamboo_files/image1.png" width="908" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <h2 style="font-family: Calibri"><span style="margin-left:72px;"><a id="Set_Ginger_Execution_using_Ginger_Plugin"></a>Set Ginger Execution using Ginger Plugin</span></h2>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:72px;">           <span style="color:#000000;font-size:16px">Use Ginger Plugin in Your Project</span></span></h3>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Follow below steps to use the Ginger plugin in your new/existing Bamboo project:</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Open the Project page -&gt; Go to Project Plan -&gt; Go to desired Job</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Click on “Add Task”</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Search For “Ginger” on Tasks Page</span></span></p>
+    <p class="Numbering10 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Click on desired “Ginger Task”.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"><img alt="Picture 6" height="429" src="../../images/Ginger Plugin for Bamboo_files/image2.png" width="847" /></span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Configure Ginger Runset Execution Task</span></span></h3>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">         Please set below details in the plugin configurations:</span></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Set below “Source Control Configurations” details</span></span></p>
+    <div align="center" style="font-family: Calibri">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width: 863px;">
+        <colgroup>
+          <col style="width: 174px;" />
+          <col style="width: 252px;" />
+          <col style="width: 351px;" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Parameter Name</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Explanation</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Sample Value</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Source Control Type</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Type of source Control</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">SVN/GIT</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">URL</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">The URL of Source Control server which host the Ginger Solution to execute</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">http://svnserver.corp.yourdomain.com:81/svn/</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">User</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Source Control username</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Password</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Source Control password</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Proxy Server</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Required for githib.com only</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">proxy.yourcompany.com</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Proxy Port</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Required for githib.com only</span></span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">8080</span></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Click on “Test Connection”</span></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Set below “Test Properties” details</span></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <div align="center" style="font-family: Calibri">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:143.66666666666666666666666667px" />
+          <col style="width:216px" />
+          <col style="width:179.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Parameter Name</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Explanation</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Sample Value</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Solution Name</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Ginger Solution name to execute as appear in repository</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">RunSet Name</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">The Ginger Run Set to execute (must be exist in the Solution)</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Environment Name</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">The Ginger environment to use for execution (must be exist in the Solution)</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Set below “Ginger Execution Definitions” details:</span></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <div align="center" style="font-family: Calibri">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:143.66666666666666666666666667px" />
+          <col style="width:216px" />
+          <col style="width:179.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Parameter Name</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Explanation</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Sample Value</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Solution Full Path</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">The full path on the slave machine to place the Ginger Solution before the execution</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">C:\GingerSolutions</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Ginger Executer</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">The Ginger executor based on OS</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Ginger.exe</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Ginger Executable Full Path</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">The full path to “Ginger.exe” on the slave machine</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">C:\Program Files (x86)\Amdocs\Ginger by amdocs\Ginger.exe</span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Show Ginger Auto Run Window</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Check if you want have Auto Run Window</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Run Analyzer</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"><span style="font-size:16px;">Check if you want run analyzer before execution</span></span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Config Example – Ginger Runset Execution</span></span><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;">                    <img alt="Picture 3" height="855" src="../../images/Ginger Plugin for Bamboo_files/image3.png" width="819" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:72px;">            Configure Ginger Execution Advanced Task</span></h3>
+    <p style="font-family: Calibri"><span style="margin-left:72px;">             Please set below details in the plugin configurations:</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <div align="center" style="font-family: Calibri">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width: 794px;">
+        <colgroup>
+          <col style="width:143.66666666666666666666666667px" />
+          <col style="width:216px" />
+          <col style="width:179.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;">Parameter Name</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;">Explanation</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;">Sample Value</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;">Ginger Executer</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;">The Ginger executor based on OS</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;">Ginger.exe</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;">Ginger Executable Full Path</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;">The full path to “Ginger.exe” on the slave machine</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;">C:\Program Files (x86)\Amdocs\Ginger by amdocs\Ginger.exe</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:72px;">Json Payload</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:72px;">Provide Json data of the Runset which can find while creating autorun window or else you can modify default schema provided.</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:72px;"></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <h3 class="Heading3" style="font-family: Calibri"><span style="margin-left:72px;">Json Payload in Advanced Task - supports 2 main modes</span></h3>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="margin-left:72px;"><a id="Existing_Run_Set_execution_configurations-_User_can_specify_how_exactly_an_existing_Run_set_will_be_executed_by_manipulating_it:Runners_execution_configuration_such_as_Parallel/Sequential,_if_to_stop_on_failure_or_not,_etc.Applications-Agents_mapping-_set_different_Agent_than_configured_on_GingerChange_selected_Environment/sBusiness_Flows_Active_flag_for_disabling_some_of_the_Business_FlowsBusiness_Flow_Input_values-_can_define_which_value_will_be_set_to_each_input,_including_Output_Values_configurationRun_set_Operations_configurations_manipulation_(currently_only_Mail_Report_operation_changes_is_supported)On_run_time_from_CLI,_Ginger_will_load_the_existing_Run_set,_then_will_manipulate_it_according_to_the_JSON_configurations_and_then_will_execute_the_manipulated_Run_set.Changes_are_not_been_saved_to_the_Run_set_and_been_used_only_during_execution.Note:_JSON_should_include_only_the_nodes_of_the_items_(Runners/Business_Flows/etc.)_which_needs_to_be_modified_on_the_Run_set_before_execution_starts._Sample_existing_Run_set_manipulation_JSON:_{__&quot;SolutionScmDetails&quot;:_{____&quot;SCMType&quot;:_&quot;GIT&quot;,____&quot;SolutionRepositoryUrl&quot;:_&quot;https://github.com/Ginger-Automation/TDMTestSolution&quot;,____&quot;User&quot;:_&quot;menikadosh1&quot;,____&quot;Password&quot;:_&quot;XrqycklHMicLOWU2ZayaKg==&quot;,____&quot;PasswordEncrypted&quot;:_true,____&quot;UndoSolutionLocalChanges&quot;:_false__},__&quot;SolutionLocalPath&quot;:_&quot;C:\\Ginger_Solutions\\Cloud\\TDMTestSolution&quot;,__&quot;ShowAutoRunWindow&quot;:_false,__&quot;VerboseLevel&quot;:_&quot;normal&quot;,__&quot;Runset&quot;:_{____&quot;Exist&quot;:_true,____&quot;Name&quot;:_&quot;BP_Create&quot;,____&quot;ID&quot;:_&quot;14cdc3e5-3a62-47a1-bfae-34c85ba086e5&quot;,____&quot;EnvironmentName&quot;:_&quot;AOT_221&quot;,____&quot;EnvironmentID&quot;:_&quot;b7ca5289-d0f7-4220-ac3f-f0de95576873&quot;,____&quot;RunAnalyzer&quot;:_true,____&quot;RunInParallel&quot;:_true,____&quot;StopRunnersOnFailure&quot;:_false,____&quot;Runners&quot;:_[______{________&quot;Name&quot;:_&quot;Runner_1&quot;,________&quot;ID&quot;:_&quot;83cd17d7-1e56-498e-a2d5-18fcc2331b6b&quot;,________&quot;BusinessFlows&quot;:_[__________{____________&quot;Name&quot;:_&quot;Create&quot;,____________&quot;ID&quot;:_&quot;c3d7d9ad-4336-4576-a516-e9814dc9d523&quot;,____________&quot;Active&quot;:_true,____________&quot;InputValues&quot;:_[______________{________________&quot;VariableParentName&quot;:_&quot;CreateCustomer&quot;,________________&quot;VariableParentID&quot;:_&quot;c3d7d9ad-4336-4576-a516-e9814dc9d523&quot;,________________&quot;VariableName&quot;:_&quot;CustomerCreationType&quot;,________________&quot;VariableID&quot;:_&quot;4f35384d-6a63-4154-819f-26baf388e0e9&quot;,_________________&quot;VariableCustomizationType&quot;:_&quot;Value&quot;,________________&quot;VariableCustomizedValue&quot;:_&quot;Type1&quot;______________}____________]__________}________]______}____],____&quot;Operations&quot;:_[______{________&quot;$type&quot;:_&quot;RunsetOperations.MailReportOperationExecConfig,_Ginger.ExecuterService.Contracts&quot;,________&quot;MailSettings&quot;:_{__________&quot;EmailMethod&quot;:_&quot;SMTP&quot;,__________&quot;SmtpDetails&quot;:_{____________&quot;Server&quot;:_&quot;ilmail&quot;,____________&quot;Port&quot;:_&quot;25&quot;,____________&quot;EnableSSL&quot;:_true__________},__________&quot;Subject&quot;:_&quot;TDM_Execution_Details_Report-_BP_Create&quot;________},________&quot;BodyContentType&quot;:_&quot;HTMLReport&quot;,________&quot;BodyReportTemplateID&quot;:_2,________&quot;IncludeAttachmentReport&quot;:_true,________&quot;AttachmentReportTemplateID&quot;:_2,________&quot;AttachmentReportAttachType&quot;:_&quot;Link&quot;,________&quot;CustomizedReportFolder&quot;:_&quot;\\\\ilrnaginger02\\GingerExecuterAgent\\Reports&quot;,________&quot;Name&quot;:_&quot;Send_HTML_Report_Email&quot;,________&quot;ID&quot;:_&quot;ca90b21a-aedb-455c-aafb-f2b3a7979d8d&quot;,________&quot;Active&quot;:_false,________&quot;Condition&quot;:_&quot;AlwaysRun&quot;,________&quot;RunAt&quot;:_&quot;ExecutionEnd&quot;______}____]__}}_______________Virtual_Run_Set_execution_configurations-_User_can_specify_how_exactly_not_existing_Run_set_will_be_created_virtually_during_run_time,_including:Adding_any_needed_number_of_Runners_neededDescribe_all_Runners_related_configurationsSet_environment/s_to_be_usedApplications-Agents_mapping_setupAdd_all_Business_Flows_needed_for_the_executionBusiness_Flow_Input_values-_can_define_which_value_will_be_set_to_each_input,_including_Output_Values_configurationRun_set_Operations_configurations_(currently_only_Mail_Report_operation_is_supported)On_run_time_from_CLI,_Ginger_will_virtually_create_the_Run_set_as_described_in_the_JSON,_and_then_will_execute_it.The_virtual_Run_set_is_not_been_saved_to_Ginger_and_been_used_only_during_execution._Sample_Virtual_Run_set_JSON:_{__&quot;SolutionScmDetails&quot;:_{____&quot;SCMType&quot;:_&quot;GIT&quot;,____&quot;SolutionRepositoryUrl&quot;:_&quot;https://github.com/Ginger-Automation/TDMTestSolution.git&quot;,____&quot;User&quot;:_&quot;menikadosh1&quot;,____&quot;Password&quot;:_&quot;dfQhf/SpUPGl3qhpmneClUb71uDX6Ybq0hyMpeZ0CTzni2KSAvgfHNMggnvfNJeB&quot;,____&quot;PasswordEncrypted&quot;:_true__},__&quot;Runset&quot;:_{____&quot;Exist&quot;:_false,____&quot;Name&quot;:_&quot;BP_Create_&gt;_BP_ModifyPackage_&gt;_BP_ModifyName&quot;,____&quot;EnvironmentName&quot;:_&quot;VAPP_89&quot;,____&quot;EnvironmentID&quot;:_&quot;ee123103-b2cf-4de9-93a2-143f5cf9b767&quot;,____&quot;RunAnalyzer&quot;:_false,____&quot;RunInParallel&quot;:_false,____&quot;StopRunnersOnFailure&quot;:_true,____&quot;Runners&quot;:_[______{________&quot;Name&quot;:_&quot;BP_ModifyName&quot;,________&quot;EnvironmentName&quot;:_&quot;VAPP_89&quot;,________&quot;EnvironmentID&quot;:_&quot;ee123103-b2cf-4de9-93a2-143f5cf9b767&quot;,________&quot;OnFailureRunOption&quot;:_&quot;ContinueToRunall&quot;,________&quot;AppAgentMappings&quot;:_[__________{____________&quot;ApplicationName&quot;:_&quot;CPQ&quot;,____________&quot;ApplicationID&quot;:_&quot;49e7d234-fb87-45ad-bb2e-359930ee1f41&quot;,____________&quot;AgentName&quot;:_&quot;APIAgent1&quot;,____________&quot;AgentID&quot;:_&quot;ccb7c809-7662-46c6-bf94-d50a3905c2f4&quot;__________}________],________&quot;BusinessFlows&quot;:_[__________{____________&quot;Name&quot;:_&quot;ModifyName&quot;,____________&quot;ID&quot;:_&quot;80e3a8df-6af6-4026-b15e-fe033c54699b&quot;,____________&quot;InputValues&quot;:_[______________{________________&quot;VariableParentName&quot;:_&quot;ModifyName&quot;,________________&quot;VariableParentID&quot;:_&quot;80e3a8df-6af6-4026-b15e-fe033c54699b&quot;,________________&quot;VariableName&quot;:_&quot;CustomerIDToModify&quot;,________________&quot;VariableID&quot;:_&quot;43769aaa-7977-47aa-96de-dedbd98459fc&quot;,________________&quot;VariableCustomizationType&quot;:_&quot;OutputVariable&quot;,________________&quot;VariableCustomizedValue&quot;:_&quot;94b50452-f59c-422c-a5c1-3a8ddef89a46&quot;______________},______________{________________&quot;VariableParentName&quot;:_&quot;ModifyName&quot;,________________&quot;VariableParentID&quot;:_&quot;80e3a8df-6af6-4026-b15e-fe033c54699b&quot;,________________&quot;VariableName&quot;:_&quot;CustomerNameToSet&quot;,________________&quot;VariableID&quot;:_&quot;826290d1-c04d-41b4-bcd1-6089e6007098&quot;,________________&quot;VariableCustomizationType&quot;:_&quot;Value&quot;,________________&quot;VariableCustomizedValue&quot;:_&quot;zzz&quot;______________}____________]__________},__________{____________&quot;Name&quot;:_&quot;Generic_Validation_2&quot;,____________&quot;ID&quot;:_&quot;378221e0-ec95-4301-92f7-cf30b2d7f164&quot;__________}________]______}____],____&quot;Operations&quot;:_[______{________&quot;$type&quot;:_&quot;RunsetOperations.MailReportOperationExecConfig,_Ginger.ExecuterService.Contracts&quot;,________&quot;MailSettings&quot;:_{__________&quot;EmailMethod&quot;:_&quot;SMTP&quot;,__________&quot;SmtpDetails&quot;:_{____________&quot;Server&quot;:_&quot;mail.corp.yourcompany.com&quot;,____________&quot;Port&quot;:_&quot;25&quot;,____________&quot;EnableSSL&quot;:_false,____________&quot;User&quot;:_&quot;yourdomain\\yourusername&quot;,____________&quot;Password&quot;:_&quot;youruser&quot;__________},__________&quot;MailFrom&quot;:_&quot;gingergen@amdocs.com&quot;,__________&quot;MailTo&quot;:_&quot;menik@amdocs.com&quot;,__________&quot;Subject&quot;:_&quot;eTDM_Detailed_Execution_Report_for_&#39;BP_Create_&gt;_BP_ModifyPackage_&gt;_BP_ModifyName&#39;&quot;________},________&quot;Comments&quot;:_&quot;Executed_via_eTDM_by_menikadosh1&quot;,________&quot;BodyContentType&quot;:_&quot;HTMLReport&quot;,________&quot;IncludeAttachmentReport&quot;:_true,________&quot;AttachmentReportAttachType&quot;:_&quot;Link&quot;,________&quot;CustomizedReportFolder&quot;:_&quot;\\\\ilrnaginger02\\GingerExecuterAgent\\Reports&quot;,________&quot;Name&quot;:_&quot;eTDM_Detailed_Execution_Report_for_&#39;BP_Create_&gt;_BP_ModifyPackage_&gt;_BP_ModifyName&#39;&quot;,________&quot;Active&quot;:_true,________&quot;Condition&quot;:_&quot;AlwaysRun&quot;,________&quot;RunAt&quot;:_&quot;ExecutionEnd&quot;______}____]__}}"></a><span style="font-size:16px;">Existing Run Set execution configurations- User can specify how exactly an existing Run set will be executed by manipulating it:</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Runners execution configuration such as Parallel/Sequential, if to stop on failure or not, etc.</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Applications-Agents mapping- set different Agent than configured on Ginger</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Change selected Environment/s</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Business Flows Active flag for disabling some of the Business Flows</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Business Flow Input values- can define which value will be set to each input, including Output Values configuration</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Run set Operations configurations manipulation (currently only Mail Report operation changes is supported)</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">On run time from CLI, Ginger will load the existing Run set, then will manipulate it according to the JSON configurations and then will </span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">execute the manipulated Run set.</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Changes are not been saved to the Run set and been used only during execution.</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Note: JSON should include only the nodes of the items (Runners/Business Flows/etc.) which needs to be modified on the Run set before </span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">execution starts.</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Sample existing Run set manipulation JSON:</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SolutionScmDetails&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SCMType&quot;: &quot;GIT&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SolutionRepositoryUrl&quot;: &quot;https://github.com/Ginger-Automation/TDMTestSolution&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;User&quot;: &quot;menikadosh1&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Password&quot;: &quot;XrqycklHMicLOWU2ZayaKg==&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;PasswordEncrypted&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;UndoSolutionLocalChanges&quot;: false</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SolutionLocalPath&quot;: &quot;C:\\Ginger Solutions\\Cloud\\TDMTestSolution&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ShowAutoRunWindow&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VerboseLevel&quot;: &quot;normal&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Runset&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Exist&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;BP_Create&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ID&quot;: &quot;14cdc3e5-3a62-47a1-bfae-34c85ba086e5&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnvironmentName&quot;: &quot;AOT_221&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnvironmentID&quot;: &quot;b7ca5289-d0f7-4220-ac3f-f0de95576873&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;RunAnalyzer&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;RunInParallel&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;StopRunnersOnFailure&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Runners&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;Runner 1&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ID&quot;: &quot;83cd17d7-1e56-498e-a2d5-18fcc2331b6b&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;BusinessFlows&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;Create&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ID&quot;: &quot;c3d7d9ad-4336-4576-a516-e9814dc9d523&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Active&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;InputValues&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableParentName&quot;: &quot;CreateCustomer&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableParentID&quot;: &quot;c3d7d9ad-4336-4576-a516-e9814dc9d523&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableName&quot;: &quot;CustomerCreationType&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableID&quot;: &quot;4f35384d-6a63-4154-819f-26baf388e0e9&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableCustomizationType&quot;: &quot;Value&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableCustomizedValue&quot;: &quot;Type1&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">]</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">]</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">],</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Operations&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;$type&quot;: &quot;RunsetOperations.MailReportOperationExecConfig, Ginger.ExecuterService.Contracts&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;MailSettings&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EmailMethod&quot;: &quot;SMTP&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SmtpDetails&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Server&quot;: &quot;ilmail&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Port&quot;: &quot;25&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnableSSL&quot;: true</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Subject&quot;: &quot;TDM Execution Details Report- BP_Create&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;BodyContentType&quot;: &quot;HTMLReport&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;BodyReportTemplateID&quot;: 2,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;IncludeAttachmentReport&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;AttachmentReportTemplateID&quot;: 2,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;AttachmentReportAttachType&quot;: &quot;Link&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;CustomizedReportFolder&quot;: &quot;\\\\ilrnaginger02\\GingerExecuterAgent\\Reports&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;Send HTML Report Email&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ID&quot;: &quot;ca90b21a-aedb-455c-aafb-f2b3a7979d8d&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Active&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Condition&quot;: &quot;AlwaysRun&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;RunAt&quot;: &quot;ExecutionEnd&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">]</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Virtual Run Set execution configurations- User can specify how exactly not existing Run set will be created virtually during run time, including:</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Adding any needed number of Runners needed</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Describe all Runners related configurations</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Set environment/s to be used</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Applications-Agents mapping setup</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Add all Business Flows needed for the execution</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Business Flow Input values- can define which value will be set to each input, including Output Values configuration</span></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Run set Operations configurations (currently only Mail Report operation is supported)</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">On run time from CLI, Ginger will virtually create the Run set as described in the JSON, and then will execute it.</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">The virtual Run set is not been saved to Ginger and been used only during execution.</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">Sample Virtual Run set JSON:</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SolutionScmDetails&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SCMType&quot;: &quot;GIT&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SolutionRepositoryUrl&quot;: &quot;https://github.com/Ginger-Automation/TDMTestSolution.git&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;User&quot;: &quot;menikadosh1&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Password&quot;: &quot;dfQhf/SpUPGl3qhpmneClUb71uDX6Ybq0hyMpeZ0CTzni2KSAvgfHNMggnvfNJeB&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;PasswordEncrypted&quot;: true</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Runset&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Exist&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;BP_Create &gt; BP_ModifyPackage &gt; BP_ModifyName&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnvironmentName&quot;: &quot;VAPP_89&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnvironmentID&quot;: &quot;ee123103-b2cf-4de9-93a2-143f5cf9b767&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;RunAnalyzer&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;RunInParallel&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;StopRunnersOnFailure&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Runners&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;BP_ModifyName&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnvironmentName&quot;: &quot;VAPP_89&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnvironmentID&quot;: &quot;ee123103-b2cf-4de9-93a2-143f5cf9b767&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;OnFailureRunOption&quot;: &quot;ContinueToRunall&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;AppAgentMappings&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ApplicationName&quot;: &quot;CPQ&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ApplicationID&quot;: &quot;49e7d234-fb87-45ad-bb2e-359930ee1f41&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;AgentName&quot;: &quot;APIAgent1&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;AgentID&quot;: &quot;ccb7c809-7662-46c6-bf94-d50a3905c2f4&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">],</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;BusinessFlows&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;ModifyName&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ID&quot;: &quot;80e3a8df-6af6-4026-b15e-fe033c54699b&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;InputValues&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableParentName&quot;: &quot;ModifyName&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableParentID&quot;: &quot;80e3a8df-6af6-4026-b15e-fe033c54699b&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableName&quot;: &quot;CustomerIDToModify&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableID&quot;: &quot;43769aaa-7977-47aa-96de-dedbd98459fc&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableCustomizationType&quot;: &quot;OutputVariable&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableCustomizedValue&quot;: &quot;94b50452-f59c-422c-a5c1-3a8ddef89a46&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableParentName&quot;: &quot;ModifyName&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableParentID&quot;: &quot;80e3a8df-6af6-4026-b15e-fe033c54699b&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableName&quot;: &quot;CustomerNameToSet&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableID&quot;: &quot;826290d1-c04d-41b4-bcd1-6089e6007098&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableCustomizationType&quot;: &quot;Value&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;VariableCustomizedValue&quot;: &quot;zzz&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">]</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;Generic Validation 2&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;ID&quot;: &quot;378221e0-ec95-4301-92f7-cf30b2d7f164&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">]</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">],</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Operations&quot;: [</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">{</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;$type&quot;: &quot;RunsetOperations.MailReportOperationExecConfig, Ginger.ExecuterService.Contracts&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;MailSettings&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EmailMethod&quot;: &quot;SMTP&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;SmtpDetails&quot;: {</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Server&quot;: &quot;mail.corp.yourcompany.com&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Port&quot;: &quot;25&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;EnableSSL&quot;: false,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;User&quot;: &quot;yourdomain\\yourusername&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Password&quot;: &quot;youruser&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;MailFrom&quot;: &quot;gingergen@amdocs.com&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;MailTo&quot;: &quot;menik@amdocs.com&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Subject&quot;: &quot;eTDM Detailed Execution Report for &#39;BP_Create &gt; BP_ModifyPackage &gt; BP_ModifyName&#39;&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">},</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Comments&quot;: &quot;Executed via eTDM by menikadosh1&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;BodyContentType&quot;: &quot;HTMLReport&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;IncludeAttachmentReport&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;AttachmentReportAttachType&quot;: &quot;Link&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;CustomizedReportFolder&quot;: &quot;\\\\ilrnaginger02\\GingerExecuterAgent\\Reports&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Name&quot;: &quot;eTDM Detailed Execution Report for &#39;BP_Create &gt; BP_ModifyPackage &gt; BP_ModifyName&#39;&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Active&quot;: true,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;Condition&quot;: &quot;AlwaysRun&quot;,</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">&quot;RunAt&quot;: &quot;ExecutionEnd&quot;</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">]</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;">}</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> Config Example – Ginger Execution Advanced:</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"> <img alt="Picture 2" height="560" src="../../images/Ginger Plugin for Bamboo_files/image4.png" width="877" /></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:72px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

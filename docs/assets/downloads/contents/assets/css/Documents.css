@@ -1,0 +1,17 @@
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

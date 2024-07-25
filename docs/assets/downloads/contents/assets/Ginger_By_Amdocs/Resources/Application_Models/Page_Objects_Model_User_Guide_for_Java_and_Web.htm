@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page Objects Model</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/Page Objects Model User Guide for Java and Web.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 32px">                    <span style="font-size:32px;"> Page Objects Model</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="margin-left-2-50in" style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><strong>Contents</strong></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Introduction">Introduction</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Page_Objects_Model_Wizard">Page Objects Model Wizard</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.1_Automatic_page_learn">Automatic page learn</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.2_Manual_Page_Objects_Model_creation">Manual Page Objects Model creation</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.3_Adding_Unmapped_Elements_to_Mapped_Elements_list_and_vice-versa">Adding Unmapped Elements to Mapped Elements list and vice-versa</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.4_Learn_Only_Mapped_Elements">Learn Only Mapped Elements</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.5_Learning_the_Elements_by_Locator’s_Priority">Learning the Elements by Locator’s Priority</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.6_Giving_Dynamic_value_to_a_Locator_of_the_Learned_Element">Giving Dynamic value to a Locator of the Learned Element</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#3._Page_Objects_Model_Edit_Page">Page Objects Model Edit Page</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#3.1_Page_Objects_Model_General_Details">Page Objects Model General Details</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Screenshot_Tab">Screenshot Tab</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#UI_Elements_Tab">UI Elements Tab</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Update_Elements">Update Elements</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#4._Page_Objects_Model_Element’s_Values">Page Objects Model Element’s Values</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#5._Using_Page_Objects_Model_for_Automate_and_Execute">Using Page Objects Model for Automate and Execute</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#Automate_Using_Page_Objects_Model">Automate Using Page Objects Model</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#5.2_Automate_Using_Page_Objects_Model_with_Values">Automate Using Page Objects Model with Values</a></span></li>
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><a id="_Description"></a><br />
+      ‎</p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id="_Pre_Requisites"></a> <a id="Introduction"></a><span style="font-size:32px">Introduction</span></h1>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">The purpose of this document is to provide a hands-on step by step user guide for Autopilot Page Objects Model feature and to provide a wide overview on all Page         Objects Model available functions.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">It is available for Web and Java Platforms.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id="_How_to_use"></a> <a id="Page_Objects_Model_Wizard"></a>Page Objects Model Wizard</h1>
+    <p style="font-family: Calibri">      <span style="font-size:16px;">There are 2 ways to create a Page Objects Model, first is to create one manually and the second is to let the Ginger learn the Page you’d like to automate, both </span><span style="font-size:16px;">creations are being done using the Page Objects Model Wizard.</span></p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri"><a id="2.1_Automatic_page_learn"></a><a id="2.1_Automatic_page_learn_1"></a>Automatic page learn</h2>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">Prerequisites:</span></p>
+    <p class="Numbering2 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Solution with at least one Platform Target Application</span></p>
+    <p class="Numbering2 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">At least one platform agent (e.g. selenium chrome Agent for Web Platform)</span></p>
+    <p class="Numbering2 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Site URL which you wish to learn.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Go to Resources tab <span style="font-size:11.0pt"><span style="font-family:Wingdings">à</span></span> Applications Models <span style="font-size:11.0pt"><span style="font-family:Wingdings">à</span></span> Page Objects Models.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Click the Plus button.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 278274931" height="178" src="../../../images/Page Objects Model User Guide for Java and Web_files/image2.png" width="842" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">Add Page Objects Model Wizard is opened.</span></p>
+    <p class="Numbering7 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Click Next Introduction page.</span></p>
+    <p class="Numbering7 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Learning Configurations page:</span></p>
+    <p class="Numbering7 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;"> Select Target application ---for Web , Mobile, Window and Java</span></p>
+    <p class="ListParagraph margin-left-1-81in" style="font-family: Calibri"><span style="font-size:16px;"> (If you don’t have any Web Platform Target Application in your solution, please close the wizard configure a new target application configure </span></p>
+    <p class="ListParagraph margin-left-1-81in" style="font-family: Calibri"><span style="font-size:16px;"> one agent, and start over from step 1).</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 1318309094" height="586" src="../../../images/Page Objects Model User Guide for Java and Web_files/image3.png" width="833" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-weight:bold;"><span style="font-size:16px;">For Java Applications:-</span></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">In order to use the Java agent in the Page Object Model screen, the Java agent needs to be attached to the Java application from the Business Flow tab as shown below.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Run the Launch Java Application Action and attach the Java agent to the Java application.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Either launch the application using this Action or attach the agent on already launched Java application.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 113298618" height="546" src="../../../images/Page Objects Model User Guide for Java and Web_files/image4.png" width="833" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">In the Add POM wizard, select the Target application as MyJavaApp. The Java agent is automatically populated and is Green indicating that it is On.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 550942120" height="600" src="../../../images/Page Objects Model User Guide for Java and Web_files/image5.png" width="850" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19intext-indent-0-31in" style="font-family: Calibri"><strong><span style="font-size:16px;">Learn Specific Frame (Java Driver):</span></strong></p>
+    <p class="ListParagraph margin-left-1-19intext-indent-0-31in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Checked Learn Specific Frame, in order to learn specific frame of the selected window.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 1021294819" height="598" src="../../../images/Page Objects Model User Guide for Java and Web_files/image6.png" width="852" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering7 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Select Agent (If you don’t have an Agent in your solution, please close the wizard configure a new Selenium agent, and start over from step 1).</span></p>
+    <p class="Numbering7 ListParagraph" data-list-level="4" style="font-family: Calibri"> </p>
+    <p class="Numbering7 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">After selecting the agent, the On/Off button will be enabled. Click it in order to turn on your agent.</span></p>
+    <p class="Numbering7 ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-63in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Now go to the browser instance which been raised by Ginger and navigate to the page URL you would like to learn.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 979966747" height="590" src="../../../images/Page Objects Model User Guide for Java and Web_files/image7.png" width="839" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering7 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">When the Agent and its browser instance are opened, the list of Elements Types will be shown on the page.</span></p>
+    <p class="Numbering7 ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Here you can specify what types of element interesting you in order to create your automation.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Once done selecting all desired elements click next.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 285962631" height="581" src="../../../images/Page Objects Model User Guide for Java and Web_files/image8.png" width="824" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p style="margin-top:3.75pt; margin-right:0in; margin-bottom:3.75pt; margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt"><span style="background:white"><b><span style="color:black">Custom Relative Xpath (Supported Web and Mobile) :</span></b></span></span></span></span></p>
+    <p style="margin-top:3.75pt; margin-right:0in; margin-bottom:3.75pt; margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt"><span style="background:white"><span style="color:black">On Checked of Custom Xpath Learning Configuration, Custom xpath grid will be visible.</span></span></span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">You can add multiple XPath format (combine multiple attributes as shown in below SS) in list. During POM learning Ginger will create relative XPath for element, </span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">if it match the format.</span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt"></span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">For Example : if you want to create relative xpath of below web element with combination of “placeholder” and “type” attributes. Then xpath format will be //*</span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">[@placeholder=’ ‘and @type = ‘ ’].</span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">During Learing, ginger will look for attributes mentioned in format for each web element and for matching web elements , it will replace single Quotes (‘ ’) with </span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">its original value.</span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="font-family:Calibri;"><span style="margin-left:52px;"><span style="font-size:11pt">For above format relative xpath will be “<b>//*[@placeholder=’First Name’ and @type=’text’]</b>”.</span></span></span></p>
+    <p style="margin-left:1.0in; margin:0in"><span style="margin-left:52px;"></span></p>
+    <p style="margin-left:1.0in; margin:0in">              <img height="449" src="../../../images/image229.png" width="852" /></p>
+    <p style="margin-left:1.0in; margin:0in"> </p>
+    <p style="margin-left:1.0in; margin:0in">             <img height="395" src="../../../images/image230.png" width="860" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-weight:bold;"><span style="font-size:16px;">Learned Object Mapping</span></span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering7 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">When reaching to this page the learning process will be automatically started and the Ginger will start to learn all existing elements on the page you were navigated on the previous steps.</span></p>
+    <p class="ListParagraph margin-left-1-44in" style="font-family: Calibri"><span style="font-size:16px;">Indication of the running process would be the spinning orange icon which becomes visible. Also, you will notice that the elements are being added to the mapped elements and unmapped elements grids.</span></p>
+    <p class="ListParagraph margin-left-1-44in" style="font-family: Calibri"><span style="font-size:16px;">The mapping between them is done depending upon the types of elements you selected on the learning configuration page.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 1040515404" height="510" src="../../../images/Page Objects Model User Guide for Java and Web_files/image9.png" width="826" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering7 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Selecting any element on the grid will cause the details section to be opened and there you can find all the learned properties and locators of the selected element.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 1025612081" height="585" src="../../../images/Page Objects Model User Guide for Java and Web_files/image10.png" style="cursor: nesw-resize;" width="834" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering7 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">If you wish to stop the learning process (reason can be Ginger already learned all relevant elements and there is no reason to continue or you simply want to change the page on the browser instance etc.) you can do it by clicking the stop button.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 2117445440" height="580" src="../../../images/Page Objects Model User Guide for Java and Web_files/image11.png" width="831" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">After clicking the stop button, you will be able to restart the learning process by clicking Re-learn button</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 1412998930" height="578" src="../../../images/Page Objects Model User Guide for Java and Web_files/image12.png" width="825" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-weight:bold;"><span style="font-size:16px;">Using the Spy:</span></span></p>
+    <p class="ListParagraph margin-left-1-38in" style="font-family: Calibri"><span style="font-size:16px;">Click on the Spy button</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 910447795" height="568" src="../../../images/Page Objects Model User Guide for Java and Web_files/image13.png" style="cursor: nwse-resize;" width="807" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">While the Spy is on move your mouse to the requested element on the page and click ctrl.</span></p>
+    <ul class="Circle">
+      <li class="ListParagraph margin-left-0-94in" style="font-family: Calibri;"><span style="font-size:16px;">Element not found – re-try 2 or 3 times.</span></li>
+      <li class="ListParagraph margin-left-0-94in" style="font-family: Calibri;"><span style="font-size:16px;">An element found – the element will be focused on the elements grid</span></li>
+      <li class="ListParagraph margin-left-0-94in" style="font-family: Calibri;"><span style="font-size:16px;">An element found but does not exist on the Element Grid – you will get a button to add the found element to the grid.</span></li>
+    </ul>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 37" height="520" src="../../../images/Page Objects Model User Guide for Java and Web_files/image14.png" width="817" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Click Next.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">              General Details page:</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">The general details page contains all details which been pulled for the page, here you</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">can change the page name, URL, and screenshot.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 12" height="583" src="../../../images/Page Objects Model User Guide for Java and Web_files/image15.png" width="814" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Click Finish – The Page Objects Model has been added to the Page Objects Model tree.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri">      <a id="2.2_Manual_Page_Objects_Model_creation"></a>Manual Page Objects Model creation</h2>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering8 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Go to Resources tab <span style="font-size:12.0pt"><span style="font-family:Wingdings">à</span></span> Application Models <span style="font-size:12.0pt"><span style="font-family:Wingdings">à</span></span> Page Objects Models <span style="font-size:12.0pt"><span style="font-family:Wingdings">à</span></span> and Click the Plus button.</span></p>
+    <p style="font-family: Calibri">            <img alt="Picture 101006056" height="309" src="../../../images/Page Objects Model User Guide for Java and Web_files/image16.png" width="824" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">Add Page Objects Model Wizard is opened.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering8 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Click Next Introduction page.</span></p>
+    <p class="Numbering8 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Check the Manual Radio Button and click Next.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 1015400187" height="577" src="../../../images/Page Objects Model User Guide for Java and Web_files/image17.png" width="822" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="Numbering8 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Learned Object Mapping:</span></p>
+    <p class="Numbering8 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Add Elements By clicking the Plus button</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 1696948722" height="578" src="../../../images/Page Objects Model User Guide for Java and Web_files/image18.png" width="827" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="Numbering8 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Add Locators to your added elements</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 833051075" height="579" src="../../../images/Page Objects Model User Guide for Java and Web_files/image19.png" width="822" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="Numbering8 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">General Details</span></p>
+    <p class="Numbering8 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Add Name, Description (optional) and Page URL (optional)</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 1296729080" height="576" src="../../../images/Page Objects Model User Guide for Java and Web_files/image20.png" width="823" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="Numbering8 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Browse and Image for your Page Objects Model (optional)</span></p>
+    <p class="Numbering8 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Click Finish, the New Page Objects Model added to the tree.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri">        <a id="2.3_Adding_Unmapped_Elements_to_Mapped_Elements_list_and_vice-versa"></a>Adding Unmapped Elements to Mapped Elements list and vice-versa</h2>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">  <span style="font-size:16px;">          If an element is an unmapped list and the user desires to use it in the Actions then follow the below</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             steps.</span></p>
+    <ul class="Circle">
+      <li style="font-family: Calibri;"><span style="font-size:16px;">            Go to the Unmapped Elements tab and select the element.</span></li>
+      <li style="font-family: Calibri;"><span style="font-size:16px;">            Click on the ‘Add Elements to mapped list’ button as shown below</span></li>
+    </ul>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 46" height="304" src="../../../images/Page Objects Model User Guide for Java and Web_files/image21.png" width="823" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> <span style="font-size:16px;">The element will move to the Mapped Elements tab as shown below</span></p>
+    <p class="ListParagraph margin-left-1-06in" style="font-family: Calibri"><img alt="Picture 47" height="467" src="../../../images/Page Objects Model User Guide for Java and Web_files/image22.png" width="826" /></p>
+    <p class="ListParagraph margin-left-1-06in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-06in" style="font-family: Calibri"><span style="font-size:16px;">The same steps are to be performed while moving the elements from mapped to unmapped tab.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri">      <a id="2.4_Learn_Only_Mapped_Elements"></a>Learn Only Mapped Elements</h2>
+    <p style="font-family: Calibri">             <span style="font-size:16px;">Users can choose an option to learn only mapped elements instead of learning all the elements of the page.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             This reduces the learning time. This option is available by default.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            The user has to uncheck the checkbox if unmapped elements are to be learned.</span></p>
+    <p style="font-family: Calibri">           <img alt="Picture 48" height="650" src="../../../images/Page Objects Model User Guide for Java and Web_files/image23.png" width="795" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri">      <a id="2.5_Learning_the_Elements_by_Locator’s_Priority"></a>Learning the Elements by Locator’s Priority</h2>
+    <p style="font-family: Calibri">   <span style="font-size:16px;">         Users can set the priority of locators of the elements of the page.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            On the Learning Configurations page, expand the area ‘Learned Elements Locators Preferences’.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">           There are 4 options viz. ById, ByName, ByRelXPath &amp; ByXpath.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            The sequence of the priority can be changed by using the arrow buttons as indicated below.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            In this screenshot, when any element will be used in an Action, the Locator used will be ‘ByID’.</span></p>
+    <p style="font-family: Calibri">            <img alt="Picture 50" height="458" src="../../../images/Page Objects Model User Guide for Java and Web_files/image24.png" width="784" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">            <span style="font-size:16px;">Users can also change the Locator of a particular element after the page is learned.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            For this, select the Page Object Model. Go to the UI Elements tab and select the desired element.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            Expand the Details area. Select the desired locator and using the arrow buttons bring it to priority 1.</span></p>
+    <p style="font-family: Calibri">             <img alt="Picture 51" height="404" src="../../../images/Page Objects Model User Guide for Java and Web_files/image25.png" width="765" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri"><a id="2.6_Giving_Dynamic_value_to_a_Locator_of_the_Learned_Element"></a>Giving Dynamic value to a Locator of the Learned Element</h2>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">              A locator of a learned element can be given a customized value.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             For this, select the Page Object Model and go to the UI Elements tab.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             Select the desired Element and expand the Details area.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             Go to the Locators tab and select the desired locator.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             Copy-paste the locator.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             The pasted locator can then be edited by either directly typing in the value field or by using the</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">              value expression button ‘…’ as shown below.</span></p>
+    <p style="font-family: Calibri">              <img alt="Picture 53" height="422" src="../../../images/Page Objects Model User Guide for Java and Web_files/image26.png" width="760" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id="3._Page_Objects_Model_Edit_Page"></a>Page Objects Model Edit Page</h1>
+    <p style="font-family: Calibri"> </p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;"><span style="font-family:Calibri;">Prerequisites:</span></span></p>
+    <p class="Numbering2 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="font-family:Calibri;">At least one Page Objects Model was created on the Page Objects Model tree.</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri"><a id="3.1_Page_Objects_Model_General_Details"></a>Page Objects Model General Details</h2>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri">Go to Resources tab <span style="font-size:11.0pt"><span style="font-family:Wingdings">à</span></span> Application Models <span style="font-size:11.0pt"><span style="font-family:Wingdings">à</span></span> Page Objects Models.</p>
+    <p class="ListParagraph margin-left-1-38in" style="font-family: Calibri">Select the Page Objects Model on the tree.</p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 19" height="422" src="../../../images/Page Objects Model User Guide for Java and Web_files/image27.png" width="778" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri">On the upper section of the screen, you can change the Page Objects Model name description and the Target Application.</p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri">Select an Agent to work with and turn it on by clicking the Red button, if the selected Agent is already raised, the button will be automatically green,</p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri">and no need to re-raise the Agent.</p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 21" height="431" src="../../../images/Page Objects Model User Guide for Java and Web_files/image28.png" width="797" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri">By default, the agent will be opened with the specified Page Objects Model Page URL, whenever you need you can navigate to this URL by clicking the Arrow button.</p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 22" height="438" src="../../../images/Page Objects Model User Guide for Java and Web_files/image29.png" width="807" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering12" data-list-level="2" style="font-family: Calibri"><a id="Screenshot_Tab"></a>Screenshot Tab</h2>
+    <p style="font-family: Calibri">              <span style="font-size:16px;">  Changing the Screenshot can be done by Clicking the Take Screenshot button which will get a screenshot from the current page on the mapped </span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">               Agent or by browsing Image from a local file.</span></p>
+    <p style="font-family: Calibri">              <img alt="Picture 23" height="446" src="../../../images/Page Objects Model User Guide for Java and Web_files/image30.png" width="823" /></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering12" data-list-level="2" style="font-family: Calibri"><a id="UI_Elements_Tab"></a>UI Elements Tab</h2>
+    <p class="margin-left-1-06in" style="font-family: Calibri"><span style="font-size:16px;">The page is divided into two :</span></p>
+    <p class="Numbering3 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Mapped elements – The elements which we will use to automate our page</span></p>
+    <p class="Numbering3 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Unmapped elements – Repository of all unused elements on the page.</span></p>
+    <p class="Numbering3 ListParagraph" style="font-family: Calibri"><img alt="Picture 24" height="410" src="../../../images/Page Objects Model User Guide for Java and Web_files/image31.png" width="754" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri">       <span style="font-size:16px;"> Clicking the signs icon will shift elements from one group to another</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri">       <img alt="Picture 25" height="459" src="../../../images/Page Objects Model User Guide for Java and Web_files/image32.png" width="801" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">  Select any element will enable the properties and locators grids in the below section</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri">   <img alt="Picture 26" height="459" src="../../../images/Page Objects Model User Guide for Java and Web_files/image33.png" width="801" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">You can test a specific locator by clicking its play button or click the grid’s menu play button to check all locators, the locator</span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">statuses will be changed according to the test result.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 28" height="439" src="../../../images/Page Objects Model User Guide for Java and Web_files/image34.png" width="809" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">You can test all elements by clicking the Test All Mapped Elements button, this operation will approve your flow will not going to fail because the element cannot be found on the page, here you will have the opportunity to be aware that an element cannot be found before your execution and fix it.</span></p>
+    <p class="Numbering4 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">If you switch to the unmapped element tab you the button will be changed to test all Unmapped elements.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 29" height="446" src="../../../images/Page Objects Model User Guide for Java and Web_files/image35.png" width="823" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">You can add a new locator by clicking the add button, or copy and paste an existing one and then modify it for your needs.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 13" height="446" src="../../../images/Page Objects Model User Guide for Java and Web_files/image36.png" style="cursor: nesw-resize;" width="839" /></p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">The Up and Down buttons will define the priority of the locators, the priority order will be taken into consideration while searching the locator of the page.</span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">If you would like to exclude locators from the list just Uncheck its Active field.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering6 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Note: In automating section explains that in run time all Active locators will be used till the element will be found.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">You can highlight elements on the open instance of the Agent by clicking the Highlight button.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 30" height="444" src="../../../images/Page Objects Model User Guide for Java and Web_files/image37.png" style="cursor: nesw-resize;" width="818" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Using the Spy:</span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">Click on the Spy button</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 31" height="447" src="../../../images/Page Objects Model User Guide for Java and Web_files/image38.png" width="824" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="Numbering12 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;">While the Spy is on move your mouse to the requested element on the page and click ctrl.</span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="5" style="font-family: Calibri"><span style="font-size:16px;">Element not found – re-try 2 or 3 times.</span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="5" style="font-family: Calibri"><span style="font-size:16px;">An element found – the element will be focused on the elements grid</span></p>
+    <p class="Numbering12 ListParagraph" data-list-level="5" style="font-family: Calibri"><span style="font-size:16px;">An element found but does not exist on the Element Grid – you will get a button to add the found element to the grid.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 32" height="437" src="../../../images/Page Objects Model User Guide for Java and Web_files/image39.png" width="824" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri"><span style="font-size:16px;">Notes:</span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Most of the operations (Highlight, Test Elements/Locators, Spy, Go to Page URL, etc.) will work only if the Agent is Selected and turned on.</span></p>
+    <p class="Numbering5 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Auto Learned elements cannot be modified or deleted as they take from the page and in order to maintain the page we should keep them as is, manually added elements can be modified and deleted to your need.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering12" data-list-level="2" style="font-family: Calibri"><a id="Update_Elements"></a>Update Elements</h2>
+    <p style="font-family: Calibri">                If the elements of the learned page have been updated then the user can update the elements using the ‘Update Elements’ button</p>
+    <p class="margin-left-0-63in" style="font-family: Calibri">1. Select the Page Object Model and go to the UI Elements tab.</p>
+    <p class="margin-left-0-63in" style="font-family: Calibri">2. Turn On the Agent and go to the desired page in the agent.</p>
+    <p class="margin-left-0-63in" style="font-family: Calibri">3. Click on the ‘Update Elements’ button</p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 4" height="437" src="../../../images/Page Objects Model User Guide for Java and Web_files/image40.png" width="887" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">4. ‘POM Elements Wizard’ is displayed.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">Expand the ‘New Elements Learning Settings’ and the ‘Learned Elements Locators Preferences’</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">areas to get the details of them.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 199" height="444" src="../../../images/Page Objects Model User Guide for Java and Web_files/image41.png" width="885" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">Users can make changes in these areas if desired.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">Click on the Next button.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 198" height="442" src="../../../images/Page Objects Model User Guide for Java and Web_files/image42.png" width="881" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">5. All the elements present on the page are compared with the latest status.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">In order to map the element which is new and cannot be mapped, Press “Next”</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 196" height="445" src="../../../images/Page Objects Model User Guide for Java and Web_files/image43.png" width="888" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">             <span style="font-size:16px;">  6. A new window “Map deleted element with the new element” is displayed. If there is no deleted element found on the page, then this grid will </span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">               be empty.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">Select the edit option to map the element with new elements found on the page.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 61" height="218" src="../../../images/Page Objects Model User Guide for Java and Web_files/image44.png" width="885" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 60" height="534" src="../../../images/Page Objects Model User Guide for Java and Web_files/image45.png" width="884" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">7. Once the new element got selected, the user can validate the properties and values of existing/deleted elements and newly added elements</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">by selecting the “Compare” option.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">Also, the properties and locators of a deleted element will be replaced with new values and will avoid breaking the automation flow</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">which was happening earlier.</span></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 62" height="99" src="../../../images/Page Objects Model User Guide for Java and Web_files/image46.png" width="890" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><img alt="Picture 192" height="444" src="../../../images/Page Objects Model User Guide for Java and Web_files/image47.png" width="885" /></p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-63in" style="font-family: Calibri"><span style="font-size:16px;">  The updated elements will be displayed on the Elements Compare page.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">     The Comparison Status and Comparison Details fields will give the details of it.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">     As shown below, a green check means ‘Unchanged’. The description of the icon will be displayed in the tooltip when the mouse hovers over the </span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;"> icon.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id="4._Page_Objects_Model_Element’s_Values"></a>Page Objects Model Element’s Values</h1>
+    <p style="font-family: Calibri">            <span style="font-size:16px;"> After the page is learned, select the Page Objects Model on the tree.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             Go to the UI Elements tab.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            As shown in the below screen, the Possible Values field is displayed.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            The values are also populated from the page if any.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">           As shown in the below screenshot, the selected element has learned the possible values from the page</span>.</p>
+    <p style="font-family: Calibri">            <img alt="Picture 20" height="604" src="../../../images/Page Objects Model User Guide for Java and Web_files/image48.png" width="896" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">           <span style="font-size:16px;">   Elements that can have values are only allowed eg. Text box, list, etc.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             For all the other elements, a warning message is displayed</span></p>
+    <p style="font-family: Calibri">              <img alt="Picture 18" height="444" src="../../../images/Page Objects Model User Guide for Java and Web_files/image49.png" width="896" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">             To enter the values, click on the ‘…’ button near the possible values field on the require element</p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">            </span><img alt="Picture 27" height="356" src="../../../images/Page Objects Model User Guide for Java and Web_files/image50.png" width="895" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">          <span style="font-size:16px">  Click on the + button in the new window</span></p>
+    <p style="font-family: Calibri">           <img alt="Picture 33" height="485" src="../../../images/Page Objects Model User Guide for Java and Web_files/image51.png" width="896" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">           User can add multiple values here and set one of them as default and click on the OK button.</p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">           User can also modify and delete the values from this window.</p>
+    <p style="font-family: Calibri">             <img alt="Picture 35" height="464" src="../../../images/Page Objects Model User Guide for Java and Web_files/image52.png" width="875" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">                The default value will be displayed with a * in the list</span></p>
+    <p style="font-family: Calibri">              <img alt="Picture 38" height="264" src="../../../images/Page Objects Model User Guide for Java and Web_files/image53.png" width="868" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">       <a id="5._Using_Page_Objects_Model_for_Automate_and_Execute"></a>Using Page Objects Model for Automate and Execute</h1>
+    <h2 class="Numbering19" data-list-level="2" style="font-family: Calibri">          <a id="Automate_Using_Page_Objects_Model"></a>Automate Using Page Objects Model</h2>
+    <p style="font-family: Calibri">                   <span style="font-size:16px;">Go to Business Flows Tab <span style="font-size:11.0pt"><span style="font-family:Wingdings">à</span></span> Select the desired Business Flow with Web/Java Platform as Target Application.</span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Double click on the Business Flow.</span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Select the desired Activity where you want to add the Action.</span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Expand the Add Actions section</span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 55" height="351.0" src="../../../images/Page Objects Model User Guide for Java and Web_files/image54.png" width="827.2" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">        S<span style="font-size:16px;">elect UIElement Action and click on Add to Actions button to add it.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">           <img alt="Picture 56" height="711" src="../../../images/Page Objects Model User Guide for Java and Web_files/image55.png" width="809" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">             <span style="font-size:16px;">Double click on the UI element action to open it in Edit mode.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">              Select “Page Object Model Element” as Locate By. Select your added Page Objects Model in the “Page Object Model”.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">              Select your desired element as “Model Element” and click on the ‘Select Element’ button.</span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri"><img alt="Picture 57" height="409" src="../../../images/Page Objects Model User Guide for Java and Web_files/image56.png" width="895" /></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">Select the Element Action from the list and populate the value if needed.</span><img alt="Picture 58" height="357" src="../../../images/Page Objects Model User Guide for Java and Web_files/image57.png" width="898" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri">             <span style="font-size:16px;"> Click on Run Action.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri">            <img alt="Picture 59" height="405" src="../../../images/Page Objects Model User Guide for Java and Web_files/image58.png" width="893" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <h2 class="margin-left-0-56intext-indent--0-33in" data-list-level="2" style="font-family: Calibri">        <a id="5.2_Automate_Using_Page_Objects_Model_with_Values"></a>Automate Using Page Objects Model with Values</h2>
+    <p style="font-family: Calibri">             <span style="font-size:16px;">Values can be added to Elements either from the Page Objects Model.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             Selecting the required element from Page Objects Model as shown below and click on the Select Element button</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 44" height="405" src="../../../images/Page Objects Model User Guide for Java and Web_files/image59.png" style="cursor: nesw-resize;" width="893" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">The default value will be populated as shown below. User can also modify this value by typing the desired value in this field.</span><img alt="Picture 45" height="405" src="../../../images/Page Objects Model User Guide for Java and Web_files/image60.png" width="893" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

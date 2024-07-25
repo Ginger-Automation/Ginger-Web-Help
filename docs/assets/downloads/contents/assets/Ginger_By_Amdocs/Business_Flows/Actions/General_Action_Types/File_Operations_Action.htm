@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>File Operations Action</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../css/File Operations Action.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"><span style="font-weight:bold;font-size:32px;margin-left:120px"> File Operations Action</span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><strong style="font-size: 19px">Contents</strong></span></p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a class="Hyperlink" href="#Introduction">Introduction</a></span></p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a class="Hyperlink" href="#_Toc475390681">How to Configure Action</a></span></p>
+    <ul class="Disc" style="font-family: Calibri;font-size: 16px">
+      <li class="TOC1"><span style="font-size:16px;"><a class="Hyperlink" href="#_Toc475390681">Pre-requisite</a></span></li>
+      <li class="TOC1"><span style="font-size:16px;"><a class="Hyperlink" href="#_Toc475390681">Action Operation</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><a id=" IntroductionFile Operations Action is used for various operations on a file. Below is the available list of operations:-Check File existsCheck folder ExistsCopyExecuteForce CopyMoveRun commandHow to Configure Action            2.1 Pre-requisite                     A Solution should be created.                    Please refer to the below section on how to create a solution:-                      Solution-&gt; Business Flows                                                 2.2 How to create this Action                      2.2.1 Check File Exists Click on the Business Flows. Click on the ‘+’ icon as shown below                                 Click on ‘Actions Library’          3) Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘File Operations’.     4) File Operations Action will be added as shown below 5) Double-click on it and go to the Operation Settings tab. The Operation Type ‘CheckFileExists’ is displayed by default. Select a file using the Browse button.   6) Click on Save and Run Action. The action fails if the file is not found.       Check folder Exists Follow steps 1 to 4 from the Check File Exists action. The below screen should be displayed. Select ‘CheckFolderExists’ from the Operation Type dropdown.Select the folder path using the Browse button.               Click on Save and Run Action. The action fails if the folder is not found.                      Copy Follow steps 1 to 4 from the Check File Exists action. Select the ‘Copy’ option from the Operation Type dropdown.Select the ‘Source File Path:’ using the Browse button.Select the ‘Destination Path (Folder/File):’ in the given field.   Click on Save and Run Action. This will Copy the given file in the Destination folder/file.       Execute Follow steps 1 to 4 from the Check File Exists action. The below screen is displayed. Select the ‘Execute’ option from the Operation Type dropdown.Select the ‘Source File Path:’ using the Browse button. Also, fill the ‘Arguments’ field.  Click on Save and Run Action. This action executes the file that was selected.                 Force CopyIf for some reason, a file is not getting copied then Force Copy can be used. Follow steps 1 to 4 from the Check File Exists action.  Select the ‘ForceCopy’ option from the Operation Type dropdown.Select the ‘Source File Path:’ using the Browse button. Enter the ‘Destination Path (Folder/File):’.Click on the ‘Ok’ button to add the action to the Activity Actions.  Click on Save and Run Action. This Action copies the given file into the destination file.     Move Follow steps 1 to 4 from the Check File Exists action. Select the ‘Move’ option from the Operation Type dropdown.Select the ‘Source File Path:’ using the Browse button. Enter the ‘Destination Path (Folder/File):’.Click on Save and Run Action. This Action moves the given file into the destination path.                 Run commandThis is the same as Execute command. The only difference is that Execute command returns an error message when a file is not found whereas the Run command gives a proper informative message when a file is not found. Check the below message on the screenshot provided."></a><br />
+      ‎</h1>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><a id="Introduction" height="0" width="0"></a><span style="margin-left:20px;"><span style="font-size:32px;">Introduction </span></span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><a id="_Pre_Requisites"></a><a id="_How_to_use" height="0" width="0"></a>File Operations Action is used for various operations on a file.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Below is the available list of operations:-</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Check File exists</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Check folder Exists</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Copy</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Execute</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Force Copy</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Move</span></p>
+    <p class="Numbering20 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Run command</span></p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></h1>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></h1>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></h1>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><span style="font-size:32px;">How to Configure Action</span></span></h1>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><span style="font-size:24px;">Pre-requisite</span></span></h2>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">A Solution should be created.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Please refer to the below section on how to create a solution:-</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Solution-&gt; Business Flows</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><span style="font-size:24px;">Action Operation</span></span></h2>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>        Check File Exists</strong></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on the Business Flows. Click on the ‘+’ icon as shown below</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 1890147790" height="372" src="../../../../images/File Operations Action_files/image2.png" width="855" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering17 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on ‘Actions Library’</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 880851535" height="376" src="../../../../images/File Operations Action_files/image3.png" width="865" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">3)  Go to the ‘General Actions’ tab under the ‘Action Library’ screen and double click on ‘File Operations’.</span></p>
+    <p class="ListParagraph margin-left-1-00intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 342740206" height="904" src="../../../../images/File Operations Action_files/image4.png" width="423" /></span></p>
+    <p class="ListParagraph margin-left-1-00intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph margin-left-1-00intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">4) File Operations Action will be added as shown below</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 910814425" height="83152" src="../../../../images/File Operations Action_files/image5.png" width="2050181" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">5) Double-click on it and go to the Operation Settings tab. The Operation Type ‘CheckFileExists’ is displayed by default. Select a file using the Browse button.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 329297545" height="139" src="../../../../images/File Operations Action_files/image6.png" width="963" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">6) Click on Save and Run Action. The action fails if the file is not found.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>           Check folder Exists</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Follow steps 1 to 4 from the Check File Exists action.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">The below screen should be displayed. Select ‘CheckFolderExists’ from the Operation Type dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the folder path using the Browse button.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 1169751892" height="138" src="../../../../images/File Operations Action_files/image7.png" width="943" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on Save and Run Action. The action fails if the folder is not found.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>Copy</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Follow steps 1 to 4 from the Check File Exists action.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Copy’ option from the Operation Type dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Source File Path:’ using the Browse button.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Destination Path (Folder/File):’ in the given field.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 348453587" height="160" src="../../../../images/File Operations Action_files/image8.png" width="920" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering21 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on Save and Run Action. This will Copy the given file in the Destination folder/file.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering16 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>Execute</strong></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Follow steps 1 to 4 from the Check File Exists action.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">The below screen is displayed. Select the ‘Execute’ option from the Operation Type dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Source File Path:’ using the Browse button. Also, fill the ‘Arguments’ field.</span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 584454303" height="160" src="../../../../images/File Operations Action_files/image9.png" width="917" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on Save and Run Action. This action executes the file that was selected.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering16 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>Force Copy</strong></span></p>
+    <p class="Numbering16 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">If for some reason, a file is not getting copied then Force Copy can be used.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering23 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Follow steps 1 to 4 from the Check File Exists action.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering23 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘ForceCopy’ option from the Operation Type dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Source File Path:’ using the Browse button.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Enter the ‘Destination Path (Folder/File):’.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on the ‘Ok’ button to add the action to the Activity Actions.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 1309628036" height="167" src="../../../../images/File Operations Action_files/image10.png" width="932" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering22 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on Save and Run Action. This Action copies the given file into the destination file.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering16 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>Move</strong></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering24 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Follow steps 1 to 4 from the Check File Exists action.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering24 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Move’ option from the Operation Type dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Select the ‘Source File Path:’ using the Browse button.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Enter the ‘Destination Path (Folder/File):’.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 2070348954" height="163" src="../../../../images/File Operations Action_files/image11.png" style="cursor: nwse-resize;" width="937" /></span></p>
+    <p class="Numbering24 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Click on Save and Run Action. This Action moves the given file into the destination path.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="Numbering16 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><strong>Run command</strong></span></p>
+    <p class="Numbering16 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">This is the same as Execute command. The only difference is that Execute command returns an error message when a file is not found whereas the </span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;">Run command gives a proper informative message when a file is not found. Check the below message on the screenshot provided.</span></p>
+    <p class="ListParagraph text-indent-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"><img alt="Picture 344047289" height="534" src="../../../../images/File Operations Action_files/image12.png" width="920" /></span></p>
+    <p class="ListParagraph text-indent-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph text-indent-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:20px;"></span></p>
+    <p class="ListParagraph text-indent-0-25in" style="font-family: Calibri;font-size: 16px"> </p>
+  </div>
+</body>
+</html>

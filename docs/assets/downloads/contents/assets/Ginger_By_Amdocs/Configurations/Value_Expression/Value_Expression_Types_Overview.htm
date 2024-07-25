@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Value Expression Types Overview</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/Value Expression Types Overview.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="color: #302E45;font-size: 32px;font-family: Calibri">                 Value Expression Types Overview</p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><strong><span style="color:#0000ff;font-size:19px">Contents</span></strong></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Data">Data</a></span></p>
+    <ul class="Disc">
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Variables">Variables</a></span>
+        <ul>
+          <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Global_Variables">Global Variables</a></span></li>
+          <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Business_Flow_Variables">Business Flow Variables</a></span></li>
+          <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Activity_Variables">Activity Variables</a></span></li>
+        </ul>
+      </li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Environments">Environments</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Models_Global_Parameters" style="color: #302E45">Models Global Parameters</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Data_Sources">Data Sources</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Machine_Details">Machine Details</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Date_Time_Functions">Date Time Functions</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Functions">Functions</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Data_Validation">Data Validation</a></span></p>
+    <ul class="Disc">
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Math">Math</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#String">String</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Output_Values">Output Values</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Data_Operations">Data Operations</a></span></p>
+    <ul class="Disc">
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#List">List</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Regular_Expression">Regular Expression</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#String_1">String</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Math_1">Math</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#General_Functions">General Functions</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Flow_Details">Flow Details</a></span></p>
+    <ul class="Disc">
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Solution">Solution</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Environment">Environment</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Runset">Runset</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Runner">Runner</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Business_Flow">Business Flow</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Activity_Group">Activity Group</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Activity">Activity</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Action">Action</a></span></li>
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id=" DataVariablesGlobal Variables  The Global String Variables from the Resources tab are displayed in this section  As shown below, double-click on the variable to add it to the editor area.Clicking on the Calculate Expression button displays the current value of the variable in the Value Calculated section.Business Flow Variables The Business Flow Variables can be added from the section shown below and these are displayed in the Value Expression section.                                As shown below, double-click on the variable to add it to the editor area.         Click on the Calculate Expression button to display the current value of the variable.                 Activity Variables        The Activity Variables can be added from the section shown below and these are displayed in the Value Expression section.                         As shown below, double-click on the variable to add it to the editor area.          Click on the Calculate Expression button to display the current value of the variable.           Environments The environments and the parameters in it can also be used in the Value Expression.To view this section, go to the Resources-&gt;Environments tab. We can add multiple applications by clicking on the ‘+’ button as shown below.Add others details in the application. Select desired application to add parameters.  Double click on the Environments to expand and add the desired parameter to the editor area by double-clicking on it.   Models Global Parameters                             These parameters come from the Models Global Parameters section under the Resources-&gt; Applications Models area. Click on Add Items to add the parameters and enter details. Double click on the Models Global Parameters to expand and add the desired parameter to the editor area by double-clicking on it.               Data Sources    Expand the Data Sources by double-clicking on it then click on the DefaultDataSources then you can see the tables in it.  MyKeyValueDataTable To add value to the table, go to the Resources --&gt; Data Sources.Select MyKeyValueDataTable from Data Sources and click on the ‘+’ button to add table data.Enter details in the table.In Value Expression editor, select Data Sources --&gt; DefaultDataSources --&gt; Double click on the MyKeyValuedataTable.The Key table will be displayed for selection.The Table data displays all the values in the table so that the user does not have to go to the Data source to see the Table Data. Select Key Name from the drop-down to select the value.   Once the Key name is selected, the user can click the ‘Calculate Expression’ as shown below to check the value in it.   MyCustomizedDataTable To add value to the table, go to the Resources --&gt; Data Sources.Select MyCustomizedDataTable from Data Sources and click on the ‘+’ button to add table data.Enter details in the table.In Value Expression Editor, select Data Sources --&gt; DefaultDataSources --&gt; Double click on the MyCustomizedDataTable.The Key table will be displayed for selection. The Table Data displays the content in the table.As shown below, Table Cell Identifier can be ‘By Selected Cell’, ‘By Query’ or ‘Customized’ For customized, the user can select the column name from the drop-down.The row can be selected by ‘Row Number’, ‘Next Available Row’ (this is mainly used to add values in the table)Or the Where clause.   In the Where Clause, the user can add the desired Column, Operator, and Value. Click on the OK button.  Click on the ‘Calculate Expression’ button to give the value that will be evaluated and used when the Action will be run.Machine Details  Current Username This fetches the username that is currently login in the Ginger. This function is available under Machine Details in Expression. On clicking the ‘Calculate Expression’ button as shown by the arrow below, displays the username in the ‘Calculated Value Expression:’ field. Current Machine Name This displays the current machine name. On clicking the ‘Calculate Expression’ button as shown by the arrow below, displays the username in the ‘Calculated Value Expression:’ field.Date Time Functions Get Current Time It gives the current date and time of the system.  Get Current TimeStamp It gives the current date and time of the system in Unix format. Tomorrow   It gives tomorrow’s date and time from the system. ‘Calculate Expression’ button as shown by the arrow below, displays tomorrow’s date and time in ‘Calculated Value Expression:’ which is used during execution.  Current Time Hour It gives the current hour of the time from the system. ‘Calculate Expression’ button as shown by the arrow below, displays the current hour in ‘Calculated Value Expression:’ which is used during execution.  Current Time Minutes It gives the current minutes of the time from the system. ‘Calculate Expression’ button as shown by the arrow below, displays the current minutes up to 5 decimals in ‘Calculated Value Expression:’ which is used during execution. Current Time Seconds It gives the current seconds of the time from the system. ‘Calculate Expression’ button as shown by the arrow below, displays the current seconds in ‘Calculated Value Expression:’ which is used during execution.  Current Time Hour (0# format)  It gives the current Hour of the time in the standard format. ‘Calculate Expression’ button as shown by the arrow below, displays the current hours in ‘Calculated Value Expression:’ which is used during execution.   Current Time Minute (0# format) It gives the current Minutes of the time in the standard format. ‘Calculate Expression’ button as shown by the arrow below, displays the current minutes in ‘Calculated Value Expression:’ which is used during execution.    Current Time Second (0# format) It gives the current Seconds of the time in the standard format. ‘Calculate Expression’ button as shown by the arrow below, displays the current second in ‘Calculated Value Expression:’ which is used during execution.   Current Month (0# format) It gives the current Month from the system in the standard format. ‘Calculate Expression’ button as shown by the arrow below, displays the current month in ‘Calculated Value Expression:’ which is used during execution.  Current Day (0# format)It gives the current Day from the system in the standard format. ‘Calculate Expression’ button as shown by the arrow below, displays the current day in ‘Calculated Value Expression:’ which is used during execution.   Current Year (#### format) It gives the current Year in YYYY format. ‘Calculate Expression’ button as shown by the arrow below, displays the current year in ‘Calculated Value Expression:’ which is used during execution.  Current Year (## format)  It gives the current Year in YY format. ‘Calculate Expression’ button as shown by the arrow below, displays the current year in ‘Calculated Value Expression:’ which is used during execution.  Current Month Date + 3 Days It adds 3 days to the current date in DDMMYYYY format. ‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution.   Current Date -1 month  It gives the date in the previous month with respect to the current date in DDMMYYYY format.‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution. Current Month -1 (MM format)  It gives the date in the previous month for the current date in the standard format.‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution. Current Day of Week (Name)  It gives the current day by name.‘Calculate Expression’ button as shown by the arrow below, displays the day in ‘Calculated Value Expression:’ which is used during execution. Current Unix timestamp  It gives the current date and time of the system in Unix format.                             Current UTC time stamp It gives the current date and time of the system in UTC format. FunctionsGet GUIDIt gives GUID values that can be used during runtime.             Data ValidationMath               Comparison This expression is used to compare the two values. If the one value matches with another string, then it shows true otherwise calculated value will be false. ANDThis expression is used to determine all the conditions in the expression are True. If both the conditions are true, then it shows true otherwise calculated value will be false.        ORThis expression is used to determine if any conditions in the expression are True. If anyone the condition is true, then it shows true otherwise calculated value will be false.  String      Comparison This expression is used to compare the two strings. If the one string matches with another string, then it shows true otherwise calculated value will be false. ContainsThis expression is used to give a Text Contains value as a True or False. If the Contains value matches with the expression, then it shows true otherwise calculated value will be false.   Start WithThis expression is used to give a Start With value as a True or False. If the Start With value matches with the start value of the expression, then it shows true otherwise calculated value will be false.  Ends WithThis expression is used to give an Ends With value as a True or False. If the Ends With value matches with the end value of the expression, then it shows true otherwise calculated value will be false. AND       This expression is used to determine all the conditions in the string are True.        In the below example expression will return True if “b” is present in the given string “ABC” AND if 7 is smaller than 10. ORThis expression is used to determine if any conditions in the string are True. In the below example expression will return True if “b” is present in the given string “ABC” OR if 7 is smaller than 10. Output ValuesThese are mostly used in the Output Values tab of Action.  The Action is passed or failed depending on the condition that is passed or failed on execution. Actual Contains String ‘ABC’This expression is used to give a String Contains value as a True or False. If the expression string has a contains string value, then the Calculated Value will be true otherwise it will be false.In the below example, the expression string is &quot;SDGFABCHGJ&quot; and Contains string is “ABC.” The expression string contains “ABC” in it, so the calculated value is true.  Actual start with ‘ABC’This expression is used to check a string starts with the given StartsWith string. If the expression string starts with the given substring, then the Calculated Value is true otherwise it will be false.In the below example, the expression string is &quot;ABCDEFGH&quot; and the StartsWith string is “ABC.” The expression string starts with “ABC”, so the calculated value is true. The actual String Length is 5 charsThis expression is used to check a string length. If the expression string word length matches with the given length value, then the Calculated Value is true otherwise it will be false.In the below example, the expression string is &quot;abcde&quot; and the length value is “5.” Expression string length matches with the given length, so the calculated value is true. Actual SubString from char in position 2 length 3 is ‘ABC’This expression is used to check the character position and length of the string. If in the expression string, character positions and length match with the given string value, then the Calculated Value is true otherwise it will be false.In the below example, the expression string is &quot; agABCghjjbv &quot; Position of the character is 2 and the length is 3. The given string is “ABC.” Expression string position and length matches with the given string, so the calculated value is true. Actual to Upper Case = ‘ABC’ This expression is used to convert a given string in the Upper Case.Data OperationsListChoose a val from listThis expression is used to choose a value from the list based upon the index.  Concatenate list with delimiter  This expression is used to concatenate the list with the delimiter.   Regular ExpressionExtract Initial Digits  It helps to extract initial digits from a string of digits. Given below {2} is the desired number of initial digits. It will extract the initial 2 digits from the string.‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.                   Extract Last Digits  It helps to extract the last digits from a string of digits. Given below {2} is the desired number of last digits. It will extract the last 2 digits from the string.‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.                                 Extract Number From Text It helps to extract numbers from a string. ‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.                   Remove Characters From Numbers  It helps to remove characters from a string.  ‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.                      String These functions are ready to use Data Validation and Data Operations functions. Below is the list and its usages: -Replace TextA string “abc” get replaced with either a variable or some text to get the desired result.        Get String LengthThis expression is used to calculate the length of the string. An Expression “Abc” has 3 characters, so it displays 3 in the Calculate Value Expression field.        Get Substring extract Get Substring will  the characters from a string, between two specified indices, and returns the new substring. An expression contains “Abcdefgh” string. Substring (1,3) will return “bcd” from starting index 1 (base 0)  Get Substring will  the characters from a string, between two specified indices, and returns the new substring. An expression contains “Abcdefgh” string. Substring (1,3) will return “bcd” from starting index 1 (base 0) till index 3.               Trim whitespace It discards the whitespace that occurs in the given string. The string can be either a variable or a text field copied from some page.E.g., the below variable contains spaces before the string starts. The spaces can be removed using the Trim function as shown below.Double click on the “Trim whitespace” function.{Replace} with the variable as Replace the “hello” in the displayed expression CS Exp=@&quot;hel lo&quot;.(@&quot; &quot;,@&quot;&quot;)Replace the “hello” in the displayed expression CS Exp=@&quot;hel lo&quot;.(@&quot; &quot;,@&quot;&quot;)           shown in the screenshot.‘Calculate Expression’‘Value On clicking the  button as shown by the arrow below, displays the value in the On clicking the  button as shown by the arrow below, displays the value in the          Calculated:’ field which is used at run time. Trim whitespace &amp; Line breaksIt discards the whitespace and line breaks that occur in the given string. A string can be either a variable or a text field copied from some page.                         Get Inner String Index It gives the number at which a given string begins in the main string.         MathAdd It helps to use mathematical calculation.‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution.  General FunctionsFollowing are the general functions.               Generate HashCodeThis expression is used to generate hash code for the given string. Get Hashed Data Byte stringThis expression is used to generate hashed data byte string for the given string. Encrypt to Base 64This expression is used to encrypt the given string to base 64.  Decrypt to Base 64This expression is used to decrypt the encrypted string.  Replace special chars by anotherThis expression is used to replace a special character with another.In the following example “(double inverted comma) from the string will replace by _.Flow DetailsSolutionSolution NameThis expression is used to get the solution name.  Update Value Expression:Update VE is used to update the field in the expression.Click on the field name as shown by the arrow below then the Alternative Field section will get open. Users can select another field from the Select Alternative Field section and click on the Update VE button. The field name of the expression gets updated with the selected field. Click on the ‘Calculate Expression’ button to display the calculated value.     EnvironmentEnvironment NameThis expression is used to get the current environment name.     RunsetRunset Name This expression is used to get the current runset name. This expression will work only from the runner.     RunnerRunner NameThis expression is used to get the current runner&#39;s name. This expression will work only from the runner.      Business FlowBusiness Flow NameThis expression is used to get the current Business Flow name. Previous Business Flow NameThis expression is used to get the current runner&#39;s name. This expression will work only from the runner. Previous Business Flow StatusThis expression is used to get previous business flow status. This expression will work only from the runner. Last Failed Business Flow StatusThis expression is used to give the last failed business flow name. This expression will work only from the runner.     Activity GroupActivity Group Name This expression is used to display the current activity group name. A New Group is created with Login Error handler activity to handle the error of the other activity.  Error Handler Origin Activity Group NameThis expression is used to give error handler origin activity group name. This expression will work only if the error handler activity is created.      ActivityActivity Name This expression is used to display the current activity name. Previous Activity StatusThis expression is used to display previous activity status. Previous Activity DurationThis expression is used to display previous activity duration. Last Failed Activity Name This expression is used to display the last failed activity name. Error Handler Origin Activity NameThis expression is used to give the error handler origin activity name. This expression will work only if the error handler activity is created.     ActionAction Name This expression is used to get the action name. Previous Action Name This expression is used to get the previous action name. Previous Action Extra InfoThis expression is used to get previous action details.  Last Failed Action NameThis expression is used to get the last failed action name. Error Handler Origin Action NameThis expression is used to give the error handler origin action name. This expression will work only if the error handler activity is created.                         Error Handler Origin Action ErrorThis expression is used to give error handler origin action error. This expression will work only if the error handler activity is created. Error Handler Origin Action Error Extra InfoThis expression is used to give error handler origin action error extra info. This expression will work only if the error handler activity is created. "></a><br />
+      ‎</h1>
+    <h1 class="Heading1" style="font-family: Calibri">      <a id="Data"></a><span style="color:#302e45;"><span style="font-size: 32px;color: #302E45">Data</span></span></h1>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Variables"></a><span style="font-size:24px;"><span style="color:#ec008c;"><span style="color: rgb(236, 0, 140);">Variables</span></span></span></h1>
+    <h1 class="Heading1" data-list-level="3" style="font-family: Calibri">     <a id="Global_Variables"></a><span style="font-size:19px;color:#7E92CA">Global Variables</span></h1>
+    <p style="font-family: Calibri">           The Global String Variables from the Resources tab are displayed in this section</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 778641121" height="185" src="../../../images/Value Expression Types Overview_files/image2.png" width="800" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">As shown below, double-click on the variable to add it to the editor area.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Clicking on the Calculate Expression button displays the current value of the variable in the Value Calculated section.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1935529791" height="515" src="../../../images/Value Expression Types Overview_files/image3.png" width="749" /></p>
+    <h1 class="Heading1" data-list-level="3" style="font-family: Calibri">     <a id="Business_Flow_Variables"></a><span style="font-size:19px;color:#7E92CA">Business Flow Variables</span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri">The Business Flow Variables can be added from the section shown below and these are displayed in the Value Expression section.</p>
+    <p style="font-family: Calibri">              <img alt="Picture 1411574310" height="210" src="../../../images/Value Expression Types Overview_files/image4.png" width="763" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">             As shown below, double-click on the variable to add it to the editor area.</p>
+    <p style="font-family: Calibri">            Click on the Calculate Expression button to display the current value of the variable.</p>
+    <p style="font-family: Calibri">             <img alt="Picture 232200941" height="534" src="../../../images/Value Expression Types Overview_files/image5.png" width="776" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">       <a id="Activity_Variables"></a><span style="font-weight:bold;"><span style="font-size:19px;color:#7E92CA">Activity Variables</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">The Activity Variables can be added from the section shown below and these are displayed in the Value Expression section.</p>
+    <p style="font-family: Calibri">            <img alt="Picture 2049182015" height="185" src="../../../images/Value Expression Types Overview_files/image6.png" width="782" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">            As shown below, double-click on the variable to add it to the editor area.</p>
+    <p style="font-family: Calibri">             Click on the Calculate Expression button to display the current value of the variable.</p>
+    <p style="font-family: Calibri">             <img alt="Picture 336765017" height="534" src="../../../images/Value Expression Types Overview_files/image7.png" width="776" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri"><a id="Environments"></a><span style="font-size:24px;"><span style="color:#ec008c;">Environments</span></span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri">The environments and the parameters in it can also be used in the Value Expression.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">To view this section, go to the Resources-&gt;Environments tab.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">We can add multiple applications by clicking on the ‘+’ button as shown below.</p>
+    <p style="font-family: Calibri">            <img alt="Picture 2073076669" height="175" src="../../../images/Value Expression Types Overview_files/image8.png" width="795" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">             Add others details in the application.</p>
+    <p style="font-family: Calibri">           <img alt="Picture 611284008" height="149" src="../../../images/Value Expression Types Overview_files/image9.png" width="798" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">           Select desired application to add parameters.</p>
+    <p style="font-family: Calibri">           <img alt="Picture 2046219630" height="177" src="../../../images/Value Expression Types Overview_files/image10.png" width="797" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Double click on the Environments to expand and add the desired parameter to the editor area by double-clicking on it.</p>
+    <p style="font-family: Calibri">            <img alt="Picture 1573006494" height="505.7" src="../../../images/Value Expression Types Overview_files/image11.png" width="735.5" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Models_Global_Parameters"></a><span style="color:#ec008c;"><span style="font-size: 24px;color: #EC008C">Models Global Parameters</span></span></h1>
+    <p style="font-family: Calibri">           These parameters come from the Models Global Parameters section under the Resources-&gt; Applications Models area.</p>
+    <p style="font-family: Calibri">          <img alt="Picture 1296352117" height="214" src="../../../images/Value Expression Types Overview_files/image12.png" width="781" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">          Click on Add Items to add the parameters and enter details.</p>
+    <p style="font-family: Calibri">          <img alt="Picture 602802765" height="188" src="../../../images/Value Expression Types Overview_files/image13.png" width="783" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">          Double click on the Models Global Parameters to expand and add the desired parameter to the editor area by double-clicking on it.</p>
+    <p style="font-family: Calibri">            <img alt="Picture 812911006" height="540" src="../../../images/Value Expression Types Overview_files/image14.png" width="786" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Data_Sources"></a><span style="color:#ec008c;"><span style="font-size: 24px;color: #EC008C">Data Sources</span></span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Expand the Data Sources by double-clicking on it then click on the DefaultDataSources then you can see the tables in it.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 2111182947" height="536" src="../../../images/Value Expression Types Overview_files/image15.png" width="779" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>MyKeyValueDataTable</strong></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">To add value to the table, go to the Resources --&gt; Data Sources.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Select MyKeyValueDataTable from Data Sources and click on the ‘+’ button to add table data.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1444578036" height="150" src="../../../images/Value Expression Types Overview_files/image16.png" width="782" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri">Enter details in the table.</p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1026695981" height="124" src="../../../images/Value Expression Types Overview_files/image17.png" width="785" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">In Value Expression editor, select Data Sources --&gt; DefaultDataSources --&gt; Double click on the MyKeyValuedataTable.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">The Key table will be displayed for selection.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">The Table data displays all the values in the table so that the user does not have to go to the Data source to see the Table Data.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Select Key Name from the drop-down to select the value.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1485273185" height="887" src="../../../images/Value Expression Types Overview_files/image18.png" width="758" /></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Once the Key name is selected, the user can click the ‘Calculate Expression’ as shown below to check the value in it.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 776017398" height="495" src="../../../images/Value Expression Types Overview_files/image19.png" width="720" /></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>MyCustomizedDataTable</strong></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">To add value to the table, go to the Resources --&gt; Data Sources.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Select MyCustomizedDataTable from Data Sources and click on the ‘+’ button to add table data.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 990835876" height="157" src="../../../images/Value Expression Types Overview_files/image20.png" width="748" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Enter details in the table.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1071987672" height="127" src="../../../images/Value Expression Types Overview_files/image21.png" width="747" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">In Value Expression Editor, select Data Sources --&gt; DefaultDataSources --&gt; Double click on the MyCustomizedDataTable.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">The Key table will be displayed for selection.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">The Table Data displays the content in the table.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">As shown below, Table Cell Identifier can be ‘By Selected Cell’, ‘By Query’ or ‘Customized’</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">For customized, the user can select the column name from the drop-down.</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">The row can be selected by ‘Row Number’, ‘Next Available Row’ (this is mainly used to add values in the table)</span></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Or the Where clause.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 349537350" height="865" src="../../../images/Value Expression Types Overview_files/image22.png" width="739" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">In the Where Clause, the user can add the desired Column, Operator, and Value. Click on the OK button.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 461882240" height="842" src="../../../images/Value Expression Types Overview_files/image23.png" width="720" /></p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-69in" style="font-family: Calibri"><span style="font-size:16px;">Click on the ‘Calculate Expression’ button to give the value that will be evaluated and used when the Action will be run.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 840281548" height="495" src="../../../images/Value Expression Types Overview_files/image24.png" width="719" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Machine_Details"></a><span style="color:#ec008c;"><span style="font-size: 24px;">Machine Details</span></span></h1>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"><span style="color:#000000;"><strong style="color: #000000">Current Username</strong></span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This fetches the username that is currently login in the Ginger. This function is available under Machine Details in Expression. On clicking the ‘Calculate Expression’ button as shown by the arrow below, displays the username in the ‘Calculated Value Expression:’ field.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 105355975" height="496" src="../../../images/Value Expression Types Overview_files/image25.png" width="721" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Machine Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This displays the current machine name. On clicking the ‘Calculate Expression’ button as shown by the arrow below, displays the username in the ‘Calculated Value Expression:’ field.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1578893747" height="506" src="../../../images/Value Expression Types Overview_files/image26.png" width="736" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Date_Time_Functions"></a><span style="color:#ec008c;"><span style="font-size: 24px;color: #EC008C">Date Time Functions</span></span></h1>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><strong> <span style="font-size:16px;">Get Current Time</span></strong></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current date and time of the system.</span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">            <img alt="Picture 194301770" height="517" src="../../../images/Value Expression Types Overview_files/image27.png" style="cursor: nesw-resize;" width="752" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong>Get Current TimeStamp</strong></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">           It gives the current date and time of the system in Unix format.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">             <img alt="Picture 568597403" height="533" src="../../../images/Value Expression Types Overview_files/image28.png" width="775" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><strong>Tomorrow</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><span style="font-family: Calibri;"> It gives tomorrow’s date and time from the system.</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px">‘Calculate Expression’ button as shown by the arrow below, displays tomorrow’s date and time in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 1637676181" height="530" src="../../../images/Value Expression Types Overview_files/image29.png" width="771" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Time Hour</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current hour of the time from the system.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current hour in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 342867094" height="532" src="../../../images/Value Expression Types Overview_files/image30.png" width="774" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Time Minutes</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current minutes of the time from the system.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current minutes up to 5 decimals in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 805012694" height="534" src="../../../images/Value Expression Types Overview_files/image31.png" width="776" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Time Seconds</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">            It gives the current seconds of the time from the system.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current seconds in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 219560252" height="532" src="../../../images/Value Expression Types Overview_files/image32.png" width="774" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Time Hour (0# format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">            It gives the current Hour of the time in the standard format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current hours in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 1221843126" height="534" src="../../../images/Value Expression Types Overview_files/image33.png" width="777" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Time Minute (0# format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current Minutes of the time in the standard format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current minutes in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 954631305" height="539" src="../../../images/Value Expression Types Overview_files/image34.png" width="784" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Time Second (0# format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">              It gives the current Seconds of the time in the standard format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current second in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 375478806" height="543" src="../../../images/Value Expression Types Overview_files/image35.png" width="790" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Month (0# format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">              It gives the current Month from the system in the standard format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current month in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 1550733030" height="544" src="../../../images/Value Expression Types Overview_files/image36.png" width="791" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Day (0# format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current Day from the system in the standard format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current day in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 1296289208" height="535" src="../../../images/Value Expression Types Overview_files/image37.png" width="778" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Year (#### format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current Year in YYYY format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current year in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 469458393" height="543" src="../../../images/Value Expression Types Overview_files/image38.png" width="789" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Year (## format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current Year in YY format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the current year in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 303616752" height="543" src="../../../images/Value Expression Types Overview_files/image39.png" width="790" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Month Date + 3 Days</strong></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><span style="font-size:16px;">It adds 3 days to the current date in DDMMYYYY format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 2082766273" height="549" src="../../../images/Value Expression Types Overview_files/image40.png" width="798" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Date -1 month</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the date in the previous month with respect to the current date in DDMMYYYY format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 782879691" height="539" src="../../../images/Value Expression Types Overview_files/image41.png" width="784" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Month -1 (MM format)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the date in the previous month for the current date in the standard format.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 2128314097" height="540" src="../../../images/Value Expression Types Overview_files/image42.png" width="785" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Day of Week (Name)</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">            It gives the current day by name.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the day in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><img alt="Picture 1479429059" height="561" src="../../../images/Value Expression Types Overview_files/image43.png" width="815" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Current Unix timestamp</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             It gives the current date and time of the system in Unix format.</span></p>
+    <p style="font-family: Calibri">             <img alt="Picture 1551755923" height="565" src="../../../images/Value Expression Types Overview_files/image44.png" width="822" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong>Current UTC time stamp</strong></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">            It gives the current date and time of the system in UTC format.</p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri"><img alt="Picture 1598226284" height="558" src="../../../images/Value Expression Types Overview_files/image45.png" width="811" /></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri;color: #302E45">     <a id="Functions"></a><span style="color:#ec008c;"><span style="font-size: 24px;">Functions</span></span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Get <span style="color:#000000;">GUID</span></strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">              It gives GUID values that can be used during runtime.</span></p>
+    <p style="font-family: Calibri;color: #302E45">             <img alt="Picture 1" height="552" src="../../../images/Value Expression Types Overview_files/image46.png" width="803" /></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">     <a id="Data_Validation"></a>Data Validation</h1>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Math"></a><span style="color:#EC008C;font-size:24px">Math</span></h1>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"><span style="font-family:Calibri;"><strong style="font-size: 16px">Comparison</strong></span></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">             This expression is used to compare the two values. If the one value matches with another string, then it shows true otherwise calculated value </span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;"> will be false.</span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">             <img alt="Picture 203704497" height="563" src="../../../images/Value Expression Types Overview_files/image47.png" width="818" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>AND</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">            This expression is used to determine all the conditions in the expression are True. If both the conditions are true, then it shows true otherwise calculated value </span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;"> will be false.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1344840371" height="565" src="../../../images/Value Expression Types Overview_files/image48.png" width="821" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong> OR</strong></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">              This expression is used to determine if any conditions in the expression are True. If anyone the condition is true, then it shows true otherwise calculated value                 will be false.</p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 850263930" height="567" src="../../../images/Value Expression Types Overview_files/image49.png" style="cursor: nesw-resize;" width="825" /></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">    <a id="String"></a><span style="color:#ec008c;font-size:24px">String</span></h1>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><strong>     Comparison</strong></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">           This expression is used to compare the two strings. If the one string matches with another string, then it shows true otherwise calculated value will be false.</p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">      <img alt="Picture 528768635" height="577" src="../../../images/Value Expression Types Overview_files/image50.png" width="838" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Contains</strong></span></p>
+    <p class="ListParagraph margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to give a Text Contains value as a True or False. If the Contains value matches with the expression, then it shows true otherwise calculated value will be false.</span></p>
+    <p class="ListParagraph margin-left-0-25intext-indent-0-25in" style="font-family: Calibri"><img alt="Picture 388036047" height="591" src="../../../images/Value Expression Types Overview_files/image51.png" width="860" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Start With</strong></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to give a Start With value as a True or False. If the Start With value matches with the start value of the expression, then it shows true otherwise calculated value will be false.</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri"><img alt="Picture 751537590" height="606" src="../../../images/Value Expression Types Overview_files/image52.png" width="881" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong><span style="font-size:16px;">Ends</span> With</strong></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">           This expression is used to give an Ends With value as a True or False. If the Ends With value matches with the end value of the expression, then it shows true     </p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">          otherwise calculated value will be false.</p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">    <img alt="Picture 1534040317" height="628" src="../../../images/Value Expression Types Overview_files/image53.png" width="913" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><strong>  <span style="font-size:16px;">AND</span></strong></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;">  This expression is used to determine all the conditions in the string are True.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;">  In the below example expression will return True if “b” is present in the given string “ABC” AND if 7 is smaller than 10.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">    <img alt="Picture 1999598696" height="625" src="../../../images/Value Expression Types Overview_files/image54.png" width="909" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>OR</strong></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to determine if any conditions in the string are True.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In the below example expression will return True if “b” is present in the given string “ABC” OR if 7 is smaller than 10.</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri"><img alt="Picture 2031780625" height="622" src="../../../images/Value Expression Types Overview_files/image55.png" width="904" /></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Output_Values"></a><span style="color:#ec008c;font-size:24px">Output Values</span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">These are mostly used in the Output Values tab of Action.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 8950176" height="193" src="../../../images/Value Expression Types Overview_files/image56.png" width="903" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">The Action is passed or failed depending on the condition that is passed or failed on execution.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1571722796" height="620" src="../../../images/Value Expression Types Overview_files/image57.png" width="901" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Actual Contains String ‘ABC’</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to give a String Contains value as a True or False. If the expression string has a contains string value, then the Calculated Value will be true otherwise it will be false.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">In the below example, the expression string is &quot;SDGFABCHGJ&quot; and Contains string is “ABC.” The expression string contains “ABC” in it, so the calculated value is true.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 2005189539" height="628" src="../../../images/Value Expression Types Overview_files/image58.png" width="913" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Actual start with ‘ABC’</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to check a string starts with the given StartsWith string. If the expression string starts with the given substring, then the Calculated Value is true otherwise it will be false.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">In the below example, the expression string is &quot;ABCDEFGH&quot; and the StartsWith string is “ABC.” The expression string starts with “ABC”, so the calculated value is true.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 958188105" height="630" src="../../../images/Value Expression Types Overview_files/image59.png" width="916" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">The actual String Length is 5 chars</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to check a string length. If the expression string word length matches with the given length value, then the Calculated Value is true otherwise it will be false.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">In the below example, the expression string is &quot;abcde&quot; and the length value is “5.” Expression string length matches with the given length, so the calculated value is true.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1197837481" height="629" src="../../../images/Value Expression Types Overview_files/image60.png" width="914" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Actual SubString from char in position 2 length 3 is ‘ABC’</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to check the character position and length of the string. If in the expression string, character positions and length match with the given string value, then the Calculated Value is true otherwise it will be false.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">In the below example, the expression string is &quot; agABCghjjbv &quot; Position of the character is 2 and the length is 3. The given string is “ABC.” Expression string position and length matches with the given string, so the calculated value is true.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 213162523" height="622" src="../../../images/Value Expression Types Overview_files/image61.png" width="904" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Actual to Upper Case = ‘ABC’</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to convert a given string in the Upper Case.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 825862029" height="616" src="../../../images/Value Expression Types Overview_files/image62.png" width="896" /></p>
+    <h1 class="Heading1" style="font-family: Calibri"> </h1>
+    <h1 class="Heading1" style="font-family: Calibri">    <a id="Data_Operations"></a><span style="color:#302e45;font-size:32px">Data Operations</span></h1>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="List"></a><span style="font-size:24px;"><span style="color: rgb(236, 0, 140);">List</span></span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri;color: #EC008C"><span style="font-size:16px;"><span style="color: rgb(0, 0, 0);">Choose a val from list</span></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to choose a value from the list based upon the index.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 3" height="623" src="../../../images/Value Expression Types Overview_files/image63.png" width="906" /></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Concatenate list with delimiter</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to concatenate the list with the delimiter.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 4" height="621" src="../../../images/Value Expression Types Overview_files/image64.png" width="903" /></p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Regular_Expression"></a><span style="font-size:24px;"><span style="color: rgb(236, 0, 140);">Regular Expression</span></span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Extract Initial Digits</strong></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">It helps to extract initial digits from a string of digits. Given below {2} is the desired number of initial digits. It will extract the initial 2 digits from the string.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1702387381" height="625" src="../../../images/Value Expression Types Overview_files/image65.png" width="909" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Extract Last Digits</strong></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">It helps to extract the last digits from a string of digits. Given below {2} is the desired number of last digits. It will extract the last 2 digits from the string.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"><span style="font-family:Calibri;">‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.</span></span></p>
+    <p style="font-family: Calibri">             <img alt="Picture 1103399005" height="638" src="../../../images/Value Expression Types Overview_files/image66.png" width="928" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">            <span style="font-size:16px;"> <strong>Extract Number From Text</strong></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">It helps to extract numbers from a string.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 1498501874" height="641" src="../../../images/Value Expression Types Overview_files/image67.png" width="932" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Remove Characters From Numbers</strong></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">It helps to remove characters from a string.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;"> ‘Calculate Expression’ button as shown by the arrow below, displays the digits in ‘Calculated  Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 980417590" height="642" src="../../../images/Value Expression Types Overview_files/image68.png" width="934" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">        <a id="String_1"></a><span style="color:#ec008c;font-size:24px">String</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">These functions are ready to use Data Validation and Data Operations functions. Below is the list and its usages: -</span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Replace Text</span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">A string “abc” get replaced with either a variable or some text to get the desired result.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">      <img alt="Picture 79604763" height="627" src="../../../images/Value Expression Types Overview_files/image69.png" width="911" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Get String Length</strong></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to calculate the length of the string. An Expression “Abc” has 3 characters, so it displays 3 in the Calculate Value Expression field.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">     <img alt="Picture 356824691" height="631" src="../../../images/Value Expression Types Overview_files/image70.png" width="917" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;"><strong> Get Substring</strong></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">   Get Substring will extract the characters from a string, between two specified indices, and returns the new substring.</p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">  An expression contains “Abcdefgh” string. Substring (1,3) will return “bcd” from starting index 1 (base 0) till index 3.          </p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">   <img alt="Picture 530976750" height="637" src="../../../images/Value Expression Types Overview_files/image71.png" width="926" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;"><strong> Trim whitespace</strong></span></p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">         It discards the whitespace that occurs in the given string. The string can be either a variable or a text field copied from some page.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">         E.g., the below variable contains spaces before the string starts.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">        <img alt="Picture 115349752" height="144" src="../../../images/Value Expression Types Overview_files/image72.png" width="931" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri;font-size: 16px">       The spaces can be removed using the Trim function as shown below.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri;font-size: 16px">       Double click on the “Trim whitespace” function.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri;font-size: 16px">       Replace the “hello” in the displayed expression {CS Exp=@&quot;hel lo&quot;.Replace(@&quot; &quot;,@&quot;&quot;)} with the variable as shown in the screenshot.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri;font-size: 16px">       On clicking the ‘Calculate Expression’ button as shown by the arrow below, displays the value in the ‘Value Calculated:’ field which is used at run time.</p>
+    <p class="margin-left-0-25intext-indent-0-25in" style="font-family: Calibri">       <img alt="Picture 843862188" height="645" src="../../../images/Value Expression Types Overview_files/image73.png" width="938" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;"><strong> Trim whitespace &amp; Line breaks</strong></span><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"><span style="font-size:16px;"> It discards the whitespace and line breaks that occur in the given string. A string can be either a variable or a text field copied from some page.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">   <img alt="Picture 1774180270" height="640" src="../../../images/Value Expression Types Overview_files/image74.png" width="930" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Get Inner String Index</strong></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong></strong>It gives the number at which a given string begins in the main string.</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">     <img alt="Picture 1916354710" height="632" src="../../../images/Value Expression Types Overview_files/image75.png" width="919" /></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Math_1"></a><span style="color:#ec008c;font-size:24px">Math</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Add</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">It helps to use mathematical calculation.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">‘Calculate Expression’ button as shown by the arrow below, displays the calculated value in ‘Calculated Value Expression:’ which is used during execution.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 5" height="624" src="../../../images/Value Expression Types Overview_files/image76.png" width="907" /></p>
+    <h1 class="Heading1" style="font-family: Calibri">      <a id="General_Functions"></a><span style="color:#ec008c;font-size:24px">General Functions</span></h1>
+    <p>           Following are the general functions.</p>
+    <p style="font-family: Calibri">          <img alt="Picture 1782067299" height="637" src="../../../images/Value Expression Types Overview_files/image77.png" width="926" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Generate HashCode</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to generate hash code for the given string</span>.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1273546446" height="625" src="../../../images/Value Expression Types Overview_files/image78.png" width="909" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Get Hashed Data Byte string</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to generate hashed data byte string for the given string.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Encrypt to Base 64</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to encrypt the given string to base 64.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 778424680" height="611" src="../../../images/Value Expression Types Overview_files/image79.png" width="889" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:17px;"><strong>Decrypt to Base 64</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to decrypt the encrypted string.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 23611023" height="613" src="../../../images/Value Expression Types Overview_files/image80.png" width="891" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px;color: #000000">Replace special chars by another</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to replace a special character with another.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">In the following example “(double inverted comma) from the string will replace by _.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 639847257" height="608" src="../../../images/Value Expression Types Overview_files/image81.png" width="884" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">     <a id="Flow_Details"></a>Flow Details</h1>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Solution"></a><span style="color:#ec008c;font-size:24px">Solution</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Solution Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to get the solution name.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 946149143" height="594" src="../../../images/Value Expression Types Overview_files/image82.png" width="864" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><strong>Update Value Expression:</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Update VE is used to update the field in the expression.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Click on the field name as shown by the arrow below then the Alternative Field section will get open.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 981177021" height="593" src="../../../images/Value Expression Types Overview_files/image83.png" width="862" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Users can select another field from the Select Alternative Field section and click on the Update VE button.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1478412330" height="587" src="../../../images/Value Expression Types Overview_files/image84.png" width="854" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">The field name of the expression gets updated with the selected field. Click on the ‘Calculate Expression’ button to display the calculated value.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 670517910" height="589" src="../../../images/Value Expression Types Overview_files/image85.png" width="857" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Environment"></a><span style="color:#ec008c;font-size:24px">Environment</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Environment Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to get the current environment name.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1113714106" height="593" src="../../../images/Value Expression Types Overview_files/image86.png" width="862" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Runset"></a><span style="color:#ec008c;">Runset</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Runset Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to get the current runset name. This expression will work only from the runner.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1349960236" height="599" src="../../../images/Value Expression Types Overview_files/image87.png" width="871" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">       <a id="Runner"></a><span style="color:#ec008c;font-size:24px">Runner</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Runner Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to get the current runner&#39;s name. This expression will work only from the runner.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 807614462" height="596" src="../../../images/Value Expression Types Overview_files/image88.png" width="867" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Business_Flow"></a><span style="color:#ec008c;font-size:24px">Business Flow</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Business Flow Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to get the current Business Flow name.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1517943899" height="583" src="../../../images/Value Expression Types Overview_files/image89.png" width="848" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><strong><span style="font-size:16px;">Previous Business Flow Name</span></strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to get the current runner&#39;s name. This expression will work only from the runner.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1099566871" height="576" src="../../../images/Value Expression Types Overview_files/image90.png" width="838" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Previous Business Flow Status</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to get previous business flow status. This expression will work only from the runner.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1900568679" height="578" src="../../../images/Value Expression Types Overview_files/image91.png" width="840" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Last Failed Business Flow Status</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to give the last failed business flow name. This expression will work only from the runner.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1719226448" height="573" src="../../../images/Value Expression Types Overview_files/image92.png" width="833" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Activity_Group"></a><span style="color:#ec008c;font-size:24px">Activity Group</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Activity Group Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to display the current activity group name.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1771958724" height="569" src="../../../images/Value Expression Types Overview_files/image93.png" width="827" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">A New Group is created with Login Error handler activity to handle the error of the other activity.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 642499017" height="479" src="../../../images/Value Expression Types Overview_files/image94.png" width="843" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Error Handler Origin Activity Group Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to give error handler origin activity group name. This expression will work only if the error handler activity is created.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 388029428" height="581" src="../../../images/Value Expression Types Overview_files/image95.png" width="845" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">      <a id="Activity"></a><span style="color:#ec008c;font-size:24px">Activity</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Activity Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to display the current activity name.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 2089147471" height="590" src="../../../images/Value Expression Types Overview_files/image96.png" width="858" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Previous Activity Status</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to display previous activity status.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1125373273" height="605" src="../../../images/Value Expression Types Overview_files/image97.png" width="879" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Previous Activity Duration</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to display previous activity duration.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 143688536" height="611" src="../../../images/Value Expression Types Overview_files/image98.png" width="889" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Last Failed Activity Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to display the last failed activity name.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 2087302397" height="613" src="../../../images/Value Expression Types Overview_files/image99.png" width="892" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Error Handler Origin Activity Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to give the error handler origin activity name. This expression will work only if the error handler activity is created.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 2147069062" height="618" src="../../../images/Value Expression Types Overview_files/image100.png" width="898" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" data-list-level="2" style="font-family: Calibri">     <a id="Action"></a><span style="color:#ec008c;font-size:24px">Action</span></h1>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Action Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to get the action name.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 122687169" height="624" src="../../../images/Value Expression Types Overview_files/image101.png" width="907" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Previous Action Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to get the previous action name.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 886162940" height="629" src="../../../images/Value Expression Types Overview_files/image102.png" width="915" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Previous Action Extra Info</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to get previous action details.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 67371362" height="636" src="../../../images/Value Expression Types Overview_files/image103.png" width="925" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong style="font-size: 16px">Last Failed Action Name</strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to get the last failed action name.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 2085496099" height="644" src="../../../images/Value Expression Types Overview_files/image104.png" width="936" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Error Handler Origin Action Name</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to give the error handler origin action name. This expression will work only if the error handler activity is created.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 198090553" height="653" src="../../../images/Value Expression Types Overview_files/image105.png" width="950" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><strong><span style="font-size:16px;">Error Handler Origin Action Error</span></strong></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri">This expression is used to give error handler origin action error. This expression will work only if the error handler activity is created.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1182995204" height="663" src="../../../images/Value Expression Types Overview_files/image106.png" width="964" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering2 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong style="font-size: 16px">Error Handler Origin Action Error Extra Info</strong></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">This expression is used to give error handler origin action error extra info. This expression will work only if the error handler activity is created.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1491157634" height="662" src="../../../images/Value Expression Types Overview_files/image107.png" width="962" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

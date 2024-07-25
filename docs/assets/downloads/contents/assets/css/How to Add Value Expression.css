@@ -1,0 +1,96 @@
+h1.Numbering16 {
+    counter-reset: Numbering222;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+h1.Numbering16:before {
+    counter-increment: Numbering221;
+    content: counter(Numbering221,decimal)".";
+    font-size: 14pt;
+    color: #17365D;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+span.Hyperlink {
+    color: #0000FF;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering30 {
+    counter-reset: Numbering202;
+    margin-left: 1.00in;
+    --autonumber: autonumber;
+}
+p.Numbering30:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering31 {
+    counter-reset: Numbering42;
+    margin-left: 1.00in;
+    --autonumber: autonumber;
+}
+p.Numbering31:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.75in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering221 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-25in {
+margin-left:0.25in;
+}
+.margin-left-0-50in {
+margin-left:0.50in;
+}
+.margin-left-1-00in {
+margin-left:1.00in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent-0-50in {
+text-indent:0.50in;
+}

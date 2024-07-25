@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>UIElement Action</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../css/UIElement.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"><span style="font-size:32px;margin-left:160px"> UIElement</span><span style="font-size:32px;"> Action</span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><strong style="font-size: 19px">Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><a href="UIElement_4.htm">Introduction</a></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><a href="UIElement_4.htm">How to Configure Action</a></span></p>
+    <ul class="Disc">
+      <li class="TOC1" style="font-family: Calibri; font-size: 16px;"><span style="color:#0000ff;"></span><span style="color:#0000ff;"><a class="Hyperlink" href="#Pre-requisite">Pre-requisite</a></span><span style="color:#0000ff;"></span>
+        <ul>
+          <li class="TOC1" style="font-family: Calibri; font-size: 16px;"><span style="color:#0000ff;"><a href="#________2.1Action_Operation">Action Operation</a></span></li>
+          <li class="TOC1" style="font-family: Calibri; font-size: 16px;"><span style="color:#0000ff;"></span><span style="text-decoration-line: underline; color: rgb(0, 0, 255);">How to use Page Object Model in the Action</span></li>
+        </ul>
+      </li>
+    </ul>
+    <h1 class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"> </h1>
+    <h1 class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><a id=" 1.IntroductionThis Action is used to perform multiple operations on web elements.2.How to Configure Action     Pre-requisite            A Solution should be created having Agent as Web, Mobile, Java, Android Device, PowerBuilder platform.                                                             2.1Action Operation                      Double click on the Business flow. In the Activity Actions, click on the ‘Add New (+)’ button shown below and click on ‘Actions Library’ shown below.                                In the ‘Platform Actions’ tab, select the ‘UIElement Action’ then click on that arrow button highlighted below to add Action given in the field or simply drag and drop the element.                                                            The below screen should be displayed.  Details on Locate By-Locate Value can be found in Platform Actions.Locate value can be manually entered or a variable can be selected using the ‘…’ button.Element Type and Element Action needs to be selected from the drop-down.   Multiple ‘Element type’ and multiple ‘Element Action’ are present in the dropdown.  The below list shows Element Actions and their Description.  Accept message box. This will click on the Ok button of the displayed message box during the execution. Asyns Click It will click on the respective field that is selected.Asyns Select from Drop Down (By Index) It will select the value from the dropdown.Back This will click on the back button of the web page. Click This is used for the Left click of the mouse. Click At This is used to click at the respective element.Click using XY. It will click using the x or y coordinate.Close Browser This will close the browser. Delete all the Cookies. This will delete the cookies of the web page. Disabled It will click on the respective field that is disabled or not.Dismiss message box. This will click on the Cancel button of the displayed message box during the execution. Double Click This double click on the desired location. Double Click using XY. It is used for double click using the x and y-axis.Get Contexts This will get the text of the location. Get Height This will give the height of the selected element. Get Number of Elements This will give the number of elements displayed in the selected location. Get Style This gives the font style used in the selected location. Get Value  It will give those value which is identified by us. Get Width This will give the width of the selected element. Get Window title this will give the title of the selected window. Go to URL. this will enter the URL on the web page. Highlight Element The element will be highlighted. Hover Used to hover the mouse over a selected element. Is Enabled This checks if the given element is enabled. Is Focus This checks if the focus is on the given element. Is Visible This checks if the given element is visible. Keyboard Input This allows the user to enter a value from the keyboard during run time. Message Box It will show the message.Mouse Click It will perform right-click and left-click operations.Refresh It will refresh the page.Right Click Used for right-clicking on the given element. Run Javascript Used for running a javascript. Scroll to Element Used for scrolling to the given element. Select from Dijit List It is used to select values from the list.Select from Drop Down This is used to select an item from Drop Down. Select from Drop Down (By Index) This is used to select an item from Drop Down using its index number. Send Keys Used to send keys from the keyboard. Eg. Shift, Cntrl, the function keys, etc Set Value It is used for setting the values.Send Keys using XY. It will send values by x or y coordinate.Simple Click It will click the element which is selected.Simple Double Click It will do a double click option.Start Browser It will launch the browser.Switch Frame Used to switch between different frames on the web page. Switch to Default Frame Used to switch to the default frame of the web page. Switch to Parent Frame Used to switch to the parent frame of the web page. Switch Window Used to switch between different windows in the Agent.  2.2How to use Page Object Model in the Action Add the Action and in the Locate By select ‘Page Objects Model Element’ option.In the Locate Value, select the desired Page Object Model using the pen icon.                                     Select the desired element and click on the ‘Select Element’ button.         The Element type is automatically populated. Users can then select the desired Element Action for it.Users can also check where the element is exactly located on the page by clicking on the ‘Highlight Element’ button as shown below.For this, the Agent should be running and the page should already be displayed in it.           "></a><br />
+      ‎</h1>
+    <h1 style="font-family: Calibri;font-size: 16px">            <span style="margin-left:84px;"><span style="font-size:32px;">Introduction</span></span></h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a>This Action is used to perform multiple operations on web elements.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"><a id="2.How_to_Configure_Action"></a><span style="font-size:32px;"><span style="font-weight: bold;color: #302E45">How to Configure Action</span></span></span></p>
+    <h1 class="margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">      <a id="Pre-requisite"></a><span style="color:#ec008c;"><span style="font-size:24px;color:#EC008C">Pre-requisite</span></span></span></h1>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">           </span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">              A Solution should be created having Agent as Web, Mobile, Java, Android Device, PowerBuilder platform.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">            <img alt="Picture 1571996694" height="156.6" src="../../../../images/UIElement_files/image2.png" width="606.0" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">            <img alt="Picture 2124069991" height="295.0" src="../../../../images/UIElement_files/image3.png" width="574.0" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">       <a id="________2.1Action_Operation"></a> <span style="color:#7e92ca;font-size:19px">Action Operation</span></span></h2>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">          Double click on the Business flow. In the Activity Actions, click on the ‘Add New (+)’ button shown below and click on ‘Actions     </span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">          Library’ shown below.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">           <img alt="Picture 162987346" height="249.5" src="../../../../images/UIElement_files/image4.png" width="627.0" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">            <img alt="Picture 1336125064" height="422.0" src="../../../../images/UIElement_files/image5.png" width="398.0" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">In the ‘Platform Actions’ tab, select the ‘UIElement Action’ then click on that arrow button highlighted below to add Action given in the field </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">or simply drag and drop the element.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">                <img alt="Picture 567584305" height="571" src="../../../../images/UIElement_files/image6.png" width="377" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">             The below screen should be displayed.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Details on Locate By-Locate Value can be found in Platform Actions.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Locate value can be manually entered or a variable can be selected using the ‘…’ button.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Element Type and Element Action needs to be selected from the drop-down.</span><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"><img alt="Picture 308788933" height="385" src="../../../../images/UIElement_files/image7.png" width="775" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Multiple ‘Element type’ and multiple ‘Element Action’ are present in the dropdown.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">The below list shows Element Actions and their Description.</span><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <div align="left" style="font-family: Calibri;font-size: 16px">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid firstCol firstRow" style="width: 1050px;">
+        <colgroup>
+          <col style="width: 357px;" />
+          <col style="width: 616px;" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Accept message box.</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This will click on the Ok button of the displayed message box during the execution.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Asyns Click</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will click on the respective field that is selected.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Asyns Select from Drop Down (By Index)</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will select the value from the dropdown.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Back</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This will click on the back button of the web page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Click</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This is used for the Left click of the mouse.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Click At</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This is used to click at the respective element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Click using XY.</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will click using the x or y coordinate.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Close Browser</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This will close the browser.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Delete all the Cookies.</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This will delete the cookies of the web page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Disabled</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">It will click on the respective field that is disabled or not.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Dismiss message box.</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This will click on the Cancel button of the displayed message box during the execution.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Double Click</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This double click on the desired location.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Double Click using XY.</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">It is used for double click using the x and y-axis.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Contexts</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This will get the text of the location.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Height</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This will give the height of the selected element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Number of Elements</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This will give the number of elements displayed in the selected location.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Style</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This gives the font style used in the selected location.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Value</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">It will give those value which is identified by us.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Width</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This will give the width of the selected element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Get Window title</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">this will give the title of the selected window.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Go to URL.</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">this will enter the URL on the web page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Highlight Element</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">The element will be highlighted.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Hover</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">Used to hover the mouse over a selected element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Is Enabled</span></p>
+            </td>
+            <td>
+              <p><span style="margin-left:84px;">This checks if the given element is enabled.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Is Focus</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This checks if the focus is on the given element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Is Visible</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This checks if the given element is visible.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Keyboard Input</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This allows the user to enter a value from the keyboard during run time.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Message Box</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will show the message.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Mouse Click</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will perform right-click and left-click operations.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Refresh</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will refresh the page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Right Click</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used for right-clicking on the given element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Run Javascript</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used for running a javascript.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Scroll to Element</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used for scrolling to the given element.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Select from Dijit List</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It is used to select values from the list.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Select from Drop Down</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This is used to select an item from Drop Down.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Select from Drop Down (By Index)</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">This is used to select an item from Drop Down using its index number.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Send Keys</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used to send keys from the keyboard. Eg. Shift, Cntrl, the function keys, etc</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Set Value</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It is used for setting the values.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Send Keys using XY.</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will send values by x or y coordinate.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Simple Click</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will click the element which is selected.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Simple Double Click</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will do a double click option.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Start Browser</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">It will launch the browser.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Switch Frame</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used to switch between different frames on the web page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Switch to Default Frame</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used to switch to the default frame of the web page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Switch to Parent Frame</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used to switch to the parent frame of the web page.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <p><span style="margin-left:84px;">Switch Window</span></p>
+            </td>
+            <td style="">
+              <p><span style="margin-left:84px;">Used to switch between different windows in the Agent.</span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"><span style="color:#7e92ca;font-size:19px"> How to use Page Object Model in the Action</span></span></h2>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Add the Action and in the Locate By select ‘Page Objects Model Element’ option.</span></p>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">In the Locate Value, select the desired Page Object Model using the pen icon.</span><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">            <img alt="Picture 429398178" height="360" src="../../../../images/UIElement_files/image8.png" width="849" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">             <img alt="Picture 1677698220" height="557" src="../../../../images/UIElement_files/image9.png" width="454" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Select the desired element and click on the ‘Select Element’ button.</span><span style="margin-left:84px;"></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"><img alt="Picture 53389612" height="347" src="../../../../images/UIElement_files/image10.png" width="771" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"></span></p>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">The Element type is automatically populated. Users can then select the desired Element Action for it.</span></p>
+    <p class="Numbering28 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;">Users can also check where the element is exactly located on the page by clicking on the ‘Highlight Element’ button as shown below.</span></p>
+    <p class="ListParagraph margin-left-0-74in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:116px">For this, the Agent should be running and the page should already be displayed in it.</span></p>
+    <p class="ListParagraph margin-left-0-74in" style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:84px;"> <img alt="Picture 391073177" height="322" src="../../../../images/UIElement_files/image11.png" width="791" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+  </div>
+</body>
+</html>

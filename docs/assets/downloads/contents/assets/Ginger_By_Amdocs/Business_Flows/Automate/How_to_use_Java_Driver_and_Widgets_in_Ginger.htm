@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>How to use Java Driver &amp; Widgets in Ginger</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/How to use Java Driver and Widgets in Ginger.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title"> </p>
+    <p class="Title"><span style="font-size:32px;margin-left:128px"> How to use Java Driver &amp; Widgets in Ginger</span></p>
+    <p> </p>
+    <p> </p>
+    <p class="TOCHeading"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#_Toc498954952">Description</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Pre_Requisites">Pre Requisites</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Configure_solution_to_work_with_Java_Driver.">Configure solution to work with Java Driver</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Add_Java_Agent_to_the_Solution.">Add Java Agent to the Solution</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Add_Java_to_the_target_application.">Add Java to the target application</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Launch_your_Java_application.">Launch your Java application</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Verify_activity_target_application.">Verify activity target application</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Configure_Java_Launch_application_Action.">Configure Java Launch application Action</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Working_with_Java_Agent_on_Java_Application.">Working with Java Agent on Java Application.</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Working_with_Window_Explore">Working with Window Explore</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Working_with_Spy">Working with Spy</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Working_with_Widgets_(Web_Embedded)">Working with Widgets (Web Embedded)</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a class="Hyperlink" href="#Appendix:">Appendix:</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Working_with_IFRAME_(Widgets)">Working with IFRAME (Widgets)</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Working_With_GTB_and_Java_Driver">Working With GTB and Java Driver</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Using_Wait_for_Idle_action_on_Java_Application">Using Wait for Idle action on Java Application</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Using_Smart_Sync_Action_on_Java_Application">Using Smart Sync Action on Java Application</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Set_Date_of_Birth_on_CRM_screen_using_Java_Driver">Set Date of Birth on CRM screen using Java Driver</a></span></span></li>
+    </ul>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><a id="_Description"></a><br />
+      ‎</p>
+    <h1 class="Heading1"><span style="margin-left:132px;">Description</span></h1>
+    <p><span style="margin-left:132px;">        <span style="font-family:Calibri;"><span style="font-size:16px;">These steps will explain how to work with Ginger Java Driver on any Java application OMS, CRM, Java, and widgets (Web embedded in </span></span></span></p>
+    <p><span style="margin-left:132px;"><span style="font-family:Calibri;"><span style="font-size:16px;">java application).</span></span></span></p>
+    <p><span style="margin-left:132px;"><span style="font-family:Calibri;"><span style="font-size:16px;">         Java Agent offers:</span></span></span></p>
+    <ul class="Disc">
+      <li><span style="margin-left:132px;"><span style="font-family:Calibri;"><span style="font-size:16px;">                            Automate Java Application</span></span></span></li>
+      <li><span style="margin-left:132px;"><span style="font-family:Calibri;"><span style="font-size:16px;">                            Automate Web Embedded Widgets</span></span></span></li>
+    </ul>
+    <h1 class="Heading1"><span style="margin-left:132px;"><a id="_Pre_Requisites"></a><a id="Pre_Requisites"></a>Pre Requisites</span></h1>
+    <p class="Numbering5 Numbering11"><span style="margin-left:132px;">Latest Ginger version.</span></p>
+    <p class="Numbering5 Numbering11"><span style="margin-left:132px;">JDK version 1.6_29 and up installed on the machine</span></p>
+    <h1 class="Heading1"> </h1>
+    <h1 class="Heading1"><span style="margin-left:132px;"><a id="_How_to_use"></a><a id="Configure_solution_to_work_with_Java_Driver."></a>Configure solution to work with Java Driver</span></h1>
+    <h2 class="Numbering15 Heading2" data-list-level="2"><span style="margin-left:132px;"><a id="Add_Java_Agent_to_the_Solution."></a>Add Java Agent to the Solution</span></h2>
+    <p class="Numbering14 ListParagraph" data-list-level="2"><span style="margin-left:132px;"><span style="font-size:16px;">Right-click on Agents and Add a new Agent.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><img alt="Picture 659736966" height="672" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image2.png" width="501" /></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="2"><span style="margin-left:132px;"><span style="font-size:16px;">Add name and target platform type.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><img alt="Picture 262843018" height="517" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image3.png" width="509" /></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <h2 class="Numbering15 Heading2" data-list-level="2"><span style="margin-left:132px;"><a id="Add_Java_to_the_target_application."></a>Add Java to the target application</span><span style="margin-left:132px;"></span></h2>
+    <p class="Numbering16 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on the solution name.</span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><img alt="Picture 441282335" height="307" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image4.png" width="616" /></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering17 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on the business flow and verify that the target application is JavaApp.</span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><img alt="Picture 861516013" height="239" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image5.png" width="433" /></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"></span></p>
+    <h1 class="Heading1"><span style="margin-left:132px;"><a id="Launch_your_Java_application."></a>Launch your Java application.</span></h1>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">While using the launch java application action you will fire your java application and attach the Agent to the application.</span></span><span style="margin-left:132px;"></span></p>
+    <h2 class="Numbering15 Heading2" data-list-level="2"><span style="margin-left:132px;"><a id="Verify_activity_target_application."></a>Verify activity target application</span></h2>
+    <p class="margin-left-0-25in"><span style="margin-left:132px;"><img alt="Picture 701232900" height="252" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image6.png" width="458" /></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="margin-left:132px;"></span></p>
+    <h2 class="Numbering15 Heading2" data-list-level="2"><span style="margin-left:132px;"><a id="Configure_Java_Launch_application_Action."></a>Configure Java Launch application Action</span></h2>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">This action will enable you to:</span></span></p>
+    <p class="Numbering33 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Launch java application and attach the agent for using java driver to automate your application.</span></span></p>
+    <p class="Numbering33 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Attach the agent to running the Java application.</span></span></p>
+    <p class="Numbering33 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">launch your java application without attaching the agent (use if u are using other agents to automate your application)</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2"><span style="margin-left:132px;"><span style="font-size:16px;">Add new action by clicking the add action button.</span></span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2"><span style="margin-left:132px;"><span style="font-size:16px;">Move to the General action tab and select the “Launch Java application”.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><img alt="Picture 1587002415" height="533" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image7.png" width="599" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering5 ListParagraph" data-list-level="2"><span style="margin-left:132px;"><span style="font-size:16px;">Edit launch java application action.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><img alt="Picture 742754601" height="383" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image8.png" width="752" /></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering19 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Java Version Path – Used for selecting the path for JDK location, you can select the first option if the JDK is set in your </span></span><span style="margin-left:132px;"><span style="font-size:16px;">environment variable or the second option if the JDK is located in a different location on the machine. In any case, JDK is a </span></span><span style="margin-left:132px;"><span style="font-size:16px;">must to run this action.</span></span></p>
+    <p class="Numbering19 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Launch Java Application – check this option if you want both to launch the java application and attach the agent. You can also </span></span><span style="margin-left:132px;"><span style="font-size:16px;">use this Action just for attaching the agent to an already running Java application by unchecking this section.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><span style="font-size:16px;">Java Application Path – Add the application location is you are using to run CRM, add the full domain location for the JNLP.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><span style="font-size:16px;">Use the “Add Parameter to Launch Application With” button if u need to launch your application with a parameter like a user name.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><img alt="Picture 979483974" height="258" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image9.png" width="634" /></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering19 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Wait for Java Application Window – Add the title of the window that you are expecting to be open once your application is </span></span><span style="margin-left:132px;"><span style="font-size:16px;">launched and the time to wait for it (sec).</span></span></p>
+    <p class="Numbering19 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Attach Ginger Java Agent – use this to attach the agent to the application, by default the location of the agent is located in the </span></span><span style="margin-left:132px;"><span style="font-size:16px;">ginger folder. You can also change the port if 8888 is being used by a different program.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><span style="font-size:16px;">Notice:</span></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Java Launch Action need to be on Separate Activity it can’t be with Other</span></span></p>
+    <p class="ListParagraph margin-left-1-25in"><span style="margin-left:132px;"><span style="font-size:16px;">Action, as u can see below activity 1 holed only one action in activity 2</span></span></p>
+    <p class="ListParagraph margin-left-1-25in"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph margin-left-1-25in"><span style="margin-left:132px;"><span style="font-size:16px;">We will handle the Login window.</span></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"><img alt="Picture 30" height="316" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image10.png" width="703" /></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in"><span style="margin-left:132px;"></span></p>
+    <h1 class="Heading1"><span style="margin-left:132px;"><a id="Working_with_Java_Agent_on_Java_Application."></a>Working with Java Agent on Java Application</span></h1>
+    <h2 class="Numbering15 Heading2" data-list-level="2"><span style="margin-left:132px;"><a id="Working_with_Window_Explore"></a>Working with Window Explore</span></h2>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Window Explorer will enable you to identify objects on the screen, add locators (Xpath, id, etc.) for the object, and actions that can </span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">be done (set, get, validate, etc.).</span></span></p>
+    <p class="ListParagraph"> </p>
+    <p class="Numbering21 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once the application is up and running you can start the agent and Window Explore</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><strong><span style="font-size:16px;">Start the Agent:</span></strong></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 2074720579" height="84" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image11.png" width="532" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><strong>Start the Window Explore:</strong></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 1226953191" height="132" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image12.png" width="538" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering21 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once Window Explore is up select the application window title that needs to work on.</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 1256127252" height="665" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image13.png" width="626" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering21 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Add switch window action to set the focus on the window we want to work on, once you will click on this button “Switch Window” </span></span><span style="margin-left:132px;"><span style="font-size:16px;">action will be added to the activity.</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 452181403" height="502" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image14.png" width="642" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once you add the switch window action u can Edit it and add “Sync Time” which means how much time</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">To wait for the window to come up.</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 1545924379" height="381" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image15.png" width="861" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering21 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">You can also switch the view from tree View to Grid View by clicking on this Button.</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 350681886" height="572" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image16.png" width="858" /></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <h2 class="Numbering15 Heading2" data-list-level="2"><span style="margin-left:132px;"><a id="Working_with_Spy"></a>Working with Spy</span></h2>
+    <p class="Numbering22 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on the spy icon</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 631114260" height="604" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image17.png" width="701" /></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p class="Numbering22 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once Clicked on the spy button move your cursor to the element you want and press on Ctrl,</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once the element is found all details will be available.</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">For Example, if you want to work on the First Name text box:</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 1933765992" height="613" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image18.png" width="691" /></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Text box we want to work on, move your cursor to First name, and press on Ctrl.</span></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Actions – these are all the actions that available for this control Set, get, Validate, etc...</span></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Locators – this is how we are locating the element in this case we have ByName or by Xpath</span></span></p>
+    <p class="ListParagraph margin-left-1-50in"><span style="margin-left:132px;"><span style="font-size:16px;">We recommend working with Xpath.</span></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Value – value to set on the text box.</span></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Playback – once setting the value you can test the action.</span></span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="3"><span style="margin-left:132px;"><span style="font-size:16px;">Add to Activity – Add this Action to the flow in Ginger.</span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><span style="font-size:16px;">This is the way we are working with all elements, Drop Down list radio Button Check box tables, etc.</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <h1 class="Heading1"><span style="margin-left:132px;"><a id="Working_with_Widgets_(Web_Embedded)"></a>Working with Widgets (Web Embedded)</span></h1>
+    <p class="margin-left-0-25in"><span style="margin-left:132px;"><span style="font-size:16px;">Widgets are Web pages that Embedded in CRM \OMS running on the JExplore process,</span></span></p>
+    <p class="margin-left-0-25in"><span style="margin-left:132px;"><span style="font-size:16px;">We are handling it by injecting java scripts into the web page and that enables us to interact with the page.</span></span></p>
+    <p><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering25 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Open window explores refresh the window list and select the window where the web Page is embedded.</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"><img alt="Picture 18" height="278" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image19.png" width="792" /></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering25 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on the switch window action and add it to the activity</span></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"><img alt="Picture 1535039979" height="242" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image20.png" width="713" /></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering25 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">To get the elements to window explore we need to inject the JS into the page</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on Grid View.</span></span></p>
+    <p class="ListParagraph margin-left-0"><span style="margin-left:132px;"><img alt="Picture 20" height="220.8" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image21.png" width="547.2" /></span></p>
+    <p class="ListParagraph margin-left-0"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering25 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">In the search box type JE and find the Jexplorer object in the grid select locator as Xpath and</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Add the action to the activity</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering25 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once Done with all activities above you can start working with the spy</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">To add the actions.</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 22" height="336.0" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image22.png" width="709.9" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering25 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Activity that works with widgets action should be in this order</span></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"><img alt="Picture 23" height="142" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image23.png" width="712" /></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <h1 class="Heading1"><span style="margin-left:132px;"><a id="Appendix:"></a>Appendix:</span></h1>
+    <h2 class="Heading2"><span style="margin-left:132px;"><a id="Working_with_IFRAME_(Widgets)"></a>Working with IFRAME (Widgets)</span></h2>
+    <p><span style="margin-left:132px;"><span style="font-size:16px;"> There are web pages that the content of the page is inside IFRAME so to handle that</span></span></p>
+    <p><span style="margin-left:132px;"><span style="font-size:16px;"> We need to add Switch Frame action.</span></span></p>
+    <p class="Numbering26 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Once we add the Switch window and JExplorer Actions we need to add the Switch Frame action</span></span></p>
+    <p class="ListParagraph margin-left-0-75in"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 24" height="484" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image24.png" width="718" /></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering26 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">This is how IFRAME activity IFRAME should be handled</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 25" height="120" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image25.png" width="724" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <h2 class="Heading2"><span style="margin-left:132px;"><a id="Working_With_GTB_and_Java_Driver"></a>Working With GTB and Java Driver</span></h2>
+    <p class="Numbering35 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Use Different Ports, verify that you are not using the same port on GTB and Java Driver</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Check your GTB port in this case it is 9999</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 31" height="135" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image26.png" width="483" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">So when you use launch java application action check that you are not using the same port</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;"><img alt="Picture 192" height="229" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image27.png" width="488" /></span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering35 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">On the java launch application action turn off the “show ginger Agent console” option.</span></span><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;"><img alt="Picture 193" height="270" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image28.png" width="496" /></span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering35 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Use different activities for java Driver and GTB</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <h2 class="Heading2"><span style="margin-left:132px;"><a id="Using_Wait_for_Idle_action_on_Java_Application"></a>Using Wait for Idle action on Java Application</span></h2>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><span style="font-size:16px;">Once we are adding Action like Click, we have the option to select wait for Idle,</span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><span style="font-size:16px;">Wait for Idle Enable you to set the interval and timeout to check if the application is done with processing all events and idle to </span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><span style="font-size:16px;">proceed with the next actions.</span></span></p>
+    <p class="margin-left-0-50in"><span style="margin-left:132px;"><img alt="Picture 26" height="457" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image29.png" width="731" /></span></p>
+    <p class="ListParagraph margin-left-0-58in"><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-0-58in"><span style="margin-left:132px;"></span></p>
+    <h2 class="Heading2"><span style="margin-left:132px;"><a id="Using_Smart_Sync_Action_on_Java_Application"></a>Using Smart Sync Action on Java Application</span></h2>
+    <p class="ListParagraph margin-left-0-58in"><span style="margin-left:132px;"><span style="font-size:16px;">Smart Sync will help you sync between the Automation steps and the application</span></span></p>
+    <p class="ListParagraph margin-left-0-58in"><span style="margin-left:132px;"><span style="font-size:16px;">We have 2 types:</span></span></p>
+    <p class="Numbering28 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">WaitUntilDisaper – set wait time and check until element disappears.</span></span></p>
+    <p class="Numbering28 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">WaitUntilDisplay – set wait time and Check until an element is Displayed.</span></span></p>
+    <p class="ListParagraph margin-left-0-83in"><span style="margin-left:132px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on Add new Action.</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">From the list of actions select “Smart Sync Action”</span></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"><img alt="Picture 1008435676" height="447" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image30.png" width="670" /></span></p>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p class="Numbering30 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Click on the window Explore Icon and Add your element</span></span></p>
+    <p class="Numbering30 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Set the Action Type</span></span></p>
+    <p class="Numbering30 ListParagraph"><span style="margin-left:132px;"><span style="font-size:16px;">Set Wait time</span></span><span style="margin-left:132px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in"><span style="margin-left:132px;"><img alt="Picture 1052048116" height="301" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image31.png" width="692" /></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <h2 class="Heading2"><span style="margin-left:132px;"><a id="Set_Date_of_Birth_on_CRM_screen_using_Java_Driver"></a>Set Date of Birth on CRM screen using Java Driver</span></h2>
+    <p class="ListParagraph"><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"><span style="font-size:16px;"> While setting and Date-type field on the CRM, we need to configure our Edit Java Element Action as per the highlighted fields shown in the </span></span></p>
+    <p><span style="margin-left:132px;"><span style="font-size:16px;"> screenshot below</span></span><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;">              <img alt="Picture 1811497764" height="181" src="../../../images/How to use Java Driver and Widgets in Ginger_files/image32.png" width="767" /></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p><span style="margin-left:132px;"></span></p>
+    <p> </p>
+  </div>
+</body>
+</html>

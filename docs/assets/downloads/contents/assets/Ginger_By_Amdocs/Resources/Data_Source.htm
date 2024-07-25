@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Source</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/Data Source.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri;margin-left: 140px">                               <span style="font-size:32px;">Data Source</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong style="font-size: 19px">Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#Purpose">Purpose</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Add_Ginger_Data_Source_to_Solution.">Add Ginger Data Source to Solution</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Add_New_Ginger_Data_Source.">Add New Ginger Data Source</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Create_New_Solution">Create New Solution</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Exploring_Ginger_Data_Source_Options">Exploring Ginger Data Source Options</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Data_Source_Manipulation_Options.">Data Source Manipulation Options</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Types_of_Data_Source_Tables.">Types of Data Source Tables</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Ginger_KEY_VALUE">Ginger KEY VALUE</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#CUSTOMIZED">CUSTOMIZED</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Ginger_Data_Source_Table_Options.">Ginger Data Source Table Options</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Data_Source_Table_Manipulation_Options.">Data Source Table Manipulation Options</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Data_Source_Config_Page.">Data Source Config Page</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#_Toc529876475">Data Source Config – Value Expression</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#_Toc529876476">Data Source Config – Output Grid</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#_Toc529876477">Data Source Config Page – Configuration</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Export/_Import_to_Excel">Export/ Import to Excel</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Export_Data_Source_to_Excel">Export Data Source to Excel</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Export_Table_to_Excel_(Customized_or_Key_table)">Export Table to Excel (Customized or Key table)</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Import_Data_Source_from_Excel">Import Data Source from Excel</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Ginger_Data_Source_Action">Ginger Data Source Action</a></span></p>
+    <ul class="Disc" style="font-family: Calibri">
+      <li class="TOC2"><span style="font-size:16px;"><a href="#Action_Configurations">Action Configurations</a></span></li>
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><a id="_Description"></a><br />
+      ‎</p>
+    <h1 class="Heading1" style="font-family: Calibri">   <a id="_Pre_Requisites"></a><a id="Purpose"></a>Purpose</h1>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> The purpose of Adding Data Source to the solution is to Read/Write Data from a common place for all Business Flows/Activities/Actions.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> There are 2 types of Data Sources available GingerDataSource &amp; LiteDB.</span></p>
+    <h1 class="Heading1" style="font-family: Calibri">  <a id="_How_to_use"></a><a id="Add_Ginger_Data_Source_to_Solution."></a>Add Ginger Data Source to Solution</h1>
+    <p class="text-indent-0-25in" style="font-family: Calibri"><span style="font-size:16px;"> A new Folder “Data Sources” is now available in All Ginger Solutions. To work with Data Source you can use </span><span style="font-size:16px;">one of the below options;</span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">    <a id="Add_New_Ginger_Data_Source."></a>Add New Ginger Data Source</h2>
+    <p class="Numbering14 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Go to Resources-&gt; Data Sources tab.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Right-click on the “Data Sources” node and select “Add Data Source” from the Pop Up Menu.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 1991277376" height="427" src="../../images/Data Source_files/image2.png" width="809" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="Numbering14 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Currently, the only supported Data Source Type is “MS Access”. Add the Data Source Name and the Path of the external MDB File. </span></p>
+    <p class="Numbering14 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Click OK</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 1456404143" height="317" src="../../images/Data Source_files/image3.png" width="742" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">     <a id="Create_New_Solution"></a>Create New Solution</h2>
+    <p style="font-family: Calibri">   <span style="font-size:16px;">           Default Ginger Data Source will be added to every new solution with the Name “GingerDataSource”.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">The MDB file for the Data Source will be copied to the Data Sources Folder of the Solution in the File System.</span></p>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="font-size:16px;">       <span style="color: rgb(0, 0, 0);">LiteDB Data Source</span></span></h1>
+    <p style="font-family: Calibri"><span style="font-size:16px;">             It is a simple and fast NoSQL database</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Create a new LiteDB Datasource</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on Add New Item</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 4" height="344" src="../../images/Data Source_files/image4.png" width="839" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">On the Config Data Source Page:</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Select New -&gt; Datasource Type – LiteDataBase -&gt; Give a Name -&gt;Click on OK.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 298125163" height="299" src="../../images/Data Source_files/image5.png" width="715" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 1269445058" height="727" src="../../images/Data Source_files/image6.png" width="419" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">   <a id="Exploring_Ginger_Data_Source_Options"></a>Exploring Ginger Data Source Options</h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri">After adding the Data Source to the solution you can expand the Data Source Folder to see the various Data Source options.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">   <a id="Data_Source_Manipulation_Options."></a>Data Source Manipulation Options</h2>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">We have various options available to work and manipulate data in the Data Source. All the below manipulation options can be found in:</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Pop up Menu by doing Right Click on the Data Sources node.</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Data Source Page Toolbar</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Explorer Toolbar</span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><img alt="Picture 5" height="278" src="../../images/Data Source_files/image7.png" width="712" /></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"> </p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri">                <span style="font-size:19px;">Add New Table</span></h3>
+    <p class="margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">There are 2 options available viz. Customized table and Key-Value Table.</span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering37 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add Customized Table to the Data Source.</span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="font-size:16px;">                      Select the Customized table option.</span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><span style="font-size:16px;">                      Enter the Table Name.</span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><img alt="Picture 6" height="417" src="../../images/Data Source_files/image8.png" width="632" /></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri"><img alt="Picture 7" height="232" src="../../images/Data Source_files/image9.png" width="393" /></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Refresh</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Refresh the data of all the Tables of the Data Source. It will discard all local changes and get the data from the Data Source File.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Commit all</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Save all Local changes of all the Tables in the Current Data Source to the Database (MDB File).</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Duplicate</strong></span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"><span style="font-size:16px;">This will duplicate the selected data source, the user can give a new name to the duplicated data source.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Rename</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Rename the Data Source.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;"><strong>Delete</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Delete the Data Source.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Export and Import are covered in section - <strong>Export/Import to Excel</strong></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri"> <a id="_Types_of_Data"></a><a id="Types_of_Data_Source_Tables."></a>Types of Data Source Tables</h1>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;"> Two types of Data Source Tables can be used to transfer Data from one Business Flow/Activity/Action to another.</span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Ginger Key-Value(Recommended)</span></p>
+    <p class="Numbering38 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Customized</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">                You will find one table of each type added by default after Creating a New Solution.</span></p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">   <a id="Ginger_KEY_VALUE"></a>Ginger KEY VALUE</h2>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Ginger Key-Value Table Saves the data and In Key Name/Key-Value Pair. Each Key Name should be Unique so it can be later read by another Action. Below are columns found in the Key-Value Table:</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">GINGER_ID- Unique ID to refer to the Row in Table. Auto Populated(Read-Only)</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">GINGERKEY_NAME – Name of the KEY to being referred to store Data Like (CUSTOMER_ID, CUST_NAME, etc.)</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">GINGERKEY_VALUE – Value if the Key. Can be read/write from the Ginger Actions.</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">GINGER_LAST_UPDATE_DATETIME- The last time when the Row was updated. Auto Populated(Read-Only)</span></p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">GINGER_LAST_UPDATED_BY- NTNET of the User who updated the Value of the Row. Auto Populated(Read-Only)</span></p>
+    <p class="margin-left-0-25in" style="font-family: Calibri">      <img alt="Picture 204" height="231" src="../../images/Data Source_files/image10.png" width="988" /></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">       <a id="CUSTOMIZED"></a>CUSTOMIZED</h2>
+    <p class="ListParagraph" style="font-family: Calibri">If you want to use Data in the customized format, you can use the Customized Data Table Type. Below are the default columns added while creating a new Customized Table.</p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri">GINGER_ID - Unique ID to refer to the Row in Table. Auto Populated(Read-Only)</p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri">GINGER_USED – This can be used to check if the Current Row’s Data is used or Note. We will also have the option in the Value Expression to Mark Row as Done after reading/writing data to the row. It will set value Done in the GINGER_USED Column</p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri">GINGER_LAST_UPDATE_DATETIME- The last time when the Row was updated. Auto Populated(Read-Only)</p>
+    <p class="Numbering39 ListParagraph" style="font-family: Calibri">GINGER_LAST_UPDATED_BY- NTNET of the User who updated the Value of the Row. Auto Populated(Read-Only)</p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> <img alt="Picture 205" height="203" src="../../images/Data Source_files/image11.png" width="933" /></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">     <a id="Ginger_Data_Source_Table_Options."></a>Ginger Data Source Table Options</h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> <span style="font-size:16px;">After adding the Data Source to the solution you can expand the Data Source Folder to see the various Data Source options.</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">      <a id="Data_Source_Table_Manipulation_Options."></a>Data Source Table Manipulation Options</h2>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">We have various options available to work and manipulate data in the Data Source. All the below manipulation options can be found in:</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Data Source Table Menu.</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Data Source Table Page Toolbar</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Explorer Toolbar</span></p>
+    <p class="ListParagraph margin-left-1-25in" style="font-family: Calibri">     <img alt="Picture 8" height="337" src="../../images/Data Source_files/image12.png" width="914" /></p>
+    <p style="font-family: Calibri"> </p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri">                 <span style="font-size:16px;"><span style="font-weight: bold; color: rgb(0, 0, 0);">Commit</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Save Al Local changes of the Table to Database (MDB File).</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">                <span style="color: rgb(0, 0, 0);">Rename</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Rename the Table.</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">                <span style="color:#000000;">Refresh</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Refresh the Table data in the Data Source Table Data Grid. It will discard all local changes.</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">                 <span style="color: rgb(0, 0, 0);">Duplicate</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Create a copy of the Current Table. (Not available in Data Source Table Page toolbar)</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">                 <span style="color:#000000;">Delete</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Delete Current Table.</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">                 <span style="color:#000000;">Add Column</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Add a new Column to the table. It will save all local changes. (Only available in Data Source Table Page toolbar)</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">                <span style="color: rgb(0, 0, 0);">Remove Column</span></span></h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Remove Column from the table. (Only available in Data Source Table Page toolbar)</span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Export and Import are covered in section - <strong>Export/Import to Excel</strong></span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri">          </h3>
+    <h1 class="Heading1" style="font-family: Calibri">    <a id="Data_Source_Config_Page."></a>Data Source Config Page</h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Data Source Config Page will be used to read/write from Data Source Tables. We can open Data Source Config Page from below:</span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Value Expression Editor Page (For Input Data)</span></p>
+    <p class="Numbering40 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Output Grid (To Save Data in Data Table)</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <h2 class="text-indent-0-50in" style="font-family: Calibri">Data Source Config – Value Expression</h2>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">Value Expression can be now used to read from Data Source and use it as input data for Action. You will find the Data Source Hierarchy in Value Expression Component Tree.</span></p>
+    <p style="font-family: Calibri">                 <img alt="Picture 1" height="527" src="../../images/Data Source_files/image13.png" width="868" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">                <span style="font-size:16px;">You can double-click on the Data Source Table Item to open Data Source Config Page.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="text-indent-0-50in" style="font-family: Calibri">  Data Source Config – Output Grid</h2>
+    <p class="margin-left-0-71in" style="font-family: Calibri"><span style="font-size:16px;">If you want to store the output of the Action to Data Source Table. You can do that by clicking on the Store to Data source button from the output grid as shown below.</span></p>
+    <p class="margin-left-0-71in" style="font-family: Calibri"><span style="font-size:16px;"><img alt="Picture 207" height="203" src="../../images/Data Source_files/image14.png" width="933" /></span></p>
+    <p class="margin-left-0-71in" style="font-family: Calibri"><span style="font-size:16px;">It will open the Data Source Config Page.</span></p>
+    <p class="margin-left-0-71in" style="font-family: Calibri"> </p>
+    <h2 class="text-indent-0-50in" style="font-family: Calibri">  Data Source Config Page – Configuration</h2>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">Data Source Config Page will allow us to point to a cell in the table which should to which user want to read/write the data in Data Table.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">                   Data Source Config Page is divided into below 4 Sections:</span></p>
+    <p style="font-family: Calibri">                   <img alt="Picture 211" height="356" src="../../images/Data Source_files/image15.png" width="895" /></p>
+    <p style="font-family: Calibri"> </p>
+    <h3 class="text-indent-0-21in" style="font-family: Calibri">         <span style="font-size:16px;">  <span style="font-size:19px;">Data Source Table Details Section</span></span></h3>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">This section contains the list of the available Data Sources of the Solution and its corresponding Data Table Names.</span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">You can always change the selected Data Source Name/Table Name in the Data Source configuration page to choose where you want to read/write the data.</span></p>
+    <h3 class="text-indent-0-21in" style="font-family: Calibri"><span style="font-size:16px;">          <span style="font-size:19px;">Table Data Section</span></span></h3>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">This section will show the actual table data after expanding the section. It will need to be reloaded after you change the data Source Table from the Data Source Table Details Section.</span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">After Expanding the Table data Section you will see the Table Data as below.</span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><img alt="Picture 212" height="642" src="../../images/Data Source_files/image16.png" width="883" /></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"> </p>
+    <h3 class="text-indent-0-21in" style="font-family: Calibri">          Table Cell Identifier Section</h3>
+    <p class="margin-left-1-00in" style="font-family: Calibri">Table Cell Identifier section will allow us to point to a particular cell in the Data table where we want to read/write the data.</p>
+    <p class="margin-left-1-00in" style="font-family: Calibri">The Configurations options will be different for different Table Types. We will discuss both configurations below.</p>
+    <p class="margin-left-0-71in" style="font-family: Calibri"> </p>
+    <h4 class="margin-left-0-50intext-indent-0-50in" style="font-family: Calibri;color: #7E92CA">                 <span style="font-size:19px;">Table Cell Identifier – Ginger Key-Value Table</span></h4>
+    <p class="margin-left-1-00in" style="font-family: Calibri">To identify the cell where you want to read/write the data, you just need to select the Key Name from Key Name Combo list in the Table Cell Identifier Section.</p>
+    <p style="font-family: Calibri">                      <img alt="Picture 208" height="748" src="../../images/Data Source_files/image17.png" width="648" /></p>
+    <p style="font-family: Calibri"> </p>
+    <h4 class="margin-left-0-50intext-indent-0-50in" style="font-family: Calibri">         <span style="color:#7e92ca;font-size:19px">  Table Cell Identifier – Customized Table</span></h4>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">There are multiple identifiers available to identify the cell from the customized Table.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">By Selected Cell- This option will be enabled only after loading the Table data section.</span></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"><span style="font-size:16px;">          You can just select the cell from the table data section to identify the cell.</span></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri">         <img alt="Picture 10" height="449" src="../../images/Data Source_files/image18.png" width="732" /></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">By Query – If you want to identify the cell by writing a query.</span></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"><span style="font-size:16px;">      There are readymade Operators given to create the query.</span></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri">       <img alt="Picture 11" height="387" src="../../images/Data Source_files/image19.png" width="729" /></p>
+    <p class="ListParagraph margin-left-1-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Customized – You can identify the cell by providing the Column and Row identifier.</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Column – You can choose the name of the column from the Column Drop Down.</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Row – We have 3 options available to specify the row.</span></p>
+    <p class="ListParagraph margin-left-2-00in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Row Number – Specify the row number in the row number drop down as shown below.</span></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri">       <img alt="Picture 215" height="506" src="../../images/Data Source_files/image20.png" width="728" /></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering42 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Next Available Row – It will select the first row where Ginger_Used Column value is Null.</span></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri"><span style="font-size:16px;">      P.S. - This option will be shown only in a customized table having a GINGER_USED column.</span></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri">       <img alt="Picture 216" height="520" src="../../images/Data Source_files/image21.png" width="729" /></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering42 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Where – You can provide the condition to identify the row from the Table.</span></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri">          <img alt="Picture 217" height="572" src="../../images/Data Source_files/image22.png" width="716" /></p>
+    <p class="ListParagraph margin-left-2-50in" style="font-family: Calibri"> </p>
+    <h4 class="margin-left-1-00in" style="font-family: Calibri">Mark Row As Done</h4>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">You can check this check box if you want to update the GINGER_USED column as “Done” after reading/writing data from the Table Cell.</span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">P.S. - This option will be shown only in a customized table having a GINGER_USED column.</span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"> </p>
+    <h3 style="font-family: Calibri">               Value Expression</h3>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">This section is a read-only Auto Populated section. It will show the Value expression which is getting generated by selecting the different options to identify the cell.</span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-1-00in" style="font-family: Calibri"><span style="font-size:16px;">The Value Expression created will be using the below keywords:</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">DS Name – Name of the Data Source</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">DST – Name of the Data Source Table</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">KEY – Key Name from the Ginger KEY Name Table</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">MASD – Y/N, if you want to mark the row as Done/Not.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">IDEN – Identifier</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Query – Identify by Query</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Cust – If your identifier is Customized</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">QUERY – The query by which cell will be executed to get the Table Cell.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">ICOLVAL – The Value of the column Name for Customized Identifier.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">GROW – Row Identifier.</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">RowNum – To identify Row by Row Number</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">NxtAvail – To get Next Available Row</span></p>
+    <p class="Numbering42 ListParagraph" data-list-level="2" style="font-family: Calibri"><span style="font-size:16px;">Where – To get Row with the Condition</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">ROWNUM – Value of the Row Number.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">WCOLVAL – Value of Column in where clause.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">WOPR – Operation for where Column value.</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">WROWVAL – Value of the column cell in where clause.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">       <a id="Export/_Import_to_Excel"></a>Export/ Import to Excel</h1>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">          <a id="Export_Data_Source_to_Excel"></a>Export Data Source to Excel</h2>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering14 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:17px;"> Right-click on the Data Source and select the option to Export to Excel as shown below.</span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">                <img alt="Picture 12" height="545" src="../../images/Data Source_files/image23.png" width="613" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering14 ListParagraph" data-list-level="4" style="font-family: Calibri"><span style="font-size:16px;"> Select the File name and click on the ok button. (User needs to first create an empty Excel file to use it).</span><span style="font-size:16px;"></span></p>
+    <span style="font-size:16px;"></span>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;"><img alt="Picture 13" height="158" src="../../images/Data Source_files/image24.png" width="706" /></span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">The Excel file will have a separate sheet for every table with the Table name as the sheet name.</span></p>
+    <p style="font-family: Calibri">                       <img alt="Picture 15" height="649" src="../../images/Data Source_files/image25.png" width="702" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">           <a id="Export_Table_to_Excel_(Customized_or_Key_table)"></a>Export Table to Excel (Customized or Key table)</h2>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the Export to Excel option by right-clicking on the desired table.</span><span style="font-size:16px;"></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;">                      </span><img alt="Picture 16" height="705" src="../../images/Data Source_files/image26.png" width="611" /></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering45 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the File and the sheet where you want to export and click on the Ok button to export the data.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">        <img alt="Picture 17" height="164" src="../../images/Data Source_files/image27.png" width="646" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">           <a id="Import_Data_Source_from_Excel"></a>Import Data Source from Excel</h2>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri">Right-click on the Data Source and select the Import from Excel option</p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">      <img alt="Picture 18" height="671" src="../../images/Data Source_files/image28.png" width="655" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri">In the Wizard window, click on the Next button after the Information of Data source is displayed.</p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">        Then select the desired Excel file and click on the Next button.</p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">    <img alt="Picture 19" height="237" src="../../images/Data Source_files/image29.png" width="768" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select the desired Sheet in the file</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">         <img alt="Picture 22" height="388" src="../../images/Data Source_files/image30.png" width="742" /></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">When the user selects ‘Sheet as the first row as column name’ then the same column name is given to the column in the table. </span><span style="font-size:16px;"></span></p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Field 1 etc is not added in the Table.</span></p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Columns without the ‘Sheet as the first row as column name’ option</span></p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"><img alt="C:\Users\natishak\AppData\Local\Temp\SNAGHTML48ea22e2.PNG" height="383" src="../../images/Data Source_files/image31.png" width="714" /></p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">Columns with the ‘Sheet as the first row as column name’ option</span></p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"><img alt="Picture 24" height="404" src="../../images/Data Source_files/image32.png" width="707" /></p>
+    <p class="margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering47 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">When ‘Is the Model Parameter File’ is selected then the first column of the sheet is taken as the fields of the table and the rest are considered as their values.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">                   <img alt="Picture 26" height="333" src="../../images/Data Source_files/image33.png" width="686" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px"> The data from the Excel file is displayed</span></p>
+    <p style="font-family: Calibri">                            <img alt="Picture 20" height="392" src="../../images/Data Source_files/image34.png" style="cursor: nwse-resize;" width="822" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">  Users can filter the desired data if required.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">              Use the ‘Select Row(s) Where’ filed to enter the filter and view it using the ‘View Filtered Data’ button.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;">             If the column has space in it then use square brackets eg. [Parameter Name]=’ ABC’</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">The Imported Table is given the name of the sheet in the file.</span></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri">           <img alt="Picture 27" height="230" src="../../images/Data Source_files/image35.png" width="836" /></p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-1-19in" style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri">      <a id="Ginger_Data_Source_Action"></a>Ginger Data Source Action</h1>
+    <p class="margin-left-0-50in" style="font-family: Calibri">Ginger Data Source Action will be used to Get/Set/Mark Row As Done in the Data Source Table. It can be added from the General Actions tab in Add Action Window.</p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 218" height="538" src="../../images/Data Source_files/image36.png" width="485" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering15" data-list-level="2" style="font-family: Calibri">         <a id="Action_Configurations"></a>Action Configurations</h2>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">After loading the Edit Action Screen for Data Source Action you will need to populate the Action Type Configuration Section to:</span></p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri">             Choose the Action to want to perform</h3>
+    <p class="margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">You can choose either of the options depending upon your requirement</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Get Value</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Set Value</span></p>
+    <p class="Numbering42 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Mark As Done</span></p>
+    <p class="Numbering15 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">  Identify the Data Cell which needs to be manipulated.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"><span style="font-size:16px;">  This will be done similarly to in Data Source Config Page. Please refer to that section above.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <h3 class="Numbering15" data-list-level="3" style="font-family: Calibri">           Lite DB Action Configuration</h3>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">Datasource action is the same for all data sources. Except By Query option in DataSource action.</span></p>
+    <p class="Numbering49 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">By Query :</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;"><img alt="Picture 21" height="562.0" src="../../images/Data Source_files/image37.png" width="624.0" /></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><span style="font-size:16px;">To run the data source action by query option, you have to write a query in LiteDB syntax.</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

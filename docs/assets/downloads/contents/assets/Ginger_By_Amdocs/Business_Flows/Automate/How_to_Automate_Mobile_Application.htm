@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>How to Automate Mobile Application</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/How to Automate Mobile Application.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title margin-left-2-50intext-indent-0-50in" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri;margin-left: 116px">           <span style="font-size:32px;"> How to Automate Mobile Application</span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="color:#0000ff;"><strong>Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#_Toc72966038">Description</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#Pre-requisite">Pre-requisite</a></span></p>
+    <ol class="NestedNumbering">
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Start_Mobile_Agent">Start Mobile Agent</a></span>
+        <ol>
+          <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Start_Mobile_Agent">Ginger Mobile Window Way of Using</a></span></li>
+        </ol>
+      </li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Add_Device_Control_Actions_to_Automation_Flow">Add Device Control Actions to Automation Flow</a></span></li>
+      <li class="TOC1" style="font-family: Calibri;"><span style="font-size:16px;"><a href="#Create_Flow_using_Explorer">Create Flow using Explorer</a></span>
+        <ol>
+          <li class="TOC2"><span style="font-size:16px;"><a href="#Launch_Window_Explorer">Launch Window Explorer</a></span></li>
+          <li class="TOC2"><span style="font-size:16px;"><a href="#Select_Element_via_Screenshot">Select Element via Screenshot</a></span></li>
+          <li class="TOC2"><span style="font-size:16px;"><a href="#Select_Element_via_Page_Source">Select Element via Page Source</a></span></li>
+          <li class="TOC2"><span style="font-size:16px;"><a href="#Select_Element_via_Grid_View">Select Element via Grid View</a></span></li>
+          <li class="TOC2"><span style="font-size:16px;"><a href="#Add_Action_for_Selected_Element">Add Action for Selected Element</a></span></li>
+        </ol>
+      </li>
+    </ol>
+    <ul class="Disc" style="font-family: Calibri">
+    </ul>
+    <p style="font-family: Calibri"> </p>
+    <h2 aria-level="1" paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{4}" paraid="156989566" role="heading"><strong><span data-contrast="none"><span data-ccp-parastyle="heading 1">Description</span></span><span><span> </span><span></span></span><span data-contrast="none"></span><span data-ccp-props="{&quot;335559738&quot;:240,&quot;335559739&quot;:120}"> </span></strong></h2>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{15}" paraid="355083945"><span data-contrast="auto"><span>These </span><span>guide</span><span> will explain how you can build automation flow for mobile </span><span>application</span><span> using Ginger flow creation tools.</span></span><span data-ccp-props="{}"> </span></p>
+    <h2 aria-level="1" paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{23}" paraid="219794766" role="heading"><span data-contrast="none"><span data-ccp-parastyle="heading 1">Pr</span><span data-ccp-parastyle="heading 1">e-requisite</span></span><span data-ccp-props="{&quot;335559738&quot;:240,&quot;335559739&quot;:120}"> </span></h2>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{37}" paraid="2126565256"><span data-contrast="auto"><span>Configured Mobile Target Application</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{44}" paraid="1889091096"><span data-contrast="auto"><span>Configured Business Flow which mapped to the Mobile Target Application</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}"> </span></p>
+      </li>
+    </ul>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{51}" paraid="1543417996"><span data-contrast="auto"><span>Configured and working mobile Agent</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{58}" paraid="690674365"><span data-contrast="auto"><span>Mobile native/hybrid/web application to automate</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}"> </span></p>
+      </li>
+    </ul>
+    <h2 aria-level="1" paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{65}" paraid="1618531717" role="heading"><span data-contrast="none"><span data-ccp-parastyle="heading 1">1. Start Mobile Agent</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:360,&quot;335559738&quot;:480,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:270}"> </span></h2>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{75}" paraid="349788147"><span data-contrast="none"><span>Using the Appium agent user can connect to the mobile device and control it via mouse and keyboard events done on top of the mobile device window and by running dedicated Ginger Actions.</span></span><span data-ccp-props="{&quot;335559685&quot;:90}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{81}" paraid="1652558096"><span data-contrast="none"><span>See below how to start the Agent and how to control it.</span></span><span data-ccp-props="{&quot;335559685&quot;:90}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{87}" paraid="663552475"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559731&quot;:360}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{91}" paraid="1894957033"><span data-contrast="auto"><span>Follow below steps for starting the Mobile Agent:</span></span><span data-ccp-props="{&quot;335559731&quot;:360}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="37" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{97}" paraid="733556609"><strong><span data-contrast="auto"><span>Add Business Flow</span></span></strong><span data-contrast="auto"><span> and add the Mobile target application to it</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="37" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{106}" paraid="2053121031"><span data-contrast="auto"><span>Shift to<strong> </strong></span></span><strong><span data-contrast="auto"><span>Automate </span><span>page</span></span></strong><span data-contrast="auto"><span><strong> </strong>for the specific Business Flow</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="37" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{119}" paraid="1431509830"><span data-contrast="auto"><span>Select the added </span></span><strong><span data-contrast="auto"><span>Appium Agent</span></span></strong><span data-contrast="auto"><span> to be mapped to the Mobile Target Application</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="37" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{130}" paraid="1883912870"><span data-contrast="auto"><span>Start the Agent by clicking on “</span></span><strong><span data-contrast="auto"><span>Start</span></span></strong><span data-contrast="auto"><span>” button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="37" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{141}" paraid="1790497679"><strong><span data-contrast="auto"><span>Mobile device window will launch</span></span></strong><span data-contrast="auto"><span> (unless disabled on the Agent configurations) and show the device loading and then it screenshots</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{150}" paraid="1335430262"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{154}" paraid="1031789016"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image545.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{159}" paraid="1798902352"><span data-contrast="auto"></span><span><img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" src="../../../images/image546.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{164}" paraid="812110848"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <h2 aria-level="2" paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{168}" paraid="1360843394" role="heading"><strong><span data-contrast="none"><span data-ccp-parastyle="heading 2">1.1 Ginger Mobile Window Way of Using</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:200,&quot;335559740&quot;:276}"> </span></strong></h2>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{178}" paraid="1912939731"><span data-contrast="none"><span>User</span><span> can control the device via mouse and keyboard operation and by dedicated action, see below full possible controls.</span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{184}" paraid="92957178"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{188}" paraid="1611621943"><strong><span data-contrast="none"><span> 1.1.1 Ginger Mobile Window Configurations</span></span><span data-ccp-props="{}"> </span></strong></p>
+    <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{195}" paraid="1819684701"><span data-contrast="none"><span> Changing </span></span><strong><span data-contrast="none"><span>Auto refresh mode</span></span></strong><span data-contrast="none"><span>:</span></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{205}" paraid="793930245"><span data-contrast="none"><span>Click on “</span></span><strong><span data-contrast="none"><span>Configurations</span></span></strong><span data-contrast="none"><span>” button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{216}" paraid="269097748"><span data-contrast="none"><span>Select the wanted mode:</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{223}" paraid="1463701767"><span data-contrast="none"><span>“</span></span><strong><span data-contrast="none"><span>Live</span></span></strong><span data-contrast="none"><span>”- screenshot will be refreshed automatically constantly</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{234}" paraid="884935173"><span data-contrast="none"><span>“</span></span><strong><span data-contrast="none"><span>Post Operation</span></span></strong><span data-contrast="none"><span>”- screenshot will be refreshed automatically only post operation like mouse click on the device screenshot or after mobile Action execution</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="3" role="listitem">
+        <p paraeid="{2e81392d-b402-49ec-8d60-3b5d6bb94f16}{245}" paraid="216199431"><span data-contrast="none"><span>“</span></span><strong><span data-contrast="none"><span>Disabled</span></span></strong><span data-contrast="none"><span>”- no automatic screenshot refresh, user needs to refresh it manually when required</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{1}" paraid="1671992544"><strong><span data-contrast="none"><span> Refresh waiting rate</span></span></strong><span data-contrast="none"><span>- impacting the waiting time between screenshots capturing, 10 will set</span></span></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{1}" paraid="1671992544"><span data-contrast="none"><span> it to maximum waiting time and 0 to no waiting at all</span></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{9}" paraid="913158030"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{13}" paraid="54910109"><span data-contrast="none"><span>In case “Live” option is not selected, “</span></span><strong><span data-contrast="none"><span>Refresh</span></span></strong><span data-contrast="none"><span>” button will be presented for manual refresh of the screenshot when needed</span></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{23}" paraid="1595533390"><span data-contrast="auto"></span><span><img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" src="../../../images/image547.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span><img alt="Graphical user interface, text, application, chat or text message
+Description automatically generated" src="../../../images/image548.png" unselectable="on" /><span></span></span><span data-contrast="none"></span><span data-ccp-props="{&quot;335559685&quot;:1080}"> </span></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{29}" paraid="1443943273"><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{33}" paraid="1440478153"><strong><span data-contrast="none"><span>1.1.2 Control the device via mouse and keyboard</span></span><span data-ccp-props="{}"> </span></strong></p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{40}" paraid="1949397823"><span data-contrast="none"><span>Please find below the operations you can perform on the Ginger mobile device window:</span></span><span data-ccp-props="{&quot;335559731&quot;:720}"> </span></p>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{46}" paraid="1126466345"><strong><span data-contrast="none"><span>Click</span></span></strong><span data-contrast="none"><span><strong> </strong>on any element appears on the screen shot using mouse click</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{55}" paraid="66586755"><strong><span data-contrast="none"><span>Drag</span></span></strong><span data-contrast="none"><span><strong> </strong>element by long mouse click and drag</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{64}" paraid="2120731241"><strong><span data-contrast="none"><span>Swipe</span></span></strong><span data-contrast="none"><span> the screen by mouse click and drag from side to side</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{73}" paraid="1700442225"><span data-contrast="none"><span>Click on </span></span><strong><span data-contrast="none"><span>Home / Back / Menu</span></span></strong><span data-contrast="none"><span> buttons</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{84}" paraid="1873418880"><span data-contrast="none"><span>Change device </span></span><strong><span data-contrast="none"><span>orientation</span></span></strong><span data-contrast="none"><span><strong> </strong>via dedicated button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{95}" paraid="238095426"><strong><span data-contrast="none"><span>Volume Up/Down</span></span></strong><span data-contrast="none"><span><strong> </strong>via dedicated button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{104}" paraid="1867181417"><span data-contrast="none"><span><strong>Lock/Un-lock</strong> device</span></span><span data-contrast="none"><span> via dedicated button (only on Android native)</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="2" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{113}" paraid="602178293"><strong><span data-contrast="none"><span>Enter text values</span></span></strong><span data-contrast="none"><span> to selected text boxes directly via the keyboard (only on Web applications)</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{122}" paraid="1118461888"><span data-contrast="auto"></span><span data-contrast="none"><span></span></span><span data-ccp-props="{&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559685&quot;:630}"> </span></p>
+    <h2 paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{131}" paraid="357299245"><span data-contrast="none"><span data-ccp-parastyle="heading 1">2. Add Device </span><span data-ccp-parastyle="heading 1">Control Actions to Automation Flow</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:360,&quot;335559738&quot;:480,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:270}"> </span></h2>
+    <p><span data-contrast="auto"><span>Best practice for automating a Web Application is to create the flow on local browser (check “Page Object Model” for more information) and then execute it on Mobile Agent by choosing in the Agent’s page the Web:</span></span><span data-ccp-props="{&quot;335559685&quot;:360}"> </span></p>
+    <p> </p>
+    <p><img src="../../../images/image682.png" /></p>
+    <p> </p>
+    <p><span data-contrast="auto"><span>To automate a Native/Hybrid Application follow the steps below.</span></span><span data-ccp-props="{&quot;335559685&quot;:360}"> </span></p>
+    <p> </p>
+    <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{241}" paraid="1529701239"><span data-contrast="auto"><span>By using the “Mobile Device Action” user can control the device or add device control actions to his automation flow, steps:</span></span><span data-ccp-props="{&quot;335559685&quot;:360}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{9faa656f-733e-445f-b9fb-e77d93fee6fc}{247}" paraid="2001579810"><span data-contrast="auto"><span>Open “</span></span><span data-contrast="auto"><span><strong>Add </strong><strong>Actions</strong></span></span><span data-contrast="auto"><span>” panel</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{3}" paraid="2051318415"><span data-contrast="auto"><span>Select “</span></span><span data-contrast="auto"><span><strong>Actions </strong><strong>Library</strong></span></span><span data-contrast="auto"><span>”</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{14}" paraid="907888602"><span data-contrast="auto"><span>Select “<strong>Platform </strong><strong>Actions</strong>”</span><span>/ ”</span></span><span data-contrast="auto"><strong><span>Mobile</span></strong><span><strong> </strong><strong>Device </strong><strong>Action</strong></span></span><span data-contrast="auto"><span>”</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{25}" paraid="475681391"><span data-contrast="auto"><span>Double click the Action for adding it to the selected Activity Actions list</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{32}" paraid="1343829709"><span data-contrast="auto"><span>Double click the Action to get into it “</span></span><span data-contrast="auto"><span><strong>Operation </strong><strong>Settings</strong></span></span><span data-contrast="auto"><span>”</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="6">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="6" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{43}" paraid="1918387568"><span data-contrast="auto"><span>Select the operation to perform</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="7">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="7" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{50}" paraid="1064098372"><span data-contrast="auto"><span>Click on “</span></span><span data-contrast="auto"><span><strong>Run </strong><strong>Action</strong></span></span><span data-contrast="auto"><span>”</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="8">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="8" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335551500&quot;:0,&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:990,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="42" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{61}" paraid="1308504282"><span data-contrast="auto"><span>The operation will be performed on the device and impact will be visible on the mobile device window</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{68}" paraid="732235352"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image551.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{73}" paraid="1665223893"><span data-contrast="auto"><span></span></span><span data-ccp-props="{}"> </span></p>
+    <h2 aria-level="1" paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{77}" paraid="1977715641" role="heading"><span data-contrast="none"><span data-ccp-parastyle="heading 1">3. Create Flow using Explorer</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:360,&quot;335559738&quot;:480,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:270}"> </span></h2>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{87}" paraid="2120985271"><span data-contrast="auto"><span>The </span><span>Explorer tool allows user to explore the current viewed mobile application page, select the element/control needed to be automated and attach proper action to it, by that, Action by Action, the user can build the automation flow. </span></span><span data-ccp-props="{&quot;335559685&quot;:360}"> </span></p>
+    <p aria-level="2" paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{95}" paraid="1757030188" role="heading"><span data-contrast="none"><span data-ccp-parastyle="heading 2"> <strong>3.2 Launch Window Explorer</strong></span><strong><span data-ccp-parastyle="heading 2"> </span></strong></span><strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:200,&quot;335559740&quot;:276}"> </span></strong></p>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{107}" paraid="1216201635"><span data-contrast="auto"><span> Follow below steps for opening Explorer tool:</span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="1" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{113}" paraid="899068279"><span data-contrast="auto"><span>Make sure mobile Agent is started</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="2" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{120}" paraid="236170258"><span data-contrast="auto"><span>Reach to the mobile application page you want to automate</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="3" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{127}" paraid="841981690"><span data-contrast="auto"><span>Open “</span></span><span data-contrast="auto"><span><strong>Add </strong><strong>Actions</strong></span></span><span data-contrast="auto"><span>” panel</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="4" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{138}" paraid="771016552"><span data-contrast="auto"><span>Select “</span></span><strong><span data-contrast="auto"><span>Explorer</span></span></strong><span data-contrast="auto"><span>” option</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="2" data-aria-posinset="5" data-font="Calibri" data-leveltext="%2." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="6" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{149}" paraid="1872215121"><span data-contrast="auto"><span>Explorer tool will be opened inside the panel</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{156}" paraid="588305909"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image552.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{161}" paraid="347725993"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{165}" paraid="214395781"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image553.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p aria-level="2" paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{170}" paraid="911503537" role="heading"><strong><span data-contrast="none"><span data-ccp-parastyle="heading 2"> 3.3 Select Element via</span><span data-ccp-parastyle="heading 2"> Screenshot</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:200,&quot;335559740&quot;:276}"> </span></strong></p>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{182}" paraid="137179417"><span data-contrast="auto"><span> Screenshot option is the </span><span>easiest</span><span> way to </span><span>select element to be automate</span><span>, follow below steps </span><span>for </span></span></p>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{182}" paraid="137179417"><span data-contrast="auto"><span> using it:</span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="43" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{198}" paraid="1191829283"><span data-contrast="auto"><span>Make sure the page to automate is loaded on the device</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="43" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{205}" paraid="1732160042"><span data-contrast="auto"><span>Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="43" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{212}" paraid="131012898"><span data-contrast="auto"><span>Click on “</span></span><strong><span data-contrast="auto"><span>Screenshot</span></span></strong><span data-contrast="auto"><span>” tab</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="43" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{223}" paraid="1643758815"><span data-contrast="auto"><span>Go over the screenshot image and </span></span><span data-contrast="auto"><span>C<strong></strong>lick</span></span><span data-contrast="auto"><span> on the element/control which you want to automate</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="43" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{234}" paraid="440869581"><span data-contrast="auto"><span>After few seconds the explorer will identify the element control which mouse was pointing on and the element details will be loaded into the “</span></span><span data-contrast="auto"><span><strong>Selected </strong><strong>Element</strong></span></span><span data-contrast="auto"><span>” section</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="6">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="6" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="43" role="listitem">
+        <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{245}" paraid="527334048"><span data-contrast="auto"><span>Selected element also will be highlighted on the screenshot </span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{517105b3-8a49-40bc-9969-a56eb77b77df}{252}" paraid="1227123636"><span data-contrast="auto"></span><span><img alt="Graphical user interface, text, application
+Description automatically generated" src="../../../images/image554.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <h2 aria-level="2" paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{2}" paraid="469112738" role="heading"><strong><span data-contrast="none"><span data-ccp-parastyle="heading 2"> 3.4 Select Element via</span><span data-ccp-parastyle="heading 2"> Page Source</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:200,&quot;335559740&quot;:276}"> </span></strong></h2>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{14}" paraid="683472236"><span data-contrast="auto"><span> Page Source will show the XML (for native/hybrid apps) and HTML (for Web apps) which behind </span></span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{14}" paraid="683472236"><span data-contrast="auto"><span> the current loaded page on the device, user is able to select an element by picking one of the </span></span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{14}" paraid="683472236"><span data-contrast="auto"><span> nodes, steps:</span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="44" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{20}" paraid="901081054"><span data-contrast="auto"><span>Make sure the page to automate is loaded on the device</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="44" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{27}" paraid="1018573175"><span data-contrast="auto"><span>Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="44" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{34}" paraid="1122093106"><span data-contrast="auto"><span>Click on “</span></span><span data-contrast="auto"><span><strong>Page </strong><strong>Source</strong></span></span><span data-contrast="auto"><span>” tab</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="44" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{45}" paraid="103506332"><span data-contrast="auto"><span>Review the<strong> </strong></span></span><strong><span data-contrast="auto"><span>loaded XML/HTML</span></span><span data-ccp-props="{}"> </span></strong></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="44" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{54}" paraid="1629021249"><strong><span data-contrast="auto"><span>Select the node</span></span></strong><span data-contrast="auto"><span> which related to the control you want to automate</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="6">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="6" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="44" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{63}" paraid="1005047170"><span data-contrast="auto"><span>Details of the selected control will be loaded into the “</span></span><span data-contrast="auto"><span><strong>Selected </strong><strong>Element</strong></span></span><span data-contrast="auto"><span>” section</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{74}" paraid="1674582352"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{78}" paraid="474551538"><span data-contrast="auto"></span><span><img alt="Graphical user interface
+Description automatically generated" src="../../../images/image555.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><strong><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></strong></p>
+    <h2 aria-level="2" paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{83}" paraid="1780925412" role="heading"><strong><span data-contrast="none"><span data-ccp-parastyle="heading 2"> 3.5 Select Element via </span><span data-ccp-parastyle="heading 2">Grid View</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:200,&quot;335559740&quot;:276}"> </span></strong></h2>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{95}" paraid="278430551"><span data-contrast="auto"><span> Grid View will show list of elements/controls exist on the loaded application page on the </span></span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{95}" paraid="278430551"><span data-contrast="auto"><span> device for the user to select from, steps:</span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{101}" paraid="1173571934"><span data-contrast="auto"><span>Make sure the page to automate is loaded on the device</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{108}" paraid="559050188"><span data-contrast="auto"><span>Refresh Explorer Screenshot by clicking on the “Refresh Page” button</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{115}" paraid="1917512703"><span data-contrast="auto"><span>Click on “</span></span><strong><span data-contrast="auto"><span>Grid View</span></span></strong><span data-contrast="auto"><span>” tab</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{126}" paraid="1475413810"><strong><span data-contrast="auto"><span>Filter </span><span>Elements</span><span> window</span></span></strong><span data-contrast="auto"><span> will be shown for the user to select the type of UI controls to filter </span><span>by,</span><span> user should select which type of controls he requires and click “</span></span><strong><span data-contrast="auto"><span>Search</span></span></strong><span data-contrast="auto"><span>” (it is recommended to use the filter for faster controls scanning process)</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{143}" paraid="391419948"><span data-contrast="auto"><span>All found elements/controls will be shown in a list</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="6">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="6" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{150}" paraid="1268675299"><strong><span data-contrast="auto"><span>Select the required element</span></span></strong><span data-contrast="auto"><span> from the list</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="7">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="7" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="45" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{159}" paraid="341593108"><span data-contrast="auto"><span>The selected element details will be loaded into the “</span></span><span data-contrast="auto"><span><strong>Selected </strong><strong>Element</strong></span></span><span data-contrast="auto"><span>” section</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{170}" paraid="437564903"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{174}" paraid="1980110438"><span data-contrast="auto"></span><span><img alt="Graphical user interface, text, application
+Description automatically generated" src="../../../images/image556.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{179}" paraid="1333190489"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{183}" paraid="933460522"><span data-contrast="auto"></span><span><img alt="Graphical user interface, text, application, email
+Description automatically generated" src="../../../images/image557.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <h2 aria-level="2" paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{188}" paraid="1420422380" role="heading"><strong><span data-contrast="none"><span data-ccp-parastyle="heading 2"> 3.6. Add Action for Selected Element</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:200,&quot;335559740&quot;:276}"> </span></strong></h2>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{198}" paraid="1762492838"><span data-contrast="auto"><span> Once element/control was selected using the “Screenshot”/ “Page Source” / “Grid View” tools, </span></span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{198}" paraid="1762492838"><span data-contrast="auto"><span> all of it details will be shown in the “Selected Element” section.</span></span><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></p>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{204}" paraid="1996963288"><span data-contrast="auto"><span> Element details will be:</span></span><strong><span data-ccp-props="{&quot;335559685&quot;:630}"> </span></strong></p>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1350,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="46" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{210}" paraid="1974663750"><strong><span data-contrast="auto"><span>Properties</span></span></strong><span data-contrast="auto"><span>- collection of information details Ginger collected </span><span>for the specific selected element, like Type, size, location, etc.</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1350,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="46" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{221}" paraid="1010012096"><strong><span data-contrast="auto"><span>Locators</span></span></strong><span data-contrast="auto"><span>- list of locators Ginger captured to be used for locating this element in flow execution time</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Wingdings" data-leveltext="" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:1350,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="46" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{230}" paraid="626588001"><strong><span data-contrast="auto"><span>Action</span></span></strong><span data-contrast="auto"><span>- will include the possible operations can be performed on the selected element</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ul>
+    <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{239}" paraid="369936871"><u><strong><span data-contrast="auto"><span> Steps for adding Action for the specific selected element:</span></span><span data-ccp-props="{&quot;335559731&quot;:720}"> </span></strong></u></p>
+    <ol role="list" start="1">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="47" role="listitem">
+        <p paraeid="{fbebd49c-2b14-4ea5-b398-cc2f3805e17a}{245}" paraid="1279263319"><span data-contrast="auto"><span>Click on </span></span><strong><span data-contrast="auto"><span>Action</span></span></strong><span data-contrast="auto"><span><strong> </strong>tab</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="2">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="47" role="listitem">
+        <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{1}" paraid="485100636"><strong><span data-contrast="auto"><span>Select/set the proper locator and value</span></span></strong><span data-contrast="auto"><span> to be used</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="3">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="47" role="listitem">
+        <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{10}" paraid="574354352"><strong><span data-contrast="auto"><span>Select the operation</span></span></strong><span data-contrast="auto"><span> to be done</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="4">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="47" role="listitem">
+        <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{19}" paraid="458291907"><span data-contrast="auto"><span>In case relevant, </span></span><strong><span data-contrast="auto"><span>set the value</span></span></strong><span data-contrast="auto"><span> to be used</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="5">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="47" role="listitem">
+        <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{30}" paraid="241197487"><span data-contrast="auto"><span>Click on “</span></span><strong><span data-contrast="auto"><span>Run</span></span></strong><span data-contrast="auto"><span>” for testing the operation from Explorer tool, result of the execution will be shown on “</span></span><span data-contrast="auto"><strong><span>Execution </span></strong><strong><span>Report</span></strong></span><span data-contrast="auto"><span>” tab</span></span><span data-ccp-props="{}"> </span></p>
+      </li>
+    </ol>
+    <ol role="list" start="6">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="6" data-font="Calibri" data-leveltext="%1." data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-listid="47" role="listitem">
+        <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{47}" paraid="980808978"><span data-contrast="auto"><span>In case operation performed as expected, click on “</span></span><strong><span data-contrast="auto"><span>Add</span></span></strong><span data-contrast="auto"><span>” button for adding the operation for the </span><span>specific</span><span> selected element </span></span><strong><span data-contrast="auto"><span>into the list of current selected Activity</span></span><span data-ccp-props="{}"> </span></strong></p>
+      </li>
+    </ol>
+    <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{64}" paraid="1100052613"><strong><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></strong></p>
+    <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{68}" paraid="919738625"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image558.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{73}" paraid="4785804"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{77}" paraid="427109926"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image559.png" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{82}" paraid="707986457"><span data-contrast="auto"><span></span></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+    <p paraeid="{1495238c-c384-4d72-838d-2abaa899b232}{86}" paraid="2107895983"><span data-contrast="auto"></span><span><img alt="Graphical user interface, application
+Description automatically generated" src="../../../images/image560.png" style="cursor: nwse-resize;" unselectable="on" /><span></span></span><span data-contrast="auto"></span><span data-ccp-props="{&quot;335559685&quot;:720}"> </span></p>
+  </div>
+</body>
+</html>
