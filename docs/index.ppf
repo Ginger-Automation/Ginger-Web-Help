@@ -26,10 +26,6 @@
     </topic>
     
     <topic>
-      assets\Ginger_By_Amdocs\Run_Sets\Load_Virtual_Run_Set.htm
-    </topic>
-    
-    <topic>
       assets\Ginger_By_Amdocs\UI\Ginger_Business_Flows_Tab_Overview.htm
     </topic>
     
@@ -451,6 +447,10 @@
     
     <topic>
       assets\Ginger_By_Amdocs\Run_Sets\How_to_create_Virtual_Environment_or_Dynamic_Environment_via_CLI.htm
+    </topic>
+    
+    <topic>
+      assets\Ginger_By_Amdocs\Run_Sets\Load_Virtual_Run_Set.htm
     </topic>
     
     <topic>
