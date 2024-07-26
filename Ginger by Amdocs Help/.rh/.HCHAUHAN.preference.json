@@ -1,5 +1,45 @@
 {
   "recent-files::internal:document": [{
+    "title": "Creating_Agent_with_Playwright_Driver",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Creating_Agent_with_Playwright_Driver.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:57 PM"
+  }, {
+    "title": "Value_Expression_Types_Overview",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Value_Expression/Value_Expression_Types_Overview.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:54 PM"
+  }, {
+    "title": "ErrorHandler",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/ErrorHandler.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:34 PM"
+  }, {
+    "title": "04-_What_is_an_Error_Handler_Activity",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Activities/04-_What_is_an_Error_Handler_Activity.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:34 PM"
+  }, {
+    "title": "What_is_Environment",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:21 PM"
+  }, {
+    "title": "Web_Smart_Sync_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Web_Smart_Sync_Action.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:05 PM"
+  }, {
+    "title": "Ginger_Components_in_High_Level_0",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_Components_in_High_Level_0.htm",
+    "pinned": false,
+    "time": "Jul 25, 7:49 PM"
+  }, {
+    "title": "Ginger_End_to_End_Flow-_Do_it_Yourself",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
+    "pinned": false,
+    "time": "Jul 25, 7:49 PM"
+  }, {
     "title": "Load_Virtual_Run_Set",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Load_Virtual_Run_Set.htm",
     "pinned": false,
@@ -14,11 +54,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
     "pinned": false,
     "time": "Jun 20, 7:28 PM"
-  }, {
-    "title": "Ginger_End_to_End_Flow-_Do_it_Yourself",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Getting_Started/Ginger_End_to_End_Flow-_Do_it_Yourself.htm",
-    "pinned": false,
-    "time": "Jun 19, 11:03 AM"
   }, {
     "title": "Ginger_–_Git_Local_Commit",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Source_Control/Ginger_–_Git_Local_Commit.htm",
@@ -89,41 +124,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_Azure_DevOps_ALM_Integration.htm",
     "pinned": false,
     "time": "May 27, 11:56 AM"
-  }, {
-    "title": "What_is_Environment",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Environments/What_is_Environment.htm",
-    "pinned": false,
-    "time": "May 27, 11:45 AM"
-  }, {
-    "title": "image45",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/image45.png",
-    "pinned": false,
-    "time": "Apr 4, 6:05 PM"
-  }, {
-    "title": "image46",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/image46.png",
-    "pinned": false,
-    "time": "Apr 4, 4:58 PM"
-  }, {
-    "title": "REST_Action",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/General_Action_Types/REST_Action.htm",
-    "pinned": false,
-    "time": "Apr 4, 4:56 PM"
-  }, {
-    "title": "Ginger_RQM_ALM_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Integrations/ALM_Integrations/Ginger_RQM_ALM_Integration.htm",
-    "pinned": false,
-    "time": "Apr 4, 4:56 PM"
-  }, {
-    "title": "image450",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/image450.png",
-    "pinned": false,
-    "time": "Apr 4, 4:54 PM"
-  }, {
-    "title": "Frameless",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset",
-    "pinned": false,
-    "time": "Apr 2, 12:49 PM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-07-25T19:14:43+05:30",
+      "time": "2024-07-26T16:03:59+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
@@ -164,6 +164,16 @@
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Creating_Agent_with_Playwright_Driver",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Creating_Agent_with_Playwright_Driver.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:58 PM"
+  }, {
+    "title": "Web_Smart_Sync_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Web_Smart_Sync_Action.htm",
+    "pinned": false,
+    "time": "Jul 26, 3:15 PM"
+  }, {
     "title": "Load_Virtual_Run_Set",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Load_Virtual_Run_Set.htm",
     "pinned": false,
@@ -230,7 +240,7 @@
     "time": "Aug 21, 1:25 PM"
   }, {
     "title": "What_is_Clean_Up_Activity",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/What_is_Clean_Up_Activity.htm",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Activities/What_is_Clean_Up_Activity.htm",
     "pinned": false,
     "time": "May 25, 12:05 PM"
   }, {
@@ -254,5 +264,11 @@
     "path": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Word Document.ehtml",
     "pinned": false,
     "time": "Apr 2, 1:58 PM"
+  }],
+  "recent-files::external:hyperlink": [{
+    "title": "Bogus",
+    "path": "https://github.com/bchavez/Bogus",
+    "pinned": false,
+    "time": "Jul 26, 3:51 PM"
   }]
 }

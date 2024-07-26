@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/Orange/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/Orange/userstyles.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../amdocs_Icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Web Smart Sync Action</title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="../../../../css/GingerDocStyle.css"/>
+<meta name="rh-version" content="2022.4.179"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h1>                                           <strong>Web Smart Sync Action</strong></h1>
+  <h2 style="text-align: justify; margin-bottom: 11px;"><strong><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><span style="font-size:14.0pt"><span style="line-height:107%">Introduction</span></span></span></span></span></strong></h2>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">The Web Smart Sync Action is used to monitors the state of a web page and its elements until a specified time. This functionality ensures that the web page and its components are in the desired state within the given timeframe. By continuously checking, it helps maintain the consistency and reliability of web interactions. This Action only supports web platform.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Supported operation in Web Smart Sync Action-</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>1. Element Is Visible:</b> This condition checks whether an element (e.g., a button, link, or input field) is currently visible on the web page. If it is visible, the condition evaluates to true; otherwise, it evaluates to false.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>2. Element Exists:</b> This condition verifies whether an element exists in the web page’s DOM (Document Object Model). It doesn’t consider visibility; it only checks if the element is present in the HTML structure.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>3. Element To Be Clickable:</b> This condition ensures that an element is both visible and enabled (not disabled) so that it can be interacted with (e.g., clicked). It waits until the element meets these criteria before proceeding.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>4. Text Matches:</b> This condition checks whether the text content of an element matches a specified value. For example, you can verify if a button displays the expected label.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>5. Alert Is Present:</b> This condition checks if an alert (such as a JavaScript alert, confirmation, or prompt) is currently displayed on the page.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>6. Element Is Selected:</b> For checkboxes, radio buttons, and dropdowns, this condition checks whether an option is selected.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>7. Attribute Matches:</b> You can use this condition to verify if an element’s attribute (e.g., “href” for links or “value” for input fields) matches a specific value.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>8. URL Matches:</b> This condition checks if the current URL of the web page matches a given URL pattern.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>9. Page Has Been Loaded:</b> This condition confirms that the page has finished loading and is ready for interaction.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>10. Invisibility of Element Located By: </b>This condition waits until an element becomes invisible (e.g., hidden or removed) based on a specified locator (e.g., CSS selector or XPath).</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>11. Presence of All Elements Located By:</b> It checks whether all elements matching a specified locator are present in the DOM.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>12. Visibility of All Elements Located By:</b> Similar to the previous condition, this one ensures that all elements matching a locator are visible.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>13. Invisibility of All Elements Located By:</b> It waits until all elements matching a locator become invisible.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">14. <b>Frame To Be Available and Switch To It:</b> When working with iframes (embedded frames within a web page), this condition ensures that a specific frame is available and switches the WebDriver context to that frame.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>15. Selected of All Elements Located By:</b> For multiple checkboxes or options, this condition verifies that all elements matching a locator are selected.</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>16. Enability of All Elements Located By:</b> It checks whether all elements matching a locator are enabled (not disabled).</span></span></span></p>
+  <p style="text-align:justify; margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b></b></span></span></span></p>
+  <h2 style="text-align: justify;"><span style="color:#ec008c;"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:14.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif;color:rgb(236, 0, 140)">How to configure Web Smart Sync Action</span></span></b></span></span></span></span></h2>
+  <p style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:14.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Prerequisite</span></span></b><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">: </span></span></span></span></p>
+  <p style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">A solution must be created with a Web Agent having Selenium Driver.</span></span></span></span></p>
+  <h2 style="text-align: justify;"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:14.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:rgb(236, 0, 140)">How to add and use Web Smart Sync Action</span></span></span></b></span></span></span></h2>
+  <ol>
+    <li style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">Double-click on the Business flow.</span></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span></span></span></span></li>
+    <li style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">In the Activity Actions, click on the ‘Add New (+)’ button shown below.</span></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span></span></span></span></li>
+  </ol>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><img height="506" src="../../../../images/image1156.png" width="1140"/></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">3. Click on ‘Actions Library’ shown below.</span></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><img src="../../../../images/image1158.png"/></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify">4. <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">Click on Platform Actions Tab and Double click/Drag and Drop Web Smart Sync Action.</span></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><img src="../../../../images/image1159.png"/></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify">5. <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span><b><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">Operation Settings Tab Settings</span></span></span></b><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black"></span></span></span></span></span></span></p>
+  <ul>
+    <li class="listparagraph" style="margin-left:8px; text-align:justify"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:Symbol"></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">Select the Locate By value, provide Locate Value input and select Operation Type.</span></span></span></span></span></span></li>
+    <li class="listparagraph" style="margin-left:8px; text-align:justify"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:11.0pt"><span style="font-family:Symbol"></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">According to operation type we can see the Operation Description Below it.</span></span></span></span></span></span></li>
+  </ul>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"><img src="../../../../images/image1160.png" style="cursor: nwse-resize;"/></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <ul>
+    <li style="text-align:justify; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">We can also use the POM element for this Action</span></span></span></li>
+    <li style="text-align:justify; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">In Locate By select Page Object Model Element</span></span></span></li>
+    <li style="text-align:justify; margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">And Select the POM and target element</span></span></span></li>
+  </ul>
+  <p style="text-align:justify; margin-bottom:11px; margin-left:8px"></p>
+  <p style="text-align:justify; margin-bottom:11px; margin-left:8px"><img src="../../../../images/image1161.png"/></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <ul>
+    <li style="text-align:justify; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Timeout- Until specific timeout action will wait to complete otherwise it will mark as failed</span></span></span></li>
+    <li style="text-align:justify; margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Default timeout for this action is 30 second. User can also give the manual timeout</span></span></span></li>
+  </ul>
+  <p style="text-align:justify; margin-bottom:11px; margin-left:8px"></p>
+  <p style="text-align:justify; margin-bottom:11px; margin-left:8px"><img src="../../../../images/image1162.png"/></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+  <p style="margin-top:5px; margin-bottom:5px; margin-left:8px; text-align:justify"></p>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "4.2.2.0_18"
+  
+//]]></script>
+
+
+  <script src="../../../../../template/scripts/topicpage.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>
