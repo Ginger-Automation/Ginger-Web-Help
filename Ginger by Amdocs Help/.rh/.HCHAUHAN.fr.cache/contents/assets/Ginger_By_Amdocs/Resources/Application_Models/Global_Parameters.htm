@@ -1,36 +1,13 @@
 
-   
+  
   
   Global Parameters
                                                                                                                                                                                                                                              
-          
   
-   
-  Contents
-                    
-                  
-  Introduction. 2
-  How to configure Global parameters?. 2
-  How to assign value to the Global Parameter?. 3
-  
-    How to assign Optional values?. 3
-    How to assign Current value?. 3
-  
-  How to use Global Parameters in different models?. 3
-  How to use Global Parameters?. 3
-  
-    How to use Global Parameter in API Action?. 3
-    How to use Global Parameter in Value Expression?
-  
-   
-   
-   
-   
-                                                
   Introduction
   Global parameters are used in Auto Pilot- Application Model Actions. They are introduced so that parameters can be used across all the Application Models in a solution.
-   
-   
+  
+  
   How to configure Global parameters?
   
     How to Add a global parameter?
@@ -73,7 +50,7 @@
   
   A single parameter can be deleted using the ‘-‘ button as shown below
    
-   
+  
   
   
   All the parameters can be deleted using the ‘Delete All’ button as shown below.
@@ -81,13 +58,13 @@
   
   
   
-   
+  
    How to assign value to the Global Parameter?
   
    Global parameters can have 2 values viz Optional and Current.
    The difference between the two is that the optional value is static and does not change even after the API Action is run.  
   The Current value is can either be given manually or can be updated during the execution.
-   
+  
   How to assign Optional values? 
   
   
@@ -121,9 +98,11 @@
   
   
     
-   
   
-    How to assign Current value? 
+  
+    
+      How to assign Current value? 
+    
   
            
   
@@ -167,12 +146,14 @@
   
   As shown in the below example, the Actual value “4.0.30319” will be stored in the global parameter GP1 which will be its current value.
      
-   
-   
   
   
   
-    How to import optional values from an Excel file?
+  
+  
+    
+      How to import optional values from an Excel file?
+    
      
   
   
@@ -186,7 +167,7 @@
   
   
   
-   
+  
   Enter the values in the given format. Eg. as shown below values in a row no. 2 are entered manually. Row no. 1 was the heading provided in the 
   template.
   
@@ -194,7 +175,7 @@
   
                 
              
-   
+  
   
   If the Template button was clicked and entries were created in the new sheet then the user has tobrowse the file again to get the latest sheet.
         Select the template Sheet from the drop-down 
@@ -206,27 +187,27 @@
   ‘Select Row(s) Where’ field is displayed. The user can give any condition if required in this field.
   
          
-   
+  
   
       If a user wants to filter a field that has space in its name then use the below format:-
         Name in square brackets.
           [Name]
   
           
-   
+  
   
    Click on the ‘View All Data’ button to view the content in the sheet. 
   Click on the ‘View Filtered Data’ button to view the data that is filtered after applying the given condition.
       Click on the Next button once parameters are viewed.
   
          
-   
+  
   
         The below screen is displayed which will display the list of available parameters that can be added.                                                                                                                                                                    
            Select the desired parameters and click on the Finish button.
               
   
-   
+  
   Click on the Ok button of the message box.
        
   
@@ -239,8 +220,10 @@
   
   
   
-     
-    How to import optional values from Database?
+    
+    
+      How to import optional values from Database?
+    
   
   
   
@@ -257,8 +240,8 @@
   
   
   
-     
-     
+    
+    
   
    How to Export optional values to an Excel File?
   
@@ -284,7 +267,7 @@
   
   
   
-   
+  
   How to Export optional values to Data Source?
   
   
@@ -331,8 +314,8 @@
   Or right-click on the Customized table node and select the refresh button.
   The exported data is displayed after the refresh is done.
   
-   
-   
+  
+  
   How to use Global Parameters in different models?
      
   The global parameters can be used in all the API models viz. JSON Template, Swagger, WSDL, XML Template.
@@ -352,7 +335,7 @@
     Select the desired global parameter and click on the Ok button of the window.
   
   
-   
+  
   
   The parameter from the Global Parameter tab is linked here in the API model.
   
@@ -369,14 +352,16 @@
   
      Save the updates by right-clicking on the API and selecting the save option.
   
-   
-   
+  
+  
   
    How to use Global Parameters?
   
   
-     
-    How to use Global Parameter in API Action?
+    
+    
+      How to use Global Parameter in API Action?
+    
   
   
   
@@ -453,8 +438,10 @@
   
   
   
-     
-    How to use Global Parameter in Value Expression?
+    
+    
+      How to use Global Parameter in Value Expression?
+    
   
   
                       The “Current Value” of a global parameter is the value that will be set for the VE expression in run 
