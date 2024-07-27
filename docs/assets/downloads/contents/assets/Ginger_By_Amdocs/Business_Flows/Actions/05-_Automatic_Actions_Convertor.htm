@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Automatic Actions Convertor</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/05- Automatic Actions Convertor.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px;margin-left: 104px">                           <span style="font-size:32px;">Automatic Actions Convertor</span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="font-size:19px;"><strong>Contents</strong></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a class="Hyperlink" href="#Purpose">Purpose</a></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a href="#Understanding_the_Actions_Convertor">Understanding the Actions Convertor</a></span></p>
+    <ul class="Disc" style="font-family: Calibri;font-size: 16px">
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#_1.1_Name_of_Activities_in_the_Business_Flow">Name of Activities in the Business Flow</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#1.2_Convertible_Action_Types">Convertible Action Types</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#1.3_Conversion_Configurations">Conversion Configurations</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a class="Hyperlink" href="#2._How_to_use_the_Actions_Convertor?">How to use the Actions Convertor?</a></span></p>
+    <ul class="Disc" style="font-family: Calibri;font-size: 16px">
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.1_New_Activity_with_selected_Target_Application_from_the_dropdown_list">New Activity with selected TA from dropdown list</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.2_Same_Activity_with_selected_Target_Application_from_the_dropdown_list">Same Activity with selected TA from dropdown list</a></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><a class="Hyperlink" href="#2.3_Action_conversion_to_use_the_POM_object">Action conversion to use the POM object</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a href="#Some_troubleshooting_tips">Some troubleshooting tips</a></span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><a id="_Description"></a><a id="_Pre_Requisites"></a><a id="Purpose"></a><span style="margin-left:88px;"><span style="font-size:32px;">Purpose</span></span></h1>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> The purpose of adding an Actions Convertor is to allow users to automatically convert their obsolete flows containing redundant </span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> actions to new flows, also it provides the ability to convert to new actions using the POM objects.</span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> In this document, we’ll consider the example of conversion of obsolete ASCF Driver-based flows to Java Driver-based flows. There </span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> could be more such scenarios in the future but for simplicity in understanding, we will take the example of conversion of obsolete </span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;">  </span><span style="font-size:16px;">ASCF flows to Java Driver.</span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> Since ASCF Driver is no longer supported by Ginger and users are highly recommended to switch to Java Driver for automation, </span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> the </span><span style="font-size:16px;">ASCF/GTB Converter will facilitate the users to automatically convert their obsolete ASCF Driver-based actions to Java Driver- </span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> based </span><span style="font-size:16px;">ones thus, minimizing the manual effort to a great extent.</span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="Understanding_the_Actions_Convertor"></a><span style="color:#302e45;"><span style="font-weight:bold;"><span style="font-size:32px;">Understanding the Actions Convertor</span></span></span></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"> The Actions Conversion window consists of mainly three sections:</span></span></p>
+    <p class="ListParagraph margin-left-0-56in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;"></span></span></p>
+    <p class="Numbering15 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;">Name of Activities in the Business Flow,</span></span></p>
+    <p class="Numbering15 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;">Convertible Action Types and,</span></span></p>
+    <p class="Numbering15 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><span style="font-size:16px;">Conversion Configurations</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="_1.1_Name_of_Activities_in_the_Business_Flow"></a> <span style="font-size: 24px">Name of Activities in the Business Flow</span></span></h2>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">This section lists out all the activities present in the selected Business Flow regardless they are active or inactive.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">The user needs to select the activities that he wants to convert from the grid and then, click on the View Convertible Action Types buttons.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="1.2_Convertible_Action_Types"></a><span style="font-size:24px;">Convertible Action Types</span></span></h2>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">This section enlists all the types of actions present in the selected activity by the user. The action types are shown in a grid along with their </span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Source Activities, which are the parent activities that contain that specific type of action in the activity.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">The users can also view the Count of the action types in the selected activity i.e. number of occurrences of the action types in this activity </span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">along with their parent activities.</span></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Finally, we have the Target Action Type that states the action type of the newly converted actions after the conversion is done.<br />
+        ‎</span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="1.3_Conversion_Configurations"></a><span style="font-size:24px;">Conversion Configurations</span></span></h2>
+    <p class="margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">In this section, the users can do the configuration settings for the conversion. The users can choose whether they want to add the newly converted actions to a New Activity or the Same Activity i.e. the parent activity to which the obsolete action belongs to, also it provides the ability to convert to new actions using the POM objects user can select the existing POM object.</span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">The users can also set a default Target Application (TA) for the modified activities by selecting the respective TA from a list of available TAs that are present in the selected Business Flow.</span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">In case the flow doesn’t have the required TA (in this case, a Java platform-based) then, the user can simply minimize the Actions Flow Conversion window and add the required TA to the flow from the Solution tab. Once added successfully, the user can switch back to the Actions Conversion window and click on the Refresh button (<img alt="Picture 11" height="17.0" src="../../../images/05- Automatic Actions Convertor_files/image2.png" width="22.0" />) and the newly added TA will be shown in the list of TAs.</span></p>
+    <p class="margin-left-0-94in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">The user can choose the TA from the dropdown list and then, click on the Convert button and the newly converted actions will be added to a new activity or the same parent activity, depending on the selection made by the user.</span></p>
+    <p class="margin-left-0-44intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">NOTE: It’s recommended to add the newly converted actions to a New Activity rather than the Same Activity because the new actions will </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">need mapping to a different TA, in this case, a Java Driver-based TA.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Therefore, in a new activity, it is simpler to configure a new TA, in this case, a Java Driver-based TA. Whereas, if we choose to add new </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">actions to the same activity that is already mapped to an ASCF Driver-based TA, this will result in a conflict here. Although the conflict can </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">be resolved manually by the user, it will be easier for him/her in case of a new activity.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"> </p>
+    <div align="left" style="font-family: Calibri;font-size: 16px">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width: 1031px;">
+        <colgroup>
+          <col style="width:755.33333333333333333333333333px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="margin-left:88px;"><img alt="Picture 23" height="580" src="../../../images/05- Automatic Actions Convertor_files/image3.png" width="742" /></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:88px;"><img alt="Picture 24" height="586" src="../../../images/05- Automatic Actions Convertor_files/image4.png" width="750" /></span></p>
+              <p><span style="margin-left:88px;"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:88px;"></span></p>
+              <p><span style="margin-left:88px;"><img alt="Picture 9" height="596" src="../../../images/05- Automatic Actions Convertor_files/image5.png" width="764" /></span></p>
+              <p><span style="margin-left:88px;"><img alt="Picture 25" height="633" src="../../../images/05- Automatic Actions Convertor_files/image6.png" width="529" /></span></p>
+              <p><span style="margin-left:88px;"></span></p>
+              <p><span style="margin-left:88px;">POM Selection window</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span style="margin-left:88px;"></span></p>
+              <p><span style="margin-left:88px;"><img alt="Picture 10" height="580" src="../../../images/05- Automatic Actions Convertor_files/image7.png" width="742" /></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="margin-left-0-44intext-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 1 – Actions Conversion window</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="_How_to_use"></a><a id="2._How_to_use_the_Actions_Convertor?"></a><span style="font-size:32px;">How to use the Actions Convertor?</span></span></h1>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">              Double click on the Business Flow to get to the page as shown below.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">              Click on the Extra options button and select Convert Legacy Business Flow Actions into New Actions.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 1" height="193454" src="../../../images/05- Automatic Actions Convertor_files/image8.png" width="661510" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 2 – Actions Conversion button</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Please follow the steps mentioned below:</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">For example, below is a Business Flow, Web_RegressionTestingSuite, containing multiple activities from an older version.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Now as you can see below, the first activity consists of ‘Go to URL Action’ which is an old action.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-38intext-indent--0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 2" height="314.0" src="../../../images/05- Automatic Actions Convertor_files/image9.png" width="888.1" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">              Figure 3 – Displaying old Action</span></p>
+    <p class="ListParagraph margin-left-0-25intext-indent--0-06in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Click on the ‘Convert Legacy Business Flow Actions into New Actions’ button under the Extra Operations.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 4" height="108.6" src="../../../images/05- Automatic Actions Convertor_files/image10.png" width="905.4" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Actions Conversion wizard will be opened and will display the activities which contain legacy actions.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 5" height="406.1" src="../../../images/05- Automatic Actions Convertor_files/image11.png" width="532.0" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 6</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Now we can select the activities which we want to convert to new actions and click on the Next button, we will see a list of Convertible </span><span style="margin-left:88px;">Actions Types along with their count listed next to their Source Activities and Target Action Type,</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">which states the Action Type to which the old action will be converted after the conversion is completed.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 7" height="473" src="../../../images/05- Automatic Actions Convertor_files/image12.png" width="787" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 7</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">As you can see above, the selected activity consists of:</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering14 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">1 Goto URL Action and,</span></p>
+    <p class="Numbering14 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">2 Generic Element Actions</span></p>
+    <p class="margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">These are the obsolete actions that will be converted to UIElement Actions.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering9 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Now, we need to select the type of actions that we want to convert. We can also select all the enlisted Source Action Types too, the </span><span style="margin-left:88px;">selections can be made depending on the requirement.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">After selecting the Source Action Type, we need to decide the conversion configuration. This means that we need to decide whether we </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">want to add newly converted action(s) to a New Activity or the Same Activity along</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">with the TA from the dropdown list.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Let’s consider both the scenarios separately here,</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="2.1_New_Activity_with_selected_Target_Application_from_the_dropdown_list"></a><span style="font-size:24px;">New Activity with selected Target Application from the dropdown list</span></span></h2>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">In our example, we can select Web-App (or any other from dropdown) Target Application from the list and then, hit the Finish button, a new </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">activity with the name, New - Automate Selenium Web, will be added to your business flow</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">just below the parent activity.</span></p>
+    <p class="ListParagraph margin-left-0-38in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 28" height="614" src="../../../images/05- Automatic Actions Convertor_files/image13.png" width="784" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 8</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">We can notice that the old activity has been marked as Inactive and the newly converted activity has been set as Active.</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="2.2_Same_Activity_with_selected_Target_Application_from_the_dropdown_list"></a><span style="font-size:24px;">Same Activity with selected Target Application from the dropdown list</span></span></h2>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Now, if we select Menu Item Action and will take the default Target Application as for the Target Application for selected activity from the </span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">list and then, hit the Convert button, we will see that the newly</span></p>
+    <p class="ListParagraph margin-left-0-75in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">converted Menu Item actions will be added to the same activity i.e. 2. Create Contact - Mandatory Information.</span><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 30" height="618" src="../../../images/05- Automatic Actions Convertor_files/image14.png" width="788" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 9</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">As we can see below that the newly converted Menu Item action into UIElement actions have been added right below the source action in </span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">the same activity. Also, the source actions have been marked as Inactive and the</span><span style="margin-left:88px;">new UIElement actions have been set as </span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Active.</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 8" height="309.1" src="../../../images/05- Automatic Actions Convertor_files/image15.png" width="855.8" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 10</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h2 style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="2.3_Action_conversion_to_use_the_POM_object"></a><span style="font-size:24px;">Action conversion to use the POM object</span></span></h2>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">As we can see below that, if we select the POM object to convert the legacy actions to use the POM object then we need to select the </span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Menu Item Action as in the figure below, by selecting this we can convert the selected actions</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">to be converted to new actions which use the selected POM object. It tries to search the element (control in action) in the POM object and </span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">binds the new action with the element searched.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 193" height="590" src="../../../images/05- Automatic Actions Convertor_files/image16.png" width="757" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 11</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><img alt="Picture 31" height="476" src="../../../images/05- Automatic Actions Convertor_files/image17.png" width="770" /></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Figure 12</span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="ListParagraph margin-left-0-25in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"><a id="Some_troubleshooting_tips"></a><span style="font-size:32px;">Some troubleshooting tips</span></span></h1>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">The Actions Convertor has been tested against a number of ASCF driver-based scenarios, with different business flows from different </span><span style="margin-left:88px;">projects but there could be some edge-cases, where it may encounter issues while conversion.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">In such cases, we advise the users to manually configure the obsolete action causing issues like mapping of values – Locate Value, Column </span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">Number or Column Title, etc. from the old action with the new UIElement Action.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">If the users still face issues with the convertor beyond their control, they are requested to share the scenarios with the Ginger Core Team so </span><span style="margin-left:88px;">that they can look into it and fix it, as soon as possible to make the convertor more</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">robust and intuitive. Their feedback and suggestions are also welcome.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p class="Numbering19 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;">It is recommended to choose a New Activity in the Conversion Configurations section to add the newly converted actions.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:88px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+  </div>
+</body>
+</html>

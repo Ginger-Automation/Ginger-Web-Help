@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>How to Use BDD (Gherkin) with Ginger</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../css/How to Use BDD (Gherkin) with Ginger.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title"> </p>
+    <p><span style="font-size:32px;"><span style="font-weight:bold;"> <span style="font-family:Calibri;"> How to Use BDD (Gherkin) with Ginger</span></span></span></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p><span style="font-family:Calibri;"></span></p>
+    <p class="TOCHeading"><span style="color:#0000ff;"><strong><span style="font-family:Calibri;font-size:19px">Contents</span></strong></span></p>
+    <p class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#What_is_BDD_(Behavior-Driven_Development)_1">What is BDD (Behavior-Driven Development)</a></span></span></p>
+    <p class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#What_is_Gherkin_Language_1">What is Gherkin Language</a></span></span></p>
+    <p class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Seamless_integration_from_BDD_Gherkin_to_Ginger_Automation">Seamless integration from BDD Gherkin to Ginger Automation</a></span></span></p>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;">    <a href="#Gherkin_–_Introduction">Gherkin – Introduction</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#LAYOUT_–_Gherkin_“Compile”_to_Automation_1">LAYOUT – Gherkin “Compile” to Automation</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#LAYOUT_–_Gherkin_“Optimize”_to_Automation_1">LAYOUT – Gherkin “Optimize” to Automation</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;">    <a href="#IMPORT_–_Gherkin_File_to_BF_1">IMPORT – Gherkin File to BF</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#IMPORT_–_Gherkin_.feature_file_to_BF">IMPORT – Gherkin .feature file to BF</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#IMPORT_–_Gherkin_Business_Flow_creation_from.Feature_file_1">IMPORT – Gherkin Business Flow creation from .Feature file</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#IMPORT_–_Gherkin_Optimized_Activities_to_Automation_Scenarios_in_Ginger_1">IMPORT – Gherkin Optimized Activities to Automation Scenarios in Ginger</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#OPTIMIZED_ACTIVITIES_–_Gherkin_BFs_Overview_1">OPTIMIZED ACTIVITIES – Gherkin BFs Overview</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Optimized_Activities_–_Gherkin_Business_Flow_Structure_1">Optimized Activities – Gherkin Business Flow Structure</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Optimized_Activities_–_Gherkin_Creating_Scenarios_from_Optimized_Activities_1">Optimized Activities – Gherkin Creating Scenarios from Optimized Activities</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Optimized_Activities_–_Gherkin_Optimized_Activities">Optimized Activities – Gherkin Optimized Activities</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#GHERKIN_–_Language_in_Depth_1">GHERKIN – Language in Depth</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#GHERKIN_–_Language_Details_1">GHERKIN – Language Details</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#GHERKIN_–_Language_Syntax_1">GHERKIN – Language Syntax</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#GHERKIN_–_Feature_Introduction_1">GHERKIN – Feature Introduction</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#GHERKIN_–_Language_Key_Words_1">GHERKIN – Language Key Words</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#GHERKIN_–_Writing_Scenarios_Best_Practices">GHERKIN – Writing Scenarios Best Practices</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Gherkin_–_TextEdtor_for.Feature_Files_1">Gherkin – TextEdtor for .Feature Files</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#.Feature_TextEditor_–_Layout_1">Feature TextEditor – Layout</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#.Feature_TextEditor_–_Autocomplete_Lines_with_existing_automation_1">Feature TextEditor – Autocomplete Lines with existing automation</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#.Feature_TextEditor_–_Getting_your_Feature_file_ready_for_automation">Feature TextEditor – Getting your Feature file ready for automation</a></span></span></li>
+    </ul>
+    <p class="TOC1"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#Comparison_of_Gherkin_in_Ginger_to_Gherkin_in_Cucumber">Comparison of Gherkin in Ginger to Gherkin in Cucumber</a></span></span></p>
+    <ul class="Disc">
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#What_is_Cucumber">What is Cucumber</a></span></span></li>
+      <li class="TOC2"><span style="font-size:16px;"><span style="font-family:Calibri;"><a href="#What_Ginger_has_that_Cucumber_doesn’t">What Ginger has that Cucumber doesn’t</a></span></span></li>
+    </ul>
+    <p> </p>
+    <h1 class="Heading1" style="color: #302E45"><a id=" What is BDD (Behavior-Driven Development)BDD is a set of best practices for writing great tests. One of the key things BDD addresses is an implementation detail in tests. Behavior-Driven Development addresses this problem by showing you how to test, focusing on testing behavior, and not implementation What is Gherkin Language              Gherkin is a line-oriented language that uses indentation to define structure. Line endings terminate statements               (called steps) and either spaces or tabs may be used for indentation. (We suggest you use TABS for portability.)               Finally, most lines in Gherkin start with a special keyword: (more details in the section: 5)Key Words include (Feature, Scenario, Given, And, Then, When, But) Seamless integration from BDD Gherkin to Ginger Automation              The Ginger Automation tool now can allow users to write scenarios and Ginger will seamlessly turn these               scenarios into Automation Activities.              Gherkin – Introduction LAYOUT – Gherkin in Ginger               In the Solutions Tab, under documents, selecting a &lt;file&gt;.feature will allow you to write scenarios using Gherkin               language in Ginger. Fig 2.1                                  LAYOUT – Gherkin “Compile” to Automation               Once you have your scenarios wrote out, you can click the “Compile &amp; Optimize” button and Ginger will convert                your scenarios into Ginger as Scenarios and Steps. Fig 2.2.1                               The Compile tab is used to do the following: Clicking “Compile &amp; Optimize” will refresh the Gherkin. feature file into Ginger. Anytime any changes are done in the .feature file, you will need to click the button to allow the changes to be reflected into Ginger. If you select a converted Scenario or Step row, it will highlight in both the .feature file and in the Scenario or Step row. This will allow quick navigation to and from converted scenarios/steps to the actual Gherkin code line. All tags will be shown where you utilized them. Tags will help organize your scenarios for what area these scenarios are for.(Fig 2.2.1)                LAYOUT – Gherkin “Optimize” to Automation                Once you have “Compile &amp; Optimize” on the “Optimized” tab, you can see how many times you have reused the                 same steps. Fig 2.3.1                             The Optimize tab is used to do the following:Clicking “Update Business Flow” will refresh the Gherkin. feature file into Ginger Business Flow. Anytime any changes are done in the .feature file, you will need to click the button to allow the changes to be reflected into Ginger. Users will be allowed to see how Optimized they wrote their scenarios. They can view how many times they reused the same steps. This also allows automation developers to know where to start on their automation. Starting to develop those steps that are utilized the most. Users will also be able to check the automation status of each step.(Fig 2.3.1)       IMPORT – Gherkin File to BF                The Ginger Automation Tool can import any Gherkin &lt;file&gt;.feature into Ginger and convert them to a                 Automation Business Flow in Ginger. IMPORT – Gherkin .feature file to BF               In the Solutions Tab, under Business Flows (we suggest organizing with folders like in Fig 3.1.1), Import InstructionsRight-click on Business Flow or on the Folder you want to create the BF in, and in the dropdown select “Import” à “Import Gherkin Feature”. Fig 3.1.1 The File selection window will show, select “…” to browse windows location for your .feature file and click “Open”. Fig 3.1.2 You will be able to review the Gherkin file in the preview before selecting “Import”. Fig 3.1.3 àthen select “Generate Business Flow”(Fig 3.1.1) (Fig 3.1.2)              (Fig 3.1.3)                 IMPORT – Gherkin Business Flow creation from.Feature file                       After importing the Gherkin .feature:       Generate Business Flow instructions from Gherkin FileYou will be given a chance to REVIEW the compiled Scenarios and Steps you just imported. (fig 3.2.1) If you are want to proceed to create a Business Flow you can click “Generate Business Flow” (fig 3.2.1). If you see “Update Business Flow” then the Business Flow already exists, and you can update the existing flow.                    This will create a business flow INSIDE the folder that you originally right-clicked and selected import.                      (fig 3.2.2)                   (Fig 3.2.1) (Fig 3.2.2)  IMPORT – Gherkin Optimized Activities to Automation Scenarios in Ginger                     If you are creating your scenarios using Gingers Gherkin TextEditor;                     After you have completed your new .feature:Optimized ActivitiesYou learned in sections 2.1 – 2.2 how to compile and view the optimized activities Fig 2.3.1.If your Business Flow does not exist you will see in the optimize tab “Generate Business Flow”. Fig 3.3.1This will create your Gherkin Business Flow as shown in Fig 3.2.2. OPTIMIZED ACTIVITIES – Gherkin BFs Overview              The Ginger Automation Tool can now support Gherkin BDD Business Flow, utilizing the optimization of our                 Automation and integrating optimized activities.Optimized Activities – Gherkin Business Flow Structure                   In the Solutions Tab with Gherkin Business flow selected, or having your Business Flow in the Automate Tab                    you can see the BDD Gherkin Optimized Activities, Gherkin Business Flow StructureThe Activities Group “Optimized Activities” is the inactive Activities (scenarios) that utilize the “Optimized Activities” activity group to create your scenarios. Fig 4.1.1 The unchecked “Active” column in activities is intentional, they are used to create scenarios from the optimized activities. You will also notice that each of the inactive activities will belong to the Activity Group “Optimized Activities”  Fig 4.1.1 The associated. Feature File is located in the External ID and will give the physical location of the file.  Fig 4.1.1      (Fig 4.1.1)                Optimized Activities – Gherkin Creating Scenarios from Optimized Activities             In the Solutions Tab with Gherkin Business flow selected, or having your Business Flow in the Automate Tab you              can see the BDD Gherkin Optimized Activities,Gherkin Business Flow Create Scenarios from your Optimized ActivitiesWhen you click “Generate Scenarios”. You will see how many scenarios you have generated, you will see the new Activity groups created from the Optimized Activities, you will see the “Active” Generated Activities for your scenarios below your Optimized activities. Fig 4.2.1(Fig 4.2.1) Optimized Activities – Gherkin Optimized ActivitiesIn the Solutions Tab with Gherkin Business flow selected, or having your Business Flow in the Automate Tab you can see the BDD Gherkin Optimized Activities, After you have generated your scenarios shown in section 4.2. Fig 4.2.1Optimized Activity GroupsYou can see details of the Generated Activity Groups by clicking the manager and seeing the grouped activities Fig 4.3.1 You will find your “Optimized Activities” Activity group in the Shared Repository Fig 4.3.2(Fig 4.2.1)(Fig 4.2.2)  GHERKIN – Language in Depth              The Gherkin language is used by many Business and Functional Testers, writing Tests and Automation with the                Gherkin Language is easy to read and write the language. GHERKIN – Language DetailsIf you do not know what Gherkin is, below is a summary.Gherkin is the language that Cucumber understands. It is a Business Readable, Domain Specific Language that lets you describe software&#39;s behavior without detailing how that behavior is implemented. Gherkin serves two purposes — documentation and automated tests.You can view the in-depth details of the language in the following sections. GHERKIN – Language SyntaxLike Python and YAML, Gherkin is a line-oriented language that uses indentation to define structure. Line endings terminate statements (eg, steps). Either spaces or tabs may be used for indentation (but spaces are more portable). Most lines start with a keyword.Comment lines are allowed anywhere in the file. They begin with zero or more spaces, followed by a hash sign (#) and some amount of text.The parser divides the input into features, scenarios, and steps. When you run the feature the trailing portion (after the keyword) of each step is matched to a Ruby code block called Step Definitions A Gherkin source file usually looks like this 1: Feature: Some terse yet descriptive text of what is desired 2:   Textual description of the business value of this feature 3:   Business rules that govern the scope of the feature 4:   Any additional information that will make the feature easier to understand 5:  6:   Scenario: Some determinable business situation 7:     Given some precondition 8:       And some other precondition 9:     When some action by the actor10:       And some other action11:       And yet another action12:     Then some testable outcome is achieved13:       And something else we can check happens too14: 15:   Scenario: A different situation16:       ... First-line starts the feature. Lines 2–4 are unparsed text, which is expected to describe the business value of this feature. Line 6 starts a scenario. Lines 7–13 are the steps for the scenario. Line 15 starts the next scenario and so on. GHERKIN – Feature IntroductionEvery .feature file conventionally consists of a single feature. A line starting with the keyword Feature followed by free indented text starts a feature. A feature usually contains a list of scenarios. You can write whatever you want up until the first scenario, which starts with the word Scenario (or localized equivalent; Gherkin is localized for dozens of languages) on a new line. You can use tagging to group features and scenarios together independent of your file and directory structure. Every scenario consists of a list of steps, which must start with one of the keywords Given, When, Then, But or And. Gherkin Editors treats them all the same, but you shouldn’t.Feature ExampleFeature: Serve coffee  Coffee should not be served until paid for  Coffee should not be served until the button has been pressed  If there is no coffee left then money should be refunded Scenario: Buy last coffee  Given there are 1 coffee left in the machine  And I have deposited 1$  When I press the coffee button  Then I should be served a coffee In addition to a scenario, a feature may contain a background, scenario outline, and examples. Respective keywords (in English) and places to read more about them are listed in the next section: 5.4 GHERKIN – Language Key WordsBelow are the Gherkin Key Words, if you want more information please click the associated link in the More Info.KeyWord Table with links for additional info if needed.keywordlocalizedmore info, seename‘English’ native‘English’ encoding‘UTF-8’ feature‘Feature’Feature Introductionbackground‘Background’Backgroundscenario‘Scenario’Feature Introductionscenario_outline‘Scenario Outline’Scenario outlinesexamples‘Examples’ / ‘Scenarios’Scenario outlinesgiven‘Given’Given-When-Thenwhen‘When’Given-When-Thenthen‘Then’Given-When-Thenand‘And’Given-When-Thenbut‘But’Given-When-Then GHERKIN – Writing Scenarios Best PracticesWe suggest using indentation with spaces to organize your scenarios in your feature file. File Organization You can see how we organized our feature files on an application level with folders shown in Fig 5.5.1(fig 5.5.1)Step Optimization for Reusability We also suggest using what has already been developed in the repository. If an activity(Line) has already been developed it will show in the Line helper shown in Fig 5.5.2. While typing the helper box will give you a list of automated steps to choose from. Fig 5.5.2If your step does not exist yet, we STRONGLY recommend using a step line that can be reused. For example, if your step is to enter a value in a text box, use the same line verbiage exactly. Do not reword the line. This will allow us to reuse the same step. Gherkin – TextEdtor for.Feature Files               The integration of Gherkin into Ginger using the Gherkin TextEditor allows users to easily read, write and review                 Gherkin Feature files in Ginger. .Feature TextEditor – Layout                      The Gherkin TextEditor is fully integrating with Ginger.        TextEditor LayoutYou can see how the Gherkin TextEditor fits into Ginger and how it played out in the following Fig 6.1.1.This is the Current Feature file that you are working on.This is the Feature name on the first line, and the description in the following lines BEFORE the “spaceline”This is the Scenario with the following Keywords that make up the Scenarios StepsThese are Steps that are within the ScenarioThese are Tags that you can associate functionality within the FeatureThese are the existing automation steps that are already in Ginger Shared Repository having at least one tag associated with the feature or Scenario.Fig 6.1.1          .Feature TextEditor – Autocomplete Lines with existing automationIf an activity (Line) has already been developed it will show in the Line helper shown in Fig 6.2.1 While typing the helper box will give you a list of automated steps to choose from. Fig 6.2.1Shown Below is the Activity Repository of Activities that will appear in the autocomplete box while you write your scenarios.  .Feature TextEditor – Getting your Feature file ready for automation&lt;&lt;Text / Ginger Normal Style&gt;&gt; &lt;&lt;Document_Label_1 / Ginger Heading3 Style&gt;&gt;&lt;&lt;Text / Ginger Normal Style&gt;&gt;&lt;&lt;Document_Label_2 / Ginger Heading3 Style&gt;&gt;&lt;&lt;Text / Ginger Normal Style&gt;&gt;        Comparison of Gherkin in Ginger to Gherkin in Cucumber              This Comparison is to show the benefits and E2E automation using Ginger for Gherkin Automation rather than              Cucumber.  What is Cucumber                         Cucumber is a software tool used by computer programmers for testing other software. It runs automated                          acceptance tests written in a behavior-driven development (BDD) style. Central to the Cucumber BDD                         approach is its plain language parser called Gherkin. What Ginger has that Cucumber doesn’t                  &lt;&lt;Text / Ginger Normal Style&gt;&gt; &lt;&lt;Document_Label_1 / Ginger Heading3 Style&gt;&gt;&lt;&lt;Text / Ginger Normal Style&gt;&gt;&lt;&lt;Document_Label_2 / Ginger Heading3 Style&gt;&gt;&lt;&lt;Text / Ginger Normal Style&gt;&gt; "></a><br />
+      ‎</h1>
+    <h2><a id="What_is_BDD_(Behavior-Driven_Development)"></a><a id="What_is_BDD_(Behavior-Driven_Development)_1"></a><span style="font-size:32px;"><span style="color:#302e45;">What is BDD (Behavior-Driven Development)</span></span></h2>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">BDD is a set of best practices for writing great tests. One of the key things BDD addresses is an implementation detail in tests. Behavior-Driven Development addresses this problem by showing you how to test, focusing on testing behavior, and not implementation</span></p>
+    <p class="margin-left-0-50in"> </p>
+    <h2><a id="What_is_Gherkin_Language"></a><a id="What_is_Gherkin_Language_1"></a><span style="font-size:33px;color:#302E45">What is Gherkin Language</span></h2>
+    <p class="BodyText margin-left-0" style="color: #302E45"><span style="font-size:16px;"><span style="font-family:Calibri;">Gherkin is a line-oriented language that uses indentation to define structure. Line endings terminate statements</span></span></p>
+    <p class="BodyText margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">(called steps) and either spaces or tabs may be used for indentation. (We suggest you use TABS for portability.)</span></span></p>
+    <p class="BodyText margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">Finally, most lines in Gherkin start with a special keyword: (more details in the section: 5)</span></span></p>
+    <p class="BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">Key Words include (Feature, Scenario, Given, And, Then, When, But)</span></span></p>
+    <p class="BodyText"><img alt="Picture 37" height="304.8" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image1.png" width="547.0" /></p>
+    <p class="BodyText"> </p>
+    <h2><a id="Seamless_integration_from_BDD_Gherkin_to_Ginger_Automation"></a><span style="color:#302e45;"><span style="font-size:32px;">Seamless integration from BDD Gherkin to Ginger Automation</span></span></h2>
+    <p>                    <span style="font-size:16px;"> The Ginger Automation tool now can allow users to write scenarios and Ginger will seamlessly turn these scenarios into Automation Activities.</span></p>
+    <p><a id="_____________Gherkin_–_Introduction"></a></p>
+    <p> </p>
+    <p><a id="Gherkin_–_Introduction"></a><span style="font-size:32px;font-weight:bold;color:#302E45">Gherkin – Introduction</span></p>
+    <p class="Numbering36 ListParagraph" data-list-level="2"><a id="_LAYOUT_–_Gherkin_in_Ginger"></a><span style="font-size:16px;"> LAYOUT – Gherkin in Ginger</span></p>
+    <p><span style="font-size:16px;"> In the Solutions Tab, under documents, selecting a &lt;file&gt;.feature will allow you to write scenarios using Gherkin </span><span style="font-size:16px;">language in Ginger. </span></p>
+    <p>                     <img alt="Picture 256961194" height="461" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image2.png" width="873" /></p>
+    <p> </p>
+    <p> </p>
+    <h2 class="Numbering36" data-list-level="2">    <a id="LAYOUT_–_Gherkin_“Compile”_to_Automation"></a><a id="LAYOUT_–_Gherkin_“Compile”_to_Automation_1"></a>LAYOUT – Gherkin “Compile” to Automation</h2>
+    <p>                   <span style="font-size:16px;">  Once you have your scenarios wrote out, you can click the “Compile &amp; Optimize” button and Ginger will convert your scenarios into Ginger as                          </span></p>
+    <p><span style="font-size:16px;">        Scenarios.</span></p>
+    <p><span style="font-size:16px;"></span></p>
+    <p><span style="font-size:16px;">                   The Compile tab is used to do the following:</span></p>
+    <p class="Numbering22 ListParagraph"><span style="font-size:16px;">Clicking “Compile &amp; Optimize” will refresh the Gherkin. feature file into Ginger. Anytime any changes are done in the .feature file, you will need to click the button to allow the changes to be reflected into Ginger.</span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering22 ListParagraph"><span style="font-size:16px;">If you select a converted Scenario or Step row, it will highlight in both the .feature file and in the Scenario or Step row. This will allow quick navigation to and from converted scenarios/steps to the actual Gherkin code line.</span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;">All tags will be shown where you utilized them. Tags will help organize your scenarios for what area these scenarios are for.</span></p>
+    <p class="BodyText margin-left-0"><img alt="Picture 1871762703" height="469" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image3.png" width="868" /></p>
+    <p class="text-indent-0-50in"> </p>
+    <p class="text-indent-0-50in"> </p>
+    <h2 class="Numbering36" data-list-level="2">     <a id="LAYOUT_–_Gherkin_“Optimize”_to_Automation"></a><a id="LAYOUT_–_Gherkin_“Optimize”_to_Automation_1"></a>LAYOUT – Gherkin “Optimize” to Automation</h2>
+    <p class="margin-left-0-50in">  <span style="font-size:16px;"> Once you have “Compile &amp; Optimize” on the “Optimized” tab, you can see how many times you have reused the same steps. </span></p>
+    <p><span style="font-size:16px;"></span></p>
+    <p><span style="font-size:16px;">                   The Optimize tab is used to do the following:</span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Clicking “Update Business Flow” will refresh the Gherkin. feature file into Ginger Business Flow. Anytime any changes are done in the .feature file, you will need to click the button to allow the changes to be reflected into Ginger.</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering20 ListParagraph"><span style="font-size:16px;">Users will be allowed to see how Optimized they wrote their scenarios. They can view how many times they reused the same steps. This also allows automation developers to know where to start on their automation. Starting to develop those steps that are utilized the most.</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;">          Users will also be able to check the automation status of each step.</span></p>
+    <p class="margin-left-0-50in"><img alt="Picture 655738741" height="505" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image4.png" width="927" /></p>
+    <p> </p>
+    <p><a id="IMPORT_–"></a><a id="IMPORT_–_1"></a><a id="IMPORT_–_2"></a><a id="IMPORT_–_3"></a><a id="IMPORT_–_4"></a><a id="IMPORT_–_5"></a><a id="IMPORT_–_6"></a><a id="IMPORT_–_Gherkin_File_to_BF"></a><a id="IMPORT_–_Gherkin_File_to_BF_1"></a><span style="font-size:32px;font-weight:bold;color:#302E45">IMPORT – Gherkin File to BF</span></p>
+    <p>                         <span style="font-size:16px;">The Ginger Automation Tool can import any Gherkin &lt;file&gt;.feature into Ginger and convert them to a Automation Business Flow in Ginger.</span></p>
+    <p><br />
+      ‎<a id="_IMPORT_–_Gherkin_.feature_file_to_BF"></a></p>
+    <h2 class="Numbering37" data-list-level="2" style="color: #302E45">          <a id="IMPORT_–_Gherkin_.feature_file_to_BF"></a><span style="font-size:24px;color:#EC008C">IMPORT – Gherkin .feature file to BF</span></h2>
+    <p>                    <span style="font-size:16px;">In the Solutions Tab, under Business Flows </span></p>
+    <p class="Numbering26 ListParagraph" style="color: #EC008C"><span style="font-size:16px;"><span style="color:#000000;">Right-click on Business Flow or on the Folder you want to create the BF in, and in the dropdown select “Import” à “Import Gherkin Feature”. </span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">The File selection window will show, select “…” to browse windows location for your .feature file and click “Open”. </span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering26 ListParagraph"><span style="font-size:16px;">You will be able to review the Gherkin file in the preview before selecting “Import”<span style="white-space: normal;"> and </span>then select “Generate Business Flow”</span></p>
+    <p class="BodyText margin-left-0-75in"><img alt="Picture 1160951456" height="656" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image5.png" width="857" /></p>
+    <p class="BodyText margin-left-0-25intext-indent-0-50in"> </p>
+    <p class="BodyText margin-left-0-25intext-indent-0-50in"> </p>
+    <p class="BodyText margin-left-0"><img alt="Picture 747718150" height="859" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image6.png" width="854" /></p>
+    <p class="BodyText margin-left-0-25intext-indent-0-50in"> </p>
+    <p class="BodyText margin-left-0-25intext-indent-0-50in"> </p>
+    <p class="BodyText margin-left-0"><img alt="Picture 1041761047" height="869" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image7.png" width="866" /></p>
+    <p class="BodyText margin-left-0"> </p>
+    <p class="BodyText margin-left-0"><img alt="Picture 413189705" height="887" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image8.png" width="874" /></p>
+    <p class="BodyText margin-left-0"> </p>
+    <p> </p>
+    <p> </p>
+    <h2 class="Numbering37" data-list-level="2">    <a id="IMPORT_–_Gherkin_Business_Flow_creation_from.Feature_file"></a><a id="IMPORT_–_Gherkin_Business_Flow_creation_from.Feature_file_1"></a>IMPORT – Gherkin Business Flow creation from.Feature file</h2>
+    <p>           <span style="font-size:16px;"> After importing the Gherkin .feature:</span></p>
+    <h3><span style="font-size:16px;"><span style="color: rgb(0, 0, 0);"> Generate Business Flow instructions from Gherkin File</span></span></h3>
+    <p class="Numbering27 ListParagraph"><span style="font-size:16px;">You will be given a chance to REVIEW the compiled Scenarios and Steps you just imported. </span></p>
+    <p class="text-indent-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering27 ListParagraph"><span style="font-size:16px;">If you are want to proceed to create a Business Flow you can click “Generate Business Flow” .</span></p>
+    <p class="text-indent-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering27 ListParagraph"><span style="font-size:16px;">If you see “Update Business Flow” then the Business Flow already exists, and you can update the existing flow.</span></p>
+    <p class="text-indent-0-50in"><span style="font-size:16px;">This will create a business flow INSIDE the folder that you originally right-clicked and selected import.</span></p>
+    <p class="margin-left-0-50in"><img alt="Picture 100430641" height="340" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image9.png" width="947" /></p>
+    <p class="margin-left-1-00in"> </p>
+    <p class="text-indent-0-50in"><img alt="Picture 15" height="667" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image10.png" width="633" /></p>
+    <h2 class="margin-left-0-73in"> </h2>
+    <h2 class="Numbering37" data-list-level="2"><a id="IMPORT_–_Gherkin_Optimized_Activities_to_Automation_Scenarios_in_Ginger"></a><a id="IMPORT_–_Gherkin_Optimized_Activities_to_Automation_Scenarios_in_Ginger_1"></a>IMPORT – Gherkin Optimized Activities to Automation Scenarios in Ginger</h2>
+    <p>     <span style="font-size:16px;">          If you are creating your scenarios using Gingers Gherkin TextEditor;</span></p>
+    <p><span style="font-size:16px;">                After you have completed your new .feature:</span></p>
+    <h3><span style="font-size:16px;"><span style="color: rgb(0, 0, 0);"> Optimized Activities</span></span></h3>
+    <p class="text-indent-0-50in"><span style="font-size:16px;">You learned how to compile and view the optimized activities.</span></p>
+    <p class="text-indent-0-50in"><span style="font-size:16px;">If your Business Flow does not exist you will see in the optimize tab “Generate Business Flow”. </span></p>
+    <p class="text-indent-0-50in"><span style="font-size:16px;">This will create your Gherkin Business Flow.</span></p>
+    <p> </p>
+    <p> </p>
+    <p><a id="OPTIMIZED_ACTIVITIES_–_Gherkin_BFs_Overview"></a><a id="OPTIMIZED_ACTIVITIES_–_Gherkin_BFs_Overview_1"></a><span style="color:#302e45;"><span style="font-weight:bold;"><span style="font-family:Calibri;"><span style="font-size:32px;">OPTIMIZED ACTIVITIES – Gherkin BFs Overview</span></span></span></span></p>
+    <p>             <span style="font-size:16px;"> The Ginger Automation Tool can now support Gherkin BDD Business Flow, utilizing the optimization of our Automation and integrating optimized                             activities.‎</span><br />
+      ‎</p>
+    <h2 class="Numbering38" data-list-level="2"><a id="Optimized_Activities_–_Gherkin_Business_Flow_Structure"></a><a id="Optimized_Activities_–_Gherkin_Business_Flow_Structure_1"></a>Optimized Activities – Gherkin Business Flow Structure</h2>
+    <p>            <span style="font-size:16px;"> In the Solutions Tab with Gherkin Business flow selected, or having your Business Flow in the Automate Tab you can see the BDD Gherkin Optimized                      </span><span style="font-size:16px;"></span></p>
+    <p><span style="font-size:16px;"> Activities.</span></p>
+    <p><span style="font-size:16px;"><strong style="color: #000000"> Gherkin Business Flow Structure</strong></span></p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">The Activities Group “Optimized Activities” is the inactive Activities (scenarios) that utilize the “Optimized Activities” activity group to create your scenarios. </span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="Numbering29 ListParagraph"><span style="font-size:16px;">The unchecked “Active” column in activities is intentional, they are used to create scenarios from the optimized activities. You will also notice that each of the inactive activities will belong to the Activity Group “Optimized Activities” </span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;">The associated. Feature File is located in the External ID and will give the physical location of the file. </span></p>
+    <p class="BodyText margin-left-0"> </p>
+    <p class="BodyText margin-left-0"><img alt="Picture 1456591882" height="392" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image11.png" width="906" /></p>
+    <p class="margin-left-1-00in"> </p>
+    <h2 class="Numbering38" data-list-level="2">      <a id="Optimized_Activities_–_Gherkin_Creating_Scenarios_from_Optimized_Activities"></a><a id="Optimized_Activities_–_Gherkin_Creating_Scenarios_from_Optimized_Activities_1"></a>Optimized Activities – Gherkin Creating Scenarios from Optimized Activities</h2>
+    <p>                  <span style="font-size:16px;"><span style="font-family:Calibri;"> In the Solutions Tab with Gherkin Business flow selected, or having your Business Flow in the Automate Tab you can see the BDD Gherkin Optimized                  </span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;">                   Activities.</span></span></p>
+    <h3><span style="font-size:16px;"><span style="font-family:Calibri;"><span style="color: rgb(0, 0, 0);"> Gherkin Business Flow Create Scenarios from your Optimized Activities</span></span></span></h3>
+    <p class="margin-left-1-00in"><span style="font-size:16px;"><span style="font-family:Calibri;">When you click “Generate Scenarios”. You will see how many scenarios you have generated, you will see the new Activity groups created from the Optimized Activities, you will see the “Active” Generated Activities for your scenarios below your Optimized activities. </span></span><img alt="Picture 25" height="392" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image12.png" width="906" /></p>
+    <p class="margin-left-1-00in"> </p>
+    <p class="margin-left-1-00in"> </p>
+    <h2 class="Numbering38" data-list-level="2">          <a id="Optimized_Activities_–_Gherkin_Optimized_Activities"></a>Optimized Activities – Gherkin Optimized Activities</h2>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> In the Solutions Tab with Gherkin Business flow selected, or having your Business Flow in the Automate Tab you can see the BDD Gherkin Optimized </span></span><span style="font-size:16px;"></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> Activities, </span><span style="font-family:Calibri;">After you have generated your scenarios.</span></span></p>
+    <h3><span style="font-size:16px;"><span style="font-family:Calibri;"><span style="color: rgb(0, 0, 0);"> Optimized Activity Groups</span></span></span></h3>
+    <p class="margin-left-1-00in"><span style="font-size:16px;"><span style="font-family:Calibri;">You can see details of the Generated Activity Groups by clicking the manager and seeing the grouped activities. You will find your “Optimized Activities” Activity group in the Shared Repository.</span></span></p>
+    <p class="text-indent-0-50in">      <img alt="Picture 20" height="455" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image13.png" width="907" /></p>
+    <p class="text-indent-0-50in"> </p>
+    <p class="text-indent-0-50in">       <img alt="cid:image006.png@01D2DBBE.BD78B780" height="514" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image14.png" width="913" /></p>
+    <p class="text-indent-0-50in"> </p>
+    <p> </p>
+    <p><a id="GHERKIN_–_"></a><a id="GHERKIN_–_Language_in_Depth"></a><a id="GHERKIN_–_Language_in_Depth_1"></a><span style="font-size:32px;font-weight:bold;color:#302E45">GHERKIN – Language in Depth</span></p>
+    <p class="BodyText margin-left-0"><span style="font-family:Calibri;"><span style="font-size:16px;">The Gherkin language is used by many Business and Functional Testers, writing Tests and Automation with the Gherkin Language is easy to read and </span><span style="font-size: 16px;">write the language.</span></span></p>
+    <p><br />
+      ‎</p>
+    <h2 class="Numbering39" data-list-level="2" style="color: #302E45"><a id="GHERKIN_–__1"></a><a id="GHERKIN_–_Language_Details"></a><a id="GHERKIN_–_Language_Details_1"></a><span style="font-size:24px;color:#EC008C">GHERKIN – Language Details</span></h2>
+    <p>                      <span style="font-size:16px;">   If you do not know what Gherkin is, below is a summary.</span></p>
+    <p class="margin-left-1-00in"><span style="font-size:16px;">Gherkin<span class="apple-converted-space"> </span>is the<span class="apple-converted-space"> </span>language<span class="apple-converted-space"> </span>that Cucumber understands. It is a Business Readable, Domain Specific<span class="apple-converted-space"> </span>Language<span class="apple-converted-space"> </span>that lets you describe software&#39;s behavior without detailing how that behavior is implemented.<span class="apple-converted-space"> </span>Gherkin<span class="apple-converted-space"> </span>serves two purposes — documentation and automated tests.</span></p>
+    <p><span style="font-size:16px;">                           You can view the in-depth details of the language in the following sections.</span></p>
+    <p> </p>
+    <h2 class="Numbering39" data-list-level="2"><a id="GHERKIN_–_Language_Syntax"></a><a id="GHERKIN_–_Language_Syntax_1"></a>GHERKIN – Language Syntax</h2>
+    <p>                         <span style="font-size:16px;"> Like Python and YAML, Gherkin is a line-oriented language that uses indentation to define structure. Line endings terminate statements (eg,                        </span></p>
+    <p><span style="font-size:16px;">             steps). Either spaces or tabs may be used for indentation (but spaces are more portable). Most lines start with a keyword.</span></p>
+    <p><span style="font-size:16px;">                          Comment lines are allowed anywhere in the file. They begin with zero or more spaces, followed by a hash sign (#) and some amount of text.</span></p>
+    <p><span style="font-size:16px;">                          The parser divides the input into features, scenarios, and steps. When you run the feature the trailing portion (after the keyword) of each step is                  </span></p>
+    <p><span style="font-size:16px;">           matched to a Ruby code block called Step Definitions</span></p>
+    <h3>                A Gherkin source file usually looks like this</h3>
+    <p><span style="font-size:16px;"> 1: Feature: Some terse yet descriptive text of what is desired</span></p>
+    <p><span style="font-size:16px;"> 2: Textual description of the business value of this feature</span></p>
+    <p><span style="font-size:16px;"> 3: Business rules that govern the scope of the feature</span></p>
+    <p><span style="font-size:16px;"> 4: Any additional information that will make the feature easier to understand</span></p>
+    <p><span style="font-size:16px;"> 5: Scenario: Some determinable business situation</span></p>
+    <p><span style="font-size:16px;"> 6: Given some precondition</span></p>
+    <p><span style="font-size:16px;"> 7: And some other precondition</span></p>
+    <p><span style="font-size:16px;"> 8: When some action by the actor</span></p>
+    <p><span style="font-size:16px;"> 9: And some other action</span></p>
+    <p><span style="font-size:16px;"> 10: And yet another action</span></p>
+    <p><span style="font-size:16px;"> 11: Then some testable outcome is achieved</span></p>
+    <p><span style="font-size:16px;"> 12: And something else we can check happens too</span></p>
+    <p><span style="font-size:16px;"> 13: Scenario: A different situation</span></p>
+    <p class="text-indent-0-50in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"> First-line starts the feature. Lines 2–4 are unparsed text, which is expected to describe the business value of this feature. Line 6 starts a scenario.</span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"> Lines 7–13 are the steps for the scenario.etc.</span></p>
+    <h2 class="margin-left-0-59in"> </h2>
+    <h2 class="Numbering39" data-list-level="2"><a id="GHERKIN_–_Feature_Introduction"></a><a id="GHERKIN_–_Feature_Introduction_1"></a>GHERKIN – Feature Introduction</h2>
+    <p class="BodyText margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;">Every .feature file conventionally consists of a single feature. A line starting with the keyword Feature followed by free indented text starts a feature. A feature usually contains a list of scenarios. You can write whatever you want up until the first scenario, which starts with the word Scenario (or localized equivalent; Gherkin is localized for dozens of languages) on a new line. You can use tagging to group features and scenarios together independent of your file and directory structure.</span></span></p>
+    <p class="BodyText margin-left-0-75in"><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"> Every scenario consists of a list of steps, which must start with one of the keywords Given, When, Then, But or And. Gherkin Editors treats them </span></span></p>
+    <p class="margin-left-0-50in"><span style="font-size:16px;"><span style="font-family:Calibri;"> all the same, but you shouldn’t.</span></span></p>
+    <h3> </h3>
+    <h2 class="Numbering39" data-list-level="2"><a id="GHERKIN_–__2"></a><a id="GHERKIN_–_Language_Key_Words"></a><a id="GHERKIN_–_Language_Key_Words_1"></a>GHERKIN – Language Key Words</h2>
+    <p>                     <span style="font-size:16px;">Below are the Gherkin Key Words, if you want more information please click the associated link in the More Info.</span></p>
+    <h3><span style="font-weight:bold;color:#000000;font-size:16px">KeyWord Table with links for additional info if needed.</span></h3>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:515.6px">
+        <colgroup>
+          <col style="width:px" />
+          <col style="width:px" />
+          <col style="width:px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="font-size: 16px">
+              <p><span class="Strong">keyword</span></p>
+            </td>
+            <td style="font-size: 16px">
+              <p><span class="Strong">localized</span></p>
+            </td>
+            <td style="font-size: 16px">
+              <p><span class="Strong">more info, see</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>name</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘English’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>native</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘English’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>encoding</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘UTF-8’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>feature</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Feature’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Feature-Introduction">Feature Introduction</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>background</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Background’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Given-When-Then">Background</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>scenario</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Scenario’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Scenario-Outlines">Feature Introduction</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>scenario_outline</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Scenario Outline’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Given-When-Then">Scenario outlines</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>examples</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Examples’ / ‘Scenarios’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Given-When-Then">Scenario outlines</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>given</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Given’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Given-When-Then">Given-When-Then</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>when</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘When’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Background">Given-When-Then</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>then</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘Then’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Feature-Introduction">Given-When-Then</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>and</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘And’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Scenario-Outlines">Given-When-Then</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p>but</p>
+            </td>
+            <td style="font-size: 16px">
+              <p>‘But’</p>
+            </td>
+            <td style="font-size: 16px">
+              <p><a class="Hyperlink" href="https://github.com/cucumber/cucumber/wiki/Given-When-Then">Given-When-Then</a></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 class="margin-left-0-59in"><a id="_GHERKIN_–_Writing_Scenarios_Best_Practices"></a></h2>
+    <h2 class="Numbering39" data-list-level="2">         <a id="GHERKIN_–_Writing_Scenarios_Best_Practices"></a>GHERKIN – Writing Scenarios Best Practices</h2>
+    <p>                            <span style="font-size:16px;">We suggest using indentation with spaces to organize your scenarios in your feature file.</span></p>
+    <h3><span style="font-size:16px;"><span style="color:#000000;"> File Organization</span></span></h3>
+    <p class="BodyText"><span style="font-size:16px;">You can see how we organized our feature files on an application level with folders </span></p>
+    <p class="BodyText"><img alt="Picture 26" height="256" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image15.png" width="412" /></p>
+    <h3><span style="font-size:16px;"><span style="color:#000000;"> Step Optimization for Reusability</span></span></h3>
+    <p class="BodyText"><span style="font-size:16px;"><span style="font-family: Calibri;">We also suggest using what has already been developed in the repository. If an activity(Line) has already been developed it will show in the Line helper. While typing the helper box will give you a list of automated steps to choose from.</span></span></p>
+    <p class="BodyText"><img alt="Picture 27" height="563" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image16.png" width="900" /></p>
+    <p class="BodyText"> </p>
+    <p class="BodyText"><span style="font-size:16px;"><span style="font-family: Calibri;">If your step does not exist yet, we STRONGLY recommend using a step line that can be reused. For example, if your step is to enter a value in a text box, use the same line verbiage exactly. Do not reword the line. This will allow us to reuse the same step.</span></span></p>
+    <h1 class="Heading1"> </h1>
+    <h1 class="Heading1">     <a id="Gherkin_–_"></a><a id="Gherkin_–_TextEdtor_for.Feature_Files"></a><a id="Gherkin_–_TextEdtor_for.Feature_Files_1"></a>Gherkin – TextEdtor for.Feature Files</h1>
+    <p class="BodyText margin-left-0"><span style="font-size:16px;"><span style="font-family:Calibri;">The integration of Gherkin into Ginger using the Gherkin TextEditor allows users to easily read, write and review </span><span style="font-family:Calibri;">Gherkin Feature files in Ginger.</span></span></p>
+    <p><br />
+      ‎</p>
+    <h2 class="Numbering39" data-list-level="2">        <a id=".Feature_TextEditor_–_Layout"></a><a id=".Feature_TextEditor_–_Layout_1"></a>.Feature TextEditor – Layout</h2>
+    <p>                <span style="font-size:16px;"><span style="font-family:Calibri;">  The Gherkin TextEditor is fully integrating with Ginger. </span></span></p>
+    <p><span style="font-size:16px;"><span style="font-family:Calibri;"> TextEditor Layout</span></span></p>
+    <p class="BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">You can see how the Gherkin TextEditor fits into Ginger and how it played out.</span></span></p>
+    <p class="Numbering17 BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">This is the Current Feature file that you are working on.</span></span></p>
+    <p class="Numbering17 BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">This is the Feature name on the first line, and the description in the following lines BEFORE the “spaceline”</span></span></p>
+    <p class="Numbering17 BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">This is the Scenario with the following Keywords that make up the Scenarios Steps</span></span></p>
+    <p class="Numbering17 BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">These are Steps that are within the Scenario</span></span></p>
+    <p class="Numbering17 BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">These are Tags that you can associate functionality within the Feature</span></span></p>
+    <p class="Numbering17 BodyText"><span style="font-size:16px;"><span style="font-family:Calibri;">These are the existing automation steps that are already in Ginger Shared Repository having at least one tag associated with the feature or Scenario.</span></span></p>
+    <p class="BodyText margin-left-0"> </p>
+    <p class="BodyText margin-left-0"><img alt="Picture 1" height="281" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image17.png" width="839" /></p>
+    <p class="BodyText margin-left-0"> </p>
+    <p class="BodyText margin-left-0"> </p>
+    <h2 class="Numbering39" data-list-level="2">    <a id=".Feature_TextEditor_–_"></a><a id=".Feature_TextEditor_–_Autocomplete_Lines_with_existing_automation"></a><a id=".Feature_TextEditor_–_Autocomplete_Lines_with_existing_automation_1"></a>.Feature TextEditor – Autocomplete Lines with existing automation</h2>
+    <p>                If an activity (Line) has already been developed it will show in the Line helper. While typing the helper box will give you a list of automated steps to                     </p>
+    <p>                 choose from.</p>
+    <p> </p>
+    <p>                <img alt="Picture 5" height="547" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image18.png" width="875" /></p>
+    <p> </p>
+    <p>              Shown Below is the Activity Repository of Activities that will appear in the autocomplete box while you write your scenarios.</p>
+    <p>                 <img alt="Picture 2" height="603" src="../../images/How to Use BDD (Gherkin) with Ginger_files/image19.png" width="783" /></p>
+    <p> </p>
+    <p> </p>
+    <h2 class="Numbering39" data-list-level="2">           <a id=".Feature_TextEditor_–_Getting_your_Feature_file_ready_for_automation"></a>.Feature TextEditor – Getting your Feature file ready for automation</h2>
+    <p><span style="font-weight:bold;"><span style="color:#000000;"><span style="font-family:Calibri;"><span style="font-size:16px;"> &lt;&lt;Text / Ginger Normal Style&gt;&gt;</span></span></span></span></p>
+    <h3><span style="font-weight:bold;"><span style="color:#000000;"><span style="font-family:Calibri;"><span style="font-size:16px;"> &lt;&lt;Document_Label_1 / Ginger Heading3 Style&gt;&gt;</span></span></span></span></h3>
+    <p class="text-indent-0-50in"><span style="font-weight:bold;"><span style="color:#000000;"><span style="font-family:Calibri;"><span style="font-size:16px;"> &lt;&lt;Text / Ginger Normal Style&gt;&gt;</span></span></span></span></p>
+    <h3><span style="font-weight:bold;"><span style="color:#000000;"><span style="font-family:Calibri;"><span style="font-size:16px;"> &lt;&lt;Document_Label_2 / Ginger Heading3 Style&gt;&gt;</span></span></span></span></h3>
+    <p class="text-indent-0-50in"><span style="font-weight:bold;"><span style="color:#000000;"><span style="font-family:Calibri;"><span style="font-size:16px;"> &lt;&lt;Text / Ginger Normal Style&gt;&gt;</span></span></span></span></p>
+    <p> </p>
+    <p> </p>
+    <h1 class="Heading1">      <a id="Comparison_of_Gherkin_in_Ginger_to_Gherkin_in_Cucumber"></a>Comparison of Gherkin in Ginger to Gherkin in Cucumber  </h1>
+    <p>                <span style="font-size:16px;">This Comparison is to show the benefits and E2E automation using Ginger for Gherkin Automation rather than Cucumber.</span></p>
+    <p><br />
+      ‎</p>
+    <h2 class="Numbering39" data-list-level="2">       <a id="What_is_Cucumber"></a>What is Cucumber</h2>
+    <p>               Cucumber is a software tool used by computer programmers for testing other software. It runs automated  acceptance tests written in a behavior-                                       driven development (BDD) style. Central to the Cucumber BDD approach is its plain language parser called Gherkin.</p>
+    <p> </p>
+    <h2 class="Numbering39" data-list-level="2">        <a id="What_Ginger_has_that_Cucumber_doesn’t"></a>What Ginger has that Cucumber doesn’t</h2>
+    <p><span style="font-weight:bold;"><span style="font-family:Calibri;"><span style="font-size:16px;"> <span style="color:#000000;"> &lt;&lt;Text / Ginger Normal Style&gt;&gt;</span></span></span></span></p>
+    <h3><span style="font-size:16px;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-family:Calibri;"> &lt;&lt;Document_Label_1 / Ginger Heading3 Style&gt;&gt;</span></span></span></span></h3>
+    <p class="text-indent-0-50in"><span style="font-size:16px;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-family:Calibri;">&lt;&lt;Text / Ginger Normal Style&gt;&gt;</span></span></span></span></p>
+    <h3><span style="font-size:16px;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-family:Calibri;"> &lt;&lt;Document_Label_2 / Ginger Heading3 Style&gt;&gt;</span></span></span></span></h3>
+    <p class="text-indent-0-50in"><span style="font-size:16px;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-family:Calibri;">&lt;&lt;Text / Ginger Normal Style&gt;&gt;</span></span></span></span></p>
+    <p class="text-indent-0-50in"> </p>
+    <p class="text-indent-0-50in"> </p>
+    <p class="text-indent-0-50in"> </p>
+    <p class="text-indent-0-50in"> </p>
+    <p class="text-indent-0-50in"> </p>
+    <p> </p>
+  </div>
+</body>
+</html>

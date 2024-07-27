@@ -1,0 +1,57 @@
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering2 {
+    counter-reset: Numbering02;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering2:before {
+    counter-increment: Numbering01;
+    content: counter(Numbering01,decimal)")";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering4 {
+    counter-reset: Numbering12;
+    margin-left: 0.75in;
+    --autonumber: autonumber;
+}
+p.Numbering4:before {
+    counter-increment: Numbering11;
+    content: counter(Numbering11,decimal)")";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.50in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering01 Numbering11 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-25in {
+margin-left:0.25in;
+}
+.margin-left-0-75in {
+margin-left:0.75in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

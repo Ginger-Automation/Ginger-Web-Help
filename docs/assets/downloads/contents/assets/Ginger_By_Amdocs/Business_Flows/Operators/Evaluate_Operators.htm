@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Evaluate Operators</title>
+  <meta name="topic-status" content="Draft" />
+  <link rel="stylesheet" type="text/css" href="../../../css/GingerDocStyle.css" />
+</head>
+<body>
+  <h1>Evaluate Operators</h1>
+  <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="color:#ec008c">Evaluate</span></span></b></span></span></span></h2>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">Evaluate operator can be used to perform more complex checks on the Output values which are not possible with other simple operators. For example, we can check whether the output value matches a particular regular expression.Operators </span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"> </p>
+  <p style="margin-top:5px; margin-bottom:5px"><img src="../../../images/image696.png" /></p>
+  <p style="margin-top:5px; margin-bottom:5px"> </p>
+  <p style="margin-top:5px; margin-bottom:5px"><img src="../../../images/image697.png" /></p>
+  <p style="margin-top:5px; margin-bottom:5px"> </p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">As shown in the above image, we can check if the actual value (‘canvas’) matches my regular expression ^(C|c)anvas(es|)$ </span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"> </p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></p>
+  <p style="margin-top:5px; margin-bottom:5px"><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">This can be achieved by setting the Expected Value as {RegEx Fun=IsMatch Pat=^(C|c)anvas(es|)$ P1={Actual}} At runtime the Expected Value will be evaluated and if it evaluates to true then Status of the output value will be set to Passed otherwise, it will be set to Failed. </span></span></span></span></span></p>
+  <p style="margin-bottom:11px"> </p>
+</body>
+</html>

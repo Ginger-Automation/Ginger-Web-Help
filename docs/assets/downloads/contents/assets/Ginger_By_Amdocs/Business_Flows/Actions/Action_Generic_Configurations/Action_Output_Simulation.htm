@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Action Outputs Simulation</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../css/Action Output Simulation.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri;margin-left: 60px">                         <span style="font-size:32px;"> Action Outputs Simulation</span></p>
+    <p class="Title" style="font-family: Calibri;margin-left: 60px"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="font-weight:bold;color:#0000FF;font-size:19px">Contents</span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Overview:">Overview</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Configuration">Configuration</a></span></p>
+    <ul class="Disc">
+      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#Action_Level_configuration">Action Level configuration</a></span></li>
+      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#Automate_Tab_Level_configuration">Automate Tab Level configuration</a></span></li>
+      <li class="TOC2" style="font-family: Calibri;"><span style="font-size:16px;"><a class="Hyperlink" href="#Ginger_Runner_Configuration">Ginger Runner Configuration</a></span></li>
+    </ul>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a href="#Execution">Execution</a></span></p>
+    <p style="font-family: Calibri"> </p>
+    <h1 class="Heading1" style="font-family: Calibri"><a id=" Overview:Simulation Mode allows Ginger end-users to simulate required outputs from services that are either not yet implemented or temporarily unavailable (web services, portals, etc.). The mode is available for all Ginger Platforms and all Ginger Actions.  ConfigurationAction Level configurationOpen the action for which you want to simulate output, and go to the ‘Output Values’ tabBy default, the ‘Support Simulation’ checkbox is unmarked, by checking the checkbox the view of Output Values fields will change, 3 new columns will be added to the view: “Simulated Value”, “…”,” &lt;&lt;”:    The user can populate the “Simulated Value” field manual or use the “…” to populate the field using the Value Editor Expression window. Another option is to use the” &lt;&lt;” button to copy the actual value field to the “Simulated Value” field.   Automate Tab Level configurationGo to Automate tab Option under Business Flows on the top right-hand side corner  Then click on the All Execution Configuration icon as shown below   Below Runner Configurations screen will be popped up. Select the check box of “Run in simulation mode”. Ginger Runner ConfigurationGo to ‘RUN SETS’ and click on Configure Runner icon, pop up screen for Runner Configurations open, then select the check box of “Run in simulation mode”.  Execution Action Level At this point, if the action will not be executed. Ginger mechanism will copy the value from the ‘Simulated Value’ column to the ‘Actual Value’ column and will compare its value to the one populated in the ‘Expected Value’ column. The action will not be executed but rather based on output validation the action will be Passed/Failed   When the ‘Support Simulation’ checkbox is marked, and the user clicks on ‘Run Actions’ it will execute the action in simulation mode.  "></a><br />
+      ‎<span> </span></h1>
+    <h1 class="Heading1" style="font-family: Calibri"><span style="margin-left:68px"><a id="Overview:"></a> Overview</span></h1>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a><span style="font-size:16px;">Simulation Mode allows Ginger end-users to simulate required outputs from services that are either not yet implemented or </span></span><span style="font-size:16px;"></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;"> temporarily unavailable (web services, portals, etc.). The mode is available for all Ginger Platforms and all Ginger Actions.</span></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><a id="Configuration"></a>Configuration</span></h1>
+    <h2 style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><a id="Action_Level_configuration"></a>Action Level configuration</span></h2>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> Open the action for which you want to simulate output, and go to the ‘Output Values’ tab</span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;">By default, the ‘Support Simulation’ checkbox is unmarked, by checking the checkbox the view of Output Values fields will change, 3 new </span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;"> columns will be added to the view: “Simulated Value”, “…”,” &lt;&lt;”:</span></span><span style="font-size:16px;"><span style="margin-left:64px;"></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;"><img alt="Picture 980301558" height="202" src="../../../../images/Action Output Simulation_files/image2.png" width="827" /></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;"></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;">The user can populate the “Simulated Value” field manual or use the “…” to populate the field using the Value Editor Expression window. </span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;">Another option is to use the” &lt;&lt;” button to copy the actual value field to the “Simulated Value” field.</span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="font-size:16px;"><span style="margin-left:64px;"><img alt="Picture 969339606" height="181" src="../../../../images/Action Output Simulation_files/image3.png" width="826" /></span></span></p>
+    <h2 style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></h2>
+    <h2 style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><a id="Automate_Tab_Level_configuration"></a>Automate Tab Level configuration</span></h2>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> Go to Automate tab Option under Business Flows on the top right-hand side corner</span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"><img alt="Picture 397688604" height="96" src="../../../../images/Action Output Simulation_files/image4.png" width="848" /></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;">Then click on the All Execution Configuration icon as shown below</span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"><img alt="Picture 1186698163" height="121" src="../../../../images/Action Output Simulation_files/image5.png" width="844" /></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"></span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;">Below Runner Configurations screen will be popped up. Select the check box of “Run in simulation mode”.</span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><img alt="Picture 806376229" height="482" src="../../../../images/Action Output Simulation_files/image6.png" width="788" /></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></p>
+    <h2 style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><a id="Ginger_Runner_Configuration"></a>Ginger Runner Configuration</span></h2>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> Go to ‘RUN SETS’ and click on Configure Runner icon, pop up screen for Runner Configurations open, then select the </span></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> check box of “Run in simulation mode”.</span></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;">  <img alt="Picture 440388302" height="454" src="../../../../images/Action Output Simulation_files/image7.png" width="802" /></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></p>
+    <h1 class="Heading1" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><a id="Execution"></a>Execution</span></h1>
+    <h3 style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;">Action Level</span></h3>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> At this point, if the action will not be executed. Ginger mechanism will copy the value from the ‘Simulated Value’ </span></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> column to the ‘Actual Value’ column and will compare its value to the one populated in the ‘Expected Value’ </span></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;"> column. </span><span style="font-size:16px;">The action will not be executed but rather based on output validation the action will be Passed/Failed</span></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"> <img alt="Picture 116579713" height="100" src="../../../../images/Action Output Simulation_files/image8.png" width="803" /></span></p>
+    <p style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></p>
+    <p class="ListParagraph" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><span style="font-size:16px;">When the ‘Support Simulation’ checkbox is marked, and the user clicks on ‘Run Actions’ it will execute the action in simulation mode.</span></span></p>
+    <p class="ListParagraph margin-left-0" style="font-family: Calibri;margin-left: 68px"><span style="margin-left:64px;"><img alt="Picture 405195880" height="167" src="../../../../images/Action Output Simulation_files/image9.png" width="811" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:68px"></span></p>
+    <p style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

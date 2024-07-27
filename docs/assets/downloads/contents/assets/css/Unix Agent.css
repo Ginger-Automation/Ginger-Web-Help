@@ -1,0 +1,174 @@
+h1.Numbering16 {
+    counter-reset: Numbering272;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+h1.Numbering16:before {
+    counter-increment: Numbering271;
+    content: counter(Numbering271,decimal)".";
+    font-size: 14pt;
+    color: #17365D;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+span.Hyperlink {
+    color: #0000FF;
+    text-decoration: underline;
+}
+p.ListParagraph {
+    margin-left: 0.50in;
+    font-size: 11pt;
+}
+p.Numbering22 {
+    counter-reset: Numbering242;
+    margin-left: 1.00in;
+    --autonumber: autonumber;
+}
+p.Numbering22:before {
+    counter-increment: Numbering241;
+    content: counter(Numbering241,lower-roman)")";
+    display: inline-flex;
+    width: 0.50in;
+    margin-left: 0.50in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering37 {
+    counter-reset: Numbering412;
+    margin-left: 1.14in;
+    --autonumber: autonumber;
+}
+p.Numbering37[data-list-level="4"]:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 2.39in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering37[data-list-level="4"] {
+    counter-reset: Numbering415;
+    margin-left: 2.64in;
+}
+p.Numbering37:before {
+    content: "•";
+    font-family: Symbol;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.89in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering41 {
+    counter-reset: Numbering322;
+    margin-left: 0.50in;
+    --autonumber: autonumber;
+}
+p.Numbering41:before {
+    counter-increment: Numbering321;
+    content: counter(Numbering321,decimal)".";
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 0.25in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering42 {
+    counter-reset: Numbering82;
+    margin-left: 1.00in;
+    --autonumber: autonumber;
+}
+p.Numbering42:before {
+    counter-increment: Numbering81;
+    content: counter(Numbering81,lower-roman)")";
+    display: inline-flex;
+    width: 0.50in;
+    margin-left: 0.50in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering43 {
+    counter-reset: Numbering382;
+    margin-left: 1.73in;
+    --autonumber: autonumber;
+}
+p.Numbering43:before {
+    counter-increment: Numbering381;
+    content: counter(Numbering381,lower-roman)")";
+    display: inline-flex;
+    width: 0.50in;
+    margin-left: 1.23in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOC2 {
+    margin-left: 0.25in;
+    text-indent: 0.25in;
+    margin-bottom: 5pt;
+    font-size: 11pt;
+}
+p.TOCHeading {
+    margin-top: 12pt;
+    line-height: 1.08;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #365F91;
+}
+p.Title {
+    font-size: 20pt;
+    color: #0F243E;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+body {
+counter-reset:Numbering271 Numbering241 Numbering81 Numbering381 Numbering191 Numbering192 Numbering321 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0-25in {
+margin-left:0.25in;
+}
+.margin-left-0-31in {
+margin-left:0.31in;
+}
+.margin-left-1-00in {
+margin-left:1.00in;
+}
+.margin-left-1-23in {
+margin-left:1.23in;
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent-0-25in {
+text-indent:0.25in;
+}
+.text-indent-0-50in {
+text-indent:0.50in;
+}

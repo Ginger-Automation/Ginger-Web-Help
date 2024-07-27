@@ -1,0 +1,116 @@
+p.BodyText {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    line-height: 1.10;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+    font-size: 10pt;
+}
+span.Hyperlink {
+    color: #7571A0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+p.Num1 {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    line-height: 1.10;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+    font-size: 10pt;
+    counter-reset: Numbering42;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Num1:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering2 {
+    counter-reset: Numbering32;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering2:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering4 {
+    counter-reset: Numbering12;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering4:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-left: 0.35in;
+    margin-right: 0.20in;
+    text-indent: -0.35in;
+    margin-top: 10pt;
+    line-height: 1.10;
+    margin-bottom: 6pt;
+    font-size: 11pt;
+    color: #808084;
+    font-weight: bold;
+}
+p.TOCHeading {
+    margin-top: 16pt;
+    margin-bottom: 0;
+    font-size: 16pt;
+    color: #2F5496;
+}
+p.Title {
+    margin-bottom: 0;
+    font-size: 28pt;
+    color: #4472C4;
+    letter-spacing: 0;
+}
+body {
+    line-height: 1.08;
+    margin-bottom: 8pt;
+    font-size: 11pt;
+    font-family: Calibri;
+}
+.margin-left-0 {
+margin-left:0;
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}
+.text-indent--0-25in {
+text-indent:-0.25in;
+}

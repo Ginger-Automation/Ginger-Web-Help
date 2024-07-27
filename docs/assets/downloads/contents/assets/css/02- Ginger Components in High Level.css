@@ -1,0 +1,140 @@
+p.BodyText {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+h1.Heading1 {
+    margin-top: 27pt;
+    margin-bottom: 12pt;
+    font-family: Century Gothic;
+    font-size: 22pt;
+    color: #302E45;
+    counter-reset: Numbering142;
+    margin-left: 1.00in;
+    --autonumber: autonumber;
+}
+h1.Heading1:before {
+    counter-increment: Numbering141;
+    content: counter(Numbering141,decimal);
+    font-family: Century Gothic;
+    font-size: 22pt;
+    color: #302E45;
+    display: inline-flex;
+    width: 1.00in;
+    margin-left: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+span.Hyperlink {
+    color: #7571A0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+p.Normal {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+}
+p.Num1 {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+    counter-reset: Numbering162;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Num1:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering6 {
+    counter-reset: Numbering112;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering6:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.Numbering8 {
+    counter-reset: Numbering32;
+    margin-left: 1.25in;
+    --autonumber: autonumber;
+}
+p.Numbering8:before {
+    content: "";
+    font-family: Wingdings;
+    font-size: 6pt;
+    color: #6B7000;
+    display: inline-flex;
+    width: 0.25in;
+    margin-left: 1.00in;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    text-align: right;
+}
+p.TOC1 {
+    margin-left: 0.35in;
+    margin-right: 0.20in;
+    text-indent: -0.35in;
+    margin-top: 10pt;
+    margin-bottom: 6pt;
+    font-family: Century Gothic;
+    font-size: 11pt;
+    color: #808084;
+    font-weight: bold;
+}
+p.TOCHeading {
+    margin-top: 24pt;
+    margin-bottom: 0;
+    font-size: 14pt;
+    color: #365F91;
+    font-weight: bold;
+}
+p.Title {
+    margin-left: 1.00in;
+    margin-top: 6pt;
+    margin-bottom: 15pt;
+    font-size: 26pt;
+    color: #17365D;
+    letter-spacing: 0.25pt;
+}
+body {
+counter-reset:Numbering141 ;
+    font-family: 'Times New Roman', 'serif';
+}
+.margin-left-0 {
+margin-left:0;
+}
+.margin-left-1-25in {
+margin-left:1.25in;
+}
+.position-relative {
+position:relative;
+}
+span { white-space: pre-wrap;
+}

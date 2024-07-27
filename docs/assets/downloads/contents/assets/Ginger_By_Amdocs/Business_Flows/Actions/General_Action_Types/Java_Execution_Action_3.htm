@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Java Execution Action</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../css/Java Execution Action.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri"><span style="font-size:32px;margin-left:136px"> Java Execution Action </span></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <p class="TOCHeading" style="font-family: Calibri"><span style="font-size:17px;"><span style="color:#0000ff;"><span style="font-weight:bold;font-size:19px">Contents</span></span></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="Java_Execution_Action_3.htm">Description</a></span></p>
+    <p class="TOC1" style="font-family: Calibri"><span style="font-size:16px;"><a class="Hyperlink" href="#How_to_Use_It">How to Use It</a></span></p>
+    <p class="TOC2" style="font-family: Calibri"> </p>
+    <p class="TOC2" style="font-family: Calibri"> </p>
+    <p class="TOC2" style="font-family: Calibri"><a id=" DescriptionThe “Java Integration Action” should be used in case a Java executor needs to be integrated with the automation flow.Using this action user can run the Java Jar with a set of inputs sent from Ginger and process the returned values of the Jar.How to Use ItOpen the Java Project in Eclipse or any Java IDE and the class file and add a Print statement with the prefix “GINGER_Description” followed by a description to explain what this file or script is for.Add print statements with the prefix “GINGER_$” for all the arguments to the program. E.g. in the below case, there are 2 arguments. So we added 2 Print statements with Variable name NumberA and NumberBWhenever you want to capture the output, add the Print &quot;~~~GINGER_RC_START~~~&quot;. This indicates the start of the ginger outputTo print the variables and other info which will be captured in Ginger, add a print statement with the detailsWhenever you want to end the output capture, add the Print &quot;~~~GINGER_RC_END~~~&quot;. This indicates the end of the ginger output                        6. Go to File and Click on export                           7. On the export window select Java à Jar File                 8. Select the project to export and jar location.                            9. Select the main class name on the export wizard steps and finish.                   10.Copy the jar file created and paste it in Ginger solution under Documents/Java Folder       11.Add Java Exe action and select the Jar file added       12.Verify that the description is the same as configured in step 1       13.Verify that Variables are the same as configured in step 2 and 3       14.Provide input values and run the action       Preconditions:        Setup the Action in Ginger            Create a solution with a java agent.                               Double click on ‘Business flow’ and then click on the ‘add new (+)’ button shown below.                     Click on ‘Actions Library’ and then select the ‘General Action’ and select the ‘Java Execution Action’.          Shown below.                                  Below the window is displaying                                10.Copy the jar file created and paste it in Ginger solution under Documents/Java Folder       11.Add Java Exe action and select the Jar file added       12.Verify that the description is the same as configured in step 1       13.Verify that Variables are the same as configured in step 2 and 3       14.Provide input values and run the action                                     15.Verify the expected result is captured in the output value.                               "></a><br />
+      ‎</p>
+    <h1 style="font-family: Calibri"><span style="margin-left:4px;">Description</span></h1>
+    <p style="font-family: Calibri"><span style="margin-left:4px;">         <a id="_Pre_Requisites"></a><a id="_How_to_use"></a><span style="font-size:16px;">The “Java Integration Action” should be used in case a Java executor needs to be integrated with the automation flow.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"> Using this action user can run the Java Jar with a set of inputs sent from Ginger and process the returned values of the Jar.</span></span></p>
+    <h1 style="font-family: Calibri"><span style="margin-left:4px;"></span></h1>
+    <h1 style="font-family: Calibri"><span style="margin-left:4px;"><a id="How_to_Use_It"></a>How to Use It</span></h1>
+    <p class="Numbering16 ListParagraph" style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">Open the Java Project in Eclipse or any Java IDE and the class file and add a Print statement with the prefix “GINGER_Description” followed by a description to explain what this file or script is for.</span></span></p>
+    <p class="Numbering16 ListParagraph" style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">Add print statements with the prefix “GINGER_$” for all the arguments to the program. E.g. in the below case, there are 2 arguments. So we added 2 Print statements with Variable name NumberA and NumberB</span></span></p>
+    <p class="Numbering16 ListParagraph" style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">Whenever you want to capture the output, add the Print &quot;~~~GINGER_RC_START~~~&quot;. This indicates the start of the ginger output</span></span></p>
+    <p class="Numbering16 ListParagraph" style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">To print the variables and other info which will be captured in Ginger, add a print statement with the details</span></span></p>
+    <p class="Numbering16 ListParagraph" style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">Whenever you want to end the output capture, add the Print &quot;~~~GINGER_RC_END~~~&quot;. This indicates the end of the ginger output</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">              </span><img alt="Picture 278645708" height="362" src="../../../../images/Java Execution Action_files/image2.png" width="871" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">               6. Go to File and Click on export</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">                </span><img alt="Picture 652551120" height="721" src="../../../../images/Java Execution Action_files/image3.png" width="532" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">             7. On the export window select Java Jar File</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">             <img alt="Picture 205054908" height="629" src="../../../../images/Java Execution Action_files/image4.png" width="581" /></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;margin-left:36px"> 8. Select the project to export and jar location.</span></span><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">              </span><img alt="Picture 1718447461" height="659" src="../../../../images/Java Execution Action_files/image5.png" width="559" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">              9. Select the main class name on the export wizard steps and finish.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">             </span><img alt="Picture 788662276" height="688" src="../../../../images/Java Execution Action_files/image6.png" width="577" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           10.Copy the jar file created and paste it in Ginger solution under Documents/Java Folder</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           11.Add Java Exe action and select the Jar file added</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           12.Verify that the description is the same as configured in step 1</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           13.Verify that Variables are the same as configured in step 2 and 3</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           14.Provide input values and run the action</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">          Preconditions:</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">         Setup the Action in Ginger</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">         Create a solution with a java agent.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">        </span><img alt="Picture 639560511" height="367" src="../../../../images/Java Execution Action_files/image7.png" width="709" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">      Double click on ‘Business flow’ and then click on the ‘add new (+)’ button shown below.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">       </span><img alt="Picture 1269534921" height="282" src="../../../../images/Java Execution Action_files/image8.png" width="731" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">       Click on ‘Actions Library’ and then select the ‘General Action’ and select the ‘Java Execution Action’.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">       Shown below.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">        <img alt="Picture 212845768" height="480.0" src="../../../../images/Java Execution Action_files/image9.png" width="446.0" /></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">          </span><img alt="Picture 1860739771" height="732" src="../../../../images/Java Execution Action_files/image10.png" width="482" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">          Below the window is displaying</span><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           </span><img alt="Picture 1642453253" height="453" src="../../../../images/Java Execution Action_files/image11.png" width="855" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           10.Copy the jar file created and paste it in Ginger solution under Documents/Java Folder</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           11.Add Java Exe action and select the Jar file added</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           12.Verify that the description is the same as configured in step 1</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">          13.Verify that Variables are the same as configured in step 2 and 3</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">          14.Provide input values and run the action</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">         </span><img alt="Picture 1211363654" height="330" src="../../../../images/Java Execution Action_files/image12.png" width="866" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           15.Verify the expected result is captured in the output value.</span></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;">           </span><img alt="Picture 1995098875" height="199" src="../../../../images/Java Execution Action_files/image13.png" width="869" /></span></p>
+    <p style="font-family: Calibri"><span style="margin-left:4px;"><span style="font-size:16px;"></span></span></p>
+    <p style="font-family: Calibri"> </p>
+  </div>
+</body>
+</html>

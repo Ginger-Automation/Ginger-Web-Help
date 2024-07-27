@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Java Execution Action User Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../../css/Java Execution Action User Guide.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title"> </p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="font-size:32px;color:#302E45;font-weight:bold;margin-left:120px"> Java Execution Action User Guide</span></p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOCHeading" style="font-family: Calibri;font-size: 16px"><span style="color:#0000ff;"><span style="font-size:19px;"><strong style="font-size: 19px">Contents</strong></span></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a class="Hyperlink" href="Java_Execution_Action_User_Guide_3.htm">Description</a></span></p>
+    <p class="TOC1" style="font-family: Calibri;font-size: 16px"><span style="font-size:16px;"><a class="Hyperlink" href="#How_to_Use_It">How to Use It</a></span><span style="font-size:16px;"></span></p>
+    <ul class="Disc">
+      <li class="TOC1" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Setup_the_Java_Executable_(Jar)">Setup the Java Executable (Jar)</a></span><span style="font-size:16px;"></span></li>
+      <li class="TOC1" style="font-family: Calibri; font-size: 16px;"><span style="font-size:16px;"><a href="#Setup_the_Action_in_Ginger">Setup the Action in Ginger</a></span></li>
+    </ul>
+    <p class="TOC2" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOC2" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOC2" style="font-family: Calibri;font-size: 16px"> </p>
+    <p class="TOC2" style="font-family: Calibri;font-size: 16px"><a id=" DescriptionThe “Java Integration Action” should be used in case a Java executer need to be integrated in the automation flow.Using this action user is able to run the Java Jar with set of inputs sent from Ginger and process the returned values of the Jar.How to Use ItSetup the Java Executable (Jar)               The Java executable need to be adjust to work with Ginger.               Please find below the items which needs to be configured in it Main class:  Support for “-GingerHelp” command line arguments- when the Jar been executed using this argument then  it supposed to write to Console the Java executable description + the required parameters for executionWhen the Java executable finish to do the work it meant to then it should write to Console the output values which Ginger require to show/parse inside “~~~GINGER_RC_START~~~”/“~~~GINGER_RC_END~~~”.                      Please view below sample code for seen the exact required syntax:         Setup the Action in GingerAdd the ActionPlease add the action as below: Configure the ActionPlease configure the action as below:  Sample Output Values: "></a><br />
+      ‎</p>
+    <h1 style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><span style="font-size:32px">Description</span></span></h1>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><a id="_Pre_Requisites"></a><a id="_How_to_use"></a>  The “Java Integration Action” should be used in case a Java executer need to be integrated in the automation flow.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">           Using this action user is able to run the Java Jar with set of inputs sent from Ginger and process the returned values of the Jar.</span></p>
+    <h1 style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></h1>
+    <h1 style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></h1>
+    <h1 style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><a id="How_to_Use_It"></a><span style="font-size:32px;">How to Use It</span></span></h1>
+    <h2 class="Heading2" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><a id="Setup_the_Java_Executable_(Jar)"></a><span style="font-size:24px;">Setup the Java Executable (Jar)</span></span></h2>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">    The Java executable need to be adjust to work with Ginger.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">    Please find below the items which needs to be configured in it Main class:</span></p>
+    <p class="Numbering14 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">Support for “-GingerHelp” command line arguments- when the Jar been executed using this argument then it supposed to write to </span><span style="margin-left:124px;">Console the Java executable description + the required parameters for execution</span></p>
+    <p class="Numbering14 ListParagraph" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">When the Java executable finish to do the work it meant to then it should write to Console the output values which Ginger require to </span><span style="margin-left:124px;">show/parse inside “~~~GINGER_RC_START~~~”/“~~~GINGER_RC_END~~~”.</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">     Please view below sample code for seen the exact required syntax:</span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">    <img alt="Picture 1" height="567" src="../../../../images/Java Execution Action User Guide_files/image2.png" width="843" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></p>
+    <h2 class="Heading2" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><a id="Setup_the_Action_in_Ginger"></a><span style="font-size:24px;">Setup the Action in Ginger</span></span></h2>
+    <h3 style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><span style="font-size:19px;">Add the Action</span></span></h3>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">Please add the action as below:</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><img alt="Picture 2" height="455" src="../../../../images/Java Execution Action User Guide_files/image3.png" width="700" /></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></p>
+    <h3 style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><span style="font-size:19px;">Configure the Action</span></span></h3>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">Please configure the action as below:</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><img alt="Picture 3" height="545" src="../../../../images/Java Execution Action User Guide_files/image4.png" width="677" /></span></p>
+    <p style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;">Sample Output Values:</span><span style="margin-left:124px;"></span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri;font-size: 16px"><span style="margin-left:124px;"><img alt="Picture 4" height="542" src="../../../../images/Java Execution Action User Guide_files/image5.png" width="674" /></span></p>
+  </div>
+</body>
+</html>

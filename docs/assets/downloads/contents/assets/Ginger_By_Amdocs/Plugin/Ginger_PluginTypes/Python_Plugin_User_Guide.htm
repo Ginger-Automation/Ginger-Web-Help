@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger Python Plugin – User Guide</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <link rel="stylesheet" href="../../../css/GingerDocStyle.css" />
+  <link rel="stylesheet" href="../../../css/Python Plugin User Guide.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p class="Title" style="font-family: Calibri"> </p>
+    <p class="Title" style="font-family: Calibri"><span style="font-family:Calibri;"><span style="font-size:32px;font-weight:bold;margin-left:136px"> Ginger Python Plugin – User Guide</span></span></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 style="font-family: Calibri;"><strong>Purpose</strong></h2>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> The Python Plugin target is to allow executing Python scripts from Ginger as an integrative part of the Ginger test flow.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> Ginger Python plugin allows to:</span></p>
+    <p class="Numbering26 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Configure python script execution by using a script file.</span></p>
+    <p class="Numbering26 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Configure python script execution by using script content.</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> For the above execution methods ginger python plugin offers:</span></p>
+    <p class="Numbering27 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Send execution Input Values to python script.</span></p>
+    <p class="Numbering27 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Get execution output values by parsing and showing console values and look for “key=value” pairs</span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> The purpose of this document is to provide step by step guide on the Ginger Python plugin way of installing and using it.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 style="font-family: Calibri;">Prerequisites</h2>
+    <p class="margin-left-0-31in" style="font-family: Calibri">Please see below the items which need to be set up on the testing environment before executing the Python plugin.</p>
+    <p class="margin-left-0-31in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering28" data-list-level="2"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:18.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#ec008c">.NET 7 SDK Installation</span></span></span></b></span></span></span></span></h2>
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:42px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">The plugin requires .NET 7 SDK or above to be installed on the machine it is running on. Please download and install it from </span></span><span style="color:black"><a href="" style="color:blue; text-decoration:underline"><span style="font-size:12.0pt">Microsoft Official Page</span></a></span><span style="font-size:12.0pt"><span style="color:black">.</span></span></span></span></span></span></p>
+    <p class="margin-left-0-44in"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;"></span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering28" data-list-level="2" style="font-family: Calibri">   Python Installation</h2>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">Python installation is a must for the plugin to work.</span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">“PYTHON_HOME” environment variable system configuration is also required.</span></p>
+    <p style="font-family: Calibri"> </p>
+    <h2 class="Numbering28" data-list-level="2" style="font-family: Calibri">   Script</h2>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">The python script files need to be located on the machine on which the Python Plugin running.</span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"><span style="font-size:16px;">It is recommended to place the script under the Ginger Solution “Documents” folder and use relative paths to it (like “~/Documents/Scripts”) so it will work on any user machine.</span></p>
+    <p class="margin-left-0-44in" style="font-family: Calibri"> </p>
+    <h2 style="font-family: Calibri;">Install Python Plugin</h2>
+    <p class="text-indent-0-25in" style="font-family: Calibri">    Ginger python plugin needs to be installed to the Ginger Solution to be used.</p>
+    <p class="text-indent-0-25in" style="font-family: Calibri">    Please follow the below steps to perform it.</p>
+    <p class="text-indent-0-25in" style="font-family: Calibri"> </p>
+    <h2 class="Numbering28" data-list-level="2" style="font-family: Calibri">   <a id="Add_python_Plugin_to_Ginger_Solution"></a>Add python Plugin to Ginger Solution</h2>
+    <ol class="Decimal" style="font-family: Calibri">
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">Download and Install the latest/required Ginger version from <a class="Hyperlink" href="https://ginger.amdocs.com/?csrt=719791481641564193#downloads">here</a></span></span></li>
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">Launch Ginger and add a Solution to it</span></span></li>
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">In Solution go to Resources-&gt; Plugins</span></span></li>
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on the “Download Plugin” tab</span></span></li>
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">Select “Python” Plugin from loaded list of Plugins</span></span></li>
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">Select latest/required Plugin version</span></span></li>
+      <li class="Numbering29 ListParagraph" data-list-level="3"><span style="font-size:16px;"><span style="font-family:Calibri;">Click on Install</span></span></li>
+    </ol>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> Once installation is done, shift to the “Installed” tab and confirm the ”Python” plugin appears on the tree- you will see the Plugin details on the </span><span style="font-size:16px;">right including its </span></p>
+    <p style="font-family: Calibri"><span style="font-size:16px;"> embedded action types.</span></p>
+    <p style="font-family: Calibri">               <img alt="Picture 1" height="307" src="../../../images/Python Plugin User Guide_files/image2.png" width="938" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri">                 <img alt="Picture 4" height="356" src="../../../images/Python Plugin User Guide_files/image3.png" width="940" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p style="font-family: Calibri"> </p>
+    <h2 style="font-family: Calibri;">     Executing Python Script</h2>
+    <p class="margin-left-0-25intext-indent-0-19in" style="font-family: Calibri"><span style="font-size:16px;"> Please follow the below steps to execute the python script.</span></p>
+    <h2 style="font-family: Calibri">     Execute python script using an external file</h2>
+    <p class="Numbering33 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page</span></p>
+    <p class="Numbering33 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Click on Add Action button, in the loaded window go to “Plugins Actions”</span></p>
+    <p class="Numbering33 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Select “Run Script file” Action</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 11" height="497" src="../../../images/Python Plugin User Guide_files/image4.png" width="928" /></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"> </p>
+    <p class="Numbering33 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Set Action configurations according to the below:</span></p>
+    <div align="left" style="font-family: Calibri">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:702.0px">
+        <colgroup>
+          <col style="width:126px" />
+          <col style="width:108px" />
+          <col style="width:174px" />
+          <col style="width:132px" />
+          <col style="width:162px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"><strong>Field Name</strong></p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"><strong>Mandatory?</strong></p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"><strong>Field Description</strong></p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"><strong>Sample Value</strong></p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"><strong>Comments</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Python Script Path</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Yes</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Full Path of the python script file.</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">“C:\Work\Python\ BasicScript.py”</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">For allowing the Action to run on any machine It is recommended to place the python script file under the Ginger Solution “Documents” folder and set a relative path to it in Action definitions like:</p>
+              <p class="ListParagraph margin-left-0">“~\Documents\Scripts\BasicScript.py”</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Input Parameters</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">No</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0">Add python input parameters as per requirement.</p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td style="font-size: 16px">
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-indent-0-44in" style="font-family: Calibri"> </p>
+    <p class="text-indent-0-44in" style="font-family: Calibri"><img alt="Picture 12" height="556" src="../../../images/Python Plugin User Guide_files/image5.png" width="893" /></p>
+    <h2 class="Numbering35" data-list-level="2" style="font-family: Calibri"> </h2>
+    <h2 class="Numbering35" data-list-level="2" style="font-family: Calibri">        Execute python script using content</h2>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Add Business Flow or select an existing one and click on “Automate” for loading it on Automate page</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Click on Add Action button, in the loaded window go to “Plugins Actions”</span></p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Select “Run Script” Action</span></p>
+    <p class="text-indent-0-50in" style="font-family: Calibri"><img alt="Picture 13" height="492" src="../../../images/Python Plugin User Guide_files/image6.png" width="867" /></p>
+    <p style="font-family: Calibri"> </p>
+    <p class="Numbering36 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Set Action configurations according to the below:</span></p>
+    <div align="left" style="font-family: Calibri">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:702.0px">
+        <colgroup>
+          <col style="width:126px" />
+          <col style="width:108px" />
+          <col style="width:174px" />
+          <col style="width:132px" />
+          <col style="width:162px" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Field Name</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Mandatory?</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Field Description</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Sample Value</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Comments</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Python Script Content</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Yes</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Copy-Paste python script.</p>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">import sys</p>
+              <p class="ListParagraph margin-left-0">a = sys.argv[1]</p>
+              <p class="ListParagraph margin-left-0">b = sys.argv[2]</p>
+              <p class="ListParagraph margin-left-0">print(&#39;a=&#39; + a)</p>
+              <p class="ListParagraph margin-left-0">print(&#39;b=&#39; + b)</p>
+              <p class="ListParagraph margin-left-0">sum = int(a) + int(b)</p>
+              <p class="ListParagraph margin-left-0">print(&#39;sum=&#39; + str(sum))</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="ListParagraph margin-left-0">Input Parameters</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">No</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0">Add python input parameters as per requirement.</p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+            <td>
+              <p class="ListParagraph margin-left-0"> </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-family: Calibri"> </p>
+    <h2 style="font-family: Calibri;">  Get Output Values from Python Flow to Ginger Flow</h2>
+    <p style="font-family: Calibri">             <span style="font-size:16px;">Python plugin supports getting output values from the Python Flow.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">It has been done by parsing all values which the Python flow write to the Console during execution, the parsing mechanism looks for any “key=value” pair and if it been found so the Key and Value been added to the Action Output Values list.</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"> </p>
+    <h2 class="Numbering38" data-list-level="2" style="font-family: Calibri">      <a id="How_to_Get_Output_Values_from_Python_Flow_to_Ginger_Flow"></a>How to Get Output Values from Python Flow to Ginger Flow</h2>
+    <p class="Numbering38 ListParagraph" data-list-level="3" style="font-family: Calibri"><span style="font-size:16px;">Prepare the Python Flow Code for Sharing Output Values</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Open the Script in notepad or another Editor.</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Look for the places in code (either tested class methods or actual test methods) which have values that can be shared with Ginger during execution</span></p>
+    <p class="Numbering44 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">In each such place, add a “print()” line of code with the Value key name equal to the value that needs to be shared, see sample below:</span></p>
+    <p class="margin-left-0-50in" style="font-family: Calibri"><img alt="Picture 14" height="366" src="../../../images/Python Plugin User Guide_files/image7.png" width="935" /></p>
+    <p class="ListParagraph margin-left-0-94in" style="font-family: Calibri"> </p>
+    <h2 data-list-level="3" style="font-family: Calibri;"><span style="font-size:16px;"> Configure Ginger Python Plugin Action to Read Output Values</span></h2>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Configure any one of the Python Actions configurations</span></p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">After execution end, go to Action “Output Values” tab and see all output values which were parsed in run time</span></p>
+    <p class="Numbering46 ListParagraph" style="font-family: Calibri"><span style="font-size:16px;">Now you can set Validations on top of those values or pass them to Variables/Data Source or others to be used in the next Actions/other in the Ginger flow</span></p>
+    <p class="ListParagraph" style="font-family: Calibri"><img alt="Picture 15" height="597" src="../../../images/Python Plugin User Guide_files/image8.png" width="959" /></p>
+  </div>
+</body>
+</html>

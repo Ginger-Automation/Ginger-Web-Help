@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ginger Plugin for Jenkins</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <link rel="stylesheet" type="text/css" href="../../css/GingerDocStyle.css" />
+</head>
+<body>
+  <div class="position-relative">
+    <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:24.0pt; padding:0in"><span style="color:#302e45">Ginger Plugin for Jenkins</span></span></b></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Ginger Jenkins plugin was created for allowing Ginger users to schedule Ginger executions using Jenkins with ease, including capabilities like automatic updates from SVN/Git.</span></span></span></span></span></span></p>
+    <p> </p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Ginger Jenkins Plugin offers below 2 build steps for Ginger execution</span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"></span></span></span></span></span></span></p>
+    <ol>
+      <li style="margin-left:8px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"></span><b><span style="font-size:12.0pt"><span style="color:black">Configure Ginger execution parameters –</span></span></b><span style="font-size:12.0pt"><span style="color:black">This task supports configuring existing Runset with minimum customization<span style="border:none windowtext 1.0pt; padding:0in"></span></span></span></span></span></span></span></li>
+    </ol>
+    <p style="margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"></span></span></span></span></span></span></p>
+    <ol start="2">
+      <li style="margin-left:8px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"></span><b><span style="font-size:12.0pt"><span style="color:black">Ginger Dynamic Execution configuration- </span></span></b><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">This task supports advanced Ginger CLI capabilities for dynamic execution such as creating virtual Runset, customize input values, customizing the execution agent etc.</span></span></span></span></span></span></li>
+    </ol>
+    <p style="margin-bottom:11px; margin-left:48px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:10.5pt"><span style="color:black"></span></span></b></span></span></span></span></p>
+    <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:18.0pt; padding:0in"><span style="color:#ec008c">Pre-Requisites</span></span></b><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></span></h2>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Ginger Jenkins Plugin Prerequisites are</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Jenkins requires Java7 or above to function. Java 8 is recommended.</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Jenkins Server version 1.606 or above</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Jenkins Slave installed on the machine hosting Ginger installation (machine also need to be able to access SVN server in which the Ginger Solution exist)</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Jenkins projects creation and execution knowledge</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Ginger Solution which:</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Configured on Ginger SVN Data Source</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Includes Run Set/s ready to be executed</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Ginger Version (4.3 Official or above) on Slave machine (For Ginger Plugin V3.2 or above)</span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Ginger Version (Beta 2.5.7 or above) on Slave machine (For Ginger Plug in V1.5 or above)</span></span></span></span></span></span></span></li>
+    </ul>
+    <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:24.0pt; padding:0in"><span style="color:#302e45">How to use the Ginger Plugin</span></span></b><b><span style="font-size:24.0pt"><span style="color:#302e45"></span></span></b></span></span></span></span></p>
+    <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:18.0pt; padding:0in"><span style="color:#ec008c">Install Ginger Plugin</span></span></b><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></span></h2>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">       Please follow below steps for installing the Ginger Plugin:</span></span></b><b><span style="font-size:12.0pt"><span style="color:black"></span></span></b></span></span></span></span></p>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Login to Jenkins</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Go to: Manage Jenkins &gt; Manage Plugins</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Click on “Advance configuration” tab</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">In that page there is an option to upload a plugin</span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="font-family:Symbol">à</span></span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"> browse and select the Ginger Plugin file “gingerPlugin.hpi”</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Click on “Upload”</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The plugin now supposed to be installed and ready to be used.</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+    </ul>
+    <p style="margin-left:24px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"><img alt="Picture 3" src="../../images/image410.png" style="width: 652px; height: 411px;" /></span></span><span style="font-size:10.5pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:18.0pt; padding:0in"><span style="color:#ec008c"> Use Ginger Plugin in Your Project</span></span></b><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></span></h2>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Follow below steps to use the Ginger plugin in your new/existing Jenkins’s project:</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Open the Project page</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Click on “Configure”</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Go to “Build” section configurations</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Click on “Add Build Step”</span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="font-family:Symbol">à</span></span> <span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+    </ul>
+    <p style="margin-left:48px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="color:black"><img src="../../images/image411.png" style="width: 322px; height: 248px;" /></span><span style="font-size:10.5pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Choose either of the below option based on the job you’re configuring</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span>
+        <ul style="list-style-type:circle">
+          <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">“Configure Ginger execution parameters”</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+          <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list 1.0in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">“Ginger Dynamic Execution Configuration”</span></span></span></span></span></span></span></li>
+        </ul>
+      </li>
+    </ul>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"><img alt="Picture 4" src="../../images/image412.png" style="width: 650px; height: 438px; cursor: nwse-resize;" /></span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <p style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:18.0pt; padding:0in"><span style="color:#ec008c"></span></span></b></span></span></span></span></p>
+    <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:18.0pt; padding:0in"><span style="color:#ec008c">Configure Ginger Execution Parameters</span></span></b></span></span></span></span></h2>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="color:black">This task allows below basic configurations</span></span></b></span></span></span></span></p>
+    <ul>
+      <li style="margin-left:32px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="tab-stops:list .75in"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:Symbol"></span></span><span style="font-size:12.0pt"><span style="color:black">Configure Ginger source control repository details include branch selection for git</span></span></span></span></span></span></span></li>
+      <li style="margin-left:32px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="tab-stops:list .75in"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:Symbol"></span></span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Selecting which Solution, Run Set &amp; Environment to use from drop list</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></span></li>
+      <li style="margin-left:32px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="tab-stops:list .75in"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:Symbol"></span></span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Automatic update of the Solution to execute from SVN automatically prior to execution</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></span></li>
+      <li style="margin-left:32px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="tab-stops:list .75in"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:Symbol"></span></span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Enable or disable Analyzer and execute with UI flags.</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></span></li>
+      <li style="margin-left:32px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="tab-stops:list .75in"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:Symbol"></span></span><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Execution of the configured Run set on schedule time</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></span></li>
+    </ul>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Please set below details in the plugin configurations:</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Set below “Source Control (SVN) Configurations” details</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+    </ul>
+    <table align="center" class="Table">
+      <tbody>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Parameter Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Explanation</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Source Control Type</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Type of source Control</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">URL</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The URL of Source Control server which host the Ginger Solution to execute</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Branch Name</span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Source Control branch name - only applicable for git source control</span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">User</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Source Control username</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Password</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Source Control password</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Proxy Server</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Required for githib.com only</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Proxy Port</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Required for githib.com only</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Click on “Test Connection”</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Set below “Test Properties” details</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+    </ul>
+    <table align="center" class="Table" style="width:688px" width="688">
+      <tbody>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Parameter Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Explanation</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Solution Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Ginger Solution name to execute as appear in SVN repository</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Encryption key</span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">From plugin version 3.1 and ginger version 3.9 or above, each solution require to have encryption key. </span></span></span></span></p>
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">it is recommended to use Jenkins build parameter to set the encryption key, so that if key changes in future can be updated on 1 Jenkins parameter instead of going in each job</span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">RunSet Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The Ginger Run Set to execute (must be exist in the Solution)</span><span style="font-size:12.0pt"></span></span></span></span></p>
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">For selecting from drop list of optional RunSets- click on “Get Solution Details” button and type “.” In the text box</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Environment Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The Ginger environment to use for execution (must be exist in the Solution)</span><span style="font-size:12.0pt"></span></span></span></span></p>
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">For selecting from drop list of optional Environments- click on “Get Solution Details” button and type “.” In the text box</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Execution Id (Optional)</span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">This is optional GUID field which will identify the execution uniquely. When using Account report/ Centralized logging this id is required to fetch execution details</span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Show Ginger UI</span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"> Recommended to keep it unchecked for optimized performance when running in unattended mode</span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Don&#39;t Analyze</span></span></span></span></p>
+          </td>
+          <td style="padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Recommended to keep it unchecked so that analyzer will run before each execution</span></span></span></span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li style="margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="color:black"><span style="line-height:normal"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Set below “Ginger Execution definitions details:</span><span style="font-size:10.5pt"></span></span></span></span></span></span></span></li>
+    </ul>
+    <table align="center" class="Table" style="width:659px" width="659">
+      <tbody>
+        <tr>
+          <td style="width:113px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Parameter Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:282px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Explanation</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:264px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Sample Value</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:113px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Solution Full Path</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:282px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The full path on the slave machine to place the Ginger Solution before the execution</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:264px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">C:\GingerSolutions</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:113px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Ginger Executable Full Path</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:282px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The full path to “Ginger.exe” (Windows) or “GingerRuntime.dll” (Linux) on the slave machine</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:264px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">C:\Program Files (x86)\Amdocs\Amdocs BEAT Ginger Automation\Ginger.exe</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"> <span style="color:black"><img src="../../images/image413.png" style="width: 685px; height: 409px;" /></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <h2 style="margin-bottom: 11px;"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><b><span style="border:none windowtext 1.0pt; font-size:18.0pt; padding:0in"><span style="color:#ec008c">Ginger Dynamic Execution Configuration</span></span></b><b><span style="font-size:18.0pt"><span style="color:#ec008c"></span></span></b></span></span></span></span></h2>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"></span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"><strong>This task supports advanced Ginger CLI capabilities for dynamic execution</strong> such as creating virtual Runset, customize input values, customizing the execution agent etc.</span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black"></span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in"><span style="color:black">Please set below details in the Ginger Dynamic Execution configurations:</span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <table align="center" class="Table" style="width:659px" width="659">
+      <tbody>
+        <tr>
+          <td style="width:125px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Parameter Name</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:228px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Explanation</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:306px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Sample Value</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:125px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">Ginger Executable Full Path</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:228px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">The full path to “Ginger.exe” (Windows) or “GingerRuntime.dll” (Linux) on the slave machine</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+          <td style="width:306px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="border:none windowtext 1.0pt; font-size:12.0pt; padding:0in">C:\Program Files (x86)\Amdocs\Amdocs BEAT Ginger Automation\Ginger.exe</span><span style="font-size:12.0pt"></span></span></span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:125px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">JSON Payload</span></span></span></span></p>
+          </td>
+          <td style="width:228px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Provide the Ginger Execution Configuration JSON</span></span></span></span></p>
+          </td>
+          <td style="width:306px; padding:.100px .100px .100px .100px">
+            <p><span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Value needs to be in JSON format</span></span></span></span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="color:black"><img src="../../images/image414.png" style="width: 673px; height: 264px;" /></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black">For JSON Payload field property value, you may <b>either</b> generate &amp; copy the execution config JSON from Ginger <b>or</b>, create your own Execution Config JSON by using the sample JSON template provided as part of help icon. Click on the below shown JSON Payload’s help icon and one can find the sample config JSON;</span></span></span></span></span></span></p>
+    <p><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:black"><img src="../../images/image415.png" style="width: 495px; height: 511px;" /></span></span><span style="font-size:12.0pt"><span style="color:black"></span></span></span></span></span></span></p>
+  </div>
+</body>
+</html>
