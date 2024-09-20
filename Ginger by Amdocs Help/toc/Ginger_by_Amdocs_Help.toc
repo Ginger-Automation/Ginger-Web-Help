@@ -53,6 +53,9 @@
   <page navtitle="Self-Healing Configuration" href="../contents/assets/Ginger_By_Amdocs/Configurations/GingerSelfHealingConfiguaration.htm" format="html" processing-role="normal"></page>
   <page navtitle="Solution Passwords Encryption Key" href="../contents/assets/Ginger_By_Amdocs/Configurations/Ginger_-_Encryption_Key_.htm" format="html" processing-role="normal"></page>
   <page navtitle="How to Configure Error Handler" href="../contents/assets/Ginger_By_Amdocs/Configurations/ErrorHandler.htm" format="html" processing-role="normal"></page>
+  <book navtitle="Accessibility Rules" format="html" processing-role="normal">
+    <page navtitle="Accessibility Rules" href="../contents/assets/Ginger_By_Amdocs/Configurations/Accessibility_Rules/Accessibility_Rules.htm" format="html" processing-role="normal"></page>
+  </book>
 </book>
 <book navtitle="Business Flows" format="html" processing-role="normal">
   <page navtitle="Create New or Open Solution" href="../contents/assets/Ginger_By_Amdocs/Business_Flows/Create_New_or_Open_Solution_1.htm" format="html" processing-role="normal"></page>
