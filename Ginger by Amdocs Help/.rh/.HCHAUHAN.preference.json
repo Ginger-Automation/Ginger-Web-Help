@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Ginger_Integration_with_GingerOps",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Integration_with_GingerOps.htm",
+    "pinned": false,
+    "time": "Sep 29, 4:23 PM"
+  }, {
     "title": "Steps_to_View_and_Manage_Execution_History",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Steps_to_View_and_Manage_Execution_History.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/GingerSourceControl/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Java_Driver_and_Widgets_in_Ginger.htm",
     "pinned": false,
     "time": "Jul 27, 10:55 AM"
-  }, {
-    "title": "How_to_use_Automate_Mainframe_3270_in_Ginger",
-    "path": "C:/GingerSourceControl/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_use_Automate_Mainframe_3270_in_Ginger.htm",
-    "pinned": false,
-    "time": "Jul 27, 10:55 AM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-09-29T16:21:44+05:30",
+      "time": "2024-09-29T16:33:05+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
@@ -170,6 +170,11 @@
     }
   },
   "recent-files::internal:hyperlink": [{
+    "title": "Ginger_Integration_with_GingerOps",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Integration_with_GingerOps.htm",
+    "pinned": false,
+    "time": "Sep 29, 4:23 PM"
+  }, {
     "title": "Steps_to_View_and_Manage_Execution_History",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Steps_to_View_and_Manage_Execution_History.htm",
     "pinned": false,
