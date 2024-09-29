@@ -3,7 +3,12 @@
     "title": "Ginger_Integration_with_GingerOps",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Integration_with_GingerOps.htm",
     "pinned": false,
-    "time": "Sep 29, 4:23 PM"
+    "time": "Sep 29, 4:43 PM"
+  }, {
+    "title": "Ginger_-_OTOMA_Integration",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
+    "pinned": false,
+    "time": "Sep 29, 4:34 PM"
   }, {
     "title": "Steps_to_View_and_Manage_Execution_History",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Run_Sets/Steps_to_View_and_Manage_Execution_History.htm",
@@ -24,11 +29,6 @@
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Configurations/Agents/Creating_Agent_with_Playwright_Driver.htm",
     "pinned": false,
     "time": "Sep 29, 3:58 PM"
-  }, {
-    "title": "Ginger_-_OTOMA_Integration",
-    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_-_OTOMA_Integration.htm",
-    "pinned": false,
-    "time": "Sep 29, 3:33 PM"
   }, {
     "title": "Ginger_Grafana_Dashboard",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Grafana_Dashboard.htm",
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-09-29T16:33:05+05:30",
+      "time": "2024-09-29T16:45:01+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
