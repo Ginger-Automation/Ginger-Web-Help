@@ -42,16 +42,16 @@
           <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
   <h1>Ginger - OTOMA Integration</h1>
   <p></p>
-  <h2>Introduction</h2>
+  <h2><span style="font-size:20px">Introduction</span></h2>
   <p><strong>Ginger</strong>: Ginger is code less Automation Application. Ginger supports automation of multiple platforms like Web, Web services (API), Java, Unix,  Windows, Power Builder, Mainframe, DOS &amp; Mobile.</p>
   <p></p>
   <p><strong>OTOMA</strong>: OTOMA is Model Based Testing (MBT) application. OTOMA is used to create <u>Use Case</u> - design of test case (using imported shared repository activities of Ginger in OTOMA) &amp; create and execute <u>Test Suite</u> (Test Suite can contain one or more use cases)</p>
   <p></p>
   <p><span style="font-size: 18px;"><b><u>Note:</u></b></span> <strong>To implement this Enterprise Feature in your project, please contact Ginger Team Focal or you can send email to <span><span><a aria-label="Link ginger@amdocs.com" href="" rel="noreferrer noopener" target="_blank" title="mailto:ginger@amdocs.com">ginger@amdocs.com</a></span></span></strong></p>
   <p></p>
-  <h2><span style="font-size:24px">Ginger - OTOMA E2E Integration &amp; Test Execution from OTOMA</span></h2>
+  <h2><span style="font-size:20px">Ginger - OTOMA E2E Integration &amp; Test Execution from OTOMA</span></h2>
   <p></p>
-  <h3><span style="color:rgba(255, 0, 170, 0.99);"><strong>    1. Ginger - OTOMA Integration configuration &amp; Test Suite Execution Overview</strong></span></h3>
+  <h2><span style="font-size:18px;"><span style="color:rgba(255, 0, 170, 0.99);"><strong style="font-size: 18px">    1. Ginger - OTOMA Integration configuration &amp; Test Suite Execution Overview</strong></span></span></h2>
   <p>Please see below steps diagram and details:</p>
   <p><span style="font-size: 18px;"><b><u>Note:</u></b></span>  <strong>All DB configuration (Ginger Parser &amp; OTOMA) &amp; OTOMA application setup will be handled by Ginger Support Team.</strong></p>
   <p>(In below diagram step#3 &amp; step#5 will be handled by Ginger Support Team)</p>
@@ -194,7 +194,7 @@
   <p></p>
   <p></p>
   <p></p>
-  <h3 style="color: rgba(255, 0, 170, 0.99)">    2. GINGER Solution and OTOMA Release, Topology, Use Case, Test Suite Creation &amp; Execution</h3>
+  <h2 style="color: rgba(255, 0, 170, 0.99);font-size: 20px"><span style="font-size:18px">    2. GINGER Solution and OTOMA Release, Topology, Use Case, Test Suite Creation &amp; Execution</span></h2>
   <p><span style="font-size:18px;"><span style="color:#ec008c;"><span style="color:#191993;"><span style="color:#ec008c;"><strong style="font-size: 18px;color: rgb(236, 0, 140)">**   </strong><u><strong style="font-size: 18px;color: rgb(236, 0, 140)">Key Points to remember before following below mentioned</strong></u></span><u><strong style="color: #191993;font-size: 18px"> <span style="font-size:20px">Steps</span>:</strong></u></span></span></span></p>
   <p></p>
   <p><span style="font-size:18px;"><span style="color:#ec008c;"><strong style="color: rgb(236, 0, 140);font-size: 18px">1. D</strong></span><span style="color:#ec008c;"><strong>uring creation of Ginger Solution - Please take care of all below points:</strong></span></span></p>
@@ -241,7 +241,11 @@
   <p><strong>              <strong> </strong><strong>2)</strong> </strong>Add <strong>WebServices Activities</strong> (Target Application:  MyWebServicesApp) based on your requirement and mark  all these activities &#39;Publish&#39; and &#39;Mandatory&#39; as follows:</p>
   <p><strong>             </strong></p>
   <p><strong></strong><strong></strong><strong>                      </strong><u><strong>Note</strong></u>:  &#39;<strong>Consumer Application&#39;</strong> concept is being used in case of <strong>&#39;WebServices&#39; (API)</strong> target application.</p>
-  <h4><strong><span style="color:rgba(255, 0, 170, 0.99);">                       Target Application (Called System) &amp; Consumer Application (Calling System): </span></strong></h4>
+  <ul class="Disc">
+    <li>
+      <h2><strong><span style="color:rgba(255, 0, 170, 0.99)">   <span style="font-size:16px">Target Application (Called System) &amp; Consumer Application (Calling System): </span></span></strong></h2>
+    </li>
+  </ul>
   <p>                          Consumer Application concept is being used in case of <strong>&#39;WebService&#39; (API)</strong> target application.<strong></strong></p>
   <p><strong>                           <u>Target Application</u> </strong>is where action needs to be performed</p>
   <p><strong>                           </strong><u><strong>Consumer Application</strong></u> is the system which is going to consume or call the target application.</p>
@@ -652,7 +656,7 @@
   <p>             </p>
   <p></p>
   <h2><strong style="font-size: 20px">Migrate existing Ginger &#39;Activity Group&#39; &amp;  &#39;Business Flow&#39; to Otoma</strong></h2>
-  <h3> 1. <strong style="font-size: 20px">Migrate existing Ginger &#39;Activity Group&#39; to Otoma (as Sub-Process)</strong></h3>
+  <h2> <span style="font-size:18px;">1. <strong style="font-size: 20px">Migrate existing Ginger &#39;Activity Group&#39; to Otoma (as Sub-Process)</strong></span></h2>
   <p><span style="font-size:16px;"><span style="font-family:Calibri;font-size:16px">To migrate existing Ginger &#39;Activity Group&#39; to Otoma, user need to first  &#39;Export Activity Group&#39; from Ginger (as ‘Export to BPMN file’) and then import this BPMN file into OTOMA (using &#39;Import BPMN&#39; option).</span></span></p>
   <p></p>
   <p><span style="font-size:16px;"><span style="font-family:Calibri;"><u><strong>Export Activity Group</strong>:</u> User can go to the ‘Shared Reposioty --&gt; Activities Groups’ page. Right click on the Activity Group that user wants to migrate to Otoma and click on ‘Export’ and then ‘Export to BPMN file’.</span></span></p>
@@ -682,7 +686,7 @@
   <p></p>
   <p></p>
   <p></p>
-  <h3> 2. <strong style="font-size: 20px">Migrate existing Ginger &#39;<strong style="font-size: 20px">Business Flow</strong>&#39; to Otoma (as Use Case)</strong></h3>
+  <h2> <span style="font-size:18px;">2. <strong style="font-size: 20px">Migrate existing Ginger &#39;<strong style="font-size: 20px">Business Flow</strong>&#39; to Otoma (as Use Case)</strong></span></h2>
   <p></p>
   <p><span style="font-size:16px;"><span style="font-family:Calibri;font-size:16px">To migrate existing Ginger &#39;Business Flow&#39; to Otoma, user need to first  &#39;Export Business Flow&#39; from Ginger (as ‘Export as Otoma Use Case Zip file’) and then import this zip file into OTOMA (using &#39;Import Release&#39; option).</span></span></p>
   <p><span style="font-size:16px;"><span style="font-family:Calibri;"></span></span></p>
