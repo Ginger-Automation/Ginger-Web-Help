@@ -15,8 +15,8 @@
   <meta charset="UTF-8"/>
   <title>Action Output Values</title>
   <meta name="generator" content="Adobe RoboHelp 2022"/>
-  <link rel="stylesheet" href="../../../../css/GingerDocStyle.css"/>
-  <link rel="stylesheet" href="../../../../css/Action Output Values.css"/>
+
+  <link rel="stylesheet" type="text/css" href="../../../../css/GingerDocStyle.css"/>
 <meta name="rh-version" content="2022.4.179"/></head>
 
 <body class="rh-BODY-wrapper">
@@ -40,65 +40,85 @@
           <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
           <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
   <div class="position-relative">
-    <p class="Title" style="font-family: Calibri;font-size: 16px"></p>
+    <p class="Title" style="font-family: Calibri;font-size: 16px"><a class="expandspot" data-rhwidget="ExpandSpot" data-target="expanding" href="#"><span data-open-text="true" data-skip-index="true">Expanding Title</span><span data-close-text="true">Expanding Title</span></a><span class="expandtext" data-targetname="expanding">Type your expanding text here</span></p>
     <p class="Title" style="font-family: Calibri;font-size: 16px">                                     </p>
     <p class="Title" style="font-family: Calibri;font-size: 16px;margin-left: 120px">        <span style="font-size:32px;"><span style="color:#302e45;">Action Output Values</span></span></p>
     <p style="font-family: Calibri;font-size: 16px"></p>
-    <p style="font-family: Calibri;font-size: 16px"></p>
-    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><a id="Introduction"></a><a id="Introduction_1"></a><span style="font-size:32px;">Introduction</span> </h1>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px">     <span style="font-size:16px;">   When an Activity Action has executed the output contents if any are displayed in the ‘Output Values’ tab.</span></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;">        The output values are displayed only after the Action is Run.</span></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;"></span></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;">         Below is the output value screen.</span></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px">     <img alt="Picture 1629717412" height="141" src="../../../../images/Action Output Values_files/image2.png" width="820"/></p>
+    <h2 style="font-family: Calibri;font-size: 24px">Introduction</h2>
+    <p><span class="position-relative">When an Activity Action is executed, the output contents, if any, are displayed in the ‘Output Values’ tab. </span><span class="position-relative">The output values are displayed only after the Action is Run.</span></p>
+    <p><span class="position-relative">And the output values gets saved only when there is value in Expected or in Store To. </span><span class="position-relative">Below is the output value screen.     </span></p>
+    <p></p>
+    <p><img src="../../../../images/image1208.png"/></p>
+    <p></p>
+    <p></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Active Check Box Column</span></h2>
+    <p></p>
+    <ul>
+      <li style="margin-bottom:11px"><span class="position-relative">When this check box is checked for a particular row, the variable condition gets executed at run time</span></li>
+      <li style="margin-bottom:11px"><span class="position-relative">If the user does not want to execute the condition for a particular row, they can uncheck it. This way, the condition will not execute during runtime</span></li>
+    </ul>
+    <p style="margin-bottom:11px"></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Operators</span></h2>
+    <p><span class="position-relative"></span></p>
+    <ul>
+      <li style="margin-bottom:11px;"><span class="position-relative">Mathematical Operators: Require numerical values for comparison between the Actual Value and the Expected Value.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">Evaluate Operator: Used when evaluation is required while comparing the Actual Value and the Expected Value.</span>
+        <ul style="list-style-type:circle">
+          <li style="margin-bottom:11px;"><span class="position-relative">Example: Click on the ‘…’ button and enter a value expression in the expected value. This will be evaluated during run time for comparison between actual and expected values.</span></li>
+        </ul>
+      </li>
+      <li style="margin-bottom:11px;"><span class="position-relative">Legacy Operators: All operators used before version 3.1 will work as expected.</span></li>
+    </ul>
+    <p><span class="position-relative"></span></p>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><a id="Operators"></a><span style="font-size:32px;">Operators </span></h1>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;"> Shown below is the list of operators available to use.</span></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px">                  <img alt="Picture 5" height="568" src="../../../../images/Action Output Values_files/image3.png" width="265"/></p>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px">The Mathematical operators require Numerical values for comparison between the Actual Value and the Expected value</p>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px">The Evaluate operator is used when evaluation is required while comparing the Actual Value and the Expected values</p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px">    E.g., click on the ‘…’ button and enter a value expression in the expected value. This will be evaluated during run     time for comparison between actual &amp; expected values.</p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><img alt="Picture 53936711" height="273" src="../../../../images/Action Output Values_files/image4.png" width="806"/></p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="Numbering31 ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px">Legacy – is all the operators used before 3.1 versions will work as expected.</p>
+    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"><img src="../../../../images/image1209.png"/></p>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <h1 class="Heading1" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><a id="Store_To"></a><span style="font-size:32px;">Store To</span></h1>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;"> This functionality allows the user to store the output value either in a variable or in a data source.</span>       <img alt="Picture 39033522" height="145" src="../../../../images/Action Output Values_files/image5.png" width="817"/></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="Numbering33 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><strong>Variable</strong></p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="ListParagraph margin-left-0-32in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;">When Variable is selected, all the Business Flow and Global variables of type String will be displayed in the drop-down for selection. When the Action is Run and Passed, the output value will be stored in the selected variable.</span></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="ListParagraph margin-left-0-32in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><img alt="Picture 346454286" height="123" src="../../../../images/Action Output Values_files/image6.png" width="805"/></p>
-    <p class="ListParagraph margin-left-0-32in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="ListParagraph margin-left-0-32in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="Numbering33 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><strong>DataSource</strong></p>
-    <p class="ListParagraph margin-left-0-32in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px">When the DataSource option is selected, the below screen ‘DataSource Expression Editor’ is displayed.</p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px">Users must select the desired DataSource table and the Cell Identifier.</p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px">When the Action is Run &amp; Passed, the output value has stored the cell that satisfies the given condition.</p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px">Note: - The values can be stored either in the default Customized table of the DataSource or a new customized table can be added for the same in the Data Sources area under the Resources tab.</p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><img alt="Picture 820652237" height="319" src="../../../../images/Action Output Values_files/image7.png" width="788"/></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="Numbering33 ListParagraph" data-list-level="2" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><strong>Application Model Parameter</strong></p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><span style="font-size:16px;">This is used when the user wants to save the output value to one of the Application Models Global Parameter.</span></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"><img alt="Picture 1466784533" height="265" src="../../../../images/Action Output Values_files/image8.png" width="783"/></p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px">Below is the screen where the Application Models Global Parameters are added.</p>
-    <p class="ListParagraph" style="font-family: Calibri;font-size: 16px;margin-left: 128px">These are mainly used for API Models.</p>
-    <p class="margin-left-0-50in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"> <img alt="Picture 12" height="265" src="../../../../images/Action Output Values_files/image9.png" width="783"/></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
-    <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Store To</span></h2>
+    <p style="margin-top:12px"><span class="position-relative">This functionality allows the user to store the output value either in a variable or in a data source.</span></p>
+    <p style="margin-top:12px"></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Variable</span></h2>
+    <ul>
+      <li style="margin-bottom:11px;"><span class="position-relative">When Variable is selected, all the Business Flow and Global variables of type String will be displayed in the drop-down for selection.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">When the Action is Run and Passed, the output value will be stored in the selected variable.</span></li>
+    </ul>
+    <p style="margin-bottom:11px;"></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">DataSource</span></h2>
+    <ul>
+      <li style="margin-bottom:11px;"><span class="position-relative">When the DataSource option is selected, the ‘DataSource Expression Editor’ screen is displayed.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">Users must select the desired DataSource table and the Cell Identifier.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">When the Action is Run &amp; Passed, the output value is stored in the cell that satisfies the given condition.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">Note: Values can be stored either in the default Customized table of the DataSource or a new customized table can be added in the Data Sources area under the Resources tab.</span></li>
+    </ul>
+    <p style="margin-bottom:11px"></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Application Model Parameter</span></h2>
+    <ul>
+      <li style="margin-bottom:11px;"><span class="position-relative">This is used when the user wants to save the output value to one of the Application Models Global Parameters.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">Below is the screen where the Application Models Global Parameters are added.</span></li>
+    </ul>
+    <p style="margin-bottom:11px;"></p>
+    <p style="margin-bottom:11px;">          <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true"><img src="../../../../images/image1210.png"/></span><span data-close-text="true"><img src="../../../../images/image1210.png"/></span></a></p>
+    <p style="margin-bottom:11px;"></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Description Column</span></h2>
+    <ul>
+      <li style="margin-bottom:11px;"><span class="position-relative">This field is used to store information about the parameter.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">The information will be displayed in the Execution report.</span></li>
+      <li style="margin-bottom:11px;"><span class="position-relative">This column is hidden, user can make it visible from Choose optional Column </span><b></b></li>
+    </ul>
+    <p style="margin-bottom:11px;"></p>
+    <p style="margin-left:48px; margin-bottom:11px"><span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="font-family:Roboto"><span style="color:#111111"></span></span></span></span></span></span></span></p>
+    <h2 style="margin-top: 12px;"><span class="position-relative">Choose Optional Column </span></h2>
+    <ul>
+      <li style="margin-bottom:11px;"><span class="position-relative">Users can hide or show grid columns by clicking on the multi-select combobox from the grid menu.</span></li>
+    </ul>
+    <p style="margin-bottom:11px;"></p>
+    <p style="margin-bottom:11px;">           <img src="../../../../images/image1213.png"/></p>
+    <div class="droptext" data-targetname="drop-down">
+      <p>Type your dropdown text here</p>
+    </div>
+    <p></p>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
     <p style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
     <p class="ListParagraph margin-left-1-00in" style="font-family: Calibri;font-size: 16px;margin-left: 128px"></p>
