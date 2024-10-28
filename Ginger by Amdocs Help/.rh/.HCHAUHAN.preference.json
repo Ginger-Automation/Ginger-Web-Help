@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Browser_Action",
+    "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Actions/Platform_Action_Types/Browser_Action.htm",
+    "pinned": false,
+    "time": "Oct 28, 3:09 PM"
+  }, {
     "title": "Ginger_Grafana_Dashboard",
     "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Ginger_Enterprise_Features/Ginger_Grafana_Dashboard.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/GingerSourceControl/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/Windows_Explorer_User_Guide.htm",
     "pinned": false,
     "time": "Jul 27, 10:56 AM"
-  }, {
-    "title": "How_to_Automate_Unix_application_in_Ginger",
-    "path": "C:/GingerSourceControl/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Automate/How_to_Automate_Unix_application_in_Ginger.htm",
-    "pinned": false,
-    "time": "Jul 27, 10:56 AM"
   }],
   "generate.outputs": {
     "C:/Robo_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
@@ -147,7 +147,7 @@
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
       "path": "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/docs/index.html",
-      "time": "2024-10-10T14:20:54+05:30",
+      "time": "2024-10-28T15:12:31+05:30",
       "logFile": "C:/Users/hchauhan/AppData/Local/Temp/RHTMP/Frameless.ehtml"
     },
     "C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/publish/presets/Word Document.preset": {
