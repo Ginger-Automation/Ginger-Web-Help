@@ -1,0 +1,48 @@
+
+  How to create Virtual Environment or Dynamic Environment via CLI
+  
+  Environment CLI Configurations
+  To Configure Environment Details, Follow the below steps:
+  1. Click on “Run set auto run configuration” button 
+  
+  
+  
+  2. Select the “Set Environment Details used in Runset”
+  
+  
+  3. Select the File type as “File” in the next section
+  
+  
+  The environments that are shown, are all the environments that are either selected in the runset or specific environments added in runners.
+  In this created Environment list, Existing Ginger Environments are marked as “Exist: true” and New (Virtual) Environments (which do not exist in Ginger) are marked as “Exist: false”.
+  
+  Creating A New Virtual Environment (Dynamic Environment)
+  
+  1. Mark the virtual environment as “Exist: false” and make sure the GUID and Name are not similar to the other Environments already existing in Ginger
+  (Or Mark the virtual environment as “Exist: false” and remove the ENVironemnt GUID)
+  
+  
+  
+  2. After the Applications, Parameters and Databases are configured as required. Make sure you are adding this Environment in the “Runset” or “Runners” section of the file as per your requirement
+  
+  
+  
+  
+  Updating value of existing Parameter and DB in existing Environments
+            If there is a requirement to change the current values of Parameters or Database. This can be done by simply changing the required values in the list itself (Please see screenshot below). The changed values only exist throughout the CLI execution.
+  
+  EX:  Current value of Parmater 'username' is 'locked_out_user'.  User can give replace this value with any new value like 'standard_user' and click on Next (and follow the further steps - how to execute Run Set via CLI)
+  
+  
+  
+  
+  
+  Add new Virtual Parameter 
+  To add a Parameter, add the name and value of it, GUID is not necessary
+  
+  
+  Add new Virtual Database (DB)
+  To add a Database, add Name, DBType(The type of database) and KeepConnectionOpen (true if you want to keep connection open and false if otherwise)
+  
+  
+

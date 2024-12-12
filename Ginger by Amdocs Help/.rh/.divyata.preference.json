@@ -1,0 +1,53 @@
+{
+  "recent-files::internal:document": [{
+    "title": "Frameless",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset",
+    "pinned": false,
+    "time": "Dec 12, 3:45 PM"
+  }, {
+    "title": "Ginger_by_Amdocs_Help",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/toc/Ginger_by_Amdocs_Help.toc",
+    "pinned": false,
+    "time": "Dec 12, 3:43 PM"
+  }, {
+    "title": "Page_Objects_Model_User_Guide_for_Java_and_Web",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Page_Objects_Model_User_Guide_for_Java_and_Web.htm",
+    "pinned": false,
+    "time": "Dec 12, 2:28 PM"
+  }, {
+    "title": "Global_Parameters",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Global_Parameters.htm",
+    "pinned": false,
+    "time": "Dec 12, 2:28 PM"
+  }, {
+    "title": "Import_Katalon_Object_Repository",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Import_Katalon_Object_Repository.htm",
+    "pinned": false,
+    "time": "Dec 12, 2:25 PM"
+  }, {
+    "title": "Application_Models-_API_Models",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm",
+    "pinned": false,
+    "time": "Dec 12, 1:01 PM"
+  }],
+  "recent-files::internal:hyperlink": [{
+    "title": "Import_Katalon_Object_Repository",
+    "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Import_Katalon_Object_Repository.htm",
+    "pinned": false,
+    "time": "Dec 12, 3:37 PM"
+  }],
+  "generate.outputs": {
+    "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
+      "exists": true,
+      "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/docs/index.html",
+      "time": "2024-12-12T15:50:52+05:30",
+      "logFile": "/private/var/folders/gv/6926cljx70167vzmnw5jb405zcs48s/T/RHTMP/Frameless.ehtml"
+    }
+  },
+  "recent-files::external:document": [{
+    "title": "Frameless",
+    "path": "/private/var/folders/gv/6926cljx70167vzmnw5jb405zcs48s/T/RHTMP/Frameless.ehtml",
+    "pinned": false,
+    "time": "Dec 12, 3:44 PM"
+  }]
+}

@@ -418,6 +418,10 @@
     </topic>
     
     <topic>
+      assets\Ginger_By_Amdocs\Resources\Application_Models\Import_Katalon_Object_Repository.htm
+    </topic>
+    
+    <topic>
       assets\Ginger_By_Amdocs\Functionalities_and_Tools\AutoSave_and_Recover_User_Guide.htm
     </topic>
     
@@ -605,7 +609,7 @@
         
     <filenameentry moniker="favicon">
       <filename>
-        C:/My Drive/Ginger Help Library/Ginger-Web-Help.git/Ginger by Amdocs Help/contents/assets/images/amdocs_Icon.png
+        /Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/images/amdocs_Icon.png
       </filename>
     </filenameentry>
     

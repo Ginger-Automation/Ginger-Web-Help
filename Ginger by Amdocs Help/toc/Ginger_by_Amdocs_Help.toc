@@ -144,6 +144,7 @@
     <page navtitle="Page Objects Model" href="../contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Page_Objects_Model_User_Guide_for_Java_and_Web.htm" format="html" processing-role="normal"></page>
     <page navtitle="Application Models- API Models" href="../contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Application_Models-_API_Models.htm" format="html" processing-role="normal"></page>
     <page navtitle="Global Parameters" href="../contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Global_Parameters.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Import Katalon Object Repository" href="../contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Import_Katalon_Object_Repository.htm" format="html" processing-role="normal"></page>
   </book>
 </book>
 <book navtitle="Functionalities and Tools" format="html" processing-role="normal">

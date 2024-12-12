@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <categories>
-  <category name="default"></category>
+  <category name="default">
+    <snippet>../contents/assets/Ginger_By_Amdocs/Resources/Application_Models/Import_Katalon_Object_Repository.htm</snippet>
+    <snippet>../contents/assets/images/image1214.png</snippet>
+    <snippet>../contents/assets/images/image1215.png</snippet>
+    <snippet>../contents/assets/images/image1216.png</snippet>
+    <snippet>../contents/assets/images/image1217.png</snippet>
+    <snippet>../contents/assets/images/image1218.png</snippet>
+    <snippet>../contents/assets/images/image1219.png</snippet>
+    <snippet>../contents/assets/images/image1220.png</snippet>
+    <snippet>../contents/assets/images/image1221.png</snippet>
+    <snippet>../contents/assets/images/image1222.png</snippet>
+  </category>
 </categories>
