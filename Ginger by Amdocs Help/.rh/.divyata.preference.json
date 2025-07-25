@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "Frameless",
+    "path": "/Users/divyata/Documents/Release_2025.3_Help Lib/Ginger/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset",
+    "pinned": false,
+    "time": "Jul 25, 5:07 PM"
+  }, {
     "title": "What_is_Variable",
     "path": "/Users/divyata/Documents/Release_2025.3_Help Lib/Ginger/Ginger-Web-Help/Ginger by Amdocs Help/contents/assets/Ginger_By_Amdocs/Business_Flows/Variables/What_is_Variable.htm",
     "pinned": false,
@@ -80,8 +85,8 @@
     },
     "/Users/divyata/Documents/Release_2025.3_Help Lib/Ginger/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/Frameless.preset": {
       "exists": true,
-      "path": "/Users/divyata/Documents/Release2024.5_Ginger_Help_Lib/Ginger-Web-Help/docs/index.html",
-      "time": "2025-07-25T16:01:06+05:30",
+      "path": "/Users/divyata/Documents/Release_2025.3_Help Lib/Ginger/Ginger-Web-Help/docs/index.html",
+      "time": "2025-07-25T17:14:13+05:30",
       "logFile": "/private/var/folders/gv/6926cljx70167vzmnw5jb405zcs48s/T/RHTMP/Frameless.ehtml"
     },
     "/Users/divyata/Documents/Release_2025.3_Help Lib/Ginger/Ginger-Web-Help/Ginger by Amdocs Help/publish/presets/eBook.preset": {
@@ -92,6 +97,11 @@
     }
   },
   "recent-files::external:document": [{
+    "title": "Learn_Frameless",
+    "path": "/private/var/folders/gv/6926cljx70167vzmnw5jb405zcs48s/T/RHTMP/Learn_Frameless.ehtml",
+    "pinned": false,
+    "time": "Jul 25, 5:07 PM"
+  }, {
     "title": "Frameless",
     "path": "/private/var/folders/gv/6926cljx70167vzmnw5jb405zcs48s/T/RHTMP/Frameless.ehtml",
     "pinned": false,
