@@ -1,14 +1,14 @@
 
   
-    
+     
      What is Variable
-    
-    
+     
+     
     What is a Variable? 
     A Variable is an item that has a constant name and a value that can be changed.
     
     
-    How to create a variable?
+    How to create a variable? 
     Go to Automate Tab, expand the Variables area and click on the ‘+’ button to add a new variable as shown below.
     
     
@@ -74,8 +74,39 @@
     
     The below screen displays a variable used in the VB script function. The button ‘Test Value Expression’ as shown below gives the calculated Value of the expression after using the actual value of the variable in the ‘Value Calculated:’ field.
     
+     
+     
+     
+     
+    SQL-Based Value Expression 
+    You can now set variable values using SQL queries directly in the Value Expression Editor. This allows dynamic data retrieval from databases at runtime.
+     How to Use
     
+      In the Value Expression Editor, go to the Environment section.
+      Select the Application linked to your database.
+      Choose General Application DB and set DB Operation Type to SQL.
+      Write your SQL query in the provided field.
+      At runtime, Ginger executes the query and assigns the result to the variable.
     
+     
+                
+    Supported Databases
+    All databases supported by Ginger are compatible, including:
     
+      SQL Server
+      Oracle
+      MySQL
+      PostgreSQL
+      SQLite
+    
+    Notes
+    
+      By default the query returns a single value , which is always the first value.
+      Use secure query practices to avoid SQL injection.
+      Database connections must be configured in the Application Settings.
+    
+     
+     
+     
   
 
